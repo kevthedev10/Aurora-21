@@ -1,0 +1,24 @@
+{
+  "userAccountInfo": {
+    "dateOfBirth": "{{dateOfBirth}}",
+    "age": "{{age}}",
+    "isUnderAge": "{{isUnderAge}}",
+    "personas": [
+      {
+        "personaId": "{{personaId}}",
+        "personaName": "{{personaName}}",
+        "userClubList": [
+          {
+            "year": "2015",
+            "platform": "pc",
+            "clubName": "{{clubName}}",
+            "established": "{{now}}",
+            "assetId": "{{clubId}}",
+            "clubAbbr": "{{clubAbbr}}"
+          }
+        ],
+        "returningUser": 1
+      }
+    ]
+  }
+}

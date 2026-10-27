@@ -1,0 +1,11 @@
+{
+  "untradeable": true,
+  "untradeableCount": 1,
+  "discardValue": 0,
+  "duplicate": "{{duplicate}}",
+  "isDuplicate": "{{duplicate}}",
+  "playerPickItemId": "{{tokenId}}",
+  "globalChoiceIndex": "{{index}}",
+  "localChoiceIndex": "{{index}}",
+  "choiceIndex": "{{index}}"
+}

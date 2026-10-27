@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<squad>
+  <squadInfoSet>
+    <squadInfo platform="pc64">
+      <dbSchemaCRC>596426fe3525c25b90593b800b9ce5c3c61ccab5</dbSchemaCRC>
+      <dbMajor>1</dbMajor><dbMinor>0</dbMinor>
+      <dbMajorCRC>0</dbMajorCRC><dbMinorCRC>0</dbMinorCRC>
+      <dbMajorLoc></dbMajorLoc><dbMinorLoc></dbMinorLoc>
+      <dbFUTVer>1</dbFUTVer><dbFUTCRC>0</dbFUTCRC><dbFUTLoc></dbFUTLoc>
+    </squadInfo>
+  </squadInfoSet>
+</squad>

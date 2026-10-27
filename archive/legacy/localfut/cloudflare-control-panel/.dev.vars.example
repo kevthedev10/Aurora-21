@@ -1,0 +1,6 @@
+DISCORD_CLIENT_ID=replace-me
+DISCORD_CLIENT_SECRET=replace-me
+SESSION_SECRET=replace-with-at-least-32-random-characters
+HOST_AGENT_SECRET=replace-with-a-different-32-character-secret
+WARP_AUTH_CLIENT_ID=replace-with-cloudflare-service-token-client-id
+WARP_AUTH_CLIENT_SECRET=replace-with-cloudflare-service-token-secret

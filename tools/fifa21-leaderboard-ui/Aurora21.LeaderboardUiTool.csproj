@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType><AssemblyName>Aurora21-LeaderboardUiTool</AssemblyName><TargetFramework>net10.0-windows</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings><Nullable>enable</Nullable>
+    <FmtRoot Condition="'$(FmtRoot)' == ''">$(MSBuildThisFileDirectory)..\..\..\FrostbiteModdingTool</FmtRoot>
+    <FmtOutput>$(FmtRoot)\FrostbiteModdingUI\bin\Debug\net7.0-windows</FmtOutput>
+    <OutputPath>$(FmtOutput)</OutputPath><AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="../../ultimateteam/assets/currency/*.dds" LogicalName="CurrencyArt.%(Filename)%(Extension)" />
+    <EmbeddedResource Include="../../ultimateteam/assets/champions/*.dds" LogicalName="CurrencyArt.%(Filename)%(Extension)" />
+    <ProjectReference Include="$(FmtRoot)\Libraries\FrostySdk\FrostySdk.csproj" />
+    <ProjectReference Include="$(FmtRoot)\Libraries\FifaLibrary\FifaLibrary.csproj" />
+  </ItemGroup>
+  <Target Name="ValidateFmtBuild" BeforeTargets="ResolveReferences">
+    <Error Condition="!Exists('$(FmtOutput)\Plugins\FIFA21Plugin.dll')" Text="Build the reviewed FIFA21 Frostbite Modding Tool plugin first; set FmtRoot to its checkout." />
+  </Target>
+  <Target Name="ValidateZipDependency" BeforeTargets="CoreCompile" DependsOnTargets="ResolveReferences">
+    <Error Condition="'@(ReferencePath->WithMetadataValue('Filename', 'DotNetZip'))' != ''" Text="Vulnerable DotNetZip resolved. Build with ultimateteam/Build-LeaderboardClientTool.ps1 or pass the ZipDependency.targets override." />
+    <Error Condition="'@(ReferencePath->WithMetadataValue('Filename', 'ProDotNetZip'))' == ''" Text="Patched ProDotNetZip is missing. Use the supported leaderboard builder." />
+  </Target>
+</Project>

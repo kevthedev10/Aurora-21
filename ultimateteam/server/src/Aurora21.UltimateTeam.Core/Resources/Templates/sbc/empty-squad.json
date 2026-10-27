@@ -1,0 +1,16 @@
+{
+  "squad": {
+    "id": "{{challengeId}}",
+    "squadId": "{{challengeId}}",
+    "challengeId": "{{challengeId}}",
+    "formation": "{{formation}}",
+    "squadType": "SBC_SQUAD",
+    "players": "{{players}}",
+    "rating": 0,
+    "starRating": 0,
+    "chemistry": 0,
+    "manager": [],
+    "valid": false
+  },
+  "playerRequirements": "{{playerRequirements}}"
+}

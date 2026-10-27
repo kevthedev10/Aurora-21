@@ -1,0 +1,12 @@
+Aurora 21 (Alpha v1) - Soft Professional UI pass
+
+Changes:
+- Default music volume is now 12%.
+- Softer glass surfaces with lower-contrast neutral borders.
+- Larger, smoother corner radii on cards, navigation and controls.
+- Gentler shadows and gradients with less harsh blue/black contrast.
+- Reduced hover scale movement so buttons feel calmer and more premium.
+- Refined primary/secondary button fills and slider styling.
+- Welcome and game-launched overlays use softer glass panels.
+- Hero video remains square-cornered as requested.
+- All existing launcher/media/launch-success functionality is preserved.

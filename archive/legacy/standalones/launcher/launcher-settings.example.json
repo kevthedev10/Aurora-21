@@ -1,0 +1,16 @@
+{
+  "sourcePath": "",
+  "gamePath": "",
+  "gameReadyDelaySeconds": 5,
+  "lsxMode": "auto",
+  "launchViaEAApp": false,
+  "alwaysOnTop": true,
+  "musicVolume": 0.12,
+  "musicMuted": false,
+  "soundEffectsVolume": 0.20,
+  "soundEffectsMuted": false,
+  "eaAppOfferId": "195853",
+  "eaAppLauncherPath": "",
+  "crackLsxPort": "",
+  "stopEAAppForCrackedGame": true
+}

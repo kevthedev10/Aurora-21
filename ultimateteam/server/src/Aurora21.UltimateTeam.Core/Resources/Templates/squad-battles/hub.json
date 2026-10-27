@@ -1,0 +1,27 @@
+{
+  "sqbtEventId": "{{week}}",
+  "currentTime": "{{current}}",
+  "startTime": "{{start}}",
+  "endTime": "{{end}}",
+  "gamesPlayed": "{{counted}}",
+  "maxRegularGames": "{{maxGames}}",
+  "gamesPlayedPlacement": "{{games}}",
+  "score": "{{points}}",
+  "rank": "{{rank}}",
+  "userTierLevel": "{{tierLevel}}",
+  "gameModeRestriction": 0,
+  "matchResultWin": "{{resultWin}}",
+  "matchResultLoss": "{{resultLoss}}",
+  "winDifficultyModifiers": "{{winModifiers}}",
+  "difficultyModifiers": "{{winModifiers}}",
+  "lossDifficultyModifiers": "{{lossModifiers}}",
+  "nextLBRefreshTimeStamp": "{{leaderboardRefresh}}",
+  "isPrizeAvailable": "{{prizeAvailable}}",
+  "prizeTiers": "{{prizeTiers}}",
+  "sqbtOppSquadList": {
+    "nextSquadRefreshTimeStamp": "{{refreshAt}}",
+    "sqbtOppSquads": "{{opponents}}"
+  },
+  "squadBattleEnabled": true,
+  "squadBattleCouchPlayEnabled": true
+}

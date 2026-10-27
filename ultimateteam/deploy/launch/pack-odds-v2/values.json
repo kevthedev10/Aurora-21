@@ -1,0 +1,24 @@
+{
+  "_comment": "Pack odds v2 (2026-10-02). Migration 113 applies these values with the deploy; apply.mjs re-applies them through the panel changeset API if an operator wants them back after editing. Evidence and the model: pack-odds-v2/README.md.",
+  "promoWeights": {
+    "gold_rare": {
+      "rating_75_79": 58,
+      "rating_80_81": 29,
+      "rating_82_83": 9.6,
+      "rating_84_85": 2.7,
+      "rating_86_87": 0.5,
+      "rating_88_89": 0.15,
+      "rating_90_99": 0.05
+    }
+  },
+  "_rulesComment": "Silver rares quick-sell at most 148. (The players-only market is migration 111.)",
+  "rules": [
+    { "file": "cards", "path": ["quickSell", "tiers", "silver", "rareMaximum"], "value": 148 }
+  ],
+  "_packsComment": "category_chances per rare player slot: totw = a live TOTW in-form, icon = a card of the live Icon rotation. Setting any category chance replaces rules/pack_odds.json iconChance for that pack, so icon is always listed.",
+  "packs": {
+    "74": { "category_chances": { "totw": 0.006, "icon": 0.0005 } },
+    "75": { "category_chances": { "totw": 0.008, "icon": 0.0008 } },
+    "78": { "category_chances": { "totw": 0.008, "icon": 0.0008 } }
+  }
+}

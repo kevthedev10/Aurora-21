@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <AssemblyName>Aurora21.UiArtExport</AssemblyName>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- Reuse the separately reviewed, already built SDK. Do not rebuild or change it. -->
+    <Reference Include="FrostySdk"><HintPath>$(FmtBin)/FrostySdk.dll</HintPath><Private>false</Private></Reference>
+  </ItemGroup>
+  <Target Name="ValidateDependencies" BeforeTargets="ResolveReferences">
+    <Error Condition="!Exists('$(FmtBin)/SDK/FIFA21SDK.dll') Or !Exists('$(FmtBin)/Plugins/FIFA21Plugin.dll')" Text="FmtBin must contain the reviewed FIFA21 SDK and plugin." />
+  </Target>
+</Project>

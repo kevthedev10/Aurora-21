@@ -1,0 +1,8 @@
+{
+  "name": "{{clubName}}",
+  "lastUsedTierLevel": 1,
+  "stadiumId": "{{stadiumId}}",
+  "tiers": [
+    { "tier": 1, "stadiumDefinitionId": "{{stadiumId}}", "slots": "{{slots}}" }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "_comment": "Division Rivals and FUT Champions (FIFA 21's Seasonal framework). Both menus open only while a start/end/current window is present; the local window is the current epoch week.",
+
+  "_rewardBandsComment": "champions.rewardBands are the Weekend League Finals rank bands by total wins; tier 1 is Rank I. Packs are reward pack ids.",
+
+  "rivals": {
+    "weeklyMatches": 30,
+    "eloPromote": 250,
+    "eloRelegate": -100,
+    "relegationBuffer": 3,
+    "placementMatches": 5,
+    "skillPointsCap": 5000,
+    "startingDivision": 10,
+    "startingSkillRating": 1000
+  },
+
+  "_leaderboardsComment": "The Leaderboards screen. Option ids must be ones CardsDLL's built-in table knows; each item's image is an icon file from that table (FIFA inserts INV before the extension for the highlighted icon). Every combination of options is a board whose entries are fetched from /leaderboards/period/{period}/category/{category}/view/{view}. Rows rank the server's clubs by Rivals skill rating, then wins, matches and name; players without a Rivals match show 0.",
+  "leaderboards": {
+    "groups": [
+      {
+        "id": "category", "default": "TOP",
+        "options": [
+          { "id": "TOP", "display": "LOC_LB_CAT_WW", "description": "LOC_LB_DESC_WW", "image": "worldwideIcon.swf" },
+          { "id": "AMS", "display": "LOC_LB_CAT_AMERICAS", "description": "LOC_LB_DESC_AMERICAS", "image": "americasIcon.swf" },
+          { "id": "EUR", "display": "LOC_LB_CAT_EURAFRICA", "description": "LOC_LB_DESC_EURAFRICA", "image": "europeIcon.swf" },
+          { "id": "ROW", "display": "LOC_LB_CAT_MEPAC", "description": "LOC_LB_DESC_MEPAC", "image": "mepacIcon.swf" }
+        ]
+      },
+      {
+        "id": "period", "default": "Weekly",
+        "options": [
+          { "id": "Weekly", "display": "LOC_LB_PER_WEEKLY", "description": "LOC_LB_PER_WEEKLY_DESC", "image": "weeklyIcon.swf" },
+          { "id": "Monthly", "display": "LOC_LB_PER_MONTHLY", "description": "LOC_LB_PER_MONTHLY_DESC", "image": "monthlyIcon.swf" }
+        ]
+      },
+      {
+        "id": "view", "default": "Current",
+        "options": [
+          { "id": "Current", "display": "LOC_LB_CURRENT", "description": "LOC_LB_CURRENT_DESC", "image": "currentIcon.swf" },
+          { "id": "Previous", "display": "LOC_LB_PREVIOUS", "description": "LOC_LB_PREVIOUS_DESC", "image": "previousIcon.swf" }
+        ]
+      }
+    ],
+    "urlTemplate": "/period/{period}/category/{category}/view/{view}",
+    "maxRows": 100,
+    "cacheSeconds": 60,
+    "maxNameLength": 32,
+    "defaultName": "Player",
+    "row": { "badge": 1, "est": 2020, "sku": "FUT21PCC", "scoreIcon": "skill", "tiebreakIcon": "wins" }
+  },
+
+  "_matchRewardsComment": "Coins paid when a non-Draft match (Squad Battles, Rivals, Champions) ends, by result. A DNF counts as a loss.",
+  "matchRewards": { "win": 1000, "draw": 500, "loss": 250 },
+
+  "weekendLeague": {
+    "qualificationPoints": 2000,
+    "pointsPerWin": 200
+  },
+
+  "champions": {
+    "eventId": 1,
+    "localizedName": "FUT_CHAMPIONS_WKND_LG",
+    "playoffMatches": 10,
+    "finalsMatches": 30,
+    "registration": { "competitionCountryCode": "KW", "competitionRegion": "ME" },
+    "scheduleViewPeriodMinutes": 10080,
+    "rewardsDelaySeconds": 3600,
+    "rewardBands": [
+      { "tier": 1, "minWins": 27, "maxWins": 30, "coins": 65000, "packs": [402, 402, 402, 401, 401, 401] },
+      { "tier": 2, "minWins": 23, "maxWins": 26, "coins": 50000, "packs": [402, 402, 401, 401, 401] },
+      { "tier": 3, "minWins": 20, "maxWins": 22, "coins": 43000, "packs": [402, 402, 401, 401] },
+      { "tier": 4, "minWins": 17, "maxWins": 19, "coins": 36000, "packs": [402, 401, 401, 401] },
+      { "tier": 5, "minWins": 14, "maxWins": 16, "coins": 30000, "packs": [402, 401, 401] },
+      { "tier": 6, "minWins": 11, "maxWins": 13, "coins": 25000, "packs": [401, 401, 401] },
+      { "tier": 7, "minWins": 8, "maxWins": 10, "coins": 20000, "packs": [401, 401] },
+      { "tier": 8, "minWins": 5, "maxWins": 7, "coins": 15000, "packs": [401, 305] },
+      { "tier": 9, "minWins": 4, "maxWins": 4, "coins": 12000, "packs": [305, 305] },
+      { "tier": 10, "minWins": 0, "maxWins": 3, "coins": 7500, "packs": [305] }
+    ]
+  }
+}

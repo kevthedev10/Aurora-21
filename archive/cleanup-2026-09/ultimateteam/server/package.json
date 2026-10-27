@@ -1,0 +1,10 @@
+{
+  "name": "aurora21-ultimateteam-server-quality",
+  "private": true,
+  "scripts": {
+    "audit:duplicates": "jscpd --config .jscpd.json"
+  },
+  "devDependencies": {
+    "jscpd": "5.2.0"
+  }
+}

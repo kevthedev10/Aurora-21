@@ -1,0 +1,37 @@
+# Launcher and .NET build output
+launcher/bin/
+launcher/obj/
+launcher/release/
+launcher/public-release/
+launcher/runtime/
+launcher/sources/*
+!launcher/sources/.gitkeep
+
+# Generated local certificates and Python caches
+**/__pycache__/
+**/*.py[cod]
+launcher/runtime-source/certs/
+
+# Server runtime state and release artifacts
+server/game-server/release/
+server/game-server/runtime/
+server/game-server/state/
+server/control-plane/node_modules/
+server/control-plane/dist-selfhost/
+server/control-plane/sources/
+server/control-plane/.wrangler/
+server/control-plane/.wrangler-*/
+server/control-plane/.selfhost-*/
+
+# Secrets and mutable data
+**/.dev.vars
+**/.secrets.json
+**/*secret*.json
+**/*.pem
+**/*.key
+**/*.pfx
+**/*.p12
+**/*.db
+**/*.sqlite*
+**/*.log
+server/control-plane/media-manifest.json

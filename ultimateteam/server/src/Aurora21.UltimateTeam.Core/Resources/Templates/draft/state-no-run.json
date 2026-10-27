@@ -1,0 +1,10 @@
+[
+  {
+    "entranceCriteria": { "COINS": "{{coins}}", "DRAFT_TOKEN": "{{draftTokens}}", "POINTS": "{{points}}" },
+    "gamesWonCurrentMatch": 0,
+    "roundsInfo": [],
+    "squadState": "INVALID",
+    "stateParam1": "INVALID",
+    "stateParam2": "0"
+  }
+]

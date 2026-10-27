@@ -1,0 +1,18 @@
+{
+  "pileClubPlayers": "{{clubPlayers}}",
+  "pileSquadPlayers": "{{squadPlayers}}",
+  "pileConsumables": "{{consumables}}",
+  "pileManagers": "{{managers}}",
+  "pileClubItems": "{{total}}",
+  "pileClubTotal": "{{total}}",
+  "pilePack": "{{unassigned}}",
+  "kitCount": "{{kits}}",
+  "badgeCount": "{{badges}}",
+  "stadiumCount": "{{stadiums}}",
+  "ballCount": "{{balls}}",
+  "clubPlayers": "{{clubPlayers}}",
+  "clubItemCount": "{{total}}",
+  "clubCount": "{{total}}",
+  "itemCount": "{{matching}}",
+  "itemData": "{{items}}"
+}

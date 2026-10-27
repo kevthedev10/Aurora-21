@@ -1,0 +1,19 @@
+{
+  "id": "{{id}}",
+  "personaId": "{{personaId}}",
+  "squadName": "{{name}}",
+  "formation": "{{formation}}",
+  "captain": "{{captain}}",
+  "chemistry": "{{chemistry}}",
+  "changed": 0,
+  "starRating": "{{starRating}}",
+  "rating": "{{rating}}",
+  "squadType": "{{squadType}}",
+  "custom": "{{custom}}",
+  "players": "{{players}}",
+  "actives": "{{actives}}",
+  "manager": "{{managers}}",
+  "club": "{{actives}}",
+  "kicktakers": "{{kickTakers}}",
+  "tactics": "{{tactics}}"
+}

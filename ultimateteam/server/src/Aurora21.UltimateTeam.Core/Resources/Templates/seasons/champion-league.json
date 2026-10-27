@@ -1,0 +1,13 @@
+{
+  "id": "{{eventId}}",
+  "localizedName": "{{localizedName}}",
+  "startTime": "{{start}}",
+  "endTime": "{{end}}",
+  "currentTime": "{{current}}",
+  "maxMatches": "{{maxMatches}}",
+  "minMatchesToRank": "{{minMatchesToRank}}",
+  "eligibilities": [],
+  "elgOperation": "AND",
+  "prizeTiers": "{{prizeTiers}}",
+  "qualifierTournaments": []
+}

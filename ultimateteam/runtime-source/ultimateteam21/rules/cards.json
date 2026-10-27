@@ -1,0 +1,598 @@
+{
+  "_comment": "Card values and native card data. Position modifiers must be real fcc_trainingcards definitions: synthetic ids render as broken cards.",
+  "_quickSellComment": "Quick sell = retail FIFA 21's discard values (community price guides fifauteam.com/fifa-21-quick-sell-prices-discard and fifplay.com/fifa-21-quick-sell-prices; secondary sources, not EA): a card's value is its rating times a multiplier for its kind, rounded half up. Base cards by tier (the catalog's tier, else by rating as rules/packs.json tiers) and rarity: bronze 0.3 common / 0.75 rare, silver 1.5 / 3.5, gold 4 / 8. Every special (TOTW in-forms, TOTY, Icons, every promo; owner 2026-10-01: all specials discard for around 10k) sells by the inForm bands: below 65 rating x 20 (at least 800), 65-74 rating x 70, 75 and up rating x 122 (about 9,150 at 75, 10,500 at 86, 12,000 at 99). Owner economy caps over retail: a silver rare sells for at most rareMaximum 148 (retail 228-259 against the 150 price floor; 148 keeps rares above silver commons, 98-111, which the old cap of 90 did not) and a special rated 65-74 for at most 1,280. Nothing else is capped: a card can never be listed on the market below its own quick-sell value (Cards.MarketPriceBounds raises the minimum listing price), so quick sell can never beat a market buy. zeroValueRareflags are the swap tokens (89, 92, 93, 94 Icon Swaps; 76, 77 FGS Swaps): only worth swapping, so they sell for nothing, and untradeableRareflags (top level) makes every one untradeable whatever grants it. baseCompetitionRareflags are the ordinary cards of a competition (UCL base 47/48, CONMEBOL Sudamericana 52 and Libertadores 53): they carry their own shells but are not promos, so they sell like base rares of their tier. Owner rules, not retail: item-level reward rules (items.reward_source, migration 069): an untradeable item sells for at most rewardUntradeableCap (0 since 2026-09-29), an item from a zeroValueRewardSources source (the Match Pack, gifts) for nothing, a loan for nothing. Managers sell for managerCommon/managerRare; chemistry styles and position modifiers keep their card values below (retail's own are not documented per card).",
+  "_rewardOnlyComment": "Rarities only a pack or pick that names them reaches: 18, the FUT Champions red picks (generated copies of Team of the Week and Team of the Season cards, migration 051; Python server 82ba3a3), 89, 92, 93 and 94, the Icon Swaps 1-4 tokens (a reward hands them out through token packs 560-563, migration 064; ultimateteam/icon-swaps.md), and 76 and 77, the FGS Swaps 1-2 tokens (10 each; nothing hands them out yet). Quick sell: 18 sells like any special (the in-form multiplier); an Icon Swaps token sells for nothing, as in FIFA 21, so it is only ever worth swapping.",
+  "rewardOnlyRareflags": [18, 76, 77, 89, 92, 93, 94],
+  "_untradeableRareflagsComment": "The swap tokens (Icon Swaps 89, 92, 93, 94; FGS Swaps 76, 77) are untradeable whatever grants them (owner, 2026-10-01): every item built for these rarities starts untradeable.",
+  "untradeableRareflags": [76, 77, 89, 92, 93, 94],
+  "_futChampionsRedComment": "The rarities of the red FUT Champions copies in the fixed TOTW 1–3 reward pool. Named apart from rewardOnlyRareflags so a token of a Team of the Week player never joins the pool.",
+  "futChampionsRedRareflags": [18],
+  "_contractsComment": "Permanent players and managers never consume contracts. Keep a positive native count for FIFA compatibility; loans still consume matches and expire.",
+  "permanentContracts": 99,
+  "quickSell": {
+    "tiers": {
+      "bronze": { "commonPerRating": 0.3, "rarePerRating": 0.75 },
+      "silver": { "commonPerRating": 1.5, "rarePerRating": 3.5, "rareMaximum": 148 },
+      "gold": { "commonPerRating": 4, "rarePerRating": 8 }
+    },
+    "inForm": [
+      { "fromRating": 0, "perRating": 20, "minimum": 800 },
+      { "fromRating": 65, "perRating": 70, "maximum": 1280 },
+      { "fromRating": 75, "perRating": 122 }
+    ],
+    "zeroValueRareflags": [76, 77, 89, 92, 93, 94],
+    "rewardUntradeableCap": 0,
+    "zeroValueRewardSources": ["match_pack", "gift"],
+    "managerCommon": 150,
+    "managerRare": 300,
+    "baseCompetitionRareflags": [
+      47,
+      48,
+      52,
+      53
+    ]
+  },
+  "_rarityGroupComment": "Explicit local SBC rare membership, confirmed/delegated 2026-09-17. Icon Swaps and bronze token categories are non-rare; UCL common (47) and base Sudamericana (52) are non-rare. Other seeded promos retain group 4. Relational runtime reads card_rarity_groups; legacy runtime uses rarityGroupsByRareflag. Native grouping equivalence remains unverified.",
+  "rareRarityGroup": 4,
+  "_statSlotsComment": "Players carry this many {index, value} statsList/lifetimeStats rows; Player Stats > Top Players indexes them directly.",
+  "playerStatSlots": 5,
+  "_conceptComment": "Concept players are never owned. Their item ids are conceptItemIdBase + resource id, below conceptItemIdBase + conceptItemIdSpan.",
+  "conceptItemIdBase": 800000000000,
+  "conceptItemIdSpan": 100000000000,
+  "_managersComment": "Manager definitions without their own values: default rating, and the rating from which one is rare.",
+  "managerDefaultRating": 75,
+  "managerRareFromRating": 80,
+  "_playerPickComment": "The 1-of-N player pick token. {choices} and {rating} are replaced by the token's choice count and minimum rating. maxTokensPerGroup caps the tokens one store pack pick group adds (Python server limit).",
+  "playerPickToken": {
+    "minChoices": 2,
+    "maxChoices": 5,
+    "maxTokensPerGroup": 10,
+    "name": "1 of {choices} {rating}+ Player Pick",
+    "description": "Choose one of {choices} players rated {rating} or higher."
+  },
+  "_consumablesComment": "Native development (position change) and training (chemistry style) consumable stacks. Clubs get them from packs; a new club starts without any.",
+  "positionModifierCard": {
+    "cardAssetId": 34,
+    "consumableType": 3,
+    "discardValue": 80
+  },
+  "_legacyModifiersComment": "Early local builds created synthetic position cards in this resource id range; they are replaced by native definitions.",
+  "legacyPositionModifierIds": {
+    "first": 300001,
+    "last": 300999
+  },
+  "_chemistryStylesComment": "A chemistry style card's cardsubtypeid is the playStyle it gives a player. Resource ids follow the fcc_trainingcards position-change rows: firstResourceId + (playStyle - 250). Goalkeeper styles apply only to goalkeepers; cards never given a style play as the default.",
+  "chemistryStyles": {
+    "firstResourceId": 5003095,
+    "cardAssetId": 34,
+    "consumableType": 4,
+    "rating": 90,
+    "discardValue": 100,
+    "outfieldDefault": 250,
+    "goalkeeperDefault": 273,
+    "positionGroups": {
+      "1": [251, 252, 253, 254, 255],
+      "2": [256, 257, 258, 259, 260],
+      "3": [261, 262, 263, 264, 265],
+      "4": [250, 266, 267, 268],
+      "5": [269, 270, 271, 272, 273]
+    },
+    "goalkeeperStyles": [
+      269,
+      270,
+      271,
+      272,
+      273
+    ],
+    "rareStyles": [255, 260, 265, 266, 267, 268],
+    "names": {
+      "250": "Basic",
+      "251": "Sniper",
+      "252": "Finisher",
+      "253": "Deadeye",
+      "254": "Marksman",
+      "255": "Hawk",
+      "256": "Artist",
+      "257": "Architect",
+      "258": "Powerhouse",
+      "259": "Maestro",
+      "260": "Engine",
+      "261": "Sentinel",
+      "262": "Guardian",
+      "263": "Gladiator",
+      "264": "Backbone",
+      "265": "Anchor",
+      "266": "Hunter",
+      "267": "Catalyst",
+      "268": "Shadow",
+      "269": "Wall",
+      "270": "Shield",
+      "271": "Cat",
+      "272": "Glove",
+      "273": "GK Basic"
+    }
+  },
+  "_managerLeagueCardsComment": "Manager league cards (PLAN 3.8): applied to a manager, the card moves him to its league for chemistry. One per league with base player cards (migration 071), including leagues FIFA 21 has no managers in (Ligue 1, Bundesliga). GENERATED, NOT FIFA DATA: FIFA 21's own resource ids for these cards are unknown (EA's server sent them; the client keeps no consumables table), so a card's resource id is resourceIdBase + its native league id. The card carries its league as cardsubtypeid, and also as leagueId (CardsDLL names the card by FUT_CONSUMABLE_NAME_MANAGERLEAGUE and shows LAbbr_<league>; which field it reads is inferred, not attested). discardValue is its quick sell (PLAN 4.2). FIFA 21 files a consumable by its cardsubtypeid (CardsDLL 0x31FCD0): 300-351 is a manager league card (category 10); anything else is no known consumable and renders as a blank grey card. A card's subtype is firstSubtype plus its league's row in the client's fcc_leagues table (cards_ng_db, in stored order), as EA's FIFA 14/15 schema numbered them (Premier League 304, Ligue 1 306, Bundesliga 308, Serie A 310). leagueId still carries the league itself.",
+  "managerLeagueCards": {
+    "resourceIdBase": 5100000,
+    "firstSubtype": 300,
+    "subtypeLeagues": [1, 4, 7, 10, 13, 14, 16, 17, 19, 20, 31, 39, 41, 50, 53, 54, 56, 60, 61, 63, 65, 66, 68, 78, 80, 83, 189, 308, 317, 319, 322, 330, 332, 341, 347, 349, 350, 351, 353, 1003, 1014, 2012, 2076, 2118, 2134, 2150, 2172, 2179, 3006],
+    "cardAssetId": 32,
+    "consumableType": 5,
+    "rating": 85,
+    "discardValue": 100
+  },
+  "_consumableCountersComment": "Club > Consumables counters: the counter each native card asset id adds to, and for records without one, the counter of their consumableType. teamFitnessSubType splits team from player fitness.",
+  "consumableCounters": {
+    "byCardAssetId": {
+      "1": "trainingPlayer",
+      "3": "trainingGk",
+      "7": "contractPlayer",
+      "8": "contractManager",
+      "9": "healing",
+      "10": "fitnessPlayer",
+      "32": "managerLeagueModifier",
+      "34": "position",
+      "50": "playstylePlayer",
+      "51": "playstyleGk"
+    },
+    "byConsumableType": {
+      "1": "contractPlayer",
+      "2": "healing",
+      "3": "position",
+      "4": "playstylePlayer",
+      "5": "managerLeagueModifier"
+    },
+    "teamFitnessSubType": 220
+  },
+  "positionModifiers": [
+    {
+      "resourceId": 5003059,
+      "subType": 91,
+      "source": "LWB",
+      "target": "LB",
+      "rating": 95,
+      "weightRare": 10
+    },
+    {
+      "resourceId": 5003060,
+      "subType": 92,
+      "source": "LB",
+      "target": "LWB",
+      "rating": 90,
+      "weightRare": 20
+    },
+    {
+      "resourceId": 5003061,
+      "subType": 93,
+      "source": "RWB",
+      "target": "RB",
+      "rating": 95,
+      "weightRare": 10
+    },
+    {
+      "resourceId": 5003062,
+      "subType": 94,
+      "source": "RB",
+      "target": "RWB",
+      "rating": 90,
+      "weightRare": 20
+    },
+    {
+      "resourceId": 5003063,
+      "subType": 95,
+      "source": "LM",
+      "target": "LW",
+      "rating": 95,
+      "weightRare": 20
+    },
+    {
+      "resourceId": 5003064,
+      "subType": 96,
+      "source": "RM",
+      "target": "RW",
+      "rating": 95,
+      "weightRare": 20
+    },
+    {
+      "resourceId": 5003065,
+      "subType": 97,
+      "source": "LW",
+      "target": "LM",
+      "rating": 95,
+      "weightRare": 20
+    },
+    {
+      "resourceId": 5003066,
+      "subType": 98,
+      "source": "RW",
+      "target": "RM",
+      "rating": 95,
+      "weightRare": 20
+    },
+    {
+      "resourceId": 5003067,
+      "subType": 99,
+      "source": "LW",
+      "target": "LF",
+      "rating": 90,
+      "weightRare": 10
+    },
+    {
+      "resourceId": 5003068,
+      "subType": 100,
+      "source": "RW",
+      "target": "RF",
+      "rating": 95,
+      "weightRare": 10
+    },
+    {
+      "resourceId": 5003069,
+      "subType": 101,
+      "source": "LF",
+      "target": "LW",
+      "rating": 90,
+      "weightRare": 10
+    },
+    {
+      "resourceId": 5003070,
+      "subType": 102,
+      "source": "RF",
+      "target": "RW",
+      "rating": 95,
+      "weightRare": 10
+    },
+    {
+      "resourceId": 5003071,
+      "subType": 103,
+      "source": "CM",
+      "target": "CAM",
+      "rating": 90,
+      "weightRare": 20
+    },
+    {
+      "resourceId": 5003072,
+      "subType": 104,
+      "source": "CAM",
+      "target": "CM",
+      "rating": 95,
+      "weightRare": 20
+    },
+    {
+      "resourceId": 5003073,
+      "subType": 105,
+      "source": "CDM",
+      "target": "CM",
+      "rating": 95,
+      "weightRare": 20
+    },
+    {
+      "resourceId": 5003074,
+      "subType": 106,
+      "source": "CM",
+      "target": "CDM",
+      "rating": 90,
+      "weightRare": 20
+    },
+    {
+      "resourceId": 5003075,
+      "subType": 107,
+      "source": "CAM",
+      "target": "CF",
+      "rating": 95,
+      "weightRare": 10
+    },
+    {
+      "resourceId": 5003076,
+      "subType": 108,
+      "source": "CF",
+      "target": "CAM",
+      "rating": 95,
+      "weightRare": 10
+    },
+    {
+      "resourceId": 5003077,
+      "subType": 109,
+      "source": "CF",
+      "target": "ST",
+      "rating": 95,
+      "weightRare": 20
+    },
+    {
+      "resourceId": 5003078,
+      "subType": 110,
+      "source": "ST",
+      "target": "CF",
+      "rating": 95,
+      "weightRare": 20
+    }
+  ],
+  "_aquaProComment": "The developers Pro Player cards (owner, 2026-09-29; migration 066): one exclusive 99 card per developer (owner). Every Pro card is grant-only (no pack, player pick, Draft, onboarding, SBC match or concept search offers it), untradeable, and the operator panel grants each only once on the whole server. A Pro card and only the Pro card carries the maxed attribute record; FIFA details screen also asks for the base card by its asset id, which gets the maxed record only for a club that owns the Pro card (every other club sees that base card as it is). Portraits: runtime-source/ultimateteam21/custom-playerheads/p<customId>.dds.",
+  "aquaProCards": [
+    {
+      "customId": 167988548,
+      "baseId": 216388,
+      "name": "Allan Saint-Maximin",
+      "owner": "Ghoul"
+    },
+    {
+      "customId": 167996618,
+      "baseId": 224458,
+      "name": "Diogo Jota",
+      "owner": "Mustafa"
+    },
+    {
+      "customId": 167983460,
+      "baseId": 211300,
+      "name": "Anthony Martial",
+      "owner": "Shadow"
+    },
+    {
+      "customId": 168019987,
+      "baseId": 247827,
+      "name": "Michael Olise",
+      "owner": "Miz"
+    },
+    {
+      "customId": 167984358,
+      "baseId": 212198,
+      "name": "Bruno Fernandes",
+      "owner": "Horizzon"
+    },
+    {
+      "customId": 167961228,
+      "baseId": 189068,
+      "name": "Bas Dost",
+      "owner": "Atlaz"
+    }
+  ],
+  "aquaProAttributeValue": 99,
+  "_grantOnlyComment": "Further cards only an explicit grant hands out (every Pro card above already is): no pack, player pick, Draft, onboarding loan, SBC match or concept search offers them.",
+  "grantOnlyResourceIds": [],
+  "_attributesComment": "The six face stats and the attributes each one summarises. Missing attributes of a record fall back to their group's face stat.",
+  "outfieldAttributeGroups": [
+    [
+      "acceleration",
+      "sprintspeed"
+    ],
+    [
+      "positioning",
+      "finishing",
+      "shotpower",
+      "longshots",
+      "volleys",
+      "penalties"
+    ],
+    [
+      "vision",
+      "crossing",
+      "freekickaccuracy",
+      "shortpassing",
+      "longpassing",
+      "curve"
+    ],
+    [
+      "agility",
+      "balance",
+      "reactions",
+      "ballcontrol",
+      "dribbling",
+      "composure"
+    ],
+    [
+      "interceptions",
+      "headingaccuracy",
+      "marking",
+      "standingtackle",
+      "slidingtackle"
+    ],
+    [
+      "jumping",
+      "stamina",
+      "strength",
+      "aggression"
+    ]
+  ],
+  "goalkeeperAttributes": [
+    "gkdiving",
+    "gkhandling",
+    "gkkicking",
+    "gkreflexes",
+    "gkspeed",
+    "gkpositioning"
+  ],
+  "_inGameAttributeOrderComment": "The 34 ingameattribs slots in FIFA's own order: CardsDLL's Attribute Details screen reads them by fixed offset (acceleration +0, sprint speed +4, ... GK positioning +0x84); GK speed is derived by the game (Python server, commit 525bdd6).",
+  "inGameAttributeOrder": ["acceleration", "sprintspeed", "agility", "balance", "jumping", "stamina", "strength", "reactions", "aggression", "composure", "interceptions", "positioning", "vision", "ballcontrol", "crossing", "dribbling", "finishing", "freekickaccuracy", "headingaccuracy", "longpassing", "shortpassing", "marking", "shotpower", "longshots", "standingtackle", "slidingtackle", "volleys", "curve", "penalties", "gkdiving", "gkhandling", "gkkicking", "gkreflexes", "gkpositioning"],
+  "_attributeRecordComment": "An attribute record carries a version only when all 34 values are known and reproduce the card's six face ratings within faceAttributeTolerance. The version is a hash of the record's content (Cards.RecordVersion, Python server 4736f1a), so a changed card is a new version and CreateMatch lists stale client copies as mismatches. With version 0 FIFA's chemistry service estimates the attributes from its own player table instead (CardsDLL 0x18024bda0, Python server commit 9410058). The weights are FIFA's face formulas (PAC..PHY; a goalkeeper's DIV HAN KIC REF SPD POS).",
+  "_nativeCardFieldsComment": "Player items also carry FIFA's own lower-case star, work-rate and trait fields: CardsDLL's item parser (0x180321910) reads only these and ignores skillMoves/weakFoot, so without them a special's upgraded stars never show and every trait applies (Python server, commits 6e79543 and e701202). skillmoves is 0-4 (shown +1 star); weakfootabilitytypecode 1-5; work rates map through nativeWorkRates.",
+  "nativeWorkRates": { "medium": 0, "low": 1, "high": 2 },
+  "faceAttributeTolerance": 4,
+  "faceAttributeWeights": {
+    "outfield": [
+      { "acceleration": 0.45, "sprintspeed": 0.55 },
+      { "finishing": 0.45, "longshots": 0.2, "shotpower": 0.2, "positioning": 0.05, "volleys": 0.05, "penalties": 0.05 },
+      { "shortpassing": 0.35, "vision": 0.2, "crossing": 0.2, "longpassing": 0.15, "curve": 0.05, "freekickaccuracy": 0.05 },
+      { "dribbling": 0.5, "ballcontrol": 0.35, "agility": 0.1, "balance": 0.05 },
+      { "marking": 0.3, "standingtackle": 0.3, "interceptions": 0.2, "headingaccuracy": 0.1, "slidingtackle": 0.1 },
+      { "strength": 0.5, "stamina": 0.25, "aggression": 0.2, "jumping": 0.05 }
+    ],
+    "goalkeeper": [
+      { "gkdiving": 1 },
+      { "gkhandling": 1 },
+      { "gkkicking": 1 },
+      { "gkreflexes": 1 },
+      { "acceleration": 0.45, "sprintspeed": 0.55 },
+      { "gkpositioning": 1 }
+    ]
+  },
+  "rarityGroupsByRareflag": {
+    "0": [],
+    "1": [
+      4
+    ],
+    "3": [
+      4
+    ],
+    "4": [
+      4
+    ],
+    "5": [
+      4
+    ],
+    "6": [
+      4
+    ],
+    "8": [
+      4
+    ],
+    "9": [
+      4
+    ],
+    "10": [
+      4
+    ],
+    "11": [
+      4
+    ],
+    "12": [
+      4
+    ],
+    "16": [
+      4
+    ],
+    "21": [
+      4
+    ],
+    "22": [
+      4
+    ],
+    "25": [
+      4
+    ],
+    "30": [
+      4
+    ],
+    "32": [
+      4
+    ],
+    "33": [
+      4
+    ],
+    "34": [
+      4
+    ],
+    "37": [
+      4
+    ],
+    "42": [
+      4
+    ],
+    "43": [
+      4
+    ],
+    "45": [
+      4
+    ],
+    "46": [
+      4
+    ],
+    "47": [],
+    "48": [
+      4
+    ],
+    "49": [
+      4
+    ],
+    "50": [
+      4
+    ],
+    "51": [
+      4
+    ],
+    "52": [],
+    "53": [
+      4
+    ],
+    "54": [
+      4
+    ],
+    "55": [
+      4
+    ],
+    "57": [
+      4
+    ],
+    "58": [
+      4
+    ],
+    "59": [
+      4
+    ],
+    "60": [
+      4
+    ],
+    "61": [
+      4
+    ],
+    "62": [
+      4
+    ],
+    "64": [
+      4
+    ],
+    "65": [
+      4
+    ],
+    "68": [
+      4
+    ],
+    "70": [
+      4
+    ],
+    "71": [
+      4
+    ],
+    "75": [
+      4
+    ],
+    "76": [],
+    "77": [],
+    "79": [
+      4
+    ],
+    "81": [
+      4
+    ],
+    "82": [
+      4
+    ],
+    "84": [
+      4
+    ],
+    "86": [
+      4
+    ],
+    "87": [
+      4
+    ],
+    "89": [],
+    "90": [
+      4
+    ],
+    "91": [
+      4
+    ],
+    "92": [],
+    "93": [],
+    "94": [],
+    "95": [
+      4
+    ],
+    "96": [
+      4
+    ],
+    "98": [
+      4
+    ]
+  }
+}

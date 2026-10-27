@@ -1,0 +1,32 @@
+{
+  "inputs": {
+    "catalogue": {
+      "path": "ultimateteam/runtime-source/ultimateteam21/players.json",
+      "sha256": "22e46b53a71ad64e7f58ac80d87a46e49edf6ae3701da66e8958b6c49728fffd"
+    },
+    "custom": {
+      "path": "ultimateteam/runtime-source/ultimateteam21/custom-players.json",
+      "sha256": "c4da98bd86fda7cc90cbaebd8bc3c0f3ee830aef4f1057d527e45f8f4af68908"
+    },
+    "corrections": {
+      "path": "ultimateteam/runtime-source/ultimateteam21/card-corrections.json",
+      "sha256": "685d0395fe9f89aa6e631f70209e37458e67f707b55304ebd0834a355fcbf35e"
+    },
+    "native": {
+      "path": "ultimateteam/runtime/mined/tables/cards_ng_db/players.json",
+      "sha256": "5bf399731c5cf5beb1702e1ad55250e1464790f5c7355542e56371cf4985378a"
+    },
+    "normalization": {
+      "path": "ultimateteam/server/database-handoff/NORMALIZATION-AUDIT.json",
+      "sha256": "f1c279dda235e8a341e6eabf6d88da745c7a130de6faf8199bb6446203e97da8"
+    }
+  },
+  "catalogueCards": 22506,
+  "correctionsInCatalogue": 1785,
+  "correctionsNotInCatalogue": 639,
+  "cardsWithFixRows": 22495,
+  "cardsWithFilledAttributes": 22142,
+  "cardsWithTraitRows": 12050,
+  "renumberedCards": 101,
+  "completeFaceConsistentCards": 22488
+}

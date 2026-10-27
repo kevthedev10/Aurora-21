@@ -1,0 +1,13 @@
+{
+  "bestBuilderScore": 0,
+  "concededGoals": 0,
+  "draftChampion": "{{champion}}",
+  "draftsCompleted": "{{completed}}",
+  "gamesLost": "{{lost}}",
+  "gamesWon": "{{wins}}",
+  "passAccuracyTotal": 0,
+  "possessionPercentage": 0,
+  "possesionTotal": 0,
+  "possessionTotal": 0,
+  "scoredGoals": 0
+}

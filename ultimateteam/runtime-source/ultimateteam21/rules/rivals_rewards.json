@@ -1,0 +1,32 @@
+{
+ "_readme": [
+  "Division Rivals settings: Weekly Score, 30-match cap and rank shares: FIFA 21 retail, ported from the Python server (21bf125, 56145ed).",
+  "The weekly reward options and the promotion rewards are tables since migration 131, edited in the operator panel (Modes, Rivals); a fresh",
+  "database is seeded from rewards/rivals.json.",
+  "Loaded at server start and validated strictly (an invalid file stops the server).",
+  "weeklyScore.weekendLeagueCounts on (retail): every completed FUT Champions Weekend League match (not a quit, DNF or void match) adds weekendLeagueMatch to the Rivals Weekly Score whatever its result, and uses one of the week's matchCap counting matches, shared with Rivals; once they are used, neither mode adds Weekly Score. Off: Weekend League matches add nothing and use no counting match.",
+  "EA (help.ea.com FIFA 21 'Division Rivals', Nov 2020): weekly score, 30-match cap, division fixed per week, ranks by percentile, promotion rewards the first time a division is entered.",
+  "poolBelowClubs: a division with fewer clubs than this in a week ranks on one pooled server-wide percentile table (every club with a Weekly Score that week); 0 turns pooling off."
+ ],
+ "version": 2,
+ "settleDelaySeconds": 300,
+ "weeklyScore": {
+  "win": 500,
+  "draw": 300,
+  "loss": 150,
+  "perGoal": 90,
+  "goalCap": 5,
+  "matchCap": 30,
+  "weekendLeagueCounts": true,
+  "weekendLeagueMatch": 400
+ },
+ "rankShares": [
+  20,
+  25,
+  25,
+  18,
+  9,
+  3
+ ],
+ "poolBelowClubs": 20
+}

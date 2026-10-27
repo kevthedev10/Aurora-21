@@ -1,0 +1,17 @@
+.badge {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 1px 9px; border-radius: 999px; border: 1px solid transparent;
+  font: 500 var(--text-xs)/1.6 var(--font); white-space: nowrap; text-decoration: none;
+  background: var(--tier); color: var(--fog);
+}
+a.badge:hover { border-color: currentColor; }
+.pitch { background: var(--pitch-bg); color: var(--pitch); }
+.staged { background: var(--staged-bg); color: var(--staged); }
+.flare { background: var(--flare-bg); color: var(--flare); }
+.red { background: var(--red-card-bg); color: var(--red-card); }
+.coin { background: var(--coin-bg); color: var(--coin); }
+
+.dot { display: inline-flex; align-items: center; gap: 6px; color: var(--fog); font-size: var(--text-xs); }
+.dot::before { content: ''; width: 8px; height: 8px; border-radius: 50%; background: var(--dim); }
+.up::before { background: var(--pitch); box-shadow: 0 0 0 3px var(--pitch-bg); }
+.down::before { background: var(--red-card); box-shadow: 0 0 0 3px var(--red-card-bg); }

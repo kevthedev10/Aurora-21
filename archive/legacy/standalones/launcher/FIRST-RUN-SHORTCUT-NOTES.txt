@@ -1,0 +1,9 @@
+Aurora 21 (Alpha v1) - First-run shortcut prompt
+
+- Appears only after the Welcome animation on the first launch for each Windows user.
+- Choices: Desktop + Start Menu, Start Menu only, or No.
+- Shortcuts point to the exact Aurora21-Launcher.exe and use its EXE icon.
+- No administrator rights are required; only current-user folders are used.
+- Completion state is saved to:
+  %LOCALAPPDATA%\Project21\launcher-first-run-v1.complete
+- The prompt does not reappear regardless of the selected option. To test the first-run flow again, manually delete that state file.

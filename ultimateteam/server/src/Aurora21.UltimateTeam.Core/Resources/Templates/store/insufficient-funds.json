@@ -1,0 +1,8 @@
+{
+  "packId": "{{packId}}",
+  "purchasePackType": "CARDPACK",
+  "state": "INSUFFICIENTFUNDS",
+  "duplicateItemIdList": [],
+  "itemList": [],
+  "itemData": []
+}

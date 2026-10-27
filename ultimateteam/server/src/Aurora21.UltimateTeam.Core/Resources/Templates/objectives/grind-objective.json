@@ -1,0 +1,21 @@
+{
+  "objectiveId": "{{id}}",
+  "id": "{{id}}",
+  "name": "{{name}}",
+  "description": "{{description}}",
+  "shortDescription": "{{description}}",
+  "multiplier": "{{target}}",
+  "priority": "{{id}}",
+  "currentProgress": "{{progress}}",
+  "progress": "{{progress}}",
+  "target": "{{target}}",
+  "targetValue": "{{target}}",
+  "state": "{{state}}",
+  "takeMeThereLink": "",
+  "isWeb": false,
+  "ruleOperator": "MORE_OR_EQUAL",
+  "ruleDto": [
+    { "ruleType": "ACTIVE_SQUAD_CHEMISTRY", "ruleOperator": "MORE_OR_EQUAL", "ruleTargetValue": 1000 }
+  ],
+  "awards": "{{awards}}"
+}

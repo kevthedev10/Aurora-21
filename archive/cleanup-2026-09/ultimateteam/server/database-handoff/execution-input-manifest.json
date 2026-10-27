@@ -1,0 +1,89 @@
+{
+  "formatVersion": 2,
+  "preparedOn": "2026-09-16",
+  "branch": "feat/new-db-setup",
+  "worktreeParent": "1e692ef",
+  "scope": "fixed standalone fresh-schema SQL artifact generation by local LLM; no investigation",
+  "files": [
+    {
+      "path": "LOCAL-LLM-TASK.md",
+      "bytes": 2854,
+      "sha256": "9469ddb256a989e9aa1e92c2412a37ebf394e6b5f71452af509037cf6386285d"
+    },
+    {
+      "path": "IMPLEMENT-EXACTLY.md",
+      "bytes": 11186,
+      "sha256": "33689c7ec424c7f3c5b1083d4e923a3523d7e6ec4b02abbba739f49743806695"
+    },
+    {
+      "path": "TRIGGER-RECIPES.md",
+      "bytes": 11639,
+      "sha256": "9b071ead7f988c7b20062e9fe33a872129fa2e2d44df1e34e3f53cb22fa6f9e9"
+    },
+    {
+      "path": "FIXED-VALIDATION.md",
+      "bytes": 8288,
+      "sha256": "25cfe8cf1b570af7da9fcfc4294ec78542d022ac93256791fa380a287eb3fa12"
+    },
+    {
+      "path": "implementation-specification.json",
+      "bytes": 196082,
+      "sha256": "6e412adfed7e32a846afeec8da3fa45baa8cbbfa1783e01faddcd3975bfbaaf8"
+    },
+    {
+      "path": "normalized-seed-manifest.json",
+      "bytes": 6877,
+      "sha256": "5e78be7d507378f6e51e9cf6504ef3ea3e93ea65f1db3337440fae4a5c34e0b0"
+    },
+    {
+      "path": "validation-fixtures.json",
+      "bytes": 10987,
+      "sha256": "d9c03a1a89242032c41df783321ed5ae7feae207bf02c9f590f15e92dad63f3f"
+    },
+    {
+      "path": "NORMALIZATION-AUDIT.json",
+      "bytes": 11736,
+      "sha256": "f1c279dda235e8a341e6eabf6d88da745c7a130de6faf8199bb6446203e97da8"
+    },
+    {
+      "path": "normalized-seeds/010-sources-and-families.json",
+      "bytes": 3337,
+      "sha256": "b05b01a267ca5e695f68b60126c80afb87b13e74221799b865b34956446fbe94"
+    },
+    {
+      "path": "normalized-seeds/011-reference-dimensions.json",
+      "bytes": 67424,
+      "sha256": "cc8b9cc7c3a3828a814abcf04e1e8507e38386d1a7bfb0ef774c175ed7d1697c"
+    },
+    {
+      "path": "normalized-seeds/012-footballers-types-designs.json",
+      "bytes": 2651841,
+      "sha256": "993f209cabfe2e6ca33b2612d6348f4d9884b8beec1fbe457c05cee7f9d546b4"
+    },
+    {
+      "path": "normalized-seeds/013-player-definitions.json",
+      "bytes": 32671419,
+      "sha256": "c4f700f6c92291a103f5bd5e79e5ff28944c89c8a7be8e0f512930be39c479ae"
+    },
+    {
+      "path": "normalized-seeds/014-manager-definitions.json",
+      "bytes": 174424,
+      "sha256": "248f5ae970765e6119dd06264156d1c4004b4c7ca2c068ef77968c2ec6807e04"
+    },
+    {
+      "path": "normalized-seeds/015-consumable-definitions.json",
+      "bytes": 22612,
+      "sha256": "1bfc01cc5795670a7d3bb1f1eba9911280ef48bb1f59268371e7501ca1abb4aa"
+    },
+    {
+      "path": "normalized-seeds/016-customisation-definitions.json",
+      "bytes": 729607,
+      "sha256": "6a361da9c43d0747031a14afde4a8eb728277ceb4a8d4a9325b2829bab731ddb"
+    },
+    {
+      "path": "normalized-seeds/017-compatibility-and-aliases.json",
+      "bytes": 8036595,
+      "sha256": "7112a54e4d9cb7b4a7d77ed02800717cac3e93473c38d1daf779a87a8ccf0e45"
+    }
+  ]
+}

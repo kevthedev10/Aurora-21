@@ -1,0 +1,8 @@
+{
+  "categoryId": "{{id}}",
+  "id": "{{id}}",
+  "name": "{{name}}",
+  "priority": 1,
+  "groupsList": "{{groups}}",
+  "groups": "{{groups}}"
+}

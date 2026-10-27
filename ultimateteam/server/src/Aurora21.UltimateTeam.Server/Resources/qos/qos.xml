@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="utf-8"?><qos><numprobes>{probes}</numprobes><qosport>{port}</qosport><probesize>{probeSize}</probesize><qosip>{ip}</qosip><requestid>{requestId}</requestid><reqsecret>{secret}</reqsecret></qos>

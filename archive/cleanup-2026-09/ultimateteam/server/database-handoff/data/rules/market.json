@@ -1,0 +1,77 @@
+{
+  "_comment": "The shared transfer market: listing price bounds, bid steps, AI seller listings and listing limits. Every player sees the same market.",
+  "maintenanceIntervalSeconds": 30,
+
+  "_priceBoundsComment": "A card's listing price range. The maximum is the first band whose fromRating the card reaches; special cards (rareflag above 1) have a higher minimum and a maximum of at least specialMaximumFloor.",
+  "priceBounds": {
+    "minimum": 150,
+    "specialMinimum": 10000,
+    "maximumByRating": [
+      { "fromRating": 98, "maximum": 15000000 },
+      { "fromRating": 94, "maximum": 8000000 },
+      { "fromRating": 90, "maximum": 3000000 },
+      { "fromRating": 86, "maximum": 750000 },
+      { "fromRating": 82, "maximum": 250000 },
+      { "fromRating": 75, "maximum": 100000 }
+    ],
+    "defaultMaximum": 25000,
+    "specialMaximumFloor": 250000
+  },
+
+  "_bidIncrementsComment": "The smallest raise over the current bid: the step of the first band the bid is below, otherwise defaultBidIncrement.",
+  "bidIncrements": [
+    { "below": 1000, "step": 50 },
+    { "below": 10000, "step": 100 },
+    { "below": 50000, "step": 250 },
+    { "below": 100000, "step": 500 }
+  ],
+  "defaultBidIncrement": 1000,
+
+  "_fairValueComment": "An AI listing's reference price. Below each band's belowRating: base + perRating * (rating - fromRating) + perRatingSquared * (rating - fromRating)^2. Specials multiply by specialMultiplier + min(rareflag, 100) / specialRareflagDivisor. A stable per-card jitter of jitterMinimum + (hash % jitterSteps) / 100 is applied, then the price is clamped to the card's bounds.",
+  "fairValue": {
+    "bands": [
+      { "belowRating": 65, "fromRating": 0, "base": 350, "perRating": 8, "perRatingSquared": 0 },
+      { "belowRating": 75, "fromRating": 65, "base": 700, "perRating": 180, "perRatingSquared": 0 },
+      { "belowRating": 82, "fromRating": 75, "base": 1500, "perRating": 0, "perRatingSquared": 450 },
+      { "belowRating": 87, "fromRating": 82, "base": 20000, "perRating": 0, "perRatingSquared": 12000 },
+      { "belowRating": 92, "fromRating": 87, "base": 150000, "perRating": 0, "perRatingSquared": 90000 },
+      { "belowRating": 100, "fromRating": 92, "base": 900000, "perRating": 0, "perRatingSquared": 210000 }
+    ],
+    "specialMultiplier": 1.35,
+    "specialRareflagDivisor": 180,
+    "jitterMinimum": 0.90,
+    "jitterSteps": 21
+  },
+
+  "_aiListingsComment": "The market maintenance job keeps up to target active AI listings (ULTIMATETEAM21_MARKET_TARGET overrides it), adding at most maxPerTopUp per pass. Start and Buy Now prices are drawn around the fair value; durations are picked from durationsSeconds.",
+  "aiListings": {
+    "target": 500,
+    "maxTarget": 5000,
+    "maxPerTopUp": 250,
+    "startingBidFactor": { "minimum": 0.72, "maximum": 0.90 },
+    "buyNowFactor": { "minimum": 1.05, "maximum": 1.35 },
+    "durationsSeconds": [1800, 3600, 7200, 21600],
+    "sellerNamePrefix": "FUTUser",
+    "sellerNumber": { "minimum": 1000, "maximum": 9999 },
+    "previewItemIdBase": 800000000,
+    "previewItemIdSpan": 99999999
+  },
+
+  "_listingsComment": "Player listing durations are clamped to these bounds; searches and watchlists page with these defaults and limits.",
+  "listings": {
+    "defaultDurationSeconds": 3600,
+    "minimumDurationSeconds": 60,
+    "maximumDurationSeconds": 259200,
+    "maxAuctionsAllowed": 100,
+    "sellerEstablishedDaysBefore": 30,
+    "sellerPublicIdBase": 100000,
+    "sellerPublicIdSpan": 899999999,
+    "defaultSellerName": "Aurora21 Player",
+    "maxSellerNameLength": 64,
+    "searchPageSize": 16,
+    "maxSearchPageSize": 50,
+    "slowSearchMilliseconds": 100,
+    "watchlistPageSize": 50,
+    "maxWatchlistPageSize": 100
+  }
+}

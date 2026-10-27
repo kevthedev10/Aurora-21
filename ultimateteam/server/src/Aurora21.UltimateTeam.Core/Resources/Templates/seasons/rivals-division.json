@@ -1,0 +1,10 @@
+{
+  "division": {
+    "divisionId": "{{divisionId}}",
+    "localizedName": "{{localizedName}}",
+    "eloThresholdDown": "{{floor}}",
+    "eloThresholdUp": "{{ceiling}}",
+    "relegationBuffer": "{{relegationBuffer}}"
+  },
+  "weekendLeaguePointsForWin": "{{pointsForWin}}"
+}

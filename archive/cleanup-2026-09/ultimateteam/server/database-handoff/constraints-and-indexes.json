@@ -1,0 +1,773 @@
+{
+  "formatVersion": 1,
+  "status": "historical design context only; implementation-specification.json is the fixed fresh-artifact task authority",
+  "requiredUniqueness": [
+    {
+      "table": "nations",
+      "columns": [
+        "native_nation_id"
+      ],
+      "kind": "column_unique",
+      "source": "column catalog"
+    },
+    {
+      "table": "leagues",
+      "columns": [
+        "native_league_id"
+      ],
+      "kind": "column_unique",
+      "source": "column catalog"
+    },
+    {
+      "table": "teams",
+      "columns": [
+        "native_team_id"
+      ],
+      "kind": "column_unique",
+      "source": "column catalog"
+    },
+    {
+      "table": "item_families",
+      "columns": [
+        "code"
+      ],
+      "kind": "column_unique",
+      "source": "column catalog"
+    },
+    {
+      "table": "item_definitions",
+      "columns": [
+        "game_year",
+        "family_id",
+        "native_resource_id"
+      ],
+      "kind": "business_unique",
+      "source": "column catalog",
+      "deferrability": "only when inventoried transactional swaps need it; preserve supported ON CONFLICT targets"
+    },
+    {
+      "table": "card_types",
+      "columns": [
+        "code"
+      ],
+      "kind": "column_unique",
+      "source": "column catalog"
+    },
+    {
+      "table": "card_designs",
+      "columns": [
+        "code"
+      ],
+      "kind": "column_unique",
+      "source": "column catalog"
+    },
+    {
+      "table": "card_type_designs",
+      "columns": [
+        "card_type_id",
+        "design_id"
+      ],
+      "kind": "business_unique",
+      "source": "column catalog",
+      "deferrability": "only when inventoried transactional swaps need it; preserve supported ON CONFLICT targets"
+    },
+    {
+      "table": "promos",
+      "columns": [
+        "code"
+      ],
+      "kind": "column_unique",
+      "source": "column catalog"
+    },
+    {
+      "table": "promo_cards",
+      "columns": [
+        "promo_id",
+        "definition_id"
+      ],
+      "kind": "business_unique",
+      "source": "column catalog",
+      "deferrability": "only when inventoried transactional swaps need it; preserve supported ON CONFLICT targets"
+    },
+    {
+      "table": "card_rarity_groups",
+      "columns": [
+        "card_type_id",
+        "native_group_id"
+      ],
+      "kind": "business_unique",
+      "source": "column catalog",
+      "deferrability": "only when inventoried transactional swaps need it; preserve supported ON CONFLICT targets"
+    },
+    {
+      "table": "clubs",
+      "columns": [
+        "persona_id"
+      ],
+      "kind": "column_unique",
+      "source": "column catalog"
+    },
+    {
+      "table": "items",
+      "columns": [
+        "club_id",
+        "native_item_id"
+      ],
+      "kind": "business_unique",
+      "source": "column catalog",
+      "deferrability": "only when inventoried transactional swaps need it; preserve supported ON CONFLICT targets"
+    },
+    {
+      "table": "player_stat_values",
+      "columns": [
+        "item_id",
+        "scope",
+        "stat_index"
+      ],
+      "kind": "business_unique",
+      "source": "column catalog",
+      "deferrability": "only when inventoried transactional swaps need it; preserve supported ON CONFLICT targets"
+    },
+    {
+      "table": "player_attribute_overrides",
+      "columns": [
+        "item_id",
+        "attribute_code"
+      ],
+      "kind": "business_unique",
+      "source": "column catalog",
+      "deferrability": "only when inventoried transactional swaps need it; preserve supported ON CONFLICT targets"
+    },
+    {
+      "table": "squads",
+      "columns": [
+        "club_id",
+        "native_squad_id"
+      ],
+      "kind": "business_unique",
+      "source": "column catalog",
+      "deferrability": "only when inventoried transactional swaps need it; preserve supported ON CONFLICT targets"
+    },
+    {
+      "table": "squad_players",
+      "columns": [
+        "squad_id",
+        "slot_index"
+      ],
+      "kind": "business_unique",
+      "source": "column catalog",
+      "deferrability": "only when inventoried transactional swaps need it; preserve supported ON CONFLICT targets"
+    },
+    {
+      "table": "squad_players",
+      "columns": [
+        "squad_id",
+        "footballer_id"
+      ],
+      "kind": "business_unique",
+      "source": "column catalog",
+      "deferrability": "only when inventoried transactional swaps need it; preserve supported ON CONFLICT targets"
+    },
+    {
+      "table": "squad_managers",
+      "columns": [
+        "squad_id"
+      ],
+      "kind": "business_unique",
+      "source": "column catalog",
+      "deferrability": "only when inventoried transactional swaps need it; preserve supported ON CONFLICT targets"
+    },
+    {
+      "table": "squad_roles",
+      "columns": [
+        "squad_id",
+        "role_code",
+        "ordinal"
+      ],
+      "kind": "business_unique",
+      "source": "column catalog",
+      "deferrability": "only when inventoried transactional swaps need it; preserve supported ON CONFLICT targets"
+    },
+    {
+      "table": "squad_tactics",
+      "columns": [
+        "squad_id",
+        "mentality"
+      ],
+      "kind": "business_unique",
+      "source": "column catalog",
+      "deferrability": "only when inventoried transactional swaps need it; preserve supported ON CONFLICT targets"
+    },
+    {
+      "table": "squad_tactic_settings",
+      "columns": [
+        "tactic_id",
+        "setting_code"
+      ],
+      "kind": "business_unique",
+      "source": "column catalog",
+      "deferrability": "only when inventoried transactional swaps need it; preserve supported ON CONFLICT targets"
+    },
+    {
+      "table": "squad_tactic_instructions",
+      "columns": [
+        "tactic_id",
+        "instruction_code",
+        "ordinal"
+      ],
+      "kind": "business_unique",
+      "source": "column catalog",
+      "deferrability": "only when inventoried transactional swaps need it; preserve supported ON CONFLICT targets"
+    },
+    {
+      "table": "club_slot_bindings",
+      "columns": [
+        "club_id",
+        "slot_id"
+      ],
+      "kind": "business_unique",
+      "source": "column catalog",
+      "deferrability": "only when inventoried transactional swaps need it; preserve supported ON CONFLICT targets"
+    },
+    {
+      "table": "market_player_stat_values",
+      "columns": [
+        "trade_id",
+        "scope",
+        "stat_index"
+      ],
+      "kind": "business_unique",
+      "source": "column catalog",
+      "deferrability": "only when inventoried transactional swaps need it; preserve supported ON CONFLICT targets"
+    },
+    {
+      "table": "market_player_attribute_overrides",
+      "columns": [
+        "trade_id",
+        "attribute_code"
+      ],
+      "kind": "business_unique",
+      "source": "column catalog",
+      "deferrability": "only when inventoried transactional swaps need it; preserve supported ON CONFLICT targets"
+    },
+    {
+      "table": "market_watch",
+      "columns": [
+        "club_id",
+        "trade_id"
+      ],
+      "kind": "business_unique",
+      "source": "column catalog",
+      "deferrability": "only when inventoried transactional swaps need it; preserve supported ON CONFLICT targets"
+    },
+    {
+      "table": "match_settlements",
+      "columns": [
+        "club_id",
+        "match_key"
+      ],
+      "kind": "business_unique",
+      "source": "column catalog",
+      "deferrability": "only when inventoried transactional swaps need it; preserve supported ON CONFLICT targets"
+    },
+    {
+      "table": "player_pick_choices",
+      "columns": [
+        "token_item_id",
+        "ordinal"
+      ],
+      "kind": "business_unique",
+      "source": "column catalog",
+      "deferrability": "only when inventoried transactional swaps need it; preserve supported ON CONFLICT targets"
+    },
+    {
+      "table": "draft_runs",
+      "columns": [
+        "club_id",
+        "slot"
+      ],
+      "kind": "business_unique",
+      "source": "column catalog",
+      "deferrability": "only when inventoried transactional swaps need it; preserve supported ON CONFLICT targets"
+    },
+    {
+      "table": "draft_picks",
+      "columns": [
+        "run_id",
+        "pick_kind",
+        "position_id"
+      ],
+      "kind": "business_unique",
+      "source": "column catalog",
+      "deferrability": "only when inventoried transactional swaps need it; preserve supported ON CONFLICT targets"
+    },
+    {
+      "table": "draft_choices",
+      "columns": [
+        "run_id",
+        "ordinal"
+      ],
+      "kind": "business_unique",
+      "source": "column catalog",
+      "deferrability": "only when inventoried transactional swaps need it; preserve supported ON CONFLICT targets"
+    },
+    {
+      "table": "draft_formation_choices",
+      "columns": [
+        "run_id",
+        "ordinal"
+      ],
+      "kind": "business_unique",
+      "source": "column catalog",
+      "deferrability": "only when inventoried transactional swaps need it; preserve supported ON CONFLICT targets"
+    },
+    {
+      "table": "draft_seen_footballers",
+      "columns": [
+        "run_id",
+        "footballer_id"
+      ],
+      "kind": "business_unique",
+      "source": "column catalog",
+      "deferrability": "only when inventoried transactional swaps need it; preserve supported ON CONFLICT targets"
+    },
+    {
+      "table": "objective_counters",
+      "columns": [
+        "club_id",
+        "stat_code"
+      ],
+      "kind": "business_unique",
+      "source": "column catalog",
+      "deferrability": "only when inventoried transactional swaps need it; preserve supported ON CONFLICT targets"
+    },
+    {
+      "table": "objective_claims",
+      "columns": [
+        "club_id",
+        "scope",
+        "claim_id"
+      ],
+      "kind": "business_unique",
+      "source": "column catalog",
+      "deferrability": "only when inventoried transactional swaps need it; preserve supported ON CONFLICT targets"
+    },
+    {
+      "table": "onboarding_kit_choices",
+      "columns": [
+        "club_id",
+        "role"
+      ],
+      "kind": "business_unique",
+      "source": "column catalog",
+      "deferrability": "only when inventoried transactional swaps need it; preserve supported ON CONFLICT targets"
+    },
+    {
+      "table": "onboarding_stale_loans",
+      "columns": [
+        "club_id",
+        "ordinal"
+      ],
+      "kind": "business_unique",
+      "source": "column catalog",
+      "deferrability": "only when inventoried transactional swaps need it; preserve supported ON CONFLICT targets"
+    },
+    {
+      "table": "sbc_completed",
+      "columns": [
+        "club_id",
+        "challenge_key"
+      ],
+      "kind": "business_unique",
+      "source": "column catalog",
+      "deferrability": "only when inventoried transactional swaps need it; preserve supported ON CONFLICT targets"
+    },
+    {
+      "table": "sbc_squad_counts",
+      "columns": [
+        "club_id",
+        "challenge_id"
+      ],
+      "kind": "business_unique",
+      "source": "column catalog",
+      "deferrability": "only when inventoried transactional swaps need it; preserve supported ON CONFLICT targets"
+    },
+    {
+      "table": "client_data",
+      "columns": [
+        "club_id",
+        "kind",
+        "entry_key"
+      ],
+      "kind": "business_unique",
+      "source": "column catalog",
+      "deferrability": "only when inventoried transactional swaps need it; preserve supported ON CONFLICT targets"
+    },
+    {
+      "table": "club_flags",
+      "columns": [
+        "club_id",
+        "flag"
+      ],
+      "kind": "business_unique",
+      "source": "column catalog",
+      "deferrability": "only when inventoried transactional swaps need it; preserve supported ON CONFLICT targets"
+    },
+    {
+      "table": "legacy_kv",
+      "columns": [
+        "club_id",
+        "key"
+      ],
+      "kind": "business_unique",
+      "source": "column catalog",
+      "deferrability": "only when inventoried transactional swaps need it; preserve supported ON CONFLICT targets"
+    },
+    {
+      "table": "squad_players",
+      "columns": [
+        "squad_id",
+        "footballer_id"
+      ],
+      "kind": "business_unique",
+      "scope": "eligible slot range must be established by client/source evidence; owned and concept entries participate",
+      "blocker": "do not invent exclusion exceptions or silently discard legacy conflicts"
+    }
+  ],
+  "requiredPartialUniqueIndexes": [
+    {
+      "table": "squads",
+      "columns": [
+        "club_id"
+      ],
+      "purpose": "At most one active squad",
+      "unique": true,
+      "predicate": "active"
+    },
+    {
+      "table": "card_type_designs",
+      "columns": [
+        "card_type_id"
+      ],
+      "purpose": "At most one default design per type",
+      "unique": true,
+      "predicate": "is_default"
+    },
+    {
+      "table": "market_listings",
+      "columns": [
+        "seller_club_id",
+        "seller_item_id"
+      ],
+      "purpose": "One active player listing per native seller item",
+      "unique": true,
+      "predicate": "kind = 'player' AND state = 'active'"
+    },
+    {
+      "table": "footballers",
+      "columns": [
+        "native_footballer_id"
+      ],
+      "purpose": "Verified supported-dataset footballer identity",
+      "unique": true,
+      "predicate": "identity_status = 'resolved' AND native_footballer_id IS NOT NULL",
+      "evidenceRequired": "resolve actual footballer identity before activation"
+    }
+  ],
+  "requiredCrossRowAndLifecycleInvariants": [
+    {
+      "id": "family_state",
+      "tables": "items and item_definitions",
+      "rule": "Exactly one required family child at commit, matching parent family. Player/manager/consumable/customization definitions have their typed definition children; token definition has no invented family child. Owned items have exactly their selected family child.",
+      "implementation": "Check inserts, updates, deletes on parent and every family child; permit temporary insertion-order gaps within one transaction, reject inconsistent commit."
+    },
+    {
+      "id": "definition_agreement",
+      "tables": "items",
+      "rule": "family_id matches referenced item definition; owned children derive owner/definition/footballer through parent.",
+      "implementation": "Revalidate changes to item family/definition and definition family, including concurrent writers."
+    },
+    {
+      "id": "squad_ownership",
+      "tables": "squad_players, squad_managers",
+      "rule": "Owned item must belong to squads.club_id and match declared definition/family.",
+      "implementation": "Check membership and item/squad owner/definition changes on both sides; use reviewed row locks for concurrent changes."
+    },
+    {
+      "id": "squad_footballer",
+      "tables": "squad_players",
+      "rule": "footballer_id matches referenced player card definition. Owned and concept versions use same identity.",
+      "implementation": "Check memberships and card definition identity changes; do not enforce unverified native mappings as truth."
+    },
+    {
+      "id": "reference_kind",
+      "tables": "squad_players, squad_managers, club_slot_bindings",
+      "rule": "Owned kind requires an owned reference; concept/verified virtual kind has no owned reference and requires sourced wire/default identity.",
+      "implementation": "Local CHECK where possible plus deferred cross-row validation; no fabricated owned items for defaults."
+    },
+    {
+      "id": "same_parent_roles",
+      "tables": "squad_roles, squad_tactic_instructions",
+      "rule": "Referenced squad_player_id belongs to the role squad or tactic squad. Roles render slot from validated membership.",
+      "implementation": "Check assignment and membership/tactic reparenting; preserve valid swap/empty-slot behavior."
+    },
+    {
+      "id": "equipment",
+      "tables": "club_slot_bindings, onboarding_kit_choices",
+      "rule": "Item belongs to club and matches definition, native kind/subtype and slot compatibility.",
+      "implementation": "Check changes on both sides; lock/refuse according to existing equipment rules; rules stay source of slot eligibility."
+    },
+    {
+      "id": "pick_selection",
+      "tables": "player_pick_items and player_pick_choices",
+      "rule": "selected_choice_id belongs to this token and selection occurs exactly once with grant/delete lifecycle in the same transaction.",
+      "implementation": "Deferred same-token validation plus atomic selection/idempotency; replay must not generate new choices."
+    },
+    {
+      "id": "stack_quantity",
+      "tables": "consumable_items",
+      "rule": "Retained stack quantity > 0 and 0 <= untradeable_quantity <= quantity.",
+      "implementation": "Final consumption deletes empty stack; keep aliases amount/stackCount derived."
+    },
+    {
+      "id": "balances",
+      "tables": "clubs",
+      "rule": "credits >= 0 and fifa_points >= 0.",
+      "implementation": "Preserve existing version-5 checks and atomic market/pack/account behavior."
+    },
+    {
+      "id": "native_item_positive",
+      "tables": "items",
+      "rule": "native_item_id > 0, preserving existing stored positive-ID invariant.",
+      "implementation": "Audit imported storage/document disagreement; no automatic renumbering of wire documents or reference loss."
+    },
+    {
+      "id": "player_stats",
+      "tables": "player_stat_values, market_player_stat_values",
+      "rule": "scope current/lifetime and supported stat bounds; values clamp nonnegative only as current converter does.",
+      "implementation": "playerStatSlots comes from current rules; preserve unknown index meanings and conversion behavior."
+    },
+    {
+      "id": "manager_style_position",
+      "tables": "player_items, manager_items",
+      "rule": "Resolved applied style is the applicable chemistry-style consumable, and position/league overrides obey traced rules.",
+      "implementation": "Validate source-specific compatibility and update both definition/state changes; no arbitrary FK to any consumable."
+    },
+    {
+      "id": "market_kind",
+      "tables": "market_listings",
+      "rule": "kind player implies positive seller_item_id and non-null seller_club_id; kind ai implies both null.",
+      "implementation": "Copy current ClubSchema version-5 exact behavior; historical seller_item_id remains native club-local number."
+    },
+    {
+      "id": "market_state",
+      "tables": "market_listings",
+      "rule": "state in active, closed, expired, cancelled.",
+      "implementation": "Preserve current listing lifecycle; no new states inferred from words in documentation."
+    },
+    {
+      "id": "market_amounts",
+      "tables": "market_listings",
+      "rule": "starting_bid >= 0; buy_now >= starting_bid; current_bid >= 0; sold_price >= 0; offers >= 0.",
+      "implementation": "Preserve version-5 contract."
+    },
+    {
+      "id": "market_bid_time",
+      "tables": "market_listings",
+      "rule": "Active listing with current_bid != 0 requires bidder_club_id; active end_time > created_at.",
+      "implementation": "Preserve version-5 contract."
+    },
+    {
+      "id": "market_active_owner",
+      "tables": "market_listings",
+      "rule": "Active player listing resolves seller_club_id/seller_item_id to actual player inventory with matching definition and reviewed escrow state.",
+      "implementation": "Preserve global market advisory lock and club lock order; historical closed listing must survive seller item deletion."
+    },
+    {
+      "id": "market_snapshot",
+      "tables": "market_item_snapshots and player children",
+      "rule": "Snapshot preserves every transferred/displayed field and does not change after publication; definition_revision alone is not an archived base-attribute snapshot.",
+      "implementation": "Choose explicit immutable revision history or sufficient typed frozen definition data before mutable catalog updates; prove old listings survive update/delete."
+    },
+    {
+      "id": "market_projection",
+      "tables": "market_listings",
+      "rule": "Native search projections agree with immutable listing snapshot and current JsonValues conversion contracts.",
+      "implementation": "Do not FK native market nation_id/league_id/team_id to internal dimension IDs; version-6 behavior remains observable."
+    },
+    {
+      "id": "draft_parent",
+      "tables": "draft children",
+      "rule": "run_id identifies parent; reset/version change atomically replaces prior run children and rejects stale generation.",
+      "implementation": "Draft choices/picks are virtual; preserve native wire IDs, stable order and current AUD-DB-008 unresolved retry key."
+    },
+    {
+      "id": "onboarding_history",
+      "tables": "onboarding, onboarding_stale_loans",
+      "rule": "Zero/historical/virtual loan/badge wire IDs and duplicate/order semantics are retained.",
+      "implementation": "Do not add unconditional FK from stale wire IDs to current inventory or invent resolved items."
+    },
+    {
+      "id": "opaque_authority",
+      "tables": "extensions and replay/provenance tables",
+      "rule": "Unknown JSON never overrides canonical typed decision fields; match_settlements.response remains immutable retry payload.",
+      "implementation": "Explicit field retention classifications; do not recreate whole live item documents as hidden authority."
+    },
+    {
+      "id": "delete_behavior",
+      "tables": "all relationships",
+      "rule": "Definition deletion cannot cascade into owned inventory. Quick sell cannot cascade through a saved squad to bypass current refusal.",
+      "implementation": "Specify every FK ON DELETE/UPDATE from actual lifecycle; family and owned feature cleanup follow parent where safe, historical snapshots/import hashes survive appropriate deletion."
+    }
+  ],
+  "secondaryIndexCandidates": [
+    {
+      "table": "items",
+      "columns": [
+        "club_id",
+        "pile",
+        "native_item_id"
+      ],
+      "purpose": "Inventory filters, counts and native-order paging"
+    },
+    {
+      "table": "items",
+      "columns": [
+        "club_id",
+        "definition_id",
+        "pile",
+        "native_item_id"
+      ],
+      "purpose": "Same-card ownership/duplicate lookup"
+    },
+    {
+      "table": "items",
+      "columns": [
+        "club_id",
+        "family_id",
+        "pile",
+        "native_item_id"
+      ],
+      "purpose": "Family inventory; only if actual predicates justify it"
+    },
+    {
+      "table": "player_card_definitions",
+      "columns": [
+        "footballer_id",
+        "rating DESC",
+        "definition_id"
+      ],
+      "purpose": "Footballer variants in requested order"
+    },
+    {
+      "table": "player_card_definitions",
+      "columns": [
+        "card_type_id",
+        "definition_id"
+      ],
+      "purpose": "Type-filtered catalog reads"
+    },
+    {
+      "table": "promo_cards",
+      "columns": [
+        "definition_id",
+        "promo_id"
+      ],
+      "purpose": "Reverse promo membership"
+    },
+    {
+      "table": "squad_players",
+      "columns": [
+        "item_id"
+      ],
+      "purpose": "Reverse owned-player transfer/removal guard"
+    },
+    {
+      "table": "squad_managers",
+      "columns": [
+        "item_id"
+      ],
+      "purpose": "Reverse manager guard"
+    },
+    {
+      "table": "club_slot_bindings",
+      "columns": [
+        "item_id"
+      ],
+      "purpose": "Reverse equipment guard"
+    },
+    {
+      "table": "onboarding_kit_choices",
+      "columns": [
+        "item_id"
+      ],
+      "purpose": "Reverse equipped kit guard if needed"
+    },
+    {
+      "table": "market_listings",
+      "columns": [
+        "state",
+        "end_time"
+      ],
+      "purpose": "Expiry maintenance"
+    },
+    {
+      "table": "market_listings",
+      "columns": [
+        "seller_club_id",
+        "state"
+      ],
+      "purpose": "Seller transfer list"
+    },
+    {
+      "table": "market_listings",
+      "columns": [
+        "state",
+        "resource_id",
+        "rating",
+        "buy_now",
+        "seller_club_id"
+      ],
+      "purpose": "Existing search index; reassess against version-6 predicates"
+    },
+    {
+      "table": "market_watch",
+      "columns": [
+        "trade_id",
+        "club_id"
+      ],
+      "purpose": "Reverse watch/deletion lookup"
+    },
+    {
+      "table": "market_watch",
+      "columns": [
+        "club_id",
+        "watched_at"
+      ],
+      "purpose": "Watched-list response insertion order"
+    },
+    {
+      "table": "unopened_packs",
+      "columns": [
+        "club_id",
+        "pack_id",
+        "id"
+      ],
+      "purpose": "Pack grant lookup and stable paging"
+    }
+  ],
+  "additionalIndexRules": [
+    "Do not duplicate PK/UQ-covered prefixes without measured need.",
+    "Inventory referencing FK columns; decide supporting indexes from real parent-delete, join and guard queries.",
+    "Do not index every attribute/stat/JSON column.",
+    "Use EXPLAIN (ANALYZE, BUFFERS) on disposable multi-club/skewed fixtures with refreshed statistics.",
+    "Record storage size, write amplification, actual rows, buffers, sort, latency, SQL count and fetched bytes.",
+    "The partial eligible-footballer invariant requires verified slot scope; do not invent a WHERE slot_index predicate."
+  ],
+  "concurrencyRequirements": [
+    "Deferred validation must cover both endpoints of every mutable relationship.",
+    "Acquire parent/owner/reference locks in consistent reviewed order; demonstrate competing transactions cannot commit invalid references.",
+    "No application-only ownership guarantee and no new global all-inventory write lock introduced as a convenience.",
+    "Permit legal squad swaps without transient uniqueness failure; preserve idempotent claim ON CONFLICT behavior when choosing deferrability."
+  ]
+}

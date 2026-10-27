@@ -1,0 +1,22 @@
+{
+  "id": "{{slot}}",
+  "squadId": "{{slot}}",
+  "clubName": "{{clubName}}",
+  "clubAbbr": "{{clubAbbr}}",
+  "badgeAssetId": "{{badge}}",
+  "rating": "{{rating}}",
+  "chemistry": "{{chemistry}}",
+  "formation": "{{formation}}",
+  "difficulty": "{{difficulty}}",
+  "difficultyName": "{{difficulty}}",
+  "estDate": "{{estDate}}",
+  "nation": "{{nation}}",
+  "custom": "{{custom}}",
+  "basePointsWin": "{{basePointsWin}}",
+  "basePointsLoss": "{{basePointsLoss}}",
+  "sqbt2data": {
+    "stadiumAssetId": "{{stadiumId}}",
+    "isHomeTeam": true,
+    "topPlayers": "{{topPlayers}}"
+  }
+}

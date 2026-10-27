@@ -1,0 +1,170 @@
+{
+  "formatVersion": 1,
+  "preparedOn": "2026-09-16",
+  "branch": "feat/local-c-sharp-fut",
+  "worktreeParent": "3a40319",
+  "containsLiveClubData": false,
+  "provenanceWarning": "Current players.json is a WeFUT-enriched replacement of an older native-derived catalog. Historical native manifest does not attest the current file. Do not label all native IDs or footballer joins as verified. No scraping, new IDs or external data introduced by this handoff.",
+  "inputs": [
+    {
+      "path": "data/catalogs/players.json",
+      "repositorySource": "ultimateteam/runtime-source/ultimateteam21/players.json",
+      "bytes": 42491217,
+      "sha256": "351a4f9d6a0019ed7a59c5d6cf5ccfb1db8cecb70d6750042fc2d6e88c5c10b8",
+      "records": 22500,
+      "role": "seed input; preserve current bundled values, not a claim of native verification"
+    },
+    {
+      "path": "data/catalogs/custom-players.json",
+      "repositorySource": "ultimateteam/runtime-source/ultimateteam21/custom-players.json",
+      "bytes": 19851,
+      "sha256": "926bffc1b99046551735a5d5f2c03d265aa15b8728d117c198c3e964c9863630",
+      "records": 6,
+      "role": "seed input; preserve current bundled values, not a claim of native verification"
+    },
+    {
+      "path": "data/catalogs/managers.json",
+      "repositorySource": "ultimateteam/runtime-source/ultimateteam21/managers.json",
+      "bytes": 100465,
+      "sha256": "0fbe9bb3c0f39de1f81c9d695ca2c8cc22d6c855d498929cb718fa7d87e25483",
+      "records": 311,
+      "role": "seed input; preserve current bundled values, not a claim of native verification"
+    },
+    {
+      "path": "data/catalogs/kits.json",
+      "repositorySource": "ultimateteam/runtime-source/ultimateteam21/kits.json",
+      "bytes": 249149,
+      "sha256": "a6401a707b5cda727006f43bb43212b1e4f14cc92909d0014bc88f24f90d4e84",
+      "records": 1382,
+      "role": "seed input; preserve current bundled values, not a claim of native verification"
+    },
+    {
+      "path": "data/catalogs/stadiums.json",
+      "repositorySource": "ultimateteam/runtime-source/ultimateteam21/stadiums.json",
+      "bytes": 5709,
+      "sha256": "cdcd9c6b8f4d917be8d9095abb2e42accc84b28ff85eca29cfceaa7cec8d0f46",
+      "records": 74,
+      "role": "seed input; preserve current bundled values, not a claim of native verification"
+    },
+    {
+      "path": "data/rules/cards.json",
+      "repositorySource": "ultimateteam/runtime-source/ultimateteam21/rules/cards.json",
+      "bytes": 7806,
+      "sha256": "fe30de79f84ef62fcb38ddec6d2e3a0ec1dde5faa035bb222f3a05d950b876f0",
+      "records": null,
+      "role": "existing policy/default source; only explicitly mapped catalog products become seed rows"
+    },
+    {
+      "path": "data/rules/club.json",
+      "repositorySource": "ultimateteam/runtime-source/ultimateteam21/rules/club.json",
+      "bytes": 9813,
+      "sha256": "c699511771fd7ab4985670ae53e6fc8a14c8b0c4a4ef6d5f7eb671a4e1070360",
+      "records": null,
+      "role": "existing policy/default source; only explicitly mapped catalog products become seed rows"
+    },
+    {
+      "path": "data/rules/draft.json",
+      "repositorySource": "ultimateteam/runtime-source/ultimateteam21/rules/draft.json",
+      "bytes": 4052,
+      "sha256": "990f7c6b3dddbc7374ae74b4aa87fa7fcd62c88aaf7a656c08881f12746391b4",
+      "records": null,
+      "role": "existing policy/default source; only explicitly mapped catalog products become seed rows"
+    },
+    {
+      "path": "data/rules/market.json",
+      "repositorySource": "ultimateteam/runtime-source/ultimateteam21/rules/market.json",
+      "bytes": 3729,
+      "sha256": "342af37508a3d9425e89b8cfdd1ddd32bf400dac5313ac1ad8a1fb7507f70dfd",
+      "records": null,
+      "role": "existing policy/default source; only explicitly mapped catalog products become seed rows"
+    },
+    {
+      "path": "data/rules/objectives.json",
+      "repositorySource": "ultimateteam/runtime-source/ultimateteam21/rules/objectives.json",
+      "bytes": 7087,
+      "sha256": "639ac79e6d1d48de73dec0f39095c6ec811a9ece0b404583deb6d94fff90a7e6",
+      "records": null,
+      "role": "existing policy/default source; only explicitly mapped catalog products become seed rows"
+    },
+    {
+      "path": "data/rules/onboarding.json",
+      "repositorySource": "ultimateteam/runtime-source/ultimateteam21/rules/onboarding.json",
+      "bytes": 388,
+      "sha256": "e31445efb13f5479c0e7bdbde30ae30ee0453d5a720e26f565ccd7b91439e505",
+      "records": null,
+      "role": "existing policy/default source; only explicitly mapped catalog products become seed rows"
+    },
+    {
+      "path": "data/rules/packs.json",
+      "repositorySource": "ultimateteam/runtime-source/ultimateteam21/rules/packs.json",
+      "bytes": 12361,
+      "sha256": "9d536d895078ed1d80ff98f18b221e2377d203582970bf3406c012927e2df356",
+      "records": null,
+      "role": "existing policy/default source; only explicitly mapped catalog products become seed rows"
+    },
+    {
+      "path": "data/rules/sbc.json",
+      "repositorySource": "ultimateteam/runtime-source/ultimateteam21/rules/sbc.json",
+      "bytes": 4462,
+      "sha256": "f341104d2f729d87fb03677637c2cfdf1cddba6077789e1af7d62b4d1fa8499e",
+      "records": null,
+      "role": "existing policy/default source; only explicitly mapped catalog products become seed rows"
+    },
+    {
+      "path": "data/rules/seasons.json",
+      "repositorySource": "ultimateteam/runtime-source/ultimateteam21/rules/seasons.json",
+      "bytes": 4214,
+      "sha256": "79fc5f23fe82e0e5f7c3c7dff6d3b5c2e1be76e387e5e55590ee24bd586f3814",
+      "records": null,
+      "role": "existing policy/default source; only explicitly mapped catalog products become seed rows"
+    },
+    {
+      "path": "data/rules/squad_battles.json",
+      "repositorySource": "ultimateteam/runtime-source/ultimateteam21/rules/squad_battles.json",
+      "bytes": 3179,
+      "sha256": "7d533d02eab9b1ae6364d4a37a611fa8630cb8912c43422a34b10a86a49db69a",
+      "records": null,
+      "role": "existing policy/default source; only explicitly mapped catalog products become seed rows"
+    },
+    {
+      "path": "data/provenance/player-catalog-manifest.json",
+      "repositorySource": "ultimateteam/native-data/player-catalog-manifest.json",
+      "bytes": 3283,
+      "sha256": "613e063f0512a88cdccef10fa5d15cf29900991b0590e4f573b6e0e68c25ca89",
+      "records": null,
+      "role": "historical source/audit reference; compare output hash before trusting provenance"
+    },
+    {
+      "path": "data/provenance/player-catalog-quarantine.json",
+      "repositorySource": "ultimateteam/native-data/player-catalog-quarantine.json",
+      "bytes": 238522,
+      "sha256": "2bbf71fa30bbf026bf667bdfc91ee4474b534696b01fb869003052988468f606",
+      "records": 747,
+      "role": "historical source/audit reference; compare output hash before trusting provenance"
+    },
+    {
+      "path": "data/provenance/wefut-fifa21-rarities.json",
+      "repositorySource": "ultimateteam/native-data/wefut-fifa21-rarities.json",
+      "bytes": 9016,
+      "sha256": "5e1b0c06e08661e0a5c2802759897040551cf3fdfc36481bd7a3928353ba845a",
+      "records": null,
+      "role": "historical source/audit reference; compare output hash before trusting provenance"
+    },
+    {
+      "path": "data/provenance/wefut-player-catalog-manifest.json",
+      "repositorySource": "ultimateteam/native-data/wefut-player-catalog-manifest.json",
+      "bytes": 1864,
+      "sha256": "6c732af731af318fa7a05004d32133f7a810890e450dd49edc74c82fb0ee74dd",
+      "records": null,
+      "role": "historical source/audit reference; compare output hash before trusting provenance"
+    },
+    {
+      "path": "data/catalogs/card-render-tunables.json",
+      "repositorySource": "ultimateteam/runtime-source/ultimateteam21/contentfifa/fut/items/images/backgrounds/itemBGs/futitemraritytunables.json",
+      "bytes": 82314,
+      "sha256": "2391c58bd5ad0f1ac6edb7e75513baf5b69d282c2eb5c462f3bd5190499285a0",
+      "records": null,
+      "role": "client presentation source, not a verified mapping to proposed design fields"
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "houseRules": [
+    {
+      "name": "CLASSIC_MATCH",
+      "state": "ENABLED",
+      "isFavourite": false,
+      "houseRuleId": 0,
+      "subType": "BASIC",
+      "priority": 0,
+      "title": "FUT_HR_GAMETYPE_0",
+      "description": "FUT_HR_GAMETYPE_0_DESC"
+    },
+    {
+      "name": "SURVIVAL",
+      "state": "ENABLED",
+      "isFavourite": false,
+      "houseRuleId": 1,
+      "subType": "BASIC",
+      "priority": 0,
+      "title": "FUT_HR_GAMETYPE_1",
+      "description": "FUT_HR_GAMETYPE_1_DESC"
+    },
+    {
+      "name": "HEADERS_VOLLEYS",
+      "state": "ENABLED",
+      "isFavourite": false,
+      "houseRuleId": 5,
+      "subType": "BASIC",
+      "priority": 0,
+      "title": "FUT_HR_GAMETYPE_5",
+      "description": "FUT_HR_GAMETYPE_5_DESC"
+    },
+    {
+      "name": "LONG_RANGE",
+      "state": "ENABLED",
+      "isFavourite": false,
+      "houseRuleId": 2,
+      "subType": "BASIC",
+      "priority": 0,
+      "title": "FUT_HR_GAMETYPE_2",
+      "description": "FUT_HR_GAMETYPE_2_DESC"
+    },
+    {
+      "name": "NO_RULES",
+      "state": "ENABLED",
+      "isFavourite": false,
+      "houseRuleId": 4,
+      "subType": "BASIC",
+      "priority": 0,
+      "title": "FUT_HR_GAMETYPE_4",
+      "description": "FUT_HR_GAMETYPE_4_DESC"
+    },
+    {
+      "name": "SWAPS",
+      "state": "ENABLED",
+      "isFavourite": false,
+      "houseRuleId": 8,
+      "subType": "BASIC",
+      "priority": 0,
+      "title": "FUT_HR_GAMETYPE_8",
+      "description": "FUT_HR_GAMETYPE_8_DESC"
+    },
+    {
+      "name": "MAX_CHEM",
+      "state": "ENABLED",
+      "isFavourite": false,
+      "houseRuleId": 9,
+      "subType": "BASIC",
+      "priority": 0,
+      "title": "FUT_HR_GAMETYPE_9",
+      "description": "FUT_HR_GAMETYPE_9_DESC"
+    },
+    {
+      "name": "TUG_OF_WAR",
+      "state": "ENABLED",
+      "isFavourite": false,
+      "houseRuleId": 7,
+      "subType": "BASIC",
+      "priority": 0,
+      "title": "FUT_HR_GAMETYPE_7",
+      "description": "FUT_HR_GAMETYPE_7_DESC"
+    },
+    {
+      "name": "MONEY_BALL",
+      "state": "ENABLED",
+      "isFavourite": false,
+      "houseRuleId": 6,
+      "subType": "BASIC",
+      "priority": 0,
+      "title": "FUT_HR_GAMETYPE_6",
+      "description": "FUT_HR_GAMETYPE_6_DESC"
+    }
+  ]
+}

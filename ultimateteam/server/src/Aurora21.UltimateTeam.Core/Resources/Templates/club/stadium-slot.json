@@ -1,0 +1,11 @@
+{
+  "slotId": "{{slotId}}",
+  "clientSlotId": "{{slotId}}",
+  "slotName": "{{slotName}}",
+  "stadiumArea": "{{stadiumArea}}",
+  "sortOrder": "{{sortOrder}}",
+  "vanityTypes": "{{vanityTypes}}",
+  "emptiable": "{{emptiable}}",
+  "locked": "{{locked}}",
+  "itemData": "{{itemData}}"
+}

@@ -1,0 +1,20 @@
+{
+  "gamesPlayed": "{{gamesPlayed}}",
+  "maxNumberOfMatches": "{{maxNumberOfMatches}}",
+  "tierLevel": "{{tierLevel}}",
+  "nextTierLevel": "{{nextTierLevel}}",
+  "tierStartValue": "{{tierStartValue}}",
+  "tierEndValue": "{{tierEndValue}}",
+  "rivalPoints": "{{weeklyScore}}",
+  "skillPoints": "{{skillRating}}",
+  "crtDivision": "{{division}}",
+  "currentTime": "{{current}}",
+  "startTime": "{{start}}",
+  "endTime": "{{end}}",
+  "prizeAwardTime": "{{prizeAwardTime}}",
+  "isPrizeAvailable": "{{isPrizeAvailable}}",
+  "inPlacementMatches": "{{inPlacement}}",
+  "weekendLeaguePoints": "{{fcPoints}}",
+  "weekendLeagueThreshold": "{{qualificationPoints}}",
+  "winForm": "{{winForm}}"
+}

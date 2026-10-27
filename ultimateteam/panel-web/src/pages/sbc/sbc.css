@@ -1,0 +1,162 @@
+/* SBCs: catalogue, Live SBCs, Settings and the set editor. Controls outside a Field share the Field look (Field.module.css). */
+
+/* Catalogue and Live SBCs, grouped by the game's SBC tabs. */
+.sbc-toolbar { display: flex; flex-wrap: wrap; align-items: flex-end; gap: 16px; margin-bottom: 20px; }
+.sbc-toolbar > :first-child { min-width: 220px; flex: 0 1 280px; }
+.sbc-tabs { display: flex; flex-wrap: wrap; gap: 6px; }
+.sbc-tabs button { padding: 8px 12px; border: 1px solid var(--line); border-radius: 999px; background: transparent; color: var(--fog); font: inherit; font-size: 13px; cursor: pointer; }
+.sbc-tabs button:hover { color: var(--chalk); border-color: var(--fog); }
+.sbc-tabs button[aria-pressed='true'] { border-color: var(--chalk); background: var(--stand); color: var(--chalk); }
+.sbc-note { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: 0 0 16px; color: var(--fog); font-size: 13px; }
+.sbc-group { margin: 0 0 var(--space-5); }
+.sbc-group-head { display: flex; align-items: center; gap: var(--space-2); margin: 0 0 var(--space-3); padding-bottom: var(--space-2); border-bottom: 1px solid var(--line);
+  font: 600 var(--text-lg)/1.2 var(--font-display); letter-spacing: .02em; text-transform: uppercase; }
+.sbc-group-head img { width: 28px; height: 28px; object-fit: contain; }
+.sbc-group-head small { margin-left: auto; font: 500 var(--text-xs)/1.4 var(--font); text-transform: none; letter-spacing: 0; }
+.sbc-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 12px; margin: 0; padding: 0; list-style: none; }
+.sbc-card { display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 12px 14px; align-items: center; padding: 14px; border: 1px solid var(--line); border-radius: 12px; background: var(--stand); }
+.sbc-card-hidden { opacity: .6; }
+.sbc-card-badge { width: 64px; height: 64px; object-fit: contain; }
+.sbc-card-body { display: grid; gap: 4px; min-width: 0; }
+.sbc-card-body strong { font-size: 15px; overflow-wrap: anywhere; }
+.sbc-card-body small { color: var(--fog); font-size: 12px; overflow-wrap: anywhere; }
+.sbc-card-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 2px; }
+.sbc-card-actions { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: 8px; justify-content: flex-end; }
+.sbc-live-row { grid-template-columns: 48px minmax(0, 1fr) auto auto; }
+.sbc-live-badge { width: 48px; height: 48px; object-fit: contain; }
+
+/* The set editor: the form, and a sticky preview beside it on wide screens. */
+.sbc-editor { display: grid; grid-template-columns: minmax(0, 1fr) minmax(280px, 340px); gap: var(--space-5); align-items: start; }
+.sbc-editor-main { min-width: 0; }
+.sbc-form { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: var(--space-4) var(--space-5); align-items: start; }
+.sbc-form + .sbc-form { margin-top: var(--space-4); }
+.sbc-form-wide { grid-template-columns: minmax(0, 1fr); }
+.sbc-form textarea { resize: vertical; }
+.sbc-switches { display: grid; gap: var(--space-3); margin-top: var(--space-4); }
+.sbc-subhead { margin: var(--space-5) 0 var(--space-3); padding-top: var(--space-4); border-top: 1px solid var(--line);
+  font: 600 var(--text-md)/1.2 var(--font-display); letter-spacing: .04em; text-transform: uppercase; color: var(--fog); }
+.sbc-add-challenge { margin: var(--space-4) 0 var(--space-5); }
+.sbc-inline { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-3); }
+
+.sbc-badge-row { display: flex; align-items: center; gap: 16px; margin-top: 20px; }
+.sbc-badge-row > div { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; }
+.sbc-badge-row strong { width: 100%; }
+.sbc-badge-row small { color: var(--fog); font-size: 12px; }
+.sbc-badge-preview { width: 96px; height: 96px; object-fit: contain; }
+.sbc-badge-picker { display: grid; grid-template-columns: repeat(auto-fill, minmax(112px, 1fr)); gap: 8px; max-height: 420px; overflow-y: auto; margin: 16px 0 0; padding: 0; list-style: none; }
+.sbc-badge-picker button { display: grid; justify-items: center; gap: 6px; width: 100%; padding: 10px 6px; border: 1px solid var(--line); border-radius: 10px; background: transparent; color: var(--fog); font: inherit; font-size: 11px; cursor: pointer; }
+.sbc-badge-picker button[aria-pressed='true'], .sbc-badge-picker button:hover { border-color: var(--chalk); color: var(--chalk); background: var(--stand); }
+.sbc-badge-picker img { width: 64px; height: 64px; object-fit: contain; }
+.sbc-badge-picker span { max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+/* Requirement and reward rows: a card per row, its Fields side by side, the label FIFA shows underneath. */
+.sbc-requirements, .sbc-rewards { display: grid; gap: var(--space-3); justify-items: start; }
+.sbc-requirements > .sbc-form { width: 100%; max-width: 260px; }
+.sbc-rule-list { display: grid; gap: var(--space-2); width: 100%; margin: 0; padding: 0; list-style: none; }
+.sbc-rule { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: start; gap: var(--space-2) var(--space-3);
+  padding: var(--space-3); border: 1px solid var(--line); border-radius: var(--radius); background: var(--night); }
+.sbc-rule-off { align-items: center; opacity: .75; }
+/* Level with the inputs: below the one-line label (text-xs at 1.4) and the Field's 6px gap. */
+.sbc-rule-remove { grid-column: 2; grid-row: 1; margin-top: calc(var(--text-xs) * 1.4 + 6px); }
+/* Aligned at the top: every label is one line, so inputs line up whether or not a field has a hint below it. */
+.sbc-rule-fields { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: var(--space-3); align-items: start; min-width: 0; }
+/* A labelled control that is not a single input (a chosen card and its button), laid out like a Field. */
+.sbc-control-group { display: grid; gap: 6px; min-width: 0; align-content: start; }
+.sbc-control-label { color: var(--fog); font-size: var(--text-xs); font-weight: 500; }
+.sbc-control-hint { color: var(--dim); font-size: var(--text-xs); }
+.sbc-control-box { display: flex; align-items: center; justify-content: space-between; gap: var(--space-2); min-height: 36px; padding: 3px 4px 3px 10px;
+  border: 1px solid var(--line); border-radius: var(--radius-sm); background: var(--night); }
+.sbc-control-box .sbc-card-chip strong { font-size: var(--text-sm); }
+.sbc-rule-label { grid-column: 1 / -1; margin: 0; font-size: var(--text-xs); color: var(--chalk); }
+.sbc-rule-label .dim { margin-right: 6px; }
+.sbc-reward-card { grid-column: span 2; }
+
+/* The squad: formation and slot controls beside a pitch. */
+.sbc-squad { display: grid; grid-template-columns: minmax(220px, 300px) minmax(0, 1fr); gap: var(--space-5); align-items: start; }
+.sbc-squad-controls { display: grid; gap: var(--space-4); }
+.sbc-squad-count { margin: 0; color: var(--fog); font-size: var(--text-xs); }
+.sbc-squad-count strong { color: var(--chalk); font-size: var(--text-md); }
+.sbc-squad-legend { display: grid; gap: 6px; margin: 0; padding: 0; list-style: none; color: var(--fog); font-size: var(--text-xs); }
+.sbc-squad-legend li { display: flex; align-items: center; gap: 8px; }
+.sbc-slot-dot { width: 14px; height: 14px; border-radius: 50%; border: 2px solid; }
+.sbc-slot-dot.sbc-slot-open { border-color: var(--chalk); border-style: dashed; }
+.sbc-slot-dot.sbc-slot-locked { border-color: var(--dim); background: var(--tier-2); }
+.sbc-slot-dot.sbc-slot-player { border-color: var(--coin); background: var(--coin-bg); }
+.sbc-slot-dot.sbc-slot-placeholder { border-color: var(--staged); background: var(--staged-bg); }
+
+.sbc-pitch { position: relative; width: 100%; max-width: 520px; aspect-ratio: 4 / 5; justify-self: center; overflow: hidden;
+  border: 1px solid rgb(255 255 255 / 0.14); border-radius: var(--radius);
+  background: repeating-linear-gradient(180deg, rgb(59 170 110 / 0.20) 0 10%, rgb(59 170 110 / 0.13) 10% 20%), var(--night); }
+.sbc-pitch-lines span { position: absolute; border: 1px solid rgb(255 255 255 / 0.16); }
+.sbc-pitch-lines span:nth-child(1) { left: 6%; right: 6%; top: 50%; border-width: 1px 0 0; }
+.sbc-pitch-lines span:nth-child(2) { left: 50%; top: 50%; width: 22%; aspect-ratio: 1; border-radius: 50%; transform: translate(-50%, -50%); }
+.sbc-pitch-lines span:nth-child(3) { left: 28%; right: 28%; bottom: 0; height: 13%; border-bottom: 0; }
+.sbc-slot { position: absolute; transform: translate(-50%, -50%); display: grid; justify-items: center; gap: 2px; width: 84px; padding: 4px 2px 3px;
+  border: 2px solid var(--line); border-radius: 10px; background: rgb(20 26 36 / 0.88); color: var(--chalk); font: inherit; cursor: pointer; }
+.sbc-slot:disabled { cursor: default; }
+.sbc-slot:not(:disabled):hover { border-color: var(--chalk); }
+.sbc-slot:focus-visible { outline: 2px solid var(--coin); outline-offset: 1px; }
+.sbc-slot-open { border-style: dashed; border-color: rgb(238 241 246 / 0.55); }
+.sbc-slot-locked { border-color: var(--dim); background: rgb(46 58 79 / 0.92); }
+.sbc-slot-player { border-color: var(--coin); }
+.sbc-slot-placeholder { border-color: var(--staged); }
+.sbc-slot-name { font: 600 11px/1 var(--font-display); letter-spacing: .06em; color: var(--fog); }
+.sbc-slot-icon svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; color: var(--fog); }
+.sbc-slot-marks { display: flex; gap: 4px; align-items: center; }
+.sbc-slot-marks img { width: 22px; height: 22px; object-fit: contain; }
+.sbc-slot .sbc-card-chip { flex-direction: column; gap: 0; text-align: center; }
+.sbc-slot .sbc-card-chip strong { max-width: 78px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 11px; }
+.sbc-slot .sbc-card-chip small { display: none; }
+
+/* A slot's kind: one card per choice. */
+.sbc-choice { display: grid; gap: var(--space-2); }
+.sbc-choice label { display: flex; gap: var(--space-3); align-items: flex-start; padding: var(--space-3); border: 1px solid var(--line); border-radius: var(--radius); cursor: pointer; }
+.sbc-choice label:hover { border-color: var(--fog); }
+.sbc-choice-on { border-color: var(--coin) !important; background: var(--coin-bg); }
+.sbc-choice input { margin-top: 3px; accent-color: var(--coin); }
+.sbc-choice span { display: grid; gap: 2px; }
+
+/* Cards: the picker's results, and a card shown by id. */
+.sbc-card-results { display: grid; grid-template-columns: repeat(auto-fill, minmax(118px, 1fr)); gap: var(--space-2); max-height: 420px; overflow-y: auto; margin: 0; padding: 0; list-style: none; }
+.sbc-card-results button { display: grid; justify-items: center; gap: 4px; width: 100%; padding: var(--space-2); border: 1px solid var(--line); border-radius: var(--radius);
+  background: var(--night); color: var(--chalk); font: inherit; font-size: var(--text-xs); cursor: pointer; text-align: center; }
+.sbc-card-results button:hover, .sbc-card-results button:focus-visible { border-color: var(--coin); outline: none; }
+.sbc-card-results-name { max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-weight: 600; }
+.sbc-card-chip { display: inline-flex; align-items: center; gap: var(--space-2); min-width: 0; }
+.sbc-card-chip > span { display: grid; min-width: 0; }
+
+/* The preview column. */
+.sbc-editor-preview { position: sticky; top: var(--space-4); display: grid; gap: var(--space-3); padding: var(--space-4);
+  border: 1px solid var(--line); border-radius: 12px; background: var(--stand); max-height: calc(100vh - 2 * var(--space-4)); overflow-y: auto; }
+.sbc-preview-head { display: flex; gap: var(--space-3); align-items: center; }
+.sbc-preview-head img { width: 56px; height: 56px; object-fit: contain; }
+.sbc-preview-head > div { display: grid; gap: 2px; min-width: 0; }
+.sbc-preview-head strong { font: 600 var(--text-lg)/1.15 var(--font-display); overflow-wrap: anywhere; }
+.sbc-preview-text { margin: 0; color: var(--fog); font-size: var(--text-xs); }
+.sbc-preview-problem { margin: 0; padding: var(--space-2) var(--space-3); border-left: 3px solid var(--red-card); background: var(--red-card-bg); border-radius: var(--radius-sm); font-size: var(--text-xs); }
+.sbc-preview-ok { display: flex; align-items: center; gap: var(--space-2); margin: 0; font-size: var(--text-xs); color: var(--fog); }
+.sbc-preview-challenges { display: grid; gap: var(--space-3); margin: 0; padding-left: 20px; }
+.sbc-preview-challenges li { display: grid; gap: 2px; font-size: var(--text-xs); }
+.sbc-preview-challenges strong { font-size: var(--text-sm); }
+
+/* Settings: read-only values. */
+.sbc-fixed { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 12px 20px; margin: 0; }
+.sbc-fixed div { display: grid; gap: 4px; }
+.sbc-fixed dt { color: var(--fog); font-size: 12px; }
+.sbc-fixed dd { margin: 0; overflow-wrap: anywhere; }
+
+@media (max-width: 1100px) {
+  .sbc-editor { grid-template-columns: minmax(0, 1fr); }
+  .sbc-editor-preview { position: static; max-height: none; order: -1; }
+  .sbc-squad { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 640px) {
+  .sbc-live-row { grid-template-columns: 48px minmax(0, 1fr); }
+  .sbc-slot { width: 64px; }
+  .sbc-slot .sbc-card-chip strong { max-width: 58px; }
+  .sbc-rule { grid-template-columns: minmax(0, 1fr); }
+  .sbc-rule-remove { grid-column: auto; grid-row: auto; margin-top: 0; justify-self: start; }
+  .sbc-reward-card { grid-column: auto; }
+}
+
+.sbc-rule-fields .catalogue-filter { width: 100%; }

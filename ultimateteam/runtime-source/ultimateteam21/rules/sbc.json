@@ -1,0 +1,71 @@
+{
+  "_comment": "Squad Building Challenge rules: how the authored sbc.json vocabulary (requirement rules, reward entries) becomes the client's elgReq and awards contract.",
+
+  "_playerPickRewardNameComment": "The award name FIFA shows for a reward pack that is a player pick (packs.json playerPickPacks): {rating} is the pick's minimum rating. Reward packs are named by id (packId) in sbc.json and the panel; the old pack-name mapping (rewardPacks, legacyRewardPacks, defaultRewardPack) was converted to ids at start-up and removed.",
+  "playerPickRewardName": "{rating}+ Player Pick",
+
+  "squadSize": 11,
+  "_repeatableRewardsComment": "Owner rule (10-02): anything a repeatable set pays is untradeable (packs, players, manager league cards; coins and XP are not items). A hard repeatable set that paid tradeable rewards in retail opts out with \"rewardsTradeable\": true on the set in sbc.json. The live repeatable sets are the Bronze, Silver and Gold Upgrades, untradeable in retail; check retail before putting the repeatable UP_* and SP_* sets on the live SBC list.",
+  "repeatableRewardsUntradeable": true,
+  "_formationComment": "Default formation for a challenge that authors none (sbc.json challenge formation, the retail one from FUTBIN, wins).",
+  "formation": "f442",
+  "brickItemIdBase": 700000000000,
+
+  "_bricksComment": "Locked squad slots (the client's bricks). Captured EA responses put a playerRequirements entry per slot with playerType 'DEFAULT' (free), 'BRICK' (locked, empty) or 'CUSTOM_BRICK' (locked, a specific pre-placed player), and the squad carries 23 {index, itemData} entries; CardsDLL knows the challenge kinds OPEN_CHALLENGE / BRICK_CHALLENGE / CUSTOM_BRICK_CHALLENGE. Brick item ids live below the concept range (cards.json conceptItemIdBase) and never overlap owned items, so a save that echoes them back can be filtered by range.",
+
+  "_imagesComment": "Set and challenge trophy art: imageIdBase plus the set id's offset from the first set id (900000). Set tiles are served from artFolder as <set id>.png, falling back to the set tab's tab-<tabId>.png (tab-<fallbackTabId> for unknown sets). The RARE rule is PLAYER_RARITY 1 (rareflag 1, the client label Player_Rarity_1 \"Rare\"): FIFA 21 names a PLAYER_RARITY_GROUP value as Player_Group_<n> (group 4 reads \"UEFA Champions League\") and never counts it, and its PLAYER_RARITY check matches rareflag exactly, so special cards are not rare players.",
+  "images": { "imageIdBase": 1000000, "artFolder": "sbc-art", "fallbackTabId": 8, "cacheSeconds": 86400 },
+
+  "_requirementsComment": "Requirement rule types. bound names the attribute holding the rule's number (min, max, or the quality name for value). eligibilityKey and scope are the client's SBCEligibilityKey and SCOPE names; a rule without eligibilityKey only appears in the description. A fixed eligibilityValue turns the bound into the player count. exact applies when the rule has an exact count between 1 and squadSize. {value} in a label is replaced by the rule's number, exact count or title-cased quality.",
+  "requirements": {
+    "LEAGUE_PLAYERS": {"bound": "min", "eligibilityKey": "LeagueId", "selector": "leagueId", "scope": "AtLeast", "label": "League players ({selection}): {comparison} {value}"},
+    "NATION_PLAYERS": {"bound": "min", "eligibilityKey": "NationId", "selector": "nationId", "scope": "AtLeast", "label": "Nation players ({selection}): {comparison} {value}"},
+    "CLUB_PLAYERS": {"bound": "min", "eligibilityKey": "ClubId", "selector": "clubId", "scope": "AtLeast", "label": "Club players ({selection}): {comparison} {value}"},
+    "QUALITY_PLAYERS": {"bound": "min", "eligibilityKey": "Quality", "selector": "quality", "scope": "AtLeast", "label": "{selection} players: {comparison} {value}", "qualities": {"bronze": 1, "silver": 2, "gold": 3}},
+    "CHEMISTRY": { "bound": "min", "eligibilityKey": "Chemistry", "scope": "AtLeast", "label": "Min Squad Chemistry: {value}" },
+    "RATING": { "bound": "min", "eligibilityKey": "TeamRating", "scope": "AtLeast", "label": "Min Squad Rating: {value}" },
+    "RARE": { "bound": "min", "eligibilityKey": "Rarity", "eligibilityValue": 1, "scope": "AtLeast", "label": "Rare players: Min {value}" },
+    "PREMIER_LEAGUE_PLAYERS": {"bound": "min", "eligibilityKey": "LeagueId", "eligibilityValue": 13, "scope": "AtLeast", "label": "Premier League players: Min {value}"},
+    "BUNDESLIGA_PLAYERS": {"bound": "min", "eligibilityKey": "LeagueId", "eligibilityValue": 19, "scope": "AtLeast", "label": "Bundesliga players: Min {value}"},
+    "LIGUE_1_PLAYERS": {"bound": "min", "eligibilityKey": "LeagueId", "eligibilityValue": 16, "scope": "AtLeast", "label": "Ligue 1 players: Min {value}"},
+    "TOTW": { "bound": "min", "eligibilityKey": "Rarity", "eligibilityValue": 3, "scope": "AtLeast", "label": "Team of the Week players: Min {value}" },
+    "ICON_SWAPS_1": { "bound": "min", "eligibilityKey": "Rarity", "eligibilityValue": 89, "scope": "AtLeast", "label": "Icon Swaps 1 tokens: Min {value}" },
+    "ICON_SWAPS_2": { "bound": "min", "eligibilityKey": "Rarity", "eligibilityValue": 92, "scope": "AtLeast", "label": "Icon Swaps 2 tokens: Min {value}" },
+    "ICON_SWAPS_3": { "bound": "min", "eligibilityKey": "Rarity", "eligibilityValue": 93, "scope": "AtLeast", "label": "Icon Swaps 3 tokens: Min {value}" },
+    "ICON_SWAPS_4": { "bound": "min", "eligibilityKey": "Rarity", "eligibilityValue": 94, "scope": "AtLeast", "label": "Icon Swaps 4 tokens: Min {value}" },
+    "NATIONS": {
+      "bound": "min", "eligibilityKey": "NationCount", "scope": "AtLeast", "label": "Nationalities in Squad: Min {value}",
+      "exact": { "scope": "Exact", "label": "Nationalities in Squad: Exactly {value}" }
+    },
+    "LEAGUES": {
+      "bound": "min", "eligibilityKey": "LeagueCount", "scope": "AtLeast", "label": "Leagues in Squad: Min {value}",
+      "exact": { "scope": "Exact", "label": "Leagues in Squad: Exactly {value}" }
+    },
+    "CLUBS": {
+      "bound": "min", "eligibilityKey": "ClubCount", "scope": "AtLeast", "label": "Clubs in Squad: Min {value}",
+      "exact": { "scope": "Exact", "label": "Clubs in Squad: Exactly {value}" }
+    },
+    "SAME_NATION": { "bound": "max", "eligibilityKey": "SameNation", "scope": "AtMost", "label": "Max players from same Nation: {value}" },
+    "SAME_LEAGUE": { "bound": "max", "eligibilityKey": "SameLeague", "scope": "AtMost", "label": "Max players from same League: {value}" },
+    "SAME_CLUB": { "bound": "max", "eligibilityKey": "SameClub", "scope": "AtMost", "label": "Max players from same Club: {value}" },
+    "QUALITY": {
+      "bound": "value", "eligibilityKey": "Quality", "scope": "Exact", "playerCount": 11, "label": "Player Quality: {value} only",
+      "qualities": { "bronze": 1, "silver": 2, "gold": 3 }
+    },
+    "AGE": { "bound": "max", "label": "Player Age: Max {value}" }
+  },
+
+  "_ignoredRequirementsComment": "Requirement rule types dropped from every challenge: neither sent to the client nor checked on submit. CHEMISTRY is sent and checked: the server computes the squad's chemistry (chemistry.json) from the slots, formation and manager FIFA saves, plus the challenge's locked-slot cards, and never trusts the chemistry FIFA reports.",
+  "ignoredRequirements": [],
+
+  "text": {
+    "requirementSeparator": "  |  ",
+    "noRequirements": "Players in Squad: {count}",
+    "setDescription": "Complete the {name} SBC ({count} {challenges}).",
+    "unnamedSetDescription": "Complete this SBC ({count} {challenges}).",
+    "challenge": "challenge",
+    "challenges": "challenges",
+    "unknownChallenge": "Unknown challenge.",
+    "shortSquad": "Squad needs {need} players ({placed} placed)."
+  }
+}

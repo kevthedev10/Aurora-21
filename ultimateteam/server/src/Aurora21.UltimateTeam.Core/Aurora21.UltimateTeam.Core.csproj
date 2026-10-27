@@ -1,0 +1,229 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RootNamespace>Aurora21.UltimateTeam.Core</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="10.0.0" />
+    <PackageReference Include="Npgsql" Version="10.0.3" />
+    <EmbeddedResource Include="..\..\database-setup\migrations\005-player-card-traits.sql" LogicalName="DatabaseSetup/migrations/005-player-card-traits.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Aurora21.UltimateTeam.Protocol\Aurora21.UltimateTeam.Protocol.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <InternalsVisibleTo Include="Aurora21.UltimateTeam.Tests" />
+  </ItemGroup>
+  <ItemGroup>
+    <!-- Protocol response templates, addressed as "Templates/<area>/<name>.json". -->
+    <EmbeddedResource Include="Resources\**\*.json;Resources\**\*.xml;Resources\**\*.xliff" LogicalName="$([System.String]::Copy('%(RecursiveDir)%(Filename)%(Extension)').Replace('\','/'))" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="..\..\database-setup\migrations\001-catalog-metadata.sql" LogicalName="DatabaseSetup/migrations/001-catalog-metadata.sql" />
+    <EmbeddedResource Include="..\..\database-setup\migrations\002-remove-attribute-provenance.sql" LogicalName="DatabaseSetup/migrations/002-remove-attribute-provenance.sql" />
+    <EmbeddedResource Include="..\..\database-setup\migrations\003-unnamed-sudamericana-team.sql" LogicalName="DatabaseSetup/migrations/003-unnamed-sudamericana-team.sql" />
+    <EmbeddedResource Include="..\..\database-setup\migrations\004-player-reference-native-ids.sql" LogicalName="DatabaseSetup/migrations/004-player-reference-native-ids.sql" />
+    <EmbeddedResource Include="..\..\database-setup\migrations\006-player-card-cleanup.sql" LogicalName="DatabaseSetup/migrations/006-player-card-cleanup.sql" />
+    <EmbeddedResource Include="..\..\database-setup\migrations\007-sbc-squad-items.sql" LogicalName="DatabaseSetup/migrations/007-sbc-squad-items.sql" />
+    <!-- Verified relational setup bytes; no repository paths are needed at runtime. -->
+    <EmbeddedResource Include="..\..\database-setup\manifest.json" LogicalName="DatabaseSetup/manifest.json" />
+    <EmbeddedResource Include="..\..\database-setup\schema\001-tables.sql" LogicalName="DatabaseSetup/schema/001-tables.sql" />
+    <EmbeddedResource Include="..\..\database-setup\schema\002-relationships.sql" LogicalName="DatabaseSetup/schema/002-relationships.sql" />
+    <EmbeddedResource Include="..\..\database-setup\schema\003-invariants.sql" LogicalName="DatabaseSetup/schema/003-invariants.sql" />
+    <EmbeddedResource Include="..\..\database-setup\schema\004-indexes.sql" LogicalName="DatabaseSetup/schema/004-indexes.sql" />
+    <EmbeddedResource Include="..\..\database-setup\seed\010-sources-and-families.sql" LogicalName="DatabaseSetup/seed/010-sources-and-families.sql" />
+    <EmbeddedResource Include="..\..\database-setup\seed\011-reference-dimensions.sql" LogicalName="DatabaseSetup/seed/011-reference-dimensions.sql" />
+    <EmbeddedResource Include="..\..\database-setup\seed\012-footballers-types-designs.sql" LogicalName="DatabaseSetup/seed/012-footballers-types-designs.sql" />
+    <EmbeddedResource Include="..\..\database-setup\seed\013-player-definitions.sql" LogicalName="DatabaseSetup/seed/013-player-definitions.sql" />
+    <EmbeddedResource Include="..\..\database-setup\seed\014-manager-definitions.sql" LogicalName="DatabaseSetup/seed/014-manager-definitions.sql" />
+    <EmbeddedResource Include="..\..\database-setup\seed\015-consumable-definitions.sql" LogicalName="DatabaseSetup/seed/015-consumable-definitions.sql" />
+    <EmbeddedResource Include="..\..\database-setup\seed\016-customisation-definitions.sql" LogicalName="DatabaseSetup/seed/016-customisation-definitions.sql" />
+    <EmbeddedResource Include="..\..\database-setup\seed\017-compatibility-and-aliases.sql" LogicalName="DatabaseSetup/seed/017-compatibility-and-aliases.sql" />
+    <EmbeddedResource Include="..\..\database-setup\seed\018-sequence-state.sql" LogicalName="DatabaseSetup/seed/018-sequence-state.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="../../database-setup/migrations/008-remove-unused-card-designs.sql" LogicalName="DatabaseSetup/migrations/008-remove-unused-card-designs.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="../../database-setup/migrations/009-icon-swaps-one-name.sql" LogicalName="DatabaseSetup/migrations/009-icon-swaps-one-name.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="../../database-setup/migrations/010-professional-player-name.sql" LogicalName="DatabaseSetup/migrations/010-professional-player-name.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="../../database-setup/migrations/011-explicit-card-rarity-groups.sql" LogicalName="DatabaseSetup/migrations/011-explicit-card-rarity-groups.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="../../database-setup/migrations/018-remove-unused-club-imports.sql" LogicalName="DatabaseSetup/migrations/018-remove-unused-club-imports.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/019-remove-unused-customisation-metadata.sql" LogicalName="DatabaseSetup/migrations/019-remove-unused-customisation-metadata.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/020-remove-empty-definition-extensions.sql" LogicalName="DatabaseSetup/migrations/020-remove-empty-definition-extensions.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/021-remove-footballer-audit-columns.sql" LogicalName="DatabaseSetup/migrations/021-remove-footballer-audit-columns.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/022-remove-item-definition-import-metadata.sql" LogicalName="DatabaseSetup/migrations/022-remove-item-definition-import-metadata.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/023-kit-item-response-format.sql" LogicalName="DatabaseSetup/migrations/023-kit-item-response-format.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/024-remove-unused-relational-legacy-kv.sql" LogicalName="DatabaseSetup/migrations/024-remove-unused-relational-legacy-kv.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/025-manager-definition-references.sql" LogicalName="DatabaseSetup/migrations/025-manager-definition-references.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/026-remove-unused-manager-metadata.sql" LogicalName="DatabaseSetup/migrations/026-remove-unused-manager-metadata.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/027-manager-item-league-reference.sql" LogicalName="DatabaseSetup/migrations/027-manager-item-league-reference.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/036-player-match-stats-json.sql" LogicalName="DatabaseSetup/migrations/036-player-match-stats-json.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/035-remove-empty-player-native-metadata.sql" LogicalName="DatabaseSetup/migrations/035-remove-empty-player-native-metadata.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/034-remove-player-attribute-overrides.sql" LogicalName="DatabaseSetup/migrations/034-remove-player-attribute-overrides.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/033-readable-market-listing-id.sql" LogicalName="DatabaseSetup/migrations/033-readable-market-listing-id.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/032-market-player-snapshot-cleanup.sql" LogicalName="DatabaseSetup/migrations/032-market-player-snapshot-cleanup.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/031-remove-market-player-attribute-overrides.sql" LogicalName="DatabaseSetup/migrations/031-remove-market-player-attribute-overrides.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/030-confirm-manager-default-leagues.sql" LogicalName="DatabaseSetup/migrations/030-confirm-manager-default-leagues.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/029-manager-default-leagues.sql" LogicalName="DatabaseSetup/migrations/029-manager-default-leagues.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/028-manager-owned-league.sql" LogicalName="DatabaseSetup/migrations/028-manager-owned-league.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/017-remove-catalog-audit.sql" LogicalName="DatabaseSetup/migrations/017-remove-catalog-audit.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/016-card-type-column-cleanup.sql" LogicalName="DatabaseSetup/migrations/016-card-type-column-cleanup.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/015-remove-default-subtype.sql" LogicalName="DatabaseSetup/migrations/015-remove-default-subtype.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/014-readable-card-type-names.sql" LogicalName="DatabaseSetup/migrations/014-readable-card-type-names.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/013-native-rarities.sql" LogicalName="DatabaseSetup/migrations/013-native-rarities.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/012-next-gen-fgs-names.sql" LogicalName="DatabaseSetup/migrations/012-next-gen-fgs-names.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/037-readable-promo-player-card-id.sql" LogicalName="DatabaseSetup/migrations/037-readable-promo-player-card-id.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/038-remove-setup-artifact-versions.sql" LogicalName="DatabaseSetup/migrations/038-remove-setup-artifact-versions.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/039-remove-tactic-player-reference.sql" LogicalName="DatabaseSetup/migrations/039-remove-tactic-player-reference.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/040-squad-and-trait-cleanup.sql" LogicalName="DatabaseSetup/migrations/040-squad-and-trait-cleanup.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/041-store-packs.sql" LogicalName="DatabaseSetup/migrations/041-store-packs.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/042-store-pack-player-filters.sql" LogicalName="DatabaseSetup/migrations/042-store-pack-player-filters.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/043-club-player-search.sql" LogicalName="DatabaseSetup/migrations/043-club-player-search.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/044-manager-league-corrections.sql" LogicalName="DatabaseSetup/migrations/044-manager-league-corrections.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/045-club-item-id-bands.sql" LogicalName="DatabaseSetup/migrations/045-club-item-id-bands.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/046-club-virtual-item-ids.sql" LogicalName="DatabaseSetup/migrations/046-club-virtual-item-ids.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/047-card-attribute-records.sql" LogicalName="DatabaseSetup/migrations/047-card-attribute-records.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/048-player-pick-token-definition.sql" LogicalName="DatabaseSetup/migrations/048-player-pick-token-definition.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/049-store-pack-mechanics.sql" LogicalName="DatabaseSetup/migrations/049-store-pack-mechanics.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/050-remove-nonexistent-cards.sql" LogicalName="DatabaseSetup/migrations/050-remove-nonexistent-cards.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/051-fut-champions-red-picks.sql" LogicalName="DatabaseSetup/migrations/051-fut-champions-red-picks.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/052-squad-battles-competition.sql" LogicalName="DatabaseSetup/migrations/052-squad-battles-competition.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/053-club-cosmetic-cards.sql" LogicalName="DatabaseSetup/migrations/053-club-cosmetic-cards.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/054-club-vanity-slots.sql" LogicalName="DatabaseSetup/migrations/054-club-vanity-slots.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/055-rivals-skill.sql" LogicalName="DatabaseSetup/migrations/055-rivals-skill.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/056-pro-player-shells.sql" LogicalName="DatabaseSetup/migrations/056-pro-player-shells.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/057-market-listing-duration.sql" LogicalName="DatabaseSetup/migrations/057-market-listing-duration.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/058-rivals-and-weekend-league.sql" LogicalName="DatabaseSetup/migrations/058-rivals-and-weekend-league.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/059-competition-reward-packs.sql" LogicalName="DatabaseSetup/migrations/059-competition-reward-packs.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/060-squad-battles-retail.sql" LogicalName="DatabaseSetup/migrations/060-squad-battles-retail.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/061-live-totw-rewards.sql" LogicalName="DatabaseSetup/migrations/061-live-totw-rewards.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/062-panel-action-receipts.sql" LogicalName="DatabaseSetup/migrations/062-panel-action-receipts.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/063-player-access.sql" LogicalName="DatabaseSetup/migrations/063-player-access.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/064-icon-swaps-token-packs.sql" LogicalName="DatabaseSetup/migrations/064-icon-swaps-token-packs.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/065-native-club-creation.sql" LogicalName="DatabaseSetup/migrations/065-native-club-creation.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/066-developer-pro-cards.sql" LogicalName="DatabaseSetup/migrations/066-developer-pro-cards.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/067-pro-cards-five-star.sql" LogicalName="DatabaseSetup/migrations/067-pro-cards-five-star.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/068-phase-pack-odds.sql" LogicalName="DatabaseSetup/migrations/068-phase-pack-odds.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/069-item-reward-source.sql" LogicalName="DatabaseSetup/migrations/069-item-reward-source.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/070-match-reward-gate.sql" LogicalName="DatabaseSetup/migrations/070-match-reward-gate.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/071-manager-league-cards.sql" LogicalName="DatabaseSetup/migrations/071-manager-league-cards.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/072-content-changesets.sql" LogicalName="DatabaseSetup/migrations/072-content-changesets.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/073-content-rules.sql" LogicalName="DatabaseSetup/migrations/073-content-rules.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/074-custom-player-heads.sql" LogicalName="DatabaseSetup/migrations/074-custom-player-heads.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/075-remove-duplicate-rttf-cards.sql" LogicalName="DatabaseSetup/migrations/075-remove-duplicate-rttf-cards.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/076-promo-groups.sql" LogicalName="DatabaseSetup/migrations/076-promo-groups.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/077-developer-cards-promo.sql" LogicalName="DatabaseSetup/migrations/077-developer-cards-promo.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/078-promo-odds-groups.sql" LogicalName="DatabaseSetup/migrations/078-promo-odds-groups.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/079-promo-schedules.sql" LogicalName="DatabaseSetup/migrations/079-promo-schedules.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/080-pack-category-chances.sql" LogicalName="DatabaseSetup/migrations/080-pack-category-chances.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/081-gold-rare-weight-groups.sql" LogicalName="DatabaseSetup/migrations/081-gold-rare-weight-groups.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/082-icon-odds-category.sql" LogicalName="DatabaseSetup/migrations/082-icon-odds-category.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/083-totw-1-3-rating-groups.sql" LogicalName="DatabaseSetup/migrations/083-totw-1-3-rating-groups.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/084-totw-player-reward-pool.sql" LogicalName="DatabaseSetup/migrations/084-totw-player-reward-pool.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/085-name-fixed-totw-reward-pools.sql" LogicalName="DatabaseSetup/migrations/085-name-fixed-totw-reward-pools.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/086-rename-draft-pool-rule.sql" LogicalName="DatabaseSetup/migrations/086-rename-draft-pool-rule.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/087-remove-phase-rules.sql" LogicalName="DatabaseSetup/migrations/087-remove-phase-rules.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/088-rename-red-reward-rule.sql" LogicalName="DatabaseSetup/migrations/088-rename-red-reward-rule.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/089-standard-card-weight-groups.sql" LogicalName="DatabaseSetup/migrations/089-standard-card-weight-groups.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/090-disable-retail-red-picks.sql" LogicalName="DatabaseSetup/migrations/090-disable-retail-red-picks.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/091-promo-events-and-buckets.sql" LogicalName="DatabaseSetup/migrations/091-promo-events-and-buckets.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/092-special-pack-bucket-selection.sql" LogicalName="DatabaseSetup/migrations/092-special-pack-bucket-selection.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/093-pack-and-pick-promo-sources.sql" LogicalName="DatabaseSetup/migrations/093-pack-and-pick-promo-sources.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/094-promo-management-and-content-revisions.sql" LogicalName="DatabaseSetup/migrations/094-promo-management-and-content-revisions.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/095-mixed-store-packs.sql" LogicalName="DatabaseSetup/migrations/095-mixed-store-packs.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/096-contract-free-store.sql" LogicalName="DatabaseSetup/migrations/096-contract-free-store.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/097-remove-testing-packs.sql" LogicalName="DatabaseSetup/migrations/097-remove-testing-packs.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/098-merge-toty-promos.sql" LogicalName="DatabaseSetup/migrations/098-merge-toty-promos.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/099-base-icon-rating-buckets.sql" LogicalName="DatabaseSetup/migrations/099-base-icon-rating-buckets.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/100-initial-icon-rotation.sql" LogicalName="DatabaseSetup/migrations/100-initial-icon-rotation.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/101-align-initial-totw-event.sql" LogicalName="DatabaseSetup/migrations/101-align-initial-totw-event.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/102-developer-cards-untradeable.sql" LogicalName="DatabaseSetup/migrations/102-developer-cards-untradeable.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/103-initial-discord-access.sql" LogicalName="DatabaseSetup/migrations/103-initial-discord-access.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/104-merge-flashback-tevez.sql" LogicalName="DatabaseSetup/migrations/104-merge-flashback-tevez.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/105-store-purchase-limits.sql" LogicalName="DatabaseSetup/migrations/105-store-purchase-limits.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/106-enable-fifa-points-purchases.sql" LogicalName="DatabaseSetup/migrations/106-enable-fifa-points-purchases.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/107-community-pack-limits.sql" LogicalName="DatabaseSetup/migrations/107-community-pack-limits.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/108-match-switches.sql" LogicalName="DatabaseSetup/migrations/108-match-switches.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/109-upgrade-sbc-reward-packs.sql" LogicalName="DatabaseSetup/migrations/109-upgrade-sbc-reward-packs.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/110-repeatable-sbc-and-upgrade-rewards.sql" LogicalName="DatabaseSetup/migrations/110-repeatable-sbc-and-upgrade-rewards.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/111-disable-ai-market-listings.sql" LogicalName="DatabaseSetup/migrations/111-disable-ai-market-listings.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/112-rating-based-discard-rules.sql" LogicalName="DatabaseSetup/migrations/112-rating-based-discard-rules.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/113-pack-odds-v2.sql" LogicalName="DatabaseSetup/migrations/113-pack-odds-v2.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/114-sbc-rare-requirement-rarity.sql" LogicalName="DatabaseSetup/migrations/114-sbc-rare-requirement-rarity.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/115-draft-odds-v2.sql" LogicalName="DatabaseSetup/migrations/115-draft-odds-v2.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/116-tradeable-consumable-stacks.sql" LogicalName="DatabaseSetup/migrations/116-tradeable-consumable-stacks.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/117-sbc-squad-formation.sql" LogicalName="DatabaseSetup/migrations/117-sbc-squad-formation.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/118-sbc-retail-rules.sql" LogicalName="DatabaseSetup/migrations/118-sbc-retail-rules.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/119-packs-and-pack-odds-v3.sql" LogicalName="DatabaseSetup/migrations/119-packs-and-pack-odds-v3.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/120-gold-and-base-icon-bucket-balance.sql" LogicalName="DatabaseSetup/migrations/120-gold-and-base-icon-bucket-balance.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/121-retail-my-stadium-slots.sql" LogicalName="DatabaseSetup/migrations/121-retail-my-stadium-slots.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/122-club-vanity-items.sql" LogicalName="DatabaseSetup/migrations/122-club-vanity-items.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/123-my-stadium-pack.sql" LogicalName="DatabaseSetup/migrations/123-my-stadium-pack.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/124-match-clock-opponent-player.sql" LogicalName="DatabaseSetup/migrations/124-match-clock-opponent-player.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/125-champions-without-event-overrides.sql" LogicalName="DatabaseSetup/migrations/125-champions-without-event-overrides.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/126-mode-reward-tables.sql" LogicalName="DatabaseSetup/migrations/126-mode-reward-tables.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/127-champions-top25.sql" LogicalName="DatabaseSetup/migrations/127-champions-top25.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/128-champions-existing-four-top25.sql" LogicalName="DatabaseSetup/migrations/128-champions-existing-four-top25.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/129-squad-battles-top25.sql" LogicalName="DatabaseSetup/migrations/129-squad-battles-top25.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/130-champions-no-band-sizing.sql" LogicalName="DatabaseSetup/migrations/130-champions-no-band-sizing.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/131-rivals-reward-tables.sql" LogicalName="DatabaseSetup/migrations/131-rivals-reward-tables.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/132-store-listing.sql" LogicalName="DatabaseSetup/migrations/132-store-listing.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/133-squad-battles-reward-tiers.sql" LogicalName="DatabaseSetup/migrations/133-squad-battles-reward-tiers.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/134-merge-players-reward-packs.sql" LogicalName="DatabaseSetup/migrations/134-merge-players-reward-packs.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/135-draft-reward-tables.sql" LogicalName="DatabaseSetup/migrations/135-draft-reward-tables.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/136-sbc-sets.sql" LogicalName="DatabaseSetup/migrations/136-sbc-sets.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/137-my-stadium-item-ids.sql" LogicalName="DatabaseSetup/migrations/137-my-stadium-item-ids.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/138-champions-no-minimum-wins.sql" LogicalName="DatabaseSetup/migrations/138-champions-no-minimum-wins.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/139-fut-stadium-tier-cards.sql" LogicalName="DatabaseSetup/migrations/139-fut-stadium-tier-cards.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/140-vanity-items-pile.sql" LogicalName="DatabaseSetup/migrations/140-vanity-items-pile.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/141-mode-completion-rewards.sql" LogicalName="DatabaseSetup/migrations/141-mode-completion-rewards.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/142-sbc-live-list.sql" LogicalName="DatabaseSetup/migrations/142-sbc-live-list.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/143-objective-live-starts.sql" LogicalName="DatabaseSetup/migrations/143-objective-live-starts.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/144-season-level-options.sql" LogicalName="DatabaseSetup/migrations/144-season-level-options.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/145-match-xp-per-mode.sql" LogicalName="DatabaseSetup/migrations/145-match-xp-per-mode.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/146-no-sbc-pack-xp.sql" LogicalName="DatabaseSetup/migrations/146-no-sbc-pack-xp.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/147-tokens-store-section.sql" LogicalName="DatabaseSetup/migrations/147-tokens-store-section.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/148-token-store-lineup.sql" LogicalName="DatabaseSetup/migrations/148-token-store-lineup.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/149-store-tradeability-defaults.sql" LogicalName="DatabaseSetup/migrations/149-store-tradeability-defaults.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/150-non-player-drop-table.sql" LogicalName="DatabaseSetup/migrations/150-non-player-drop-table.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/151-squad-foundations.sql" LogicalName="DatabaseSetup/migrations/151-squad-foundations.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/152-remove-libertadores-flashback.sql" LogicalName="DatabaseSetup/migrations/152-remove-libertadores-flashback.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/153-remove-coins-per-point.sql" LogicalName="DatabaseSetup/migrations/153-remove-coins-per-point.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/155-potm-one-sbc.sql" LogicalName="DatabaseSetup/migrations/155-potm-one-sbc.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/154-squad-foundations-objectives.sql" LogicalName="DatabaseSetup/migrations/154-squad-foundations-objectives.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/156-gold-pack-mix.sql" LogicalName="DatabaseSetup/migrations/156-gold-pack-mix.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/157-club-items-on-market.sql" LogicalName="DatabaseSetup/migrations/157-club-items-on-market.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/158-token-offer-id-collisions.sql" LogicalName="DatabaseSetup/migrations/158-token-offer-id-collisions.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/159-sbc-set-rewards-backpay.sql" LogicalName="DatabaseSetup/migrations/159-sbc-set-rewards-backpay.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/160-unassign-duplicate-club-cards.sql" LogicalName="DatabaseSetup/migrations/160-unassign-duplicate-club-cards.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/161-kit-category-overrides.sql" LogicalName="DatabaseSetup/migrations/161-kit-category-overrides.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/162-leaderboard-option-order.sql" LogicalName="DatabaseSetup/migrations/162-leaderboard-option-order.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/163-leaderboard-categories.sql" LogicalName="DatabaseSetup/migrations/163-leaderboard-categories.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/164-retail-loyalty.sql" LogicalName="DatabaseSetup/migrations/164-retail-loyalty.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/165-draft-tactics.sql" LogicalName="DatabaseSetup/migrations/165-draft-tactics.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/166-custom-seasons.sql" LogicalName="DatabaseSetup/migrations/166-custom-seasons.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="../../database-setup/migrations/167-content-schedule.sql" LogicalName="DatabaseSetup/migrations/167-content-schedule.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/168-campaign-windows.sql" LogicalName="DatabaseSetup/migrations/168-campaign-windows.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/169-basic-foundations-objectives.sql" LogicalName="DatabaseSetup/migrations/169-basic-foundations-objectives.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/170-sbc-daily-and-requirements.sql" LogicalName="DatabaseSetup/migrations/170-sbc-daily-and-requirements.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/171-otw-campaign.sql" LogicalName="DatabaseSetup/migrations/171-otw-campaign.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/172-sbc-daily-completion-counts.sql" LogicalName="DatabaseSetup/migrations/172-sbc-daily-completion-counts.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/173-rulebreakers-campaign.sql" LogicalName="DatabaseSetup/migrations/173-rulebreakers-campaign.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/174-totw-four-boundary.sql" LogicalName="DatabaseSetup/migrations/174-totw-four-boundary.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/175-single-player-draft-tradeable.sql" LogicalName="DatabaseSetup/migrations/175-single-player-draft-tradeable.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/176-sqbt-refresh-anytime.sql" LogicalName="DatabaseSetup/migrations/176-sqbt-refresh-anytime.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/177-special-price-cap.sql" LogicalName="DatabaseSetup/migrations/177-special-price-cap.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/178-sf-retail-requirements.sql" LogicalName="DatabaseSetup/migrations/178-sf-retail-requirements.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/179-anti-cheat-logs.sql" LogicalName="DatabaseSetup/migrations/179-anti-cheat-logs.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/180-leaver-penalties.sql" LogicalName="DatabaseSetup/migrations/180-leaver-penalties.sql" />
+    <EmbeddedResource Include="../../database-setup/migrations/181-aurora-champions-objective-text.sql" LogicalName="DatabaseSetup/migrations/181-aurora-champions-objective-text.sql" />
+  </ItemGroup>
+</Project>

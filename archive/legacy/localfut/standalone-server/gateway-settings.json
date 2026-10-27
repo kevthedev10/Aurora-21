@@ -1,0 +1,15 @@
+{
+  "bindAddress": "10.203.21.1",
+  "originAddress": "127.0.0.1",
+  "singleRuntime": true,
+  "idleContextSeconds": 900,
+  "maxCachedPlayers": 1000,
+  "contextInitWorkers": 4,
+  "revalidateSeconds": 30,
+  "gameplayRelayEnabled": true,
+  "gameplayRelayBindAddress": "auto",
+  "gameplayRelayAdvertisedAddress": "auto",
+  "gameplayRelayPortStart": 31000,
+  "gameplayRelayPortEnd": 31199,
+  "logLevel": "INFO"
+}

@@ -1,0 +1,7 @@
+{
+  "tierType": "{{tierType}}",
+  "tierLevel": "{{tierLevel}}",
+  "tierStart": "{{low}}",
+  "tierEnd": "{{high}}",
+  "awards": "{{awards}}"
+}

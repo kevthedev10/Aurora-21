@@ -1,0 +1,118 @@
+{
+  "_comment": "FUT Objectives (the FIFA 21 Seasonal Campaign, SCMP): a welcome objective group served already completed, grind objective groups tracked from match ends, SBC submissions and pack openings, and a Season Progress level track.",
+
+  "campaign": {
+    "id": 1,
+    "name": "Aurora 21 Season",
+    "startedDaysAgo": 30,
+    "endsInDays": 365
+  },
+
+  "category": { "id": 1, "name": "Objectives" },
+
+  "_groupComment": "Group rows use FIFA 21's numeric group states and ObjectiveGroupType.SEASONAL (0 is INVALID). A group is COMPLETED only once every objective in it is redeemed.",
+  "groupType": 3,
+  "groupStates": { "inProgress": 1, "completed": 2, "rewarded": 4 },
+
+  "_welcomeGroupComment": "The group reward tile shows rewardPackCount x rewardPackId. Claiming it delivers those packs to My Packs plus xpAward season XP.",
+  "welcomeGroup": {
+    "id": 1,
+    "title": "Welcome Objectives",
+    "subTitle": "Get started in FUT",
+    "objective": { "id": 1, "name": "Kick Off", "description": "Play a match in FUT." },
+    "rewardPackId": 513,
+    "rewardPackCount": 10,
+    "xpAward": 1500
+  },
+
+  "_xpComment": "Season Progress XP per event: every counted match, plus win on a win, each first SBC completion and each opened pack. Matches ending with noProgressEndReasons count nothing.",
+  "xp": { "match": 300, "win": 500, "sbc": 400, "pack": 50 },
+  "noProgressEndReasons": ["QUIT", "NO_CONTEST"],
+
+  "_statLabelsComment": "Objective descriptions by tracked stat; {n} is the target with thousands separators.",
+  "statLabels": {
+    "matches": "Play {n} matches in FUT.",
+    "wins": "Win {n} matches in FUT.",
+    "goals": "Score {n} goals in FUT matches.",
+    "cleanSheets": "Keep {n} clean sheets.",
+    "draftWins": "Win {n} FUT Draft matches.",
+    "sbcs": "Complete {n} Squad Building Challenges.",
+    "packs": "Open {n} packs."
+  },
+
+  "_grindGroupsComment": "Each objective pays its award (coins, or a pack delivered to My Packs) and xp once its stat reaches target; the group award pays once every objective in it is claimed. Pack ids: 42-47 are the promo store packs, 513-516 the 82+-88+ player picks.",
+  "grindGroups": [
+    {
+      "id": 2, "title": "Matchday Grind", "subTitle": "Get games under your belt", "award": { "pack": 42 },
+      "objectives": [
+        { "id": 201, "name": "Warm Up", "stat": "matches", "target": 5, "award": { "coins": 150000 }, "xp": 2000 },
+        { "id": 202, "name": "Regular Starter", "stat": "matches", "target": 25, "award": { "pack": 516 }, "xp": 4000 },
+        { "id": 203, "name": "Iron Man", "stat": "matches", "target": 100, "award": { "pack": 46 }, "xp": 10000 },
+        { "id": 204, "name": "Winner", "stat": "wins", "target": 10, "award": { "coins": 500000 }, "xp": 4000 },
+        { "id": 205, "name": "Serial Winner", "stat": "wins", "target": 50, "award": { "pack": 44 }, "xp": 12000 }
+      ]
+    },
+    {
+      "id": 3, "title": "Goal Machine", "subTitle": "Put the ball in the net", "award": { "pack": 43 },
+      "objectives": [
+        { "id": 301, "name": "On The Scoresheet", "stat": "goals", "target": 25, "award": { "coins": 250000 }, "xp": 3000 },
+        { "id": 302, "name": "Hat-Trick Hero", "stat": "goals", "target": 100, "award": { "pack": 47 }, "xp": 6000 },
+        { "id": 303, "name": "Golden Boot", "stat": "goals", "target": 500, "award": { "pack": 43 }, "xp": 15000 },
+        { "id": 304, "name": "Brick Wall", "stat": "cleanSheets", "target": 10, "award": { "pack": 516 }, "xp": 4000 },
+        { "id": 305, "name": "The Vault", "stat": "cleanSheets", "target": 50, "award": { "pack": 45 }, "xp": 12000 }
+      ]
+    },
+    {
+      "id": 4, "title": "Pack Addict", "subTitle": "Rip them open", "award": { "pack": 44 },
+      "objectives": [
+        { "id": 401, "name": "First Rip", "stat": "packs", "target": 10, "award": { "coins": 200000 }, "xp": 1500 },
+        { "id": 402, "name": "Walkout Hunter", "stat": "packs", "target": 50, "award": { "pack": 47 }, "xp": 4000 },
+        { "id": 403, "name": "Pack Machine", "stat": "packs", "target": 200, "award": { "pack": 46 }, "xp": 8000 },
+        { "id": 404, "name": "Addicted", "stat": "packs", "target": 1000, "award": { "pack": 42 }, "xp": 20000 }
+      ]
+    },
+    {
+      "id": 5, "title": "Squad Builder", "subTitle": "Hand in those squads", "award": { "pack": 42 },
+      "objectives": [
+        { "id": 501, "name": "Getting Started", "stat": "sbcs", "target": 5, "award": { "coins": 300000 }, "xp": 2500 },
+        { "id": 502, "name": "SBC Grinder", "stat": "sbcs", "target": 20, "award": { "pack": 516 }, "xp": 6000 },
+        { "id": 503, "name": "Master Builder", "stat": "sbcs", "target": 50, "award": { "pack": 45 }, "xp": 12000 }
+      ]
+    },
+    {
+      "id": 6, "title": "Draft King", "subTitle": "Four wins and you are a legend", "award": { "pack": 42 },
+      "objectives": [
+        { "id": 601, "name": "Draft Debut", "stat": "draftWins", "target": 1, "award": { "coins": 250000 }, "xp": 2000 },
+        { "id": 602, "name": "Draft Regular", "stat": "draftWins", "target": 10, "award": { "pack": 46 }, "xp": 8000 },
+        { "id": 603, "name": "Draft King", "stat": "draftWins", "target": 40, "award": { "pack": 43 }, "xp": 15000 }
+      ]
+    },
+    {
+      "id": 7, "title": "Legend Status", "subTitle": "Only the truly dedicated", "award": { "coins": 25000000 },
+      "objectives": [
+        { "id": 701, "name": "Centurion", "stat": "wins", "target": 250, "award": { "coins": 10000000 }, "xp": 25000 },
+        { "id": 702, "name": "Thousand Goals", "stat": "goals", "target": 1000, "award": { "pack": 42 }, "xp": 25000 },
+        { "id": 703, "name": "Road Warrior", "stat": "matches", "target": 500, "award": { "pack": 44 }, "xp": 25000 },
+        { "id": 704, "name": "SBC Legend", "stat": "sbcs", "target": 100, "award": { "pack": 43 }, "xp": 25000 }
+      ]
+    }
+  ],
+
+  "_seasonProgressComment": "Level n needs n * xpPerLevel XP. levelRewards lists one reward per level in order: coins, or a pack delivered to My Packs.",
+  "seasonProgress": {
+    "levelCount": 50,
+    "xpPerLevel": 2500,
+    "levelRewards": [
+      { "coins": 100000 }, { "pack": 404 }, { "coins": 150000 }, { "pack": 514 }, { "pack": 47 },
+      { "coins": 250000 }, { "pack": 405 }, { "pack": 515 }, { "coins": 400000 }, { "pack": 46 },
+      { "coins": 500000 }, { "pack": 516 }, { "pack": 47 }, { "coins": 600000 }, { "pack": 45 },
+      { "pack": 516 }, { "coins": 750000 }, { "pack": 46 }, { "pack": 516 }, { "pack": 44 },
+      { "coins": 1000000 }, { "pack": 47 }, { "pack": 516 }, { "coins": 1250000 }, { "pack": 43 },
+      { "pack": 45 }, { "coins": 1500000 }, { "pack": 46 }, { "pack": 516 }, { "pack": 42 },
+      { "coins": 2000000 }, { "pack": 44 }, { "pack": 47 }, { "coins": 2500000 }, { "pack": 43 },
+      { "pack": 45 }, { "coins": 3000000 }, { "pack": 46 }, { "pack": 44 }, { "pack": 42 },
+      { "coins": 4000000 }, { "pack": 43 }, { "pack": 45 }, { "coins": 5000000 }, { "pack": 42 },
+      { "pack": 44 }, { "coins": 7500000 }, { "pack": 43 }, { "coins": 10000000 }, { "pack": 42 }
+    ]
+  }
+}

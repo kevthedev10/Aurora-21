@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <RollForward>Major</RollForward>
+    <!-- Match the server executable's GC mode. -->
+    <ServerGarbageCollection>true</ServerGarbageCollection>
+    <ConcurrentGarbageCollection>true</ConcurrentGarbageCollection>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- Development-only helper reuses the throwaway-cluster/fixture infrastructure. -->
+    <ProjectReference Include="../../tests/Aurora21.UltimateTeam.Tests/Aurora21.UltimateTeam.Tests.csproj" />
+  </ItemGroup>
+  <!-- The referenced server application is a library here. Its framework-dependent and RID
+       runtimeconfigs can both flow through the test project during self-contained publish.
+       Only this profiling executable's runtimeconfig controls the profiling process. -->
+  <Target Name="RemoveReferencedServerRuntimeConfig" BeforeTargets="_HandleFileConflictsForPublish">
+    <ItemGroup>
+      <ResolvedFileToPublish Remove="@(ResolvedFileToPublish)"
+                             Condition="'%(ResolvedFileToPublish.RelativePath)' == 'Aurora21-UltimateTeam-Server.runtimeconfig.json'" />
+    </ItemGroup>
+  </Target>
+</Project>

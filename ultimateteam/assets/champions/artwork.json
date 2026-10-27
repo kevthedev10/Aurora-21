@@ -1,0 +1,202 @@
+[
+  {
+    "name": "data/ui/external/ion_fut/imgAssets/champions/logo/logo_champions.dds",
+    "member": null,
+    "sourceAssetSha256": "e7b808d1a7c4ff383da68b38df8b5fa69813e5896cedce8dff797ddf776682a6",
+    "sourceBitmapSha256": "e7b808d1a7c4ff383da68b38df8b5fa69813e5896cedce8dff797ddf776682a6",
+    "replacementFile": "champions-logo.dds",
+    "replacementSha256": "08072dce64c7c1e72e5cc4600c6f4a1194e474d9c7345caa2633877c53ae2995"
+  },
+  {
+    "name": "data/ui/external/ion_fut/imgAssets/champions/logo/logo_tint_hl.dds",
+    "member": null,
+    "sourceAssetSha256": "7b458f3d016641a1a0749fb6b915bf74034e0dbc7642c7379f9f3ecea07c0495",
+    "sourceBitmapSha256": "7b458f3d016641a1a0749fb6b915bf74034e0dbc7642c7379f9f3ecea07c0495",
+    "replacementFile": "champions-highlight.dds",
+    "replacementSha256": "ed98f7cb47fcbb40a529146a4a78507d0d81670dd4d8a71e306ab755823be686"
+  },
+  {
+    "name": "data/ui/external/ion_fut/imgAssets/champions/logo/logo_tint_unhl.dds",
+    "member": null,
+    "sourceAssetSha256": "e7b808d1a7c4ff383da68b38df8b5fa69813e5896cedce8dff797ddf776682a6",
+    "sourceBitmapSha256": "e7b808d1a7c4ff383da68b38df8b5fa69813e5896cedce8dff797ddf776682a6",
+    "replacementFile": "champions-unhighlight.dds",
+    "replacementSha256": "08072dce64c7c1e72e5cc4600c6f4a1194e474d9c7345caa2633877c53ae2995"
+  },
+  {
+    "name": "data/ui/external/ion_fut/imgAssets/champions/logo/logo_weekend.dds",
+    "member": null,
+    "sourceAssetSha256": "269ac1cdc99c59adc784b2d3532c60a0bcb866644eb1cb212a948e4eb2b7b614",
+    "sourceBitmapSha256": "269ac1cdc99c59adc784b2d3532c60a0bcb866644eb1cb212a948e4eb2b7b614",
+    "replacementFile": "champions-weekend.dds",
+    "replacementSha256": "79012754d6d85f669a2594ceac65d983854801990d6092bcd2589234a0c76fa1"
+  },
+  {
+    "name": "data/ui/external/ion_fut/imgAssets/champions/sellscreen/Logo.dds",
+    "member": null,
+    "sourceAssetSha256": "1ede14af01a22679c5ddbab9154297bf81e5ce8bfe8d5e0fcbbe5fb6e5c610fc",
+    "sourceBitmapSha256": "1ede14af01a22679c5ddbab9154297bf81e5ce8bfe8d5e0fcbbe5fb6e5c610fc",
+    "replacementFile": "champions-sellscreen.dds",
+    "replacementSha256": "917ed78e93ccc4a3b8e43a88849c9ad7576f6b9d633546b7c02c7e8189dc112c"
+  },
+  {
+    "name": "data/ui/external/ion_fut/imgAssets/champions/sellscreen/Logo_Watermark.dds",
+    "member": null,
+    "sourceAssetSha256": "f3f6ef823434a5b3632258800a0bcea10414d281a7f371eeb5adad93bcf63ac5",
+    "sourceBitmapSha256": "f3f6ef823434a5b3632258800a0bcea10414d281a7f371eeb5adad93bcf63ac5",
+    "replacementFile": "champions-watermark.dds",
+    "replacementSha256": "5fd59b6d650624e7bb6eeed5f469d5d01cd125f78e14385972ebd838b4947316"
+  },
+  {
+    "name": "data/ui/external/ion_fut/imgAssets/rivals/logo/logo_champs.dds",
+    "member": null,
+    "sourceAssetSha256": "536b57518faa6585f3240b98b2d4a87ed11fa6a9746dada2e8e3eddc8498182e",
+    "sourceBitmapSha256": "536b57518faa6585f3240b98b2d4a87ed11fa6a9746dada2e8e3eddc8498182e",
+    "replacementFile": "champions-rivals.dds",
+    "replacementSha256": "c4ab67a715d857f758137cbe2991c7bfa22edd4b141a949ea324ba0fb8936c57"
+  },
+  {
+    "name": "data/ui/external/ion_fut/imgAssets/rivals/logo/logo_champs_flat.dds",
+    "member": null,
+    "sourceAssetSha256": "a3b771b80d078bad6cd63494809e55d0dc2441f24f8cb02d6795d8ff36bb2d61",
+    "sourceBitmapSha256": "a3b771b80d078bad6cd63494809e55d0dc2441f24f8cb02d6795d8ff36bb2d61",
+    "replacementFile": "champions-rivals-flat.dds",
+    "replacementSha256": "f00ac8f1d8a2ca897c58eb54d47a0fc93592691948e23745d7094af5d6d75da5"
+  },
+  {
+    "name": "data/ui/external/ion_fut/imgAssets/rivals/logo/logo_weekendleague.dds",
+    "member": null,
+    "sourceAssetSha256": "18669ce3cdbe9240df85e4e9ba9149ef542c8116079b3b894ede96b53e3931a7",
+    "sourceBitmapSha256": "18669ce3cdbe9240df85e4e9ba9149ef542c8116079b3b894ede96b53e3931a7",
+    "replacementFile": "champions-weekendleague.dds",
+    "replacementSha256": "054efe7a0c1612726e75f1315bc4a227e10bf8ee4e19307b89243aec1ccd477a"
+  },
+  {
+    "name": "data/ui/external/ion_fut/imgAssets/rivals/logo/logo_WL_small.dds",
+    "member": null,
+    "sourceAssetSha256": "6c29f21af201e20f02d98f8ceefd8d9fbf6a494b2101d79eecac45167ab912db",
+    "sourceBitmapSha256": "6c29f21af201e20f02d98f8ceefd8d9fbf6a494b2101d79eecac45167ab912db",
+    "replacementFile": "champions-weekendleague-small.dds",
+    "replacementSha256": "a59552baa87eb49a4e422f51b5ee1d69eda7ac93e77e93daa9f32421e4387ea8"
+  },
+  {
+    "name": "data/ui/external/ion_fut/imgAssets/GameHub/Gamehub_RibbonChampions.dds",
+    "member": null,
+    "sourceAssetSha256": "70b649985bfe9ba19f4c0c8bed8f8c2a4b093a36974935dce0eaafbed6a73874",
+    "sourceBitmapSha256": "70b649985bfe9ba19f4c0c8bed8f8c2a4b093a36974935dce0eaafbed6a73874",
+    "replacementFile": "champions-ribbon.dds",
+    "replacementSha256": "0be65ba30d852a0cc0e8a432edeadc0948b7084c402c1fe97fefa461c23f84b3"
+  },
+  {
+    "name": "data/ui/external/ion_fut/components/FutRivalsThresholdOverlay.big",
+    "member": "116",
+    "sourceAssetSha256": "0eec86996242c880b34e199a75fdeacc40a3ffc937eacb1b34349b7d5db9417b",
+    "sourceBitmapSha256": "88cfb664547e2d19164efa67cc9a7c66a8a36f853a1586b1a15943223046719f",
+    "replacementFile": "champions-rivals-intro.dds",
+    "replacementSha256": "ac7c9b1cee7aeb6989e3509399acd147a28ed2bbcc48c1294afcf708aa4aec1f"
+  },
+  {
+    "name": "data/ui/external/ion_fut/imgAssets/GameHub/GameHub_ChampPrize.dds",
+    "member": null,
+    "sourceAssetSha256": "570ff203f46de6a4304d6c8b3b94ae11c990f915770c4a2ab28ed7f122fe10ba",
+    "sourceBitmapSha256": "570ff203f46de6a4304d6c8b3b94ae11c990f915770c4a2ab28ed7f122fe10ba",
+    "replacementFile": "champions-hub-prize.dds",
+    "replacementSha256": "2fd15d43bcd9e46d7644ef1ae6891f7bef377553952b3675850c075c8f29e0b2"
+  },
+  {
+    "name": "data/ui/external/ion_fut/imgAssets/GameHub/GameHub_ChampsRewards.dds",
+    "member": null,
+    "sourceAssetSha256": "570ff203f46de6a4304d6c8b3b94ae11c990f915770c4a2ab28ed7f122fe10ba",
+    "sourceBitmapSha256": "570ff203f46de6a4304d6c8b3b94ae11c990f915770c4a2ab28ed7f122fe10ba",
+    "replacementFile": "champions-hub-rewards.dds",
+    "replacementSha256": "2fd15d43bcd9e46d7644ef1ae6891f7bef377553952b3675850c075c8f29e0b2"
+  },
+  {
+    "name": "data/ui/external/ion_fut/imgAssets/GameHub/GameHub_ChampionsChannel_Active.dds",
+    "member": null,
+    "sourceAssetSha256": "0f81155966a88c01d0b3cd1baf9c231ef6be96199a1a06f56bb590bfac28cb24",
+    "sourceBitmapSha256": "0f81155966a88c01d0b3cd1baf9c231ef6be96199a1a06f56bb590bfac28cb24",
+    "replacementFile": "champions-hub-channel-active.dds",
+    "replacementSha256": "9e816afb35b1b3b69784cc155c6238ff3578d966a04891a3ffd8e6162134bb8a"
+  },
+  {
+    "name": "data/ui/external/ion_fut/imgAssets/GameHub/GameHub_ChampionsChannel_Inactive.dds",
+    "member": null,
+    "sourceAssetSha256": "dfc7933b91bce5683a4f5c82fc6a6b0b018e5a88e225ee223887d7bc65faf747",
+    "sourceBitmapSha256": "dfc7933b91bce5683a4f5c82fc6a6b0b018e5a88e225ee223887d7bc65faf747",
+    "replacementFile": "champions-hub-channel-inactive.dds",
+    "replacementSha256": "67f6f6c3a884a7d16f739924d578cb99db00b2972975ca35cbcd41d0257841dd"
+  },
+  {
+    "name": "data/ui/external/ion_fut/imgAssets/GameHub/GameHub_ChampionsInactive_Active.dds",
+    "member": null,
+    "sourceAssetSha256": "7f60ac03ed1e73cc05c899f07491f3c6e1857e3bfc74ff4eb20734802dc611ea",
+    "sourceBitmapSha256": "7f60ac03ed1e73cc05c899f07491f3c6e1857e3bfc74ff4eb20734802dc611ea",
+    "replacementFile": "champions-hub-idle-active.dds",
+    "replacementSha256": "6e10acfdb832ab7f8717f094256b13f64e63fbb68d4d21a9afd9c556f522fcc4"
+  },
+  {
+    "name": "data/ui/external/ion_fut/imgAssets/GameHub/GameHub_ChampionsInactive_Inactive.dds",
+    "member": null,
+    "sourceAssetSha256": "c935d4fa054906ee370e5d1ea62fafad348e4e0768f4f7d08fe23b571aa5c1c5",
+    "sourceBitmapSha256": "c935d4fa054906ee370e5d1ea62fafad348e4e0768f4f7d08fe23b571aa5c1c5",
+    "replacementFile": "champions-hub-idle-inactive.dds",
+    "replacementSha256": "6add0dd402e76318975093bf3407dde23b79da034a1f1a01a6886846db44d51d"
+  },
+  {
+    "name": "data/ui/external/ion_fut/imgAssets/champions/sellscreen/Beat2.dds",
+    "member": null,
+    "sourceAssetSha256": "932cf93c28d93ca97387d8001f17bdcf1b25c352d3031dfc478157cc74c4d268",
+    "sourceBitmapSha256": "932cf93c28d93ca97387d8001f17bdcf1b25c352d3031dfc478157cc74c4d268",
+    "replacementFile": "champions-sellscreen-beat2.dds",
+    "replacementSha256": "fb62e168d560c45cdbacac0fc7a09b0899a517287b16ff9a1326c7ba0bb336bb"
+  },
+  {
+    "name": "data/ui/external/ion_fut/imgAssets/GameHub/GameHub_Play.dds",
+    "member": null,
+    "sourceAssetSha256": "72747471aa22123006b27af0512e9ca9768a59e1f36873bdb91eebaa248b569f",
+    "sourceBitmapSha256": "72747471aa22123006b27af0512e9ca9768a59e1f36873bdb91eebaa248b569f",
+    "replacementFile": "champions-hub-play.dds",
+    "replacementSha256": "351951c54acbd22589e73edec18f0d54fc087e6b14653e687c35f2652c9bf7a3"
+  },
+  {
+    "name": "data/ui/external/ion_fut/imgAssets/GameHub/GameHub_LeaderboardImage.dds",
+    "member": null,
+    "sourceAssetSha256": "7facec63a25ef3584615ae19ecb9c9ece72f770ceda702059a474b9cda847f41",
+    "sourceBitmapSha256": "7facec63a25ef3584615ae19ecb9c9ece72f770ceda702059a474b9cda847f41",
+    "replacementFile": "champions-hub-leaderboard.dds",
+    "replacementSha256": "66d6b1517de1c6cefcb786b3521622e83f793cefab70a1366704cd2b37e7ed8a"
+  },
+  {
+    "name": "data/ui/external/ion_fut/imgAssets/rivals/sellscreen/sellscreen_hub_0.dds",
+    "member": null,
+    "sourceAssetSha256": "35ba802f481a894d6822b97bbcaae0a48b8383398f11e8798b1da6d7c59e18bd",
+    "sourceBitmapSha256": "35ba802f481a894d6822b97bbcaae0a48b8383398f11e8798b1da6d7c59e18bd",
+    "replacementFile": "champions-rivals-sellscreen-0.dds",
+    "replacementSha256": "a1c3ca799f4f88c4a1e43c3e70caab6e1fa35e3db6298780734e48eeebb16954"
+  },
+  {
+    "name": "data/ui/external/ion_fut/imgAssets/rivals/sellscreen/sellscreen_hub_1.dds",
+    "member": null,
+    "sourceAssetSha256": "133d045d74b258040a98718e691e897230c7abf8f1ee7ac605b3c4abe72397c9",
+    "sourceBitmapSha256": "133d045d74b258040a98718e691e897230c7abf8f1ee7ac605b3c4abe72397c9",
+    "replacementFile": "champions-rivals-sellscreen-1.dds",
+    "replacementSha256": "3a6ed107a008660a0922578d7e3286bdedba5a8ef8fc30602d524f4dceeee5e5"
+  },
+  {
+    "name": "data/ui/external/ion_fut/imgAssets/rivals/sellscreen/sellscreen_hub_2.dds",
+    "member": null,
+    "sourceAssetSha256": "ad3882613e027bce8b46045fc31a6e9be3b2e17a3f7e1ae9b8d5ba44304a8da3",
+    "sourceBitmapSha256": "ad3882613e027bce8b46045fc31a6e9be3b2e17a3f7e1ae9b8d5ba44304a8da3",
+    "replacementFile": "champions-rivals-sellscreen-2.dds",
+    "replacementSha256": "a15b69f9a40f2ae3826141927a369d4ab376598b982c1291a8e81eee6669881f"
+  },
+  {
+    "name": "data/ui/external/ion_fut/imgAssets/rivals/sellscreen/sellscreen_hub_3.dds",
+    "member": null,
+    "sourceAssetSha256": "68373648241164f48183086e3365c3c88555e0b9a22e02aab1fed9b73ea5b2ac",
+    "sourceBitmapSha256": "68373648241164f48183086e3365c3c88555e0b9a22e02aab1fed9b73ea5b2ac",
+    "replacementFile": "champions-rivals-sellscreen-3.dds",
+    "replacementSha256": "1d24edc4255cde7b9f658aa1dcd375b95d2c7af1f23c6894ab70559ff6a220e1"
+  }
+]

@@ -1,0 +1,3829 @@
+[
+  {
+    "stringId": "ACC_FUT_GH_FIFAPOINTS_0_HIGHLIGHTED",
+    "languages": {
+      "ara_sa": {
+        "source": "FIFA Points",
+        "target": "Aurora Tokens"
+      },
+      "chi_hk": {
+        "source": "FIFA Points",
+        "target": "Aurora Tokens"
+      },
+      "chs_cn": {
+        "source": "FIFA Points",
+        "target": "Aurora Tokens"
+      },
+      "cze_cz": {
+        "source": "FIFA Points",
+        "target": "Aurora Tokens"
+      },
+      "dan_dk": {
+        "source": "FIFA Points",
+        "target": "Aurora Tokens"
+      },
+      "dut_nl": {
+        "source": "FIFA Points",
+        "target": "Aurora Tokens"
+      },
+      "eng_us": {
+        "source": "FIFA Points",
+        "target": "Aurora Tokens"
+      },
+      "fre_fr": {
+        "source": "FIFA Points",
+        "target": "Aurora Tokens"
+      },
+      "ger_de": {
+        "source": "FIFA Points",
+        "target": "Aurora Tokens"
+      },
+      "ita_it": {
+        "source": "FIFA Points",
+        "target": "Aurora Tokens"
+      },
+      "jpn_jp": {
+        "source": "FIFA Points",
+        "target": "Aurora Tokens"
+      },
+      "kor_kr": {
+        "source": "FIFA Points",
+        "target": "Aurora Tokens"
+      },
+      "nor_no": {
+        "source": "FIFA Points",
+        "target": "Aurora Tokens"
+      },
+      "pol_pl": {
+        "source": "FIFA Points",
+        "target": "Aurora Tokens"
+      },
+      "por_br": {
+        "source": "FIFA Points",
+        "target": "Aurora Tokens"
+      },
+      "por_pt": {
+        "source": "FIFA Points",
+        "target": "Aurora Tokens"
+      },
+      "rus_ru": {
+        "source": "FIFA Points",
+        "target": "Aurora Tokens"
+      },
+      "spa_es": {
+        "source": "FIFA Points",
+        "target": "Aurora Tokens"
+      },
+      "spa_mx": {
+        "source": "FIFA Points",
+        "target": "Aurora Tokens"
+      },
+      "swe_se": {
+        "source": "FIFA Points",
+        "target": "Aurora Tokens"
+      },
+      "tur_tr": {
+        "source": "FIFA Points",
+        "target": "Aurora Tokens"
+      }
+    }
+  },
+  {
+    "stringId": "ACC_FUT_GH_FIFAPOINTS_0_SELECTED",
+    "languages": {
+      "ara_sa": {
+        "source": "Entering FIFA Points",
+        "target": "Entering Aurora Tokens"
+      },
+      "chi_hk": {
+        "source": "Entering FIFA Points",
+        "target": "Entering Aurora Tokens"
+      },
+      "chs_cn": {
+        "source": "Entering FIFA Points",
+        "target": "Entering Aurora Tokens"
+      },
+      "cze_cz": {
+        "source": "Entering FIFA Points",
+        "target": "Entering Aurora Tokens"
+      },
+      "dan_dk": {
+        "source": "Entering FIFA Points",
+        "target": "Entering Aurora Tokens"
+      },
+      "dut_nl": {
+        "source": "Entering FIFA Points",
+        "target": "Entering Aurora Tokens"
+      },
+      "eng_us": {
+        "source": "Entering FIFA Points",
+        "target": "Entering Aurora Tokens"
+      },
+      "fre_fr": {
+        "source": "Entering FIFA Points",
+        "target": "Entering Aurora Tokens"
+      },
+      "ger_de": {
+        "source": "Entering FIFA Points",
+        "target": "Entering Aurora Tokens"
+      },
+      "ita_it": {
+        "source": "Entering FIFA Points",
+        "target": "Entering Aurora Tokens"
+      },
+      "jpn_jp": {
+        "source": "Entering FIFA Points",
+        "target": "Entering Aurora Tokens"
+      },
+      "kor_kr": {
+        "source": "Entering FIFA Points",
+        "target": "Entering Aurora Tokens"
+      },
+      "nor_no": {
+        "source": "Entering FIFA Points",
+        "target": "Entering Aurora Tokens"
+      },
+      "pol_pl": {
+        "source": "Entering FIFA Points",
+        "target": "Entering Aurora Tokens"
+      },
+      "por_br": {
+        "source": "Entering FIFA Points",
+        "target": "Entering Aurora Tokens"
+      },
+      "por_pt": {
+        "source": "Entering FIFA Points",
+        "target": "Entering Aurora Tokens"
+      },
+      "rus_ru": {
+        "source": "Entering FIFA Points",
+        "target": "Entering Aurora Tokens"
+      },
+      "spa_es": {
+        "source": "Entering FIFA Points",
+        "target": "Entering Aurora Tokens"
+      },
+      "spa_mx": {
+        "source": "Entering FIFA Points",
+        "target": "Entering Aurora Tokens"
+      },
+      "swe_se": {
+        "source": "Entering FIFA Points",
+        "target": "Entering Aurora Tokens"
+      },
+      "tur_tr": {
+        "source": "Entering FIFA Points",
+        "target": "Entering Aurora Tokens"
+      }
+    }
+  },
+  {
+    "stringId": "FUT_CHALKTUT_FIFAPOINTS_DESC_1",
+    "languages": {
+      "ara_sa": {
+        "source": "قم بشراء نقاط FIFA باستخدام النقود.",
+        "target": "قم بشراء Aurora Tokens باستخدام النقود."
+      },
+      "chi_hk": {
+        "source": "購買FIFA Points。",
+        "target": "購買Aurora Tokens。"
+      },
+      "chs_cn": {
+        "source": "用钱购买 FIFA Points。",
+        "target": "用钱购买 Aurora Tokens。"
+      },
+      "cze_cz": {
+        "source": "Kupte si FIFA Points za peníze.",
+        "target": "Kupte si Aurora Tokens za peníze."
+      },
+      "dan_dk": {
+        "source": "Køb FIFA-point med penge.",
+        "target": "Køb Aurora Tokens med penge."
+      },
+      "dut_nl": {
+        "source": "Koop FIFA-punten met geld.",
+        "target": "Koop Aurora Tokens met geld."
+      },
+      "eng_us": {
+        "source": "Purchase FIFA Points with money.",
+        "target": "Purchase Aurora Tokens with money."
+      },
+      "fre_fr": {
+        "source": "Achetez des Points FIFA avec de l'argent.",
+        "target": "Achetez des Aurora Tokens avec de l'argent."
+      },
+      "ger_de": {
+        "source": "FIFA Points kannst du mit Geld erwerben.",
+        "target": "Aurora Tokens kannst du mit Geld erwerben."
+      },
+      "ita_it": {
+        "source": "Acquista FIFA Points con soldi reali.",
+        "target": "Acquista Aurora Tokens con soldi reali."
+      },
+      "jpn_jp": {
+        "source": "FIFAポイントは\nお金で購入できます。",
+        "target": "Aurora Tokensは\nお金で購入できます。"
+      },
+      "kor_kr": {
+        "source": "FIFA 포인트를 구매하세요.",
+        "target": "Aurora Tokens를 구매하세요."
+      },
+      "nor_no": {
+        "source": "Kjøp FIFA Points med penger.",
+        "target": "Kjøp Aurora Tokens med penger."
+      },
+      "pol_pl": {
+        "source": "Kup FIFA Points za prawdziwe pieniądze.",
+        "target": "Kup Aurora Tokens za prawdziwe pieniądze."
+      },
+      "por_br": {
+        "source": "Compre FIFA Points com dinheiro.",
+        "target": "Compre Aurora Tokens com dinheiro."
+      },
+      "por_pt": {
+        "source": "Adquire FIFA Points com dinheiro.",
+        "target": "Adquire Aurora Tokens com dinheiro."
+      },
+      "rus_ru": {
+        "source": "Покупайте FIFA Points за деньги.",
+        "target": "Покупайте Aurora Tokens за деньги."
+      },
+      "spa_es": {
+        "source": "Compra FIFA Points con dinero.",
+        "target": "Compra Aurora Tokens con dinero."
+      },
+      "spa_mx": {
+        "source": "Compra FIFA Points con dinero.",
+        "target": "Compra Aurora Tokens con dinero."
+      },
+      "swe_se": {
+        "source": "Köp FIFA-poäng med pengar.",
+        "target": "Köp Aurora Tokens med pengar."
+      },
+      "tur_tr": {
+        "source": "Para ile FIFA Points satın al.",
+        "target": "Para ile Aurora Tokens satın al."
+      }
+    }
+  },
+  {
+    "stringId": "FUT_CHALKTUT_FIFAPOINTS_DESC_2",
+    "languages": {
+      "ara_sa": {
+        "source": "استخدم نقاط FIFA لشراء الحزم من المتجر.",
+        "target": "استخدم Aurora Tokens لشراء الحزم من المتجر."
+      },
+      "chi_hk": {
+        "source": "以 FIFA Points 從商店購買組合包。",
+        "target": "以 Aurora Tokens 從商店購買組合包。"
+      },
+      "chs_cn": {
+        "source": "使用 FIFA Points 从商店中购买组合包。",
+        "target": "使用 Aurora Tokens 从商店中购买组合包。"
+      },
+      "cze_cz": {
+        "source": "Použijte FIFA Points k nákupu balíčků v Obchodě.",
+        "target": "Použijte Aurora Tokens k nákupu balíčků v Obchodě."
+      },
+      "dan_dk": {
+        "source": "Brug FIFA-point til at købe pakker i butikken.",
+        "target": "Brug Aurora Tokens til at købe pakker i butikken."
+      },
+      "dut_nl": {
+        "source": "Gebruik FIFA-punten om pakketten mee te kopen in de winkel.",
+        "target": "Gebruik Aurora Tokens om pakketten mee te kopen in de winkel."
+      },
+      "eng_us": {
+        "source": "Use FIFA Points to buy Packs from the Store.",
+        "target": "Use Aurora Tokens to buy Packs from the Store."
+      },
+      "fre_fr": {
+        "source": "Utilisez des Points FIFA pour acheter des packs dans la boutique.",
+        "target": "Utilisez des Aurora Tokens pour acheter des packs dans la boutique."
+      },
+      "ger_de": {
+        "source": "Verwende FIFA Points, um im Shop Packs zu kaufen.",
+        "target": "Verwende Aurora Tokens, um im Shop Packs zu kaufen."
+      },
+      "ita_it": {
+        "source": "Usa i FIFA Points per acquistare pacchetti nel negozio.",
+        "target": "Usa i Aurora Tokens per acquistare pacchetti nel negozio."
+      },
+      "jpn_jp": {
+        "source": "ストアではFIFAポイントを使用してパックを購入できます。",
+        "target": "ストアではAurora Tokensを使用してパックを購入できます。"
+      },
+      "kor_kr": {
+        "source": "FIFA 포인트로 스토어에서 팩을 구매하세요.",
+        "target": "Aurora Tokens로 스토어에서 팩을 구매하세요."
+      },
+      "nor_no": {
+        "source": "Bruk FIFA Points til å kjøpe pakker i butikken.",
+        "target": "Bruk Aurora Tokens til å kjøpe pakker i butikken."
+      },
+      "pol_pl": {
+        "source": "Wykorzystaj FIFA Points do nabycia paczek w sklepie.",
+        "target": "Wykorzystaj Aurora Tokens do nabycia paczek w sklepie."
+      },
+      "por_br": {
+        "source": "Use FIFA Points para comprar Pacotes na Loja.",
+        "target": "Use Aurora Tokens para comprar Pacotes na Loja."
+      },
+      "por_pt": {
+        "source": "Usa FIFA Points para adquirir Packs na Loja.",
+        "target": "Usa Aurora Tokens para adquirir Packs na Loja."
+      },
+      "rus_ru": {
+        "source": "Покупайте наборы в магазине за FIFA Points.",
+        "target": "Покупайте наборы в магазине за Aurora Tokens."
+      },
+      "spa_es": {
+        "source": "Usa FIFA Points para comprar sobres de la Tienda.",
+        "target": "Usa Aurora Tokens para comprar sobres de la Tienda."
+      },
+      "spa_mx": {
+        "source": "Usa FIFA Points para comprar Packs de la Tienda.",
+        "target": "Usa Aurora Tokens para comprar Packs de la Tienda."
+      },
+      "swe_se": {
+        "source": "Köp paket från butiken med dina FIFA-poäng.",
+        "target": "Köp paket från butiken med dina Aurora Tokens."
+      },
+      "tur_tr": {
+        "source": "Mağaza'dan Paket almak için FIFA Points kullan.",
+        "target": "Mağaza'dan Paket almak için Aurora Tokens kullan."
+      }
+    }
+  },
+  {
+    "stringId": "FUT_CHALKTUT_FIFAPOINTS_SWITCH_DESC_1",
+    "languages": {
+      "ara_sa": {
+        "source": "قم بشراء نقاط FIFA باستخدام النقود.",
+        "target": "قم بشراء Aurora Tokens باستخدام النقود."
+      },
+      "chi_hk": {
+        "source": "購買FIFA Points。",
+        "target": "購買Aurora Tokens。"
+      },
+      "chs_cn": {
+        "source": "用钱购买 FIFA Points。",
+        "target": "用钱购买 Aurora Tokens。"
+      },
+      "cze_cz": {
+        "source": "Kupte si FIFA Points za peníze.",
+        "target": "Kupte si Aurora Tokens za peníze."
+      },
+      "dan_dk": {
+        "source": "Køb FIFA-point med penge.",
+        "target": "Køb Aurora Tokens med penge."
+      },
+      "dut_nl": {
+        "source": "Koop FIFA-punten met geld.",
+        "target": "Koop Aurora Tokens met geld."
+      },
+      "eng_us": {
+        "source": "Purchase FIFA Points with money.",
+        "target": "Purchase Aurora Tokens with money."
+      },
+      "fre_fr": {
+        "source": "Achetez des Points FIFA avec de l'argent.",
+        "target": "Achetez des Aurora Tokens avec de l'argent."
+      },
+      "ger_de": {
+        "source": "FIFA Points kannst du mit Geld erwerben.",
+        "target": "Aurora Tokens kannst du mit Geld erwerben."
+      },
+      "ita_it": {
+        "source": "Acquista FIFA Points con soldi reali.",
+        "target": "Acquista Aurora Tokens con soldi reali."
+      },
+      "jpn_jp": {
+        "source": "FIFAポイントは\nお金で購入できます。",
+        "target": "Aurora Tokensは\nお金で購入できます。"
+      },
+      "kor_kr": {
+        "source": "FIFA 포인트를 구매하세요.",
+        "target": "Aurora Tokens를 구매하세요."
+      },
+      "nor_no": {
+        "source": "Kjøp FIFA Points med penger.",
+        "target": "Kjøp Aurora Tokens med penger."
+      },
+      "pol_pl": {
+        "source": "Kup FIFA Points za prawdziwe pieniądze.",
+        "target": "Kup Aurora Tokens za prawdziwe pieniądze."
+      },
+      "por_br": {
+        "source": "Compre FIFA Points com dinheiro.",
+        "target": "Compre Aurora Tokens com dinheiro."
+      },
+      "por_pt": {
+        "source": "Compra FIFA Points com dinheiro.",
+        "target": "Compra Aurora Tokens com dinheiro."
+      },
+      "rus_ru": {
+        "source": "Покупайте FIFA Points за деньги.",
+        "target": "Покупайте Aurora Tokens за деньги."
+      },
+      "spa_es": {
+        "source": "Compra FIFA Points con dinero.",
+        "target": "Compra Aurora Tokens con dinero."
+      },
+      "spa_mx": {
+        "source": "Compra FIFA Points con dinero.",
+        "target": "Compra Aurora Tokens con dinero."
+      },
+      "swe_se": {
+        "source": "Köp FIFA-poäng med pengar.",
+        "target": "Köp Aurora Tokens med pengar."
+      },
+      "tur_tr": {
+        "source": "Para ile FIFA Points satın al.",
+        "target": "Para ile Aurora Tokens satın al."
+      }
+    }
+  },
+  {
+    "stringId": "FUT_CHALKTUT_FIFAPOINTS_SWITCH_DESC_2",
+    "languages": {
+      "ara_sa": {
+        "source": "استخدم نقاط FIFA لشراء الحزم من المتجر.",
+        "target": "استخدم Aurora Tokens لشراء الحزم من المتجر."
+      },
+      "chi_hk": {
+        "source": "以 FIFA Points 從商店購買組合包。",
+        "target": "以 Aurora Tokens 從商店購買組合包。"
+      },
+      "chs_cn": {
+        "source": "使用 FIFA Points 从商店中购买组合包。",
+        "target": "使用 Aurora Tokens 从商店中购买组合包。"
+      },
+      "cze_cz": {
+        "source": "Použijte FIFA Points k nákupu balíčků v Obchodě.",
+        "target": "Použijte Aurora Tokens k nákupu balíčků v Obchodě."
+      },
+      "dan_dk": {
+        "source": "Brug FIFA-point til at købe pakker i butikken.",
+        "target": "Brug Aurora Tokens til at købe pakker i butikken."
+      },
+      "dut_nl": {
+        "source": "Gebruik FIFA-punten om pakketten mee te kopen in de winkel.",
+        "target": "Gebruik Aurora Tokens om pakketten mee te kopen in de winkel."
+      },
+      "eng_us": {
+        "source": "Use FIFA Points to buy Packs from the Store.",
+        "target": "Use Aurora Tokens to buy Packs from the Store."
+      },
+      "fre_fr": {
+        "source": "Utilisez des Points FIFA pour acheter des packs dans la boutique.",
+        "target": "Utilisez des Aurora Tokens pour acheter des packs dans la boutique."
+      },
+      "ger_de": {
+        "source": "Verwende FIFA Points, um im Shop Packs zu kaufen.",
+        "target": "Verwende Aurora Tokens, um im Shop Packs zu kaufen."
+      },
+      "ita_it": {
+        "source": "Usa i FIFA Points per acquistare pacchetti nel negozio.",
+        "target": "Usa i Aurora Tokens per acquistare pacchetti nel negozio."
+      },
+      "jpn_jp": {
+        "source": "ストアではFIFAポイントを使用してパックを購入できます。",
+        "target": "ストアではAurora Tokensを使用してパックを購入できます。"
+      },
+      "kor_kr": {
+        "source": "FIFA 포인트로 스토어에서 팩을 구매하세요.",
+        "target": "Aurora Tokens로 스토어에서 팩을 구매하세요."
+      },
+      "nor_no": {
+        "source": "Bruk FIFA Points til å kjøpe pakker i butikken.",
+        "target": "Bruk Aurora Tokens til å kjøpe pakker i butikken."
+      },
+      "pol_pl": {
+        "source": "Wykorzystaj FIFA Points do nabycia paczek w sklepie.",
+        "target": "Wykorzystaj Aurora Tokens do nabycia paczek w sklepie."
+      },
+      "por_br": {
+        "source": "Use FIFA Points para comprar Pacotes na Loja.",
+        "target": "Use Aurora Tokens para comprar Pacotes na Loja."
+      },
+      "por_pt": {
+        "source": "Usa FIFA Points para adquirir Packs na Loja.",
+        "target": "Usa Aurora Tokens para adquirir Packs na Loja."
+      },
+      "rus_ru": {
+        "source": "Покупайте наборы в магазине за FIFA Points.",
+        "target": "Покупайте наборы в магазине за Aurora Tokens."
+      },
+      "spa_es": {
+        "source": "Usa FIFA Points para comprar sobres de la Tienda.",
+        "target": "Usa Aurora Tokens para comprar sobres de la Tienda."
+      },
+      "spa_mx": {
+        "source": "Usa FIFA Points para comprar Packs de la Tienda.",
+        "target": "Usa Aurora Tokens para comprar Packs de la Tienda."
+      },
+      "swe_se": {
+        "source": "Köp paket från butiken med dina FIFA-poäng.",
+        "target": "Köp paket från butiken med dina Aurora Tokens."
+      },
+      "tur_tr": {
+        "source": "Mağaza'dan Paket almak için FIFA Points kullan.",
+        "target": "Mağaza'dan Paket almak için Aurora Tokens kullan."
+      }
+    }
+  },
+  {
+    "stringId": "FUT_CHALKTUT_FIFAPOINTS_SWITCH_TITLE_1",
+    "languages": {
+      "ara_sa": {
+        "source": "نقاط FIFA",
+        "target": "Aurora Tokens"
+      },
+      "chi_hk": {
+        "source": "FIFA Points",
+        "target": "Aurora Tokens"
+      },
+      "chs_cn": {
+        "source": "FIFA POINTS",
+        "target": "AURORA TOKENS"
+      },
+      "cze_cz": {
+        "source": "FIFA POINTS",
+        "target": "AURORA TOKENS"
+      },
+      "dan_dk": {
+        "source": "FIFA-POINT",
+        "target": "AURORA TOKENS"
+      },
+      "dut_nl": {
+        "source": "FIFA-PUNTEN",
+        "target": "AURORA TOKENS"
+      },
+      "eng_us": {
+        "source": "FIFA POINTS",
+        "target": "AURORA TOKENS"
+      },
+      "fre_fr": {
+        "source": "POINTS FIFA",
+        "target": "AURORA TOKENS"
+      },
+      "ger_de": {
+        "source": "FIFA POINTS",
+        "target": "AURORA TOKENS"
+      },
+      "ita_it": {
+        "source": "FIFA POINTS",
+        "target": "AURORA TOKENS"
+      },
+      "jpn_jp": {
+        "source": "FIFAポイント",
+        "target": "Aurora Tokens"
+      },
+      "kor_kr": {
+        "source": "FIFA 포인트",
+        "target": "Aurora Tokens"
+      },
+      "nor_no": {
+        "source": "FIFA POINTS",
+        "target": "AURORA TOKENS"
+      },
+      "pol_pl": {
+        "source": "FIFA POINTS",
+        "target": "AURORA TOKENS"
+      },
+      "por_br": {
+        "source": "FIFA POINTS",
+        "target": "AURORA TOKENS"
+      },
+      "por_pt": {
+        "source": "FIFA POINTS",
+        "target": "AURORA TOKENS"
+      },
+      "rus_ru": {
+        "source": "FIFA POINTS",
+        "target": "AURORA TOKENS"
+      },
+      "spa_es": {
+        "source": "FIFA POINTS",
+        "target": "AURORA TOKENS"
+      },
+      "spa_mx": {
+        "source": "FIFA POINTS",
+        "target": "AURORA TOKENS"
+      },
+      "swe_se": {
+        "source": "FIFA-POÄNG",
+        "target": "AURORA TOKENS"
+      },
+      "tur_tr": {
+        "source": "FIFA POINTS",
+        "target": "AURORA TOKENS"
+      }
+    }
+  },
+  {
+    "stringId": "FUT_CHALKTUT_FIFAPOINTS_TITLE_1",
+    "languages": {
+      "ara_sa": {
+        "source": "نقاط FIFA",
+        "target": "Aurora Tokens"
+      },
+      "chi_hk": {
+        "source": "FIFA Points",
+        "target": "Aurora Tokens"
+      },
+      "chs_cn": {
+        "source": "FIFA POINTS",
+        "target": "AURORA TOKENS"
+      },
+      "cze_cz": {
+        "source": "FIFA POINTS",
+        "target": "AURORA TOKENS"
+      },
+      "dan_dk": {
+        "source": "FIFA-POINT",
+        "target": "AURORA TOKENS"
+      },
+      "dut_nl": {
+        "source": "FIFA-PUNTEN",
+        "target": "AURORA TOKENS"
+      },
+      "eng_us": {
+        "source": "FIFA POINTS",
+        "target": "AURORA TOKENS"
+      },
+      "fre_fr": {
+        "source": "POINTS FIFA",
+        "target": "AURORA TOKENS"
+      },
+      "ger_de": {
+        "source": "FIFA POINTS",
+        "target": "AURORA TOKENS"
+      },
+      "ita_it": {
+        "source": "FIFA POINTS",
+        "target": "AURORA TOKENS"
+      },
+      "jpn_jp": {
+        "source": "FIFAポイント",
+        "target": "Aurora Tokens"
+      },
+      "kor_kr": {
+        "source": "FIFA 포인트",
+        "target": "Aurora Tokens"
+      },
+      "nor_no": {
+        "source": "FIFA POINTS",
+        "target": "AURORA TOKENS"
+      },
+      "pol_pl": {
+        "source": "FIFA POINTS",
+        "target": "AURORA TOKENS"
+      },
+      "por_br": {
+        "source": "FIFA POINTS",
+        "target": "AURORA TOKENS"
+      },
+      "por_pt": {
+        "source": "FIFA POINTS",
+        "target": "AURORA TOKENS"
+      },
+      "rus_ru": {
+        "source": "FIFA POINTS",
+        "target": "AURORA TOKENS"
+      },
+      "spa_es": {
+        "source": "FIFA POINTS",
+        "target": "AURORA TOKENS"
+      },
+      "spa_mx": {
+        "source": "FIFA POINTS",
+        "target": "AURORA TOKENS"
+      },
+      "swe_se": {
+        "source": "FIFA-POÄNG",
+        "target": "AURORA TOKENS"
+      },
+      "tur_tr": {
+        "source": "FIFA POINTS",
+        "target": "AURORA TOKENS"
+      }
+    }
+  },
+  {
+    "stringId": "FUT_CHALKTUT_SPENDINGCOINS_DESC_3",
+    "languages": {
+      "ara_sa": {
+        "source": "يمكن استخدام نقاط FIFA لشراء الحزم أو الدخول في نمط Draft. يتم شراء نقاط FIFA باستخدام النقود فقط.",
+        "target": "يمكن استخدام Aurora Tokens لشراء الحزم أو الدخول في نمط Draft. يتم شراء Aurora Tokens باستخدام النقود فقط."
+      },
+      "chi_hk": {
+        "source": "FIFA 點數必須付費購買，可用於購買組合包或遊玩徵召模式。",
+        "target": "Aurora Tokens必須付費購買，可用於購買組合包或遊玩徵召模式。"
+      },
+      "chs_cn": {
+        "source": "FIFA Points 可用于购买组合包或进入征召模式。FIFA Points 仅可用金钱购买。",
+        "target": "Aurora Tokens 可用于购买组合包或进入征召模式。Aurora Tokens 仅可用金钱购买。"
+      },
+      "cze_cz": {
+        "source": "FIFA Points je možné utratit za nákup balíčků a vstup do režimu Draft. FIFA Points lze zakoupit pouze za skutečné peníze.",
+        "target": "Aurora Tokens je možné utratit za nákup balíčků a vstup do režimu Draft. Aurora Tokens lze zakoupit pouze za skutečné peníze."
+      },
+      "dan_dk": {
+        "source": "FIFA-point kan bruges til at købe pakker eller deltage i spiltypen Draft. FIFA-point kan kun købes med rigtige penge.",
+        "target": "Aurora Tokens kan bruges til at købe pakker eller deltage i spiltypen Draft. Aurora Tokens kan kun købes med rigtige penge."
+      },
+      "dut_nl": {
+        "source": "FIFA-punten kunnen worden gebruikt om pakketten mee te kopen of mee te doen aan Draft. FIFA-punten kunnen alleen worden aangeschaft met geld.",
+        "target": "Aurora Tokens kunnen worden gebruikt om pakketten mee te kopen of mee te doen aan Draft. Aurora Tokens kunnen alleen worden aangeschaft met geld."
+      },
+      "eng_us": {
+        "source": "FIFA Points can be used to purchase packs or enter Draft Mode. FIFA Points can only be purchased with money.",
+        "target": "Aurora Tokens can be used to purchase packs or enter Draft Mode. Aurora Tokens can only be purchased with money."
+      },
+      "fre_fr": {
+        "source": "Les Points FIFA peuvent être utilisés pour acheter des packs ou pour participer au mode Draft. Les Points FIFA ne s’achètent qu’avec de l’argent.",
+        "target": "Les Aurora Tokens peuvent être utilisés pour acheter des packs ou pour participer au mode Draft. Les Aurora Tokens ne s’achètent qu’avec de l’argent."
+      },
+      "ger_de": {
+        "source": "Mit FIFA Points kannst du Packs kaufen oder im Draft-Modus spielen. FIFA Points können nur mit Geld gekauft werden.",
+        "target": "Mit Aurora Tokens kannst du Packs kaufen oder im Draft-Modus spielen. Aurora Tokens können nur mit Geld gekauft werden."
+      },
+      "ita_it": {
+        "source": "Puoi usare i FIFA Points per acquistare i pacchetti nel negozio o partecipare alla modalità Draft. I FIFA Points si possono acquistare solo in cambio di denaro.",
+        "target": "Puoi usare i Aurora Tokens per acquistare i pacchetti nel negozio o partecipare alla modalità Draft. I Aurora Tokens si possono acquistare solo in cambio di denaro."
+      },
+      "jpn_jp": {
+        "source": "FIFAポイントは、パックを購入したりドラフトモードをプレイするために使用します。FIFAポイントは現金でのみ購入可能です。",
+        "target": "Aurora Tokensは、パックを購入したりドラフトモードをプレイするために使用します。Aurora Tokensは現金でのみ購入可能です。"
+      },
+      "kor_kr": {
+        "source": "FIFA 포인트는 팩을 구매하거나 드래프트 모드로 들어갈 때 사용합니다. FIFA 포인트는 돈으로만 구매할 수 있습니다.",
+        "target": "Aurora Tokens는 팩을 구매하거나 드래프트 모드로 들어갈 때 사용합니다. Aurora Tokens는 돈으로만 구매할 수 있습니다."
+      },
+      "nor_no": {
+        "source": "FIFA Points kan du bruke til å kjøpe pakker eller bli med i Draft-modus. FIFA Points må kjøpes for penger.",
+        "target": "Aurora Tokens kan du bruke til å kjøpe pakker eller bli med i Draft-modus. Aurora Tokens må kjøpes for penger."
+      },
+      "pol_pl": {
+        "source": "Za punkty FIFA Points można kupować paczki i żetony do trybu Draft. FIFA Points można kupić tylko za prawdziwe pieniądze.",
+        "target": "Za punkty Aurora Tokens można kupować paczki i żetony do trybu Draft. Aurora Tokens można kupić tylko za prawdziwe pieniądze."
+      },
+      "por_br": {
+        "source": "Os FIFA Points podem ser usados para comprar pacotes ou entrar no Modo Draft. Eles só podem ser comprados com dinheiro.",
+        "target": "Os Aurora Tokens podem ser usados para comprar pacotes ou entrar no Modo Draft. Eles só podem ser comprados com dinheiro."
+      },
+      "por_pt": {
+        "source": "Os FIFA Points podem ser utilizados para comprar packs ou para entrar no Modo Draft. Os FIFA Points só podem ser adquiridos com dinheiro.",
+        "target": "Os Aurora Tokens podem ser utilizados para comprar packs ou para entrar no Modo Draft. Os Aurora Tokens só podem ser adquiridos com dinheiro."
+      },
+      "rus_ru": {
+        "source": "За FIFA Points можно приобретать наборы или играть в режиме Драфта. FIFA Points можно приобрести только за деньги.",
+        "target": "За Aurora Tokens можно приобретать наборы или играть в режиме Драфта. Aurora Tokens можно приобрести только за деньги."
+      },
+      "spa_es": {
+        "source": "Usa FIFA Points para comprar sobres o entrar en el modo Draft. Los FIFA Points solo se pueden comprar con dinero.",
+        "target": "Usa Aurora Tokens para comprar sobres o entrar en el modo Draft. Los Aurora Tokens solo se pueden comprar con dinero."
+      },
+      "spa_mx": {
+        "source": "Usa FIFA Points para comprar packs o ingresar al modo Ultimate Draft. Solo puedes comprar FIFA Points con dinero.",
+        "target": "Usa Aurora Tokens para comprar packs o ingresar al modo Ultimate Draft. Solo puedes comprar Aurora Tokens con dinero."
+      },
+      "swe_se": {
+        "source": "Med FIFA-poäng kan du köpa paket eller tillträde till spelläget Draft. FIFA-poäng kan bara köpas för pengar.",
+        "target": "Med Aurora Tokens kan du köpa paket eller tillträde till spelläget Draft. Aurora Tokens kan bara köpas för pengar."
+      },
+      "tur_tr": {
+        "source": "Paket satın almak veya Draft Modu’na girmek için FIFA Points kullanılabilir. FIFA Points yalnızca gerçek para ile satın alınabilir.",
+        "target": "Paket satın almak veya Draft Modu’na girmek için Aurora Tokens kullanılabilir. Aurora Tokens yalnızca gerçek para ile satın alınabilir."
+      }
+    }
+  },
+  {
+    "stringId": "FUT_CLICKTOADD_FUTMONEY",
+    "languages": {
+      "ara_sa": {
+        "source": "أضف نقاط FIFA",
+        "target": "أضف Aurora Tokens"
+      },
+      "chi_hk": {
+        "source": "增加 FIFA Points",
+        "target": "增加 Aurora Tokens"
+      },
+      "chs_cn": {
+        "source": "添加 FIFA Points",
+        "target": "添加 Aurora Tokens"
+      },
+      "cze_cz": {
+        "source": "Přidat FIFA Points",
+        "target": "Přidat Aurora Tokens"
+      },
+      "dan_dk": {
+        "source": "Tilføj FIFA-point",
+        "target": "Tilføj Aurora Tokens"
+      },
+      "dut_nl": {
+        "source": "FIFA-punten toevoegen",
+        "target": "Aurora Tokens toevoegen"
+      },
+      "eng_us": {
+        "source": "Add FIFA Points",
+        "target": "Add Aurora Tokens"
+      },
+      "fre_fr": {
+        "source": "Ajouter Points FIFA",
+        "target": "Ajouter Aurora Tokens"
+      },
+      "ger_de": {
+        "source": "FIFA Points hinzufügen",
+        "target": "Aurora Tokens hinzufügen"
+      },
+      "ita_it": {
+        "source": "Aggiungi FIFA Points",
+        "target": "Aggiungi Aurora Tokens"
+      },
+      "jpn_jp": {
+        "source": "FIFAポイントを追加",
+        "target": "Aurora Tokensを追加"
+      },
+      "kor_kr": {
+        "source": "FIFA 포인트 추가",
+        "target": "Aurora Tokens 추가"
+      },
+      "nor_no": {
+        "source": "Legg til FIFA Points",
+        "target": "Legg til Aurora Tokens"
+      },
+      "pol_pl": {
+        "source": "Dodaj FIFA Points",
+        "target": "Dodaj Aurora Tokens"
+      },
+      "por_br": {
+        "source": "Adicionar FIFA Points",
+        "target": "Adicionar Aurora Tokens"
+      },
+      "por_pt": {
+        "source": "Adicionar FIFA Points",
+        "target": "Adicionar Aurora Tokens"
+      },
+      "rus_ru": {
+        "source": "Добавить FIFA Points",
+        "target": "Добавить Aurora Tokens"
+      },
+      "spa_es": {
+        "source": "Añadir FIFA Points",
+        "target": "Añadir Aurora Tokens"
+      },
+      "spa_mx": {
+        "source": "Añadir FIFA Points",
+        "target": "Añadir Aurora Tokens"
+      },
+      "swe_se": {
+        "source": "Lägg till FIFA-poäng",
+        "target": "Lägg till Aurora Tokens"
+      },
+      "tur_tr": {
+        "source": "FIFA Points ekle",
+        "target": "Aurora Tokens ekle"
+      }
+    }
+  },
+  {
+    "stringId": "FUT_DRAFTMODE_DESC",
+    "languages": {
+      "ara_sa": {
+        "source": "ابن تشكيلة من خيارات اللاعبين وفز في 4 مباريات متتالية على الأكثر لتربح مكافآت كبرى. شارك باستخدام القطع النقدية أو قطع التوكن أو نقاط FIFA. ",
+        "target": "ابن تشكيلة من خيارات اللاعبين وفز في 4 مباريات متتالية على الأكثر لتربح مكافآت كبرى. شارك باستخدام القطع النقدية أو قطع التوكن أو Aurora Tokens. "
+      },
+      "chi_hk": {
+        "source": "建立任選球員陣容，並連續勝出至多 4 場比賽以獲得豐富獎勵。以金幣、代幣或 FIFA Point 參賽。 ",
+        "target": "建立任選球員陣容，並連續勝出至多 4 場比賽以獲得豐富獎勵。以金幣、代幣或 Aurora Tokens 參賽。 "
+      },
+      "chs_cn": {
+        "source": "建立一套球员挑选阵容，连续赢下最多 4 场比赛，赢得丰厚奖励。花费金币、代币或 FIFA Points。",
+        "target": "建立一套球员挑选阵容，连续赢下最多 4 场比赛，赢得丰厚奖励。花费金币、代币或 Aurora Tokens。"
+      },
+      "cze_cz": {
+        "source": "Postavte tým z vybraných hráčů a vítězstvím v maximálním počtu čtyř utkání v řadě získejte velké odměny. Za vstup zaplaťte mincemi, žetony, nebo FIFA Points. ",
+        "target": "Postavte tým z vybraných hráčů a vítězstvím v maximálním počtu čtyř utkání v řadě získejte velké odměny. Za vstup zaplaťte mincemi, žetony, nebo Aurora Tokens. "
+      },
+      "dan_dk": {
+        "source": "Sammensæt en trup bestående af Spillervalg, og vind op til fire kampe i træk for at vinde storslåede præmier. Deltag med mønter, poletter eller FIFA-point.",
+        "target": "Sammensæt en trup bestående af Spillervalg, og vind op til fire kampe i træk for at vinde storslåede præmier. Deltag med mønter, poletter eller Aurora Tokens."
+      },
+      "dut_nl": {
+        "source": "Stel een Spelerskeuze-selectie samen en win maximaal 4 wedstrijden op rij om geweldige beloningen te verdienen. Doe mee met munten, tokens of FIFA-punten. ",
+        "target": "Stel een Spelerskeuze-selectie samen en win maximaal 4 wedstrijden op rij om geweldige beloningen te verdienen. Doe mee met munten, tokens of Aurora Tokens. "
+      },
+      "eng_us": {
+        "source": "Build a Player Picks squad and win a maximum of 4 games in a row to earn big rewards. Enter with Coins, Tokens or FIFA Points. ",
+        "target": "Build a Player Picks squad and win a maximum of 4 games in a row to earn big rewards. Enter with Coins, Tokens or Aurora Tokens. "
+      },
+      "fre_fr": {
+        "source": "Créez une équipe Choix de joueurs et gagnez 4 matchs de suite pour obtenir de belles récompenses. Participez avec des Crédits, des Jetons ou des Points FIFA.",
+        "target": "Créez une équipe Choix de joueurs et gagnez 4 matchs de suite pour obtenir de belles récompenses. Participez avec des Crédits, des Jetons ou des Aurora Tokens."
+      },
+      "ger_de": {
+        "source": "Stelle ein Spielerwahl-Team zusammen und gewinne max. 4 Partien in Folge, um tolle Boni zu erhalten. Du kannst mit Münzen, Token oder FIFA Points teilnehmen.",
+        "target": "Stelle ein Spielerwahl-Team zusammen und gewinne max. 4 Partien in Folge, um tolle Boni zu erhalten. Du kannst mit Münzen, Token oder Aurora Tokens teilnehmen."
+      },
+      "ita_it": {
+        "source": "Crea una rosa di giocatori a tua scelta e vinci fino a quattro partite di fila per ottenere ricchi premi. Usa crediti, gettoni o FIFA Points per partecipare. ",
+        "target": "Crea una rosa di giocatori a tua scelta e vinci fino a quattro partite di fila per ottenere ricchi premi. Usa crediti, gettoni o Aurora Tokens per partecipare. "
+      },
+      "jpn_jp": {
+        "source": "選手ピックチームを編成し、最大で4連勝して豪華報酬を獲得しましょう。挑戦するにはコイン、トークン、もしくはFIFAポイントが必要です。",
+        "target": "選手ピックチームを編成し、最大で4連勝して豪華報酬を獲得しましょう。挑戦するにはコイン、トークン、もしくはAurora Tokensが必要です。"
+      },
+      "kor_kr": {
+        "source": "선수 선정 스쿼드를 구성하고 최대 4경기를 연속 승리하여 많은 보상을 획득하세요. 코인, 토큰, FIFA 포인트로 입장할 수 있습니다.",
+        "target": "선수 선정 스쿼드를 구성하고 최대 4경기를 연속 승리하여 많은 보상을 획득하세요. 코인, 토큰, Aurora Tokens로 입장할 수 있습니다."
+      },
+      "nor_no": {
+        "source": "Bygg et Spillervalg-lag og vinn 4 kamper på rad for å få store belønninger. Du kan bruke mynter, merker eller FIFA Points for å bli med. ",
+        "target": "Bygg et Spillervalg-lag og vinn 4 kamper på rad for å få store belønninger. Du kan bruke mynter, merker eller Aurora Tokens for å bli med. "
+      },
+      "pol_pl": {
+        "source": "Zbuduj skład z wybieranych piłkarzy i postaraj się wygrać cztery mecze, aby zdobyć atrakcyjne nagrody. Dostęp wykupisz za monety, żetony lub FIFA Points.",
+        "target": "Zbuduj skład z wybieranych piłkarzy i postaraj się wygrać cztery mecze, aby zdobyć atrakcyjne nagrody. Dostęp wykupisz za monety, żetony lub Aurora Tokens."
+      },
+      "por_br": {
+        "source": "Monte um elenco de Escolhas do Jogador e ganhe um máximo de 4 jogos em sequência para ganhar grandes recompensas. Insira Moedas, Tokens ou FIFA Points.",
+        "target": "Monte um elenco de Escolhas do Jogador e ganhe um máximo de 4 jogos em sequência para ganhar grandes recompensas. Insira Moedas, Tokens ou Aurora Tokens."
+      },
+      "por_pt": {
+        "source": "Constrói um plantel com Escolhas de Jogador e vence um máximo de 4 jogos consecutivos para ganhares grandes recompensas. Entra c/ Moedas, Fichas ou FIFA Points.",
+        "target": "Constrói um plantel com Escolhas de Jogador e vence um máximo de 4 jogos consecutivos para ganhares grandes recompensas. Entra c/ Moedas, Fichas ou Aurora Tokens."
+      },
+      "rus_ru": {
+        "source": "Создавайте команду, выбрав игроков из предложенных, выигрывайте до 4 игр подряд и получайте награды. Участвовать можно за монеты, жетоны и FIFA Points.",
+        "target": "Создавайте команду, выбрав игроков из предложенных, выигрывайте до 4 игр подряд и получайте награды. Участвовать можно за монеты, жетоны и Aurora Tokens."
+      },
+      "spa_es": {
+        "source": "Crea una plantilla con elecciones de jugador y gana hasta 4 partidos seguidos para obtener grandes recompensas. Participa con monedas, fichas o FIFA Points.",
+        "target": "Crea una plantilla con elecciones de jugador y gana hasta 4 partidos seguidos para obtener grandes recompensas. Participa con monedas, fichas o Aurora Tokens."
+      },
+      "spa_mx": {
+        "source": "Arma una plantilla con Elecciones de jug. y gana un máximo de 4 partidos seguidos para obtener grandes recompensas. Ingresa con monedas, fichas o FIFA Points.",
+        "target": "Arma una plantilla con Elecciones de jug. y gana un máximo de 4 partidos seguidos para obtener grandes recompensas. Ingresa con monedas, fichas o Aurora Tokens."
+      },
+      "swe_se": {
+        "source": "Bygg en spelarvalstrupp och vinn upp till fyra matcher i rad för att få stora belöningar. Du kan lösa inträde med mynt, polletter eller FIFA-poäng.",
+        "target": "Bygg en spelarvalstrupp och vinn upp till fyra matcher i rad för att få stora belöningar. Du kan lösa inträde med mynt, polletter eller Aurora Tokens."
+      },
+      "tur_tr": {
+        "source": "Büyük ödüller kazanmak için bir Oyuncu Seçimleri kadrosu kur ve art arda en fazla 4 maç kazan. Jetonlar, Fişler veya FIFA Points ile gir. ",
+        "target": "Büyük ödüller kazanmak için bir Oyuncu Seçimleri kadrosu kur ve art arda en fazla 4 maç kazan. Jetonlar, Fişler veya Aurora Tokens ile gir. "
+      }
+    }
+  },
+  {
+    "stringId": "FUT_DRAFT_NOT_ENOUGH_POINTS",
+    "languages": {
+      "ara_sa": {
+        "source": "ليس لديك ما يكفي من نقاط FIFA لدفع رسوم المشاركة.هل ترغب في الذهاب إلى المتجر لشراء نقاط FIFA؟",
+        "target": "ليس لديك ما يكفي من Aurora Tokens لدفع رسوم المشاركة.هل ترغب في الذهاب إلى المتجر لشراء Aurora Tokens؟"
+      },
+      "chi_hk": {
+        "source": "您沒有足夠的 FIFA Points 支付入場費。您要前往商店購買 FIFA Points 嗎？",
+        "target": "您沒有足夠的 Aurora Tokens 支付入場費。您要前往商店購買 Aurora Tokens 嗎？"
+      },
+      "chs_cn": {
+        "source": "您没有足够的 FIFA Points 来支付入场费。是否要转至商店购买 FIFA Points？",
+        "target": "您没有足够的 Aurora Tokens 来支付入场费。是否要转至商店购买 Aurora Tokens？"
+      },
+      "cze_cz": {
+        "source": "K uhrazení vstupního poplatku nemáte dostatek FIFA Points. Chcete přejít do obchodu a nějaké koupit?",
+        "target": "K uhrazení vstupního poplatku nemáte dostatek Aurora Tokens. Chcete přejít do obchodu a nějaké koupit?"
+      },
+      "dan_dk": {
+        "source": "Du har ikke nok FIFA-point til at betale adgangsbilletten. Ønsker du at besøge butikken for at købe FIFA-point?",
+        "target": "Du har ikke nok Aurora Tokens til at betale adgangsbilletten. Ønsker du at besøge butikken for at købe Aurora Tokens?"
+      },
+      "dut_nl": {
+        "source": "Je hebt niet genoeg FIFA-punten om te betalen voor deelname. Wil je naar de winkel om FIFA-punten te kopen?",
+        "target": "Je hebt niet genoeg Aurora Tokens om te betalen voor deelname. Wil je naar de winkel om Aurora Tokens te kopen?"
+      },
+      "eng_us": {
+        "source": "You do not have enough FIFA Points to pay the entry fee. Would you like to go to the store to purchase FIFA Points?",
+        "target": "You do not have enough Aurora Tokens to pay the entry fee. Would you like to go to the store to purchase Aurora Tokens?"
+      },
+      "fre_fr": {
+        "source": "Vous n'avez pas assez de Points FIFA pour payer les frais de participation. Voulez-vous aller dans la boutique pour acheter des Points FIFA ?",
+        "target": "Vous n'avez pas assez de Aurora Tokens pour payer les frais de participation. Voulez-vous aller dans la boutique pour acheter des Aurora Tokens ?"
+      },
+      "ger_de": {
+        "source": "Du hast nicht genügend FIFA Points für die Teilnahmegebühr. Möchtest du im Shop FIFA Points kaufen?",
+        "target": "Du hast nicht genügend Aurora Tokens für die Teilnahmegebühr. Möchtest du im Shop Aurora Tokens kaufen?"
+      },
+      "ita_it": {
+        "source": "Non hai abbastanza FIFA Points per pagare la quota d'accesso. Vuoi accedere al negozio per acquistare FIFA Points?",
+        "target": "Non hai abbastanza Aurora Tokens per pagare la quota d'accesso. Vuoi accedere al negozio per acquistare Aurora Tokens?"
+      },
+      "jpn_jp": {
+        "source": "参加費用を払うにはFIFAポイントが足りません。\nストアへ移動してFIFAポイントを購入しますか？",
+        "target": "参加費用を払うにはAurora Tokensが足りません。\nストアへ移動してAurora Tokensを購入しますか？"
+      },
+      "kor_kr": {
+        "source": "FIFA 포인트가 부족하여 참가비를 낼 수 없습니다. 스토어로 이동하여 FIFA 포인트를 구매하시겠습니까?",
+        "target": "Aurora Tokens가 부족하여 참가비를 낼 수 없습니다. 스토어로 이동하여 Aurora Tokens를 구매하시겠습니까?"
+      },
+      "nor_no": {
+        "source": "Du har ikke nok FIFA Points til å betale påmeldingsavgiften. Vil du gå til butikken og kjøpe FIFA Points?",
+        "target": "Du har ikke nok Aurora Tokens til å betale påmeldingsavgiften. Vil du gå til butikken og kjøpe Aurora Tokens?"
+      },
+      "pol_pl": {
+        "source": "Masz za mało punktów FIFA Points, aby zapłacić wpisowe. Czy chcesz przejść do sklepu w celu nabycia punktów FIFA Points?",
+        "target": "Masz za mało punktów Aurora Tokens, aby zapłacić wpisowe. Czy chcesz przejść do sklepu w celu nabycia punktów Aurora Tokens?"
+      },
+      "por_br": {
+        "source": "Você não possui FIFA Points suficientes para pagar a taxa de entrada. Deseja ir para a loja para comprar FIFA Points?",
+        "target": "Você não possui Aurora Tokens suficientes para pagar a taxa de entrada. Deseja ir para a loja para comprar Aurora Tokens?"
+      },
+      "por_pt": {
+        "source": "Não tens FIFA Points suficientes para pagar o valor da inscrição. Pretendes ir à loja adquirir FIFA Points?",
+        "target": "Não tens Aurora Tokens suficientes para pagar o valor da inscrição. Pretendes ir à loja adquirir Aurora Tokens?"
+      },
+      "rus_ru": {
+        "source": "У вас недостаточно FIFA Points для вступительного взноса. Хотите перейти в магазин и приобрести FIFA Points?",
+        "target": "У вас недостаточно Aurora Tokens для вступительного взноса. Хотите перейти в магазин и приобрести Aurora Tokens?"
+      },
+      "spa_es": {
+        "source": "No tienes suficientes FIFA Points para pagar la cuota de participación. ¿Quieres ir a la Tienda para comprar FIFA Points?",
+        "target": "No tienes suficientes Aurora Tokens para pagar la cuota de participación. ¿Quieres ir a la Tienda para comprar Aurora Tokens?"
+      },
+      "spa_mx": {
+        "source": "No tienes suficientes FIFA Points para pagar la cuota de entrada. ¿Quieres ir a la Tienda para comprar FIFA Points?",
+        "target": "No tienes suficientes Aurora Tokens para pagar la cuota de entrada. ¿Quieres ir a la Tienda para comprar Aurora Tokens?"
+      },
+      "swe_se": {
+        "source": "Du har inte FIFA-poäng nog för att betala inträdesavgiften. Vill du gå till butiken och köpa ytterligare FIFA-poäng?",
+        "target": "Du har inte Aurora Tokens nog för att betala inträdesavgiften. Vill du gå till butiken och köpa ytterligare Aurora Tokens?"
+      },
+      "tur_tr": {
+        "source": "Giriş ücretini ödemek için yeterli FIFA Points'in yok. Mağazadan FIFA Points satın almak ister misin?",
+        "target": "Giriş ücretini ödemek için yeterli Aurora Tokens'in yok. Mağazadan Aurora Tokens satın almak ister misin?"
+      }
+    }
+  },
+  {
+    "stringId": "FUT_DRAFT_NOT_ENOUGH_POINTS_NO_STORE_LINK",
+    "languages": {
+      "ara_sa": {
+        "source": "ليس لديك نقاط FIFA كافية لدفع رسوم المشاركة.",
+        "target": "ليس لديك Aurora Tokens كافية لدفع رسوم المشاركة."
+      },
+      "chi_hk": {
+        "source": "您沒有足夠的 FIFA Points 支付入場費。",
+        "target": "您沒有足夠的 Aurora Tokens 支付入場費。"
+      },
+      "chs_cn": {
+        "source": "您没有足够的 FIFA Points 来支付入场费。",
+        "target": "您没有足够的 Aurora Tokens 来支付入场费。"
+      },
+      "cze_cz": {
+        "source": "K uhrazení vstupního poplatku nemáte dostatek bodů FIFA Points.",
+        "target": "K uhrazení vstupního poplatku nemáte dostatek bodů Aurora Tokens."
+      },
+      "dan_dk": {
+        "source": "Du har ikke nok FIFA-point til at betale adgangsbilletten.",
+        "target": "Du har ikke nok Aurora Tokens til at betale adgangsbilletten."
+      },
+      "dut_nl": {
+        "source": "Je hebt niet genoeg FIFA-punten om te betalen voor deelname.",
+        "target": "Je hebt niet genoeg Aurora Tokens om te betalen voor deelname."
+      },
+      "eng_us": {
+        "source": "You do not have enough FIFA Points to pay the entry fee.",
+        "target": "You do not have enough Aurora Tokens to pay the entry fee."
+      },
+      "fre_fr": {
+        "source": "Vous n'avez pas assez de Points FIFA pour payer les frais de participation.",
+        "target": "Vous n'avez pas assez de Aurora Tokens pour payer les frais de participation."
+      },
+      "ger_de": {
+        "source": "Du hast nicht genug FIFA Points für die Teilnahmegebühr.",
+        "target": "Du hast nicht genug Aurora Tokens für die Teilnahmegebühr."
+      },
+      "ita_it": {
+        "source": "Non hai abbastanza FIFA Points per pagare la quota d'ingresso.",
+        "target": "Non hai abbastanza Aurora Tokens per pagare la quota d'ingresso."
+      },
+      "jpn_jp": {
+        "source": "参加費用を払うにはFIFAポイントが足りません。",
+        "target": "参加費用を払うにはAurora Tokensが足りません。"
+      },
+      "kor_kr": {
+        "source": "FIFA 포인트가 부족하여 참가비를 낼 수 없습니다.",
+        "target": "Aurora Tokens가 부족하여 참가비를 낼 수 없습니다."
+      },
+      "nor_no": {
+        "source": "Du har ikke nok FIFA Points til å betale påmeldingsavgiften.",
+        "target": "Du har ikke nok Aurora Tokens til å betale påmeldingsavgiften."
+      },
+      "pol_pl": {
+        "source": "Masz za mało punktów FIFA Points, aby zapłacić wpisowe.",
+        "target": "Masz za mało punktów Aurora Tokens, aby zapłacić wpisowe."
+      },
+      "por_br": {
+        "source": "Você não possui FIFA Points suficientes para pagar a taxa de entrada.",
+        "target": "Você não possui Aurora Tokens suficientes para pagar a taxa de entrada."
+      },
+      "por_pt": {
+        "source": "Não tens FIFA Points suficientes para pagar o valor da inscrição.",
+        "target": "Não tens Aurora Tokens suficientes para pagar o valor da inscrição."
+      },
+      "rus_ru": {
+        "source": "У вас недостаточно FIFA Points для вступительного взноса.",
+        "target": "У вас недостаточно Aurora Tokens для вступительного взноса."
+      },
+      "spa_es": {
+        "source": "No tienes suficientes FIFA Points para pagar la cuota de participación.",
+        "target": "No tienes suficientes Aurora Tokens para pagar la cuota de participación."
+      },
+      "spa_mx": {
+        "source": "No tienes suficientes FIFA Points para pagar la cuota de entrada.",
+        "target": "No tienes suficientes Aurora Tokens para pagar la cuota de entrada."
+      },
+      "swe_se": {
+        "source": "Du har inte FIFA-poäng nog för att kunna betala inträdesavgiften.",
+        "target": "Du har inte Aurora Tokens nog för att kunna betala inträdesavgiften."
+      },
+      "tur_tr": {
+        "source": "Giriş ücretini ödemek için yeterli FIFA Points'in yok.",
+        "target": "Giriş ücretini ödemek için yeterli Aurora Tokens'in yok."
+      }
+    }
+  },
+  {
+    "stringId": "FUT_DRAFT_POINTS_COST",
+    "languages": {
+      "ara_sa": {
+        "source": "%1d نقاط FIFA",
+        "target": "%1d Aurora Tokens"
+      },
+      "chi_hk": {
+        "source": "%1d FIFA Points",
+        "target": "%1d Aurora Tokens"
+      },
+      "chs_cn": {
+        "source": "%1d FIFA Points",
+        "target": "%1d Aurora Tokens"
+      },
+      "cze_cz": {
+        "source": "%1d FIFA Points",
+        "target": "%1d Aurora Tokens"
+      },
+      "dan_dk": {
+        "source": "%1d FIFA-point",
+        "target": "%1d Aurora Tokens"
+      },
+      "dut_nl": {
+        "source": "%1d FIFA-punten",
+        "target": "%1d Aurora Tokens"
+      },
+      "eng_us": {
+        "source": "%1d FIFA Points",
+        "target": "%1d Aurora Tokens"
+      },
+      "fre_fr": {
+        "source": "%1d Points FIFA",
+        "target": "%1d Aurora Tokens"
+      },
+      "ger_de": {
+        "source": "%1d FIFA Points",
+        "target": "%1d Aurora Tokens"
+      },
+      "ita_it": {
+        "source": "%1d FIFA Points",
+        "target": "%1d Aurora Tokens"
+      },
+      "jpn_jp": {
+        "source": "%1d FIFAポイント",
+        "target": "%1d Aurora Tokens"
+      },
+      "kor_kr": {
+        "source": "%1d FIFA 포인트",
+        "target": "%1d Aurora Tokens"
+      },
+      "nor_no": {
+        "source": "%1d FIFA Points",
+        "target": "%1d Aurora Tokens"
+      },
+      "pol_pl": {
+        "source": "%1d FIFA Points",
+        "target": "%1d Aurora Tokens"
+      },
+      "por_br": {
+        "source": "%1d FIFA Points",
+        "target": "%1d Aurora Tokens"
+      },
+      "por_pt": {
+        "source": "%1d FIFA Points",
+        "target": "%1d Aurora Tokens"
+      },
+      "rus_ru": {
+        "source": "%1d FIFA Points",
+        "target": "%1d Aurora Tokens"
+      },
+      "spa_es": {
+        "source": "%1d FIFA Points",
+        "target": "%1d Aurora Tokens"
+      },
+      "spa_mx": {
+        "source": "%1d FIFA Points",
+        "target": "%1d Aurora Tokens"
+      },
+      "swe_se": {
+        "source": "%1d FIFA-poäng",
+        "target": "%1d Aurora Tokens"
+      },
+      "tur_tr": {
+        "source": "%1d FIFA Points",
+        "target": "%1d Aurora Tokens"
+      }
+    }
+  },
+  {
+    "stringId": "FUT_DRAFT_PURCHASE_POINTS_DESC",
+    "languages": {
+      "ara_sa": {
+        "source": "ادفع للدخول إلى Draft بـ 300 نقطة FIFA.",
+        "target": "ادفع للدخول إلى Draft بـ 300 Aurora Tokens."
+      },
+      "chi_hk": {
+        "source": "支付 300 FIFA Points 進入「徵召」。",
+        "target": "支付 300 Aurora Tokens 進入「徵召」。"
+      },
+      "chs_cn": {
+        "source": "支付 300 点 FIFA Points 进入征召模式。",
+        "target": "支付 300 点 Aurora Tokens 进入征召模式。"
+      },
+      "cze_cz": {
+        "source": "Zaplatit 300 FIFA Points za vstup do Draftu.",
+        "target": "Zaplatit 300 Aurora Tokens za vstup do Draftu."
+      },
+      "dan_dk": {
+        "source": "Betal 300 FIFA-point for adgangsbilletten til Draft.",
+        "target": "Betal 300 Aurora Tokens for adgangsbilletten til Draft."
+      },
+      "dut_nl": {
+        "source": "Betaal om deel te nemen aan Draft met 300 FIFA-punten.",
+        "target": "Betaal om deel te nemen aan Draft met 300 Aurora Tokens."
+      },
+      "eng_us": {
+        "source": "Pay to enter Draft with 300 FIFA Points.",
+        "target": "Pay to enter Draft with 300 Aurora Tokens."
+      },
+      "fre_fr": {
+        "source": "Payez pour participer à la Draft avec 300 Points FIFA.",
+        "target": "Payez pour participer à la Draft avec 300 Aurora Tokens."
+      },
+      "ger_de": {
+        "source": "Teilnahme an Draft-Modus kostet 300 FIFA Points.",
+        "target": "Teilnahme an Draft-Modus kostet 300 Aurora Tokens."
+      },
+      "ita_it": {
+        "source": "Paga per accedere al Draft con 300 FIFA Points.",
+        "target": "Paga per accedere al Draft con 300 Aurora Tokens."
+      },
+      "jpn_jp": {
+        "source": "ドラフト用に300FIFAポイントを購入する。",
+        "target": "ドラフト用に300Aurora Tokensを購入する。"
+      },
+      "kor_kr": {
+        "source": "300 FIFA 포인트를 내고 드래프트에 입장합니다.",
+        "target": "300 Aurora Tokens를 내고 드래프트에 입장합니다."
+      },
+      "nor_no": {
+        "source": "Betal for å bli med i Draft med 300 FIFA Points.",
+        "target": "Betal for å bli med i Draft med 300 Aurora Tokens."
+      },
+      "pol_pl": {
+        "source": "Rozpocznij grę w Ultimate Draft za 300 punktów FIFA Points.",
+        "target": "Rozpocznij grę w Ultimate Draft za 300 punktów Aurora Tokens."
+      },
+      "por_br": {
+        "source": "Pague 300 FIFA Points para entrar no Draft.",
+        "target": "Pague 300 Aurora Tokens para entrar no Draft."
+      },
+      "por_pt": {
+        "source": "Pagar para entrar no Draft com 300 FIFA Points.",
+        "target": "Pagar para entrar no Draft com 300 Aurora Tokens."
+      },
+      "rus_ru": {
+        "source": "Заплатить 300 FIFA Points за вход в Драфт.",
+        "target": "Заплатить 300 Aurora Tokens за вход в Драфт."
+      },
+      "spa_es": {
+        "source": "Gasta 300 FIFA Points para participar en Draft.",
+        "target": "Gasta 300 Aurora Tokens para participar en Draft."
+      },
+      "spa_mx": {
+        "source": "Paga con 300 FIFA Points para entrar a Ultimate Draft.",
+        "target": "Paga con 300 Aurora Tokens para entrar a Ultimate Draft."
+      },
+      "swe_se": {
+        "source": "Betala 300 FIFA-poäng för att komma in i Draft.",
+        "target": "Betala 300 Aurora Tokens för att komma in i Draft."
+      },
+      "tur_tr": {
+        "source": "Draft'a girmek için 300 FIFA Points öde.",
+        "target": "Draft'a girmek için 300 Aurora Tokens öde."
+      }
+    }
+  },
+  {
+    "stringId": "FUT_ENTER_DRAFT_VIA_FIFA_POINTS",
+    "languages": {
+      "ara_sa": {
+        "source": "لقد قمت باختيار الدخول إلى Ultimate Draft بنقاط FIFA. إذا كان هذا صحيحاً، فاختر \"نعم\" للتقدم.",
+        "target": "لقد قمت باختيار الدخول إلى Ultimate Draft بAurora Tokens. إذا كان هذا صحيحاً، فاختر \"نعم\" للتقدم."
+      },
+      "chi_hk": {
+        "source": "您已選擇用 FIFA Points 進入 Ultimate Draft。選擇「是」確定進入。",
+        "target": "您已選擇用 Aurora Tokens 進入 Ultimate Draft。選擇「是」確定進入。"
+      },
+      "chs_cn": {
+        "source": "您选择使用 FIFA Points 进入 Ultimate Draft。如果确认无误，请选择“是”进入下一步。",
+        "target": "您选择使用 Aurora Tokens 进入 Ultimate Draft。如果确认无误，请选择“是”进入下一步。"
+      },
+      "cze_cz": {
+        "source": "Rozhodli jste se pro vstup do Ultimate Draftu za FIFA Points. Pokud je vše v pořádku, pokračujte zvolením možnosti Ano.",
+        "target": "Rozhodli jste se pro vstup do Ultimate Draftu za Aurora Tokens. Pokud je vše v pořádku, pokračujte zvolením možnosti Ano."
+      },
+      "dan_dk": {
+        "source": "Du har valgt at betale med FIFA-point for at få adgang til Ultimate Draft. Vælg Ja for at fortsætte, hvis dette er korrekt.",
+        "target": "Du har valgt at betale med Aurora Tokens for at få adgang til Ultimate Draft. Vælg Ja for at fortsætte, hvis dette er korrekt."
+      },
+      "dut_nl": {
+        "source": "Je hebt ervoor gekozen om aan Ultimate Draft mee te doen met FIFA-punten. Als dat klopt, selecteer dan Ja om verder te gaan.",
+        "target": "Je hebt ervoor gekozen om aan Ultimate Draft mee te doen met Aurora Tokens. Als dat klopt, selecteer dan Ja om verder te gaan."
+      },
+      "eng_us": {
+        "source": "You have chosen to enter Ultimate Draft with FIFA Points. If this is correct, select Yes to advance.",
+        "target": "You have chosen to enter Ultimate Draft with Aurora Tokens. If this is correct, select Yes to advance."
+      },
+      "fre_fr": {
+        "source": "Vous avez choisi de participer à Ultimate Draft avec des Points FIFA. Si c'est exact, sélectionnez Oui pour continuer.",
+        "target": "Vous avez choisi de participer à Ultimate Draft avec des Aurora Tokens. Si c'est exact, sélectionnez Oui pour continuer."
+      },
+      "ger_de": {
+        "source": "Du hast dich entschieden, per FIFA Points an Ultimate Draft teilzunehmen. Wähle \"Ja\" zum Fortfahren, wenn dies korrekt ist.",
+        "target": "Du hast dich entschieden, per Aurora Tokens an Ultimate Draft teilzunehmen. Wähle \"Ja\" zum Fortfahren, wenn dies korrekt ist."
+      },
+      "ita_it": {
+        "source": "Hai scelto di accedere a Ultimate Draft con i FIFA Points. Se confermi, seleziona Sì per continuare.",
+        "target": "Hai scelto di accedere a Ultimate Draft con i Aurora Tokens. Se confermi, seleziona Sì per continuare."
+      },
+      "jpn_jp": {
+        "source": "FIFAポイントを使ってアルティメットドラフトを開始します。よろしければ、「はい」を選択してください。",
+        "target": "Aurora Tokensを使ってアルティメットドラフトを開始します。よろしければ、「はい」を選択してください。"
+      },
+      "kor_kr": {
+        "source": "FIFA 포인트로 Ultimate Draft에 참가합니다. 맞으면 '예'를 선택하고 다음으로 진행하세요.",
+        "target": "Aurora Tokens로 Ultimate Draft에 참가합니다. 맞으면 '예'를 선택하고 다음으로 진행하세요."
+      },
+      "nor_no": {
+        "source": "Du har valgt å bli med i Ultimate Draft med FIFA Points. Hvis dette er riktig, trykker du på «Ja» for å gå videre.",
+        "target": "Du har valgt å bli med i Ultimate Draft med Aurora Tokens. Hvis dette er riktig, trykker du på «Ja» for å gå videre."
+      },
+      "pol_pl": {
+        "source": "Za chwilę opłacisz wpisowe trybu Ultimate Draft punktami FIFA Points. Aby potwierdzić swój wybór, wybierz „Tak”.",
+        "target": "Za chwilę opłacisz wpisowe trybu Ultimate Draft punktami Aurora Tokens. Aby potwierdzić swój wybór, wybierz „Tak”."
+      },
+      "por_br": {
+        "source": "Você optou por usar FIFA Points para entrar no Ultimate Draft. Se isso está correto, selecione \"Sim\" para avançar.",
+        "target": "Você optou por usar Aurora Tokens para entrar no Ultimate Draft. Se isso está correto, selecione \"Sim\" para avançar."
+      },
+      "por_pt": {
+        "source": "Decidiste entrar no Ultimate Draft com FIFA Points. Se isto estiver correto, seleciona Sim para avançar.",
+        "target": "Decidiste entrar no Ultimate Draft com Aurora Tokens. Se isto estiver correto, seleciona Sim para avançar."
+      },
+      "rus_ru": {
+        "source": "Вы выбрали вход в Ultimate Draft за FIFA Points. Если это верно, нажмите Да, чтобы продолжить.",
+        "target": "Вы выбрали вход в Ultimate Draft за Aurora Tokens. Если это верно, нажмите Да, чтобы продолжить."
+      },
+      "spa_es": {
+        "source": "Has elegido participar en Ultimate Draft con FIFA Points. Si es así, selecciona Sí para continuar.",
+        "target": "Has elegido participar en Ultimate Draft con Aurora Tokens. Si es así, selecciona Sí para continuar."
+      },
+      "spa_mx": {
+        "source": "Escogiste entrar a Ultimate Draft con FIFA Points. Si es correcto, selecciona Sí para continuar.",
+        "target": "Escogiste entrar a Ultimate Draft con Aurora Tokens. Si es correcto, selecciona Sí para continuar."
+      },
+      "swe_se": {
+        "source": "Du har valt att använda FIFA-poäng för att komma in i Ultimate Draft. Om det stämmer, välj Ja för att gå vidare.",
+        "target": "Du har valt att använda Aurora Tokens för att komma in i Ultimate Draft. Om det stämmer, välj Ja för att gå vidare."
+      },
+      "tur_tr": {
+        "source": "Ultimate Draft’a FIFA Points ile katılmaya karar verdin. Doğruysa, devam etmek için Evet’i seç.",
+        "target": "Ultimate Draft’a Aurora Tokens ile katılmaya karar verdin. Doğruysa, devam etmek için Evet’i seç."
+      }
+    }
+  },
+  {
+    "stringId": "FUT_FIFA_POINTS",
+    "languages": {
+      "ara_sa": {
+        "source": "نقاط FIFA",
+        "target": "Aurora Tokens"
+      },
+      "chi_hk": {
+        "source": "FIFA Points",
+        "target": "Aurora Tokens"
+      },
+      "chs_cn": {
+        "source": "FIFA POINTS",
+        "target": "AURORA TOKENS"
+      },
+      "cze_cz": {
+        "source": "FIFA POINTS",
+        "target": "AURORA TOKENS"
+      },
+      "dan_dk": {
+        "source": "FIFA-POINT",
+        "target": "AURORA TOKENS"
+      },
+      "dut_nl": {
+        "source": "FIFA-PUNTEN",
+        "target": "AURORA TOKENS"
+      },
+      "eng_us": {
+        "source": "FIFA POINTS",
+        "target": "AURORA TOKENS"
+      },
+      "fre_fr": {
+        "source": "POINTS FIFA",
+        "target": "AURORA TOKENS"
+      },
+      "ger_de": {
+        "source": "FIFA POINTS",
+        "target": "AURORA TOKENS"
+      },
+      "ita_it": {
+        "source": "FIFA POINTS",
+        "target": "AURORA TOKENS"
+      },
+      "jpn_jp": {
+        "source": "FIFAポイント",
+        "target": "Aurora Tokens"
+      },
+      "kor_kr": {
+        "source": "FIFA 포인트",
+        "target": "Aurora Tokens"
+      },
+      "nor_no": {
+        "source": "FIFA POINTS",
+        "target": "AURORA TOKENS"
+      },
+      "pol_pl": {
+        "source": "FIFA POINTS",
+        "target": "AURORA TOKENS"
+      },
+      "por_br": {
+        "source": "FIFA POINTS",
+        "target": "AURORA TOKENS"
+      },
+      "por_pt": {
+        "source": "FIFA POINTS",
+        "target": "AURORA TOKENS"
+      },
+      "rus_ru": {
+        "source": "FIFA POINTS",
+        "target": "AURORA TOKENS"
+      },
+      "spa_es": {
+        "source": "FIFA POINTS",
+        "target": "AURORA TOKENS"
+      },
+      "spa_mx": {
+        "source": "FIFA POINTS",
+        "target": "AURORA TOKENS"
+      },
+      "swe_se": {
+        "source": "FIFA-POÄNG",
+        "target": "AURORA TOKENS"
+      },
+      "tur_tr": {
+        "source": "FIFA POINTS",
+        "target": "AURORA TOKENS"
+      }
+    }
+  },
+  {
+    "stringId": "FUT_FIFA_PTS",
+    "languages": {
+      "ara_sa": {
+        "source": "نقاط FIFA",
+        "target": "Aurora Tokens"
+      },
+      "chi_hk": {
+        "source": "FIFA Points",
+        "target": "Aurora Tokens"
+      },
+      "chs_cn": {
+        "source": "FIFA POINTS",
+        "target": "AURORA TOKENS"
+      },
+      "cze_cz": {
+        "source": "FIFA POINTS",
+        "target": "AURORA TOKENS"
+      },
+      "dan_dk": {
+        "source": "FIFA-POINT",
+        "target": "AURORA TOKENS"
+      },
+      "dut_nl": {
+        "source": "FIFA-PUNTEN",
+        "target": "AURORA TOKENS"
+      },
+      "eng_us": {
+        "source": "FIFA POINTS",
+        "target": "AURORA TOKENS"
+      },
+      "fre_fr": {
+        "source": "POINTS FIFA",
+        "target": "AURORA TOKENS"
+      },
+      "ger_de": {
+        "source": "FIFA POINTS",
+        "target": "AURORA TOKENS"
+      },
+      "ita_it": {
+        "source": "FIFA POINTS",
+        "target": "AURORA TOKENS"
+      },
+      "jpn_jp": {
+        "source": "FIFAポイント",
+        "target": "Aurora Tokens"
+      },
+      "kor_kr": {
+        "source": "FIFA 포인트",
+        "target": "Aurora Tokens"
+      },
+      "nor_no": {
+        "source": "FIFA POINTS",
+        "target": "AURORA TOKENS"
+      },
+      "pol_pl": {
+        "source": "FIFA POINTS",
+        "target": "AURORA TOKENS"
+      },
+      "por_br": {
+        "source": "FIFA POINTS",
+        "target": "AURORA TOKENS"
+      },
+      "por_pt": {
+        "source": "FIFA POINTS",
+        "target": "AURORA TOKENS"
+      },
+      "rus_ru": {
+        "source": "FIFA POINTS",
+        "target": "AURORA TOKENS"
+      },
+      "spa_es": {
+        "source": "FIFA Points",
+        "target": "Aurora Tokens"
+      },
+      "spa_mx": {
+        "source": "FIFA Points",
+        "target": "Aurora Tokens"
+      },
+      "swe_se": {
+        "source": "FIFA-POÄNG",
+        "target": "AURORA TOKENS"
+      },
+      "tur_tr": {
+        "source": "FIFA POINTS",
+        "target": "AURORA TOKENS"
+      }
+    }
+  },
+  {
+    "stringId": "FUT_FUTMoney",
+    "languages": {
+      "ara_sa": {
+        "source": "نقاط FIFA",
+        "target": "Aurora Tokens"
+      },
+      "chi_hk": {
+        "source": "FIFA Points",
+        "target": "Aurora Tokens"
+      },
+      "chs_cn": {
+        "source": "FIFA Points",
+        "target": "Aurora Tokens"
+      },
+      "cze_cz": {
+        "source": "FIFA Points",
+        "target": "Aurora Tokens"
+      },
+      "dan_dk": {
+        "source": "FIFA-point",
+        "target": "Aurora Tokens"
+      },
+      "dut_nl": {
+        "source": "FIFA-PUNTEN",
+        "target": "AURORA TOKENS"
+      },
+      "eng_us": {
+        "source": "FIFA Points",
+        "target": "Aurora Tokens"
+      },
+      "fre_fr": {
+        "source": "Points FIFA",
+        "target": "Aurora Tokens"
+      },
+      "ger_de": {
+        "source": "FIFA Points",
+        "target": "Aurora Tokens"
+      },
+      "ita_it": {
+        "source": "FIFA Points",
+        "target": "Aurora Tokens"
+      },
+      "jpn_jp": {
+        "source": "FIFAポイント",
+        "target": "Aurora Tokens"
+      },
+      "kor_kr": {
+        "source": "FIFA 포인트",
+        "target": "Aurora Tokens"
+      },
+      "nor_no": {
+        "source": "FIFA POINTS",
+        "target": "AURORA TOKENS"
+      },
+      "pol_pl": {
+        "source": "FIFA Points",
+        "target": "Aurora Tokens"
+      },
+      "por_br": {
+        "source": "FIFA POINTS",
+        "target": "AURORA TOKENS"
+      },
+      "por_pt": {
+        "source": "FIFA Points",
+        "target": "Aurora Tokens"
+      },
+      "rus_ru": {
+        "source": "FIFA POINTS",
+        "target": "AURORA TOKENS"
+      },
+      "spa_es": {
+        "source": "FIFA Points",
+        "target": "Aurora Tokens"
+      },
+      "spa_mx": {
+        "source": "FIFA Points",
+        "target": "Aurora Tokens"
+      },
+      "swe_se": {
+        "source": "FIFA-POÄNG",
+        "target": "AURORA TOKENS"
+      },
+      "tur_tr": {
+        "source": "FIFA Points",
+        "target": "Aurora Tokens"
+      }
+    }
+  },
+  {
+    "stringId": "FUT_FUT_MONEY_NOT_AVAILABLE",
+    "languages": {
+      "ara_sa": {
+        "source": "نأسف لأنه ليس بامكانك إضافة نقاط FIFA حالياً.\r\nيرجى المحاولة لاحقاً.",
+        "target": "نأسف لأنه ليس بامكانك إضافة Aurora Tokens حالياً.\r\nيرجى المحاولة لاحقاً."
+      },
+      "chi_hk": {
+        "source": "抱歉，目前無法增加FIFA Points。\r\n請稍候重試。",
+        "target": "抱歉，目前無法增加Aurora Tokens。\r\n請稍候重試。"
+      },
+      "chs_cn": {
+        "source": "抱歉，您当前无法添加 FIFA Points。\n\n请稍后再试。",
+        "target": "抱歉，您当前无法添加 Aurora Tokens。\n\n请稍后再试。"
+      },
+      "cze_cz": {
+        "source": "Je nám líto, ale momentálně není možné přidat FIFA Points. Zkuste to prosím znovu později. ",
+        "target": "Je nám líto, ale momentálně není možné přidat Aurora Tokens. Zkuste to prosím znovu později. "
+      },
+      "dan_dk": {
+        "source": "Vi beklager, men du kan ikke på nuværende tidspunkt tilføje FIFA-point. Prøv venligst senere.",
+        "target": "Vi beklager, men du kan ikke på nuværende tidspunkt tilføje Aurora Tokens. Prøv venligst senere."
+      },
+      "dut_nl": {
+        "source": "Helaas, maar je kunt momenteel geen FIFA-punten toevoegen. Probeer het later nog eens.",
+        "target": "Helaas, maar je kunt momenteel geen Aurora Tokens toevoegen. Probeer het later nog eens."
+      },
+      "eng_us": {
+        "source": "We're sorry, but you currently can't add FIFA Points.\r\nPlease try again later.",
+        "target": "We're sorry, but you currently can't add Aurora Tokens.\r\nPlease try again later."
+      },
+      "fre_fr": {
+        "source": "Nous sommes désolés, mais vous ne pouvez pas ajouter de Points FIFA. Veuillez réessayer plus tard.",
+        "target": "Nous sommes désolés, mais vous ne pouvez pas ajouter de Aurora Tokens. Veuillez réessayer plus tard."
+      },
+      "ger_de": {
+        "source": "Es tut uns leid, aber du kannst momentan keine FIFA Points hinzufügen. Bitte versuche es später erneut.",
+        "target": "Es tut uns leid, aber du kannst momentan keine Aurora Tokens hinzufügen. Bitte versuche es später erneut."
+      },
+      "ita_it": {
+        "source": "Siamo spiacenti, ma in questo momento non puoi aggiungere FIFA Points. Riprova più tardi.",
+        "target": "Siamo spiacenti, ma in questo momento non puoi aggiungere Aurora Tokens. Riprova più tardi."
+      },
+      "jpn_jp": {
+        "source": "申し訳ありません。現在FIFAポイントを加算できません。 \r\n後ほど お試しください。",
+        "target": "申し訳ありません。現在Aurora Tokensを加算できません。 \r\n後ほど お試しください。"
+      },
+      "kor_kr": {
+        "source": "죄송합니다.현재 FIFA 포인트를 추가할 수 없습니다.\n나중에 다시 시도해 주세요.",
+        "target": "죄송합니다.현재 Aurora Tokens를 추가할 수 없습니다.\n나중에 다시 시도해 주세요."
+      },
+      "nor_no": {
+        "source": "Vi beklager, men for øyeblikket kan du ikke legge til FIFA Points. Prøv igjen senere. ",
+        "target": "Vi beklager, men for øyeblikket kan du ikke legge til Aurora Tokens. Prøv igjen senere. "
+      },
+      "pol_pl": {
+        "source": "Przepraszamy ale obecnie nie możesz dodać FIFA Points. Spróbuj później.",
+        "target": "Przepraszamy ale obecnie nie możesz dodać Aurora Tokens. Spróbuj później."
+      },
+      "por_br": {
+        "source": "Você não pode adicionar FIFA Points no momento.\r\nTente novamente mais tarde.",
+        "target": "Você não pode adicionar Aurora Tokens no momento.\r\nTente novamente mais tarde."
+      },
+      "por_pt": {
+        "source": "Pedimos desculpa mas atualmente não podes adicionar FIFA Points. Tenta novamente mais tarde.",
+        "target": "Pedimos desculpa mas atualmente não podes adicionar Aurora Tokens. Tenta novamente mais tarde."
+      },
+      "rus_ru": {
+        "source": "Вы не можете добавить FIFA Points в данный момент.\r\nПовторите попытку позже.",
+        "target": "Вы не можете добавить Aurora Tokens в данный момент.\r\nПовторите попытку позже."
+      },
+      "spa_es": {
+        "source": "Lo sentimos, en estos momentos no puedes añadir FIFA Points. Inténtalo de nuevo más tarde.",
+        "target": "Lo sentimos, en estos momentos no puedes añadir Aurora Tokens. Inténtalo de nuevo más tarde."
+      },
+      "spa_mx": {
+        "source": "Lo sentimos, no se pueden añadir FIFA Points en estos momentos.  Vuelve a intentarlo más tarde.",
+        "target": "Lo sentimos, no se pueden añadir Aurora Tokens en estos momentos.  Vuelve a intentarlo más tarde."
+      },
+      "swe_se": {
+        "source": "Vi ber om ursäkt, men just nu kan du inte lägga till FIFA-poäng.\r\nFörsök igen senare.",
+        "target": "Vi ber om ursäkt, men just nu kan du inte lägga till Aurora Tokens.\r\nFörsök igen senare."
+      },
+      "tur_tr": {
+        "source": "Üzgünüz ama şu anda FIFA Points ekleyemezsin.\r\nLütfen daha sonra yeniden dene.",
+        "target": "Üzgünüz ama şu anda Aurora Tokens ekleyemezsin.\r\nLütfen daha sonra yeniden dene."
+      }
+    }
+  },
+  {
+    "stringId": "FUT_GH_FIFAPOINTS_0",
+    "languages": {
+      "ara_sa": {
+        "source": "نقاط FIFA",
+        "target": "Aurora Tokens"
+      },
+      "chi_hk": {
+        "source": "FIFA\nPoints",
+        "target": "Aurora\nTokens"
+      },
+      "chs_cn": {
+        "source": "FIFA\nPoints",
+        "target": "Aurora\nTokens"
+      },
+      "cze_cz": {
+        "source": "FIFA\nPoints",
+        "target": "Aurora\nTokens"
+      },
+      "dan_dk": {
+        "source": "FIFA-point",
+        "target": "Aurora Tokens"
+      },
+      "dut_nl": {
+        "source": "FIFA-\npunten",
+        "target": "Aurora\nTokens"
+      },
+      "eng_us": {
+        "source": "FIFA\nPoints",
+        "target": "Aurora\nTokens"
+      },
+      "fre_fr": {
+        "source": "Points\nFIFA",
+        "target": "Aurora\nTokens"
+      },
+      "ger_de": {
+        "source": "FIFA\nPoints",
+        "target": "Aurora\nTokens"
+      },
+      "ita_it": {
+        "source": "FIFA\nPoints",
+        "target": "Aurora\nTokens"
+      },
+      "jpn_jp": {
+        "source": "FIFA\nポイント",
+        "target": "Aurora\nTokens"
+      },
+      "kor_kr": {
+        "source": "FIFA\n포인트",
+        "target": "Aurora\nTokens"
+      },
+      "nor_no": {
+        "source": "FIFA\nPoints",
+        "target": "Aurora\nTokens"
+      },
+      "pol_pl": {
+        "source": "FIFA\nPoints",
+        "target": "Aurora\nTokens"
+      },
+      "por_br": {
+        "source": "FIFA\nPoints",
+        "target": "Aurora\nTokens"
+      },
+      "por_pt": {
+        "source": "FIFA\nPoints",
+        "target": "Aurora\nTokens"
+      },
+      "rus_ru": {
+        "source": "FIFA\nPoints",
+        "target": "Aurora\nTokens"
+      },
+      "spa_es": {
+        "source": "FIFA\nPoints",
+        "target": "Aurora\nTokens"
+      },
+      "spa_mx": {
+        "source": "FIFA\nPoints",
+        "target": "Aurora\nTokens"
+      },
+      "swe_se": {
+        "source": "FIFA-\npoäng",
+        "target": "Aurora\nTokens"
+      },
+      "tur_tr": {
+        "source": "FIFA\nPoints",
+        "target": "Aurora\nTokens"
+      }
+    }
+  },
+  {
+    "stringId": "FUT_PC_Credits",
+    "languages": {
+      "ara_sa": {
+        "source": "FIFA POINTS",
+        "target": "AURORA TOKENS"
+      },
+      "chi_hk": {
+        "source": "FIFA POINTS",
+        "target": "AURORA TOKENS"
+      },
+      "chs_cn": {
+        "source": "FIFA POINTS",
+        "target": "AURORA TOKENS"
+      },
+      "cze_cz": {
+        "source": "FIFA POINTS",
+        "target": "AURORA TOKENS"
+      },
+      "dan_dk": {
+        "source": "FIFA POINTS",
+        "target": "AURORA TOKENS"
+      },
+      "dut_nl": {
+        "source": "FIFA POINTS",
+        "target": "AURORA TOKENS"
+      },
+      "eng_us": {
+        "source": "FIFA POINTS",
+        "target": "AURORA TOKENS"
+      },
+      "fre_fr": {
+        "source": "FIFA POINTS",
+        "target": "AURORA TOKENS"
+      },
+      "ger_de": {
+        "source": "FIFA POINTS",
+        "target": "AURORA TOKENS"
+      },
+      "ita_it": {
+        "source": "FIFA POINTS",
+        "target": "AURORA TOKENS"
+      },
+      "jpn_jp": {
+        "source": "FIFA POINTS",
+        "target": "AURORA TOKENS"
+      },
+      "kor_kr": {
+        "source": "FIFA POINTS",
+        "target": "AURORA TOKENS"
+      },
+      "nor_no": {
+        "source": "FIFA POINTS",
+        "target": "AURORA TOKENS"
+      },
+      "pol_pl": {
+        "source": "FIFA POINTS",
+        "target": "AURORA TOKENS"
+      },
+      "por_br": {
+        "source": "FIFA POINTS",
+        "target": "AURORA TOKENS"
+      },
+      "por_pt": {
+        "source": "FIFA POINTS",
+        "target": "AURORA TOKENS"
+      },
+      "rus_ru": {
+        "source": "FIFA POINTS",
+        "target": "AURORA TOKENS"
+      },
+      "spa_es": {
+        "source": "FIFA POINTS",
+        "target": "AURORA TOKENS"
+      },
+      "spa_mx": {
+        "source": "FIFA POINTS",
+        "target": "AURORA TOKENS"
+      },
+      "swe_se": {
+        "source": "FIFA POINTS",
+        "target": "AURORA TOKENS"
+      },
+      "tur_tr": {
+        "source": "FIFA POINTS",
+        "target": "AURORA TOKENS"
+      }
+    }
+  },
+  {
+    "stringId": "FUT_PURCHASE_FUT_MONEY",
+    "languages": {
+      "ara_sa": {
+        "source": "أضف نقاط FIFA",
+        "target": "أضف Aurora Tokens"
+      },
+      "chi_hk": {
+        "source": "增加 FIFA Points",
+        "target": "增加 Aurora Tokens"
+      },
+      "chs_cn": {
+        "source": "增加 FIFA Points",
+        "target": "增加 Aurora Tokens"
+      },
+      "cze_cz": {
+        "source": "Přidat FIFA Points",
+        "target": "Přidat Aurora Tokens"
+      },
+      "dan_dk": {
+        "source": "Tilføj FIFA-point",
+        "target": "Tilføj Aurora Tokens"
+      },
+      "dut_nl": {
+        "source": "FIFA-punten toevoegen",
+        "target": "Aurora Tokens toevoegen"
+      },
+      "eng_us": {
+        "source": "Add FIFA Points",
+        "target": "Add Aurora Tokens"
+      },
+      "fre_fr": {
+        "source": "Ajouter Points FIFA",
+        "target": "Ajouter Aurora Tokens"
+      },
+      "ger_de": {
+        "source": "FIFA Points hinzufügen",
+        "target": "Aurora Tokens hinzufügen"
+      },
+      "ita_it": {
+        "source": "Aggiungi FIFA Points",
+        "target": "Aggiungi Aurora Tokens"
+      },
+      "jpn_jp": {
+        "source": "FIFAポイントを追加",
+        "target": "Aurora Tokensを追加"
+      },
+      "kor_kr": {
+        "source": "FIFA 포인트 추가",
+        "target": "Aurora Tokens 추가"
+      },
+      "nor_no": {
+        "source": "Legg til FIFA Points",
+        "target": "Legg til Aurora Tokens"
+      },
+      "pol_pl": {
+        "source": "Dodaj FIFA Points",
+        "target": "Dodaj Aurora Tokens"
+      },
+      "por_br": {
+        "source": "Adicionar FIFA Points",
+        "target": "Adicionar Aurora Tokens"
+      },
+      "por_pt": {
+        "source": "Adicionar FIFA Points",
+        "target": "Adicionar Aurora Tokens"
+      },
+      "rus_ru": {
+        "source": "Добавить FIFA Points",
+        "target": "Добавить Aurora Tokens"
+      },
+      "spa_es": {
+        "source": "Añadir FIFA Points",
+        "target": "Añadir Aurora Tokens"
+      },
+      "spa_mx": {
+        "source": "Añadir FIFA Points",
+        "target": "Añadir Aurora Tokens"
+      },
+      "swe_se": {
+        "source": "Lägg till FIFA-poäng",
+        "target": "Lägg till Aurora Tokens"
+      },
+      "tur_tr": {
+        "source": "FIFA Points ekle",
+        "target": "Aurora Tokens ekle"
+      }
+    }
+  },
+  {
+    "stringId": "FUT_QUEST_BUY_PACK_DESCRIPTION_BIG",
+    "languages": {
+      "ara_sa": {
+        "source": "انتقل للمتجر واشتر حزمة باستخدام القطع النقدية أو نقاط FIFA. لا تقلق، سنمنحك حزمة لمساواة الأمور.",
+        "target": "انتقل للمتجر واشتر حزمة باستخدام القطع النقدية أو Aurora Tokens. لا تقلق، سنمنحك حزمة لمساواة الأمور."
+      },
+      "chi_hk": {
+        "source": "前往商店並使用金幣或 FIFA Points 購買組合包。別擔心，我們會送您一套組合包作為補貼。",
+        "target": "前往商店並使用金幣或 Aurora Tokens 購買組合包。別擔心，我們會送您一套組合包作為補貼。"
+      },
+      "chs_cn": {
+        "source": "导航到商店并使用金币或 FIFA Points 购买组合包。别担心，我们会送您一套组合包作为补偿。",
+        "target": "导航到商店并使用金币或 Aurora Tokens 购买组合包。别担心，我们会送您一套组合包作为补偿。"
+      },
+      "cze_cz": {
+        "source": "Přejděte do obchodu a kupte si balíček za mince nebo FIFA Points. Žádný strach, dáme vám balíček, abyste nepřišli zkrátka.",
+        "target": "Přejděte do obchodu a kupte si balíček za mince nebo Aurora Tokens. Žádný strach, dáme vám balíček, abyste nepřišli zkrátka."
+      },
+      "dan_dk": {
+        "source": "Besøg butikken, og køb en pakke med mønter eller FIFA-point. Bare rolig: Vi skal nok give dig en pakke, så det hele er fair. ",
+        "target": "Besøg butikken, og køb en pakke med mønter eller Aurora Tokens. Bare rolig: Vi skal nok give dig en pakke, så det hele er fair. "
+      },
+      "dut_nl": {
+        "source": "Ga naar de winkel en koop een pakket met munten of FIFA-punten. Maak je geen zorgen, je krijgt als tegenprestatie van ons een pakket.",
+        "target": "Ga naar de winkel en koop een pakket met munten of Aurora Tokens. Maak je geen zorgen, je krijgt als tegenprestatie van ons een pakket."
+      },
+      "eng_us": {
+        "source": "Navigate to the store and buy a pack using coins or FIFA points. Don't worry we'll give you a pack to even things up. ",
+        "target": "Navigate to the store and buy a pack using coins or Aurora Tokens. Don't worry we'll give you a pack to even things up. "
+      },
+      "fre_fr": {
+        "source": "Parcourez la boutique et achetez un pack avec des crédits ou des Points FIFA. Pas de souci, nous vous offrirons un pack pour équilibrer les choses. ",
+        "target": "Parcourez la boutique et achetez un pack avec des crédits ou des Aurora Tokens. Pas de souci, nous vous offrirons un pack pour équilibrer les choses. "
+      },
+      "ger_de": {
+        "source": "Rufe den Shop auf und kaufe ein Pack mit Münzen oder FIFA Points. Keine Sorge, wir geben dir ein Pack, um für Chancengleichheit zu sorgen.",
+        "target": "Rufe den Shop auf und kaufe ein Pack mit Münzen oder Aurora Tokens. Keine Sorge, wir geben dir ein Pack, um für Chancengleichheit zu sorgen."
+      },
+      "ita_it": {
+        "source": "Accedi al negozio e acquista un pacchetto con i crediti o i FIFA Points. Inoltre, per equilibrare le cose, ti daremo un pacchetto gratis.",
+        "target": "Accedi al negozio e acquista un pacchetto con i crediti o i Aurora Tokens. Inoltre, per equilibrare le cose, ti daremo un pacchetto gratis."
+      },
+      "jpn_jp": {
+        "source": "ストアに移動して、コインやFIFAポイントで\nパックを購入できます。無料パックでバランスを\n調整する場合もあります。",
+        "target": "ストアに移動して、コインやAurora Tokensで\nパックを購入できます。無料パックでバランスを\n調整する場合もあります。"
+      },
+      "kor_kr": {
+        "source": "스토어를 탐색하여 코인이나 FIFA 포인트로 팩 1개를 구매합니다. 걱정하지 마세요. 해당 비용에 대한 팩 1개가 지급됩니다. ",
+        "target": "스토어를 탐색하여 코인이나 Aurora Tokens로 팩 1개를 구매합니다. 걱정하지 마세요. 해당 비용에 대한 팩 1개가 지급됩니다. "
+      },
+      "nor_no": {
+        "source": "Gå til butikken og kjøp en pakke med mynter eller FIFA Points. Vi gir deg i tillegg en pakke for å jevne det hele ut.",
+        "target": "Gå til butikken og kjøp en pakke med mynter eller Aurora Tokens. Vi gir deg i tillegg en pakke for å jevne det hele ut."
+      },
+      "pol_pl": {
+        "source": "Przejdź do sklepu i kup paczkę za monety lub punkty FIFA Points. Nie martw się: dostaniesz od nas paczkę dla wyrównania rachunku.",
+        "target": "Przejdź do sklepu i kup paczkę za monety lub punkty Aurora Tokens. Nie martw się: dostaniesz od nas paczkę dla wyrównania rachunku."
+      },
+      "por_br": {
+        "source": "Navegue até a loja e compre um pacote usando moedas ou FIFA Points. Não se preocupe, vamos lhe dar um pacote para igualar as coisas.",
+        "target": "Navegue até a loja e compre um pacote usando moedas ou Aurora Tokens. Não se preocupe, vamos lhe dar um pacote para igualar as coisas."
+      },
+      "por_pt": {
+        "source": "Navega até à loja e compra um pack usando moedas ou FIFA points. Não te preocupes, nós damos-te um pack para equilibrar a coisa.",
+        "target": "Navega até à loja e compra um pack usando moedas ou Aurora Tokens. Não te preocupes, nós damos-te um pack para equilibrar a coisa."
+      },
+      "rus_ru": {
+        "source": "Перейдите в магазин и приобретите набор за монеты или FIFA Points. Не переживайте: с нашим набором вы наладите игру. ",
+        "target": "Перейдите в магазин и приобретите набор за монеты или Aurora Tokens. Не переживайте: с нашим набором вы наладите игру. "
+      },
+      "spa_es": {
+        "source": "Visita la tienda y compra un sobre usando monedas o FIFA Points. No te preocupes, te daremos un sobre para compensarte ",
+        "target": "Visita la tienda y compra un sobre usando monedas o Aurora Tokens. No te preocupes, te daremos un sobre para compensarte "
+      },
+      "spa_mx": {
+        "source": "Navega a la tienda y compra un Pack usando monedas o FIFA Points. No te preocupes, te daremos un Pack para nivelar las cosas.",
+        "target": "Navega a la tienda y compra un Pack usando monedas o Aurora Tokens. No te preocupes, te daremos un Pack para nivelar las cosas."
+      },
+      "swe_se": {
+        "source": "Besök butiken och köp ett paket med mynt eller FIFA-poäng. Oroa dig inte – du får ett paket som kompensation.",
+        "target": "Besök butiken och köp ett paket med mynt eller Aurora Tokens. Oroa dig inte – du får ett paket som kompensation."
+      },
+      "tur_tr": {
+        "source": "Mağazaya gidip jeton ya da FIFA Points kullanarak paket satın al. Merak etme, karşılığında bizden güzel bir paket alacaksın.",
+        "target": "Mağazaya gidip jeton ya da Aurora Tokens kullanarak paket satın al. Merak etme, karşılığında bizden güzel bir paket alacaksın."
+      }
+    }
+  },
+  {
+    "stringId": "FUT_RECOVERED_FIFA_POINTS",
+    "languages": {
+      "ara_sa": {
+        "source": "قمنا باسترداد مجموع متبقي من نقاط FIFA من معاملة سابقة، لذا تم تحديث رصيد نقاط FIFA الخاص بك.",
+        "target": "قمنا باسترداد مجموع متبقي من Aurora Tokens من معاملة سابقة، لذا تم تحديث رصيد Aurora Tokens الخاص بك."
+      },
+      "chi_hk": {
+        "source": "我們已從之前的交易中還原了未結算的FIFA點數額，您的FIFA點數餘額已經更新。",
+        "target": "我們已從之前的交易中還原了未結算的Aurora Tokens額，您的Aurora Tokens餘額已經更新。"
+      },
+      "chs_cn": {
+        "source": "我们已从之前的交易中找回大量 FIFA Points，您的 FIFA Points 余额已更新。",
+        "target": "我们已从之前的交易中找回大量 Aurora Tokens，您的 Aurora Tokens 余额已更新。"
+      },
+      "cze_cz": {
+        "source": "Z předchozí transakce se nám podařilo získat zpět nezaplacené FIFA Points. Stav vašich bodů byl aktualizován.",
+        "target": "Z předchozí transakce se nám podařilo získat zpět nezaplacené Aurora Tokens. Stav vašich bodů byl aktualizován."
+      },
+      "dan_dk": {
+        "source": "Vi har gendannet en enorm mængde FIFA-point fra din sidste overførsel. Din pointtotal er blevet opdateret.",
+        "target": "Vi har gendannet en enorm mængde Aurora Tokens fra din sidste overførsel. Din pointtotal er blevet opdateret."
+      },
+      "dut_nl": {
+        "source": "We hebben een openstaande hoeveelheid FIFA-punten teruggehaald uit een eerdere transactie. Je FIFA-puntenbalans is bijgewerkt.",
+        "target": "We hebben een openstaande hoeveelheid Aurora Tokens teruggehaald uit een eerdere transactie. Je Aurora Tokensbalans is bijgewerkt."
+      },
+      "eng_us": {
+        "source": "We've recovered an outstanding amount of FIFA Points from a previous transaction, your FIFA Points balance has been updated.",
+        "target": "We've recovered an outstanding amount of Aurora Tokens from a previous transaction, your Aurora Tokens balance has been updated."
+      },
+      "fre_fr": {
+        "source": "Nous avons récupéré une énorme quantité de Points FIFA d'une précédente transaction, votre solde de Points FIFA a été mis à jour.",
+        "target": "Nous avons récupéré une énorme quantité de Aurora Tokens d'une précédente transaction, votre solde de Aurora Tokens a été mis à jour."
+      },
+      "ger_de": {
+        "source": "Wir haben die ausstehenden FIFA Points aus einer früheren Transaktion wiederhergestellt. Dein FIFA Points-Konto wurde aktualisiert.",
+        "target": "Wir haben die ausstehenden Aurora Tokens aus einer früheren Transaktion wiederhergestellt. Dein Aurora Tokens-Konto wurde aktualisiert."
+      },
+      "ita_it": {
+        "source": "Abbiamo recuperato una grossa quantità di FIFA Points da una transazione precedente. Il tuo saldo FIFA Points è stato aggiornato.",
+        "target": "Abbiamo recuperato una grossa quantità di Aurora Tokens da una transazione precedente. Il tuo saldo Aurora Tokens è stato aggiornato."
+      },
+      "jpn_jp": {
+        "source": "前回の取引からFIFAポイントが大幅に回復し、あなたのFIFAポイント残高が更新されました。",
+        "target": "前回の取引からAurora Tokensが大幅に回復し、あなたのAurora Tokens残高が更新されました。"
+      },
+      "kor_kr": {
+        "source": "이전 거래에서 상당한 FIFA 포인트를 복구했습니다. FIFA 포인트 보유액이 업데이트되었습니다.",
+        "target": "이전 거래에서 상당한 Aurora Tokens를 복구했습니다. Aurora Tokens 보유액이 업데이트되었습니다."
+      },
+      "nor_no": {
+        "source": "Du hadde FIFA Points til gode fra en tidligere transaksjon. FIFA Points-saldoen din er nå oppdatert.",
+        "target": "Du hadde Aurora Tokens til gode fra en tidligere transaksjon. Aurora Tokens-saldoen din er nå oppdatert."
+      },
+      "pol_pl": {
+        "source": "Odzyskaliśmy brakujące punkty FIFA Points z poprzedniej transakcji. Twoje saldo punktów zostało zaktualizowane.",
+        "target": "Odzyskaliśmy brakujące punkty Aurora Tokens z poprzedniej transakcji. Twoje saldo punktów zostało zaktualizowane."
+      },
+      "por_br": {
+        "source": "Recuperamos uma quantidade considerável de FIFA Points de uma transação anterior. Seu saldo de FIFA Points foi atualizado.",
+        "target": "Recuperamos uma quantidade considerável de Aurora Tokens de uma transação anterior. Seu saldo de Aurora Tokens foi atualizado."
+      },
+      "por_pt": {
+        "source": "Recuperámos uma enorme quantia de FIFA Points de uma transação anterior, o teu saldo de FIFA Points foi atualizado.",
+        "target": "Recuperámos uma enorme quantia de Aurora Tokens de uma transação anterior, o teu saldo de Aurora Tokens foi atualizado."
+      },
+      "rus_ru": {
+        "source": "Оставшиеся от предыдущей сделки FIFA Points зачислены на ваш счет. Ваш баланс FIFA Points обновлен.",
+        "target": "Оставшиеся от предыдущей сделки Aurora Tokens зачислены на ваш счет. Ваш баланс Aurora Tokens обновлен."
+      },
+      "spa_es": {
+        "source": "Hemos recuperado una cantidad pendiente de FIFA Points de una transacción previa. Se ha actualizado tu balance de FIFA Points.",
+        "target": "Hemos recuperado una cantidad pendiente de Aurora Tokens de una transacción previa. Se ha actualizado tu balance de Aurora Tokens."
+      },
+      "spa_mx": {
+        "source": "Hemos recuperado una cantidad pendiente de FIFA Points de una transacción previa. Tu balance de FIFA Points se ha actualizado.",
+        "target": "Hemos recuperado una cantidad pendiente de Aurora Tokens de una transacción previa. Tu balance de Aurora Tokens se ha actualizado."
+      },
+      "swe_se": {
+        "source": "Vi har återfört en överbliven mängd FIFA-poäng från en tidigare transaktion till ditt FIFA-poängsaldo.",
+        "target": "Vi har återfört en överbliven mängd Aurora Tokens från en tidigare transaktion till ditt Aurora Tokenssaldo."
+      },
+      "tur_tr": {
+        "source": "Önceki işlemden büyük bir FIFA Points bakiyesi kurtardık. FIFA Points bakiyen güncellendi.",
+        "target": "Önceki işlemden büyük bir Aurora Tokens bakiyesi kurtardık. Aurora Tokens bakiyen güncellendi."
+      }
+    }
+  },
+  {
+    "stringId": "FUT_STORE_CAT_POINTS_DESC",
+    "languages": {
+      "ara_sa": {
+        "source": "احصل على نقاط FIFA لتسرّع عملية بناء فريقك لشراء الحِزم في المتجر أو عبر الشبكة.",
+        "target": "احصل على Aurora Tokens لتسرّع عملية بناء فريقك لشراء الحِزم في المتجر أو عبر الشبكة."
+      },
+      "chi_hk": {
+        "source": "從商店或網頁取得FIFA Points以購買組合包並加速您的球隊組建。",
+        "target": "從商店或網頁取得Aurora Tokens以購買組合包並加速您的球隊組建。"
+      },
+      "chs_cn": {
+        "source": "获得 FIFA Points，便可在商店或网络上购买组合包，从而加速打造您的阵容",
+        "target": "获得 Aurora Tokens，便可在商店或网络上购买组合包，从而加速打造您的阵容"
+      },
+      "cze_cz": {
+        "source": "Získejte FIFA Points k urychlení budování týmu prostřednictvím balíčků zakoupených v obchodě, nebo na webu.",
+        "target": "Získejte Aurora Tokens k urychlení budování týmu prostřednictvím balíčků zakoupených v obchodě, nebo na webu."
+      },
+      "dan_dk": {
+        "source": "Anskaf FIFA-point for at fremskynde udviklingen af dit hold ved at købe pakker i butikken eller på internettet.",
+        "target": "Anskaf Aurora Tokens for at fremskynde udviklingen af dit hold ved at købe pakker i butikken eller på internettet."
+      },
+      "dut_nl": {
+        "source": "Verzamel FIFA-punten en koop pakketten in de winkel of op internet zodat je je team nog sneller kunt samenstellen.",
+        "target": "Verzamel Aurora Tokens en koop pakketten in de winkel of op internet zodat je je team nog sneller kunt samenstellen."
+      },
+      "eng_us": {
+        "source": "Acquire FIFA Points to accelerate your team building to buy packs in the store or on the web.",
+        "target": "Acquire Aurora Tokens to accelerate your team building to buy packs in the store or on the web."
+      },
+      "fre_fr": {
+        "source": "Obtenez des Points FIFA pour accélérer la progression de votre équipe, pour acheter des packs dans la Boutique ou sur Internet.",
+        "target": "Obtenez des Aurora Tokens pour accélérer la progression de votre équipe, pour acheter des packs dans la Boutique ou sur Internet."
+      },
+      "ger_de": {
+        "source": "Mit FIFA Points kannst du das Aufbauen deines Teams beschleunigen. Kaufe Packs im Shop oder im Web.",
+        "target": "Mit Aurora Tokens kannst du das Aufbauen deines Teams beschleunigen. Kaufe Packs im Shop oder im Web."
+      },
+      "ita_it": {
+        "source": "Aggiungi FIFA Points per migliorare la tua rosa più in fretta acquistando pacchetti nel Negozio o su Internet.",
+        "target": "Aggiungi Aurora Tokens per migliorare la tua rosa più in fretta acquistando pacchetti nel Negozio o su Internet."
+      },
+      "jpn_jp": {
+        "source": "ストアや ウェブで パックを購入して チームを 強化するには、 FIFAポイントが 必要です。 ",
+        "target": "ストアや ウェブで パックを購入して チームを 強化するには、 Aurora Tokensが 必要です。 "
+      },
+      "kor_kr": {
+        "source": "FIFA 포인트를 획득하면 팀을 더 빠르게 구성하고 스토어나 웹에서 팩을 구매할 수 있습니다.",
+        "target": "Aurora Tokens를 획득하면 팀을 더 빠르게 구성하고 스토어나 웹에서 팩을 구매할 수 있습니다."
+      },
+      "nor_no": {
+        "source": "Skaff deg FIFA Points for å bygge opp laget ditt raskere ved å kjøpe pakker i butikken eller på nettet.",
+        "target": "Skaff deg Aurora Tokens for å bygge opp laget ditt raskere ved å kjøpe pakker i butikken eller på nettet."
+      },
+      "pol_pl": {
+        "source": "Kup FIFA Points, aby kupić więcej paczek kart i szybciej zbudować swój wymarzony zespół.",
+        "target": "Kup Aurora Tokens, aby kupić więcej paczek kart i szybciej zbudować swój wymarzony zespół."
+      },
+      "por_br": {
+        "source": "Adquira FIFA Points para acelerar a montagem do seu time, comprando pacotes na loja ou na Web.",
+        "target": "Adquira Aurora Tokens para acelerar a montagem do seu time, comprando pacotes na loja ou na Web."
+      },
+      "por_pt": {
+        "source": "Adquire FIFA Points para acelerares a construção da tua equipa e comprares Packs na Loja ou na web.",
+        "target": "Adquire Aurora Tokens para acelerares a construção da tua equipa e comprares Packs na Loja ou na web."
+      },
+      "rus_ru": {
+        "source": "Получайте FIFA Points, чтобы ускорить процесс построения команды и покупать наборы в магазине или в онлайне.",
+        "target": "Получайте Aurora Tokens, чтобы ускорить процесс построения команды и покупать наборы в магазине или в онлайне."
+      },
+      "spa_es": {
+        "source": "Adquiere FIFA Points para acelerar la creación de tu equipo y compra sobres en la tienda o en la web.",
+        "target": "Adquiere Aurora Tokens para acelerar la creación de tu equipo y compra sobres en la tienda o en la web."
+      },
+      "spa_mx": {
+        "source": "Adquiere FIFA Points para acelerar la creación de tu equipo y compra packs en la tienda o en la web.",
+        "target": "Adquiere Aurora Tokens para acelerar la creación de tu equipo y compra packs en la tienda o en la web."
+      },
+      "swe_se": {
+        "source": "Tack vare dina FIFA-poäng går det snabbare att bygga upp laget genom att köpa paket i butiken och på nätet.",
+        "target": "Tack vare dina Aurora Tokens går det snabbare att bygga upp laget genom att köpa paket i butiken och på nätet."
+      },
+      "tur_tr": {
+        "source": "Mağazadan veya internetten takım gelişimini hızlandırmak üzere paketler almak için FIFA Points topla.",
+        "target": "Mağazadan veya internetten takım gelişimini hızlandırmak üzere paketler almak için Aurora Tokens topla."
+      }
+    }
+  },
+  {
+    "stringId": "FUT_STORE_CAT_POINTS_NAME",
+    "languages": {
+      "ara_sa": {
+        "source": "نقاط FIFA",
+        "target": "Aurora Tokens"
+      },
+      "chi_hk": {
+        "source": "FIFA Points",
+        "target": "Aurora Tokens"
+      },
+      "chs_cn": {
+        "source": "FIFA POINTS",
+        "target": "AURORA TOKENS"
+      },
+      "cze_cz": {
+        "source": "FIFA POINTS",
+        "target": "AURORA TOKENS"
+      },
+      "dan_dk": {
+        "source": "FIFA-POINT",
+        "target": "AURORA TOKENS"
+      },
+      "dut_nl": {
+        "source": "FIFA-PUNTEN",
+        "target": "AURORA TOKENS"
+      },
+      "eng_us": {
+        "source": "FIFA POINTS",
+        "target": "AURORA TOKENS"
+      },
+      "fre_fr": {
+        "source": "POINTS FIFA",
+        "target": "AURORA TOKENS"
+      },
+      "ger_de": {
+        "source": "FIFA POINTS",
+        "target": "AURORA TOKENS"
+      },
+      "ita_it": {
+        "source": "FIFA POINTS",
+        "target": "AURORA TOKENS"
+      },
+      "jpn_jp": {
+        "source": "FIFAポイント",
+        "target": "Aurora Tokens"
+      },
+      "kor_kr": {
+        "source": "FIFA 포인트",
+        "target": "Aurora Tokens"
+      },
+      "nor_no": {
+        "source": "FIFA POINTS",
+        "target": "AURORA TOKENS"
+      },
+      "pol_pl": {
+        "source": "FIFA POINTS",
+        "target": "AURORA TOKENS"
+      },
+      "por_br": {
+        "source": "FIFA POINTS",
+        "target": "AURORA TOKENS"
+      },
+      "por_pt": {
+        "source": "FIFA POINTS",
+        "target": "AURORA TOKENS"
+      },
+      "rus_ru": {
+        "source": "FIFA POINTS",
+        "target": "AURORA TOKENS"
+      },
+      "spa_es": {
+        "source": "FIFA POINTS",
+        "target": "AURORA TOKENS"
+      },
+      "spa_mx": {
+        "source": "FIFA POINTS",
+        "target": "AURORA TOKENS"
+      },
+      "swe_se": {
+        "source": "FIFA-POÄNG",
+        "target": "AURORA TOKENS"
+      },
+      "tur_tr": {
+        "source": "FIFA POINTS",
+        "target": "AURORA TOKENS"
+      }
+    }
+  },
+  {
+    "stringId": "FUT_STORE_IS_NOT_READY",
+    "languages": {
+      "ara_sa": {
+        "source": "نقاط FIFA غير متوفرة مؤقتاً للشراء. نعتذر عن الإزعاج، يُرجى المحاولة لاحقاً.",
+        "target": "Aurora Tokens غير متوفرة مؤقتاً للشراء. نعتذر عن الإزعاج، يُرجى المحاولة لاحقاً."
+      },
+      "chi_hk": {
+        "source": "FIFA Points 暫時無法購買。造成您的不便，我們深感抱歉，請稍後再試。",
+        "target": "Aurora Tokens 暫時無法購買。造成您的不便，我們深感抱歉，請稍後再試。"
+      },
+      "chs_cn": {
+        "source": "暂时无法购买 FIFA Points。对于带来的不便我们深感歉意，请稍候再试。",
+        "target": "暂时无法购买 Aurora Tokens。对于带来的不便我们深感歉意，请稍候再试。"
+      },
+      "cze_cz": {
+        "source": "FIFA Points nelze momentálně zakoupit. Omlouváme se za vzniklé problémy, zkuste to prosím znovu později.",
+        "target": "Aurora Tokens nelze momentálně zakoupit. Omlouváme se za vzniklé problémy, zkuste to prosím znovu později."
+      },
+      "dan_dk": {
+        "source": "Det er i øjeblikket ikke muligt at købe FIFA-point. Vi beklager ulejligheden. Prøv venligst igen senere.",
+        "target": "Det er i øjeblikket ikke muligt at købe Aurora Tokens. Vi beklager ulejligheden. Prøv venligst igen senere."
+      },
+      "dut_nl": {
+        "source": "Momenteel kun je geen FIFA-punten kopen. Onze excuses voor het ongemak, probeer het later nog eens.",
+        "target": "Momenteel kun je geen Aurora Tokens kopen. Onze excuses voor het ongemak, probeer het later nog eens."
+      },
+      "eng_us": {
+        "source": "FIFA Points are temporarily unavailable for purchase. We apologize for the inconvenience, please try again later.",
+        "target": "Aurora Tokens are temporarily unavailable for purchase. We apologize for the inconvenience, please try again later."
+      },
+      "fre_fr": {
+        "source": "Les Points FIFA sont momentanément indisponibles pour l'achat. Nous nous excusons pour la gêne occasionnée, veuillez réessayer plus tard.",
+        "target": "Les Aurora Tokens sont momentanément indisponibles pour l'achat. Nous nous excusons pour la gêne occasionnée, veuillez réessayer plus tard."
+      },
+      "ger_de": {
+        "source": "FIFA Points können vorübergehend nicht gekauft werden. Wir bitten um Entschuldigung. Bitte später erneut versuchen.",
+        "target": "Aurora Tokens können vorübergehend nicht gekauft werden. Wir bitten um Entschuldigung. Bitte später erneut versuchen."
+      },
+      "ita_it": {
+        "source": "Al momento non è possibile acquistare FIFA Points. Ci scusiamo per l'inconveniente e ti invitiamo a riprovare più tardi.",
+        "target": "Al momento non è possibile acquistare Aurora Tokens. Ci scusiamo per l'inconveniente e ti invitiamo a riprovare più tardi."
+      },
+      "jpn_jp": {
+        "source": "FIFAポイントは現在購入できません。ご不便をお掛けして申し訳ございません。もう一度後でお試しください。",
+        "target": "Aurora Tokensは現在購入できません。ご不便をお掛けして申し訳ございません。もう一度後でお試しください。"
+      },
+      "kor_kr": {
+        "source": "현재 FIFA 포인트로 구입을 할 수 없습니다. 불편을 드려 죄송합니다. 나중에 다시 시도해 주세요.",
+        "target": "현재 Aurora Tokens로 구입을 할 수 없습니다. 불편을 드려 죄송합니다. 나중에 다시 시도해 주세요."
+      },
+      "nor_no": {
+        "source": "Det er for øyeblikket ikke mulig å kjøpe FIFA Points. Vi beklager dette, men prøv igjen om en stund.",
+        "target": "Det er for øyeblikket ikke mulig å kjøpe Aurora Tokens. Vi beklager dette, men prøv igjen om en stund."
+      },
+      "pol_pl": {
+        "source": "Chwilowo nie można kupować punktów FIFA Points. Przepraszamy za niedogodności. Spróbuj ponownie później.",
+        "target": "Chwilowo nie można kupować punktów Aurora Tokens. Przepraszamy za niedogodności. Spróbuj ponownie później."
+      },
+      "por_br": {
+        "source": "FIFA Points estão temporariamente indisponíveis para compra. Pedimos desculpas pela inconveniência. Tente novamente mais tarde.",
+        "target": "Aurora Tokens estão temporariamente indisponíveis para compra. Pedimos desculpas pela inconveniência. Tente novamente mais tarde."
+      },
+      "por_pt": {
+        "source": "A compra de FIFA Points está temporariamente indisponível. Lamentamos o incómodo, volta a tentar mais tarde.",
+        "target": "A compra de Aurora Tokens está temporariamente indisponível. Lamentamos o incómodo, volta a tentar mais tarde."
+      },
+      "rus_ru": {
+        "source": "Приобретение FIFA Points временно невозможно. Приносим извинения за неудобства, повторите попытку позже.",
+        "target": "Приобретение Aurora Tokens временно невозможно. Приносим извинения за неудобства, повторите попытку позже."
+      },
+      "spa_es": {
+        "source": "No se pueden comprar FIFA Points en este momento. Inténtalo de nuevo más tarde.",
+        "target": "No se pueden comprar Aurora Tokens en este momento. Inténtalo de nuevo más tarde."
+      },
+      "spa_mx": {
+        "source": "Los FIFA Points no están disponibles temporalmente para comprar. Sentimos las molestias, vuelve a intentarlo más tarde.",
+        "target": "Los Aurora Tokens no están disponibles temporalmente para comprar. Sentimos las molestias, vuelve a intentarlo más tarde."
+      },
+      "swe_se": {
+        "source": "Tyvärr går det inte att köpa FIFA-poäng just nu. Försök igen senare.",
+        "target": "Tyvärr går det inte att köpa Aurora Tokens just nu. Försök igen senare."
+      },
+      "tur_tr": {
+        "source": "FIFA Points geçici olarak satın alınamıyor. Aksaklık için özür dileriz, lütfen daha sonra yeniden dene.",
+        "target": "Aurora Tokens geçici olarak satın alınamıyor. Aksaklık için özür dileriz, lütfen daha sonra yeniden dene."
+      }
+    }
+  },
+  {
+    "stringId": "FUT_STORE_PURCHASE_POPUP_POINT_COST",
+    "languages": {
+      "ara_sa": {
+        "source": "%1s (نقاط FIFA)",
+        "target": "%1s (Aurora Tokens)"
+      },
+      "chi_hk": {
+        "source": "%1s FIFA Points",
+        "target": "%1s Aurora Tokens"
+      },
+      "chs_cn": {
+        "source": "%1s (FIFA POINTS)",
+        "target": "%1s (AURORA TOKENS)"
+      },
+      "cze_cz": {
+        "source": "%1s (FIFA POINTS)",
+        "target": "%1s (AURORA TOKENS)"
+      },
+      "dan_dk": {
+        "source": "%1s (FIFA-POINT)",
+        "target": "%1s (AURORA TOKENS)"
+      },
+      "dut_nl": {
+        "source": "%1s (FIFA-PUNTEN)",
+        "target": "%1s (AURORA TOKENS)"
+      },
+      "eng_us": {
+        "source": "%1s (FIFA POINTS)",
+        "target": "%1s (AURORA TOKENS)"
+      },
+      "fre_fr": {
+        "source": "%1s (POINTS FIFA)",
+        "target": "%1s (AURORA TOKENS)"
+      },
+      "ger_de": {
+        "source": "%1s (FIFA POINTS)",
+        "target": "%1s (AURORA TOKENS)"
+      },
+      "ita_it": {
+        "source": "%1s (FIFA POINTS)",
+        "target": "%1s (AURORA TOKENS)"
+      },
+      "jpn_jp": {
+        "source": "%1s (FIFAポイント)",
+        "target": "%1s (Aurora Tokens)"
+      },
+      "kor_kr": {
+        "source": "%1s (FIFA 포인트)",
+        "target": "%1s (Aurora Tokens)"
+      },
+      "nor_no": {
+        "source": "%1s (FIFA POINTS)",
+        "target": "%1s (AURORA TOKENS)"
+      },
+      "pol_pl": {
+        "source": "%1s (FIFA POINTS)",
+        "target": "%1s (AURORA TOKENS)"
+      },
+      "por_br": {
+        "source": "%1s (FIFA POINTS)",
+        "target": "%1s (AURORA TOKENS)"
+      },
+      "por_pt": {
+        "source": "%1s (FIFA POINTS)",
+        "target": "%1s (AURORA TOKENS)"
+      },
+      "rus_ru": {
+        "source": "%1s (FIFA POINTS)",
+        "target": "%1s (AURORA TOKENS)"
+      },
+      "spa_es": {
+        "source": "%1s (FIFA POINTS)",
+        "target": "%1s (AURORA TOKENS)"
+      },
+      "spa_mx": {
+        "source": "%1s (FIFA POINTS)",
+        "target": "%1s (AURORA TOKENS)"
+      },
+      "swe_se": {
+        "source": "%1s (FIFA-POÄNG)",
+        "target": "%1s (AURORA TOKENS)"
+      },
+      "tur_tr": {
+        "source": "%1s (FIFA POINTS)",
+        "target": "%1s (AURORA TOKENS)"
+      }
+    }
+  },
+  {
+    "stringId": "MarketplaceCurrency",
+    "languages": {
+      "ara_sa": {
+        "source": "نقاط FIFA",
+        "target": "Aurora Tokens"
+      },
+      "chi_hk": {
+        "source": "FIFA Points",
+        "target": "Aurora Tokens"
+      },
+      "chs_cn": {
+        "source": "FIFA Points",
+        "target": "Aurora Tokens"
+      },
+      "cze_cz": {
+        "source": "FIFA Points",
+        "target": "Aurora Tokens"
+      },
+      "dan_dk": {
+        "source": "FIFA-point",
+        "target": "Aurora Tokens"
+      },
+      "dut_nl": {
+        "source": "FIFA-punten",
+        "target": "Aurora Tokens"
+      },
+      "eng_us": {
+        "source": "FIFA Points",
+        "target": "Aurora Tokens"
+      },
+      "fre_fr": {
+        "source": "POINTS FIFA",
+        "target": "AURORA TOKENS"
+      },
+      "ger_de": {
+        "source": "FIFA Points",
+        "target": "Aurora Tokens"
+      },
+      "ita_it": {
+        "source": "FIFA Points",
+        "target": "Aurora Tokens"
+      },
+      "jpn_jp": {
+        "source": "FIFA ポイント",
+        "target": "Aurora Tokens"
+      },
+      "kor_kr": {
+        "source": "FIFA 포인트",
+        "target": "Aurora Tokens"
+      },
+      "nor_no": {
+        "source": "FIFA Points",
+        "target": "Aurora Tokens"
+      },
+      "pol_pl": {
+        "source": "FIFA Points",
+        "target": "Aurora Tokens"
+      },
+      "por_br": {
+        "source": "FIFA Points",
+        "target": "Aurora Tokens"
+      },
+      "por_pt": {
+        "source": "FIFA Points",
+        "target": "Aurora Tokens"
+      },
+      "rus_ru": {
+        "source": "FIFA Points",
+        "target": "Aurora Tokens"
+      },
+      "spa_es": {
+        "source": "FIFA Points",
+        "target": "Aurora Tokens"
+      },
+      "spa_mx": {
+        "source": "FIFA Points",
+        "target": "Aurora Tokens"
+      },
+      "swe_se": {
+        "source": "FIFA-poäng",
+        "target": "Aurora Tokens"
+      },
+      "tur_tr": {
+        "source": "FIFA Points",
+        "target": "Aurora Tokens"
+      }
+    }
+  },
+  {
+    "stringId": "PBP2Popup",
+    "languages": {
+      "ara_sa": {
+        "source": "هل أنت متأكد أنك تريد شراء هذه الحزمة؟ ستكلّفك %1s من نقاط FIFA.",
+        "target": "هل أنت متأكد أنك تريد شراء هذه الحزمة؟ ستكلّفك %1s من Aurora Tokens."
+      },
+      "chi_hk": {
+        "source": "你確定要購買這個組合包嗎？這將花費%1s FIFA Points。",
+        "target": "你確定要購買這個組合包嗎？這將花費%1s Aurora Tokens。"
+      },
+      "chs_cn": {
+        "source": "是否确定要购买此组合包？您将花费 %1s FIFA Points。",
+        "target": "是否确定要购买此组合包？您将花费 %1s Aurora Tokens。"
+      },
+      "cze_cz": {
+        "source": "Opravdu chcete koupit tento balíček?\nBude vás stát %1s FIFA Points.",
+        "target": "Opravdu chcete koupit tento balíček?\nBude vás stát %1s Aurora Tokens."
+      },
+      "dan_dk": {
+        "source": "Er du sikker på, at du gerne vil købe denne pakke? Den koster %1s FIFA-point.",
+        "target": "Er du sikker på, at du gerne vil købe denne pakke? Den koster %1s Aurora Tokens."
+      },
+      "dut_nl": {
+        "source": "Weet je zeker dat je dit pakket wilt kopen? Het kost %1s FIFA-punten.",
+        "target": "Weet je zeker dat je dit pakket wilt kopen? Het kost %1s Aurora Tokens."
+      },
+      "eng_us": {
+        "source": "Are you sure you would like to buy this pack? It will cost you %1s FIFA Points.",
+        "target": "Are you sure you would like to buy this pack? It will cost you %1s Aurora Tokens."
+      },
+      "fre_fr": {
+        "source": "Voulez-vous vraiment acheter ce pack ?\nCela vous coûtera %1s Points FIFA.",
+        "target": "Voulez-vous vraiment acheter ce pack ?\nCela vous coûtera %1s Aurora Tokens."
+      },
+      "ger_de": {
+        "source": "Möchtest du dieses Pack jetzt kaufen? Der Preis beträgt %1s FIFA Points.",
+        "target": "Möchtest du dieses Pack jetzt kaufen? Der Preis beträgt %1s Aurora Tokens."
+      },
+      "ita_it": {
+        "source": "Confermi di voler acquistare questo pacchetto? Il suo costo è di %1s FIFA Points.",
+        "target": "Confermi di voler acquistare questo pacchetto? Il suo costo è di %1s Aurora Tokens."
+      },
+      "jpn_jp": {
+        "source": "このパックを購入してよろしいですか？ \n価格は%1s FIFA ポイントです。",
+        "target": "このパックを購入してよろしいですか？ \n価格は%1s Aurora Tokensです。"
+      },
+      "kor_kr": {
+        "source": "이 팩을 정말 구매하시겠습니까? %1s FIFA 포인트가 소비됩니다.",
+        "target": "이 팩을 정말 구매하시겠습니까? %1s Aurora Tokens가 소비됩니다."
+      },
+      "nor_no": {
+        "source": "Er du sikker på at du vil kjøpe denne pakken?\nDen koster deg %1s FIFA Points.",
+        "target": "Er du sikker på at du vil kjøpe denne pakken?\nDen koster deg %1s Aurora Tokens."
+      },
+      "pol_pl": {
+        "source": "Czy na pewno chcesz kupić tę paczkę? Będzie Cię kosztowała %1s FIFA Points.",
+        "target": "Czy na pewno chcesz kupić tę paczkę? Będzie Cię kosztowała %1s Aurora Tokens."
+      },
+      "por_br": {
+        "source": "Tem certeza de que deseja comprar esse pacote? Vai custar %1s FIFA Points.",
+        "target": "Tem certeza de que deseja comprar esse pacote? Vai custar %1s Aurora Tokens."
+      },
+      "por_pt": {
+        "source": "Tens a certeza de que pretendes comprar este Pack? Vai custar-te %1s FIFA Points.",
+        "target": "Tens a certeza de que pretendes comprar este Pack? Vai custar-te %1s Aurora Tokens."
+      },
+      "rus_ru": {
+        "source": "Купить данный набор за %1s FIFA Points? ",
+        "target": "Купить данный набор за %1s Aurora Tokens? "
+      },
+      "spa_es": {
+        "source": "¿Seguro que quieres comprar este sobre? Te costará %1s FIFA Points.",
+        "target": "¿Seguro que quieres comprar este sobre? Te costará %1s Aurora Tokens."
+      },
+      "spa_mx": {
+        "source": "¿Seguro que quieres comprar este pack? Te costará %1s FIFA Points.",
+        "target": "¿Seguro que quieres comprar este pack? Te costará %1s Aurora Tokens."
+      },
+      "swe_se": {
+        "source": "Är du säker på att du vill köpa det här paketet? Det kostar %1s FIFA-poäng.",
+        "target": "Är du säker på att du vill köpa det här paketet? Det kostar %1s Aurora Tokens."
+      },
+      "tur_tr": {
+        "source": "Bu paketi satın almak istediğinden emin misin? %1s FIFA Points ödeyeceksin.",
+        "target": "Bu paketi satın almak istediğinden emin misin? %1s Aurora Tokens ödeyeceksin."
+      }
+    }
+  },
+  {
+    "stringId": "PT_1dPoints",
+    "languages": {
+      "ara_sa": {
+        "source": "%1d من نقاط FIFA",
+        "target": "%1d من Aurora Tokens"
+      },
+      "chi_hk": {
+        "source": "%1d FIFA POINTS",
+        "target": "%1d AURORA TOKENS"
+      },
+      "chs_cn": {
+        "source": "%1d FIFA POINTS",
+        "target": "%1d AURORA TOKENS"
+      },
+      "cze_cz": {
+        "source": "%1d FIFA POINTS",
+        "target": "%1d AURORA TOKENS"
+      },
+      "dan_dk": {
+        "source": "%1d FIFA-POINT",
+        "target": "%1d AURORA TOKENS"
+      },
+      "dut_nl": {
+        "source": "%1d FIFA-PUNTEN",
+        "target": "%1d AURORA TOKENS"
+      },
+      "eng_us": {
+        "source": "%1d FIFA POINTS",
+        "target": "%1d AURORA TOKENS"
+      },
+      "fre_fr": {
+        "source": "%1d POINTS FIFA",
+        "target": "%1d AURORA TOKENS"
+      },
+      "ger_de": {
+        "source": "%1d FIFA POINTS",
+        "target": "%1d AURORA TOKENS"
+      },
+      "ita_it": {
+        "source": "%1d FIFA POINTS",
+        "target": "%1d AURORA TOKENS"
+      },
+      "jpn_jp": {
+        "source": "%1d FIFAポイント",
+        "target": "%1d Aurora Tokens"
+      },
+      "kor_kr": {
+        "source": "FIFA 포인트 %1d점",
+        "target": "Aurora Tokens %1d점"
+      },
+      "nor_no": {
+        "source": "%1d FIFA POINTS",
+        "target": "%1d AURORA TOKENS"
+      },
+      "pol_pl": {
+        "source": "FIFA POINTS: %1d",
+        "target": "AURORA TOKENS: %1d"
+      },
+      "por_br": {
+        "source": "%1d FIFA POINTS",
+        "target": "%1d AURORA TOKENS"
+      },
+      "por_pt": {
+        "source": "%1d FIFA POINTS",
+        "target": "%1d AURORA TOKENS"
+      },
+      "rus_ru": {
+        "source": "%1d FIFA POINTS",
+        "target": "%1d AURORA TOKENS"
+      },
+      "spa_es": {
+        "source": "%1d FIFA POINTS",
+        "target": "%1d AURORA TOKENS"
+      },
+      "spa_mx": {
+        "source": "%1d FIFA POINTS",
+        "target": "%1d AURORA TOKENS"
+      },
+      "swe_se": {
+        "source": "%1d FIFA-POÄNG",
+        "target": "%1d AURORA TOKENS"
+      },
+      "tur_tr": {
+        "source": "%1d FIFA POINTS",
+        "target": "%1d AURORA TOKENS"
+      }
+    }
+  },
+  {
+    "stringId": "PT_Fifa_Points",
+    "languages": {
+      "ara_sa": {
+        "source": "حد شراء\nنقاط FIFA",
+        "target": "حد شراء\nAurora Tokens"
+      },
+      "chi_hk": {
+        "source": "FIFA POINTS\n購買上限",
+        "target": "AURORA TOKENS\n購買上限"
+      },
+      "chs_cn": {
+        "source": "FIFA POINTs\n购买限制",
+        "target": "Aurora Tokens\n购买限制"
+      },
+      "cze_cz": {
+        "source": "LIMITY NÁKUPŮ\nFIFA POINTS",
+        "target": "LIMITY NÁKUPŮ\nAURORA TOKENS"
+      },
+      "dan_dk": {
+        "source": "KØBSGRÆNSER FOR\nFIFA-POINT",
+        "target": "KØBSGRÆNSER FOR\nAURORA TOKENS"
+      },
+      "dut_nl": {
+        "source": "LIMIET AANSCHAF\nFIFA-PUNTEN",
+        "target": "LIMIET AANSCHAF\nAURORA TOKENS"
+      },
+      "eng_us": {
+        "source": "FIFA POINTS \nPURCHASE LIMITS",
+        "target": "AURORA TOKENS \nPURCHASE LIMITS"
+      },
+      "fre_fr": {
+        "source": "POINTS FIFA\nLIMITES ACHAT",
+        "target": "AURORA TOKENS\nLIMITES ACHAT"
+      },
+      "ger_de": {
+        "source": "KAUFLIMITS FÜR \nFIFA POINTS",
+        "target": "KAUFLIMITS FÜR \nAURORA TOKENS"
+      },
+      "ita_it": {
+        "source": "LIMITE ACQUISTO\nFIFA POINTS",
+        "target": "LIMITE ACQUISTO\nAURORA TOKENS"
+      },
+      "jpn_jp": {
+        "source": "FIFAポイント\n購入制限",
+        "target": "Aurora Tokens\n購入制限"
+      },
+      "kor_kr": {
+        "source": "FIFA 포인트 \n구매 한도",
+        "target": "Aurora Tokens \n구매 한도"
+      },
+      "nor_no": {
+        "source": "FIFA POINTS \nKJØPSGRENSER",
+        "target": "AURORA TOKENS \nKJØPSGRENSER"
+      },
+      "pol_pl": {
+        "source": "LIMIT ZAKUPÓW\nZA FIFA POINTS",
+        "target": "LIMIT ZAKUPÓW\nZA AURORA TOKENS"
+      },
+      "por_br": {
+        "source": "LIMITES DE COMPRA \nFIFA POINTS",
+        "target": "LIMITES DE COMPRA \nAURORA TOKENS"
+      },
+      "por_pt": {
+        "source": "LIMITE COMPRA\nFIFA POINTS",
+        "target": "LIMITE COMPRA\nAURORA TOKENS"
+      },
+      "rus_ru": {
+        "source": "ЛИМИТ НА ПОКУПКУ\nFIFA POINTS",
+        "target": "ЛИМИТ НА ПОКУПКУ\nAURORA TOKENS"
+      },
+      "spa_es": {
+        "source": "LÍMITE\nDE FIFA POINTS",
+        "target": "LÍMITE\nDE AURORA TOKENS"
+      },
+      "spa_mx": {
+        "source": "LÍM. DE COM. \nDE FIFA POINTS",
+        "target": "LÍM. DE COM. \nDE AURORA TOKENS"
+      },
+      "swe_se": {
+        "source": "KÖPGRÄNSER FÖR \nFIFA-POÄNG",
+        "target": "KÖPGRÄNSER FÖR \nAURORA TOKENS"
+      },
+      "tur_tr": {
+        "source": "FIFA POINTS \nALIM LİMİTLERİ",
+        "target": "AURORA TOKENS \nALIM LİMİTLERİ"
+      }
+    }
+  },
+  {
+    "stringId": "PT_Fifa_Points_Desc",
+    "languages": {
+      "ara_sa": {
+        "source": "قم بتحديد قيود على عمليات شراء نقاط FIFA داخل متجر FUT",
+        "target": "قم بتحديد قيود على عمليات شراء Aurora Tokens داخل متجر FUT"
+      },
+      "chi_hk": {
+        "source": "設定 FUT 商店的 FIFA Points 購買上限",
+        "target": "設定 FUT 商店的 Aurora Tokens 購買上限"
+      },
+      "chs_cn": {
+        "source": "设置 FUT 商店内的 FIFA Points 购买限制",
+        "target": "设置 FUT 商店内的 Aurora Tokens 购买限制"
+      },
+      "cze_cz": {
+        "source": "Nastavte si limity pro nákup FIFA Points v obchodě FUT",
+        "target": "Nastavte si limity pro nákup Aurora Tokens v obchodě FUT"
+      },
+      "dan_dk": {
+        "source": "Indstil grænser for køb af FIFA-point i FUT-butikken",
+        "target": "Indstil grænser for køb af Aurora Tokens i FUT-butikken"
+      },
+      "dut_nl": {
+        "source": "Stel limieten in voor de aanschaf van FIFA-punten in de FUT-winkel",
+        "target": "Stel limieten in voor de aanschaf van Aurora Tokens in de FUT-winkel"
+      },
+      "eng_us": {
+        "source": "Set limits for FIFA Points purchases inside of the FUT Store",
+        "target": "Set limits for Aurora Tokens purchases inside of the FUT Store"
+      },
+      "fre_fr": {
+        "source": "Réglez la limite d’achat de Points FIFA dans la Boutique FUT",
+        "target": "Réglez la limite d’achat de Aurora Tokens dans la Boutique FUT"
+      },
+      "ger_de": {
+        "source": "Lege Kauflimits für FIFA Points im FUT-Shop fest",
+        "target": "Lege Kauflimits für Aurora Tokens im FUT-Shop fest"
+      },
+      "ita_it": {
+        "source": "Imposta il limite di FIFA Points acquistabili nel Negozio FUT.",
+        "target": "Imposta il limite di Aurora Tokens acquistabili nel Negozio FUT."
+      },
+      "jpn_jp": {
+        "source": "FUTストア内でのFIFAポイントの購入に制限を設けます",
+        "target": "FUTストア内でのAurora Tokensの購入に制限を設けます"
+      },
+      "kor_kr": {
+        "source": "FUT 스토어 내 FIFA 포인트 구매 한도를 설정합니다",
+        "target": "FUT 스토어 내 Aurora Tokens 구매 한도를 설정합니다"
+      },
+      "nor_no": {
+        "source": "Sett grenser for kjøp av FIFA Points i FUT-butikken.",
+        "target": "Sett grenser for kjøp av Aurora Tokens i FUT-butikken."
+      },
+      "pol_pl": {
+        "source": "Ustaw limit zakupów za FIFA Points w sklepie FUT",
+        "target": "Ustaw limit zakupów za Aurora Tokens w sklepie FUT"
+      },
+      "por_br": {
+        "source": "Defina limites para a compra de FIFA Points na Loja FUT",
+        "target": "Defina limites para a compra de Aurora Tokens na Loja FUT"
+      },
+      "por_pt": {
+        "source": "Define limites para compras de FIFA Points na Loja FUT",
+        "target": "Define limites para compras de Aurora Tokens na Loja FUT"
+      },
+      "rus_ru": {
+        "source": "Задайте ограничения на покупки FIFA Points в магазине FUT",
+        "target": "Задайте ограничения на покупки Aurora Tokens в магазине FUT"
+      },
+      "spa_es": {
+        "source": "Límite de compra de FIFA Points en la tienda de FUT.",
+        "target": "Límite de compra de Aurora Tokens en la tienda de FUT."
+      },
+      "spa_mx": {
+        "source": "Limita las compras de FIFA Points en la Tienda de FUT",
+        "target": "Limita las compras de Aurora Tokens en la Tienda de FUT"
+      },
+      "swe_se": {
+        "source": "Sätt gränser för FIFA-poängköp i FUT-butiken.",
+        "target": "Sätt gränser för Aurora Tokensköp i FUT-butiken."
+      },
+      "tur_tr": {
+        "source": "FUT Mağazası’ndan FIFA Points satın alımları için limit belirle",
+        "target": "FUT Mağazası’ndan Aurora Tokens satın alımları için limit belirle"
+      }
+    }
+  },
+  {
+    "stringId": "PT_LIMIT_POINTS_POPUP_MESSAGE",
+    "languages": {
+      "ara_sa": {
+        "source": "لقد وصلت هذا الأسبوع إلى الحد الخاص بك بواقع %1d من نقاط FIFA في FIFA21.\nمن الممكن العودة إلى القوائم أو تجاهل حد نقاط FIFA مؤقتاً للمتابعة.",
+        "target": "لقد وصلت هذا الأسبوع إلى الحد الخاص بك بواقع %1d من Aurora Tokens في FIFA21.\nمن الممكن العودة إلى القوائم أو تجاهل حد Aurora Tokens مؤقتاً للمتابعة."
+      },
+      "chi_hk": {
+        "source": "您已達到本週在《FIFA 21》的 %1d FIFA POINTS 上限。\n確定以返回選單，或暫時無視 FIFA POINTS 上限並繼續。",
+        "target": "您已達到本週在《FIFA 21》的 %1d AURORA TOKENS 上限。\n確定以返回選單，或暫時無視 AURORA TOKENS 上限並繼續。"
+      },
+      "chs_cn": {
+        "source": "您已达到本周在 FIFA21 中的 %1d FIFA POINTS 的限制。\n点击确定返回到菜单，或者暂时忽略 FIFA POINTS 限制以继续。",
+        "target": "您已达到本周在 FIFA21 中的 %1d AURORA TOKENS 的限制。\n点击确定返回到菜单，或者暂时忽略 AURORA TOKENS 限制以继续。"
+      },
+      "cze_cz": {
+        "source": "Tento týden jste dosáhli svého limitu %1d FIFA POINTS ve FIFA21.\nStisknutím OK se vraťte do nabídek, nebo dočasným ignorováním limitu FP pokračujte.",
+        "target": "Tento týden jste dosáhli svého limitu %1d AURORA TOKENS ve FIFA21.\nStisknutím OK se vraťte do nabídek, nebo dočasným ignorováním limitu FP pokračujte."
+      },
+      "dan_dk": {
+        "source": "Du har nået din ugentlige grænse på %1d FIFA-POINT i FIFA21.\nVælg OK for at gå til menuen, eller ignorer grænsen for FIFA-POINT for at fortsætte.",
+        "target": "Du har nået din ugentlige grænse på %1d AURORA TOKENS i FIFA21.\nVælg OK for at gå til menuen, eller ignorer grænsen for AURORA TOKENS for at fortsætte."
+      },
+      "dut_nl": {
+        "source": "De limiet van %1d FIFA-PUNTEN in FIFA 21 deze week is bereikt.\nOké voor terug naar de menu's of negeer tijdelijk FIFA-PUNTEN-limiet om door te gaan.",
+        "target": "De limiet van %1d AURORA TOKENS in FIFA 21 deze week is bereikt.\nOké voor terug naar de menu's of negeer tijdelijk AURORA TOKENS-limiet om door te gaan."
+      },
+      "eng_us": {
+        "source": "You reached your limit of %1d FIFA POINTS in FIFA21 this week.\nOkay to go back to the menus or ignore FIFA POINTS limit temporarily to continue.",
+        "target": "You reached your limit of %1d AURORA TOKENS in FIFA21 this week.\nOkay to go back to the menus or ignore AURORA TOKENS limit temporarily to continue."
+      },
+      "fre_fr": {
+        "source": "Vous avez atteint votre limite de %1d POINTS FIFA dans FIFA 21 cette semaine.\nRevenez aux menus ou ignorez temporairement la limite pour continuer.",
+        "target": "Vous avez atteint votre limite de %1d AURORA TOKENS dans FIFA 21 cette semaine.\nRevenez aux menus ou ignorez temporairement la limite pour continuer."
+      },
+      "ger_de": {
+        "source": "Du hast das dieswöchige FIFA 21-Limit von %1d FIFA POINTS erreicht.\nGehe mit OK zu den Menüs oder ignoriere dieses Limit zeitweise, um fortzufahren.",
+        "target": "Du hast das dieswöchige FIFA 21-Limit von %1d AURORA TOKENS erreicht.\nGehe mit OK zu den Menüs oder ignoriere dieses Limit zeitweise, um fortzufahren."
+      },
+      "ita_it": {
+        "source": "Hai raggiunto il tuo limite settimanale di %1d FIFA POINTS in FIFA 21.\nTorna al menu o continua ignorando temporaneamente il limite di FIFA POINTS.",
+        "target": "Hai raggiunto il tuo limite settimanale di %1d AURORA TOKENS in FIFA 21.\nTorna al menu o continua ignorando temporaneamente il limite di AURORA TOKENS."
+      },
+      "jpn_jp": {
+        "source": "「FIFA 21」の今週の上限である%1d FIFAポイントに到達しました。\nメニューに戻るか、一時的にFIFAポイント上限を無視して続けられます。",
+        "target": "「FIFA 21」の今週の上限である%1d Aurora Tokensに到達しました。\nメニューに戻るか、一時的にAurora Tokens上限を無視して続けられます。"
+      },
+      "kor_kr": {
+        "source": "이번 주 FIFA21 구매 한도(%1d FIFA 포인트)에 도달했습니다.\n확인을 눌러 메뉴로 돌아가거나 일시적으로 FIFA 포인트 제한을 무시하고 계속 진행할 수 있습니다.",
+        "target": "이번 주 FIFA21 구매 한도(%1d Aurora Tokens)에 도달했습니다.\n확인을 눌러 메뉴로 돌아가거나 일시적으로 Aurora Tokens 제한을 무시하고 계속 진행할 수 있습니다."
+      },
+      "nor_no": {
+        "source": "Du har nådd grensen din på %1d FIFA POINTS i FIFA 21 denne uken.\nGodta for å gå tilbake til menyen, eller ignorer FIFA Points-grensen midlertidig for å fortsette.",
+        "target": "Du har nådd grensen din på %1d AURORA TOKENS i FIFA 21 denne uken.\nGodta for å gå tilbake til menyen, eller ignorer Aurora Tokens-grensen midlertidig for å fortsette."
+      },
+      "pol_pl": {
+        "source": "Osiągnięto tygodniowy limit %1d FIFA POINTS w FIFA 21.\nWybierz OK, aby wrócić do menu, lub zignoruj tymczasowo limit FIFA POINTS, aby kupować dalej.",
+        "target": "Osiągnięto tygodniowy limit %1d AURORA TOKENS w FIFA 21.\nWybierz OK, aby wrócić do menu, lub zignoruj tymczasowo limit AURORA TOKENS, aby kupować dalej."
+      },
+      "por_br": {
+        "source": "Você atingiu seu limite de %1d FIFA POINTS no FIFA21 nesta semana.\nAceite para voltar aos menus ou ignore o limite temporariamente para continuar.",
+        "target": "Você atingiu seu limite de %1d AURORA TOKENS no FIFA21 nesta semana.\nAceite para voltar aos menus ou ignore o limite temporariamente para continuar."
+      },
+      "por_pt": {
+        "source": "Atingiste o teu limite %1d FIFA POINTS no FIFA21 esta semana.\nAceita p/ regressar aos menus ou ignora temporariam. o limite FIFA POINTS p/ continuar.",
+        "target": "Atingiste o teu limite %1d AURORA TOKENS no FIFA21 esta semana.\nAceita p/ regressar aos menus ou ignora temporariam. o limite AURORA TOKENS p/ continuar."
+      },
+      "rus_ru": {
+        "source": "Достигнут лимит FIFA POINTS в FIFA21 на этой неделе - %1d.\nНажмите \"ОК\", чтобы вернуться в меню, или \"Игнорировать\", чтобы продолжить игру.",
+        "target": "Достигнут лимит AURORA TOKENS в FIFA21 на этой неделе - %1d.\nНажмите \"ОК\", чтобы вернуться в меню, или \"Игнорировать\", чтобы продолжить игру."
+      },
+      "spa_es": {
+        "source": "Has alcanzado tu límite de %1d FIFA Points semanales en FIFA21.\nAcepta para salir al menú o ignora temporalmente el límite para continuar.",
+        "target": "Has alcanzado tu límite de %1d Aurora Tokens semanales en FIFA21.\nAcepta para salir al menú o ignora temporalmente el límite para continuar."
+      },
+      "spa_mx": {
+        "source": "Alcanzaste tu límite de %1d FIFA POINTS en FIFA 21 esta semana.\nVuelve a los menús o ignora el límite de FIFA POINTS temporalmente para continuar.",
+        "target": "Alcanzaste tu límite de %1d AURORA TOKENS en FIFA 21 esta semana.\nVuelve a los menús o ignora el límite de AURORA TOKENS temporalmente para continuar."
+      },
+      "swe_se": {
+        "source": "Du har nått din gräns på %1d FIFA-POÄNG i FIFA 21 denna vecka.\nBekräfta för att lämna, eller ignorera FIFA-poänggränsen temporärt för att fortsätta.",
+        "target": "Du har nått din gräns på %1d AURORA TOKENS i FIFA 21 denna vecka.\nBekräfta för att lämna, eller ignorera Aurora Tokensgränsen temporärt för att fortsätta."
+      },
+      "tur_tr": {
+        "source": "Bu hafta FIFA 21’de %1d FIFA POINTS limitine ulaştın.\nMenülere dönmek için Tamam’a bas veya FIFA POINTS limitini geçici olarak yok sayıp devam et.",
+        "target": "Bu hafta FIFA 21’de %1d AURORA TOKENS limitine ulaştın.\nMenülere dönmek için Tamam’a bas veya AURORA TOKENS limitini geçici olarak yok sayıp devam et."
+      }
+    }
+  },
+  {
+    "stringId": "PT_PACKS_DISCLAIMER_2",
+    "languages": {
+      "ara_sa": {
+        "source": "لا يأخذ حساب المتوسط الأسبوعي في الاعتبار سوى الأسابيع التي قمت فيها بالحصول على حزمة في المتجر باستخدام القطع النقدية أو التي تم شراؤها بحزمة بنقاط FIFA.",
+        "target": "لا يأخذ حساب المتوسط الأسبوعي في الاعتبار سوى الأسابيع التي قمت فيها بالحصول على حزمة في المتجر باستخدام القطع النقدية أو التي تم شراؤها بحزمة بAurora Tokens."
+      },
+      "chi_hk": {
+        "source": "每週平均計算僅會把以下週數納入計算範圍：您於該星期在商店使用金幣，或以 FIFA Points 購買了至少一個組合包。",
+        "target": "每週平均計算僅會把以下週數納入計算範圍：您於該星期在商店使用金幣，或以 Aurora Tokens 購買了至少一個組合包。"
+      },
+      "chs_cn": {
+        "source": "平均每周计算仅考虑您用金币或 FIFA Points 在商店中购买了组合包的周数。",
+        "target": "平均每周计算仅考虑您用金币或 Aurora Tokens 在商店中购买了组合包的周数。"
+      },
+      "cze_cz": {
+        "source": "Průměrný týdenní výpočet bere v potaz pouze týdny, v nichž jste si v obchodě koupili balíček za mince nebo FIFA Points.",
+        "target": "Průměrný týdenní výpočet bere v potaz pouze týdny, v nichž jste si v obchodě koupili balíček za mince nebo Aurora Tokens."
+      },
+      "dan_dk": {
+        "source": "Udregningen af det ugentlige gennemsnit medregner kun uger, hvor du har erhvervet en pakke i butikken med mønter eller FIFA-point.",
+        "target": "Udregningen af det ugentlige gennemsnit medregner kun uger, hvor du har erhvervet en pakke i butikken med mønter eller Aurora Tokens."
+      },
+      "dut_nl": {
+        "source": "Bij de Gem. wekelijkse berekening wordt alleen rekening gehouden met de weken waarin je met munten of FIFA-punten een pakket in de winkel verkregen hebt.",
+        "target": "Bij de Gem. wekelijkse berekening wordt alleen rekening gehouden met de weken waarin je met munten of Aurora Tokens een pakket in de winkel verkregen hebt."
+      },
+      "eng_us": {
+        "source": "Avg. Weekly Calculation only takes into account weeks where you acquired a Pack in the Store with Coins or purchased a Pack with FIFA Points.",
+        "target": "Avg. Weekly Calculation only takes into account weeks where you acquired a Pack in the Store with Coins or purchased a Pack with Aurora Tokens."
+      },
+      "fre_fr": {
+        "source": "Le calcul hebdomadaire moyen ne prend en compte que les semaines où vous avez obtenu un Pack dans la Boutique avec des Crédits ou des Points FIFA.",
+        "target": "Le calcul hebdomadaire moyen ne prend en compte que les semaines où vous avez obtenu un Pack dans la Boutique avec des Crédits ou des Aurora Tokens."
+      },
+      "ger_de": {
+        "source": "Die Berechnung des Wochenschnitts berücksichtigt nur die Wochen, in denen du ein Pack im Shop mit Münzen erworben oder mit FIFA Points gekauft hast.",
+        "target": "Die Berechnung des Wochenschnitts berücksichtigt nur die Wochen, in denen du ein Pack im Shop mit Münzen erworben oder mit Aurora Tokens gekauft hast."
+      },
+      "ita_it": {
+        "source": "La media settimanale tiene conto solo delle settimane in cui hai ottenuto un pacchetto nel negozio utilizzando crediti o acquistandolo con i FIFA Points.",
+        "target": "La media settimanale tiene conto solo delle settimane in cui hai ottenuto un pacchetto nel negozio utilizzando crediti o acquistandolo con i Aurora Tokens."
+      },
+      "jpn_jp": {
+        "source": "ストアでコインを使ってパックを獲得したり、FIFAポイントを使用してパックを購入した週のみを対象に、週間平均が計算されます。",
+        "target": "ストアでコインを使ってパックを獲得したり、Aurora Tokensを使用してパックを購入した週のみを対象に、週間平均が計算されます。"
+      },
+      "kor_kr": {
+        "source": "평균 주간 계산은 귀하가 스토어에서 코인 또는 FIFA 포인트로 팩을 구매한 주간만 고려합니다.",
+        "target": "평균 주간 계산은 귀하가 스토어에서 코인 또는 Aurora Tokens로 팩을 구매한 주간만 고려합니다."
+      },
+      "nor_no": {
+        "source": "Utregningen av ukesgjennomsnittet er bare basert på uker hvor du har anskaffet pakker i butikken med mynter eller kjøpt pakker med FIFA Points.",
+        "target": "Utregningen av ukesgjennomsnittet er bare basert på uker hvor du har anskaffet pakker i butikken med mynter eller kjøpt pakker med Aurora Tokens."
+      },
+      "pol_pl": {
+        "source": "Obliczenia średniej tygodniowej uwzględniają tylko te tygodnie, w których pozyskano w sklepie FUT paczkę za monety lub kupiono za FIFA Points.",
+        "target": "Obliczenia średniej tygodniowej uwzględniają tylko te tygodnie, w których pozyskano w sklepie FUT paczkę za monety lub kupiono za Aurora Tokens."
+      },
+      "por_br": {
+        "source": "O Cálculo da Média Semanal só leva em consideração as semanas nas quais você adquiriu um Pacote na Loja com Moedas ou FIFA Points.",
+        "target": "O Cálculo da Média Semanal só leva em consideração as semanas nas quais você adquiriu um Pacote na Loja com Moedas ou Aurora Tokens."
+      },
+      "por_pt": {
+        "source": "O Cálculo de Média Semanal apenas tem em conta as semanas em que tenhas adquirido um Pack na Loja com Moedas ou que compres com FIFA Points.",
+        "target": "O Cálculo de Média Semanal apenas tem em conta as semanas em que tenhas adquirido um Pack na Loja com Moedas ou que compres com Aurora Tokens."
+      },
+      "rus_ru": {
+        "source": "При вычислении среднего значения в неделю учитываются только недели, в которые вы приобретали набор в за монеты или FIFA Points.",
+        "target": "При вычислении среднего значения в неделю учитываются только недели, в которые вы приобретали набор в за монеты или Aurora Tokens."
+      },
+      "spa_es": {
+        "source": "El cálculo de la media semanal solo tiene en cuenta las semanas en las que has obtenido un sobre en la tienda usando monedas o comprado con FIFA Points.",
+        "target": "El cálculo de la media semanal solo tiene en cuenta las semanas en las que has obtenido un sobre en la tienda usando monedas o comprado con Aurora Tokens."
+      },
+      "spa_mx": {
+        "source": "El cálculo del promedio semanal solo tiene en cuenta las semanas en las que obtuviste un pack de la tienda con monedas o FIFA Points.",
+        "target": "El cálculo del promedio semanal solo tiene en cuenta las semanas en las que obtuviste un pack de la tienda con monedas o Aurora Tokens."
+      },
+      "swe_se": {
+        "source": "Beräkningen av veckosnittet tar bara hänsyn till veckor då du skaffat ett paket i butiken med mynt eller köpt ett paket för FIFA-poäng.",
+        "target": "Beräkningen av veckosnittet tar bara hänsyn till veckor då du skaffat ett paket i butiken med mynt eller köpt ett paket för Aurora Tokens."
+      },
+      "tur_tr": {
+        "source": "Ort. Haftalık Hesaplama yalnızca Mağaza’dan Jeton veya FIFA Points ile bir Paket aldığın haftaları hesaba katar.",
+        "target": "Ort. Haftalık Hesaplama yalnızca Mağaza’dan Jeton veya Aurora Tokens ile bir Paket aldığın haftaları hesaba katar."
+      }
+    }
+  },
+  {
+    "stringId": "PT_POINTS_DISCLAIMER_2",
+    "languages": {
+      "ara_sa": {
+        "source": "لا يأخذ حساب المتوسط الأسبوعي في الاعتبار سوى الأسابيع التي قمت فيها بتسجيل الدخول في FIFA وقمت فيها بمعاملات لنقاط FIFA، من خلال: - الشراء في اللعبة؛ - الشراء خارج اللعبة مثل Origin Store",
+        "target": "لا يأخذ حساب المتوسط الأسبوعي في الاعتبار سوى الأسابيع التي قمت فيها بتسجيل الدخول في FIFA وقمت فيها بمعاملات لAurora Tokens، من خلال: - الشراء في اللعبة؛ - الشراء خارج اللعبة مثل Origin Store"
+      },
+      "chi_hk": {
+        "source": "每週平均計算僅會把以下週數納入計算範圍：您於該星期登入至 FIFA 並以 FIFA Points 交易，交易可以是在遊戲內購買，或是透過 Origin Store 等渠道於遊戲外購買",
+        "target": "每週平均計算僅會把以下週數納入計算範圍：您於該星期登入至 FIFA 並以 Aurora Tokens 交易，交易可以是在遊戲內購買，或是透過 Origin Store 等渠道於遊戲外購買"
+      },
+      "chs_cn": {
+        "source": "平均每周计算仅考虑您登录 FIFA 并通过以下方式进行 FIFA Points 交易的周数：- 在游戏中购买； - 在游戏外购买，例如通过 Origin 商店。",
+        "target": "平均每周计算仅考虑您登录 FIFA 并通过以下方式进行 Aurora Tokens 交易的周数：- 在游戏中购买； - 在游戏外购买，例如通过 Origin 商店。"
+      },
+      "cze_cz": {
+        "source": "Průměrný týdenní výpočet bere v potaz pouze týdny, kdy jste se přihlásili do FIFA a pořídili si FIFA Points těmito způsoby:\n– Nákupem ve hře;\n– Nákupem mimo hru například v obchodě Origin.",
+        "target": "Průměrný týdenní výpočet bere v potaz pouze týdny, kdy jste se přihlásili do FIFA a pořídili si Aurora Tokens těmito způsoby:\n– Nákupem ve hře;\n– Nákupem mimo hru například v obchodě Origin."
+      },
+      "dan_dk": {
+        "source": "Udregningen af det ugentlige gennemsnit medregner kun uger, hvor du har logget på FIFA og foretaget en transaktion med FIFA-point ved enten at købe noget i spillet eller noget uden for spillet gennem Origin Store",
+        "target": "Udregningen af det ugentlige gennemsnit medregner kun uger, hvor du har logget på FIFA og foretaget en transaktion med Aurora Tokens ved enten at købe noget i spillet eller noget uden for spillet gennem Origin Store"
+      },
+      "dut_nl": {
+        "source": "Bij de Gem. wekelijkse berekening wordt alleen rekening gehouden met de weken waarin je je bij FIFA aangemeld hebt en een FIFA-puntentransactie uitgevoerd hebt door: - iets te kopen in de game; - iets buiten de game te kopen, bijvoorbeeld in de Origin Store.",
+        "target": "Bij de Gem. wekelijkse berekening wordt alleen rekening gehouden met de weken waarin je je bij FIFA aangemeld hebt en een Aurora Tokenstransactie uitgevoerd hebt door: - iets te kopen in de game; - iets buiten de game te kopen, bijvoorbeeld in de Origin Store."
+      },
+      "eng_us": {
+        "source": "Avg. Weekly Calculation only takes into account weeks where you logged into FIFA and made a FIFA Points transaction by: - Purchasing in Game; - Purchasing outside of the game such as through the Origin Store",
+        "target": "Avg. Weekly Calculation only takes into account weeks where you logged into FIFA and made a Aurora Tokens transaction by: - Purchasing in Game; - Purchasing outside of the game such as through the Origin Store"
+      },
+      "fre_fr": {
+        "source": "Le calcul hebdomadaire moyen ne prend en compte que les semaines où une connexion à FIFA et une transaction avec des Points FIFA ont eu lieu soit dans le jeu soit en dehors comme par exemple via la boutique Origin.",
+        "target": "Le calcul hebdomadaire moyen ne prend en compte que les semaines où une connexion à FIFA et une transaction avec des Aurora Tokens ont eu lieu soit dans le jeu soit en dehors comme par exemple via la boutique Origin."
+      },
+      "ger_de": {
+        "source": "Die Berechnung des Wochenschnitts berücksichtigt nur die Wochen, in denen du dich in FIFA angemeldet und eine der folgenden FIFA Points-Transaktionen durchgeführt hast: - Kauf im Spiel; - Kauf außerhalb des Spiels (z. B. im Origin Store).",
+        "target": "Die Berechnung des Wochenschnitts berücksichtigt nur die Wochen, in denen du dich in FIFA angemeldet und eine der folgenden Aurora Tokens-Transaktionen durchgeführt hast: - Kauf im Spiel; - Kauf außerhalb des Spiels (z. B. im Origin Store)."
+      },
+      "ita_it": {
+        "source": "La media settimanale tiene conto esclusivamente delle settimane dove hai effettuato l'accesso a FIFA ed eseguito una transazione tramite FIFA Points nelle seguenti modalità: acquisti in gioco; acquisti esterni al gioco, tramite il negozio Origin",
+        "target": "La media settimanale tiene conto esclusivamente delle settimane dove hai effettuato l'accesso a FIFA ed eseguito una transazione tramite Aurora Tokens nelle seguenti modalità: acquisti in gioco; acquisti esterni al gioco, tramite il negozio Origin"
+      },
+      "jpn_jp": {
+        "source": "FIFAにログインして、ゲーム内、もしくはOriginストアといったゲーム外でFIFAポイントを購入した週のみを対象に、週間平均が計算されます。",
+        "target": "FIFAにログインして、ゲーム内、もしくはOriginストアといったゲーム外でAurora Tokensを購入した週のみを対象に、週間平均が計算されます。"
+      },
+      "kor_kr": {
+        "source": "평균 주간 계산은 귀하가 FIFA에 로그인한 상태에서 다음 FIFA 포인트 거래를 수행한 주간만 고려해 계산합니다. - 게임 내에서 구매한 경우. - Origin 스토어 등을 통해 게임 외부에서 구매한 경우",
+        "target": "평균 주간 계산은 귀하가 FIFA에 로그인한 상태에서 다음 Aurora Tokens 거래를 수행한 주간만 고려해 계산합니다. - 게임 내에서 구매한 경우. - Origin 스토어 등을 통해 게임 외부에서 구매한 경우"
+      },
+      "nor_no": {
+        "source": "Utregningen av ukesgjennomsnittet er bare basert på uker hvor du har vært logget inn på FIFA og kjøpt FIFA Points enten i spillet eller utenfor spillet. f.eks. gjennom Origin-butikken.",
+        "target": "Utregningen av ukesgjennomsnittet er bare basert på uker hvor du har vært logget inn på FIFA og kjøpt Aurora Tokens enten i spillet eller utenfor spillet. f.eks. gjennom Origin-butikken."
+      },
+      "pol_pl": {
+        "source": "Obliczenia średniej tygodniowej uwzględniają tylko te tygodnie, w których nastąpiło co najmniej jedno zalogowanie w grze FIFA i nabycie FIFA Points poprzez: - zakup w grze; - zakup poza grą, np. w sklepie Origin.",
+        "target": "Obliczenia średniej tygodniowej uwzględniają tylko te tygodnie, w których nastąpiło co najmniej jedno zalogowanie w grze FIFA i nabycie Aurora Tokens poprzez: - zakup w grze; - zakup poza grą, np. w sklepie Origin."
+      },
+      "por_br": {
+        "source": "O Cálculo da Média Semanal só leva em consideração as semanas nas quais você fez login no FIFA e fez as seguintes transações com FIFA Points: - Compras no jogo; - Compras fora do jogo, como na Loja Origin.",
+        "target": "O Cálculo da Média Semanal só leva em consideração as semanas nas quais você fez login no FIFA e fez as seguintes transações com Aurora Tokens: - Compras no jogo; - Compras fora do jogo, como na Loja Origin."
+      },
+      "por_pt": {
+        "source": "O Cálculo de Média Semanal apenas tem em conta as semanas em que iniciaste sessão no FIFA e efetuaste uma transação em FIFA Points ao: - Comprar no Jogo; - Comprar fora do jogo, por exemplo, através da Loja Origin",
+        "target": "O Cálculo de Média Semanal apenas tem em conta as semanas em que iniciaste sessão no FIFA e efetuaste uma transação em Aurora Tokens ao: - Comprar no Jogo; - Comprar fora do jogo, por exemplo, através da Loja Origin"
+      },
+      "rus_ru": {
+        "source": "При вычислении среднего значения в неделю учитываются только недели, в течение которых вы заходили в FIFA и совершали транзакции FIFA Points для покупки в игре или вне игры, например в Origin Store.",
+        "target": "При вычислении среднего значения в неделю учитываются только недели, в течение которых вы заходили в FIFA и совершали транзакции Aurora Tokens для покупки в игре или вне игры, например в Origin Store."
+      },
+      "spa_es": {
+        "source": "El cálculo de la media semanal solo tiene en cuenta las semanas en las que iniciaste sesión en FIFA y realizaste alguno de estos tipos de transacciones con FIFA Points: - Compras en el juego; - Compras fuera del juego (en la Origin Store, por ejemplo)",
+        "target": "El cálculo de la media semanal solo tiene en cuenta las semanas en las que iniciaste sesión en FIFA y realizaste alguno de estos tipos de transacciones con Aurora Tokens: - Compras en el juego; - Compras fuera del juego (en la Origin Store, por ejemplo)"
+      },
+      "spa_mx": {
+        "source": "El cálculo del promedio semanal solo tiene en cuenta las semanas en las que iniciaste sesión en FIFA y realizaste una compra de FIFA Points de alguna de estas maneras: - Dentro del juego. - Fuera del juego, como a través de Origin Store.",
+        "target": "El cálculo del promedio semanal solo tiene en cuenta las semanas en las que iniciaste sesión en FIFA y realizaste una compra de Aurora Tokens de alguna de estas maneras: - Dentro del juego. - Fuera del juego, como a través de Origin Store."
+      },
+      "swe_se": {
+        "source": "Beräkningen av veckosnittet tar bara hänsyn till veckor då du loggat in i FIFA och gjort en FIFA-poängtransaktion genom köp i spelet eller utanför spelet via till exempel Origin-butiken.",
+        "target": "Beräkningen av veckosnittet tar bara hänsyn till veckor då du loggat in i FIFA och gjort en Aurora Tokenstransaktion genom köp i spelet eller utanför spelet via till exempel Origin-butiken."
+      },
+      "tur_tr": {
+        "source": "Ort. Haftalık Hesaplama yalnızca FIFA’ya giriş yaptığın ve aşağıdaki yollarla bir FIFA Points işlemi yaptığın haftaları hesaba katar: - Oyun içi satın alım; - Origin Store gibi oyun dışı satın alım",
+        "target": "Ort. Haftalık Hesaplama yalnızca FIFA’ya giriş yaptığın ve aşağıdaki yollarla bir Aurora Tokens işlemi yaptığın haftaları hesaba katar: - Oyun içi satın alım; - Origin Store gibi oyun dışı satın alım"
+      }
+    }
+  },
+  {
+    "stringId": "PT_Pack_Purchase_Desc",
+    "languages": {
+      "ara_sa": {
+        "source": "عين القيود للحزم التي تحصل عليها بالقطع النقدية أو الشراء باستخدام نقاط FIFA من متجر FUT.",
+        "target": "عين القيود للحزم التي تحصل عليها بالقطع النقدية أو الشراء باستخدام Aurora Tokens من متجر FUT."
+      },
+      "chi_hk": {
+        "source": "設定在 FUT 商店使用金幣或透過 FIFA Points 購買組合包的上限。",
+        "target": "設定在 FUT 商店使用金幣或透過 Aurora Tokens 購買組合包的上限。"
+      },
+      "chs_cn": {
+        "source": "设置用金币或 FIFA Points 在 FUT 商店中购买组合包的限制。",
+        "target": "设置用金币或 Aurora Tokens 在 FUT 商店中购买组合包的限制。"
+      },
+      "cze_cz": {
+        "source": "Nastavte limity pro nákupy balíčků v obchodě FUT za mince či FIFA Points",
+        "target": "Nastavte limity pro nákupy balíčků v obchodě FUT za mince či Aurora Tokens"
+      },
+      "dan_dk": {
+        "source": "Indstil grænser for pakkekøb i FUT-butikken med mønter eller FIFA-point.",
+        "target": "Indstil grænser for pakkekøb i FUT-butikken med mønter eller Aurora Tokens."
+      },
+      "dut_nl": {
+        "source": "Stel limieten in voor pakketten die je met munten krijgt of met FIFA-punten koopt in de FUT-winkel.",
+        "target": "Stel limieten in voor pakketten die je met munten krijgt of met Aurora Tokens koopt in de FUT-winkel."
+      },
+      "eng_us": {
+        "source": "Set Limits for Packs you get with Coins, or purchase with FIFA Points, from the FUT Store.",
+        "target": "Set Limits for Packs you get with Coins, or purchase with Aurora Tokens, from the FUT Store."
+      },
+      "fre_fr": {
+        "source": "Définissez des limites d’achat de packs avec vos Crédits ou vos Points FIFA dans la Boutique FUT.",
+        "target": "Définissez des limites d’achat de packs avec vos Crédits ou vos Aurora Tokens dans la Boutique FUT."
+      },
+      "ger_de": {
+        "source": "Lege Limits für im FUT-Shop mit Münzen erworbene oder mit FIFA Points gekaufte Packs fest.",
+        "target": "Lege Limits für im FUT-Shop mit Münzen erworbene oder mit Aurora Tokens gekaufte Packs fest."
+      },
+      "ita_it": {
+        "source": "Imposta il limite di pacchetti ottenibili con i crediti o con i FIFA Points dal negozio FUT.",
+        "target": "Imposta il limite di pacchetti ottenibili con i crediti o con i Aurora Tokens dal negozio FUT."
+      },
+      "jpn_jp": {
+        "source": "FUTストアで、コインかFIFAポイントでのパック購入に上限を設けます",
+        "target": "FUTストアで、コインかAurora Tokensでのパック購入に上限を設けます"
+      },
+      "kor_kr": {
+        "source": "FUT 코인이나 FIFA 포인트로 구매하는 팩 한도를 설정하세요.",
+        "target": "FUT 코인이나 Aurora Tokens로 구매하는 팩 한도를 설정하세요."
+      },
+      "nor_no": {
+        "source": "Sett grenser for pakker du anskaffer med mynter eller kjøper med FIFA Points i FUT-butikken.",
+        "target": "Sett grenser for pakker du anskaffer med mynter eller kjøper med Aurora Tokens i FUT-butikken."
+      },
+      "pol_pl": {
+        "source": "Ustaw limit paczek pozyskiwanych w sklepie FUT za monety lub kupowanych za FIFA Points.",
+        "target": "Ustaw limit paczek pozyskiwanych w sklepie FUT za monety lub kupowanych za Aurora Tokens."
+      },
+      "por_br": {
+        "source": "Defina limites para a aquisição de Pacotes com Moedas ou FIFA Points na Loja FUT.",
+        "target": "Defina limites para a aquisição de Pacotes com Moedas ou Aurora Tokens na Loja FUT."
+      },
+      "por_pt": {
+        "source": "Define Limites p/ Packs adquiridos com Moedas ou comprados com FIFA Points na Loja FUT.",
+        "target": "Define Limites p/ Packs adquiridos com Moedas ou comprados com Aurora Tokens na Loja FUT."
+      },
+      "rus_ru": {
+        "source": "Задайте лимит на кол-во наборов, купленных за монеты или FIFA Points в магазине FUT.",
+        "target": "Задайте лимит на кол-во наборов, купленных за монеты или Aurora Tokens в магазине FUT."
+      },
+      "spa_es": {
+        "source": "Límite de sobres que puedes obtener con monedas o comprar con FIFA Points en la tienda de FUT.",
+        "target": "Límite de sobres que puedes obtener con monedas o comprar con Aurora Tokens en la tienda de FUT."
+      },
+      "spa_mx": {
+        "source": "Limita los packs que obtienes con monedas o compras con FIFA Points en la Tienda de FUT.",
+        "target": "Limita los packs que obtienes con monedas o compras con Aurora Tokens en la Tienda de FUT."
+      },
+      "swe_se": {
+        "source": "Sätt gränser för hur många paket du kan skaffa med mynt eller köpa för FIFA-poäng i FUT-butiken.",
+        "target": "Sätt gränser för hur många paket du kan skaffa med mynt eller köpa för Aurora Tokens i FUT-butiken."
+      },
+      "tur_tr": {
+        "source": "FUT Mağazası’ndan Jeton veya FIFA Points ile Paket alma Limitleri belirle.",
+        "target": "FUT Mağazası’ndan Jeton veya Aurora Tokens ile Paket alma Limitleri belirle."
+      }
+    }
+  },
+  {
+    "stringId": "PT_TBE_LIMIT_POINTS_POPUP_MESSAGE",
+    "languages": {
+      "ara_sa": {
+        "source": "ستتجاوز هذا الأسبوع الحد الخاص بك بواقع %1d من نقاط FIFA في FIFA21.\nمن الممكن العودة إلى القوائم أو تجاهل حد نقاط FIFA مؤقتاً للمتابعة.",
+        "target": "ستتجاوز هذا الأسبوع الحد الخاص بك بواقع %1d من Aurora Tokens في FIFA21.\nمن الممكن العودة إلى القوائم أو تجاهل حد Aurora Tokens مؤقتاً للمتابعة."
+      },
+      "chi_hk": {
+        "source": "您將會超過本週在《FIFA 21》的 %1d FIFA POINTS 上限。\n確定以返回選單，或暫時無視 FIFA POINTS 上限並繼續。",
+        "target": "您將會超過本週在《FIFA 21》的 %1d AURORA TOKENS 上限。\n確定以返回選單，或暫時無視 AURORA TOKENS 上限並繼續。"
+      },
+      "chs_cn": {
+        "source": "您即将达到本周在 FIFA21 中的 %1d FIFA POINTS 的限制。\n点击确定返回到菜单，或者暂时忽略 FIFA POINTS 限制以继续。",
+        "target": "您即将达到本周在 FIFA21 中的 %1d AURORA TOKENS 的限制。\n点击确定返回到菜单，或者暂时忽略 AURORA TOKENS 限制以继续。"
+      },
+      "cze_cz": {
+        "source": "Tento týden jste překročili svůj limit %1d FIFA POINTS ve FIFA 21.\nStisknutím OK se vraťte do nabídek, nebo dočasným ignorováním limitu FIFA POINTS pokračujte.",
+        "target": "Tento týden jste překročili svůj limit %1d AURORA TOKENS ve FIFA 21.\nStisknutím OK se vraťte do nabídek, nebo dočasným ignorováním limitu AURORA TOKENS pokračujte."
+      },
+      "dan_dk": {
+        "source": "Du overskrider din grænse på %1d FIFA-POINT i FIFA21 i denne uge.\nVælg OK for at gå til menuen, eller ignorer grænsen for FIFA-POINT for at fortsætte.",
+        "target": "Du overskrider din grænse på %1d AURORA TOKENS i FIFA21 i denne uge.\nVælg OK for at gå til menuen, eller ignorer grænsen for AURORA TOKENS for at fortsætte."
+      },
+      "dut_nl": {
+        "source": "Je overschrijdt deze week je limiet van %1d FIFA-PUNTEN in FIFA 21.\nOké om terug te gaan naar de menu's of negeer tijdelijk de FIFA-PUNTEN-limiet om door te gaan.",
+        "target": "Je overschrijdt deze week je limiet van %1d AURORA TOKENS in FIFA 21.\nOké om terug te gaan naar de menu's of negeer tijdelijk de AURORA TOKENS-limiet om door te gaan."
+      },
+      "eng_us": {
+        "source": "You will surpass your limit of %1d FIFA POINTS in FIFA21 this week.\nOkay to go back to the menus or ignore FIFA POINTS limit temporarily to continue.",
+        "target": "You will surpass your limit of %1d AURORA TOKENS in FIFA21 this week.\nOkay to go back to the menus or ignore AURORA TOKENS limit temporarily to continue."
+      },
+      "fre_fr": {
+        "source": "Vous allez dépasser votre limite de %1d POINTS FIFA dans FIFA 21 cette semaine.\nRevenez aux menus ou ignorez temporairement la limite de POINTS FIFA pour continuer.",
+        "target": "Vous allez dépasser votre limite de %1d AURORA TOKENS dans FIFA 21 cette semaine.\nRevenez aux menus ou ignorez temporairement la limite de AURORA TOKENS pour continuer."
+      },
+      "ger_de": {
+        "source": "Du überschreitest das dieswöchige FIFA 21-Limit von %1d FIFA POINTS.\nGehe mit OK zu den Menüs oder ignoriere das FIFA POINTS-Limit zeitweise, um fortzufahren.",
+        "target": "Du überschreitest das dieswöchige FIFA 21-Limit von %1d AURORA TOKENS.\nGehe mit OK zu den Menüs oder ignoriere das AURORA TOKENS-Limit zeitweise, um fortzufahren."
+      },
+      "ita_it": {
+        "source": "Questa settimana supererai il tuo limite settimanale di %1d FIFA POINTS in FIFA 21.\nTorna al menu o continua ignorando temporaneamente il limite di FIFA POINTS.",
+        "target": "Questa settimana supererai il tuo limite settimanale di %1d AURORA TOKENS in FIFA 21.\nTorna al menu o continua ignorando temporaneamente il limite di AURORA TOKENS."
+      },
+      "jpn_jp": {
+        "source": "「FIFA 21」の今週の上限である%1d FIFAポイントを超過します。\nメニューに戻るか、一時的にFIFAポイント上限を無視してプレイを続けられます。",
+        "target": "「FIFA 21」の今週の上限である%1d Aurora Tokensを超過します。\nメニューに戻るか、一時的にAurora Tokens上限を無視してプレイを続けられます。"
+      },
+      "kor_kr": {
+        "source": "이번 주 FIFA 21에서 한도 %1d FIFA 포인트에 도달했습니다.\n확인을 누르면 메뉴로 돌아가거나 일시적으로 FIFA 포인트 제한을 무시하고 계속 진행할 수 있습니다.",
+        "target": "이번 주 FIFA 21에서 한도 %1d Aurora Tokens에 도달했습니다.\n확인을 누르면 메뉴로 돌아가거나 일시적으로 Aurora Tokens 제한을 무시하고 계속 진행할 수 있습니다."
+      },
+      "nor_no": {
+        "source": "Du vil nå grensen din på %1d FIFA POINTS i FIFA 21 denne uken.\nGodta for å gå tilbake til menyen, eller ignorer FIFA Points-grensen midlertidig for å fortsette.",
+        "target": "Du vil nå grensen din på %1d AURORA TOKENS i FIFA 21 denne uken.\nGodta for å gå tilbake til menyen, eller ignorer Aurora Tokens-grensen midlertidig for å fortsette."
+      },
+      "pol_pl": {
+        "source": "Przekroczysz tygodniowy limit %1d FIFA POINTS w FIFA 21.\nWybierz OK, aby wrócić do menu, lub zignoruj tymczasowo limit FIFA POINTS, aby kupować dalej.",
+        "target": "Przekroczysz tygodniowy limit %1d AURORA TOKENS w FIFA 21.\nWybierz OK, aby wrócić do menu, lub zignoruj tymczasowo limit AURORA TOKENS, aby kupować dalej."
+      },
+      "por_br": {
+        "source": "Você excederá o limite de %1d FIFA POINTS no FIFA 21 nesta semana.\nConfirme para voltar aos menus ou ignore o limite de FIFA POINTS temporariamente para continuar.",
+        "target": "Você excederá o limite de %1d AURORA TOKENS no FIFA 21 nesta semana.\nConfirme para voltar aos menus ou ignore o limite de AURORA TOKENS temporariamente para continuar."
+      },
+      "por_pt": {
+        "source": "Ultrapassarás o teu limite de %1d FIFA POINTS no FIFA21 esta semana.\nAceita p/ regressar aos menus ou ignora temporariam. o limite FIFA POINTS p/ continuar.",
+        "target": "Ultrapassarás o teu limite de %1d AURORA TOKENS no FIFA21 esta semana.\nAceita p/ regressar aos menus ou ignora temporariam. o limite AURORA TOKENS p/ continuar."
+      },
+      "rus_ru": {
+        "source": "Вы превысите ограничение в %1d FIFA POINTS в FIFA21, установленное на эту неделю.\nПодтвердите, чтобы вернуться в меню, или отмените, чтобы временно игнорировать ограничение по FIFA POINTS и продолжить.",
+        "target": "Вы превысите ограничение в %1d AURORA TOKENS в FIFA21, установленное на эту неделю.\nПодтвердите, чтобы вернуться в меню, или отмените, чтобы временно игнорировать ограничение по AURORA TOKENS и продолжить."
+      },
+      "spa_es": {
+        "source": "Estás a punto de superar tu límite de %1d FIFA Points semanales en FIFA21.\nPulsa Aceptar para volver al menú o ignora temporalmente el límite de FIFA Points para continuar.",
+        "target": "Estás a punto de superar tu límite de %1d Aurora Tokens semanales en FIFA21.\nPulsa Aceptar para volver al menú o ignora temporalmente el límite de Aurora Tokens para continuar."
+      },
+      "spa_mx": {
+        "source": "Vas a superar tu límite de %1d FIFA POINTS en FIFA 21 esta semana.\nVuelve a los menús o ignora el límite de FIFA POINTS temporalmente para continuar.",
+        "target": "Vas a superar tu límite de %1d AURORA TOKENS en FIFA 21 esta semana.\nVuelve a los menús o ignora el límite de AURORA TOKENS temporalmente para continuar."
+      },
+      "swe_se": {
+        "source": "Du kommer att överskrida din gräns på %1d FIFA-POÄNG i FIFA 21 denna vecka.\nBekräfta för att lämna, eller ignorera FIFA-poänggränsen temporärt för att fortsätta.",
+        "target": "Du kommer att överskrida din gräns på %1d AURORA TOKENS i FIFA 21 denna vecka.\nBekräfta för att lämna, eller ignorera Aurora Tokensgränsen temporärt för att fortsätta."
+      },
+      "tur_tr": {
+        "source": "Bu hafta FIFA 21’de %1d FIFA POINTS limitini aşacaksın.\nMenülere geri dönmek için Tamam’a bas veya FIFA POINTS limitini geçici olarak yok say ve devam et.",
+        "target": "Bu hafta FIFA 21’de %1d AURORA TOKENS limitini aşacaksın.\nMenülere geri dönmek için Tamam’a bas veya AURORA TOKENS limitini geçici olarak yok say ve devam et."
+      }
+    }
+  },
+  {
+    "stringId": "Pack_NotEnoughPoints",
+    "languages": {
+      "ara_sa": {
+        "source": "لا تملك نقاط FIFA الكافية لشراء الحزمة التي اخترتها في الوقت الراهن.\nهل ترغب بإضافة المزيد من نقاط FIFA؟",
+        "target": "لا تملك Aurora Tokens الكافية لشراء الحزمة التي اخترتها في الوقت الراهن.\nهل ترغب بإضافة المزيد من Aurora Tokens؟"
+      },
+      "chi_hk": {
+        "source": "您目前沒有足夠的FIFA Points購買您所選的組合包。\r\n您想增加一些FIFA Points嗎？",
+        "target": "您目前沒有足夠的Aurora Tokens購買您所選的組合包。\r\n您想增加一些Aurora Tokens嗎？"
+      },
+      "chs_cn": {
+        "source": "您当前没有足够的 FIFA Points 以购买选定组合包。\n\n是否确定添加 FIFA Points？",
+        "target": "您当前没有足够的 Aurora Tokens 以购买选定组合包。\n\n是否确定添加 Aurora Tokens？"
+      },
+      "cze_cz": {
+        "source": "Momentálně nemáte dostatek FIFA Points k nákupu vybraného balíčku.\nChcete přidat další FIFA Points?",
+        "target": "Momentálně nemáte dostatek Aurora Tokens k nákupu vybraného balíčku.\nChcete přidat další Aurora Tokens?"
+      },
+      "dan_dk": {
+        "source": "Du har ikke tilstrækkeligt med FIFA-point på nuværende tidspunkt til at købe den valgte pakke.\r\nVil du gerne tilføje flere FIFA-point?",
+        "target": "Du har ikke tilstrækkeligt med Aurora Tokens på nuværende tidspunkt til at købe den valgte pakke.\r\nVil du gerne tilføje flere Aurora Tokens?"
+      },
+      "dut_nl": {
+        "source": "Sorry, je hebt op dit moment niet genoeg FIFA-punten om het pakket te kopen dat je hebt geselecteerd. \nWil je FIFA-punten toevoegen?",
+        "target": "Sorry, je hebt op dit moment niet genoeg Aurora Tokens om het pakket te kopen dat je hebt geselecteerd. \nWil je Aurora Tokens toevoegen?"
+      },
+      "eng_us": {
+        "source": "You currently don't have enough FIFA Points to purchase the pack you've selected.\r\nDo you want to add FIFA Points?",
+        "target": "You currently don't have enough Aurora Tokens to purchase the pack you've selected.\r\nDo you want to add Aurora Tokens?"
+      },
+      "fre_fr": {
+        "source": "Pour le moment vous n'avez pas assez de Points FIFA pour acheter le pack sélectionné.\nVoulez-vous ajouter des Points FIFA ?",
+        "target": "Pour le moment vous n'avez pas assez de Aurora Tokens pour acheter le pack sélectionné.\nVoulez-vous ajouter des Aurora Tokens ?"
+      },
+      "ger_de": {
+        "source": "Du hast derzeit nicht genug FIFA Points, um das gewählte Pack zu kaufen.\r\nMöchtest du FIFA Points hinzufügen?",
+        "target": "Du hast derzeit nicht genug Aurora Tokens, um das gewählte Pack zu kaufen.\r\nMöchtest du Aurora Tokens hinzufügen?"
+      },
+      "ita_it": {
+        "source": "Non hai abbastanza FIFA Points per acquistare il pacchetto selezionato.\nVuoi aggiungere altri FIFA Points?",
+        "target": "Non hai abbastanza Aurora Tokens per acquistare il pacchetto selezionato.\nVuoi aggiungere altri Aurora Tokens?"
+      },
+      "jpn_jp": {
+        "source": "FIFAポイントが不足しているため、\n選択したパックを購入できません。\nFIFAポイントを追加しますか？",
+        "target": "Aurora Tokensが不足しているため、\n選択したパックを購入できません。\nAurora Tokensを追加しますか？"
+      },
+      "kor_kr": {
+        "source": "현재 FIFA 포인트가 부족하여 선택한 팩을 구매할 수 없습니다.\nFIFA 포인트를 추가하고 싶으신가요?",
+        "target": "현재 Aurora Tokens가 부족하여 선택한 팩을 구매할 수 없습니다.\nAurora Tokens를 추가하고 싶으신가요?"
+      },
+      "nor_no": {
+        "source": "Du har ikke nok FIFA Points til å kjøpe pakken du har valgt.\r\nVil du legge til flere FIFA Points?",
+        "target": "Du har ikke nok Aurora Tokens til å kjøpe pakken du har valgt.\r\nVil du legge til flere Aurora Tokens?"
+      },
+      "pol_pl": {
+        "source": "Nie masz wystarczającej liczby FIFA Points, aby kupić tę paczkę.\r\nCzy chcesz nabyć więcej FIFA Points?",
+        "target": "Nie masz wystarczającej liczby Aurora Tokens, aby kupić tę paczkę.\r\nCzy chcesz nabyć więcej Aurora Tokens?"
+      },
+      "por_br": {
+        "source": "No momento, você não tem FIFA Points suficientes para comprar o pacote que selecionou.\nQuer adicionar FIFA Points?",
+        "target": "No momento, você não tem Aurora Tokens suficientes para comprar o pacote que selecionou.\nQuer adicionar Aurora Tokens?"
+      },
+      "por_pt": {
+        "source": "De momento não tens FIFA Points suficientes para comprares o Pack que selecionaste.\n\nPretendes adicionar FIFA Points?",
+        "target": "De momento não tens Aurora Tokens suficientes para comprares o Pack que selecionaste.\n\nPretendes adicionar Aurora Tokens?"
+      },
+      "rus_ru": {
+        "source": "У вас недостаточно FIFA Points для приобретения выбранного набора.\n\nХотите добавить FIFA Points?",
+        "target": "У вас недостаточно Aurora Tokens для приобретения выбранного набора.\n\nХотите добавить Aurora Tokens?"
+      },
+      "spa_es": {
+        "source": "En este momento no tienes suficientes FIFA Points para comprar el sobre que has elegido.\n¿Quieres añadir FIFA Points?",
+        "target": "En este momento no tienes suficientes Aurora Tokens para comprar el sobre que has elegido.\n¿Quieres añadir Aurora Tokens?"
+      },
+      "spa_mx": {
+        "source": "No tienes suficientes FIFA Points ahora mismo para comprar el pack que elegiste.\n¿Quieres añadir FIFA Points?",
+        "target": "No tienes suficientes Aurora Tokens ahora mismo para comprar el pack que elegiste.\n¿Quieres añadir Aurora Tokens?"
+      },
+      "swe_se": {
+        "source": "Du har dessvärre inte tillräckligt mycket FIFA-poäng just nu för att kunna köpa paketet som du har valt.\nVill du lägga till FIFA-poäng?",
+        "target": "Du har dessvärre inte tillräckligt mycket Aurora Tokens just nu för att kunna köpa paketet som du har valt.\nVill du lägga till Aurora Tokens?"
+      },
+      "tur_tr": {
+        "source": "Şu anda seçtiğin paketi satın almaya yetecek kadar FIFA Points'e sahip değilsin.\r\n\r\nFIFA Points almak ister misin?",
+        "target": "Şu anda seçtiğin paketi satın almaya yetecek kadar Aurora Tokens'e sahip değilsin.\r\n\r\nAurora Tokens almak ister misin?"
+      }
+    }
+  },
+  {
+    "stringId": "Pack_NotEnoughPointsNoStoreLink",
+    "languages": {
+      "ara_sa": {
+        "source": "ليس لديك حالياً نقاط FIFA كافية لشراء الحزمة التي قمت بتحديدها.",
+        "target": "ليس لديك حالياً Aurora Tokens كافية لشراء الحزمة التي قمت بتحديدها."
+      },
+      "chi_hk": {
+        "source": "您目前沒有足夠的 FIFA Points 購買你所選的組合包。",
+        "target": "您目前沒有足夠的 Aurora Tokens 購買你所選的組合包。"
+      },
+      "chs_cn": {
+        "source": "您当前没有足够的 FIFA Points 以购买选定组合包。",
+        "target": "您当前没有足够的 Aurora Tokens 以购买选定组合包。"
+      },
+      "cze_cz": {
+        "source": "K nákupu vybraného balíčku nemáte momentálně dostatek bodů FIFA Points.",
+        "target": "K nákupu vybraného balíčku nemáte momentálně dostatek bodů Aurora Tokens."
+      },
+      "dan_dk": {
+        "source": "Du har i øjeblikket ikke nok FIFA-point til at købe den valgte pakke.",
+        "target": "Du har i øjeblikket ikke nok Aurora Tokens til at købe den valgte pakke."
+      },
+      "dut_nl": {
+        "source": "Je hebt momenteel niet genoeg FIFA-punten om het geselecteerde pakket te kopen.",
+        "target": "Je hebt momenteel niet genoeg Aurora Tokens om het geselecteerde pakket te kopen."
+      },
+      "eng_us": {
+        "source": "You currently don't have enough FIFA Points to purchase the pack you've selected.",
+        "target": "You currently don't have enough Aurora Tokens to purchase the pack you've selected."
+      },
+      "fre_fr": {
+        "source": "Vous n'avez pas assez de Points FIFA pour acheter le pack sélectionné.",
+        "target": "Vous n'avez pas assez de Aurora Tokens pour acheter le pack sélectionné."
+      },
+      "ger_de": {
+        "source": "Du hast derzeit nicht genug FIFA Points für den Kauf des gewählten Packs.",
+        "target": "Du hast derzeit nicht genug Aurora Tokens für den Kauf des gewählten Packs."
+      },
+      "ita_it": {
+        "source": "Attualmente non hai abbastanza FIFA Points per acquistare il pacchetto selezionato.",
+        "target": "Attualmente non hai abbastanza Aurora Tokens per acquistare il pacchetto selezionato."
+      },
+      "jpn_jp": {
+        "source": "選択したパックを購入するにはFIFAポイントが足りません。",
+        "target": "選択したパックを購入するにはAurora Tokensが足りません。"
+      },
+      "kor_kr": {
+        "source": "현재 FIFA 포인트가 부족하여 선택한 팩을 구매할 수 없습니다.",
+        "target": "현재 Aurora Tokens가 부족하여 선택한 팩을 구매할 수 없습니다."
+      },
+      "nor_no": {
+        "source": "Du har ikke nok FIFA Points til å kjøpe den valgte pakken.",
+        "target": "Du har ikke nok Aurora Tokens til å kjøpe den valgte pakken."
+      },
+      "pol_pl": {
+        "source": "Masz obecnie za mało punktów FIFA Points, aby kupić wybraną paczkę.",
+        "target": "Masz obecnie za mało punktów Aurora Tokens, aby kupić wybraną paczkę."
+      },
+      "por_br": {
+        "source": "No momento, você não tem FIFA Points suficientes para comprar o pacote que selecionou.",
+        "target": "No momento, você não tem Aurora Tokens suficientes para comprar o pacote que selecionou."
+      },
+      "por_pt": {
+        "source": "Atualmente não tens FIFA Points suficientes para comprar o pack que selecionaste.",
+        "target": "Atualmente não tens Aurora Tokens suficientes para comprar o pack que selecionaste."
+      },
+      "rus_ru": {
+        "source": "У вас недостаточно FIFA Points для покупки выбранного набора.",
+        "target": "У вас недостаточно Aurora Tokens для покупки выбранного набора."
+      },
+      "spa_es": {
+        "source": "En este momento no tienes suficientes FIFA Points para comprar el sobre seleccionado.",
+        "target": "En este momento no tienes suficientes Aurora Tokens para comprar el sobre seleccionado."
+      },
+      "spa_mx": {
+        "source": "Actualmente no tienes suficientes FIFA Points para comprar el pack que seleccionaste.",
+        "target": "Actualmente no tienes suficientes Aurora Tokens para comprar el pack que seleccionaste."
+      },
+      "swe_se": {
+        "source": "Du har inte FIFA-poäng nog för att kunna köpa paketet som du har valt.",
+        "target": "Du har inte Aurora Tokens nog för att kunna köpa paketet som du har valt."
+      },
+      "tur_tr": {
+        "source": "Şu anda seçtiğin paketi satın almaya yetecek kadar FIFA Points'e sahip değilsin.",
+        "target": "Şu anda seçtiğin paketi satın almaya yetecek kadar Aurora Tokens'e sahip değilsin."
+      }
+    }
+  },
+  {
+    "stringId": "STORE_PC_PURCHASE_CONFIRMATION",
+    "languages": {
+      "ara_sa": {
+        "source": "لديك حالياً %1d من نقاط FIFA. هل أنت متأكد أنك تريد شراء هذا الغرض بقيمة %2d ؟",
+        "target": "لديك حالياً %1d من Aurora Tokens. هل أنت متأكد أنك تريد شراء هذا الغرض بقيمة %2d ؟"
+      },
+      "chi_hk": {
+        "source": "您目前有 %1d FP，是否確定要加購 %2d？",
+        "target": "您目前有 %1d Aurora Tokens，是否確定要加購 %2d？"
+      },
+      "chs_cn": {
+        "source": "您目前有%1dFP，是否确定要以%2d购买这一项？",
+        "target": "您目前有%1dAurora Tokens，是否确定要以%2d购买这一项？"
+      },
+      "cze_cz": {
+        "source": "Momentálně máte %1d FP. Opravdu chcete zakoupit tento předmět za %2d?",
+        "target": "Momentálně máte %1d Aurora Tokens. Opravdu chcete zakoupit tento předmět za %2d?"
+      },
+      "dan_dk": {
+        "source": "Du har i øjeblikket %1d FP. Er du sikker på, at du vil købe denne ting for %2d?",
+        "target": "Du har i øjeblikket %1d Aurora Tokens. Er du sikker på, at du vil købe denne ting for %2d?"
+      },
+      "dut_nl": {
+        "source": "Je hebt momenteel %1d FP. Weet je zeker dat je dit item wilt kopen voor %2d?",
+        "target": "Je hebt momenteel %1d Aurora Tokens. Weet je zeker dat je dit item wilt kopen voor %2d?"
+      },
+      "eng_us": {
+        "source": "You currently have %1d FP. Are you sure you want to purchase this item for %2d ?",
+        "target": "You currently have %1d Aurora Tokens. Are you sure you want to purchase this item for %2d ?"
+      },
+      "fre_fr": {
+        "source": "Vous disposez actuellement de %1d PF. Voulez-vous vraiment acheter cet élément pour %2d ?",
+        "target": "Vous disposez actuellement de %1d Aurora Tokens. Voulez-vous vraiment acheter cet élément pour %2d ?"
+      },
+      "ger_de": {
+        "source": "Du hast momentan %1d FP. Möchtest du diesen Gegenstand für %2d kaufen?",
+        "target": "Du hast momentan %1d Aurora Tokens. Möchtest du diesen Gegenstand für %2d kaufen?"
+      },
+      "ita_it": {
+        "source": "Attualmente hai a disposizione %1d FP. Vuoi davvero acquistare questo oggetto per %2d?",
+        "target": "Attualmente hai a disposizione %1d Aurora Tokens. Vuoi davvero acquistare questo oggetto per %2d?"
+      },
+      "jpn_jp": {
+        "source": "現在 %1d FP 所有しています。 このアイテムを %2d で 購入しても 宜しいですか？",
+        "target": "現在 %1d Aurora Tokens 所有しています。 このアイテムを %2d で 購入しても 宜しいですか？"
+      },
+      "kor_kr": {
+        "source": "현재 %1d FP가 있습니다. 이 아이템을 정말로 %2d에 구매하시겠습니까?",
+        "target": "현재 %1d Aurora Tokens가 있습니다. 이 아이템을 정말로 %2d에 구매하시겠습니까?"
+      },
+      "nor_no": {
+        "source": "Du har foreløpig %1d FP. Er du sikker på at du vil kjøpe denne gjenstanden for %2d?",
+        "target": "Du har foreløpig %1d Aurora Tokens. Er du sikker på at du vil kjøpe denne gjenstanden for %2d?"
+      },
+      "pol_pl": {
+        "source": "Aktualnie masz %1d pkt. FP. Czy na pewno chcesz kupić ten przedmiot za %2d pkt.?",
+        "target": "Aktualnie masz %1d pkt. Aurora Tokens. Czy na pewno chcesz kupić ten przedmiot za %2d pkt.?"
+      },
+      "por_br": {
+        "source": "Você tem %1d FP. Tem certeza de que deseja comprar este item por %2d?",
+        "target": "Você tem %1d Aurora Tokens. Tem certeza de que deseja comprar este item por %2d?"
+      },
+      "por_pt": {
+        "source": "Neste momento tens %1d FP. Tens a certeza de que pretendes comprar este item por %2d?",
+        "target": "Neste momento tens %1d Aurora Tokens. Tens a certeza de que pretendes comprar este item por %2d?"
+      },
+      "rus_ru": {
+        "source": "У вас %1d FP. Вы уверены, что хотите приобрести этот предмет за %2d?",
+        "target": "У вас %1d Aurora Tokens. Вы уверены, что хотите приобрести этот предмет за %2d?"
+      },
+      "spa_es": {
+        "source": "Actualmente dispones de %1d FP. ¿Seguro que quieres comprar este artículo por %2d?",
+        "target": "Actualmente dispones de %1d Aurora Tokens. ¿Seguro que quieres comprar este artículo por %2d?"
+      },
+      "spa_mx": {
+        "source": "Actualmente dispones de %1d FP. ¿Seguro que por %2d quieres comprar este artículo?",
+        "target": "Actualmente dispones de %1d Aurora Tokens. ¿Seguro que por %2d quieres comprar este artículo?"
+      },
+      "swe_se": {
+        "source": "Du har just nu %1d FP. Är du säker på att du vill köpa det här föremålet för %2d?",
+        "target": "Du har just nu %1d Aurora Tokens. Är du säker på att du vill köpa det här föremålet för %2d?"
+      },
+      "tur_tr": {
+        "source": "Şu anda sende %1d FP var. Bunu %2d karşılığında satın almak istediğinden emin misin?",
+        "target": "Şu anda sende %1d Aurora Tokens var. Bunu %2d karşılığında satın almak istediğinden emin misin?"
+      }
+    }
+  },
+  {
+    "stringId": "TXT_FUT_REWARDS",
+    "languages": {
+      "ara_sa": {
+        "source": "ستتم مشاركة جميع عناصر اللاعب وعناصر FUT من ناديك، فضلاً عن القطع النقدية ونقاط FIFA الخاصة بك.",
+        "target": "ستتم مشاركة جميع عناصر اللاعب وعناصر FUT من ناديك، فضلاً عن القطع النقدية وAurora Tokens الخاصة بك."
+      },
+      "chi_hk": {
+        "source": "您球會中的所有球員及其他 FUT 物品，以及您的金幣與 FIFA Points 都將共享。",
+        "target": "您球會中的所有球員及其他 FUT 物品，以及您的金幣與 Aurora Tokens 都將共享。"
+      },
+      "chs_cn": {
+        "source": "您的俱乐部中的所有球员、其它 FUT 物品以及金币和 FIFA Points 都将共享。",
+        "target": "您的俱乐部中的所有球员、其它 FUT 物品以及金币和 Aurora Tokens 都将共享。"
+      },
+      "cze_cz": {
+        "source": "Všichni hráči a další předměty FUT z vašeho klubu, mince a FIFA Points budou sdíleny.",
+        "target": "Všichni hráči a další předměty FUT z vašeho klubu, mince a Aurora Tokens budou sdíleny."
+      },
+      "dan_dk": {
+        "source": "Alle spiller- og FUT-kort fra din klub samt dine mønter og FIFA-point vil blive delt.",
+        "target": "Alle spiller- og FUT-kort fra din klub samt dine mønter og Aurora Tokens vil blive delt."
+      },
+      "dut_nl": {
+        "source": "Alle spelers en overige FUT-items van je club, maar ook je munten en FIFA-punten worden gedeeld.",
+        "target": "Alle spelers en overige FUT-items van je club, maar ook je munten en Aurora Tokens worden gedeeld."
+      },
+      "eng_us": {
+        "source": "All player and other FUT items from your Club as well as your Coins and FIFA Points will be shared.",
+        "target": "All player and other FUT items from your Club as well as your Coins and Aurora Tokens will be shared."
+      },
+      "fre_fr": {
+        "source": "Tous les joueurs et les autres éléments de FUT de votre club ainsi que les crédits et les points FIFA seront partagés.",
+        "target": "Tous les joueurs et les autres éléments de FUT de votre club ainsi que les crédits et les Aurora Tokens seront partagés."
+      },
+      "ger_de": {
+        "source": "Sämtliche Spieler und andere FUT-Items des Vereins sowie Münzen und FIFA Points werden geteilt.",
+        "target": "Sämtliche Spieler und andere FUT-Items des Vereins sowie Münzen und Aurora Tokens werden geteilt."
+      },
+      "ita_it": {
+        "source": "Tutti i giocatori e gli altri oggetti FUT del tuo club, così come i tuoi crediti e i FIFA Points, verranno condivisi.",
+        "target": "Tutti i giocatori e gli altri oggetti FUT del tuo club, così come i tuoi crediti e i Aurora Tokens, verranno condivisi."
+      },
+      "jpn_jp": {
+        "source": "あなたのクラブの選手、FUTアイテム、コイン、FIFAポイントは共有されます。",
+        "target": "あなたのクラブの選手、FUTアイテム、コイン、Aurora Tokensは共有されます。"
+      },
+      "kor_kr": {
+        "source": "클럽의 모든 선수 및 기타 FUT 아이템, 그리고 코인과 FIFA 포인트는 공유됩니다.",
+        "target": "클럽의 모든 선수 및 기타 FUT 아이템, 그리고 코인과 Aurora Tokens는 공유됩니다."
+      },
+      "nor_no": {
+        "source": "Alle spillere og andre FUT-kort fra klubben din samt mynter og FIFA Points vil bli delt.",
+        "target": "Alle spillere og andre FUT-kort fra klubben din samt mynter og Aurora Tokens vil bli delt."
+      },
+      "pol_pl": {
+        "source": "Wszyscy piłkarze i inne karty z Twojego klubu FUT, a także monety i punkty FIFA Points będą wspólne.",
+        "target": "Wszyscy piłkarze i inne karty z Twojego klubu FUT, a także monety i punkty Aurora Tokens będą wspólne."
+      },
+      "por_br": {
+        "source": "Todos os jogadores e outros itens do FUT de seu Clube, suas Moedas e FIFA Points serão compartilhados.",
+        "target": "Todos os jogadores e outros itens do FUT de seu Clube, suas Moedas e Aurora Tokens serão compartilhados."
+      },
+      "por_pt": {
+        "source": "Serão partilhados todos os jogadores e outros itens FUT do teu Clube, bem como as tuas Moedas e os FIFA Points.",
+        "target": "Serão partilhados todos os jogadores e outros itens FUT do teu Clube, bem como as tuas Moedas e os Aurora Tokens."
+      },
+      "rus_ru": {
+        "source": "Все игроки и другие предметы FUT из вашего клуба, а также монеты и FIFA Points будут общими.",
+        "target": "Все игроки и другие предметы FUT из вашего клуба, а также монеты и Aurora Tokens будут общими."
+      },
+      "spa_es": {
+        "source": "Se compartirán todos los jugadores y otros artículos de FUT de tu club, así como tus monedas y FIFA Points.",
+        "target": "Se compartirán todos los jugadores y otros artículos de FUT de tu club, así como tus monedas y Aurora Tokens."
+      },
+      "spa_mx": {
+        "source": "Todos los items de jugador y de FUT de tu club, así como tus monedas y FIFA Points serán compartidos.",
+        "target": "Todos los items de jugador y de FUT de tu club, así como tus monedas y Aurora Tokens serán compartidos."
+      },
+      "swe_se": {
+        "source": "Alla spelar- och andra FUT-föremål från din klubb samt mynt och FIFA-poäng delas.",
+        "target": "Alla spelar- och andra FUT-föremål från din klubb samt mynt och Aurora Tokens delas."
+      },
+      "tur_tr": {
+        "source": "Kulübündeki tüm oyuncu ve diğer FUT öğeleri, Jetonların ve sahip olduğun FIFA Points paylaşılacak.",
+        "target": "Kulübündeki tüm oyuncu ve diğer FUT öğeleri, Jetonların ve sahip olduğun Aurora Tokens paylaşılacak."
+      }
+    }
+  }
+]

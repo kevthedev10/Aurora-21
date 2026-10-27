@@ -1,0 +1,526 @@
+{
+  "assumptions": [
+    "assetId grouping is inferred, not verified native identity",
+    "All imported product definitions remain draft for artifact validation; runtime catalog activation is outside this task",
+    "No native identity resolution or source research is required from the implementing model"
+  ],
+  "inputRows": {
+    "data/catalogs/players.json": 22500,
+    "data/catalogs/custom-players.json": 6,
+    "managers": 311,
+    "kits": 1382
+  },
+  "replacements": [
+    {
+      "oldNativeResourceId": 246472,
+      "newNativeResourceId": 17023688
+    },
+    {
+      "oldNativeResourceId": 246474,
+      "newNativeResourceId": 17023690
+    },
+    {
+      "oldNativeResourceId": 246475,
+      "newNativeResourceId": 17023691
+    },
+    {
+      "oldNativeResourceId": 246476,
+      "newNativeResourceId": 17023692
+    },
+    {
+      "oldNativeResourceId": 246477,
+      "newNativeResourceId": 17023693
+    },
+    {
+      "oldNativeResourceId": 246478,
+      "newNativeResourceId": 17023694
+    },
+    {
+      "oldNativeResourceId": 246479,
+      "newNativeResourceId": 17023695
+    },
+    {
+      "oldNativeResourceId": 246480,
+      "newNativeResourceId": 17023696
+    },
+    {
+      "oldNativeResourceId": 246481,
+      "newNativeResourceId": 17023697
+    },
+    {
+      "oldNativeResourceId": 246482,
+      "newNativeResourceId": 17023698
+    },
+    {
+      "oldNativeResourceId": 246483,
+      "newNativeResourceId": 17023699
+    },
+    {
+      "oldNativeResourceId": 246484,
+      "newNativeResourceId": 17023700
+    },
+    {
+      "oldNativeResourceId": 246485,
+      "newNativeResourceId": 17023701
+    },
+    {
+      "oldNativeResourceId": 246486,
+      "newNativeResourceId": 17023702
+    },
+    {
+      "oldNativeResourceId": 246487,
+      "newNativeResourceId": 17023703
+    },
+    {
+      "oldNativeResourceId": 246488,
+      "newNativeResourceId": 17023704
+    },
+    {
+      "oldNativeResourceId": 246489,
+      "newNativeResourceId": 17023705
+    },
+    {
+      "oldNativeResourceId": 246490,
+      "newNativeResourceId": 17023706
+    },
+    {
+      "oldNativeResourceId": 246491,
+      "newNativeResourceId": 17023707
+    },
+    {
+      "oldNativeResourceId": 246492,
+      "newNativeResourceId": 17023708
+    },
+    {
+      "oldNativeResourceId": 246493,
+      "newNativeResourceId": 17023709
+    },
+    {
+      "oldNativeResourceId": 246494,
+      "newNativeResourceId": 17023710
+    },
+    {
+      "oldNativeResourceId": 246495,
+      "newNativeResourceId": 17023711
+    },
+    {
+      "oldNativeResourceId": 246496,
+      "newNativeResourceId": 17023712
+    },
+    {
+      "oldNativeResourceId": 246497,
+      "newNativeResourceId": 17023713
+    },
+    {
+      "oldNativeResourceId": 246498,
+      "newNativeResourceId": 17023714
+    },
+    {
+      "oldNativeResourceId": 246499,
+      "newNativeResourceId": 17023715
+    },
+    {
+      "oldNativeResourceId": 246500,
+      "newNativeResourceId": 17023716
+    },
+    {
+      "oldNativeResourceId": 246501,
+      "newNativeResourceId": 17023717
+    },
+    {
+      "oldNativeResourceId": 246502,
+      "newNativeResourceId": 17023718
+    },
+    {
+      "oldNativeResourceId": 246503,
+      "newNativeResourceId": 17023719
+    },
+    {
+      "oldNativeResourceId": 246504,
+      "newNativeResourceId": 17023720
+    },
+    {
+      "oldNativeResourceId": 246505,
+      "newNativeResourceId": 17023721
+    },
+    {
+      "oldNativeResourceId": 246506,
+      "newNativeResourceId": 17023722
+    },
+    {
+      "oldNativeResourceId": 246507,
+      "newNativeResourceId": 17023723
+    },
+    {
+      "oldNativeResourceId": 246508,
+      "newNativeResourceId": 17023724
+    },
+    {
+      "oldNativeResourceId": 246509,
+      "newNativeResourceId": 17023725
+    },
+    {
+      "oldNativeResourceId": 246510,
+      "newNativeResourceId": 17023726
+    },
+    {
+      "oldNativeResourceId": 246511,
+      "newNativeResourceId": 17023727
+    },
+    {
+      "oldNativeResourceId": 246512,
+      "newNativeResourceId": 17023728
+    },
+    {
+      "oldNativeResourceId": 246513,
+      "newNativeResourceId": 17023729
+    },
+    {
+      "oldNativeResourceId": 246514,
+      "newNativeResourceId": 17023730
+    },
+    {
+      "oldNativeResourceId": 246515,
+      "newNativeResourceId": 17023731
+    },
+    {
+      "oldNativeResourceId": 246516,
+      "newNativeResourceId": 17023732
+    },
+    {
+      "oldNativeResourceId": 246517,
+      "newNativeResourceId": 17023733
+    },
+    {
+      "oldNativeResourceId": 246518,
+      "newNativeResourceId": 17023734
+    },
+    {
+      "oldNativeResourceId": 246519,
+      "newNativeResourceId": 17023735
+    },
+    {
+      "oldNativeResourceId": 246520,
+      "newNativeResourceId": 17023736
+    },
+    {
+      "oldNativeResourceId": 246521,
+      "newNativeResourceId": 17023737
+    },
+    {
+      "oldNativeResourceId": 246522,
+      "newNativeResourceId": 17023738
+    },
+    {
+      "oldNativeResourceId": 246523,
+      "newNativeResourceId": 17023739
+    },
+    {
+      "oldNativeResourceId": 246524,
+      "newNativeResourceId": 17023740
+    },
+    {
+      "oldNativeResourceId": 246525,
+      "newNativeResourceId": 17023741
+    },
+    {
+      "oldNativeResourceId": 246526,
+      "newNativeResourceId": 17023742
+    },
+    {
+      "oldNativeResourceId": 246527,
+      "newNativeResourceId": 17023743
+    },
+    {
+      "oldNativeResourceId": 246528,
+      "newNativeResourceId": 17023744
+    },
+    {
+      "oldNativeResourceId": 246529,
+      "newNativeResourceId": 17023745
+    },
+    {
+      "oldNativeResourceId": 246530,
+      "newNativeResourceId": 17023746
+    },
+    {
+      "oldNativeResourceId": 246531,
+      "newNativeResourceId": 17023747
+    },
+    {
+      "oldNativeResourceId": 246532,
+      "newNativeResourceId": 17023748
+    },
+    {
+      "oldNativeResourceId": 246533,
+      "newNativeResourceId": 17023749
+    },
+    {
+      "oldNativeResourceId": 246534,
+      "newNativeResourceId": 17023750
+    },
+    {
+      "oldNativeResourceId": 246535,
+      "newNativeResourceId": 17023751
+    },
+    {
+      "oldNativeResourceId": 246536,
+      "newNativeResourceId": 17023752
+    },
+    {
+      "oldNativeResourceId": 246537,
+      "newNativeResourceId": 17023753
+    },
+    {
+      "oldNativeResourceId": 246538,
+      "newNativeResourceId": 17023754
+    },
+    {
+      "oldNativeResourceId": 246539,
+      "newNativeResourceId": 17023755
+    },
+    {
+      "oldNativeResourceId": 246540,
+      "newNativeResourceId": 17023756
+    },
+    {
+      "oldNativeResourceId": 246541,
+      "newNativeResourceId": 17023757
+    },
+    {
+      "oldNativeResourceId": 246542,
+      "newNativeResourceId": 17023758
+    },
+    {
+      "oldNativeResourceId": 246543,
+      "newNativeResourceId": 17023759
+    },
+    {
+      "oldNativeResourceId": 246544,
+      "newNativeResourceId": 17023760
+    },
+    {
+      "oldNativeResourceId": 246545,
+      "newNativeResourceId": 17023761
+    },
+    {
+      "oldNativeResourceId": 247299,
+      "newNativeResourceId": 17024515
+    },
+    {
+      "oldNativeResourceId": 247300,
+      "newNativeResourceId": 17024516
+    },
+    {
+      "oldNativeResourceId": 247302,
+      "newNativeResourceId": 17024518
+    },
+    {
+      "oldNativeResourceId": 247306,
+      "newNativeResourceId": 17024522
+    },
+    {
+      "oldNativeResourceId": 247326,
+      "newNativeResourceId": 17024542
+    },
+    {
+      "oldNativeResourceId": 247516,
+      "newNativeResourceId": 17024732
+    },
+    {
+      "oldNativeResourceId": 247548,
+      "newNativeResourceId": 17024764
+    },
+    {
+      "oldNativeResourceId": 247554,
+      "newNativeResourceId": 17024770
+    },
+    {
+      "oldNativeResourceId": 247615,
+      "newNativeResourceId": 17024831
+    },
+    {
+      "oldNativeResourceId": 247694,
+      "newNativeResourceId": 17024910
+    },
+    {
+      "oldNativeResourceId": 247702,
+      "newNativeResourceId": 17024918
+    },
+    {
+      "oldNativeResourceId": 247705,
+      "newNativeResourceId": 17024921
+    },
+    {
+      "oldNativeResourceId": 248156,
+      "newNativeResourceId": 17025372
+    },
+    {
+      "oldNativeResourceId": 248451,
+      "newNativeResourceId": 17025667
+    },
+    {
+      "oldNativeResourceId": 250892,
+      "newNativeResourceId": 17028108
+    },
+    {
+      "oldNativeResourceId": 254572,
+      "newNativeResourceId": 17031788
+    },
+    {
+      "oldNativeResourceId": 255356,
+      "newNativeResourceId": 17032572
+    },
+    {
+      "oldNativeResourceId": 255359,
+      "newNativeResourceId": 17032575
+    },
+    {
+      "oldNativeResourceId": 255478,
+      "newNativeResourceId": 17032694
+    },
+    {
+      "oldNativeResourceId": 255759,
+      "newNativeResourceId": 17032975
+    },
+    {
+      "oldNativeResourceId": 255911,
+      "newNativeResourceId": 17033127
+    },
+    {
+      "oldNativeResourceId": 256015,
+      "newNativeResourceId": 17033231
+    },
+    {
+      "oldNativeResourceId": 256155,
+      "newNativeResourceId": 17033371
+    },
+    {
+      "oldNativeResourceId": 256340,
+      "newNativeResourceId": 17033556
+    },
+    {
+      "oldNativeResourceId": 256433,
+      "newNativeResourceId": 17033649
+    },
+    {
+      "oldNativeResourceId": 256871,
+      "newNativeResourceId": 17034087
+    },
+    {
+      "oldNativeResourceId": 257418,
+      "newNativeResourceId": 17034634
+    },
+    {
+      "oldNativeResourceId": 258862,
+      "newNativeResourceId": 17036078
+    }
+  ],
+  "identityDiscrepancies": [
+    {
+      "candidateKey": "asset:250",
+      "resourceId": 259431,
+      "retained": [
+        "David",
+        "Beckham",
+        "",
+        "1975-05-02"
+      ],
+      "other": [
+        "David",
+        "Beckham",
+        "",
+        "1970-01-01"
+      ]
+    },
+    {
+      "candidateKey": "asset:190871",
+      "resourceId": 167963031,
+      "retained": [
+        "Neymar",
+        "da Silva Santos Jr.",
+        "Neymar Jr",
+        "1992-02-05"
+      ],
+      "other": [
+        "Neymar",
+        "da Silva Santos Júnior",
+        "Neymar Jr",
+        ""
+      ]
+    },
+    {
+      "candidateKey": "asset:216388",
+      "resourceId": 167988548,
+      "retained": [
+        "Allan",
+        "Saint-Maximin",
+        "",
+        "1997-03-12"
+      ],
+      "other": [
+        "Allan",
+        "Saint-Maximin",
+        "",
+        ""
+      ]
+    },
+    {
+      "candidateKey": "asset:224458",
+      "resourceId": 167996618,
+      "retained": [
+        "Diogo José",
+        "Teixeira da Silva",
+        "Diogo Jota",
+        "1996-12-04"
+      ],
+      "other": [
+        "Diogo José",
+        "Teixeira da Silva",
+        "Diogo Jota",
+        ""
+      ]
+    }
+  ],
+  "dimensionLabelDiscrepancies": [],
+  "duplicateProducts": [
+    {
+      "family": 4,
+      "nativeResourceId": 6301345,
+      "keptDefinition": 22865
+    },
+    {
+      "family": 4,
+      "nativeResourceId": 6300074,
+      "keptDefinition": 24244
+    },
+    {
+      "family": 4,
+      "nativeResourceId": 6301345,
+      "keptDefinition": 22865
+    }
+  ],
+  "excludedVenueRows": 74,
+  "finalRows": {
+    "catalog_sources": 6,
+    "item_families": 5,
+    "nations": 158,
+    "leagues": 45,
+    "teams": 683,
+    "footballers": 16057,
+    "card_types": 88,
+    "card_rarity_groups": 85,
+    "item_definitions": 24247,
+    "player_card_definitions": 22506,
+    "definition_extensions": 24203,
+    "manager_definitions": 311,
+    "consumable_definitions": 44,
+    "customisation_definitions": 1386
+  },
+  "finalPlayerOrder": 22506,
+  "identityCandidateGroups": 16057,
+  "fixedMappingNotes": [
+    "Kit native_category = 2 + max(0, native_kit_type), matching observed CustomisationService.GrantAllAsync factory caller.",
+    "Initial kit rows duplicate by native resource: first accepted kits.json product retained; no startup inventory copies/grants added."
+  ]
+}

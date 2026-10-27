@@ -1,0 +1,39 @@
+.access-page { display: grid; gap: 24px; min-width: 0; }
+.access-page > header { margin-bottom: 0; }
+.access-page section + section { margin-top: 0; }
+.access-page > section { margin-top: 0; }
+.access-page .facts { display: grid; grid-template-columns: repeat(auto-fit,minmax(200px,1fr)); gap: 12px 24px; }
+.access-page .facts > div { display: grid; grid-template-columns: minmax(100px,1fr) minmax(0,1.3fr); gap: 14px; margin: 0; }
+.access-page .facts dd, .access-page .mono { overflow-wrap: anywhere; min-width: 0; }
+.access-fields { display: grid; gap: 24px; margin: 0; padding: 0; border: 0; min-width: 0; }
+.access-main-fields { display: grid; grid-template-columns: minmax(0,2fr) minmax(150px,1fr) minmax(180px,1fr); grid-template-rows: auto 42px auto; column-gap: 20px; row-gap: 6px; align-items: start; }
+.access-main-fields > div, .access-add-role > div { grid-row: span 3; grid-template-rows: subgrid; }
+.access-main-fields input, .access-add-role :is(input,select,button) { height: 42px; min-height: 42px; }
+.access-role-fields { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 24px; }
+.access-toggle { display: flex; align-items: center; gap: 14px; padding: 18px; background: var(--night); border: 1px solid var(--line); border-radius: 12px; cursor: pointer; }
+.access-toggle input, .access-page .role-picker input { flex: none; width: 18px; height: 18px; margin: 0; }
+.access-toggle > span:first-of-type { flex: 1; }
+.access-toggle strong, .access-toggle small { display: block; }
+.access-toggle small { margin-top: 6px; color: var(--fog); line-height: 1.6; }
+.match-switch { display: flex; align-items: center; gap: 14px; padding: 18px; background: var(--night); border: 1px solid var(--line); border-radius: 12px; }
+.match-switch > span:first-child { flex: 1; min-width: 0; }
+.match-switch strong, .match-switch small { display: block; }
+.match-switch small { margin-top: 6px; color: var(--fog); line-height: 1.6; }
+.access-role-tools { display: flex; flex-wrap: wrap; align-items: center; gap: 14px; }
+.access-add-role { display: grid; grid-template-columns: minmax(180px,2fr) minmax(180px,1fr) auto; grid-template-rows: auto 42px auto; align-items: start; column-gap: 20px; row-gap: 6px; }
+.access-add-role > button { grid-column: 3; grid-row: 2; }
+.access-page .role-picker { max-height: 260px; gap: 6px; padding: 10px; }
+.access-page .role-picker label { display: flex; align-items: center; gap: 12px; padding: 10px; border-radius: 8px; cursor: pointer; }
+.access-page .role-picker label:hover { background: var(--tier); }
+.access-page .role-picker label:has(input:checked) { background: var(--tier); }
+.access-page .role-picker strong, .access-page .role-picker small { display: block; overflow-wrap: anywhere; }
+.access-page .role-picker small { font: 11px/1.6 var(--font-mono); color: var(--dim); margin-top: 4px; }
+.access-save { margin-top: 24px; }
+.access-page .access-player-test { margin-top: 28px; background: var(--night); }
+.access-test-controls { display: grid; grid-template-columns: minmax(180px,450px) auto; align-items: end; justify-content: start; gap: 16px; margin-bottom: 24px; }
+.access-test-controls input, .access-test-controls button { min-height: 42px; }
+.access-page input[type='text'], .access-page input[type='number'], .access-page input[inputmode='numeric'] { min-height: 42px; }
+.access-page .notice p:first-child { margin-top: 0; }
+.access-page .notice p:last-child { margin-bottom: 0; }
+@media(max-width:1000px) { .access-main-fields { grid-template-columns: repeat(2,minmax(0,1fr)); } .access-main-fields > :first-child { grid-column: 1/-1; } }
+@media(max-width:700px) { .access-main-fields, .access-role-fields, .access-test-controls, .access-add-role { grid-template-columns: minmax(0,1fr); } .access-main-fields, .access-add-role { grid-template-rows: none; row-gap: 20px; } .access-main-fields > div, .access-add-role > div { grid-row: auto; grid-template-rows: none; row-gap: 6px; } .access-add-role > button { grid-column: auto; grid-row: auto; } .access-toggle, .match-switch { flex-wrap: wrap; } }

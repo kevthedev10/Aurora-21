@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <!-- Compact redraw of the supplied centre diamond. Fine texture and side diamonds
+       are omitted because they cannot remain distinct at 32 pixels. -->
+  <defs>
+    <linearGradient id="rim" x1="0" y1="128" x2="256" y2="128" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7195ff"/>
+      <stop offset="1" stop-color="#eb73f9"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#rim)" d="M128 13 L243 128 L128 243 L13 128 Z"/>
+  <path fill="#10112b" d="M128 29 L227 128 L128 227 L29 128 Z"/>
+  <path fill="#ffffff" d="M129 64 L184 163 C149 147 116 147 74 163 L129 64 Z"/>
+  <path fill="#10112b" d="M129 102 L150 137 C136 133 122 135 107 139 L129 102 Z"/>
+</svg>

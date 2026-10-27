@@ -1,0 +1,1329 @@
+{
+  "game": "FIFA 21",
+  "mode": "FUT Draft",
+  "selection": {
+    "type": "random_bundle",
+    "weights_published": false,
+    "note": "One bundle is selected from the eligible win tier. The source does not publish EA's probabilities, so weight is null."
+  },
+  "online": {
+    "0": [
+      {
+        "id": "online_0_01",
+        "weight": null,
+        "rewards": [
+          {
+            "type": "pack",
+            "name": "Ultimate Loan Player Pack",
+            "quantity": 1
+          },
+          {
+            "type": "pack",
+            "name": "Gold Pack",
+            "quantity": 2
+          }
+        ]
+      },
+      {
+        "id": "online_0_02",
+        "weight": null,
+        "rewards": [
+          {
+            "type": "pack",
+            "name": "Silver Pack",
+            "quantity": 1
+          },
+          {
+            "type": "pack",
+            "name": "Gold Pack",
+            "quantity": 2
+          }
+        ]
+      },
+      {
+        "id": "online_0_03",
+        "weight": null,
+        "rewards": [
+          {
+            "type": "pack",
+            "name": "Silver Players Pack",
+            "quantity": 1
+          },
+          {
+            "type": "pack",
+            "name": "Gold Pack",
+            "quantity": 2
+          }
+        ]
+      },
+      {
+        "id": "online_0_04",
+        "weight": null,
+        "rewards": [
+          {
+            "type": "pack",
+            "name": "Gold Pack",
+            "quantity": 3
+          }
+        ]
+      },
+      {
+        "id": "online_0_05",
+        "weight": null,
+        "rewards": [
+          {
+            "type": "pack",
+            "name": "Draft Token Pack",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "id": "online_0_06",
+        "weight": null,
+        "rewards": [
+          {
+            "type": "pack",
+            "name": "Gold Pack",
+            "quantity": 2
+          },
+          {
+            "type": "pack",
+            "name": "Jumbo Premium Silver Pack",
+            "quantity": 1
+          }
+        ]
+      }
+    ],
+    "1": [
+      {
+        "id": "online_1_01",
+        "weight": null,
+        "rewards": [
+          {
+            "type": "pack",
+            "name": "Premium Silver Pack",
+            "quantity": 1
+          },
+          {
+            "type": "pack",
+            "name": "Gold Pack",
+            "quantity": 2
+          }
+        ]
+      },
+      {
+        "id": "online_1_02",
+        "weight": null,
+        "rewards": [
+          {
+            "type": "pack",
+            "name": "Silver Pack",
+            "quantity": 1
+          },
+          {
+            "type": "pack",
+            "name": "Gold Pack",
+            "quantity": 1
+          },
+          {
+            "type": "pack",
+            "name": "Premium Gold Pack",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "id": "online_1_03",
+        "weight": null,
+        "rewards": [
+          {
+            "type": "pack",
+            "name": "Gold Pack",
+            "quantity": 2
+          },
+          {
+            "type": "pack",
+            "name": "Jumbo Gold Pack",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "id": "online_1_04",
+        "weight": null,
+        "rewards": [
+          {
+            "type": "pack",
+            "name": "Gold Pack",
+            "quantity": 1
+          },
+          {
+            "type": "pack",
+            "name": "Draft Token Pack",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "id": "online_1_05",
+        "weight": null,
+        "rewards": [
+          {
+            "type": "pack",
+            "name": "Gold Pack",
+            "quantity": 1
+          },
+          {
+            "type": "pack",
+            "name": "Premium Gold Pack",
+            "quantity": 2
+          }
+        ]
+      },
+      {
+        "id": "online_1_06",
+        "weight": null,
+        "rewards": [
+          {
+            "type": "pack",
+            "name": "Premium Silver Pack",
+            "quantity": 1
+          },
+          {
+            "type": "pack",
+            "name": "Jumbo Premium Gold Pack",
+            "quantity": 2
+          }
+        ]
+      },
+      {
+        "id": "online_1_07",
+        "weight": null,
+        "rewards": [
+          {
+            "type": "pack",
+            "name": "Gold Pack",
+            "quantity": 2
+          },
+          {
+            "type": "pack",
+            "name": "Premium Gold Players Pack",
+            "quantity": 1
+          }
+        ]
+      }
+    ],
+    "2": [
+      {
+        "id": "online_2_01",
+        "weight": null,
+        "rewards": [
+          {
+            "type": "pack",
+            "name": "Gold Pack",
+            "quantity": 1
+          },
+          {
+            "type": "pack",
+            "name": "Jumbo Premium Gold Pack",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "id": "online_2_02",
+        "weight": null,
+        "rewards": [
+          {
+            "type": "pack",
+            "name": "Premium Gold Pack",
+            "quantity": 1
+          },
+          {
+            "type": "pack",
+            "name": "Jumbo Premium Gold Pack",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "id": "online_2_03",
+        "weight": null,
+        "rewards": [
+          {
+            "type": "pack",
+            "name": "Gold Pack",
+            "quantity": 2
+          },
+          {
+            "type": "pack",
+            "name": "Premium Gold Pack",
+            "quantity": 2
+          }
+        ]
+      },
+      {
+        "id": "online_2_04",
+        "weight": null,
+        "rewards": [
+          {
+            "type": "pack",
+            "name": "Gold Players Pack",
+            "quantity": 1
+          },
+          {
+            "type": "pack",
+            "name": "Jumbo Premium Gold Pack",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "id": "online_2_05",
+        "weight": null,
+        "rewards": [
+          {
+            "type": "pack",
+            "name": "Gold Pack",
+            "quantity": 1
+          },
+          {
+            "type": "pack",
+            "name": "Premium Gold Players Pack",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "id": "online_2_06",
+        "weight": null,
+        "rewards": [
+          {
+            "type": "pack",
+            "name": "Jumbo Premium Gold Pack",
+            "quantity": 1
+          },
+          {
+            "type": "pack",
+            "name": "Premium Gold Players Pack",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "id": "online_2_07",
+        "weight": null,
+        "rewards": [
+          {
+            "type": "pack",
+            "name": "Premium Gold Pack",
+            "quantity": 1
+          },
+          {
+            "type": "pack",
+            "name": "Rare Players Pack",
+            "quantity": 1
+          }
+        ]
+      }
+    ],
+    "3": [
+      {
+        "id": "online_3_01",
+        "weight": null,
+        "rewards": [
+          {
+            "type": "pack",
+            "name": "Premium Gold Pack",
+            "quantity": 3
+          }
+        ]
+      },
+      {
+        "id": "online_3_02",
+        "weight": null,
+        "rewards": [
+          {
+            "type": "pack",
+            "name": "Premium Gold Pack",
+            "quantity": 2
+          },
+          {
+            "type": "pack",
+            "name": "Jumbo Premium Gold Pack",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "id": "online_3_03",
+        "weight": null,
+        "rewards": [
+          {
+            "type": "pack",
+            "name": "Jumbo Premium Gold Pack",
+            "quantity": 2
+          }
+        ]
+      },
+      {
+        "id": "online_3_04",
+        "weight": null,
+        "rewards": [
+          {
+            "type": "pack",
+            "name": "Gold Pack",
+            "quantity": 1
+          },
+          {
+            "type": "pack",
+            "name": "Premium Gold Players Pack",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "id": "online_3_05",
+        "weight": null,
+        "rewards": [
+          {
+            "type": "pack",
+            "name": "Jumbo Premium Gold Pack",
+            "quantity": 1
+          },
+          {
+            "type": "pack",
+            "name": "Rare Gold Pack",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "id": "online_3_06",
+        "weight": null,
+        "rewards": [
+          {
+            "type": "pack",
+            "name": "Gold Pack",
+            "quantity": 1
+          },
+          {
+            "type": "pack",
+            "name": "Jumbo Premium Gold Pack",
+            "quantity": 1
+          },
+          {
+            "type": "pack",
+            "name": "Rare Gold Pack",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "id": "online_3_07",
+        "weight": null,
+        "rewards": [
+          {
+            "type": "pack",
+            "name": "Gold Pack",
+            "quantity": 1
+          },
+          {
+            "type": "pack",
+            "name": "Jumbo Premium Gold Pack",
+            "quantity": 1
+          },
+          {
+            "type": "pack",
+            "name": "Premium Gold Players Pack",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "id": "online_3_08",
+        "weight": null,
+        "rewards": [
+          {
+            "type": "pack",
+            "name": "Rare Players Pack",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "id": "online_3_09",
+        "weight": null,
+        "rewards": [
+          {
+            "type": "pack",
+            "name": "Gold Pack",
+            "quantity": 1
+          },
+          {
+            "type": "pack",
+            "name": "Premium Gold Players Pack",
+            "quantity": 1
+          },
+          {
+            "type": "coins",
+            "amount": 20000
+          }
+        ]
+      },
+      {
+        "id": "online_3_10",
+        "weight": null,
+        "rewards": [
+          {
+            "type": "pack",
+            "name": "Gold Players Pack",
+            "quantity": 1
+          },
+          {
+            "type": "pack",
+            "name": "Jumbo Premium Gold Pack",
+            "quantity": 1
+          },
+          {
+            "type": "pack",
+            "name": "Premium Gold Players Pack",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "id": "online_3_11",
+        "weight": null,
+        "rewards": [
+          {
+            "type": "pack",
+            "name": "Gold Players Pack",
+            "quantity": 1
+          },
+          {
+            "type": "pack",
+            "name": "Premium Gold Players Pack",
+            "quantity": 1
+          },
+          {
+            "type": "coins",
+            "amount": 20000
+          }
+        ]
+      },
+      {
+        "id": "online_3_12",
+        "weight": null,
+        "rewards": [
+          {
+            "type": "pack",
+            "name": "Gold Players Pack",
+            "quantity": 1
+          },
+          {
+            "type": "pack",
+            "name": "Premium Gold Players Pack",
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "4": [
+      {
+        "id": "online_4_01",
+        "weight": null,
+        "rewards": [
+          {
+            "type": "pack",
+            "name": "Gold Pack",
+            "quantity": 1
+          },
+          {
+            "type": "pack",
+            "name": "Rare Players Pack",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "id": "online_4_02",
+        "weight": null,
+        "rewards": [
+          {
+            "type": "pack",
+            "name": "Jumbo Premium Gold Pack",
+            "quantity": 2
+          },
+          {
+            "type": "pack",
+            "name": "Premium Gold Players Pack",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "id": "online_4_03",
+        "weight": null,
+        "rewards": [
+          {
+            "type": "pack",
+            "name": "Premium Gold Pack",
+            "quantity": 1
+          },
+          {
+            "type": "pack",
+            "name": "Rare Gold Pack",
+            "quantity": 2
+          }
+        ]
+      },
+      {
+        "id": "online_4_04",
+        "weight": null,
+        "rewards": [
+          {
+            "type": "pack",
+            "name": "Premium Gold Pack",
+            "quantity": 1
+          },
+          {
+            "type": "pack",
+            "name": "Rare Players Pack",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "id": "online_4_05",
+        "weight": null,
+        "rewards": [
+          {
+            "type": "pack",
+            "name": "Premium Gold Pack",
+            "quantity": 1
+          },
+          {
+            "type": "pack",
+            "name": "Rare Gold Pack",
+            "quantity": 1
+          },
+          {
+            "type": "coins",
+            "amount": 25000
+          }
+        ]
+      },
+      {
+        "id": "online_4_06",
+        "weight": null,
+        "rewards": [
+          {
+            "type": "pack",
+            "name": "Premium Gold Players Pack",
+            "quantity": 1
+          },
+          {
+            "type": "pack",
+            "name": "Mega Pack",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "id": "online_4_07",
+        "weight": null,
+        "rewards": [
+          {
+            "type": "pack",
+            "name": "Gold Pack",
+            "quantity": 2
+          },
+          {
+            "type": "pack",
+            "name": "Premium Gold Players Pack",
+            "quantity": 2
+          }
+        ]
+      },
+      {
+        "id": "online_4_08",
+        "weight": null,
+        "rewards": [
+          {
+            "type": "pack",
+            "name": "Jumbo Premium Gold Pack",
+            "quantity": 1
+          },
+          {
+            "type": "pack",
+            "name": "Rare Gold Pack",
+            "quantity": 1
+          },
+          {
+            "type": "coins",
+            "amount": 30000
+          }
+        ]
+      },
+      {
+        "id": "online_4_09",
+        "weight": null,
+        "rewards": [
+          {
+            "type": "pack",
+            "name": "Gold Pack",
+            "quantity": 1
+          },
+          {
+            "type": "pack",
+            "name": "Mega Pack",
+            "quantity": 2
+          }
+        ]
+      },
+      {
+        "id": "online_4_10",
+        "weight": null,
+        "rewards": [
+          {
+            "type": "pack",
+            "name": "Jumbo Premium Gold Pack",
+            "quantity": 1
+          },
+          {
+            "type": "pack",
+            "name": "Rare Gold Pack",
+            "quantity": 1
+          },
+          {
+            "type": "pack",
+            "name": "Mega Pack",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "id": "online_4_11",
+        "weight": null,
+        "rewards": [
+          {
+            "type": "pack",
+            "name": "Premium Gold Players Pack",
+            "quantity": 3
+          }
+        ]
+      },
+      {
+        "id": "online_4_12",
+        "weight": null,
+        "rewards": [
+          {
+            "type": "pack",
+            "name": "Premium Gold Pack",
+            "quantity": 1
+          },
+          {
+            "type": "pack",
+            "name": "Mega Pack",
+            "quantity": 2
+          }
+        ]
+      },
+      {
+        "id": "online_4_13",
+        "weight": null,
+        "rewards": [
+          {
+            "type": "pack",
+            "name": "Premium Gold Pack",
+            "quantity": 1
+          },
+          {
+            "type": "pack",
+            "name": "Premium Gold Players Pack",
+            "quantity": 1
+          },
+          {
+            "type": "coins",
+            "amount": 25000
+          }
+        ]
+      },
+      {
+        "id": "online_4_14",
+        "weight": null,
+        "rewards": [
+          {
+            "type": "pack",
+            "name": "Premium Gold Players Pack",
+            "quantity": 1
+          },
+          {
+            "type": "pack",
+            "name": "Rare Gold Pack",
+            "quantity": 1
+          },
+          {
+            "type": "pack",
+            "name": "Mega Pack",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "id": "online_4_15",
+        "weight": null,
+        "rewards": [
+          {
+            "type": "pack",
+            "name": "Jumbo Premium Gold Pack",
+            "quantity": 1
+          },
+          {
+            "type": "pack",
+            "name": "Mega Pack",
+            "quantity": 1
+          },
+          {
+            "type": "pack",
+            "name": "Rare Players Pack",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "id": "online_4_16",
+        "weight": null,
+        "rewards": [
+          {
+            "type": "pack",
+            "name": "Premium Gold Pack",
+            "quantity": 1
+          },
+          {
+            "type": "pack",
+            "name": "Rare Players Pack",
+            "quantity": 2
+          }
+        ]
+      },
+      {
+        "id": "online_4_17",
+        "weight": null,
+        "rewards": [
+          {
+            "type": "pack",
+            "name": "Jumbo Premium Gold Pack",
+            "quantity": 1
+          },
+          {
+            "type": "pack",
+            "name": "Rare Players Pack",
+            "quantity": 1
+          },
+          {
+            "type": "coins",
+            "amount": 45000
+          }
+        ]
+      },
+      {
+        "id": "online_4_18",
+        "weight": null,
+        "rewards": [
+          {
+            "type": "pack",
+            "name": "Jumbo Premium Gold Pack",
+            "quantity": 1
+          },
+          {
+            "type": "pack",
+            "name": "Jumbo Rare Players Pack",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "id": "online_4_19",
+        "weight": null,
+        "rewards": [
+          {
+            "type": "pack",
+            "name": "Mega Pack",
+            "quantity": 1
+          },
+          {
+            "type": "pack",
+            "name": "Jumbo Rare Players Pack",
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  "single_player": {
+    "0": [
+      {
+        "id": "single_0_01",
+        "weight": null,
+        "rewards": [
+          {
+            "type": "pack",
+            "name": "Gold Pack",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "id": "single_0_02",
+        "weight": null,
+        "rewards": [
+          {
+            "type": "pack",
+            "name": "Draft Token Pack",
+            "quantity": 1
+          }
+        ]
+      }
+    ],
+    "1": [
+      {
+        "id": "single_1_01",
+        "weight": null,
+        "rewards": [
+          {
+            "type": "pack",
+            "name": "Silver Pack",
+            "quantity": 1
+          },
+          {
+            "type": "pack",
+            "name": "Gold Pack",
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "2": [
+      {
+        "id": "single_2_01",
+        "weight": null,
+        "rewards": [
+          {
+            "type": "pack",
+            "name": "Jumbo Premium Gold Pack",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "id": "single_2_02",
+        "weight": null,
+        "rewards": [
+          {
+            "type": "pack",
+            "name": "Gold Pack",
+            "quantity": 3
+          }
+        ]
+      },
+      {
+        "id": "single_2_03",
+        "weight": null,
+        "rewards": [
+          {
+            "type": "pack",
+            "name": "Gold Pack",
+            "quantity": 2
+          },
+          {
+            "type": "pack",
+            "name": "Jumbo Premium Silver Pack",
+            "quantity": 1
+          }
+        ]
+      }
+    ],
+    "3": [
+      {
+        "id": "single_3_01",
+        "weight": null,
+        "rewards": [
+          {
+            "type": "pack",
+            "name": "Premium Silver Pack",
+            "quantity": 1
+          },
+          {
+            "type": "pack",
+            "name": "Gold Pack",
+            "quantity": 2
+          }
+        ]
+      },
+      {
+        "id": "single_3_02",
+        "weight": null,
+        "rewards": [
+          {
+            "type": "pack",
+            "name": "Gold Pack",
+            "quantity": 2
+          },
+          {
+            "type": "pack",
+            "name": "Premium Gold Pack",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "id": "single_3_03",
+        "weight": null,
+        "rewards": [
+          {
+            "type": "pack",
+            "name": "Premium Gold Pack",
+            "quantity": 1
+          },
+          {
+            "type": "pack",
+            "name": "Draft Token Pack",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "id": "single_3_04",
+        "weight": null,
+        "rewards": [
+          {
+            "type": "pack",
+            "name": "Premium Gold Pack",
+            "quantity": 3
+          }
+        ]
+      },
+      {
+        "id": "single_3_05",
+        "weight": null,
+        "rewards": [
+          {
+            "type": "pack",
+            "name": "Premium Gold Pack",
+            "quantity": 1
+          },
+          {
+            "type": "pack",
+            "name": "Jumbo Premium Gold Pack",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "id": "single_3_06",
+        "weight": null,
+        "rewards": [
+          {
+            "type": "pack",
+            "name": "Jumbo Premium Gold Pack",
+            "quantity": 1
+          },
+          {
+            "type": "pack",
+            "name": "Premium Gold Players Pack",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "id": "single_3_07",
+        "weight": null,
+        "rewards": [
+          {
+            "type": "pack",
+            "name": "Jumbo Premium Gold Pack",
+            "quantity": 1
+          },
+          {
+            "type": "pack",
+            "name": "Premium Gold Players Pack",
+            "quantity": 1
+          }
+        ]
+      }
+    ],
+    "4": [
+      {
+        "id": "single_4_01",
+        "weight": null,
+        "rewards": [
+          {
+            "type": "pack",
+            "name": "Gold Pack",
+            "quantity": 1
+          },
+          {
+            "type": "pack",
+            "name": "Premium Gold Pack",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "id": "single_4_02",
+        "weight": null,
+        "rewards": [
+          {
+            "type": "pack",
+            "name": "Premium Gold Pack",
+            "quantity": 1
+          },
+          {
+            "type": "pack",
+            "name": "Gold Players Pack",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "id": "single_4_03",
+        "weight": null,
+        "rewards": [
+          {
+            "type": "pack",
+            "name": "Premium Gold Pack",
+            "quantity": 1
+          },
+          {
+            "type": "pack",
+            "name": "Draft Token Pack",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "id": "single_4_04",
+        "weight": null,
+        "rewards": [
+          {
+            "type": "pack",
+            "name": "Premium Gold Pack",
+            "quantity": 1
+          },
+          {
+            "type": "pack",
+            "name": "Jumbo Premium Gold 26 Pack",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "id": "single_4_05",
+        "weight": null,
+        "rewards": [
+          {
+            "type": "pack",
+            "name": "Rare Gold Pack",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "id": "single_4_06",
+        "weight": null,
+        "rewards": [
+          {
+            "type": "pack",
+            "name": "Gold Players Pack",
+            "quantity": 1
+          },
+          {
+            "type": "pack",
+            "name": "Jumbo Premium Gold Pack",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "id": "single_4_07",
+        "weight": null,
+        "rewards": [
+          {
+            "type": "pack",
+            "name": "Jumbo Premium Gold Pack",
+            "quantity": 2
+          }
+        ]
+      },
+      {
+        "id": "single_4_08",
+        "weight": null,
+        "rewards": [
+          {
+            "type": "pack",
+            "name": "Jumbo Premium Gold Pack",
+            "quantity": 1
+          },
+          {
+            "type": "pack",
+            "name": "Draft Token Pack",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "id": "single_4_09",
+        "weight": null,
+        "rewards": [
+          {
+            "type": "pack",
+            "name": "Premium Gold Pack",
+            "quantity": 2
+          },
+          {
+            "type": "pack",
+            "name": "Jumbo Premium Gold Pack",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "id": "single_4_10",
+        "weight": null,
+        "rewards": [
+          {
+            "type": "pack",
+            "name": "Jumbo Premium Gold 26 Pack",
+            "quantity": 1
+          },
+          {
+            "type": "pack",
+            "name": "Draft Token Pack",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "id": "single_4_11",
+        "weight": null,
+        "rewards": [
+          {
+            "type": "pack",
+            "name": "Premium Gold Pack",
+            "quantity": 1
+          },
+          {
+            "type": "pack",
+            "name": "Premium Gold Players Pack",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "id": "single_4_12",
+        "weight": null,
+        "rewards": [
+          {
+            "type": "pack",
+            "name": "Mega Pack",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "id": "single_4_13",
+        "weight": null,
+        "rewards": [
+          {
+            "type": "pack",
+            "name": "Premium Gold Pack",
+            "quantity": 1
+          },
+          {
+            "type": "pack",
+            "name": "Jumbo Premium Gold 26 Pack",
+            "quantity": 2
+          }
+        ]
+      },
+      {
+        "id": "single_4_14",
+        "weight": null,
+        "rewards": [
+          {
+            "type": "pack",
+            "name": "Gold Players Pack",
+            "quantity": 1
+          },
+          {
+            "type": "pack",
+            "name": "Premium Gold Players Pack",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "id": "single_4_15",
+        "weight": null,
+        "rewards": [
+          {
+            "type": "pack",
+            "name": "Gold Players Pack",
+            "quantity": 1
+          },
+          {
+            "type": "pack",
+            "name": "Jumbo Premium Gold 26 Pack",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "id": "single_4_16",
+        "weight": null,
+        "rewards": [
+          {
+            "type": "pack",
+            "name": "Jumbo Premium Gold Pack",
+            "quantity": 1
+          },
+          {
+            "type": "pack",
+            "name": "Premium Gold Players Pack",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "id": "single_4_17",
+        "weight": null,
+        "rewards": [
+          {
+            "type": "pack",
+            "name": "Jumbo Premium Gold Pack",
+            "quantity": 1
+          },
+          {
+            "type": "pack",
+            "name": "Mega Pack",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "id": "single_4_18",
+        "weight": null,
+        "rewards": [
+          {
+            "type": "pack",
+            "name": "Rare Players Pack",
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  }
+}

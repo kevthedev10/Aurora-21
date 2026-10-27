@@ -1,0 +1,461 @@
+{
+  "formatVersion": 1,
+  "checkedAt": "2026-09-17T00:18:01.213Z",
+  "scope": "standalone fresh-schema artifacts; no runtime integration or real club changes",
+  "checks": [
+    {
+      "id": "F01",
+      "status": "PASS",
+      "elapsedMs": 245,
+      "packetHashes": 16
+    },
+    {
+      "id": "F02",
+      "status": "PASS",
+      "elapsedMs": 2231,
+      "tuples": 89824
+    },
+    {
+      "id": "F03",
+      "status": "PASS",
+      "elapsedMs": 5844,
+      "regenerations": 2,
+      "foreignCwd": true
+    },
+    {
+      "id": "F04",
+      "status": "PASS",
+      "elapsedMs": 119,
+      "sqlHashes": 13
+    },
+    {
+      "id": "B01",
+      "status": "PASS",
+      "elapsedMs": 14771,
+      "tableCounts": {
+        "catalog_sources": 6,
+        "footballers": 16057,
+        "nations": 158,
+        "leagues": 45,
+        "teams": 683,
+        "item_families": 5,
+        "item_definitions": 24247,
+        "card_types": 88,
+        "card_designs": 0,
+        "card_type_designs": 0,
+        "promos": 0,
+        "promo_cards": 0,
+        "card_rarity_groups": 85,
+        "player_card_definitions": 22506,
+        "manager_definitions": 311,
+        "consumable_definitions": 44,
+        "customisation_definitions": 1386,
+        "definition_extensions": 24203,
+        "clubs": 0,
+        "items": 0,
+        "player_items": 0,
+        "player_stat_values": 0,
+        "player_attribute_overrides": 0,
+        "manager_items": 0,
+        "consumable_items": 0,
+        "customisation_items": 0,
+        "player_pick_items": 0,
+        "item_extensions": 0,
+        "squads": 0,
+        "squad_players": 0,
+        "squad_managers": 0,
+        "squad_roles": 0,
+        "squad_tactics": 0,
+        "squad_tactic_settings": 0,
+        "squad_tactic_instructions": 0,
+        "club_slot_bindings": 0,
+        "squad_extensions": 0,
+        "market_listings": 0,
+        "market_item_snapshots": 0,
+        "market_player_snapshots": 0,
+        "market_player_stat_values": 0,
+        "market_player_attribute_overrides": 0,
+        "market_watch": 0,
+        "unopened_packs": 0,
+        "match_settlements": 0,
+        "player_pick_choices": 0,
+        "draft_runs": 0,
+        "draft_picks": 0,
+        "draft_choices": 0,
+        "draft_formation_choices": 0,
+        "draft_seen_footballers": 0,
+        "objectives": 0,
+        "objective_counters": 0,
+        "objective_claims": 0,
+        "rivals_progress": 0,
+        "champions_progress": 0,
+        "onboarding": 0,
+        "onboarding_kit_choices": 0,
+        "onboarding_stale_loans": 0,
+        "sbc_completed": 0,
+        "sbc_squad_counts": 0,
+        "client_data": 0,
+        "club_flags": 0,
+        "club_imports": 0,
+        "legacy_kv": 0,
+        "schema_migrations": 0
+      },
+      "structure": {
+        "c": 18,
+        "f": 106,
+        "n": 333,
+        "p": 67,
+        "t": 27,
+        "u": 44
+      }
+    },
+    {
+      "id": "B02",
+      "status": "PASS",
+      "elapsedMs": 390,
+      "unchangedSequences": true
+    },
+    {
+      "id": "B03",
+      "status": "PASS",
+      "elapsedMs": 128,
+      "errorObserved": "Applied package hash mismatch",
+      "sqlstate": null
+    },
+    {
+      "id": "B04",
+      "status": "PASS",
+      "elapsedMs": 2530,
+      "errorObserved": "NOTICE:  42P06: schema \"ultimateteam\" already exists, skipping\nLOCATION:  CreateSchemaCommand, schemacmds.c:132\nNOTICE:  42P07: relation \"setup_artifact_versions\" already exists, skipping\nLOCATION:  transformCreateStmt, parse_utilcmd.c:208\nERROR:  22012: division by zero\nLOCATION:  int4div, int.c:870",
+      "sqlstate": "22012"
+    },
+    {
+      "id": "B05",
+      "status": "PASS",
+      "elapsedMs": 4035
+    },
+    {
+      "id": "B06",
+      "status": "PASS",
+      "elapsedMs": 5703,
+      "observedLockWait": true
+    },
+    {
+      "id": "B07",
+      "status": "PASS",
+      "elapsedMs": 248,
+      "errorObserved": "Populated namespace without expected ledger",
+      "sqlstate": null
+    },
+    {
+      "id": "B08",
+      "status": "PASS",
+      "elapsedMs": 111,
+      "generatedId": 16058,
+      "seededMax": 16057
+    },
+    {
+      "id": "D01",
+      "status": "PASS",
+      "elapsedMs": 145,
+      "club_id": 900000001,
+      "definition_id": 351,
+      "native_item_id": 1
+    },
+    {
+      "id": "D02",
+      "status": "PASS",
+      "elapsedMs": 132,
+      "sqlstate": "23514"
+    },
+    {
+      "id": "D03",
+      "status": "PASS",
+      "elapsedMs": 118,
+      "sqlstate": "23514"
+    },
+    {
+      "id": "D04",
+      "status": "PASS",
+      "elapsedMs": 125,
+      "sqlstate": "23514"
+    },
+    {
+      "id": "D05",
+      "status": "PASS",
+      "elapsedMs": 132,
+      "committed": true
+    },
+    {
+      "id": "D06",
+      "status": "PASS",
+      "elapsedMs": 122,
+      "sqlstate": "23514"
+    },
+    {
+      "id": "D07",
+      "status": "PASS",
+      "elapsedMs": 128,
+      "sqlstate": "23505"
+    },
+    {
+      "id": "D08",
+      "status": "PASS",
+      "elapsedMs": 130,
+      "committed": true
+    },
+    {
+      "id": "D09",
+      "status": "PASS",
+      "elapsedMs": 119,
+      "sqlstate": "23505"
+    },
+    {
+      "id": "D10",
+      "status": "PASS",
+      "elapsedMs": 126,
+      "sqlstate": "23505"
+    },
+    {
+      "id": "D11",
+      "status": "PASS",
+      "elapsedMs": 134,
+      "sqlstate": "23514"
+    },
+    {
+      "id": "D12",
+      "status": "PASS",
+      "elapsedMs": 116,
+      "sqlstate": "23514"
+    },
+    {
+      "id": "D13",
+      "status": "PASS",
+      "elapsedMs": 122,
+      "sqlstate": "23514"
+    },
+    {
+      "id": "D14",
+      "status": "PASS",
+      "elapsedMs": 129,
+      "sqlstate": "23514"
+    },
+    {
+      "id": "D15",
+      "status": "PASS",
+      "elapsedMs": 118,
+      "sqlstate": "23514"
+    },
+    {
+      "id": "D16",
+      "status": "PASS",
+      "elapsedMs": 125,
+      "sqlstate": "23514"
+    },
+    {
+      "id": "D17",
+      "status": "PASS",
+      "elapsedMs": 112,
+      "sqlstate": "23514"
+    },
+    {
+      "id": "D18",
+      "status": "PASS",
+      "elapsedMs": 117,
+      "sqlstate": "23505"
+    },
+    {
+      "id": "D19",
+      "status": "PASS",
+      "elapsedMs": 116,
+      "sqlstate": "23514"
+    },
+    {
+      "id": "D20",
+      "status": "PASS",
+      "elapsedMs": 136,
+      "committed": true
+    },
+    {
+      "id": "D21",
+      "status": "PASS",
+      "elapsedMs": 115,
+      "sqlstate": "23514"
+    },
+    {
+      "id": "D22",
+      "status": "PASS",
+      "elapsedMs": 138,
+      "sqlstate": "23514"
+    },
+    {
+      "id": "D23",
+      "status": "PASS",
+      "elapsedMs": 123,
+      "sqlstate": "23514"
+    },
+    {
+      "id": "D24",
+      "status": "PASS",
+      "elapsedMs": 124,
+      "committed": true
+    },
+    {
+      "id": "D25",
+      "status": "PASS",
+      "elapsedMs": 129,
+      "sqlstate": "23514"
+    },
+    {
+      "id": "D26",
+      "status": "PASS",
+      "elapsedMs": 123,
+      "sqlstate": "23514"
+    },
+    {
+      "id": "D27",
+      "status": "PASS",
+      "elapsedMs": 124,
+      "sqlstate": "23514"
+    },
+    {
+      "id": "D28",
+      "status": "PASS",
+      "elapsedMs": 109,
+      "sqlstate": "23514"
+    },
+    {
+      "id": "D29",
+      "status": "PASS",
+      "elapsedMs": 242,
+      "committed": true
+    },
+    {
+      "id": "D30",
+      "status": "PASS",
+      "elapsedMs": 108,
+      "sqlstate": "23514"
+    },
+    {
+      "id": "D31",
+      "status": "PASS",
+      "elapsedMs": 121,
+      "sqlstate": "23514"
+    },
+    {
+      "id": "D32",
+      "status": "PASS",
+      "elapsedMs": 118,
+      "sqlstate": "23503"
+    },
+    {
+      "id": "D33",
+      "status": "PASS",
+      "elapsedMs": 108,
+      "sqlstate": "23505"
+    },
+    {
+      "id": "D34",
+      "status": "PASS",
+      "elapsedMs": 122,
+      "committed": true
+    },
+    {
+      "id": "R01",
+      "status": "PASS",
+      "elapsedMs": 118,
+      "sqlstate": "23514"
+    },
+    {
+      "id": "R02",
+      "status": "PASS",
+      "elapsedMs": 105,
+      "sqlstate": "23514"
+    },
+    {
+      "id": "R03",
+      "status": "PASS",
+      "elapsedMs": 109,
+      "sqlstate": "23514"
+    },
+    {
+      "id": "R04",
+      "status": "PASS",
+      "elapsedMs": 246,
+      "committed": true
+    },
+    {
+      "id": "R05",
+      "status": "PASS",
+      "elapsedMs": 100,
+      "sqlstate": "23514"
+    },
+    {
+      "id": "C01",
+      "status": "PASS",
+      "elapsedMs": 172,
+      "independentSessions": true,
+      "outcomes": [
+        {
+          "committed": true
+        },
+        {
+          "committed": false,
+          "sqlstate": "23505",
+          "error": "ERROR:  23505: duplicate key value violates unique constraint \"lfv4_uq_squad_players_2\"\nDETAIL:  Key (squad_id, footballer_id)=(900000101, 317) already exists.\nSCHEMA NAME:  ultimateteam\nTABLE NAME:  squad_players\nCONSTRAINT NAME:  lfv4_uq_squad_players_2\nLOCATION:  _bt_check_unique, nbtinsert.c:666"
+        }
+      ]
+    },
+    {
+      "id": "C02",
+      "status": "PASS",
+      "elapsedMs": 267,
+      "independentSessions": true,
+      "outcomes": [
+        {
+          "committed": false,
+          "sqlstate": "23503",
+          "error": "ERROR:  23503: insert or update on table \"squad_players\" violates foreign key constraint \"lfv4_fk_squad_players_item_id\"\nDETAIL:  Key (item_id)=(900001004) is not present in table \"player_items\".\nSCHEMA NAME:  ultimateteam\nTABLE NAME:  squad_players\nCONSTRAINT NAME:  lfv4_fk_squad_players_item_id\nLOCATION:  ri_ReportViolation, ri_triggers.c:2772"
+        },
+        {
+          "committed": true
+        }
+      ]
+    },
+    {
+      "id": "C03",
+      "status": "PASS",
+      "elapsedMs": 267,
+      "independentSessions": true,
+      "outcomes": [
+        {
+          "committed": true
+        },
+        {
+          "committed": false,
+          "sqlstate": "23514",
+          "error": "ERROR:  23514: ultimateteam invariant violated: active market listing 900010003 has no matching owned seller item\nCONTEXT:  PL/pgSQL function ultimateteam.lfv4_err(text) line 3 at RAISE\nSQL statement \"SELECT ultimateteam.lfv4_err('active market listing ' || v_row.trade_id || ' has no matching owned seller item')\"\nPL/pgSQL function lfv4_r8_listing() line 18 at PERFORM\nLOCATION:  exec_stmt_raise, pl_exec.c:3909"
+        }
+      ]
+    }
+  ],
+  "database": {
+    "status": "completed",
+    "imageId": "sha256:4ef4dbc939d61acea57712655ddb4b4ab27419c913f94cca0cd57cb3ea3c2280",
+    "serverVersionNum": 180006,
+    "ownedContainerRemoved": true
+  },
+  "outsideScope": [
+    "C# runtime integration",
+    "existing-club migration",
+    "native FIFA identity verification",
+    "wire/API parity",
+    "live gameplay",
+    "performance tuning"
+  ],
+  "summary": {
+    "pass": 54,
+    "fail": 0
+  },
+  "status": "PASS"
+}

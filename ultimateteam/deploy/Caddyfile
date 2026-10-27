@@ -1,0 +1,15 @@
+# The public HTTPS front of Aurora 21's launcher API (compose service "caddy", host network), with an automatic
+# Let's Encrypt certificate for LAUNCHER_DOMAIN. Only the launcher routes are forwarded; the operator panel
+# (127.0.0.1:18448) and every game port stay unpublished here.
+# 21.onlyonemzy.com and 21.aurcdn.com are the backup names for players whose ISP blocks LAUNCHER_DOMAIN (Virgin):
+# a deploy that ships this file without them cuts those players off (10-03).
+{$LAUNCHER_DOMAIN}, 21.onlyonemzy.com, 21.aurcdn.com {
+	encode gzip
+	@launcher path /client/* /api/v1/launch/*
+	handle @launcher {
+		reverse_proxy 127.0.0.1:18447
+	}
+	handle {
+		respond 404
+	}
+}

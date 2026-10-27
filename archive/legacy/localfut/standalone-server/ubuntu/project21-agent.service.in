@@ -1,0 +1,21 @@
+[Unit]
+Description=Project 21 control-plane host agent
+After=network-online.target wg-quick@wg0.service project21-gateway.service
+Wants=network-online.target wg-quick@wg0.service
+
+[Service]
+Type=simple
+User=project21
+Group=project21
+WorkingDirectory=@ROOT@
+Environment=PYTHONUNBUFFERED=1
+ExecStart="@ROOT@/.venv/bin/python" "@ROOT@/runtime-source/host_control_agent.py"
+Restart=on-failure
+RestartSec=5
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=read-only
+ReadWritePaths="@ROOT@/state" "@ROOT@/config" "/var/lib/project21-wireguard"
+
+[Install]
+WantedBy=multi-user.target

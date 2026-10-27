@@ -1,0 +1,98 @@
+[
+  {
+    "name": "data/ui/external/ion_fut/imgAssets/store/icon/icon_fifaPoints_lg.dds",
+    "member": null,
+    "sourceAssetSha256": "5f9f6ea0a405669d298397ee08661e09efe4c4aeb216905495ed4d25dc383f7c",
+    "sourceBitmapSha256": "5f9f6ea0a405669d298397ee08661e09efe4c4aeb216905495ed4d25dc383f7c",
+    "replacementFile": "store-large.dds",
+    "replacementSha256": "796adb6886bcd9d0873a18bb7daee6885705a2974b8b9bb642728b507517cd5e"
+  },
+  {
+    "name": "data/ui/external/ion_fut/imgAssets/store/icon/icon_fifaPoints_sm.dds",
+    "member": null,
+    "sourceAssetSha256": "ecb2c4ff18228e315a4a0b5e97ad6765c9cec5011b8844a2c8b45feba9313f23",
+    "sourceBitmapSha256": "ecb2c4ff18228e315a4a0b5e97ad6765c9cec5011b8844a2c8b45feba9313f23",
+    "replacementFile": "store-small.dds",
+    "replacementSha256": "56c4070d318f193e3191f561652bacd8355acdc245fe42325ba15690650e115c"
+  },
+  {
+    "name": "data/ui/external/ion_fut/components/PlayerIdentity.big",
+    "member": "80",
+    "sourceAssetSha256": "6622215286a281346419e790296dba47e5f05594fb0d58256a7fd44bfbaf657c",
+    "sourceBitmapSha256": "d5bd9c77d4e32d7b0b153da81ec690e5b5642e1c35523d61708fb0654cb3c35d",
+    "replacementFile": "header.dds",
+    "replacementSha256": "095495456adccad30a227c6146d6bd1e017da1c011d85b87b7ff5f1f65321a01"
+  },
+  {
+    "name": "data/ui/external/ion_fut/screens/futPackPreviewScreen.big",
+    "member": "33",
+    "sourceAssetSha256": "c7437d09610da84e52d6666cfb9c64819d00d1a78380c11d0e4bd1e1610da313",
+    "sourceBitmapSha256": "8cdd3bc5de1311f9ccaa5b5713b56ace293109486ffc62570f8c8cb623ce4c00",
+    "replacementFile": "pack-preview.dds",
+    "replacementSha256": "a93f8f88a8f13424da9f909708fc0987c2570197a0ed6ddd4977b22d694867c6"
+  },
+  {
+    "name": "data/ui/external/ion_fut/components/FUTControls.big",
+    "member": "114",
+    "sourceAssetSha256": "21f2ce85bfc0fe1167fa7dcf134dfc16bfdd70225de9b19e0e716eeb5ce3a706",
+    "sourceBitmapSha256": "6e534336bb08119876ade6479b002dbfa9347cd1a8ee5120ef8986be0907502f",
+    "replacementFile": "purchase-large.dds",
+    "replacementSha256": "56633e5845773c22f560c8b8e58a6e497fa25e0a361eaf93bdd3a145b838cdc6"
+  },
+  {
+    "name": "data/ui/external/ion_fut/components/FUTControls.big",
+    "member": "116",
+    "sourceAssetSha256": "21f2ce85bfc0fe1167fa7dcf134dfc16bfdd70225de9b19e0e716eeb5ce3a706",
+    "sourceBitmapSha256": "9aa385666a0e612224530c6cbf50f883722d7cb56449d4ab550eeaae380c5797",
+    "replacementFile": "purchase-glow.dds",
+    "replacementSha256": "81f27e7f77d1143a7a725824abb4166f1c1c6973d88e396ed261f73768a935c2"
+  },
+  {
+    "name": "data/ui/external/ion_fut/imgAssets/GameHub/GameHub_DraftPoints.dds",
+    "member": null,
+    "sourceAssetSha256": "4451c96acec47d51457e470d2c42a891fedebb662bf902d00d8e68cb2ac8b1f5",
+    "sourceBitmapSha256": "4451c96acec47d51457e470d2c42a891fedebb662bf902d00d8e68cb2ac8b1f5",
+    "replacementFile": "draft-tile.dds",
+    "replacementSha256": "0995325a2f27c42774ea900754e869c446b0c620855b644e25ed8f460b6d8160"
+  },
+  {
+    "name": "data/ui/external/ion_fut/imgAssets/liveMessage/liveMessage_5.dds",
+    "member": null,
+    "sourceAssetSha256": "d1372fdb5901a9414aa421685eb93203e2b155d7fa3a32abc6e9a1b2148a2521",
+    "sourceBitmapSha256": "d1372fdb5901a9414aa421685eb93203e2b155d7fa3a32abc6e9a1b2148a2521",
+    "replacementFile": "live-message.dds",
+    "replacementSha256": "8140779c0fda3d111742766a91a2af3886de3a668317baf9460661d08f2a058c"
+  },
+  {
+    "name": "data/ui/external/ion_fut/imgAssets/pack/background/background_99000.dds",
+    "member": null,
+    "sourceAssetSha256": "4b156d50f8a279d4c7b36a62da784604a60630af86a3637d2af0762284232870",
+    "sourceBitmapSha256": "4b156d50f8a279d4c7b36a62da784604a60630af86a3637d2af0762284232870",
+    "replacementFile": "points-product-single.dds",
+    "replacementSha256": "9d69fcabe7e4f811525659b1c8401f8a37c696e82b6f3cc1870446780a0ebe4e"
+  },
+  {
+    "name": "data/ui/external/ion_fut/imgAssets/pack/background/background_99001.dds",
+    "member": null,
+    "sourceAssetSha256": "042a0efd137f54fa363efb6c876a7e64af2795c147e3158d6389498e2e4b5823",
+    "sourceBitmapSha256": "042a0efd137f54fa363efb6c876a7e64af2795c147e3158d6389498e2e4b5823",
+    "replacementFile": "points-product-double.dds",
+    "replacementSha256": "1196409ddb5e8319d6766305c641a61fea8e168746f02c8f761618887a9fcf4b"
+  },
+  {
+    "name": "data/ui/external/ion_fut/imgAssets/pack/background/background_99002.dds",
+    "member": null,
+    "sourceAssetSha256": "6a97c94d5e5a2ec027e83e220e0fa1a070b1c2683a580aa529a19d7024778883",
+    "sourceBitmapSha256": "6a97c94d5e5a2ec027e83e220e0fa1a070b1c2683a580aa529a19d7024778883",
+    "replacementFile": "points-product-triple.dds",
+    "replacementSha256": "48be5abab4c024806bcdbf6e4fc08e86b9d8fc289489d85ac5d1fb4b83d014b5"
+  },
+  {
+    "name": "data/ui/external/ion_fut/artAssets/ChalkTutorials/tutorial16.big",
+    "member": "13",
+    "sourceAssetSha256": "6b255612f41dbcee39eff2ca0fa502fb97f4e251baa8412117f76c311c8fcfd3",
+    "sourceBitmapSha256": "5c922ff7011d3a2a7731604b630a5c1ffc05af29d8617cc3070c21eb920a69c2",
+    "replacementFile": "tutorial.dds",
+    "replacementSha256": "416922e64321a1a19a573eb39769bd8d9f595a8b8d2c192ed5532d71c1786bdc"
+  }
+]

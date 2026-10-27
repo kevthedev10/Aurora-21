@@ -1,0 +1,20 @@
+{
+  "name": "project21-control-panel",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "catalog:build": "node scripts/build-card-catalog.mjs",
+    "check": "tsc --noEmit",
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy --minify",
+    "db:local": "wrangler d1 migrations apply project21-control --local",
+    "db:remote": "wrangler d1 migrations apply project21-control --remote",
+    "types": "wrangler types"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "latest",
+    "typescript": "latest",
+    "wrangler": "latest"
+  }
+}

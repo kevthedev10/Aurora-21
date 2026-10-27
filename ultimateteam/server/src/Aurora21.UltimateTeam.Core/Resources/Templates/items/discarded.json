@@ -1,0 +1,8 @@
+{
+  "totalCredits": "{{credits}}",
+  "credits": "{{credits}}",
+  "items": "{{items}}",
+  "currencies": [
+    { "name": "coins", "funds": "{{credits}}", "finalFunds": "{{credits}}" }
+  ]
+}

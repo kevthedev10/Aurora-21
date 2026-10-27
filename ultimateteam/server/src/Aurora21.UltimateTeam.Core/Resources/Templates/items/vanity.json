@@ -1,0 +1,7 @@
+{
+  "id": "{{id}}", "itemId": "{{id}}", "resourceId": "{{resourceId}}", "carddbid": "{{resourceId}}", "assetId": "{{asset}}",
+  "itemType": "vanity", "cardsubtypeid": "{{subtype}}", "cardSubTypeId": "{{subtype}}", "itemState": "{{state}}",
+  "untradeable": true, "owners": 1, "discardValue": 0, "lastSalePrice": 0,
+  "rating": "{{rating}}", "rareflag": "{{rareflag}}", "value": "{{rating}}", "category": 0, "teamid": 0,
+  "stackCount": 1, "untradeableCount": 1, "pile": "club", "timestamp": "{{timestamp}}"
+}

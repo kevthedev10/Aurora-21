@@ -1,0 +1,96 @@
+{
+  "_comment": "The shared transfer market: listing price bounds, bid steps, AI seller listings and listing limits. Every player sees the same market.",
+  "maintenanceIntervalSeconds": 30,
+
+  "_priceBoundsComment": "A card's listing price range (PLAN 4.1). The maximum is the first band whose fromRating the card reaches, else defaultMaximum; special cards (rareflag above 1) have specialMinimum and a maximum of at least specialMaximumFloor, never above specialMaximumCap.",
+  "priceBounds": {
+    "minimum": 150,
+    "specialMinimum": 2500,
+    "maximumByRating": [
+      { "fromRating": 90, "maximum": 3000000 },
+      { "fromRating": 86, "maximum": 750000 },
+      { "fromRating": 82, "maximum": 75000 },
+      { "fromRating": 75, "maximum": 25000 }
+    ],
+    "defaultMaximum": 10000,
+    "specialMaximumFloor": 250000,
+    "specialMaximumCap": 2000000
+  },
+
+  "_sellerTaxComment": "The transfer tax (PLAN 4.1): the seller of a sale receives the price less sellerTaxPercent (the tax rounded up). The tax is deleted: the economy's main coin sink. AI sellers receive nothing.",
+  "sellerTaxPercent": 5,
+
+  "_bidIncrementsComment": "The smallest raise over the current bid: the step of the first band the bid is below, otherwise defaultBidIncrement.",
+  "bidIncrements": [
+    { "below": 1000, "step": 50 },
+    { "below": 10000, "step": 100 },
+    { "below": 50000, "step": 250 },
+    { "below": 100000, "step": 500 }
+  ],
+  "defaultBidIncrement": 1000,
+
+  "_fairValueComment": "An AI listing's reference price (PLAN 4.1; 75-80 raised to 1,100 on 2026-09-29 so the AI's lowest start, 0.72 x 0.9 x 1,100 = 713, stays above the 360/700 gold quick sell): byRating is a monotonic table for base cards, each value from its fromRating up to the next entry's (bands, the older formula, apply only when byRating is empty). Specials multiply by specialMultiplier + min(rareflag, 100) / specialRareflagDivisor. A stable per-card jitter of jitterMinimum + (hash % jitterSteps) / 100 is applied, then the price is clamped to the card's bounds.",
+  "fairValue": {
+    "byRating": [
+      { "fromRating": 0, "value": 150 },
+      { "fromRating": 75, "value": 1100 },
+      { "fromRating": 81, "value": 1300 },
+      { "fromRating": 82, "value": 2200 },
+      { "fromRating": 83, "value": 3500 },
+      { "fromRating": 84, "value": 6500 },
+      { "fromRating": 85, "value": 11000 },
+      { "fromRating": 86, "value": 18000 },
+      { "fromRating": 87, "value": 28000 },
+      { "fromRating": 88, "value": 42000 },
+      { "fromRating": 89, "value": 65000 },
+      { "fromRating": 90, "value": 100000 },
+      { "fromRating": 91, "value": 150000 },
+      { "fromRating": 92, "value": 220000 },
+      { "fromRating": 93, "value": 320000 }
+    ],
+    "specialMultiplier": 1.35,
+    "specialRareflagDivisor": 180,
+    "jitterMinimum": 0.90,
+    "jitterSteps": 21
+  },
+
+  "_aiListingsComment": "The AI Market Maker is disabled by default (target 0). When explicitly enabled, the maintenance job keeps up to target active AI listings (ULTIMATETEAM21_MARKET_TARGET overrides it), adding at most maxPerTopUp per pass. Start and Buy Now prices are drawn around the fair value; durations are picked from durationsSeconds. It lists only tradeable base cards of the rareflags named: never a special, a competition base card (47/48/52/53, owner decision D2), or a grant-only, Pro, custom or reward-only card. No card is rated above the ceiling of maxRatingSchedule: the latest entry whose from has passed, else the first (owner decision D7: 84 in the test week, 83 from public launch).",
+  "aiListings": {
+    "target": 0,
+    "maxTarget": 5000,
+    "maxPerTopUp": 250,
+    "startingBidFactor": { "minimum": 0.72, "maximum": 0.90 },
+    "buyNowFactor": { "minimum": 1.05, "maximum": 1.35 },
+    "durationsSeconds": [1800, 3600, 7200, 21600],
+    "sellerNamePrefix": "FUTUser",
+    "sellerNumber": { "minimum": 1000, "maximum": 9999 },
+    "previewItemIdBase": 800000000,
+    "previewItemIdSpan": 99999999,
+    "rareflags": [0, 1],
+    "maxRatingSchedule": [
+      { "from": "2026-01-01T00:00:00Z", "maxRating": 84 },
+      { "from": "2026-10-14T00:00:00Z", "maxRating": 83 }
+    ]
+  },
+
+  "_listingsComment": "Player listing durations are clamped to these bounds; searches and watchlists page with these defaults and limits. durations are FUT's listing durations (1, 3, 6 and 12 hours, 1 and 3 days): Re-list All gives a listing from before migration 057, which stored no duration, the longest that fits its times. bidExtensionSeconds: a bid with less time left than this puts the clock back to it, like retail FUT.",
+  "listings": {
+    "defaultDurationSeconds": 3600,
+    "minimumDurationSeconds": 60,
+    "maximumDurationSeconds": 259200,
+    "durations": [3600, 10800, 21600, 43200, 86400, 259200],
+    "maxAuctionsAllowed": 100,
+    "bidExtensionSeconds": 30,
+    "sellerEstablishedDaysBefore": 30,
+    "sellerPublicIdBase": 100000,
+    "sellerPublicIdSpan": 899999999,
+    "defaultSellerName": "Aurora21 Player",
+    "maxSellerNameLength": 64,
+    "searchPageSize": 16,
+    "maxSearchPageSize": 50,
+    "slowSearchMilliseconds": 100,
+    "activeCountCacheMilliseconds": 5000,
+    "watchlistPageSize": 50,
+    "maxWatchlistPageSize": 100
+  }
+}

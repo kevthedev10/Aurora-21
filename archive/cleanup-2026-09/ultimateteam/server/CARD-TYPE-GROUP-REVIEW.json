@@ -1,0 +1,1207 @@
+{
+  "status": "classified-local-policy",
+  "source": "ultimateteam/server/database-handoff/normalized-seeds/012-footballers-types-designs.json",
+  "sourceSha256": "993f209cabfe2e6ca33b2612d6348f4d9884b8beec1fbe457c05cee7f9d546b4",
+  "notes": [
+    "User confirmed Icon Swaps are non-rare and delegated remaining classification.",
+    "Rare group 4 is explicit; native IDs are unchanged.",
+    "Common 0, UCL common 47, base Sudamericana 52 and bronze token categories 76/77/89/92/93/94 are excluded.",
+    "All other currently seeded categories retain Rare membership. No unverified native IDs assigned to semantic TOTW/TOTS families.",
+    "Code 75 is Next-Gen per user correction; code 76 is FGS Swaps 1; code 77 is FGS Swaps 2 by local inference, pending native verification.",
+    "User corrected code75 to Next-Gen. Code77 labeled FGS Swaps 2 as local second-batch inference, not native verification."
+  ],
+  "rows": [
+    {
+      "nativeRareflag": 0,
+      "currentName": "Non-Rare Bronze",
+      "cardTypeIds": [
+        1,
+        2,
+        3
+      ],
+      "levels": [
+        "bronze",
+        "gold",
+        "silver"
+      ],
+      "proposedName": "Non-Rare",
+      "proposedRareEligibility": false,
+      "confirmation": "delegated-local-classification:2026-09-17",
+      "semanticCategory": null,
+      "nativeGroupingVerified": false,
+      "nativeGroups": []
+    },
+    {
+      "nativeRareflag": 1,
+      "currentName": "Rare Bronze",
+      "cardTypeIds": [
+        4,
+        5,
+        6
+      ],
+      "levels": [
+        "bronze",
+        "gold",
+        "silver"
+      ],
+      "proposedName": "Rare",
+      "proposedRareEligibility": true,
+      "confirmation": "delegated-local-classification:2026-09-17",
+      "semanticCategory": null,
+      "nativeGroupingVerified": false,
+      "nativeGroups": [
+        4
+      ]
+    },
+    {
+      "nativeRareflag": 3,
+      "currentName": "Team of the Week",
+      "cardTypeIds": [
+        16,
+        17,
+        18
+      ],
+      "levels": [
+        "bronze",
+        "gold",
+        "silver"
+      ],
+      "proposedName": "Team of the Week",
+      "proposedRareEligibility": true,
+      "confirmation": "delegated-local-classification:2026-09-17",
+      "semanticCategory": "TOTW",
+      "nativeGroupingVerified": false,
+      "nativeGroups": [
+        4
+      ]
+    },
+    {
+      "nativeRareflag": 4,
+      "currentName": "Hero",
+      "cardTypeIds": [
+        26,
+        27
+      ],
+      "levels": [
+        "gold",
+        "silver"
+      ],
+      "proposedName": "Hero",
+      "proposedRareEligibility": true,
+      "confirmation": "delegated-local-classification:2026-09-17",
+      "semanticCategory": null,
+      "nativeGroupingVerified": false,
+      "nativeGroups": [
+        4
+      ]
+    },
+    {
+      "nativeRareflag": 5,
+      "currentName": "Team of the Year",
+      "cardTypeIds": [
+        35
+      ],
+      "levels": [
+        "gold"
+      ],
+      "proposedName": "Team of the Year",
+      "proposedRareEligibility": true,
+      "confirmation": "delegated-local-classification:2026-09-17",
+      "semanticCategory": null,
+      "nativeGroupingVerified": false,
+      "nativeGroups": [
+        4
+      ]
+    },
+    {
+      "nativeRareflag": 6,
+      "currentName": "Record Breaker",
+      "cardTypeIds": [
+        50,
+        51
+      ],
+      "levels": [
+        "gold",
+        "silver"
+      ],
+      "proposedName": "Record Breaker",
+      "proposedRareEligibility": true,
+      "confirmation": "delegated-local-classification:2026-09-17",
+      "semanticCategory": null,
+      "nativeGroupingVerified": false,
+      "nativeGroups": [
+        4
+      ]
+    },
+    {
+      "nativeRareflag": 8,
+      "currentName": "MOTM",
+      "cardTypeIds": [
+        69,
+        70
+      ],
+      "levels": [
+        "gold",
+        "silver"
+      ],
+      "proposedName": "MOTM",
+      "proposedRareEligibility": true,
+      "confirmation": "delegated-local-classification:2026-09-17",
+      "semanticCategory": null,
+      "nativeGroupingVerified": false,
+      "nativeGroups": [
+        4
+      ]
+    },
+    {
+      "nativeRareflag": 9,
+      "currentName": "FUTTIES",
+      "cardTypeIds": [
+        78,
+        79
+      ],
+      "levels": [
+        "gold",
+        "silver"
+      ],
+      "proposedName": "FUTTIES",
+      "proposedRareEligibility": true,
+      "confirmation": "delegated-local-classification:2026-09-17",
+      "semanticCategory": null,
+      "nativeGroupingVerified": false,
+      "nativeGroups": [
+        4
+      ]
+    },
+    {
+      "nativeRareflag": 10,
+      "currentName": "FIFA rarity 10",
+      "cardTypeIds": [
+        7
+      ],
+      "levels": [],
+      "proposedName": "Professional Player",
+      "proposedRareEligibility": true,
+      "confirmation": "delegated-local-classification:2026-09-17",
+      "semanticCategory": null,
+      "notes": "User approved category name Professional Player. All three PRO definitions and native ID remain unchanged.",
+      "nativeGroupingVerified": false,
+      "nativeGroups": [
+        4
+      ]
+    },
+    {
+      "nativeRareflag": 11,
+      "currentName": "Team of the Season",
+      "cardTypeIds": [
+        8
+      ],
+      "levels": [
+        "gold"
+      ],
+      "proposedName": "Team of the Season",
+      "proposedRareEligibility": true,
+      "confirmation": "delegated-local-classification:2026-09-17",
+      "semanticCategory": "TOTS",
+      "nativeGroupingVerified": false,
+      "nativeGroups": [
+        4
+      ]
+    },
+    {
+      "nativeRareflag": 12,
+      "currentName": "Icon",
+      "cardTypeIds": [
+        9
+      ],
+      "levels": [
+        "gold"
+      ],
+      "proposedName": "Icon",
+      "proposedRareEligibility": true,
+      "confirmation": "delegated-local-classification:2026-09-17",
+      "semanticCategory": null,
+      "nativeGroupingVerified": false,
+      "nativeGroups": [
+        4
+      ]
+    },
+    {
+      "nativeRareflag": 16,
+      "currentName": "FUTTIES Winner",
+      "cardTypeIds": [
+        10,
+        11
+      ],
+      "levels": [
+        "gold",
+        "silver"
+      ],
+      "proposedName": "FUTTIES Winner",
+      "proposedRareEligibility": true,
+      "confirmation": "delegated-local-classification:2026-09-17",
+      "semanticCategory": null,
+      "nativeGroupingVerified": false,
+      "nativeGroups": [
+        4
+      ]
+    },
+    {
+      "nativeRareflag": 21,
+      "currentName": "Ones to Watch",
+      "cardTypeIds": [
+        12
+      ],
+      "levels": [
+        "gold"
+      ],
+      "proposedName": "Ones to Watch",
+      "proposedRareEligibility": true,
+      "confirmation": "delegated-local-classification:2026-09-17",
+      "semanticCategory": null,
+      "nativeGroupingVerified": false,
+      "nativeGroups": [
+        4
+      ]
+    },
+    {
+      "nativeRareflag": 22,
+      "currentName": "Rulebreakers",
+      "cardTypeIds": [
+        13,
+        14
+      ],
+      "levels": [
+        "gold",
+        "silver"
+      ],
+      "proposedName": "Rulebreakers",
+      "proposedRareEligibility": true,
+      "confirmation": "delegated-local-classification:2026-09-17",
+      "semanticCategory": null,
+      "nativeGroupingVerified": false,
+      "nativeGroups": [
+        4
+      ]
+    },
+    {
+      "nativeRareflag": 25,
+      "currentName": "Premium SBC Reward",
+      "cardTypeIds": [
+        15
+      ],
+      "levels": [
+        "gold"
+      ],
+      "proposedName": "Premium SBC Reward",
+      "proposedRareEligibility": true,
+      "confirmation": "delegated-local-classification:2026-09-17",
+      "semanticCategory": null,
+      "nativeGroupingVerified": false,
+      "nativeGroups": [
+        4
+      ]
+    },
+    {
+      "nativeRareflag": 30,
+      "currentName": "FUT Birthday",
+      "cardTypeIds": [
+        19,
+        20
+      ],
+      "levels": [
+        "gold",
+        "silver"
+      ],
+      "proposedName": "FUT Birthday",
+      "proposedRareEligibility": true,
+      "confirmation": "delegated-local-classification:2026-09-17",
+      "semanticCategory": null,
+      "nativeGroupingVerified": false,
+      "nativeGroups": [
+        4
+      ]
+    },
+    {
+      "nativeRareflag": 32,
+      "currentName": "FUT Freeze",
+      "cardTypeIds": [
+        21,
+        22
+      ],
+      "levels": [
+        "gold",
+        "silver"
+      ],
+      "proposedName": "FUT Freeze",
+      "proposedRareEligibility": true,
+      "confirmation": "delegated-local-classification:2026-09-17",
+      "semanticCategory": null,
+      "nativeGroupingVerified": false,
+      "nativeGroups": [
+        4
+      ]
+    },
+    {
+      "nativeRareflag": 33,
+      "currentName": "Libertadores TOTGS",
+      "cardTypeIds": [
+        23
+      ],
+      "levels": [
+        "gold"
+      ],
+      "proposedName": "Libertadores TOTGS",
+      "proposedRareEligibility": true,
+      "confirmation": "delegated-local-classification:2026-09-17",
+      "semanticCategory": null,
+      "nativeGroupingVerified": false,
+      "nativeGroups": [
+        4
+      ]
+    },
+    {
+      "nativeRareflag": 34,
+      "currentName": "Sudamericana TOTGS",
+      "cardTypeIds": [
+        24
+      ],
+      "levels": [
+        "silver"
+      ],
+      "proposedName": "Sudamericana TOTGS",
+      "proposedRareEligibility": true,
+      "confirmation": "delegated-local-classification:2026-09-17",
+      "semanticCategory": null,
+      "nativeGroupingVerified": false,
+      "nativeGroups": [
+        4
+      ]
+    },
+    {
+      "nativeRareflag": 37,
+      "currentName": "Libertadores Flashback",
+      "cardTypeIds": [
+        25
+      ],
+      "levels": [
+        "gold"
+      ],
+      "proposedName": "Libertadores Flashback",
+      "proposedRareEligibility": true,
+      "confirmation": "delegated-local-classification:2026-09-17",
+      "semanticCategory": null,
+      "nativeGroupingVerified": false,
+      "nativeGroups": [
+        4
+      ]
+    },
+    {
+      "nativeRareflag": 42,
+      "currentName": "Bundesliga POTM",
+      "cardTypeIds": [
+        28
+      ],
+      "levels": [
+        "gold"
+      ],
+      "proposedName": "Bundesliga POTM",
+      "proposedRareEligibility": true,
+      "confirmation": "delegated-local-classification:2026-09-17",
+      "semanticCategory": null,
+      "nativeGroupingVerified": false,
+      "nativeGroups": [
+        4
+      ]
+    },
+    {
+      "nativeRareflag": 43,
+      "currentName": "Premier League POTM",
+      "cardTypeIds": [
+        29
+      ],
+      "levels": [
+        "gold"
+      ],
+      "proposedName": "Premier League POTM",
+      "proposedRareEligibility": true,
+      "confirmation": "delegated-local-classification:2026-09-17",
+      "semanticCategory": null,
+      "nativeGroupingVerified": false,
+      "nativeGroups": [
+        4
+      ]
+    },
+    {
+      "nativeRareflag": 45,
+      "currentName": "UEL Man of the Match",
+      "cardTypeIds": [
+        30
+      ],
+      "levels": [
+        "gold"
+      ],
+      "proposedName": "UEL Man of the Match",
+      "proposedRareEligibility": true,
+      "confirmation": "delegated-local-classification:2026-09-17",
+      "semanticCategory": null,
+      "nativeGroupingVerified": false,
+      "nativeGroups": [
+        4
+      ]
+    },
+    {
+      "nativeRareflag": 46,
+      "currentName": "UEL Road to the Knockouts",
+      "cardTypeIds": [
+        31
+      ],
+      "levels": [
+        "gold"
+      ],
+      "proposedName": "UEL Road to the Final (proposal)",
+      "proposedRareEligibility": true,
+      "confirmation": "delegated-local-classification:2026-09-17",
+      "semanticCategory": null,
+      "nativeGroupingVerified": false,
+      "nativeGroups": [
+        4
+      ]
+    },
+    {
+      "nativeRareflag": 47,
+      "currentName": "Champions League",
+      "cardTypeIds": [
+        32
+      ],
+      "levels": [
+        "gold"
+      ],
+      "proposedName": "Champions League Non-Rare",
+      "proposedRareEligibility": false,
+      "confirmation": "delegated-local-classification:2026-09-17",
+      "semanticCategory": null,
+      "notes": "All 201 cards match same-identity/same-rating common gold cards (rareflag 0). Pepe Reina 79: base 24630, UCL 16801846.",
+      "nativeGroupingVerified": false,
+      "nativeGroups": []
+    },
+    {
+      "nativeRareflag": 48,
+      "currentName": "Champions League",
+      "cardTypeIds": [
+        33
+      ],
+      "levels": [
+        "gold"
+      ],
+      "proposedName": "Champions League Rare",
+      "proposedRareEligibility": true,
+      "confirmation": "delegated-local-classification:2026-09-17",
+      "semanticCategory": null,
+      "notes": "All 354 cards match same-identity/same-rating rare gold cards (rareflag 1). Cristiano Ronaldo 92: base 20801, UCL 16798017.",
+      "nativeGroupingVerified": false,
+      "nativeGroups": [
+        4
+      ]
+    },
+    {
+      "nativeRareflag": 49,
+      "currentName": "Champions League MOTM",
+      "cardTypeIds": [
+        34
+      ],
+      "levels": [
+        "gold"
+      ],
+      "proposedName": "Champions League MOTM",
+      "proposedRareEligibility": true,
+      "confirmation": "delegated-local-classification:2026-09-17",
+      "semanticCategory": null,
+      "nativeGroupingVerified": false,
+      "nativeGroups": [
+        4
+      ]
+    },
+    {
+      "nativeRareflag": 50,
+      "currentName": "UCL Road to the Knockouts",
+      "cardTypeIds": [
+        36
+      ],
+      "levels": [
+        "gold"
+      ],
+      "proposedName": "UCL Road to the Final (proposal)",
+      "proposedRareEligibility": true,
+      "confirmation": "delegated-local-classification:2026-09-17",
+      "semanticCategory": null,
+      "nativeGroupingVerified": false,
+      "nativeGroups": [
+        4
+      ]
+    },
+    {
+      "nativeRareflag": 51,
+      "currentName": "Flashback",
+      "cardTypeIds": [
+        37
+      ],
+      "levels": [
+        "gold"
+      ],
+      "proposedName": "Flashback",
+      "proposedRareEligibility": true,
+      "confirmation": "delegated-local-classification:2026-09-17",
+      "semanticCategory": null,
+      "nativeGroupingVerified": false,
+      "nativeGroups": [
+        4
+      ]
+    },
+    {
+      "nativeRareflag": 52,
+      "currentName": "Sudamericana",
+      "cardTypeIds": [
+        38,
+        39,
+        40
+      ],
+      "levels": [
+        "bronze",
+        "gold",
+        "silver"
+      ],
+      "proposedName": "Sudamericana",
+      "proposedRareEligibility": false,
+      "confirmation": "delegated-local-classification:2026-09-17",
+      "semanticCategory": null,
+      "nativeGroupingVerified": false,
+      "nativeGroups": []
+    },
+    {
+      "nativeRareflag": 53,
+      "currentName": "Libertadores",
+      "cardTypeIds": [
+        41,
+        42,
+        43
+      ],
+      "levels": [
+        "bronze",
+        "gold",
+        "silver"
+      ],
+      "proposedName": "Libertadores",
+      "proposedRareEligibility": true,
+      "confirmation": "delegated-local-classification:2026-09-17",
+      "semanticCategory": null,
+      "nativeGroupingVerified": false,
+      "nativeGroups": [
+        4
+      ]
+    },
+    {
+      "nativeRareflag": 54,
+      "currentName": "Libertadores MOTM",
+      "cardTypeIds": [
+        44
+      ],
+      "levels": [
+        "gold"
+      ],
+      "proposedName": "Libertadores MOTM",
+      "proposedRareEligibility": true,
+      "confirmation": "delegated-local-classification:2026-09-17",
+      "semanticCategory": null,
+      "nativeGroupingVerified": false,
+      "nativeGroups": [
+        4
+      ]
+    },
+    {
+      "nativeRareflag": 55,
+      "currentName": "David Beckham",
+      "cardTypeIds": [
+        45
+      ],
+      "levels": [
+        "gold"
+      ],
+      "proposedName": "David Beckham",
+      "proposedRareEligibility": true,
+      "confirmation": "delegated-local-classification:2026-09-17",
+      "semanticCategory": null,
+      "nativeGroupingVerified": false,
+      "nativeGroups": [
+        4
+      ]
+    },
+    {
+      "nativeRareflag": 57,
+      "currentName": "Showdown Upgrade",
+      "cardTypeIds": [
+        46
+      ],
+      "levels": [
+        "gold"
+      ],
+      "proposedName": "Showdown Upgrade",
+      "proposedRareEligibility": true,
+      "confirmation": "delegated-local-classification:2026-09-17",
+      "semanticCategory": null,
+      "nativeGroupingVerified": false,
+      "nativeGroups": [
+        4
+      ]
+    },
+    {
+      "nativeRareflag": 58,
+      "currentName": "Showdown",
+      "cardTypeIds": [
+        47
+      ],
+      "levels": [
+        "gold"
+      ],
+      "proposedName": "Showdown",
+      "proposedRareEligibility": true,
+      "confirmation": "delegated-local-classification:2026-09-17",
+      "semanticCategory": null,
+      "nativeGroupingVerified": false,
+      "nativeGroups": [
+        4
+      ]
+    },
+    {
+      "nativeRareflag": 59,
+      "currentName": "Sudamericana MOTM",
+      "cardTypeIds": [
+        48,
+        49
+      ],
+      "levels": [
+        "gold",
+        "silver"
+      ],
+      "proposedName": "Sudamericana MOTM",
+      "proposedRareEligibility": true,
+      "confirmation": "delegated-local-classification:2026-09-17",
+      "semanticCategory": null,
+      "nativeGroupingVerified": false,
+      "nativeGroups": [
+        4
+      ]
+    },
+    {
+      "nativeRareflag": 60,
+      "currentName": "Path to Glory",
+      "cardTypeIds": [
+        52,
+        53
+      ],
+      "levels": [
+        "gold",
+        "silver"
+      ],
+      "proposedName": "Path to Glory",
+      "proposedRareEligibility": true,
+      "confirmation": "delegated-local-classification:2026-09-17",
+      "semanticCategory": null,
+      "nativeGroupingVerified": false,
+      "nativeGroups": [
+        4
+      ]
+    },
+    {
+      "nativeRareflag": 61,
+      "currentName": "Summer Stars",
+      "cardTypeIds": [
+        54
+      ],
+      "levels": [
+        "gold"
+      ],
+      "proposedName": "Summer Stars",
+      "proposedRareEligibility": true,
+      "confirmation": "delegated-local-classification:2026-09-17",
+      "semanticCategory": null,
+      "nativeGroupingVerified": false,
+      "nativeGroups": [
+        4
+      ]
+    },
+    {
+      "nativeRareflag": 62,
+      "currentName": "Nation Player",
+      "cardTypeIds": [
+        55,
+        56
+      ],
+      "levels": [
+        "gold",
+        "silver"
+      ],
+      "proposedName": "Nation Player",
+      "proposedRareEligibility": true,
+      "confirmation": "delegated-local-classification:2026-09-17",
+      "semanticCategory": null,
+      "nativeGroupingVerified": false,
+      "nativeGroups": [
+        4
+      ]
+    },
+    {
+      "nativeRareflag": 64,
+      "currentName": "TOTY Honourable Mentions",
+      "cardTypeIds": [
+        57
+      ],
+      "levels": [
+        "gold"
+      ],
+      "proposedName": "TOTY Honourable Mentions",
+      "proposedRareEligibility": true,
+      "confirmation": "delegated-local-classification:2026-09-17",
+      "semanticCategory": null,
+      "nativeGroupingVerified": false,
+      "nativeGroups": [
+        4
+      ]
+    },
+    {
+      "nativeRareflag": 65,
+      "currentName": "TOTS Moments",
+      "cardTypeIds": [
+        58,
+        59
+      ],
+      "levels": [
+        "gold",
+        "silver"
+      ],
+      "proposedName": "TOTS Moments",
+      "proposedRareEligibility": true,
+      "confirmation": "delegated-local-classification:2026-09-17",
+      "semanticCategory": null,
+      "nativeGroupingVerified": false,
+      "nativeGroups": [
+        4
+      ]
+    },
+    {
+      "nativeRareflag": 68,
+      "currentName": "TOTGS Europa League",
+      "cardTypeIds": [
+        60
+      ],
+      "levels": [
+        "gold"
+      ],
+      "proposedName": "TOTGS Europa League",
+      "proposedRareEligibility": true,
+      "confirmation": "delegated-local-classification:2026-09-17",
+      "semanticCategory": null,
+      "nativeGroupingVerified": false,
+      "nativeGroups": [
+        4
+      ]
+    },
+    {
+      "nativeRareflag": 70,
+      "currentName": "Team of the Group Stage",
+      "cardTypeIds": [
+        61,
+        62
+      ],
+      "levels": [
+        "gold",
+        "silver"
+      ],
+      "proposedName": "Team of the Group Stage",
+      "proposedRareEligibility": true,
+      "confirmation": "delegated-local-classification:2026-09-17",
+      "semanticCategory": null,
+      "nativeGroupingVerified": false,
+      "nativeGroups": [
+        4
+      ]
+    },
+    {
+      "nativeRareflag": 71,
+      "currentName": "Future Stars",
+      "cardTypeIds": [
+        63
+      ],
+      "levels": [
+        "gold"
+      ],
+      "proposedName": "Future Stars",
+      "proposedRareEligibility": true,
+      "confirmation": "delegated-local-classification:2026-09-17",
+      "semanticCategory": null,
+      "nativeGroupingVerified": false,
+      "nativeGroups": [
+        4
+      ]
+    },
+    {
+      "nativeRareflag": 75,
+      "currentName": "FGS Swaps 1",
+      "cardTypeIds": [
+        64,
+        65
+      ],
+      "levels": [
+        "gold",
+        "silver"
+      ],
+      "proposedName": "Next-Gen",
+      "proposedRareEligibility": true,
+      "confirmation": "user-confirmed-name:2026-09-17",
+      "semanticCategory": null,
+      "notes": "User identified these as Next-Gen/NXT LVL Edition loan items. Stats and IDs remain unchanged; correcting label does not automatically make existing owned instances loans.",
+      "nativeGroupingVerified": false,
+      "nativeGroups": [
+        4
+      ]
+    },
+    {
+      "nativeRareflag": 76,
+      "currentName": "FGS Swaps 1",
+      "cardTypeIds": [
+        66
+      ],
+      "levels": [
+        "bronze"
+      ],
+      "proposedName": "FGS Swaps 1",
+      "proposedRareEligibility": false,
+      "confirmation": "delegated-local-classification:2026-09-17",
+      "semanticCategory": null,
+      "notes": "Confirm category name and rare eligibility explicitly.",
+      "nativeGroupingVerified": false,
+      "nativeGroups": []
+    },
+    {
+      "nativeRareflag": 77,
+      "currentName": "Shapeshifters Hero",
+      "cardTypeIds": [
+        67
+      ],
+      "levels": [
+        "bronze"
+      ],
+      "proposedName": "FGS Swaps 2",
+      "proposedRareEligibility": false,
+      "confirmation": "local-inference-second-token-batch",
+      "semanticCategory": null,
+      "notes": "Second bronze token batch distinct from externally matched FGS Swaps 1 (76). Native category/name attestation remains unverified; all cards retained.",
+      "nativeGroupingVerified": false,
+      "nativeGroups": []
+    },
+    {
+      "nativeRareflag": 79,
+      "currentName": "Ligue 1 POTM",
+      "cardTypeIds": [
+        68
+      ],
+      "levels": [
+        "gold"
+      ],
+      "proposedName": "Ligue 1 POTM",
+      "proposedRareEligibility": true,
+      "confirmation": "delegated-local-classification:2026-09-17",
+      "semanticCategory": null,
+      "nativeGroupingVerified": false,
+      "nativeGroups": [
+        4
+      ]
+    },
+    {
+      "nativeRareflag": 81,
+      "currentName": "What If Upgraded",
+      "cardTypeIds": [
+        71,
+        72
+      ],
+      "levels": [
+        "gold",
+        "silver"
+      ],
+      "proposedName": "What If Upgraded",
+      "proposedRareEligibility": true,
+      "confirmation": "delegated-local-classification:2026-09-17",
+      "semanticCategory": null,
+      "nativeGroupingVerified": false,
+      "nativeGroups": [
+        4
+      ]
+    },
+    {
+      "nativeRareflag": 82,
+      "currentName": "What If",
+      "cardTypeIds": [
+        73
+      ],
+      "levels": [
+        "gold"
+      ],
+      "proposedName": "What If",
+      "proposedRareEligibility": true,
+      "confirmation": "delegated-local-classification:2026-09-17",
+      "semanticCategory": null,
+      "nativeGroupingVerified": false,
+      "nativeGroups": [
+        4
+      ]
+    },
+    {
+      "nativeRareflag": 84,
+      "currentName": "Icon Moments",
+      "cardTypeIds": [
+        74
+      ],
+      "levels": [
+        "gold"
+      ],
+      "proposedName": "Icon Moments",
+      "proposedRareEligibility": true,
+      "confirmation": "delegated-local-classification:2026-09-17",
+      "semanticCategory": null,
+      "nativeGroupingVerified": false,
+      "nativeGroups": [
+        4
+      ]
+    },
+    {
+      "nativeRareflag": 86,
+      "currentName": "La Liga POTM",
+      "cardTypeIds": [
+        75
+      ],
+      "levels": [
+        "gold"
+      ],
+      "proposedName": "La Liga POTM",
+      "proposedRareEligibility": true,
+      "confirmation": "delegated-local-classification:2026-09-17",
+      "semanticCategory": null,
+      "nativeGroupingVerified": false,
+      "nativeGroups": [
+        4
+      ]
+    },
+    {
+      "nativeRareflag": 87,
+      "currentName": "Objective Player",
+      "cardTypeIds": [
+        76
+      ],
+      "levels": [
+        "gold"
+      ],
+      "proposedName": "Objective Player",
+      "proposedRareEligibility": true,
+      "confirmation": "delegated-local-classification:2026-09-17",
+      "semanticCategory": null,
+      "nativeGroupingVerified": false,
+      "nativeGroups": [
+        4
+      ]
+    },
+    {
+      "nativeRareflag": 89,
+      "currentName": "FUT Birthday Evolution",
+      "cardTypeIds": [
+        77
+      ],
+      "levels": [
+        "bronze"
+      ],
+      "proposedName": "Icon Swaps 1",
+      "proposedRareEligibility": false,
+      "confirmation": "user-confirmed-icon-swaps-nonrare:2026-09-17",
+      "semanticCategory": null,
+      "notes": "User approved replacing incorrect Evolution name with Icon Swaps 1 and retaining all 18 tokens.",
+      "nativeGroupingVerified": false,
+      "nativeGroups": []
+    },
+    {
+      "nativeRareflag": 90,
+      "currentName": "Player Moments",
+      "cardTypeIds": [
+        80,
+        81
+      ],
+      "levels": [
+        "gold",
+        "silver"
+      ],
+      "proposedName": "Player Moments",
+      "proposedRareEligibility": true,
+      "confirmation": "delegated-local-classification:2026-09-17",
+      "semanticCategory": null,
+      "nativeGroupingVerified": false,
+      "nativeGroups": [
+        4
+      ]
+    },
+    {
+      "nativeRareflag": 91,
+      "currentName": "Season Reward",
+      "cardTypeIds": [
+        82
+      ],
+      "levels": [
+        "gold"
+      ],
+      "proposedName": "Season Reward",
+      "proposedRareEligibility": true,
+      "confirmation": "delegated-local-classification:2026-09-17",
+      "semanticCategory": null,
+      "nativeGroupingVerified": false,
+      "nativeGroups": [
+        4
+      ]
+    },
+    {
+      "nativeRareflag": 92,
+      "currentName": "Icon Swaps 2",
+      "cardTypeIds": [
+        83
+      ],
+      "levels": [
+        "bronze"
+      ],
+      "proposedName": "Icon Swaps 2",
+      "proposedRareEligibility": false,
+      "confirmation": "user-confirmed-icon-swaps-nonrare:2026-09-17",
+      "semanticCategory": null,
+      "nativeGroupingVerified": false,
+      "nativeGroups": []
+    },
+    {
+      "nativeRareflag": 93,
+      "currentName": "Icon Swaps 3",
+      "cardTypeIds": [
+        84
+      ],
+      "levels": [
+        "bronze"
+      ],
+      "proposedName": "Icon Swaps 3",
+      "proposedRareEligibility": false,
+      "confirmation": "user-confirmed-icon-swaps-nonrare:2026-09-17",
+      "semanticCategory": null,
+      "nativeGroupingVerified": false,
+      "nativeGroups": []
+    },
+    {
+      "nativeRareflag": 94,
+      "currentName": "Icon Swaps 4",
+      "cardTypeIds": [
+        85
+      ],
+      "levels": [
+        "bronze"
+      ],
+      "proposedName": "Icon Swaps 4",
+      "proposedRareEligibility": false,
+      "confirmation": "user-confirmed-icon-swaps-nonrare:2026-09-17",
+      "semanticCategory": null,
+      "nativeGroupingVerified": false,
+      "nativeGroups": []
+    },
+    {
+      "nativeRareflag": 95,
+      "currentName": "Headliners",
+      "cardTypeIds": [
+        86
+      ],
+      "levels": [
+        "gold"
+      ],
+      "proposedName": "Headliners",
+      "proposedRareEligibility": true,
+      "confirmation": "delegated-local-classification:2026-09-17",
+      "semanticCategory": null,
+      "nativeGroupingVerified": false,
+      "nativeGroups": [
+        4
+      ]
+    },
+    {
+      "nativeRareflag": 96,
+      "currentName": "Headliners",
+      "cardTypeIds": [
+        87
+      ],
+      "levels": [
+        "gold"
+      ],
+      "proposedName": "Headliners",
+      "proposedRareEligibility": true,
+      "confirmation": "delegated-local-classification:2026-09-17",
+      "semanticCategory": null,
+      "nativeGroupingVerified": false,
+      "nativeGroups": [
+        4
+      ]
+    },
+    {
+      "nativeRareflag": 98,
+      "currentName": "Objective Player",
+      "cardTypeIds": [
+        88
+      ],
+      "levels": [
+        "gold"
+      ],
+      "proposedName": "Objective Player",
+      "proposedRareEligibility": true,
+      "confirmation": "delegated-local-classification:2026-09-17",
+      "semanticCategory": null,
+      "nativeGroupingVerified": false,
+      "nativeGroups": [
+        4
+      ]
+    }
+  ],
+  "followUpEvidence": {
+    "runtimePlayersSha256": "e6c2e820b3649c90a9654777dc5792f17566501fcc8c73c334a4d743576eae93",
+    "ucl47": {
+      "matched": 201,
+      "mismatches": 0,
+      "missingBases": 0
+    },
+    "ucl48": {
+      "matched": 354,
+      "mismatches": 0,
+      "missingBases": 0
+    },
+    "silverHero": {
+      "resourceId": 17024902,
+      "name": "Cho Gue Sung",
+      "rating": 66,
+      "nativeRareflag": 4,
+      "sourceUrl": "https://wefut.com/player/21/18035/cho-gue-sung"
+    },
+    "silverStarsExamples": [
+      {
+        "resourceId": 16975547,
+        "name": "Vydra",
+        "rating": 74,
+        "nativeRareflag": 3,
+        "category": "Team of the Week"
+      },
+      {
+        "resourceId": 67307195,
+        "name": "Vydra",
+        "rating": 74,
+        "nativeRareflag": 16,
+        "category": "FUTTIES Winner"
+      }
+    ],
+    "iconSwaps1EvidenceUrl": "https://www.futwiz.com/fifa21/player/peter-cherrie/18023"
+  }
+}

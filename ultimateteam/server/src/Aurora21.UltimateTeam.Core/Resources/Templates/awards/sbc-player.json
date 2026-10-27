@@ -1,0 +1,8 @@
+{
+  "halId": "{{resourceId}}", "assetId": "{{resourceId}}", "count": 1, "isUntradeable": true,
+  "type": "item", "awardType": "item", "value": "{{resourceId}}",
+  "isPack": false, "isItem": true,
+  "name": "{{name}}", "items": "{{name}}", "itemsAmount": 1,
+  "itemData": "{{item}}", "rating": "{{rating}}",
+  "position": "{{position}}"
+}

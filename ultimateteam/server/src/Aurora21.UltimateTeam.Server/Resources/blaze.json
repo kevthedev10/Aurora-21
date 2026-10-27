@@ -1,0 +1,92 @@
+{
+  "_comment": "Local Blaze server identity and client configuration, reconstructed from the retail FIFA 21 PC trace. {fut}, {easw}, {ssf} and {ssfClientId} are replaced by the local service ports and the SSF OAuth client id. OSDK_CORE's two DISABLE_ONLINE_* keys are the production Python server's (SQUAD_MATCH_PARITY and DISABLE_ONLINE_LINEUP_CHECK): FIFA21.exe's kickoff lineup check 0x1443e4760 otherwise ends every Rivals match (EndOnlineGame 12), and ComputeOnlineSquadsCRC 0x144641350 would compare two local installs' database CRCs because this server distributes no online squad file. FIFA_SETTING_ENABLE_ALT_TAB_DISCONNECTS 1 keeps retail alt-tab disconnects: when the window loses focus during an online game (game manager out of state 0), FIFA21.exe reads the key with default 1 (0x14431af37) and, at 1, ends the online game with EndOnlineGame 11 (sent to the game as GameEndedReason 12 ALTTAB); CardsDLL's FUT match handler reads the same key (0x18006a7a2). Any value but 1 skips both, and from 10-07 to 10-08 the server sent 0: an alt-tabbed FIFA then paused and froze its lockstep opponent, which players used to force wins, so it is 1 again (session 13 RE, commit 52b2bae8 docs/rivals-advance-findings.md; the Python server's opt-in LOCALFUT21_ALT_TAB_DISCONNECTS_OFF, same position after FIFA_POW_URL).",
+
+  "serverVersion": "Blaze 14.2.1.1.0",
+  "buildSource": "303107",
+  "instanceName": "fifa-2015-pc",
+  "personaNamespace": "cem_ea_id",
+  "platform": "pc",
+  "userLocation": 1701729619,
+
+  "preAuth": {
+    "componentIds": [1, 9, 35, 30722],
+    "clientConfig": {
+      "connIdleTimeout": "120s",
+      "defaultRequestTimeout": "80s",
+      "pingPeriod": "20s",
+      "voipHeadsetUpdateRate": "1000",
+      "xlspConnectionIdleTimeout": "300"
+    },
+    "qos": { "probeCount": 10, "serviceId": 1161889797, "timeoutMs": 5000, "pingSite": "ea-sjc" }
+  },
+
+  "clientConfigs": {
+    "OSDK_CORE": {
+      "AUTH_TYPE": "NUCLEUS",
+      "CONTENT_URL": "http://127.0.0.1:{easw}/content",
+      "CTL_UPDATE_URL": "http://127.0.0.1:{easw}/ctl",
+      "DISABLE_ONLINE_SQUADS_CRC_CHECK": "1",
+      "DISABLE_ONLINE_LINEUP_CHECK": "1",
+      "FIFA_POW_CONTENT_SERVER_URL": "http://127.0.0.1:{fut}/",
+      "FIFA_POW_NUCLEUS_PROXY_URL": "http://127.0.0.1:{fut}/",
+      "FIFA_POW_URL": "http://127.0.0.1:{fut}/",
+      "FIFA_SETTING_ENABLE_ALT_TAB_DISCONNECTS": "1",
+      "FIFA_SSF_CLIENT_ID": "{ssfClientId}",
+      "FIFA_SSF_URL": "http://127.0.0.1:{ssf}",
+      "FUT_RS4_BASE_URL": "http://127.0.0.1:{fut}/",
+      "FUTDYNAMICMESSAGES_CUSTOMURL": "127.0.0.1:{fut}",
+      "FUTDYNAMICMESSAGES_URL_BASE": "http://127.0.0.1:{fut}",
+      "NUCLEUS_LOGIN_ENABLED": "1",
+      "ONLINE/FUTDYNAMICMESSAGES_CUSTOMURL": "127.0.0.1:{fut}",
+      "ONLINE/FUTDYNAMICMESSAGES_TUTORIAL_MSG_URL": "http://127.0.0.1:{fut}/",
+      "ORIGIN_LOGIN_ENABLED": "1",
+      "PRAN_AUTH_WAIT_TIME": "0",
+      "OSDK_AUTH_REQUIRED": "1",
+      "OSDK_EASW_AUTH_URL": "http://127.0.0.1:{easw}",
+      "OSDK_EASW_EVENT_URL": "http://127.0.0.1:{easw}",
+      "OSDK_EASW_MEDIA_URL": "http://127.0.0.1:{easw}",
+      "OSDK_EASW_REQ_URL": "http://127.0.0.1:{easw}",
+      "ROSTERUPDATE_URL": "http://127.0.0.1:{easw}/roster",
+      "ROUTINGCFGFILE_URL": "http://127.0.0.1:{easw}/routing",
+      "USE_TOKEN_AUTH": "1"
+    }
+  },
+
+  "userOptions": { "FirstTimeFlag": "0" },
+
+  "telemetry": { "port": 9988, "disabled": "1" },
+  "ticker": { "port": 8999, "settingId": "O_TKfilter", "groupId": "O_SG_TCKR" },
+
+  "session": {
+    "titleSessionKey": "ultimateteam-blaze",
+    "titleEmail": "ultimateteam@localhost",
+    "localEmail": "local@localhost"
+  },
+
+  "entitlements": { "names": ["FIFA15PCBoxContent", "FIFA14PC"], "tag": "ONLINE_ACCESS" },
+
+  "_statsComment": "Stats leaderboards (Top Players, Leaderboards): period counters count days, weeks and months since January 1st of epochYear; every board ranks one stat, the club's Rivals skill rating.",
+  "stats": {
+    "epochYear": 2010, "dailyRetention": 14, "weeklyRetention": 8, "monthlyRetention": 12,
+    "leaderboardSize": 100, "statName": "skill", "statShortName": "Skill", "statLongName": "Skill Rating"
+  },
+
+  "_matchmakingComment": "Matchmade Rivals games: the protocol version sent when the host's StartMatchmaking names none, and the game name and UUID prefixes (followed by the game id).",
+  "matchmaking": { "defaultProtocolVersion": "patchmotueka", "gameNamePrefix": "Aurora21 Rivals", "modeGameNamePrefix": "Aurora21", "gameUuidPrefix": "aurora21-" },
+
+  "_onlineComment": "The online-match wire values the production Python server ran with (flag bank prod-flags-20260927): userPlatform is the AIDS PlatformInfo PLAT on every identity (USER_PLATFORM_AIDS, 4 = pc); networkTopology is GAME.NTOP and N11 CONV.NTOP (NTOP, 130 = PEER_TO_PEER_FULL_MESH); initialGameSettings is GAME.GSET before any SetGameSettings (OSDK_GAME_SETTINGS, 0x2 OpenToMatchmaking); osdkRosterVersion is the GAME.ATTR OSDK_rosterVersion (OSDK_GAME_ATTRS); gameSetupTelemetryMicroseconds is NotifyGameSetup TELM and gameSetupJoinerResult the joiner's REAS.MMSC.RSLT (GAMESETUP_WIRE_FIX conservative); gameSpeed is the GAME.ATTR fifaGameSpeed both players read at match setup (0 Slow, 1 Normal, 2 Fast; Fast by default; null sends no key, which FIFA plays as Normal), and the panel's online.gameSpeed overrides it until the next restart. The limits bound what the OSDK attribute and Messaging relays accept.",
+  "online": {
+    "userPlatform": 4,
+    "networkTopology": 130,
+    "initialGameSettings": 2,
+    "osdkRosterVersion": "1",
+    "gameSetupTelemetryMicroseconds": 20000000,
+    "gameSetupJoinerResult": 0,
+    "gameSpeed": 2,
+    "osdkAttributes": { "maxPairs": 64, "maxBytes": 255, "maxStoredKeys": 128 },
+    "messaging": { "maxTargetIds": 16, "maxAttributePairs": 64, "maxAttributeBytes": 1023 }
+  },
+
+  "_emptyRepliesComment": "Requests the retail server answered with an empty payload: [component, command].",
+  "emptyReplies": [[30722, 20], [21, 10], [15, 2], [10, 1], [25, 6], [11, 2600], [7, 15], [7, 3], [11, 1600], [0, 0]]
+}

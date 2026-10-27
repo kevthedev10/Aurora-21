@@ -1,0 +1,42 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <!-- Must not start with "FIFA21": FIFA Config's process-prefix check blocks Play. -->
+    <AssemblyName>Aurora21-UltimateTeam-Server</AssemblyName>
+    <RootNamespace>Aurora21.UltimateTeam.Server</RootNamespace>
+    <!-- Server GC with DATAS (the .NET 9+ default) grows heaps under shared load and stays small
+         for one local club; workstation GC paused the paced 1,000-club benchmark for over half its run. -->
+    <ServerGarbageCollection>true</ServerGarbageCollection>
+    <ConcurrentGarbageCollection>true</ConcurrentGarbageCollection>
+    <!-- Development builds run on a newer .NET runtime when 8 is absent; published builds are self-contained. -->
+    <RollForward>Major</RollForward>
+    <!-- Source-generated P/Invoke marshalling for the trust bridge. -->
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(RuntimeIdentifier)' != ''">
+    <SelfContained>true</SelfContained>
+    <PublishSingleFile>true</PublishSingleFile>
+    <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+    <EnableCompressionInSingleFile>true</EnableCompressionInSingleFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+  <ItemGroup>
+    <!-- Opt-in OTLP metrics for the hosted Prometheus/Grafana stack (Hosting/MetricsExport.cs). -->
+    <PackageReference Include="OpenTelemetry" Version="1.19.1" />
+    <PackageReference Include="OpenTelemetry.Exporter.OpenTelemetryProtocol" Version="1.19.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Aurora21.UltimateTeam.Core\Aurora21.UltimateTeam.Core.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\**\*.json;Resources\**\*.xml" LogicalName="$([System.String]::Copy('%(RecursiveDir)%(Filename)%(Extension)').Replace('\','/'))" />
+    <!-- React operator panel, built by ultimateteam/panel-web and served at /panel/. -->
+    <EmbeddedResource Include="Resources\panel\**\*.html;Resources\panel\**\*.js;Resources\panel\**\*.css;Resources\panel\**\*.woff2;Resources\panel\**\*.svg" LogicalName="panel/$([System.String]::Copy('%(RecursiveDir)%(Filename)%(Extension)').Replace('\','/'))" />
+    <EmbeddedResource Include="Resources\panel-assets\**\*.png" LogicalName="panel/assets/$([System.String]::Copy('%(RecursiveDir)%(Filename)%(Extension)').Replace('\','/'))" />
+  </ItemGroup>
+  <ItemGroup>
+    <InternalsVisibleTo Include="Aurora21.UltimateTeam.Tests" />
+  </ItemGroup>
+</Project>

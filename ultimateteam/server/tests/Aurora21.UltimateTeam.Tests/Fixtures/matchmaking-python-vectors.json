@@ -1,0 +1,11 @@
+{
+ "userUpdatedGuest": "9ac9f30003a64000008dd0c0ea0e",
+ "extendedDataUpdateHostSelf": "921d21038649320602da1b3503978a7003a700000085d4d8ac01b618e90000c2fcb4008b3900a6ea7003a700000085d4d8ac01b618e90000c2fcb4008b3900b618e900b2e43300a379a70000c6487403922c330000ba1d340000d62c33000000d61d34000000d73a6400aae5b4a80c",
+ "matchmakingCancelled": "b61e260000b73a640009cb3b340004d73a640082a8d6b907",
+ "matchmakingFinishedHost": "b61e260000b73a640000cb3b340000d73a6400aae5b4a80c",
+ "playerStateChange": "9e99000080daf2cf07c2990000aae5b4a80ccf48740004",
+ "stateChange": "9e99000080daf2cf079f3d21008202",
+ "sessionUpdated": "9e99000080daf2cf07e2eba302020102e33973020103",
+ "statsGroup": "8738e400008ae86d010100925ce3010c736b696c6c5f626f61726400b22cfa00a401b29cf40403018e1d27010100926b3401023000932da400009b2b740103256400ae9ba4010100b24ce3010d536b696c6c20526174696e6700b65d21010100ba1b650106736b696c6c00ce4ce30106536b696c6c00d39c25000000b65d21010100ba1b65010c736b696c6c5f626f61726400cee86d010c736b696c6c5f626f61726400",
+ "_gameSetupNote": "The GameSetup, UserAdded, LookupUsers, ConnectionValidated, PlayerJoinCompleted and PlatformHostInitialized vectors were removed on 2026-09-27: they pinned the pre-2026-09-19 Python shape (GAMESETUP_WIRE_FIX off, no AIDS, no PHID). MatchmakingTests.NotificationPayloadsMatchProduction now compares GameSetup with production-rivals-gamesetup-{host,joiner}.shape, fingerprinted from the frames the production server sent (they also show the ATTR map sorted by key, FUT_USER_TEAM_ID and FUT_OPPONENT_TEAM_ID included), and checks the others member by member."
+}

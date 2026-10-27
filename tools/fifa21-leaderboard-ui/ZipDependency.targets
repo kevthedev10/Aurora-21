@@ -1,0 +1,29 @@
+<Project>
+  <!-- Imported into the complete FMT project graph by CustomAfterMicrosoftCommonTargets.
+       Keep the reviewed upstream checkout unchanged; replace its vulnerable ZIP dependency
+       before NuGet collects package references, so restore and compilation use the same graph. -->
+  <Target Name="Aurora21ReplaceVulnerableZip" BeforeTargets="CollectPackageReferences">
+    <ItemGroup Condition="'@(PackageReference->WithMetadataValue('Identity', 'DotNetZip'))' != ''">
+      <PackageReference Remove="DotNetZip" />
+      <PackageReference Include="ProDotNetZip" Version="1.20.0" />
+    </ItemGroup>
+  </Target>
+  <PropertyGroup>
+    <Aurora21FmtWarningOverlay>$(MSBuildThisFileDirectory)obj\fmt-warning-fixes</Aurora21FmtWarningOverlay>
+  </PropertyGroup>
+  <!-- Compile guarded corrected copies, preserving the pinned upstream source checkout.
+       Warning diagnostics remain enabled for every project. -->
+  <Target Name="Aurora21PrepareFmtWarningFixes" BeforeTargets="CoreCompile"
+          Condition="'$(MSBuildProjectName)' == 'FMT.FileTools' Or '$(MSBuildProjectName)' == 'FrostySdk' Or '$(MSBuildProjectName)' == 'CSIL'">
+    <Exec Command="powershell.exe -NoProfile -File &quot;$(MSBuildThisFileDirectory)Prepare-FmtWarningFixes.ps1&quot; -ProjectDirectory &quot;$(MSBuildProjectDirectory)&quot; -ProjectName &quot;$(MSBuildProjectName)&quot; -OutputRoot &quot;$(Aurora21FmtWarningOverlay)&quot;" />
+    <ReadLinesFromFile File="$(Aurora21FmtWarningOverlay)\$(MSBuildProjectName)\compile-files.txt">
+      <Output TaskParameter="Lines" ItemName="_Aurora21CorrectedRelative" />
+    </ReadLinesFromFile>
+    <ItemGroup>
+      <_Aurora21CorrectedCompile Include="@(_Aurora21CorrectedRelative->'$(Aurora21FmtWarningOverlay)\$(MSBuildProjectName)\%(Identity)')" />
+      <Compile Remove="@(_Aurora21CorrectedRelative)" />
+      <Compile Include="@(_Aurora21CorrectedCompile)" />
+      <FileWrites Include="@(_Aurora21CorrectedCompile)" />
+    </ItemGroup>
+  </Target>
+</Project>

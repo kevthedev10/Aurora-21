@@ -1,0 +1,16 @@
+{
+  "objectiveId": "{{id}}",
+  "id": "{{id}}",
+  "name": "{{name}}",
+  "description": "{{description}}",
+  "multiplier": 1,
+  "priority": 1,
+  "currentProgress": 1,
+  "progress": 1,
+  "target": 1,
+  "targetValue": 1,
+  "state": "{{state}}",
+  "takeMeThereLink": "",
+  "isWeb": false,
+  "awards": "{{awards}}"
+}

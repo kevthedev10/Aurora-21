@@ -1,0 +1,16 @@
+{
+  "currentTime": "{{current}}",
+  "gracePeriod": "{{graceHours}}",
+  "upcomingChampionEvents": "{{calendar}}",
+  "unclaimedPrizesChampionEvents": "{{unclaimed}}",
+  "currentChampionEvent": {
+    "championEventId": "{{eventId}}",
+    "gamesPlayed": "{{played}}",
+    "gamesRemaining": "{{remaining}}",
+    "minMatchesToRank": "{{minMatchesToRank}}",
+    "score": "{{wins}}",
+    "rank": "{{rank}}",
+    "userTierLevel": "{{tierLevel}}",
+    "prizeTiers": "{{prizeTiers}}"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "_comment": "Squad Battles: daily generated CPU opponents and the match venue shared with Draft. Changing opponents or slot positions changes the squads generated for the current day.",
+
+  "_venueComment": "Matches are played at physical venue 2 (Santiago Bernabeu, stadium card asset 1): away fixtures cannot resolve their venue in the retail client, so the user always stays home.",
+  "venue": {
+    "stadiumId": 2,
+    "resourceId": 6200001,
+    "cardAssetId": 1,
+    "name": "Santiago Bernabeu"
+  },
+
+  "_opponentKitsComment": "Installed kits worn by every opponent so they never clash with the club's strips.",
+  "opponentKits": [
+    { "itemState": "activeHomeKit", "resourceId": 6301491, "teamId": 241, "kitType": 0, "name": "FC Barcelona Home Kit" },
+    { "itemState": "activeAwayKit", "resourceId": 6301492, "teamId": 241, "kitType": 1, "name": "FC Barcelona Away Kit" }
+  ],
+
+  "opponents": [
+    { "clubName": "Local Rovers", "clubAbbr": "LRO", "rating": 80, "chemistry": 82, "difficulty": "AMATEUR" },
+    { "clubName": "Local United", "clubAbbr": "LUT", "rating": 83, "chemistry": 88, "difficulty": "SEMIPRO" },
+    { "clubName": "Local City", "clubAbbr": "LCY", "rating": 86, "chemistry": 94, "difficulty": "PRO" },
+    { "clubName": "Local Legends", "clubAbbr": "LLG", "rating": 90, "chemistry": 100, "difficulty": "WORLDCLASS" }
+  ],
+  "formation": "f442",
+  "fiveStarFromRating": 83,
+  "basePointsWin": 400,
+  "basePointsPerOpponent": 100,
+
+  "_squadComment": "Positions accepted by each of the 23 slots of a generated 4-4-2 squad (11 starters, 12 substitutes). Only base cards (rareflag 0 or 1) rated at least candidateMinRating are used: promo ids make the pre-match flow wait forever on unavailable player heads.",
+  "slotPositions": [
+    ["GK"], ["LB", "LWB"], ["CB"], ["CB"], ["RB", "RWB"],
+    ["LM", "LW"], ["CM", "CDM", "CAM"], ["CM", "CAM", "CDM"],
+    ["RM", "RW"], ["ST", "CF"], ["ST", "CF"],
+    ["GK"], ["LB", "LWB"], ["CB"], ["RB", "RWB"],
+    ["LM", "LW"], ["CM", "CAM", "CDM"], ["RM", "RW"],
+    ["CAM", "CM", "CF"], ["CDM", "CM"], ["LW", "LM"],
+    ["RW", "RM"], ["ST", "CF"]
+  ],
+  "candidateMinRating": 55,
+  "shortlistSize": 160,
+  "ratingDistanceExponent": 1.7,
+  "topPlayersShown": 3,
+
+  "_eventComment": "The always-open competition window around the current time.",
+  "matchesPerEvent": 4,
+  "eventStartedDaysAgo": 1,
+  "eventEndsInDays": 30,
+
+  "_legacyFeedComment": "The generic opponent feed served on older Squad Battles paths.",
+  "legacyFeed": {
+    "squads": 4,
+    "squadIdBase": 900000,
+    "nameFormat": "Squad Battles Opponent {n}",
+    "ratingBase": 75,
+    "ratingStep": 3,
+    "chemistryBase": 75,
+    "chemistryStep": 5
+  },
+
+  "_itemIdsComment": "Synthetic item id ranges for generated opponent items. CardsDLL caches active items by id, so these must never overlap owned club items.",
+  "itemIds": {
+    "opponentPlayers": 920000,
+    "opponentPlayersPerSlot": 100,
+    "legacyPlayers": 800000,
+    "opponentKits": 930000000000,
+    "opponentKitsPerSlot": 10,
+    "opponentStadiums": 930000000090,
+    "matchOpponentStadium": 930000000099
+  }
+}

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 256">
+  <!-- Clean redraw of the supplied three overlapping diamonds, with the same
+       centre mark as the single icon. Fine raster texture is omitted. -->
+  <defs>
+    <linearGradient id="rim" x1="0" y1="128" x2="384" y2="128" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7195ff"/>
+      <stop offset="1" stop-color="#eb73f9"/>
+    </linearGradient>
+  </defs>
+  <path fill="#10112b" d="M110 43 L216 149 L110 255 L4 149 Z"/>
+  <path fill="url(#rim)" d="M110 52 L207 149 L110 246 L13 149 Z"/>
+  <path fill="#10112b" d="M110 68 L191 149 L110 230 L29 149 Z"/>
+  <path fill="#10112b" d="M274 43 L380 149 L274 255 L168 149 Z"/>
+  <path fill="url(#rim)" d="M274 52 L371 149 L274 246 L177 149 Z"/>
+  <path fill="#10112b" d="M274 68 L355 149 L274 230 L193 149 Z"/>
+  <path fill="#10112b" d="M192 4 L316 128 L192 252 L68 128 Z"/>
+  <path fill="url(#rim)" d="M192 13 L307 128 L192 243 L77 128 Z"/>
+  <path fill="#10112b" d="M192 29 L291 128 L192 227 L93 128 Z"/>
+  <path fill="#ffffff" d="M193 64 L248 163 C213 147 180 147 138 163 L193 64 Z"/>
+  <path fill="#10112b" d="M193 102 L214 137 C200 133 186 135 171 139 L193 102 Z"/>
+</svg>

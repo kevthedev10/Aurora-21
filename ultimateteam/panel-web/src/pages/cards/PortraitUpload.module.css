@@ -1,0 +1,10 @@
+.editor { margin-top: var(--space-4, 1.25rem); }
+.workspace { display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: 1.5rem; margin-top: 1.5rem; align-items: start; }
+.texture { display: flex; flex-direction: column; align-items: center; gap: .75rem; padding: 1rem; border: 1px solid var(--line); border-radius: 12px; }
+.texture img { max-width: 100%; object-fit: contain; background: repeating-conic-gradient(#303540 0% 25%, #222631 0% 50%) 0 / 16px 16px; }
+.texture span { font-size: .75rem; text-align: center; color: var(--fog); }
+.controls { display: grid; gap: 1rem; }
+.controls p { margin: 0; }
+.controls input[type="range"] { width: 100%; padding: 0; accent-color: var(--coin); }
+.fade { display: flex; align-items: center; gap: .5rem; }
+@media (max-width: 700px) { .workspace { grid-template-columns: minmax(0, 1fr); } }

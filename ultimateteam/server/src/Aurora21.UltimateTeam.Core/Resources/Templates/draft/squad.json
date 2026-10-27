@@ -1,0 +1,18 @@
+{
+  "id": "{{squadId}}",
+  "personaId": "{{personaId}}",
+  "squadName": "{{squadName}}",
+  "squadType": "DRAFT_SQUAD",
+  "active": false,
+  "changed": 0,
+  "formation": "{{formation}}",
+  "captain": "{{captain}}",
+  "chemistry": 0,
+  "starRating": 0,
+  "players": "{{players}}",
+  "manager": "{{managers}}",
+  "actives": "{{actives}}",
+  "club": "{{actives}}",
+  "stadiumAssetId": "{{stadiumId}}",
+  "stadiumId": "{{stadiumId}}"
+}

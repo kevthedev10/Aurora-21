@@ -1,0 +1,75 @@
+{
+  "display_name": "LocalPlayer",
+  "date_of_birth": "2001-08-20",
+  "minimum_age": 18,
+  "nucleus_id": 1000000001,
+  "persona_id": 1000000002,
+  "club_id": 1,
+  "club_name": "Local FC",
+  "club_abbr": "LCL",
+  "credits": 70000000,
+  "starter_players": [
+    20801,
+    158023,
+    190871,
+    176580,
+    173731,
+    188545,
+    153079,
+    183277,
+    167495,
+    155862,
+    164240,
+    177003,
+    182521,
+    195864
+  ],
+  "initial_club_player_count": 250,
+  "rare_flag": 1,
+  "debug_unknown_http": true,
+  "database": {
+    "managed_port": 5432,
+    "managed_password": "ultimateteam",
+    "lock_timeout_ms": 5000,
+    "statement_timeout_ms": 30000,
+    "deadlock_retries": 3,
+    "max_pool_size": 10,
+    "connection_timeout_ms": 15000,
+    "connection_reserve": 5,
+    "max_auto_prepare": 100,
+    "cluster_max_connections": 30,
+    "cluster_shared_buffers_mb": 32,
+    "cluster_max_locks_per_transaction": 256,
+    "cluster_work_mem_mb": 4,
+    "cluster_effective_cache_size_mb": 512,
+    "cluster_max_wal_size_mb": 1024
+  },
+  "shutdown": {
+    "drain_timeout_ms": 10000
+  },
+  "connection_limits": {
+    "max_ping_ms": 0
+  },
+  "tcp_keepalive": {
+    "idle_seconds": 0,
+    "interval_seconds": 10,
+    "retry_count": 3
+  },
+  "native_auth": {
+    "code_lifetime_seconds": 900,
+    "session_idle_seconds": 7200
+  },
+  "launcher_api": {
+    "server_name": "Aurora 21",
+    "launches_per_address": 20,
+    "launch_window_seconds": 600,
+    "messages": {
+      "maintenance": "Aurora 21 is down for maintenance. Please try again later.",
+      "full": "Aurora 21 is full right now. Please try again in a few minutes.",
+      "blocked": "This Discord account cannot play on Aurora 21.",
+      "no_role": "Your Discord account does not have a role that can play Aurora 21.",
+      "roles_unavailable": "Aurora 21 could not check your Discord roles right now. Please try again in a minute.",
+      "not_configured": "Aurora 21 is not accepting launches yet."
+    }
+  }
+}

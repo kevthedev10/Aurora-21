@@ -1,0 +1,27 @@
+{
+  "path": [
+    "./src",
+    "./tests",
+    "./tools"
+  ],
+  "format": [
+    "csharp"
+  ],
+  "mode": "weak",
+  "minLines": 8,
+  "minTokens": 70,
+  "reporters": [
+    "console",
+    "json"
+  ],
+  "output": "../../outputs/code-duplication",
+  "ignore": [
+    "**/bin/**",
+    "**/obj/**",
+    "**/Resources/**",
+    "**/Fixtures/**",
+    "**/Generated/**",
+    "**/*.g.cs"
+  ],
+  "gitignore": true
+}

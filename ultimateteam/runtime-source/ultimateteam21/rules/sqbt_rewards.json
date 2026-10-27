@@ -1,0 +1,20 @@
+{
+ "_readme": [
+  "Squad Battles weekly ranking settings (bands: FIFA 21 retail), ported from the Python server (f354894, a4fdc85).",
+  "The reward tiers are a table since migration 133, edited in the operator panel (Modes, Squad Battles); a fresh database is seeded from",
+  "rewards/squad_battles.json. Six Top slots take their places from squad_battles.json competition.boardSize (the Top players number); there is no band sizing.",
+  "Loaded at server start and validated strictly (an invalid file stops the server).",
+  "mode 'percentile' = retail FIFA 21: a tier needs its band of all players with points (Elite 1 = top 3% ...) and its minPoints;",
+  "mode 'points' = fixed thresholds: a player reaches a tier with minPoints or more.",
+  "rankedTiers: the Top slots pay once minParticipants players have points; enabled false pays everyone by tier.",
+  "minPointsToQualify: a club needs this many points in a week to be placed at all."
+ ],
+ "version": 2,
+ "mode": "percentile",
+ "settleDelaySeconds": 300,
+ "minPointsToQualify": 1,
+ "rankedTiers": {
+  "enabled": true,
+  "minParticipants": 2
+ }
+}

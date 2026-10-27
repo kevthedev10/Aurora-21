@@ -1,0 +1,118 @@
+{
+ "_readme": [
+  "Seed for the FUT Draft run rewards (owner design 2026-10-03, todo.md section 2), from FIFA 21's published Draft reward bundles",
+  "(fifa21_draft_rewards.json). The server keeps them in the draft_reward_levels, draft_reward_choices, rewards and reward_lines tables:",
+  "a fresh or upgraded database is filled from this file once at start-up; from then on they change through the operator panel",
+  "(Modes, Draft) and content changesets, not this file.",
+  "levels: per mode (online, single) and wins (0 up to draft.json winsToComplete) the level's reward, paid to every run that ends there,",
+  "and its choices: one is drawn at the end of the run by weight (equal weights: EA never published its odds) from the run's seed.",
+  "Difficulty does not change the reward. Single-player pays less coins than online; both modes' run reward lines are tradeable.",
+  "Substitutes for packs the catalogue lacks: Jumbo Premium Gold 26 -> Jumbo Premium Gold (78), Ultimate Loan Player -> Gold (74),",
+  "Draft Token Pack -> 15,000 coins. Gold, Premium Gold, Silver and Jumbo Premium Gold are the store's mixed packs (74, 75, 72, 78);",
+  "the Players packs are 304, 305, 200 and the others are 73, 77, 302, 400, 401, 402, 403."
+ ],
+ "levels": [
+  {"mode": "online", "wins": 0, "reward": {"coins": 3000, "fcPoints": 0, "xp": 0, "lines": []}, "choices": [
+    {"weight": 1, "reward": {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 74, "count": 3, "untradeable": false}]}},
+    {"weight": 1, "reward": {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 72, "count": 1, "untradeable": false}, {"packId": 74, "count": 2, "untradeable": false}]}},
+    {"weight": 1, "reward": {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 200, "count": 1, "untradeable": false}, {"packId": 74, "count": 2, "untradeable": false}]}},
+    {"weight": 1, "reward": {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 74, "count": 3, "untradeable": false}]}},
+    {"weight": 1, "reward": {"coins": 15000, "fcPoints": 0, "xp": 0, "lines": []}},
+    {"weight": 1, "reward": {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 74, "count": 2, "untradeable": false}, {"packId": 77, "count": 1, "untradeable": false}]}}
+  ]},
+  {"mode": "online", "wins": 1, "reward": {"coins": 6000, "fcPoints": 0, "xp": 0, "lines": []}, "choices": [
+    {"weight": 1, "reward": {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 73, "count": 1, "untradeable": false}, {"packId": 74, "count": 2, "untradeable": false}]}},
+    {"weight": 1, "reward": {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 72, "count": 1, "untradeable": false}, {"packId": 74, "count": 1, "untradeable": false}, {"packId": 75, "count": 1, "untradeable": false}]}},
+    {"weight": 1, "reward": {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 74, "count": 2, "untradeable": false}, {"packId": 302, "count": 1, "untradeable": false}]}},
+    {"weight": 1, "reward": {"coins": 15000, "fcPoints": 0, "xp": 0, "lines": [{"packId": 74, "count": 1, "untradeable": false}]}},
+    {"weight": 1, "reward": {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 74, "count": 1, "untradeable": false}, {"packId": 75, "count": 2, "untradeable": false}]}},
+    {"weight": 1, "reward": {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 73, "count": 1, "untradeable": false}, {"packId": 78, "count": 2, "untradeable": false}]}},
+    {"weight": 1, "reward": {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 74, "count": 2, "untradeable": false}, {"packId": 305, "count": 1, "untradeable": false}]}}
+  ]},
+  {"mode": "online", "wins": 2, "reward": {"coins": 10000, "fcPoints": 0, "xp": 0, "lines": []}, "choices": [
+    {"weight": 1, "reward": {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 74, "count": 1, "untradeable": false}, {"packId": 78, "count": 1, "untradeable": false}]}},
+    {"weight": 1, "reward": {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 75, "count": 1, "untradeable": false}, {"packId": 78, "count": 1, "untradeable": false}]}},
+    {"weight": 1, "reward": {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 74, "count": 2, "untradeable": false}, {"packId": 75, "count": 2, "untradeable": false}]}},
+    {"weight": 1, "reward": {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 304, "count": 1, "untradeable": false}, {"packId": 78, "count": 1, "untradeable": false}]}},
+    {"weight": 1, "reward": {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 74, "count": 1, "untradeable": false}, {"packId": 305, "count": 1, "untradeable": false}]}},
+    {"weight": 1, "reward": {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 78, "count": 1, "untradeable": false}, {"packId": 305, "count": 1, "untradeable": false}]}},
+    {"weight": 1, "reward": {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 75, "count": 1, "untradeable": false}, {"packId": 401, "count": 1, "untradeable": false}]}}
+  ]},
+  {"mode": "online", "wins": 3, "reward": {"coins": 18000, "fcPoints": 0, "xp": 0, "lines": []}, "choices": [
+    {"weight": 1, "reward": {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 75, "count": 3, "untradeable": false}]}},
+    {"weight": 1, "reward": {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 75, "count": 2, "untradeable": false}, {"packId": 78, "count": 1, "untradeable": false}]}},
+    {"weight": 1, "reward": {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 78, "count": 2, "untradeable": false}]}},
+    {"weight": 1, "reward": {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 74, "count": 1, "untradeable": false}, {"packId": 305, "count": 1, "untradeable": false}]}},
+    {"weight": 1, "reward": {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 78, "count": 1, "untradeable": false}, {"packId": 400, "count": 1, "untradeable": false}]}},
+    {"weight": 1, "reward": {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 74, "count": 1, "untradeable": false}, {"packId": 78, "count": 1, "untradeable": false}, {"packId": 400, "count": 1, "untradeable": false}]}},
+    {"weight": 1, "reward": {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 74, "count": 1, "untradeable": false}, {"packId": 78, "count": 1, "untradeable": false}, {"packId": 305, "count": 1, "untradeable": false}]}},
+    {"weight": 1, "reward": {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 401, "count": 1, "untradeable": false}]}},
+    {"weight": 1, "reward": {"coins": 20000, "fcPoints": 0, "xp": 0, "lines": [{"packId": 74, "count": 1, "untradeable": false}, {"packId": 305, "count": 1, "untradeable": false}]}},
+    {"weight": 1, "reward": {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 304, "count": 1, "untradeable": false}, {"packId": 78, "count": 1, "untradeable": false}, {"packId": 305, "count": 1, "untradeable": false}]}},
+    {"weight": 1, "reward": {"coins": 20000, "fcPoints": 0, "xp": 0, "lines": [{"packId": 304, "count": 1, "untradeable": false}, {"packId": 305, "count": 1, "untradeable": false}]}},
+    {"weight": 1, "reward": {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 304, "count": 1, "untradeable": false}, {"packId": 305, "count": 2, "untradeable": false}]}}
+  ]},
+  {"mode": "online", "wins": 4, "reward": {"coins": 30000, "fcPoints": 0, "xp": 0, "lines": []}, "choices": [
+    {"weight": 1, "reward": {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 74, "count": 1, "untradeable": false}, {"packId": 401, "count": 1, "untradeable": false}]}},
+    {"weight": 1, "reward": {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 78, "count": 2, "untradeable": false}, {"packId": 305, "count": 1, "untradeable": false}]}},
+    {"weight": 1, "reward": {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 75, "count": 1, "untradeable": false}, {"packId": 400, "count": 2, "untradeable": false}]}},
+    {"weight": 1, "reward": {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 75, "count": 1, "untradeable": false}, {"packId": 401, "count": 1, "untradeable": false}]}},
+    {"weight": 1, "reward": {"coins": 25000, "fcPoints": 0, "xp": 0, "lines": [{"packId": 75, "count": 1, "untradeable": false}, {"packId": 400, "count": 1, "untradeable": false}]}},
+    {"weight": 1, "reward": {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 305, "count": 1, "untradeable": false}, {"packId": 403, "count": 1, "untradeable": false}]}},
+    {"weight": 1, "reward": {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 74, "count": 2, "untradeable": false}, {"packId": 305, "count": 2, "untradeable": false}]}},
+    {"weight": 1, "reward": {"coins": 30000, "fcPoints": 0, "xp": 0, "lines": [{"packId": 78, "count": 1, "untradeable": false}, {"packId": 400, "count": 1, "untradeable": false}]}},
+    {"weight": 1, "reward": {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 74, "count": 1, "untradeable": false}, {"packId": 403, "count": 2, "untradeable": false}]}},
+    {"weight": 1, "reward": {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 78, "count": 1, "untradeable": false}, {"packId": 400, "count": 1, "untradeable": false}, {"packId": 403, "count": 1, "untradeable": false}]}},
+    {"weight": 1, "reward": {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 305, "count": 3, "untradeable": false}]}},
+    {"weight": 1, "reward": {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 75, "count": 1, "untradeable": false}, {"packId": 403, "count": 2, "untradeable": false}]}},
+    {"weight": 1, "reward": {"coins": 25000, "fcPoints": 0, "xp": 0, "lines": [{"packId": 75, "count": 1, "untradeable": false}, {"packId": 305, "count": 1, "untradeable": false}]}},
+    {"weight": 1, "reward": {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 305, "count": 1, "untradeable": false}, {"packId": 400, "count": 1, "untradeable": false}, {"packId": 403, "count": 1, "untradeable": false}]}},
+    {"weight": 1, "reward": {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 78, "count": 1, "untradeable": false}, {"packId": 403, "count": 1, "untradeable": false}, {"packId": 401, "count": 1, "untradeable": false}]}},
+    {"weight": 1, "reward": {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 75, "count": 1, "untradeable": false}, {"packId": 401, "count": 2, "untradeable": false}]}},
+    {"weight": 1, "reward": {"coins": 45000, "fcPoints": 0, "xp": 0, "lines": [{"packId": 78, "count": 1, "untradeable": false}, {"packId": 401, "count": 1, "untradeable": false}]}},
+    {"weight": 1, "reward": {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 78, "count": 1, "untradeable": false}, {"packId": 402, "count": 1, "untradeable": false}]}},
+    {"weight": 1, "reward": {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 403, "count": 1, "untradeable": false}, {"packId": 402, "count": 1, "untradeable": false}]}}
+  ]},
+  {"mode": "single", "wins": 0, "reward": {"coins": 1500, "fcPoints": 0, "xp": 0, "lines": []}, "choices": [
+    {"weight": 1, "reward": {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 74, "count": 1, "untradeable": false}]}},
+    {"weight": 1, "reward": {"coins": 15000, "fcPoints": 0, "xp": 0, "lines": []}}
+  ]},
+  {"mode": "single", "wins": 1, "reward": {"coins": 3000, "fcPoints": 0, "xp": 0, "lines": []}, "choices": [
+    {"weight": 1, "reward": {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 72, "count": 1, "untradeable": false}, {"packId": 74, "count": 2, "untradeable": false}]}}
+  ]},
+  {"mode": "single", "wins": 2, "reward": {"coins": 5000, "fcPoints": 0, "xp": 0, "lines": []}, "choices": [
+    {"weight": 1, "reward": {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 78, "count": 1, "untradeable": false}]}},
+    {"weight": 1, "reward": {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 74, "count": 3, "untradeable": false}]}},
+    {"weight": 1, "reward": {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 74, "count": 2, "untradeable": false}, {"packId": 77, "count": 1, "untradeable": false}]}}
+  ]},
+  {"mode": "single", "wins": 3, "reward": {"coins": 9000, "fcPoints": 0, "xp": 0, "lines": []}, "choices": [
+    {"weight": 1, "reward": {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 73, "count": 1, "untradeable": false}, {"packId": 74, "count": 2, "untradeable": false}]}},
+    {"weight": 1, "reward": {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 74, "count": 2, "untradeable": false}, {"packId": 75, "count": 1, "untradeable": false}]}},
+    {"weight": 1, "reward": {"coins": 15000, "fcPoints": 0, "xp": 0, "lines": [{"packId": 75, "count": 1, "untradeable": false}]}},
+    {"weight": 1, "reward": {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 75, "count": 3, "untradeable": false}]}},
+    {"weight": 1, "reward": {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 75, "count": 1, "untradeable": false}, {"packId": 78, "count": 1, "untradeable": false}]}},
+    {"weight": 1, "reward": {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 78, "count": 1, "untradeable": false}, {"packId": 305, "count": 1, "untradeable": false}]}},
+    {"weight": 1, "reward": {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 78, "count": 1, "untradeable": false}, {"packId": 305, "count": 1, "untradeable": false}]}}
+  ]},
+  {"mode": "single", "wins": 4, "reward": {"coins": 15000, "fcPoints": 0, "xp": 0, "lines": []}, "choices": [
+    {"weight": 1, "reward": {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 74, "count": 1, "untradeable": false}, {"packId": 75, "count": 1, "untradeable": false}]}},
+    {"weight": 1, "reward": {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 75, "count": 1, "untradeable": false}, {"packId": 304, "count": 1, "untradeable": false}]}},
+    {"weight": 1, "reward": {"coins": 15000, "fcPoints": 0, "xp": 0, "lines": [{"packId": 75, "count": 1, "untradeable": false}]}},
+    {"weight": 1, "reward": {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 75, "count": 1, "untradeable": false}, {"packId": 78, "count": 1, "untradeable": false}]}},
+    {"weight": 1, "reward": {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 400, "count": 1, "untradeable": false}]}},
+    {"weight": 1, "reward": {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 304, "count": 1, "untradeable": false}, {"packId": 78, "count": 1, "untradeable": false}]}},
+    {"weight": 1, "reward": {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 78, "count": 2, "untradeable": false}]}},
+    {"weight": 1, "reward": {"coins": 15000, "fcPoints": 0, "xp": 0, "lines": [{"packId": 78, "count": 1, "untradeable": false}]}},
+    {"weight": 1, "reward": {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 75, "count": 2, "untradeable": false}, {"packId": 78, "count": 1, "untradeable": false}]}},
+    {"weight": 1, "reward": {"coins": 15000, "fcPoints": 0, "xp": 0, "lines": [{"packId": 78, "count": 1, "untradeable": false}]}},
+    {"weight": 1, "reward": {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 75, "count": 1, "untradeable": false}, {"packId": 305, "count": 1, "untradeable": false}]}},
+    {"weight": 1, "reward": {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 403, "count": 1, "untradeable": false}]}},
+    {"weight": 1, "reward": {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 75, "count": 1, "untradeable": false}, {"packId": 78, "count": 2, "untradeable": false}]}},
+    {"weight": 1, "reward": {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 304, "count": 1, "untradeable": false}, {"packId": 305, "count": 1, "untradeable": false}]}},
+    {"weight": 1, "reward": {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 304, "count": 1, "untradeable": false}, {"packId": 78, "count": 1, "untradeable": false}]}},
+    {"weight": 1, "reward": {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 78, "count": 1, "untradeable": false}, {"packId": 305, "count": 1, "untradeable": false}]}},
+    {"weight": 1, "reward": {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 78, "count": 1, "untradeable": false}, {"packId": 403, "count": 1, "untradeable": false}]}},
+    {"weight": 1, "reward": {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 401, "count": 1, "untradeable": false}]}}
+  ]}
+ ]
+}

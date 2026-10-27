@@ -1,0 +1,141 @@
+{
+  "_comment": "Squad Battles: daily generated CPU opponents and the match venue shared with Draft. Changing opponents or slot positions changes the squads generated for the current day.",
+
+  "_venueComment": "The match-only stadium card (Santiago Bernabeu, definition 6200001) that Draft and Squad Battles squads carry. Its assetId is the physical venue FIFA loads (CardsDLL 0x1803c4000 reads slot 5's assetId): asset 2 renders the Bernabeu, while the old card asset 1 loaded a bare pitch for CPU home fixtures (Python server e2e098f).",
+  "venue": {
+    "stadiumId": 2,
+    "resourceId": 6200001,
+    "name": "Santiago Bernabeu"
+  },
+
+  "_homeAwayComment": "Squad Battles has no home/away field (Python server e2e098f). CardsDLL 0x1800f0300 sums the selected opponent summary's badgeAssetId, rating, chemistry, formation enum (f442 = 16), estDate, stadium asset and both kit team ids (not sent, 0): even puts the user at home, odd the CPU. estDate is otherwise unused, so it carries the parity: a fixed founding date nudged by one second. Two of the four opponents host each cycle ((cycle + slot) odd). A CPU squad needs its own persona (cpuPersonaBase + slot, a band no player persona uses): with the user's persona CardsDLL's squad parser (0x1803248e0) took it for the user's squad and dropped its myStadiumInfo, so CPU home fixtures fell back to the user's venue.",
+  "homeAway": {
+    "opponentBadgeAssetId": 1,
+    "formationEnum": 16,
+    "estDateBase": 1598918400,
+    "cpuPersonaBase": 2100000000
+  },
+
+  "_opponentKitsComment": "Installed kits worn by every opponent so they never clash with the club's strips.",
+  "opponentKits": [
+    { "itemState": "activeHomeKit", "resourceId": 6301491, "teamId": 241, "kitType": 0, "name": "FC Barcelona Home Kit" },
+    { "itemState": "activeAwayKit", "resourceId": 6301492, "teamId": 241, "kitType": 1, "name": "FC Barcelona Away Kit" }
+  ],
+
+  "opponents": [
+    { "clubName": "Local Rovers", "clubAbbr": "LRO", "rating": 80, "chemistry": 82, "difficulty": "AMATEUR" },
+    { "clubName": "Local United", "clubAbbr": "LUT", "rating": 83, "chemistry": 88, "difficulty": "SEMIPRO" },
+    { "clubName": "Local City", "clubAbbr": "LCY", "rating": 86, "chemistry": 94, "difficulty": "PRO" },
+    { "clubName": "Local Legends", "clubAbbr": "LLG", "rating": 90, "chemistry": 100, "difficulty": "WORLDCLASS" }
+  ],
+  "formation": "f442",
+  "fiveStarFromRating": 83,
+
+  "_squadComment": "Positions accepted by each of the 23 slots of a generated 4-4-2 squad (11 starters, 12 substitutes). Only base cards (rareflag 0 or 1) rated at least candidateMinRating are used: promo ids make the pre-match flow wait forever on unavailable player heads.",
+  "slotPositions": [
+    ["GK"], ["LB", "LWB"], ["CB"], ["CB"], ["RB", "RWB"],
+    ["LM", "LW"], ["CM", "CDM", "CAM"], ["CM", "CAM", "CDM"],
+    ["RM", "RW"], ["ST", "CF"], ["ST", "CF"],
+    ["GK"], ["LB", "LWB"], ["CB"], ["RB", "RWB"],
+    ["LM", "LW"], ["CM", "CAM", "CDM"], ["RM", "RW"],
+    ["CAM", "CM", "CF"], ["CDM", "CM"], ["LW", "LM"],
+    ["RW", "RM"], ["ST", "CF"]
+  ],
+  "candidateMinRating": 55,
+  "shortlistSize": 160,
+  "ratingDistanceExponent": 1.7,
+  "topPlayersShown": 3,
+
+  "_eventComment": "The always-open competition window around the current time. matchesPerEvent is the competition's weekly game count (competition.maxGames).",
+  "matchesPerEvent": 42,
+  "eventStartedDaysAgo": 1,
+  "eventEndsInDays": 30,
+
+  "_legacyFeedComment": "The generic opponent feed served on older Squad Battles paths.",
+  "legacyFeed": {
+    "squads": 4,
+    "squadIdBase": 900000,
+    "nameFormat": "Squad Battles Opponent {n}",
+    "ratingBase": 75,
+    "ratingStep": 3,
+    "chemistryBase": 75,
+    "chemistryStep": 5
+  },
+
+  "_itemIdsComment": "Synthetic item id ranges for generated opponent items. CardsDLL caches active items by id, so these must never overlap owned club items.",
+  "itemIds": {
+    "opponentPlayers": 920000,
+    "opponentPlayersPerSlot": 100,
+    "legacyPlayers": 800000,
+    "opponentKits": 930000000000,
+    "opponentKitsPerSlot": 10,
+    "opponentStadiums": 930000000090,
+    "matchOpponentStadium": 930000000099
+  },
+
+  "_competitionComment": "The weekly Squad Battles competition as in FIFA 21 retail (Python server f354894, a4fdc85): weeks run Monday 00:00 UTC (weekOriginSeconds after the epoch) for weekSeconds. Battle Points (fifauteam's FIFA 21 page, matching FIFPlay) = difficulty modifier x (team rating score + match result + skill) + goals: team rating score is rating x 3 + chemistry / 2; the match result is matchResultPoints; skill adds skillBonuses (points per unit, at most maxUnits, the stats summed) and takes off skillPenalties and goalsAgainstPenalty; goals are goalPoints[difficulty] per goal scored, at most goalBonusCap. A match is won or lost: a level score goes to penalties, and a quit is a loss worth no points (EA). The hub's modifiers are winModifiers / lossModifiers (seven difficulties, Beginner to Ultimate, difficultyNames); the difficulty screen previews basePoints x modifier, with basePoints = 3 x rating + chemistry / 2 + result + baseSkillAllowance (the client's own fallback, 0x1802f971e). maxRegularGames community matches count a week (EA); the Team of the Week is extra, and a replay of it counts only when it beats the week's result, by the difference. Weeks from firstRetailWeek settle once for every club settleDelaySeconds after they close (rules/sqbt_rewards.json), and a prize stays claimable for prizeWeeksBack weeks. A CreateMatch is settled by a match end within pendingMaxAgeSeconds. The board ranks named clubs by points, wins, fewer games, then name; its rows carry boardSku, which the board compares (CardsDLL 0x1800f886a; the Leaderboards screen uses its own), and the hub asks again after leaderboardRefreshSeconds (retail: about five minutes). The live standings behind the hub's rank and tier thresholds reuse other clubs' scores for standingsCacheSeconds (a club's own score is always current).",
+  "competition": {
+    "weekOriginSeconds": 345600,
+    "weekSeconds": 604800,
+    "boardSize": 25,
+    "boardSku": "FFA21PCC",
+    "leaderboardRefreshSeconds": 300,
+    "standingsCacheSeconds": 60,
+    "pendingMaxAgeSeconds": 14400,
+    "firstRetailWeek": 2959,
+    "prizeWeeksBack": 4,
+    "maxRegularGames": 40,
+    "difficultyNames": ["BEGINNER", "AMATEUR", "SEMIPRO", "PRO", "WORLDCLASS", "LEGENDARY", "ULTIMATE"],
+    "winModifiers": [0.5, 0.6, 0.7, 1.0, 1.6, 2.1, 2.6],
+    "lossModifiers": [0.2, 0.25, 0.4, 0.5, 0.6, 0.7, 0.7],
+    "matchResultPoints": { "win": 200, "loss": 50 },
+    "goalPoints": [20, 30, 40, 60, 100, 140, 160],
+    "goalBonusCap": 5,
+    "skillBonuses": [
+      { "stats": ["goals"], "points": 40, "maxUnits": 5 },
+      { "stats": ["shotsOnTarget"], "points": 5, "maxUnits": 10 },
+      { "stats": ["successfulTackles"], "points": 1, "maxUnits": 20 },
+      { "stats": ["corners"], "points": 5, "maxUnits": 10 },
+      { "stats": ["cleansheets"], "points": 75, "maxUnits": 1 },
+      { "stats": ["passingPercentage"], "points": 1, "maxUnits": 80 },
+      { "stats": ["possessionPercentage"], "points": 1, "maxUnits": 80 },
+      { "stats": ["manOfTheMatch"], "points": 15, "maxUnits": 1 }
+    ],
+    "skillPenalties": [
+      { "stats": ["fouls"], "points": 5, "maxUnits": 4 },
+      { "stats": ["yellowCards", "redCards"], "points": 10, "maxUnits": 8 },
+      { "stats": ["offsides"], "points": 1, "maxUnits": 15 }
+    ],
+    "goalsAgainstPenalty": { "points": 20, "maxGoals": 4 },
+    "baseSkillAllowance": 300
+  },
+
+  "_setsComment": "Opponents as in FIFA 21 retail (Python server f354894): each club draws four opponents (squadsPerSet; CardsDLL hard-codes four) from the other real clubs on the server, one Easy, one Medium and one Hard plus one more Easy or Medium, frozen when drawn (the club's active squad as it is then, with a CPU persona from setPersonaBase: FIFA keeps a squad's stadium only when the persona is not the user's). Easy, Medium and Hard are the pool's thirds by team rating score; this server buckets by the XI's average rating (it does not store the chemistry the client last saved, as the Python server did) and computes chemistry for the four clubs drawn. A draw prefers clubs not faced this week (the last facedMemory), tries snapshotTries clubs per slot, and falls back to a generated squad (item ids from fallbackItemBase, per set and slot). Strips that match the user's are swapped for the opponent kits. The crest is the badge card's resource id less badgeResourceBase. The player refreshes (PUT sqbt/v2/user/opponents/refresh) whenever they want, refreshSeconds after a draw: 0, as in FIFA 21 retail (EA: you're in control of when you refresh Squads; fifauteam: refresh 4 new squads whenever you want, until the 40 matches; FIFPlay's every 6 hours was older FIFAs, and players waited hours with all four played, live 10-06); unplayed squads then count toward the week's matches for no points (EA), so a week is still at most maxRegularGames. An unplayed tile shows its bucket's label (bucketLabels), a played one the difficulty played. The opponent panel shows the XI's most common nationality (nationIso: FIFA 21 nation id to ISO code, taken from the Python server, which read it from FIFA 21's nations table), the tactics (the squad's own, else defaultTactics, elements 22-29 of custom) and the kits.",
+  "sets": {
+    "squadsPerSet": 4,
+    "refreshSeconds": 0,
+    "bucketLabels": { "EASY": "AMATEUR", "MEDIUM": "PRO", "HARD": "WORLDCLASS" },
+    "snapshotTries": 3,
+    "facedMemory": 200,
+    "setPersonaBase": 2100000100,
+    "fallbackItemBase": 9000000,
+    "fallbackSetsCycled": 90,
+    "badgeResourceBase": 6000000,
+    "defaultTactics": [1, 5, 5, 1, 5, 5, 3, 3],
+    "nationIso": { "1": "AL", "2": "AD", "3": "AM", "4": "AT", "5": "AZ", "6": "BY", "7": "BE", "8": "BA", "9": "BG", "10": "HR", "11": "CY", "12": "CZ", "13": "DK", "14": "GB", "15": "ME", "16": "FO", "17": "FI", "18": "FR", "19": "MK", "20": "GE", "21": "DE", "22": "GR", "23": "HU", "24": "IS", "25": "IE", "26": "IL", "27": "IT", "28": "LV", "29": "LI", "30": "LT", "31": "LU", "32": "MT", "33": "MD", "34": "NL", "35": "GB", "36": "NO", "37": "PL", "38": "PT", "39": "RO", "40": "RU", "41": "SM", "42": "GB", "43": "SK", "44": "SI", "45": "ES", "46": "SE", "47": "CH", "48": "TR", "49": "UA", "50": "GB", "51": "RS", "52": "AR", "53": "BO", "54": "BR", "55": "CL", "56": "CO", "57": "EC", "58": "PY", "59": "PE", "60": "UY", "61": "VE", "62": "AI", "63": "AG", "64": "AW", "65": "BS", "66": "BB", "67": "BZ", "68": "BM", "69": "VG", "70": "CA", "71": "KY", "72": "CR", "73": "CU", "74": "DM", "76": "SV", "77": "GD", "78": "GT", "79": "GY", "80": "HT", "81": "HN", "82": "JM", "83": "MX", "84": "MS", "85": "AN", "86": "NI", "87": "PA", "88": "PR", "89": "KN", "90": "LC", "91": "VC", "92": "SR", "93": "TT", "94": "TC", "95": "US", "96": "VI", "97": "DZ", "98": "AO", "99": "BJ", "100": "BW", "101": "BF", "102": "BI", "103": "CM", "104": "CV", "105": "CF", "106": "TD", "107": "CG", "108": "CI", "109": "DJ", "110": "CD", "111": "EG", "112": "GQ", "113": "ER", "114": "ET", "115": "GA", "116": "GM", "117": "GH", "118": "GN", "119": "GW", "120": "KE", "121": "LS", "122": "LR", "123": "LY", "124": "MG", "125": "MW", "126": "ML", "127": "MR", "128": "MU", "129": "MA", "130": "MZ", "131": "NA", "132": "NE", "133": "NG", "134": "RW", "135": "ST", "136": "SN", "137": "SC", "138": "SL", "139": "SO", "140": "ZA", "141": "SD", "142": "SZ", "143": "TZ", "144": "TG", "145": "TN", "146": "UG", "147": "ZM", "148": "ZW", "149": "AF", "150": "BH", "151": "BD", "152": "BT", "153": "BN", "154": "KH", "155": "CN", "157": "GU", "158": "HK", "159": "IN", "160": "ID", "161": "IR", "162": "IQ", "163": "JP", "164": "JO", "165": "KZ", "166": "KP", "167": "KR", "168": "KW", "169": "KG", "170": "LA", "171": "LB", "172": "MO", "173": "MY", "174": "MV", "175": "MN", "176": "MM", "177": "NP", "178": "OM", "179": "PK", "180": "PS", "181": "PH", "182": "QA", "183": "SA", "184": "SG", "185": "LK", "186": "SY", "187": "TJ", "188": "TH", "189": "TM", "190": "AE", "191": "UZ", "192": "VN", "193": "YE", "194": "AS", "195": "AU", "196": "CK", "197": "FJ", "198": "NZ", "199": "PG", "200": "WS", "201": "SB", "202": "PF", "203": "TO", "204": "VU", "205": "GI", "206": "GL", "207": "DO", "208": "EE", "212": "TL", "213": "TW", "214": "KM", "215": "NC", "218": "SS" }
+  },
+
+  "_totwComment": "The Team of the Week (Python server a4fdc85): every FIFA 21 TOTW is in rules/sqbt_totw.json (EA's XIs, checked against EA's TOTW graphics; its current is the one playable). FIFA reads TOTW squads through /featuredsquad with featureConsumerId=sqbttotw: user/stats is the tile, /history every id newest first, /{id} one squad (idBase + week). The crest is hard-coded (crest) and the user is always at home against the TOTW (CardsDLL 0x1800f0300). Each squad's cards take item ids from itemBase + week x 100, its persona personaBase + week, its stadium item id stadiumItemBase + week, and its opponent kits the ids of generated slot kitSlot. The banner (bannerFormat) is a 1482x632 picture of the XI drawn by the maintainer's script, served from artFolder as squadBattle/cmn/<name>. The Featured Squad (consumer sqbt) is off: id -1 greys its tile.",
+  "totw": {
+    "idBase": 2000000,
+    "crest": 113296,
+    "personaBase": 2100001000,
+    "itemBase": 960000,
+    "stadiumItemBase": 930000000190,
+    "kitSlot": 5,
+    "difficulty": "WORLDCLASS",
+    "artFolder": "sqbt-art",
+    "bannerFormat": "totw_{week}_v1.png",
+    "cacheSeconds": 86400
+  }
+}

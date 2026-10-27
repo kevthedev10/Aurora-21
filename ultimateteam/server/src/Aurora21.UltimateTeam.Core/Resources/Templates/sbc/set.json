@@ -1,0 +1,22 @@
+{
+  "setId": "{{id}}",
+  "id": "{{id}}",
+  "name": "{{name}}",
+  "description": "{{description}}",
+  "priority": "{{priority}}",
+  "hidden": "{{hidden}}",
+  "repeatable": "{{repeatable}}",
+  "challengesCount": "{{challengesCount}}",
+  "challengesCompletedCount": "{{completedCount}}",
+  "timesCompleted": "{{timesCompleted}}",
+  "setImageId": "{{imageId}}",
+  "trophyId": "{{imageId}}",
+  "assetId": "{{imageId}}",
+  "taggedByUser": "{{tagged}}",
+  "tagged": "{{tagged}}",
+  "taggedByProduction": false,
+  "endTime": 0,
+  "startTime": 0,
+  "tutorial": false,
+  "awards": "{{awards}}"
+}

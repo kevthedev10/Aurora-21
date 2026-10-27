@@ -1,0 +1,8 @@
+{
+  "finalScore": "{{final}}",
+  "matchResultScore": "{{result}}",
+  "teamRatingScore": "{{teamRating}}",
+  "skillRatingScore": "{{skillRating}}",
+  "goalsScore": "{{goals}}",
+  "matchDifficultyScoreModifier": "{{modifier}}"
+}

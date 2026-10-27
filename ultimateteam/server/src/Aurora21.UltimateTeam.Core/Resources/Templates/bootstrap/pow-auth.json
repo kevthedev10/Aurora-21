@@ -1,0 +1,5 @@
+{
+  "sid": "{{sid}}",
+  "serverTime": "{{now}}",
+  "lastOnlineTime": "{{now}}"
+}

@@ -1,0 +1,354 @@
+{
+  "recordedAtUtc": "2026-09-17T17:02:29.123Z",
+  "scope": "Live ultimateteam.definition_extensions; BEGIN READ ONLY / ROLLBACK",
+  "rows": 24203,
+  "seedRows": 24203,
+  "seedMismatches": [],
+  "families": {
+    "1": 22506,
+    "2": 311,
+    "4": 1386
+  },
+  "fields": {
+    "compatibilityMetadata": {
+      "rows": 22506,
+      "types": {
+        "object": 22506
+      },
+      "emptyStrings": 0,
+      "zeros": 0
+    },
+    "compatibilityMetadata.firstName": {
+      "rows": 22506,
+      "types": {
+        "string": 22506
+      },
+      "emptyStrings": 3,
+      "zeros": 0
+    },
+    "compatibilityMetadata.lastName": {
+      "rows": 22506,
+      "types": {
+        "string": 22506
+      },
+      "emptyStrings": 3,
+      "zeros": 0
+    },
+    "compatibilityMetadata.commonName": {
+      "rows": 22500,
+      "types": {
+        "string": 22500
+      },
+      "emptyStrings": 18923,
+      "zeros": 0
+    },
+    "compatibilityMetadata.dateOfBirth": {
+      "rows": 22503,
+      "types": {
+        "string": 22503
+      },
+      "emptyStrings": 0,
+      "zeros": 0
+    },
+    "compatibilityMetadata.height": {
+      "rows": 22503,
+      "types": {
+        "number": 22503
+      },
+      "emptyStrings": 0,
+      "zeros": 3
+    },
+    "compatibilityMetadata.weight": {
+      "rows": 22503,
+      "types": {
+        "number": 22503
+      },
+      "emptyStrings": 0,
+      "zeros": 22499
+    },
+    "compatibilityMetadata.wefutCard": {
+      "rows": 22500,
+      "types": {
+        "object": 22500
+      },
+      "emptyStrings": 0,
+      "zeros": 0
+    },
+    "compatibilityMetadata.wefutCard.id": {
+      "rows": 22500,
+      "types": {
+        "number": 22500
+      },
+      "emptyStrings": 0,
+      "zeros": 0
+    },
+    "compatibilityMetadata.wefutCard.url": {
+      "rows": 22500,
+      "types": {
+        "string": 22500
+      },
+      "emptyStrings": 0,
+      "zeros": 0
+    },
+    "compatibilityMetadata.wefutCard.resourceIdSource": {
+      "rows": 22500,
+      "types": {
+        "string": 22500
+      },
+      "emptyStrings": 0,
+      "zeros": 0
+    },
+    "missingSourceKeys": {
+      "rows": 22506,
+      "types": {
+        "array": 22506
+      },
+      "emptyStrings": 0,
+      "zeros": 0
+    },
+    "compatibilityMetadata.wefutCard.nameSource": {
+      "rows": 3,
+      "types": {
+        "string": 3
+      },
+      "emptyStrings": 0,
+      "zeros": 0
+    },
+    "compatibilityMetadata.commonname": {
+      "rows": 6,
+      "types": {
+        "string": 6
+      },
+      "emptyStrings": 2,
+      "zeros": 0
+    },
+    "compatibilityMetadata.customCard": {
+      "rows": 6,
+      "types": {
+        "string": 6
+      },
+      "emptyStrings": 0,
+      "zeros": 0
+    },
+    "compatibilityMetadata.untradeable": {
+      "rows": 3,
+      "types": {
+        "boolean": 3
+      },
+      "emptyStrings": 0,
+      "zeros": 0
+    },
+    "compatibilityMetadata.replacesResourceIds": {
+      "rows": 102,
+      "types": {
+        "array": 102
+      },
+      "emptyStrings": 0,
+      "zeros": 0
+    },
+    "compatibilityMetadata.dynamicImageResourceId": {
+      "rows": 101,
+      "types": {
+        "number": 101
+      },
+      "emptyStrings": 0,
+      "zeros": 0
+    },
+    "talkRating": {
+      "rows": 311,
+      "types": {
+        "number": 311
+      },
+      "emptyStrings": 0,
+      "zeros": 311
+    },
+    "formationId": {
+      "rows": 311,
+      "types": {
+        "number": 311
+      },
+      "emptyStrings": 0,
+      "zeros": 311
+    },
+    "type": {
+      "rows": 1382,
+      "types": {
+        "string": 1382
+      },
+      "emptyStrings": 0,
+      "zeros": 0
+    },
+    "slug": {
+      "rows": 1382,
+      "types": {
+        "string": 1382
+      },
+      "emptyStrings": 0,
+      "zeros": 0
+    },
+    "teamId": {
+      "rows": 1,
+      "types": {
+        "number": 1
+      },
+      "emptyStrings": 0,
+      "zeros": 0
+    },
+    "templateMetadata": {
+      "rows": 3,
+      "types": {
+        "object": 3
+      },
+      "emptyStrings": 0,
+      "zeros": 0
+    },
+    "templateMetadata.family": {
+      "rows": 3,
+      "types": {
+        "string": 3
+      },
+      "emptyStrings": 0,
+      "zeros": 0
+    },
+    "templateMetadata.table": {
+      "rows": 3,
+      "types": {
+        "string": 3
+      },
+      "emptyStrings": 0,
+      "zeros": 0
+    },
+    "templateMetadata.discardValue": {
+      "rows": 3,
+      "types": {
+        "number": 3
+      },
+      "emptyStrings": 0,
+      "zeros": 0
+    },
+    "templateMetadata.value": {
+      "rows": 3,
+      "types": {
+        "number": 3
+      },
+      "emptyStrings": 0,
+      "zeros": 0
+    },
+    "templateMetadata.weightrare": {
+      "rows": 3,
+      "types": {
+        "number": 3
+      },
+      "emptyStrings": 0,
+      "zeros": 2
+    },
+    "templateMetadata.capacity": {
+      "rows": 1,
+      "types": {
+        "string": 1
+      },
+      "emptyStrings": 0,
+      "zeros": 0
+    },
+    "templateMetadata.StadiumId": {
+      "rows": 1,
+      "types": {
+        "string": 1
+      },
+      "emptyStrings": 0,
+      "zeros": 0
+    },
+    "templateMetadata.boost": {
+      "rows": 1,
+      "types": {
+        "number": 1
+      },
+      "emptyStrings": 0,
+      "zeros": 1
+    },
+    "templateMetadata.ballid": {
+      "rows": 1,
+      "types": {
+        "number": 1
+      },
+      "emptyStrings": 0,
+      "zeros": 0
+    }
+  },
+  "missingSourceKeys": {
+    "resourceId": 6,
+    "nationName": 3,
+    "leagueName": 3,
+    "teamName": 3,
+    "rarityName": 3,
+    "rarityClass": 3,
+    "tier": 3
+  },
+  "identityDiscrepancies": {
+    "commonName": {
+      "rows": 18923,
+      "emptyVersusNull": 18923,
+      "other": 0,
+      "examples": []
+    },
+    "lastName": {
+      "rows": 1,
+      "emptyVersusNull": 0,
+      "other": 1,
+      "examples": [
+        {
+          "definitionId": 22403,
+          "footballerId": 1948,
+          "extension": "da Silva Santos Júnior",
+          "typed": "da Silva Santos Jr."
+        }
+      ]
+    }
+  },
+  "physical": {
+    "dateOfBirth": {
+      "placeholder19700101": 1,
+      "conflictingFootballers": [
+        {
+          "footballerId": 2,
+          "values": [
+            "1975-05-02",
+            "1970-01-01"
+          ]
+        }
+      ]
+    },
+    "height": {
+      "placeholder19700101": 0,
+      "conflictingFootballers": [
+        {
+          "footballerId": 1816,
+          "values": [
+            173,
+            172
+          ]
+        },
+        {
+          "footballerId": 2,
+          "values": [
+            183,
+            182
+          ]
+        }
+      ]
+    },
+    "weight": {
+      "placeholder19700101": 0,
+      "conflictingFootballers": [
+        {
+          "footballerId": 2,
+          "values": [
+            74,
+            0
+          ]
+        }
+      ]
+    }
+  },
+  "missingSeedIds": []
+}

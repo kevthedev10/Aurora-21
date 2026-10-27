@@ -1,0 +1,8 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RootNamespace>Aurora21.UltimateTeam.Protocol</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <InternalsVisibleTo Include="Aurora21.UltimateTeam.Tests" />
+  </ItemGroup>
+</Project>

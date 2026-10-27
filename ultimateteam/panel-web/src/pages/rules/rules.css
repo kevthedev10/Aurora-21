@@ -1,0 +1,24 @@
+.rules-layout.rules-review { grid-template-columns: 270px minmax(0,1fr); gap: 24px; }
+.rules-layout .file-list { top: 100px; gap: 5px; max-height: calc(100vh - 130px); overflow-y: auto; padding-right: 8px; }
+.rules-layout .file-list > :first-child { margin-bottom: 14px; }
+.rules-layout .file-list a { padding: 12px 14px; min-height: 64px; border: 1px solid transparent; border-radius: 10px; align-items: center; }
+.rules-layout .file-list a[aria-current='page'] { border-color: var(--line); background: var(--stand); }
+.rules-layout .file-list a strong { display: block; font-size: 14px; line-height: 1.35; }
+.rules-layout .file-list a small { display: block; opacity: .6; font-size: 11px; margin-top: 4px; overflow-wrap: anywhere; }
+.rules-toolbar { display: flex; align-items: flex-end; flex-wrap: wrap; gap: 16px; margin-bottom: 24px; }
+.rules-toolbar > :first-child { flex: 1; min-width: 200px; }
+.rules-toolbar input[type='search'] { min-height: 42px; }
+.rules-documentation { display: flex; gap: 10px; align-items: center; min-height: 42px; font-size: 13px; }
+.rules-documentation input { width: 18px; height: 18px; flex: none; }
+.rules-section .rule-list > li { grid-template-columns: minmax(180px,2fr) minmax(180px,3fr) auto; padding: 18px 4px; gap: 24px; align-items: start; }
+.rules-section .rule-path { font-size: 13px; line-height: 1.7; overflow-wrap: anywhere; }
+.rule-value-group { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; min-width: 0; }
+.rules-section .rule-value { width: 100%; overflow-wrap: anywhere; font-size: 13px; line-height: 1.7; color: var(--fog); }
+.rule-value-group > :last-child { max-width: 100%; white-space: normal; overflow-wrap: anywhere; }
+.rule-editor-fields { border: 0; margin: 0; padding: 0; display: grid; gap: 20px; min-width: 0; }
+.rule-additions { margin-top: 24px; border: 1px solid var(--line); border-radius: 12px; padding: 16px; }
+.rule-additions h3 { margin-top: 0; }
+.rule-additions ul { padding: 0; list-style: none; }
+.rule-additions li { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; padding: 8px 0; overflow-wrap: anywhere; }
+@media(max-width:1100px) { .rules-layout.rules-review { grid-template-columns: 230px minmax(0,1fr); } .rules-section .rule-list > li { grid-template-columns: minmax(0,1fr); gap: 12px; } }
+@media(max-width:800px) { .rules-layout.rules-review { grid-template-columns: minmax(0,1fr); } .rules-layout .file-list { position: static; grid-template-columns: repeat(auto-fit,minmax(180px,1fr)); max-height: 300px; } .rules-layout .file-list > :first-child { grid-column: 1/-1; } }

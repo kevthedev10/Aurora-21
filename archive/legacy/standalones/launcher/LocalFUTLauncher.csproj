@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <EnableDefaultPageItems>false</EnableDefaultPageItems>
+    <AssemblyName>Aurora21-Launcher</AssemblyName>
+    <RootNamespace>Project21Launcher</RootNamespace>
+    <ApplicationIcon>Aurora21.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Using Remove="System.Drawing" />
+    <Using Remove="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="NAudio" Version="2.2.1" />
+    <PackageReference Include="System.Security.Cryptography.ProtectedData" Version="8.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="LocalFUTLauncher.App.xaml" />
+    <Page Include="LocalFUTLauncher.MainWindow.xaml" />
+    <Compile Include="LocalFUTLauncher.App.xaml.cs" />
+    <Compile Include="CloudMediaManager.cs" />
+    <Compile Include="LocalFUTLauncher.MainWindow.xaml.cs" />
+    <Compile Include="LocalFUTLauncher.RuntimeCompatibility.cs" />
+    <Resource Include="assets\FIFASetup.png" />
+    <Resource Include="assets\Aurora21-logo.png" />
+    <Resource Include="launcherimage.webp" />
+    <Resource Include="Aurora21.ico" />
+  </ItemGroup>
+</Project>

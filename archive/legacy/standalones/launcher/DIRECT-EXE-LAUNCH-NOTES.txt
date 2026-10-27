@@ -1,0 +1,8 @@
+Aurora 21 (Alpha v1) direct FIFA21.exe launch update
+
+- Play now passes the exact Game Installation FIFA21.exe path into Launch-LocalFUT.ps1.
+- Launch-LocalFUT.ps1 always starts that executable directly.
+- The EA App origin2:// launch branch is no longer used.
+- If EA App is already running and owns LSX port 3216, Aurora 21 (Alpha v1) preserves it as a background service only.
+- If no EA LSX listener exists, auto mode uses Aurora 21 (Alpha v1)'s local LSX replacement.
+- Connection diagnostics show the exact executable path selected for launch.

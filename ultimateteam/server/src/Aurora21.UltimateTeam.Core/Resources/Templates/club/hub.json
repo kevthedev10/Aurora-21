@@ -1,0 +1,11 @@
+{
+  "sqbtEvent": "{{sqbtEvent}}",
+  "rivals": "{{rivals}}",
+  "championEvent": "{{championEvent}}",
+  "liveMessagesAvailable": "{{liveMessages}}",
+  "auctionCount": "{{auctionCount}}",
+  "clubPlayers": "{{clubPlayers}}",
+  "tradePile": "{{tradePile}}",
+  "watchlist": "{{watchlist}}",
+  "squad": "{{squad}}"
+}

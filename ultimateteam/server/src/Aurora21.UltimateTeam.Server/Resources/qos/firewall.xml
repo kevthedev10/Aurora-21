@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="utf-8"?><firewall><ips><ips>{ip}</ips><ips>{ip}</ips></ips><numinterfaces>2</numinterfaces><ports><ports>{port}</ports><ports>{port}</ports></ports><requestid>1234</requestid><reqsecret>5678</reqsecret></firewall>

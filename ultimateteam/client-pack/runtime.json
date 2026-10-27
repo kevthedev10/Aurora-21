@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "version": "@VERSION@",
+  "game": { "exe": "FIFA21.exe" },
+  "trustAnchors": {
+    "manifest": "/client/trust-anchors/manifest.json",
+    "files": "/client/trust-anchors/{name}",
+    "into": "{install}\\trust-anchors"
+  },
+  "command": {
+    "file": "powershell.exe",
+    "args": ["-NoProfile", "-ExecutionPolicy", "Bypass", "-File", "{install}\\Start-Aurora21.ps1",
+             "-GamePath", "{game}", "-ServerAddress", "{gameAddress}", "-TrustAnchors", "{install}\\trust-anchors", "-LogPath", "{logs}"],
+    "stdin": "code",
+    "elevated": true,
+    "ready": "[READY]",
+    "failed": "[FAILED]",
+    "readySeconds": 300
+  },
+  "cleanup": {
+    "file": "powershell.exe",
+    "args": ["-NoProfile", "-ExecutionPolicy", "Bypass", "-File", "{install}\\Start-Aurora21.ps1", "-Cleanup"],
+    "elevated": true,
+    "when": "after FIFA 21 exits"
+  }
+}

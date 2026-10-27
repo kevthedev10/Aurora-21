@@ -1,0 +1,21 @@
+{
+  "squadId": "{{squadId}}",
+  "name": "{{squadName}}",
+  "active": true,
+  "valid": true,
+  "newSquad": 0,
+  "newsquad": 0,
+  "formation": "{{formation}}",
+  "captain": "{{captain}}",
+  "chemistry": 100,
+  "starRating": 5,
+  "rating": "{{rating}}",
+  "custom": "{{custom}}",
+  "players": "{{players}}",
+  "manager": "{{managers}}",
+  "kicktakers": "{{kickTakers}}",
+  "actives": "{{actives}}",
+  "club": "{{actives}}",
+  "stadiumAssetId": "{{stadiumId}}",
+  "stadiumId": "{{stadiumId}}"
+}

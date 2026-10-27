@@ -1,0 +1,31 @@
+{
+  "endReason": "{{endReason}}",
+  "items": "{{items}}",
+  "matchData": "{{matchData}}",
+  "matchCoins": "{{earned}}",
+  "participationAward": "{{award}}",
+  "allCoins": "{{earned}}",
+  "completionAward": "{{award}}",
+  "skillAward": 0,
+  "rewardCoins": "{{earned}}",
+  "totalCoins": "{{earned}}",
+  "credits": "{{balance}}",
+  "coins": "{{balance}}",
+  "sessionCoinsBankBalance": "{{balance}}",
+  "dnfModifier": 1.0,
+  "currencies": [
+    { "name": "coins", "funds": "{{balance}}", "finalFunds": "{{balance}}" },
+    { "name": "points", "funds": 0, "finalFunds": 0 }
+  ],
+  "record": { "won": "{{won}}", "draw": "{{draw}}", "loss": "{{loss}}" },
+  "won": "{{won}}",
+  "draw": "{{draw}}",
+  "loss": "{{loss}}",
+  "gamesWon": "{{won}}",
+  "gamesDraw": "{{draw}}",
+  "gamesLost": "{{loss}}",
+  "gamesPlayed": "{{played}}",
+  "unopenedPacks": { "preOrderPacks": "{{unopenedPacks}}", "recoveredPacks": 0 },
+  "matchCoinPartials": "{{partials}}",
+  "matchCoinMultipliers": [{ "type": "DIFFICULTY", "value": 1.0 }]
+}

@@ -1,0 +1,63 @@
+{
+  "_comment": "Squad Building Challenge rules: how the authored sbc.json vocabulary (requirement rules, reward entries) becomes the client's elgReq and awards contract.",
+
+  "_rewardPacksComment": "sbc.json reward pack keys to reward pack ids. Numeric legacy keys use legacyRewardPacks; anything unknown becomes defaultRewardPack. A player_pick reward on a set whose key names a rating (UP_84, ..._86+) delivers the matching packs.json playerPickPacks entry.",
+  "rewardPacks": {
+    "bronze": 100, "silver": 200, "premium_silver_players": 201,
+    "gold": 300, "premium_gold": 301, "gold_players": 304,
+    "premium_gold_players": 305, "electrum_players": 306,
+    "prime_electrum_players": 307, "prime_gold_players": 308,
+    "prime_mixed_players": 309, "rare_players": 401,
+    "rare_mixed_players": 406, "rare_gold": 400,
+    "jumbo_rare_players": 402, "mega": 403, "rare_mega": 404,
+    "ultimate": 405, "player_pick": 513
+  },
+  "legacyRewardPacks": {
+    "1": 300, "2": 301, "3": 305, "4": 304, "5": 400, "6": 401, "7": 402,
+    "8": 403, "9": 404, "10": 405, "11": 401, "12": 402, "13": 403, "14": 405
+  },
+  "defaultRewardPack": 300,
+  "playerPickRewardName": "{rating}+ Player Pick",
+
+  "squadSize": 11,
+  "formation": "f442",
+
+  "_imagesComment": "Set and challenge trophy art: imageIdBase plus the set id's offset from the first set id (900000). Set tiles are served from artFolder as <set id>.png, falling back to the set tab's tab-<tabId>.png (tab-<fallbackTabId> for unknown sets). The RARE rule is PLAYER_RARITY_GROUP 4: PLAYER_RARITY would match rareflag 1 exactly and reject special cards.",
+  "images": { "imageIdBase": 1000000, "artFolder": "sbc-art", "fallbackTabId": 8, "cacheSeconds": 86400 },
+
+  "_requirementsComment": "Requirement rule types. bound names the attribute holding the rule's number (min, max, or the quality name for value). eligibilityKey and scope are the client's SBCEligibilityKey and SCOPE names; a rule without eligibilityKey only appears in the description. A fixed eligibilityValue turns the bound into the player count. exact applies when the rule has an exact count between 1 and squadSize. {value} in a label is replaced by the rule's number, exact count or title-cased quality.",
+  "requirements": {
+    "CHEMISTRY": { "bound": "min", "eligibilityKey": "Chemistry", "scope": "AtLeast", "label": "Min Squad Chemistry: {value}" },
+    "RATING": { "bound": "min", "eligibilityKey": "TeamRating", "scope": "AtLeast", "label": "Min Squad Rating: {value}" },
+    "RARE": { "bound": "min", "eligibilityKey": "RarityGroup", "eligibilityValue": 4, "scope": "AtLeast", "label": "Rare players: Min {value}" },
+    "TOTW": { "bound": "min", "eligibilityKey": "Rarity", "eligibilityValue": 3, "scope": "AtLeast", "label": "Team of the Week players: Min {value}" },
+    "NATIONS": {
+      "bound": "min", "eligibilityKey": "NationCount", "scope": "AtLeast", "label": "Nationalities in Squad: Min {value}",
+      "exact": { "scope": "Exact", "label": "Nationalities in Squad: Exactly {value}" }
+    },
+    "LEAGUES": {
+      "bound": "min", "eligibilityKey": "LeagueCount", "scope": "AtLeast", "label": "Leagues in Squad: Min {value}",
+      "exact": { "scope": "Exact", "label": "Leagues in Squad: Exactly {value}" }
+    },
+    "SAME_NATION": { "bound": "max", "eligibilityKey": "SameNation", "scope": "AtMost", "label": "Max players from same Nation: {value}" },
+    "SAME_LEAGUE": { "bound": "max", "eligibilityKey": "SameLeague", "scope": "AtMost", "label": "Max players from same League: {value}" },
+    "SAME_CLUB": { "bound": "max", "eligibilityKey": "SameClub", "scope": "AtMost", "label": "Max players from same Club: {value}" },
+    "QUALITY": {
+      "bound": "value", "eligibilityKey": "Quality", "scope": "Exact", "playerCount": 11, "label": "Player Quality: {value} only",
+      "qualities": { "bronze": 1, "silver": 2, "gold": 3 }
+    },
+    "AGE": { "bound": "max", "label": "Player Age: Max {value}" }
+  },
+
+  "text": {
+    "requirementSeparator": "  |  ",
+    "noRequirements": "Submit an 11-player squad.",
+    "playerPickUpgrade": "Number of players in the Squad: Exactly 11",
+    "setDescription": "Complete the {name} SBC ({count} {challenges}).",
+    "unnamedSetDescription": "Complete this SBC ({count} {challenges}).",
+    "challenge": "challenge",
+    "challenges": "challenges",
+    "unknownChallenge": "Unknown challenge.",
+    "shortSquad": "Squad needs {need} players ({placed} placed)."
+  }
+}

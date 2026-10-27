@@ -1,0 +1,11 @@
+{
+  "shardInfo": [
+    {
+      "customdata1": "127.0.0.1",
+      "customdata2": "{{port}}",
+      "name": "UltimateTeam",
+      "platform": "pc",
+      "clientFacingIpPort": "{{address}}"
+    }
+  ]
+}

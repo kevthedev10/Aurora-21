@@ -1,0 +1,5 @@
+{
+  "messageList": [{ "messageId": "{{messageId}}", "title": "{{title}}", "message": "{{message}}" }],
+  "messagesAvailable": 1,
+  "messagesRead": 0
+}

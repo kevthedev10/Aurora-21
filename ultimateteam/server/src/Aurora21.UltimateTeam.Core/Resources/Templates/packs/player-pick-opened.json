@@ -1,0 +1,12 @@
+{
+  "packId": "{{packId}}",
+  "purchasedPackId": "{{packId}}",
+  "packType": "PLAYER_PICK",
+  "itemList": ["{{token}}"],
+  "itemData": ["{{token}}"],
+  "items": ["{{token}}"],
+  "newcards": 1,
+  "numberItems": 1,
+  "duplicateItemIdList": [],
+  "credits": "{{credits}}"
+}

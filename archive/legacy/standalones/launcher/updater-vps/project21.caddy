@@ -1,0 +1,19 @@
+project21.duckdns.org {
+    encode zstd gzip
+
+    handle_path /downloads/launcher/* {
+        root * /var/www/aurora21/launcher
+        header Cache-Control "no-store"
+        file_server
+    }
+
+    handle {
+        reverse_proxy 127.0.0.1:8787
+    }
+
+    header {
+        X-Content-Type-Options nosniff
+        Referrer-Policy no-referrer
+        -Server
+    }
+}

@@ -1,0 +1,2063 @@
+{
+  "source": "fifa21_managers_leagues.csv",
+  "sha256": "4df03d2a58296fca1b26600b0bddeac26313f07f116d51a9fdd82759a8de6448",
+  "selection": "294 High-confidence CSV assignments, 16 confirmed remaining defaults, and user-chosen Premier League for Romuald Peyras",
+  "assignments": [
+    {
+      "manager": "Antonio Conte",
+      "nativeResourceId": 1001067,
+      "league": "Serie A TIM",
+      "nativeLeagueId": 31
+    },
+    {
+      "manager": "Filippo Inzaghi",
+      "nativeResourceId": 1001198,
+      "league": "Serie A TIM",
+      "nativeLeagueId": 31
+    },
+    {
+      "manager": "Eusebio Di Francesco",
+      "nativeResourceId": 1001212,
+      "league": "Serie A TIM",
+      "nativeLeagueId": 31
+    },
+    {
+      "manager": "Kevin Muscat",
+      "nativeResourceId": 1001279,
+      "league": "1A Pro League",
+      "nativeLeagueId": 4
+    },
+    {
+      "manager": "Ole Gunnar Solskjær",
+      "nativeResourceId": 1001845,
+      "league": "Premier League",
+      "nativeLeagueId": 13
+    },
+    {
+      "manager": "Steve Corica",
+      "nativeResourceId": 1002239,
+      "league": "A-League",
+      "nativeLeagueId": 351
+    },
+    {
+      "manager": "Neil Lennon",
+      "nativeResourceId": 1002881,
+      "league": "Scottish Prem",
+      "nativeLeagueId": 50
+    },
+    {
+      "manager": "Keith Long",
+      "nativeResourceId": 1003362,
+      "league": "SSE Airtricity Lge",
+      "nativeLeagueId": 65
+    },
+    {
+      "manager": "Petit",
+      "nativeResourceId": 1004083,
+      "league": "Liga NOS",
+      "nativeLeagueId": 308
+    },
+    {
+      "manager": "Christian Brocchi",
+      "nativeResourceId": 1004514,
+      "league": "Calcio B",
+      "nativeLeagueId": 2179
+    },
+    {
+      "manager": "Torsten Frings",
+      "nativeResourceId": 1005430,
+      "league": "3. Liga",
+      "nativeLeagueId": 2076
+    },
+    {
+      "manager": "Frank Lampard",
+      "nativeResourceId": 1005471,
+      "league": "Premier League",
+      "nativeLeagueId": 13
+    },
+    {
+      "manager": "Diego Simeone",
+      "nativeResourceId": 1005571,
+      "league": "LaLiga Santander",
+      "nativeLeagueId": 53
+    },
+    {
+      "manager": "Ivan Leko",
+      "nativeResourceId": 1006016,
+      "league": "1A Pro League",
+      "nativeLeagueId": 4
+    },
+    {
+      "manager": "Bülent Korkmaz",
+      "nativeResourceId": 1007000,
+      "league": "Süper Lig",
+      "nativeLeagueId": 68,
+      "confirmation": "User confirmed 2026-09-17"
+    },
+    {
+      "manager": "Hernán Crespo",
+      "nativeResourceId": 1007512,
+      "league": "Primera División",
+      "nativeLeagueId": 353
+    },
+    {
+      "manager": "Simone Inzaghi",
+      "nativeResourceId": 1007728,
+      "league": "Serie A TIM",
+      "nativeLeagueId": 31
+    },
+    {
+      "manager": "Scott Parker",
+      "nativeResourceId": 1008517,
+      "league": "Premier League",
+      "nativeLeagueId": 13
+    },
+    {
+      "manager": "Philippe Clement",
+      "nativeResourceId": 1008834,
+      "league": "1A Pro League",
+      "nativeLeagueId": 4
+    },
+    {
+      "manager": "Markus Schopp",
+      "nativeResourceId": 1010059,
+      "league": "Ö. Bundesliga",
+      "nativeLeagueId": 80
+    },
+    {
+      "manager": "Mauricio Pellegrino",
+      "nativeResourceId": 1010974,
+      "league": "Primera División",
+      "nativeLeagueId": 353
+    },
+    {
+      "manager": "Steven Gerrard",
+      "nativeResourceId": 1013743,
+      "league": "Scottish Prem",
+      "nativeLeagueId": 50
+    },
+    {
+      "manager": "Jesse Marsch",
+      "nativeResourceId": 1016836,
+      "league": "Ö. Bundesliga",
+      "nativeLeagueId": 80
+    },
+    {
+      "manager": "Yves Vanderhaeghe",
+      "nativeResourceId": 1016947,
+      "league": "1A Pro League",
+      "nativeLeagueId": 4
+    },
+    {
+      "manager": "Jess Thorup",
+      "nativeResourceId": 1017455,
+      "league": "1A Pro League",
+      "nativeLeagueId": 4
+    },
+    {
+      "manager": "Abel",
+      "nativeResourceId": 1017880,
+      "league": "Hellas Liga",
+      "nativeLeagueId": 63,
+      "confirmation": "User confirmed 2026-09-17"
+    },
+    {
+      "manager": "John Sheridan",
+      "nativeResourceId": 1019218,
+      "league": "SSE Airtricity Lge",
+      "nativeLeagueId": 65
+    },
+    {
+      "manager": "Axel Kjäll",
+      "nativeResourceId": 1020947,
+      "league": "Allsvenskan",
+      "nativeLeagueId": 56
+    },
+    {
+      "manager": "Christian Michelsen",
+      "nativeResourceId": 1021441,
+      "league": "Eliteserien",
+      "nativeLeagueId": 41
+    },
+    {
+      "manager": "Hans Eklund",
+      "nativeResourceId": 1030274,
+      "league": "Allsvenskan",
+      "nativeLeagueId": 56
+    },
+    {
+      "manager": "Thomas Thomasberg",
+      "nativeResourceId": 1041039,
+      "league": "3F Superliga",
+      "nativeLeagueId": 1
+    },
+    {
+      "manager": "Andreas Alm",
+      "nativeResourceId": 1041487,
+      "league": "Allsvenskan",
+      "nativeLeagueId": 56
+    },
+    {
+      "manager": "Tony Popovic",
+      "nativeResourceId": 1044888,
+      "league": "A-League",
+      "nativeLeagueId": 351,
+      "confirmation": "User confirmed 2026-09-17"
+    },
+    {
+      "manager": "Fabio Liverani",
+      "nativeResourceId": 1045124,
+      "league": "Serie A TIM",
+      "nativeLeagueId": 31
+    },
+    {
+      "manager": "Ludovic Magnin",
+      "nativeResourceId": 1045517,
+      "league": "RSL",
+      "nativeLeagueId": 189
+    },
+    {
+      "manager": "Henrik Rydström",
+      "nativeResourceId": 1047178,
+      "league": "Allsvenskan",
+      "nativeLeagueId": 56
+    },
+    {
+      "manager": "Dietmar Kühbauer",
+      "nativeResourceId": 1050182,
+      "league": "Ö. Bundesliga",
+      "nativeLeagueId": 80
+    },
+    {
+      "manager": "Dariusz Żuraw",
+      "nativeResourceId": 1051001,
+      "league": "PKO Ekstraklasa",
+      "nativeLeagueId": 66
+    },
+    {
+      "manager": "Jack Ross",
+      "nativeResourceId": 1051383,
+      "league": "Scottish Prem",
+      "nativeLeagueId": 50
+    },
+    {
+      "manager": "Sean Dyche",
+      "nativeResourceId": 1051404,
+      "league": "Premier League",
+      "nativeLeagueId": 13
+    },
+    {
+      "manager": "Derek McInnes",
+      "nativeResourceId": 1051495,
+      "league": "Scottish Prem",
+      "nativeLeagueId": 50
+    },
+    {
+      "manager": "Carl Robinson",
+      "nativeResourceId": 1053452,
+      "league": "A-League",
+      "nativeLeagueId": 351
+    },
+    {
+      "manager": "David Nielsen",
+      "nativeResourceId": 1101981,
+      "league": "3F Superliga",
+      "nativeLeagueId": 1
+    },
+    {
+      "manager": "Jostein Grindhaug",
+      "nativeResourceId": 1104481,
+      "league": "Eliteserien",
+      "nativeLeagueId": 41
+    },
+    {
+      "manager": "Joe Enochs",
+      "nativeResourceId": 1105015,
+      "league": "3. Liga",
+      "nativeLeagueId": 2076
+    },
+    {
+      "manager": "Aleksandar Vuković",
+      "nativeResourceId": 1105530,
+      "league": "PKO Ekstraklasa",
+      "nativeLeagueId": 66
+    },
+    {
+      "manager": "Rüdiger Rehm",
+      "nativeResourceId": 1109317,
+      "league": "3. Liga",
+      "nativeLeagueId": 2076
+    },
+    {
+      "manager": "Vicente Moreno",
+      "nativeResourceId": 1113071,
+      "league": "LaLiga SmartBank",
+      "nativeLeagueId": 54
+    },
+    {
+      "manager": "David Gallego",
+      "nativeResourceId": 1113162,
+      "league": "LaLiga SmartBank",
+      "nativeLeagueId": 54
+    },
+    {
+      "manager": "Gaizka Garitano",
+      "nativeResourceId": 1113348,
+      "league": "LaLiga Santander",
+      "nativeLeagueId": 53
+    },
+    {
+      "manager": "Fabio Celestini",
+      "nativeResourceId": 1117321,
+      "league": "RSL",
+      "nativeLeagueId": 189
+    },
+    {
+      "manager": "Francisco Palencia",
+      "nativeResourceId": 1135713,
+      "league": "LIGA BBVA MX",
+      "nativeLeagueId": 341,
+      "confirmation": "User confirmed 2026-09-17"
+    },
+    {
+      "manager": "Sergio González",
+      "nativeResourceId": 1135804,
+      "league": "LaLiga Santander",
+      "nativeLeagueId": 53
+    },
+    {
+      "manager": "Davide Nicola",
+      "nativeResourceId": 1137231,
+      "league": "Serie A TIM",
+      "nativeLeagueId": 31
+    },
+    {
+      "manager": "Gerardo Seoane",
+      "nativeResourceId": 1138420,
+      "league": "RSL",
+      "nativeLeagueId": 189
+    },
+    {
+      "manager": "Bo Henriksen",
+      "nativeResourceId": 1140433,
+      "league": "3F Superliga",
+      "nativeLeagueId": 1
+    },
+    {
+      "manager": "Eduardo Domínguez",
+      "nativeResourceId": 1142700,
+      "league": "Primera División",
+      "nativeLeagueId": 353
+    },
+    {
+      "manager": "Juan Manuel Azconzábal",
+      "nativeResourceId": 1143063,
+      "league": "Primera División",
+      "nativeLeagueId": 353
+    },
+    {
+      "manager": "Giorgio Contini",
+      "nativeResourceId": 1144096,
+      "league": "RSL",
+      "nativeLeagueId": 189
+    },
+    {
+      "manager": "Tamer Tuna",
+      "nativeResourceId": 1144318,
+      "league": "Süper Lig",
+      "nativeLeagueId": 68
+    },
+    {
+      "manager": "Míchel",
+      "nativeResourceId": 1146777,
+      "league": "LaLiga Santander",
+      "nativeLeagueId": 53
+    },
+    {
+      "manager": "Michał Probierz",
+      "nativeResourceId": 1148408,
+      "league": "PKO Ekstraklasa",
+      "nativeLeagueId": 66
+    },
+    {
+      "manager": "Piotr Stokowiec",
+      "nativeResourceId": 1148528,
+      "league": "PKO Ekstraklasa",
+      "nativeLeagueId": 66
+    },
+    {
+      "manager": "Vinny Perth",
+      "nativeResourceId": 1149751,
+      "league": "SSE Airtricity Lge",
+      "nativeLeagueId": 65
+    },
+    {
+      "manager": "Ralph Hasenhüttl",
+      "nativeResourceId": 1150527,
+      "league": "Premier League",
+      "nativeLeagueId": 13
+    },
+    {
+      "manager": "Peter Stöger",
+      "nativeResourceId": 1152227,
+      "league": "Ö. Bundesliga",
+      "nativeLeagueId": 80
+    },
+    {
+      "manager": "Ivan Jurić",
+      "nativeResourceId": 1155191,
+      "league": "Serie A TIM",
+      "nativeLeagueId": 31
+    },
+    {
+      "manager": "Toni Koskela",
+      "nativeResourceId": 1156073,
+      "league": "Finnliiga",
+      "nativeLeagueId": 322
+    },
+    {
+      "manager": "Graham Potter",
+      "nativeResourceId": 1156320,
+      "league": "Premier League",
+      "nativeLeagueId": 13
+    },
+    {
+      "manager": "Declan Devine",
+      "nativeResourceId": 1157093,
+      "league": "SSE Airtricity Lge",
+      "nativeLeagueId": 65
+    },
+    {
+      "manager": "Massimo Carrera",
+      "nativeResourceId": 1163929,
+      "league": "Hellas Liga",
+      "nativeLeagueId": 63
+    },
+    {
+      "manager": "Roberto D’Aversa",
+      "nativeResourceId": 1164378,
+      "league": "Serie A TIM",
+      "nativeLeagueId": 31,
+      "confirmation": "User confirmed 2026-09-17"
+    },
+    {
+      "manager": "Manuel Pellegrini",
+      "nativeResourceId": 1168384,
+      "league": "LaLiga Santander",
+      "nativeLeagueId": 53
+    },
+    {
+      "manager": "Stephen Bradley",
+      "nativeResourceId": 1169187,
+      "league": "SSE Airtricity Lge",
+      "nativeLeagueId": 65
+    },
+    {
+      "manager": "Torsten Lieberknecht",
+      "nativeResourceId": 1169229,
+      "league": "3. Liga",
+      "nativeLeagueId": 2076
+    },
+    {
+      "manager": "Pep Guardiola",
+      "nativeResourceId": 1169894,
+      "league": "Premier League",
+      "nativeLeagueId": 13
+    },
+    {
+      "manager": "Jagoba Arrasate",
+      "nativeResourceId": 1172720,
+      "league": "LaLiga Santander",
+      "nativeLeagueId": 53
+    },
+    {
+      "manager": "Karim Belhocine",
+      "nativeResourceId": 1175911,
+      "league": "1A Pro League",
+      "nativeLeagueId": 4
+    },
+    {
+      "manager": "Ante Milicic",
+      "nativeResourceId": 1180722,
+      "league": "A-League",
+      "nativeLeagueId": 351
+    },
+    {
+      "manager": "Mark Rudan",
+      "nativeResourceId": 1181465,
+      "league": "A-League",
+      "nativeLeagueId": 351
+    },
+    {
+      "manager": "Slaven Bilić",
+      "nativeResourceId": 1183617,
+      "league": "Premier League",
+      "nativeLeagueId": 13
+    },
+    {
+      "manager": "Fatih Terim",
+      "nativeResourceId": 1183635,
+      "league": "Süper Lig",
+      "nativeLeagueId": 68
+    },
+    {
+      "manager": "Stuart Kettlewell",
+      "nativeResourceId": 1208673,
+      "league": "Scottish Prem",
+      "nativeLeagueId": 50
+    },
+    {
+      "manager": "Roy Hodgson",
+      "nativeResourceId": 1220467,
+      "league": "Premier League",
+      "nativeLeagueId": 13
+    },
+    {
+      "manager": "Miguel Herrera",
+      "nativeResourceId": 1220945,
+      "league": "LIGA BBVA MX",
+      "nativeLeagueId": 341
+    },
+    {
+      "manager": "Claudio Ranieri",
+      "nativeResourceId": 1232301,
+      "league": "Serie A TIM",
+      "nativeLeagueId": 31
+    },
+    {
+      "manager": "Jürgen Klopp",
+      "nativeResourceId": 1232302,
+      "league": "Premier League",
+      "nativeLeagueId": 13
+    },
+    {
+      "manager": "José Mourinho",
+      "nativeResourceId": 1232425,
+      "league": "Premier League",
+      "nativeLeagueId": 13
+    },
+    {
+      "manager": "Steve Bruce",
+      "nativeResourceId": 1234530,
+      "league": "Premier League",
+      "nativeLeagueId": 13
+    },
+    {
+      "manager": "David Moyes",
+      "nativeResourceId": 1235732,
+      "league": "Premier League",
+      "nativeLeagueId": 13
+    },
+    {
+      "manager": "Carlo Ancelotti",
+      "nativeResourceId": 1237388,
+      "league": "Premier League",
+      "nativeLeagueId": 13
+    },
+    {
+      "manager": "Unai Emery",
+      "nativeResourceId": 1237389,
+      "league": "LaLiga Santander",
+      "nativeLeagueId": 53
+    },
+    {
+      "manager": "Zinedine Zidane",
+      "nativeResourceId": 1238399,
+      "league": "LaLiga Santander",
+      "nativeLeagueId": 53
+    },
+    {
+      "manager": "Paul Clement",
+      "nativeResourceId": 1239228,
+      "league": "1A Pro League",
+      "nativeLeagueId": 4
+    },
+    {
+      "manager": "Quique Setién",
+      "nativeResourceId": 1241188,
+      "league": "LaLiga Santander",
+      "nativeLeagueId": 53,
+      "confirmation": "User confirmed 2026-09-17"
+    },
+    {
+      "manager": "Mendilibar",
+      "nativeResourceId": 1241378,
+      "league": "LaLiga Santander",
+      "nativeLeagueId": 53
+    },
+    {
+      "manager": "Pablo Machín",
+      "nativeResourceId": 1241395,
+      "league": "LaLiga Santander",
+      "nativeLeagueId": 53
+    },
+    {
+      "manager": "Cuco Ziganda",
+      "nativeResourceId": 1241715,
+      "league": "LaLiga SmartBank",
+      "nativeLeagueId": 54
+    },
+    {
+      "manager": "Javi Gracia",
+      "nativeResourceId": 1243184,
+      "league": "LaLiga Santander",
+      "nativeLeagueId": 53
+    },
+    {
+      "manager": "Carlos Carvalhal",
+      "nativeResourceId": 1243208,
+      "league": "Liga NOS",
+      "nativeLeagueId": 308
+    },
+    {
+      "manager": "Julen Lopetegui",
+      "nativeResourceId": 1243874,
+      "league": "LaLiga Santander",
+      "nativeLeagueId": 53
+    },
+    {
+      "manager": "Alen Stajcic",
+      "nativeResourceId": 1248937,
+      "league": "A-League",
+      "nativeLeagueId": 351
+    },
+    {
+      "manager": "Alex Pastoor",
+      "nativeResourceId": 1248940,
+      "league": "Ö. Bundesliga",
+      "nativeLeagueId": 80
+    },
+    {
+      "manager": "Alfonso Sosa",
+      "nativeResourceId": 1248955,
+      "league": "LIGA BBVA MX",
+      "nativeLeagueId": 341
+    },
+    {
+      "manager": "Alfredo Aglietti",
+      "nativeResourceId": 1248957,
+      "league": "Calcio B",
+      "nativeLeagueId": 2179
+    },
+    {
+      "manager": "Alfredo Berti",
+      "nativeResourceId": 1248959,
+      "league": "Primera División",
+      "nativeLeagueId": 353
+    },
+    {
+      "manager": "Álvaro Cervera",
+      "nativeResourceId": 1248965,
+      "league": "LaLiga Santander",
+      "nativeLeagueId": 53
+    },
+    {
+      "manager": "André Gaspar",
+      "nativeResourceId": 1248976,
+      "league": "MBS Pro League",
+      "nativeLeagueId": 350,
+      "confirmation": "User confirmed 2026-09-17"
+    },
+    {
+      "manager": "Ángel Hoyos",
+      "nativeResourceId": 1248994,
+      "league": "Primera División",
+      "nativeLeagueId": 353
+    },
+    {
+      "manager": "Antonio Mohamed",
+      "nativeResourceId": 1249009,
+      "league": "LIGA BBVA MX",
+      "nativeLeagueId": 341
+    },
+    {
+      "manager": "Jorge Simão",
+      "nativeResourceId": 1249015,
+      "league": "Liga NOS",
+      "nativeLeagueId": 308
+    },
+    {
+      "manager": "Bayram Bektaş",
+      "nativeResourceId": 1249045,
+      "league": "Süper Lig",
+      "nativeLeagueId": 68
+    },
+    {
+      "manager": "Beñat San José",
+      "nativeResourceId": 1249047,
+      "league": "1A Pro League",
+      "nativeLeagueId": 4
+    },
+    {
+      "manager": "Besnik Hasi",
+      "nativeResourceId": 1249055,
+      "league": "MBS Pro League",
+      "nativeLeagueId": 350
+    },
+    {
+      "manager": "Bjarne Berntsen",
+      "nativeResourceId": 1249056,
+      "league": "Eliteserien",
+      "nativeLeagueId": 41
+    },
+    {
+      "manager": "Boris Schommers",
+      "nativeResourceId": 1249059,
+      "league": "3. Liga",
+      "nativeLeagueId": 2076
+    },
+    {
+      "manager": "Brendan Rodgers",
+      "nativeResourceId": 1249063,
+      "league": "Premier League",
+      "nativeLeagueId": 13
+    },
+    {
+      "manager": "Brian Rice",
+      "nativeResourceId": 1249069,
+      "league": "Scottish Prem",
+      "nativeLeagueId": 50
+    },
+    {
+      "manager": "Chris Wilder",
+      "nativeResourceId": 1249119,
+      "league": "Premier League",
+      "nativeLeagueId": 13
+    },
+    {
+      "manager": "Christian Ilzer",
+      "nativeResourceId": 1249125,
+      "league": "Ö. Bundesliga",
+      "nativeLeagueId": 80
+    },
+    {
+      "manager": "Claus Schromm",
+      "nativeResourceId": 1249147,
+      "league": "3. Liga",
+      "nativeLeagueId": 2076
+    },
+    {
+      "manager": "Constantin Gâlcă",
+      "nativeResourceId": 1249154,
+      "league": "3F Superliga",
+      "nativeLeagueId": 1
+    },
+    {
+      "manager": "Cristiano Bergodi",
+      "nativeResourceId": 1249164,
+      "league": "Liga I",
+      "nativeLeagueId": 330
+    },
+    {
+      "manager": "Dag-Eilev Fagermo",
+      "nativeResourceId": 1249172,
+      "league": "Eliteserien",
+      "nativeLeagueId": 41
+    },
+    {
+      "manager": "Dan Petrescu",
+      "nativeResourceId": 1249178,
+      "league": "Liga I",
+      "nativeLeagueId": 330
+    },
+    {
+      "manager": "Daniel Ramos",
+      "nativeResourceId": 1249186,
+      "league": "Liga NOS",
+      "nativeLeagueId": 308
+    },
+    {
+      "manager": "Dean Smith",
+      "nativeResourceId": 1249224,
+      "league": "Premier League",
+      "nativeLeagueId": 13
+    },
+    {
+      "manager": "Diego Cocca",
+      "nativeResourceId": 1249251,
+      "league": "LIGA BBVA MX",
+      "nativeLeagueId": 341
+    },
+    {
+      "manager": "Diego Dabove",
+      "nativeResourceId": 1249253,
+      "league": "Primera División",
+      "nativeLeagueId": 353
+    },
+    {
+      "manager": "Diego López",
+      "nativeResourceId": 1249255,
+      "league": "Calcio B",
+      "nativeLeagueId": 2179
+    },
+    {
+      "manager": "Diego Martínez",
+      "nativeResourceId": 1249256,
+      "league": "LaLiga Santander",
+      "nativeLeagueId": 53
+    },
+    {
+      "manager": "Domenico Tedesco",
+      "nativeResourceId": 1249271,
+      "league": "League of Russia",
+      "nativeLeagueId": 3006
+    },
+    {
+      "manager": "Emil Săndoi",
+      "nativeResourceId": 1249309,
+      "league": "Liga I",
+      "nativeLeagueId": 330
+    },
+    {
+      "manager": "Erick Mombaerts",
+      "nativeResourceId": 1249326,
+      "league": "A-League",
+      "nativeLeagueId": 351,
+      "confirmation": "User confirmed 2026-09-17"
+    },
+    {
+      "manager": "Erling Moe",
+      "nativeResourceId": 1249331,
+      "league": "Eliteserien",
+      "nativeLeagueId": 41
+    },
+    {
+      "manager": "Ernst Middendorp",
+      "nativeResourceId": 1249336,
+      "league": "South African FL",
+      "nativeLeagueId": 347
+    },
+    {
+      "manager": "Erol Bulut",
+      "nativeResourceId": 1249337,
+      "league": "Süper Lig",
+      "nativeLeagueId": 68
+    },
+    {
+      "manager": "Fábio Carille",
+      "nativeResourceId": 1249359,
+      "league": "MBS Pro League",
+      "nativeLeagueId": 350
+    },
+    {
+      "manager": "Fernando Da Cruz",
+      "nativeResourceId": 1249374,
+      "league": "1A Pro League",
+      "nativeLeagueId": 4
+    },
+    {
+      "manager": "Flemming Pedersen",
+      "nativeResourceId": 1249387,
+      "league": "3F Superliga",
+      "nativeLeagueId": 1
+    },
+    {
+      "manager": "Florian Schnorrenberg",
+      "nativeResourceId": 1249389,
+      "league": "3. Liga",
+      "nativeLeagueId": 2076
+    },
+    {
+      "manager": "Pako Ayestarán",
+      "nativeResourceId": 1249396,
+      "league": "Liga NOS",
+      "nativeLeagueId": 308
+    },
+    {
+      "manager": "Fran Fernández",
+      "nativeResourceId": 1249400,
+      "league": "LaLiga SmartBank",
+      "nativeLeagueId": 54
+    },
+    {
+      "manager": "Paco López",
+      "nativeResourceId": 1249402,
+      "league": "LaLiga Santander",
+      "nativeLeagueId": 53
+    },
+    {
+      "manager": "Francisco",
+      "nativeResourceId": 1249408,
+      "league": "LaLiga SmartBank",
+      "nativeLeagueId": 54
+    },
+    {
+      "manager": "Francky Dury",
+      "nativeResourceId": 1249414,
+      "league": "1A Pro League",
+      "nativeLeagueId": 4
+    },
+    {
+      "manager": "Frank Kudelka",
+      "nativeResourceId": 1249422,
+      "league": "Primera División",
+      "nativeLeagueId": 353
+    },
+    {
+      "manager": "Gary Holt",
+      "nativeResourceId": 1249451,
+      "league": "Scottish Prem",
+      "nativeLeagueId": 50
+    },
+    {
+      "manager": "Gian Piero Gasperini",
+      "nativeResourceId": 1249472,
+      "league": "Serie A TIM",
+      "nativeLeagueId": 31
+    },
+    {
+      "manager": "Giuseppe Iachini",
+      "nativeResourceId": 1249486,
+      "league": "Serie A TIM",
+      "nativeLeagueId": 31
+    },
+    {
+      "manager": "Glen Riddersholm",
+      "nativeResourceId": 1249490,
+      "league": "3F Superliga",
+      "nativeLeagueId": 1
+    },
+    {
+      "manager": "Guillermo Almada",
+      "nativeResourceId": 1249505,
+      "league": "LIGA BBVA MX",
+      "nativeLeagueId": 341
+    },
+    {
+      "manager": "Guillermo Vázquez",
+      "nativeResourceId": 1249509,
+      "league": "LIGA BBVA MX",
+      "nativeLeagueId": 341
+    },
+    {
+      "manager": "Hannes Wolf",
+      "nativeResourceId": 1249528,
+      "league": "1A Pro League",
+      "nativeLeagueId": 4,
+      "confirmation": "User confirmed 2026-09-17"
+    },
+    {
+      "manager": "Henrik Pedersen",
+      "nativeResourceId": 1249555,
+      "league": "Eliteserien",
+      "nativeLeagueId": 41
+    },
+    {
+      "manager": "Hikmet Karaman",
+      "nativeResourceId": 1249565,
+      "league": "Süper Lig",
+      "nativeLeagueId": 68
+    },
+    {
+      "manager": "Ignacio Ambriz",
+      "nativeResourceId": 1249592,
+      "league": "LIGA BBVA MX",
+      "nativeLeagueId": 341
+    },
+    {
+      "manager": "Imanol Alguacil",
+      "nativeResourceId": 1249601,
+      "league": "LaLiga Santander",
+      "nativeLeagueId": 53
+    },
+    {
+      "manager": "Jacob Friis",
+      "nativeResourceId": 1249620,
+      "league": "3F Superliga",
+      "nativeLeagueId": 1
+    },
+    {
+      "manager": "Jakob Michelsen",
+      "nativeResourceId": 1249625,
+      "league": "3F Superliga",
+      "nativeLeagueId": 1
+    },
+    {
+      "manager": "Jan Jönsson",
+      "nativeResourceId": 1249632,
+      "league": "Eliteserien",
+      "nativeLeagueId": 41
+    },
+    {
+      "manager": "Jens Gustafsson",
+      "nativeResourceId": 1249657,
+      "league": "Allsvenskan",
+      "nativeLeagueId": 56
+    },
+    {
+      "manager": "Jens Härtel",
+      "nativeResourceId": 1249658,
+      "league": "3. Liga",
+      "nativeLeagueId": 2076
+    },
+    {
+      "manager": "Jimmy Thelin",
+      "nativeResourceId": 1249671,
+      "league": "Allsvenskan",
+      "nativeLeagueId": 56
+    },
+    {
+      "manager": "Jindřich Trpišovský",
+      "nativeResourceId": 1249675,
+      "league": "Česká Liga",
+      "nativeLeagueId": 319
+    },
+    {
+      "manager": "Joe Zinnbauer",
+      "nativeResourceId": 1249692,
+      "league": "South African FL",
+      "nativeLeagueId": 347
+    },
+    {
+      "manager": "Jorge Jesus",
+      "nativeResourceId": 1249725,
+      "league": "Liga NOS",
+      "nativeLeagueId": 308
+    },
+    {
+      "manager": "José Bordalás",
+      "nativeResourceId": 1249735,
+      "league": "LaLiga Santander",
+      "nativeLeagueId": 53
+    },
+    {
+      "manager": "Pepe Mel",
+      "nativeResourceId": 1249739,
+      "league": "LaLiga SmartBank",
+      "nativeLeagueId": 54
+    },
+    {
+      "manager": "José Alberto",
+      "nativeResourceId": 1249745,
+      "league": "LaLiga SmartBank",
+      "nativeLeagueId": 54
+    },
+    {
+      "manager": "Lito Vidigal",
+      "nativeResourceId": 1249751,
+      "league": "Liga NOS",
+      "nativeLeagueId": 308
+    },
+    {
+      "manager": "Daniel Carreño",
+      "nativeResourceId": 1249752,
+      "league": "MBS Pro League",
+      "nativeLeagueId": 350
+    },
+    {
+      "manager": "José Luis Martí",
+      "nativeResourceId": 1249764,
+      "league": "LaLiga SmartBank",
+      "nativeLeagueId": 54
+    },
+    {
+      "manager": "José Manuel De la Torre",
+      "nativeResourceId": 1249770,
+      "league": "LIGA BBVA MX",
+      "nativeLeagueId": 341
+    },
+    {
+      "manager": "José Gomes",
+      "nativeResourceId": 1249775,
+      "league": "Liga NOS",
+      "nativeLeagueId": 308
+    },
+    {
+      "manager": "Sandoval",
+      "nativeResourceId": 1249782,
+      "league": "LaLiga SmartBank",
+      "nativeLeagueId": 54
+    },
+    {
+      "manager": "Ricardo Soares",
+      "nativeResourceId": 1249784,
+      "league": "Liga NOS",
+      "nativeLeagueId": 308
+    },
+    {
+      "manager": "Pacheta",
+      "nativeResourceId": 1249805,
+      "league": "LaLiga Santander",
+      "nativeLeagueId": 53,
+      "confirmation": "User confirmed 2026-09-17"
+    },
+    {
+      "manager": "Kåre Ingebrigtsen",
+      "nativeResourceId": 1249830,
+      "league": "Eliteserien",
+      "nativeLeagueId": 41
+    },
+    {
+      "manager": "Kim Bergstrand",
+      "nativeResourceId": 1249857,
+      "league": "Allsvenskan",
+      "nativeLeagueId": 56
+    },
+    {
+      "manager": "Kjetil Knutsen",
+      "nativeResourceId": 1249860,
+      "league": "Eliteserien",
+      "nativeLeagueId": 41
+    },
+    {
+      "manager": "Kosta Runjaić",
+      "nativeResourceId": 1249867,
+      "league": "PKO Ekstraklasa",
+      "nativeLeagueId": 66
+    },
+    {
+      "manager": "Lars Bohinen",
+      "nativeResourceId": 1249880,
+      "league": "Eliteserien",
+      "nativeLeagueId": 41
+    },
+    {
+      "manager": "Liam Buckley",
+      "nativeResourceId": 1249915,
+      "league": "SSE Airtricity Lge",
+      "nativeLeagueId": 65
+    },
+    {
+      "manager": "Lucas Alcaraz",
+      "nativeResourceId": 1249927,
+      "league": "LaLiga SmartBank",
+      "nativeLeagueId": 54
+    },
+    {
+      "manager": "Lucas Pusineri",
+      "nativeResourceId": 1249929,
+      "league": "Primera División",
+      "nativeLeagueId": 353
+    },
+    {
+      "manager": "Luis García",
+      "nativeResourceId": 1249939,
+      "league": "LaLiga SmartBank",
+      "nativeLeagueId": 54
+    },
+    {
+      "manager": "Luis Zubeldía",
+      "nativeResourceId": 1249944,
+      "league": "Primera División",
+      "nativeLeagueId": 353
+    },
+    {
+      "manager": "Lukas Kwasniok",
+      "nativeResourceId": 1249957,
+      "league": "3. Liga",
+      "nativeLeagueId": 2076
+    },
+    {
+      "manager": "Marc Brys",
+      "nativeResourceId": 1249974,
+      "league": "1A Pro League",
+      "nativeLeagueId": 4
+    },
+    {
+      "manager": "Marcel Koller",
+      "nativeResourceId": 1249978,
+      "league": "RSL",
+      "nativeLeagueId": 189,
+      "confirmation": "User confirmed 2026-09-17"
+    },
+    {
+      "manager": "Marcelo Bielsa",
+      "nativeResourceId": 1249979,
+      "league": "Premier League",
+      "nativeLeagueId": 13
+    },
+    {
+      "manager": "Marcin Brosz",
+      "nativeResourceId": 1249989,
+      "league": "PKO Ekstraklasa",
+      "nativeLeagueId": 66
+    },
+    {
+      "manager": "Mariano Soso",
+      "nativeResourceId": 1250003,
+      "league": "Primera División",
+      "nativeLeagueId": 353
+    },
+    {
+      "manager": "Marius Șumudică",
+      "nativeResourceId": 1250013,
+      "league": "Süper Lig",
+      "nativeLeagueId": 68
+    },
+    {
+      "manager": "Markus Kauczinski",
+      "nativeResourceId": 1250028,
+      "league": "3. Liga",
+      "nativeLeagueId": 2076
+    },
+    {
+      "manager": "Martí Cifuentes",
+      "nativeResourceId": 1250029,
+      "league": "Eliteserien",
+      "nativeLeagueId": 41
+    },
+    {
+      "manager": "Mehmet Özdilek",
+      "nativeResourceId": 1250073,
+      "league": "Süper Lig",
+      "nativeLeagueId": 68
+    },
+    {
+      "manager": "Michael Köllner",
+      "nativeResourceId": 1250083,
+      "league": "3. Liga",
+      "nativeLeagueId": 2076
+    },
+    {
+      "manager": "Micky Mellon",
+      "nativeResourceId": 1250099,
+      "league": "Scottish Prem",
+      "nativeLeagueId": 50
+    },
+    {
+      "manager": "Mikael Stahre",
+      "nativeResourceId": 1250109,
+      "league": "Eliteserien",
+      "nativeLeagueId": 41
+    },
+    {
+      "manager": "Mircea Lucescu",
+      "nativeResourceId": 1250121,
+      "league": "Ukrayina Liha",
+      "nativeLeagueId": 332
+    },
+    {
+      "manager": "Nanne Bergstrand",
+      "nativeResourceId": 1250147,
+      "league": "Allsvenskan",
+      "nativeLeagueId": 56,
+      "confirmation": "User confirmed 2026-09-17"
+    },
+    {
+      "manager": "Niels Frederiksen",
+      "nativeResourceId": 1250172,
+      "league": "3F Superliga",
+      "nativeLeagueId": 1
+    },
+    {
+      "manager": "Nuno",
+      "nativeResourceId": 1250187,
+      "league": "Premier League",
+      "nativeLeagueId": 13
+    },
+    {
+      "manager": "Okan Buruk",
+      "nativeResourceId": 1250192,
+      "league": "Süper Lig",
+      "nativeLeagueId": 68
+    },
+    {
+      "manager": "Ollie Horgan",
+      "nativeResourceId": 1250203,
+      "league": "SSE Airtricity Lge",
+      "nativeLeagueId": 65
+    },
+    {
+      "manager": "Óscar García",
+      "nativeResourceId": 1250213,
+      "league": "LaLiga Santander",
+      "nativeLeagueId": 53
+    },
+    {
+      "manager": "Pablo Guede",
+      "nativeResourceId": 1250233,
+      "league": "LIGA BBVA MX",
+      "nativeLeagueId": 341
+    },
+    {
+      "manager": "Paolo Tramezzani",
+      "nativeResourceId": 1250240,
+      "league": "Liga Hrvatska",
+      "nativeLeagueId": 317
+    },
+    {
+      "manager": "Pasquale Marino",
+      "nativeResourceId": 1250246,
+      "league": "Calcio B",
+      "nativeLeagueId": 2179
+    },
+    {
+      "manager": "Pavel Dotchev",
+      "nativeResourceId": 1250269,
+      "league": "3. Liga",
+      "nativeLeagueId": 2076
+    },
+    {
+      "manager": "Pedro Emanuel",
+      "nativeResourceId": 1250278,
+      "league": "United Emirates League",
+      "nativeLeagueId": 2172
+    },
+    {
+      "manager": "Pedro Caixinha",
+      "nativeResourceId": 1250280,
+      "league": "MBS Pro League",
+      "nativeLeagueId": 350
+    },
+    {
+      "manager": "Pepa",
+      "nativeResourceId": 1250281,
+      "league": "Liga NOS",
+      "nativeLeagueId": 308
+    },
+    {
+      "manager": "Pedro Martins",
+      "nativeResourceId": 1250282,
+      "league": "Hellas Liga",
+      "nativeLeagueId": 63
+    },
+    {
+      "manager": "Péricles",
+      "nativeResourceId": 1250288,
+      "league": "MBS Pro League",
+      "nativeLeagueId": 350
+    },
+    {
+      "manager": "Peter Zeidler",
+      "nativeResourceId": 1250308,
+      "league": "RSL",
+      "nativeLeagueId": 189
+    },
+    {
+      "manager": "Philippe Montanier",
+      "nativeResourceId": 1250316,
+      "league": "1A Pro League",
+      "nativeLeagueId": 4
+    },
+    {
+      "manager": "Poya Asbaghi",
+      "nativeResourceId": 1250326,
+      "league": "Allsvenskan",
+      "nativeLeagueId": 56,
+      "confirmation": "User confirmed 2026-09-17"
+    },
+    {
+      "manager": "Răzvan Lucescu",
+      "nativeResourceId": 1250354,
+      "league": "MBS Pro League",
+      "nativeLeagueId": 350
+    },
+    {
+      "manager": "Ricardo Zielinski",
+      "nativeResourceId": 1250378,
+      "league": "Primera División",
+      "nativeLeagueId": 353
+    },
+    {
+      "manager": "Tuca Ferretti",
+      "nativeResourceId": 1250379,
+      "league": "LIGA BBVA MX",
+      "nativeLeagueId": 341
+    },
+    {
+      "manager": "Rıza Çalımbay",
+      "nativeResourceId": 1250390,
+      "league": "Süper Lig",
+      "nativeLeagueId": 68
+    },
+    {
+      "manager": "Robert Ibertsberger",
+      "nativeResourceId": 1250395,
+      "league": "Ö. Bundesliga",
+      "nativeLeagueId": 80
+    },
+    {
+      "manager": "Robert Dante Siboldi",
+      "nativeResourceId": 1250400,
+      "league": "LIGA BBVA MX",
+      "nativeLeagueId": 341
+    },
+    {
+      "manager": "Romuald Peyras",
+      "nativeResourceId": 1250425,
+      "league": "Premier League",
+      "nativeLeagueId": 13,
+      "confirmation": "User-chosen default, 2026-09-17; fictional manager, not recovered native league"
+    },
+    {
+      "manager": "De la Barrera",
+      "nativeResourceId": 1250434,
+      "league": "Liga I",
+      "nativeLeagueId": 330,
+      "confirmation": "User confirmed 2026-09-17"
+    },
+    {
+      "manager": "Rui Vitória",
+      "nativeResourceId": 1250442,
+      "league": "MBS Pro League",
+      "nativeLeagueId": 350
+    },
+    {
+      "manager": "Sebastián Beccacece",
+      "nativeResourceId": 1250470,
+      "league": "Primera División",
+      "nativeLeagueId": 353
+    },
+    {
+      "manager": "Sergen Yalçın",
+      "nativeResourceId": 1250477,
+      "league": "Süper Lig",
+      "nativeLeagueId": 68
+    },
+    {
+      "manager": "Sérgio Conceição",
+      "nativeResourceId": 1250492,
+      "league": "Liga NOS",
+      "nativeLeagueId": 308
+    },
+    {
+      "manager": "Siniša Mihajlović",
+      "nativeResourceId": 1250510,
+      "league": "Serie A TIM",
+      "nativeLeagueId": 31
+    },
+    {
+      "manager": "Ståle Solbakken",
+      "nativeResourceId": 1250516,
+      "league": "3F Superliga",
+      "nativeLeagueId": 1
+    },
+    {
+      "manager": "Stefan Billborn",
+      "nativeResourceId": 1250518,
+      "league": "Allsvenskan",
+      "nativeLeagueId": 56
+    },
+    {
+      "manager": "Stefan Krämer",
+      "nativeResourceId": 1250520,
+      "league": "3. Liga",
+      "nativeLeagueId": 2076
+    },
+    {
+      "manager": "Stefano Pioli",
+      "nativeResourceId": 1250527,
+      "league": "Serie A TIM",
+      "nativeLeagueId": 31
+    },
+    {
+      "manager": "Stephen Robinson",
+      "nativeResourceId": 1250536,
+      "league": "Scottish Prem",
+      "nativeLeagueId": 50
+    },
+    {
+      "manager": "Tomas Oral",
+      "nativeResourceId": 1250595,
+      "league": "3. Liga",
+      "nativeLeagueId": 2076
+    },
+    {
+      "manager": "Vasco Seabra",
+      "nativeResourceId": 1250641,
+      "league": "Liga NOS",
+      "nativeLeagueId": 308
+    },
+    {
+      "manager": "Vegard Hansen",
+      "nativeResourceId": 1250644,
+      "league": "Eliteserien",
+      "nativeLeagueId": 41
+    },
+    {
+      "manager": "Víctor Fernández",
+      "nativeResourceId": 1250653,
+      "league": "LaLiga SmartBank",
+      "nativeLeagueId": 54
+    },
+    {
+      "manager": "Víctor Manuel Vucetich",
+      "nativeResourceId": 1250655,
+      "league": "LIGA BBVA MX",
+      "nativeLeagueId": 341
+    },
+    {
+      "manager": "Viktor Gancharenko",
+      "nativeResourceId": 1250656,
+      "league": "League of Russia",
+      "nativeLeagueId": 3006
+    },
+    {
+      "manager": "Vítězslav Lavička",
+      "nativeResourceId": 1250663,
+      "league": "PKO Ekstraklasa",
+      "nativeLeagueId": 66
+    },
+    {
+      "manager": "Vítor Campelos",
+      "nativeResourceId": 1250664,
+      "league": "MBS Pro League",
+      "nativeLeagueId": 350,
+      "confirmation": "User confirmed 2026-09-17"
+    },
+    {
+      "manager": "Waldemar Fornalik",
+      "nativeResourceId": 1250674,
+      "league": "PKO Ekstraklasa",
+      "nativeLeagueId": 66
+    },
+    {
+      "manager": "Yannick Ferrera",
+      "nativeResourceId": 1250698,
+      "league": "MBS Pro League",
+      "nativeLeagueId": 350
+    },
+    {
+      "manager": "Zoran Mamić",
+      "nativeResourceId": 1250722,
+      "league": "Liga Hrvatska",
+      "nativeLeagueId": 317
+    },
+    {
+      "manager": "Ufuk Talay",
+      "nativeResourceId": 1250843,
+      "league": "A-League",
+      "nativeLeagueId": 351
+    },
+    {
+      "manager": "João Pedro Sousa",
+      "nativeResourceId": 1250861,
+      "league": "Liga NOS",
+      "nativeLeagueId": 308
+    },
+    {
+      "manager": "Marek Papszun",
+      "nativeResourceId": 1250974,
+      "league": "PKO Ekstraklasa",
+      "nativeLeagueId": 66
+    },
+    {
+      "manager": "Bogdan Andone",
+      "nativeResourceId": 1250982,
+      "league": "Liga I",
+      "nativeLeagueId": 330
+    },
+    {
+      "manager": "Ilie Poenaru",
+      "nativeResourceId": 1251092,
+      "league": "Liga I",
+      "nativeLeagueId": 330
+    },
+    {
+      "manager": "Christian Nielsen",
+      "nativeResourceId": 1251130,
+      "league": "3F Superliga",
+      "nativeLeagueId": 1
+    },
+    {
+      "manager": "Mere Hermoso",
+      "nativeResourceId": 1251203,
+      "league": "LaLiga SmartBank",
+      "nativeLeagueId": 54
+    },
+    {
+      "manager": "Vincent Kompany",
+      "nativeResourceId": 1251204,
+      "league": "1A Pro League",
+      "nativeLeagueId": 4
+    },
+    {
+      "manager": "Wouter Vrancken",
+      "nativeResourceId": 1251205,
+      "league": "1A Pro League",
+      "nativeLeagueId": 4
+    },
+    {
+      "manager": "Marius Croitoru",
+      "nativeResourceId": 1251206,
+      "league": "Liga I",
+      "nativeLeagueId": 330
+    },
+    {
+      "manager": "Iraola",
+      "nativeResourceId": 1251637,
+      "league": "LaLiga SmartBank",
+      "nativeLeagueId": 54
+    },
+    {
+      "manager": "Thomas Silberberger",
+      "nativeResourceId": 1251657,
+      "league": "Ö. Bundesliga",
+      "nativeLeagueId": 80
+    },
+    {
+      "manager": "Gabriel Caballero",
+      "nativeResourceId": 1251862,
+      "league": "LIGA BBVA MX",
+      "nativeLeagueId": 341
+    },
+    {
+      "manager": "Jim Goodwin",
+      "nativeResourceId": 1251865,
+      "league": "Scottish Prem",
+      "nativeLeagueId": 50
+    },
+    {
+      "manager": "Alain Geiger",
+      "nativeResourceId": 1252441,
+      "league": "RSL",
+      "nativeLeagueId": 189
+    },
+    {
+      "manager": "Dušan Uhrin Jr.",
+      "nativeResourceId": 1252696,
+      "league": "Česká Liga",
+      "nativeLeagueId": 319
+    },
+    {
+      "manager": "Alexander Schmidt",
+      "nativeResourceId": 1252766,
+      "league": "3. Liga",
+      "nativeLeagueId": 2076
+    },
+    {
+      "manager": "Jon Bolo",
+      "nativeResourceId": 1252808,
+      "league": "LaLiga SmartBank",
+      "nativeLeagueId": 54
+    },
+    {
+      "manager": "Brian Priske",
+      "nativeResourceId": 1252928,
+      "league": "3F Superliga",
+      "nativeLeagueId": 1
+    },
+    {
+      "manager": "Neale Fenn",
+      "nativeResourceId": 1253027,
+      "league": "SSE Airtricity Lge",
+      "nativeLeagueId": 65
+    },
+    {
+      "manager": "Stephen O’Donnell",
+      "nativeResourceId": 1253115,
+      "league": "SSE Airtricity Lge",
+      "nativeLeagueId": 65
+    },
+    {
+      "manager": "Olof Mellberg",
+      "nativeResourceId": 1253159,
+      "league": "Allsvenskan",
+      "nativeLeagueId": 56
+    },
+    {
+      "manager": "Diego Maradona",
+      "nativeResourceId": 1253209,
+      "league": "Primera División",
+      "nativeLeagueId": 353
+    },
+    {
+      "manager": "Martin Ševela",
+      "nativeResourceId": 1253424,
+      "league": "PKO Ekstraklasa",
+      "nativeLeagueId": 66
+    },
+    {
+      "manager": "Paulo Pezzolano",
+      "nativeResourceId": 1253719,
+      "league": "LIGA BBVA MX",
+      "nativeLeagueId": 341
+    },
+    {
+      "manager": "Juan Reynoso",
+      "nativeResourceId": 1254016,
+      "league": "LIGA BBVA MX",
+      "nativeLeagueId": 341
+    },
+    {
+      "manager": "Leo Grozavu",
+      "nativeResourceId": 1254286,
+      "league": "Liga I",
+      "nativeLeagueId": 330
+    },
+    {
+      "manager": "Nicky Hayen",
+      "nativeResourceId": 1254486,
+      "league": "1A Pro League",
+      "nativeLeagueId": 4
+    },
+    {
+      "manager": "İlhan Palut",
+      "nativeResourceId": 1254545,
+      "league": "Süper Lig",
+      "nativeLeagueId": 68
+    },
+    {
+      "manager": "Joey Hardarson",
+      "nativeResourceId": 1254657,
+      "league": "Eliteserien",
+      "nativeLeagueId": 41
+    },
+    {
+      "manager": "Luca Gotti",
+      "nativeResourceId": 1254661,
+      "league": "Serie A TIM",
+      "nativeLeagueId": 31
+    },
+    {
+      "manager": "Mikel Arteta",
+      "nativeResourceId": 1254782,
+      "league": "Premier League",
+      "nativeLeagueId": 13
+    },
+    {
+      "manager": "Rúben Amorim",
+      "nativeResourceId": 1254801,
+      "league": "Liga NOS",
+      "nativeLeagueId": 308
+    },
+    {
+      "manager": "Artur Skowronek",
+      "nativeResourceId": 1254828,
+      "league": "PKO Ekstraklasa",
+      "nativeLeagueId": 66
+    },
+    {
+      "manager": "Alex Dyer",
+      "nativeResourceId": 1254853,
+      "league": "Scottish Prem",
+      "nativeLeagueId": 50
+    },
+    {
+      "manager": "Jon Dahl Tomasson",
+      "nativeResourceId": 1254883,
+      "league": "Allsvenskan",
+      "nativeLeagueId": 56
+    },
+    {
+      "manager": "Israel Damonte",
+      "nativeResourceId": 1255029,
+      "league": "Primera División",
+      "nativeLeagueId": 353
+    },
+    {
+      "manager": "Robert Prosinečki",
+      "nativeResourceId": 1255306,
+      "league": "Süper Lig",
+      "nativeLeagueId": 68
+    },
+    {
+      "manager": "Ferdinand Feldhofer",
+      "nativeResourceId": 1255383,
+      "league": "Ö. Bundesliga",
+      "nativeLeagueId": 80
+    },
+    {
+      "manager": "Jean-Paul de Marigny",
+      "nativeResourceId": 1255447,
+      "league": "A-League",
+      "nativeLeagueId": 351
+    },
+    {
+      "manager": "Luís Freire",
+      "nativeResourceId": 1255598,
+      "league": "Liga NOS",
+      "nativeLeagueId": 308
+    },
+    {
+      "manager": "Ian Morris",
+      "nativeResourceId": 1255612,
+      "league": "SSE Airtricity Lge",
+      "nativeLeagueId": 65
+    },
+    {
+      "manager": "Zvonimir Soldo",
+      "nativeResourceId": 1256057,
+      "league": "Ö. Bundesliga",
+      "nativeLeagueId": 80,
+      "confirmation": "User confirmed 2026-09-17"
+    },
+    {
+      "manager": "Vladan Milojević",
+      "nativeResourceId": 1256165,
+      "league": "MBS Pro League",
+      "nativeLeagueId": 350
+    },
+    {
+      "manager": "Jan Frode Nornes",
+      "nativeResourceId": 1256332,
+      "league": "Eliteserien",
+      "nativeLeagueId": 41
+    },
+    {
+      "manager": "Piotr Tworek",
+      "nativeResourceId": 1256576,
+      "league": "PKO Ekstraklasa",
+      "nativeLeagueId": 66
+    },
+    {
+      "manager": "Krzysztof Brede",
+      "nativeResourceId": 1256577,
+      "league": "PKO Ekstraklasa",
+      "nativeLeagueId": 66
+    },
+    {
+      "manager": "Alexander Blessin",
+      "nativeResourceId": 1256828,
+      "league": "1A Pro League",
+      "nativeLeagueId": 4
+    },
+    {
+      "manager": "Thomas Hoßmang",
+      "nativeResourceId": 1256857,
+      "league": "3. Liga",
+      "nativeLeagueId": 2076
+    },
+    {
+      "manager": "Álex Diego",
+      "nativeResourceId": 1256872,
+      "league": "LIGA BBVA MX",
+      "nativeLeagueId": 341
+    },
+    {
+      "manager": "Grant Brebner",
+      "nativeResourceId": 1256921,
+      "league": "A-League",
+      "nativeLeagueId": 351
+    },
+    {
+      "manager": "Carl Veart",
+      "nativeResourceId": 1256922,
+      "league": "A-League",
+      "nativeLeagueId": 351
+    },
+    {
+      "manager": "Dominik Thalhammer",
+      "nativeResourceId": 1257251,
+      "league": "Ö. Bundesliga",
+      "nativeLeagueId": 80
+    },
+    {
+      "manager": "Pero Kapcevic",
+      "nativeResourceId": 1257336,
+      "league": "Allsvenskan",
+      "nativeLeagueId": 56
+    },
+    {
+      "manager": "Guerino Capretti",
+      "nativeResourceId": 1257369,
+      "league": "3. Liga",
+      "nativeLeagueId": 2076
+    },
+    {
+      "manager": "Warren Moon",
+      "nativeResourceId": 1257419,
+      "league": "A-League",
+      "nativeLeagueId": 351
+    },
+    {
+      "manager": "Andrés Lillini",
+      "nativeResourceId": 1257420,
+      "league": "LIGA BBVA MX",
+      "nativeLeagueId": 341
+    },
+    {
+      "manager": "Antonio Hidalgo",
+      "nativeResourceId": 1257581,
+      "league": "LaLiga SmartBank",
+      "nativeLeagueId": 54
+    },
+    {
+      "manager": "Bogdan Zając",
+      "nativeResourceId": 1257704,
+      "league": "PKO Ekstraklasa",
+      "nativeLeagueId": 66
+    },
+    {
+      "manager": "Dariusz Skrzypczak",
+      "nativeResourceId": 1257770,
+      "league": "PKO Ekstraklasa",
+      "nativeLeagueId": 66
+    },
+    {
+      "manager": "Daniel Pancu",
+      "nativeResourceId": 1258096,
+      "league": "Liga I",
+      "nativeLeagueId": 330
+    },
+    {
+      "manager": "Mario Frick",
+      "nativeResourceId": 1258145,
+      "league": "RSL",
+      "nativeLeagueId": 189
+    }
+  ],
+  "omitted": [],
+  "originalOmissions": [
+    {
+      "manager": "Abel",
+      "confidence": "Medium",
+      "proposedLeague": "Hellas Liga",
+      "notes": "Managed PAOK through most of 2020 and left for Palmeiras in late Oct 2020; mapped to Hellas Liga for FIFA 21 launch-era card."
+    },
+    {
+      "manager": "André Gaspar",
+      "confidence": "Medium",
+      "proposedLeague": "MBS Pro League",
+      "notes": "Managed Al-Hazem until 10 Sep 2020; mapped to Saudi league for FIFA 21-era card."
+    },
+    {
+      "manager": "Bülent Korkmaz",
+      "confidence": "Medium",
+      "proposedLeague": "Süper Lig",
+      "notes": "Near-launch/legacy case; league reconstructed from the manager's FIFA 21-era club/most recent in-game assignment."
+    },
+    {
+      "manager": "De la Barrera",
+      "confidence": "Medium",
+      "proposedLeague": "Liga I",
+      "notes": "Managed Viitorul Constanța from Aug-Nov 2020; mapped to Liga I for launch-era FIFA 21."
+    },
+    {
+      "manager": "Erick Mombaerts",
+      "confidence": "Medium",
+      "proposedLeague": "A-League",
+      "notes": "Near-launch/legacy case; league reconstructed from the manager's FIFA 21-era club/most recent in-game assignment."
+    },
+    {
+      "manager": "Francisco Palencia",
+      "confidence": "Medium",
+      "proposedLeague": "LIGA BBVA MX",
+      "notes": "Near-launch/legacy case; league reconstructed from the manager's FIFA 21-era club/most recent in-game assignment."
+    },
+    {
+      "manager": "Hannes Wolf",
+      "confidence": "Medium",
+      "proposedLeague": "1A Pro League",
+      "notes": "Near-launch/legacy case; league reconstructed from the manager's FIFA 21-era club/most recent in-game assignment."
+    },
+    {
+      "manager": "Marcel Koller",
+      "confidence": "Medium",
+      "proposedLeague": "RSL",
+      "notes": "Near-launch/legacy case; league reconstructed from the manager's FIFA 21-era club/most recent in-game assignment."
+    },
+    {
+      "manager": "Nanne Bergstrand",
+      "confidence": "Medium",
+      "proposedLeague": "Allsvenskan",
+      "notes": "Near-launch/legacy case; league reconstructed from the manager's FIFA 21-era club/most recent in-game assignment."
+    },
+    {
+      "manager": "Pacheta",
+      "confidence": "Medium",
+      "proposedLeague": "LaLiga Santander",
+      "notes": "Transition case: he took Elche up to LaLiga and left on 25 Aug 2020; mapped to Elche's FIFA 21 top-flight league."
+    },
+    {
+      "manager": "Poya Asbaghi",
+      "confidence": "Medium",
+      "proposedLeague": "Allsvenskan",
+      "notes": "Near-launch/legacy case; league reconstructed from the manager's FIFA 21-era club/most recent in-game assignment."
+    },
+    {
+      "manager": "Quique Setién",
+      "confidence": "Medium",
+      "proposedLeague": "LaLiga Santander",
+      "notes": "Near-launch/legacy case; league reconstructed from the manager's FIFA 21-era club/most recent in-game assignment."
+    },
+    {
+      "manager": "Roberto D’Aversa",
+      "confidence": "Medium",
+      "proposedLeague": "Serie A TIM",
+      "notes": "Near-launch/legacy case; league reconstructed from the manager's FIFA 21-era club/most recent in-game assignment."
+    },
+    {
+      "manager": "Romuald Peyras",
+      "confidence": "Low",
+      "proposedLeague": "Ligue 2 BKT",
+      "notes": "EA generic/fictional FUT manager carried across multiple FIFA titles; exact FIFA 21 default league could not be directly verified. Ligue 2 is a best reconstruction."
+    },
+    {
+      "manager": "Tony Popovic",
+      "confidence": "Medium",
+      "proposedLeague": "A-League",
+      "notes": "Near-launch/legacy case; league reconstructed from the manager's FIFA 21-era club/most recent in-game assignment."
+    },
+    {
+      "manager": "Vítor Campelos",
+      "confidence": "Medium",
+      "proposedLeague": "Liga NOS",
+      "notes": "Near-launch/legacy case; league reconstructed from the manager's FIFA 21-era club/most recent in-game assignment."
+    },
+    {
+      "manager": "Zvonimir Soldo",
+      "confidence": "Medium",
+      "proposedLeague": "Ö. Bundesliga",
+      "notes": "Near-launch/legacy case; league reconstructed from the manager's FIFA 21-era club/most recent in-game assignment."
+    }
+  ],
+  "corrections": {
+    "migration": "044-manager-league-corrections.sql",
+    "decided": "2026-09-25 by the maintainer",
+    "source": "FIFA 21 cards_ng_db as derived by the Python server (commit bdfe5fe): managercards.carddbid - 1000000 = manager.managerid -> manager.teamid -> leagueteamlinks, FUT leagues only",
+    "note": "Ten managers move to the native league. The 19 managers with no club in FIFA 21 data keep the assignments above.",
+    "changes": [
+      {
+        "nativeResourceId": 1007512,
+        "manager": "Hernán Crespo",
+        "fromNativeLeagueId": 353,
+        "toNativeLeagueId": 1003
+      },
+      {
+        "nativeResourceId": 1010974,
+        "manager": "Mauricio Pellegrino",
+        "fromNativeLeagueId": 353,
+        "toNativeLeagueId": 1014
+      },
+      {
+        "nativeResourceId": 1143063,
+        "manager": "Juan Manuel Azconzábal",
+        "fromNativeLeagueId": 353,
+        "toNativeLeagueId": 1014
+      },
+      {
+        "nativeResourceId": 1249253,
+        "manager": "Diego Dabove",
+        "fromNativeLeagueId": 353,
+        "toNativeLeagueId": 1014
+      },
+      {
+        "nativeResourceId": 1249775,
+        "manager": "José Gomes",
+        "fromNativeLeagueId": 308,
+        "toNativeLeagueId": 54
+      },
+      {
+        "nativeResourceId": 1249929,
+        "manager": "Lucas Pusineri",
+        "fromNativeLeagueId": 353,
+        "toNativeLeagueId": 1014
+      },
+      {
+        "nativeResourceId": 1249944,
+        "manager": "Luis Zubeldía",
+        "fromNativeLeagueId": 353,
+        "toNativeLeagueId": 1014
+      },
+      {
+        "nativeResourceId": 1250470,
+        "manager": "Sebastián Beccacece",
+        "fromNativeLeagueId": 353,
+        "toNativeLeagueId": 1003
+      },
+      {
+        "nativeResourceId": 1252696,
+        "manager": "Dušan Uhrin Jr.",
+        "fromNativeLeagueId": 319,
+        "toNativeLeagueId": 330
+      },
+      {
+        "nativeResourceId": 1255029,
+        "manager": "Israel Damonte",
+        "fromNativeLeagueId": 353,
+        "toNativeLeagueId": 1014
+      }
+    ]
+  }
+}

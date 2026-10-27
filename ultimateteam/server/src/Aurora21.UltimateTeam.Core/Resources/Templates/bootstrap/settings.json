@@ -1,0 +1,30 @@
+{
+  "configs": [
+    { "type": "IsStoreEnabled", "value": "1" },
+    { "type": "cardPackStoreEnabled", "value": "1" },
+    { "type": "pointsPackStoreEnabled", "value": "1" },
+    { "type": "enableMyStadium", "value": "1" },
+    { "type": "myStadium", "value": "1" },
+    { "type": "myStadiumConfigMode", "value": "1" },
+    { "type": "myStadiumAdboardMode", "value": "1" },
+    { "type": "myStadium_tier", "value": "1" },
+    { "type": "squadBattleEnabled", "value": "1" },
+    { "type": "squadBattleCouchPlayEnabled", "value": "1" },
+    { "type": "enableDraftMode", "value": "1" },
+    { "type": "enableOfflineDraftMode", "value": "1" },
+    { "type": "enableSinglePlayerDraftMode", "value": "1" },
+    { "type": "enableObjectives", "value": "1" },
+    { "type": "enableSeasonalCampaigns", "value": "1" },
+    { "type": "enableRivals", "value": "1" },
+    { "type": "sbcEnabled", "value": "1" },
+    { "type": "SquadBuildingChallengesEnabled", "value": "1" },
+    { "type": "enableSBC", "value": "1" },
+    { "type": "enableItemDataOptimization", "value": "1" },
+    { "type": "enableLoyaltyBonusForConceptPlayers", "value": "0" },
+    { "type": "transferListSize", "value": "{{transferListSize}}" },
+    { "type": "rivalsEventMatchesSoftCap", "value": "{{weeklyMatches}}" },
+    { "type": "rivalsEventMatchesSoftCapMax", "value": "{{weeklyMatches}}" },
+    { "type": "rivalsThresholdBeforeSoftCap", "value": "{{softCapWarning}}" },
+    { "type": "rivalsSkillPointsCapValue", "value": "{{skillCap}}" }
+  ]
+}

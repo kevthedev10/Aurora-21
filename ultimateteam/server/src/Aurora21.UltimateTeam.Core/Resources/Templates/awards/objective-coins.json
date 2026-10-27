@@ -1,0 +1,5 @@
+{
+  "halId": 0, "assetId": 0, "awardType": "coin",
+  "value": "{{coins}}", "awardValue": "{{coins}}",
+  "count": 1, "awardCount": 1
+}

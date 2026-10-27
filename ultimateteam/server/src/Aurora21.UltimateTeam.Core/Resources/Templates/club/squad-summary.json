@@ -1,0 +1,8 @@
+{
+  "id": "{{id}}",
+  "squadName": "{{name}}",
+  "rating": "{{rating}}",
+  "chemistry": "{{chemistry}}",
+  "formation": "{{formation}}",
+  "squadType": "REGULAR_SQUAD"
+}

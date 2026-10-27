@@ -1,0 +1,12 @@
+{
+  "currencies": [
+    {
+      "currency": "pow_funds",
+      "funds": 0,
+      "fundsCapInfo": [
+        { "period": "daily", "fundsEarned": 0 },
+        { "period": "weekly", "fundsEarned": 0 }
+      ]
+    }
+  ]
+}

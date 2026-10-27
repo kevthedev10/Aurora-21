@@ -1,0 +1,6 @@
+{
+  "clubName": "{{clubName}}",
+  "clubAbbr": "{{clubAbbr}}",
+  "isReturningUser": false,
+  "returningUserRewards": []
+}

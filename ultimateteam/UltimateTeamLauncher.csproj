@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <EnableDefaultPageItems>false</EnableDefaultPageItems>
+    <AssemblyName>Aurora21-UltimateTeam-Launcher</AssemblyName>
+    <RootNamespace>Aurora21Launcher</RootNamespace>
+    <!-- The committed DLL must not record the builder's checkout folder (its PDB and source paths). -->
+    <PathMap>$(MSBuildProjectDirectory)=/_/</PathMap>
+  </PropertyGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="UltimateTeamLauncher.App.xaml" />
+    <Page Include="UltimateTeamLauncher.MainWindow.xaml" />
+    <Compile Include="UltimateTeamLauncher.App.xaml.cs" />
+    <Compile Include="UltimateTeamLauncher.MainWindow.xaml.cs" />
+    <Compile Include="UltimateTeamLauncher.RuntimeCompatibility.cs" />
+    <Resource Include="assets\FIFASetup.png" />
+    <Resource Include="launcherimage.webp" />
+  </ItemGroup>
+</Project>

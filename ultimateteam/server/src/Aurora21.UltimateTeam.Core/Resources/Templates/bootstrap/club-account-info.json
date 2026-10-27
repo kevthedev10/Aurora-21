@@ -1,0 +1,21 @@
+{
+  "userAccountInfo": {
+    "personas": [
+      {
+        "personaId": "{{personaId}}",
+        "personaName": "{{personaName}}",
+        "returningUser": 0,
+        "userClubList": [
+          {
+            "year": "2021",
+            "platform": "pc",
+            "clubName": "{{clubName}}",
+            "established": "{{established}}",
+            "assetId": "{{badge}}",
+            "skuAccessList": { "FFA21PCC": "{{established}}" }
+          }
+        ]
+      }
+    ]
+  }
+}

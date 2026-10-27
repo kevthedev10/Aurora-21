@@ -1,0 +1,38 @@
+{
+  "id": "{{entryId}}",
+  "assetId": "{{entryId}}",
+  "quantity": 0,
+  "name": "{{name}}",
+  "packName": "{{name}}",
+  "displayName": "{{name}}",
+  "title": "{{name}}",
+  "description": "{{name}}",
+  "packDescription": "{{description}}",
+  "longDescription": "{{description}}",
+  "shortDescription": "{{description}}",
+  "bio": "{{description}}",
+  "label": "{{name}}",
+  "displayLabel": "{{name}}",
+  "storePackName": "{{name}}",
+  "finalPrice": "{{coins}}",
+  "originalPrice": "{{coins}}",
+  "currencies": [
+    { "name": "coins", "funds": "{{coins}}", "finalFunds": "{{coins}}" },
+    { "name": "points", "funds": "{{points}}", "finalFunds": "{{points}}" }
+  ],
+  "displayGroup": { "value": "draftentry", "priority": "{{entryId}}" },
+  "purchaseGroup": "draftentry",
+  "group": "draftentry",
+  "state": "active",
+  "packType": "DRAFTENTRY",
+  "sortPriority": "{{entryId}}",
+  "packContentInfo": {
+    "itemQuantity": 0,
+    "goldQuantity": 0,
+    "silverQuantity": 0,
+    "bronzeQuantity": 0,
+    "rareQuantity": 0
+  },
+  "visible": true,
+  "isPurchaseable": "{{purchasable}}"
+}

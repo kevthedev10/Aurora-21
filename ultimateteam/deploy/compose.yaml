@@ -1,0 +1,307 @@
+# Aurora 21 on the Ubuntu VPS, with a .env beside this file (see .env.example). The Deploy workflow copies this file,
+# pg-backup.sh, remote-deploy.sh and Caddyfile to the VPS and runs the CI-built image from GHCR (IMAGE/IMAGE_TAG in .env).
+# Building on the VPS from a checkout of ultimateteam/deploy/ also works:
+#   docker compose build && docker compose up -d
+# The server and redirector use host networking: the gameplay relay needs a whole UDP port range, which Docker's
+# per-port publishing handles poorly. PostgreSQL stays private: published on the VPS's loopback only. The launcher API
+# (127.0.0.1:18447) is published over HTTPS by the caddy service; the operator panel (127.0.0.1:18448) is never
+# published and is reached through an SSH tunnel.
+name: aurora21
+
+# Docker's json-file logs grow without limit unless capped; every service uses this cap (about 100 MB each at most).
+x-logging: &logging
+  driver: json-file
+  options:
+    max-size: "20m"
+    max-file: "5"
+
+# The server logs far more than the other services (about 4-5 hours fit in 100 MB at 30 players), so it keeps 1 GB.
+x-server-logging: &server-logging
+  driver: json-file
+  options:
+    max-size: "100m"
+    max-file: "10"
+
+services:
+  db:
+    image: postgres:18
+    restart: unless-stopped
+    logging: *logging
+    # Parallel queries and sorts use /dev/shm; Docker's 64 MB default fails them under load.
+    shm_size: 1g
+    # Sized for the production VPS (12 vCPU, 24 GB, NVMe); the PG_* values in .env adjust the memory-bound ones for
+    # another machine. The server's database.max_pool_size (config.json) must stay below max_connections minus its
+    # connection_reserve; the server checks that at start-up. Changing these restarts PostgreSQL on the next deploy.
+    command:
+      - postgres
+      - -c
+      - max_connections=${PG_MAX_CONNECTIONS:-200}
+      # Opening a club locks the catalog and club tables in one transaction; 64 (the default) ran out once the schema
+      # passed 65 relations ("out of shared memory"). The server's managed cluster uses 256 for the same reason.
+      - -c
+      - max_locks_per_transaction=256
+      - -c
+      - shared_buffers=${PG_SHARED_BUFFERS:-6GB}
+      - -c
+      - effective_cache_size=${PG_EFFECTIVE_CACHE_SIZE:-16GB}
+      - -c
+      - work_mem=${PG_WORK_MEM:-16MB}
+      - -c
+      - maintenance_work_mem=${PG_MAINTENANCE_WORK_MEM:-1GB}
+      - -c
+      - max_wal_size=4GB
+      - -c
+      - min_wal_size=1GB
+      # NVMe: random reads cost about the same as sequential ones, and many can be in flight.
+      - -c
+      - random_page_cost=1.1
+      - -c
+      - effective_io_concurrency=200
+    environment:
+      POSTGRES_DB: ultimateteam
+      POSTGRES_USER: ultimateteam
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD in .env}
+    volumes:
+      - db-data:/var/lib/postgresql
+    ports:
+      - "127.0.0.1:5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ultimateteam -d ultimateteam"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+  server:
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile
+    image: ${IMAGE:-aurora21/ultimateteam-server}:${IMAGE_TAG:-local}
+    restart: unless-stopped
+    logging: *server-logging
+    network_mode: host
+    # Numeric host group shared with the deploy user's worker; app stays unprivileged.
+    group_add:
+      - ${RESTART_WORKER_GID:?run restart-worker.sh install as the deploy user first}
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      ULTIMATETEAM_POSTGRES_CONNECTION: "Host=127.0.0.1;Port=5432;Database=ultimateteam;Username=ultimateteam;Password=${POSTGRES_PASSWORD}"
+      # The Aurora account service's launch signing (issuer plus ES256 public key or HS256 secret) and the Discord bot
+      # that checks roles. Empty values leave launches refused (not configured) and roles unchecked.
+      ULTIMATETEAM_LAUNCH_ISSUER: ${LAUNCH_ISSUER:-}
+      ULTIMATETEAM_LAUNCH_PUBLIC_KEY: ${LAUNCH_ES256_PUBLIC_KEY:-}
+      ULTIMATETEAM_LAUNCH_SECRET: ${LAUNCH_HS256_SECRET:-}
+      ULTIMATETEAM_DISCORD_BOT_TOKEN: ${DISCORD_BOT_TOKEN:-}
+      BACKUP_KEEP_DAILY: ${BACKUP_KEEP_DAILY:-7}
+      IMAGE_TAG: ${IMAGE_TAG:-local}
+      ULTIMATETEAM_RESTART_REQUESTS: /restart-requests
+      # Enable hosted idle probes even for existing state volumes with idle_seconds=0.
+      # .env TCP_KEEPALIVE_IDLE_SECONDS=0 disables them without rewriting config.json.
+      ULTIMATETEAM_TCP_KEEPALIVE_IDLE_SECONDS: ${TCP_KEEPALIVE_IDLE_SECONDS:-30}
+      # Metrics go to the monitoring profile's Prometheus only while it is configured (GRAFANA_ADMIN_PASSWORD set);
+      # an empty endpoint turns the export off (Hosting/MetricsExport.cs).
+      OTEL_EXPORTER_OTLP_METRICS_ENDPOINT: ${GRAFANA_ADMIN_PASSWORD:+http://127.0.0.1:9090/api/v1/otlp/v1/metrics}
+      OTEL_METRIC_EXPORT_INTERVAL: "15000"
+      OTEL_SERVICE_NAME: aurora21-server
+      OTEL_RESOURCE_ATTRIBUTES: service.version=${IMAGE_TAG:-local}
+    volumes:
+      - certs:/data/certs
+      - state:/data/state
+      - ${BACKUP_DIR:-./backups}:/backups:ro
+      - ./restart-requests:/restart-requests
+      # Panel images (card frames, players, badges, flags) copied here once from download-card-images.py; the panel serves
+      # them read-only on its private port.
+      - ${PANEL_ASSETS_DIR:-./panel-assets}:/panel-assets:ro
+    command:
+      - serve
+      - --hosted
+      - --host
+      - 0.0.0.0
+      - --gameplay-relay
+      - "on"
+      - --gameplay-relay-advertised
+      - ${PUBLIC_IPV4:?set PUBLIC_IPV4 in .env}
+      # One UDP port pair per relayed match; the firewall must allow the whole range. 31000-31999 is 500 matches at once.
+      - --gameplay-relay-port-start
+      - ${RELAY_PORT_START:-31000}
+      - --gameplay-relay-port-end
+      - ${RELAY_PORT_END:-31999}
+      - --launch-api-port
+      - "18447"
+      - --client-install-dir
+      - /app/client-install
+      - --panel-api-port
+      - "18448"
+      - --backup-dir
+      - /backups
+      - --panel-assets-dir
+      - /panel-assets
+      # A player's Blaze connection keeps their club open for the whole session, so this is the most players online at
+      # once (idle clubs beyond it are closed least-recently-used first). The default of 20 is for one local player.
+      - --player-max-open-clubs
+      - ${PLAYER_MAX_OPEN_CLUBS:-1000}
+      - --player-concurrent-opens
+      - "8"
+      # logs/ultimateteam.log (read by the panel's Logs page) rotates to .1 at this size.
+      - --log-max-mb
+      - "100"
+
+  redirector:
+    image: ${IMAGE:-aurora21/ultimateteam-server}:${IMAGE_TAG:-local}
+    restart: unless-stopped
+    logging: *logging
+    network_mode: host
+    depends_on:
+      - server
+    volumes:
+      - certs:/data/certs:ro
+      - state:/data/state
+    command: ["redirector", "--blaze-tls-port", "18444"]
+
+  # A daily pg_dump of the whole database (clubs, operator edits, access, migration history) into BACKUP_DIR on the
+  # VPS, keeping the newest BACKUP_KEEP_DAILY; also a dump when the panel asks (state volume, backup-requests/) and
+  # before each deploy. See pg-backup.sh and README.md.
+  backup:
+    image: postgres:18
+    restart: unless-stopped
+    logging: *logging
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      PGHOST: db
+      PGUSER: ultimateteam
+      PGDATABASE: ultimateteam
+      PGPASSWORD: ${POSTGRES_PASSWORD}
+      BACKUP_HOUR_UTC: ${BACKUP_HOUR_UTC:-3}
+      BACKUP_KEEP_DAILY: ${BACKUP_KEEP_DAILY:-7}
+      BACKUP_REQUESTS: /state/backup-requests
+    volumes:
+      - ${BACKUP_DIR:-./backups}:/backups
+      - state:/state
+      - ./pg-backup.sh:/usr/local/bin/pg-backup.sh:ro
+    entrypoint: ["bash", "/usr/local/bin/pg-backup.sh"]
+    command: ["loop"]
+
+  # HTTPS for the launcher API: https://LAUNCHER_DOMAIN/client/* and /api/v1/launch/* to 127.0.0.1:18447, with a
+  # Let's Encrypt certificate (DNS for LAUNCHER_DOMAIN must point at this VPS; ports 80 and 443 open). Runs only in the
+  # "launcher" profile, which remote-deploy.sh turns on when LAUNCHER_DOMAIN is set.
+  caddy:
+    image: caddy:2
+    restart: unless-stopped
+    logging: *logging
+    network_mode: host
+    profiles: ["launcher"]
+    depends_on:
+      - server
+    environment:
+      LAUNCHER_DOMAIN: ${LAUNCHER_DOMAIN:-}
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy-data:/data
+      - caddy-config:/config
+
+  # --- Monitoring: the "monitoring" profile, which remote-deploy.sh turns on when GRAFANA_ADMIN_PASSWORD is set. ---------
+  # Every service binds to 127.0.0.1 only (Grafana 3000, Prometheus 9090, node-exporter 9100, postgres-exporter 9187);
+  # Grafana is reached through an SSH tunnel like the panel and is never published through Caddy. See README.md.
+  prometheus:
+    image: prom/prometheus:v3.15.0
+    restart: unless-stopped
+    logging: *logging
+    network_mode: host
+    profiles: ["monitoring"]
+    command:
+      - --config.file=/etc/prometheus/prometheus.yml
+      - --storage.tsdb.path=/prometheus
+      - --storage.tsdb.retention.time=${PROMETHEUS_RETENTION:-30d}
+      - --storage.tsdb.retention.size=${PROMETHEUS_RETENTION_SIZE:-10GB}
+      - --web.listen-address=127.0.0.1:9090
+      # The server pushes its metrics here (OTLP over HTTP) instead of opening a scrape port.
+      - --web.enable-otlp-receiver
+    volumes:
+      - ./monitoring/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+      - prometheus-data:/prometheus
+
+  node-exporter:
+    image: prom/node-exporter:v1.12.1
+    restart: unless-stopped
+    logging: *logging
+    network_mode: host
+    pid: host
+    profiles: ["monitoring"]
+    command: ["--path.rootfs=/host", "--web.listen-address=127.0.0.1:9100"]
+    volumes:
+      - /:/host:ro,rslave
+
+  # Creates or updates the read-only aurora_monitor role (pg_monitor) that postgres-exporter uses, then exits.
+  monitor-role:
+    image: postgres:18
+    network_mode: host
+    profiles: ["monitoring"]
+    restart: "no"
+    logging: *logging
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      PGHOST: 127.0.0.1
+      PGUSER: ultimateteam
+      PGDATABASE: ultimateteam
+      PGPASSWORD: ${POSTGRES_PASSWORD}
+      MONITOR_DB_PASSWORD: ${MONITOR_DB_PASSWORD:-}
+    volumes:
+      - ./monitoring/monitor-role.sql:/monitor-role.sql:ro
+    entrypoint: ["sh", "-c"]
+    command: ['[ -n "$$MONITOR_DB_PASSWORD" ] || { echo "monitor-role: set MONITOR_DB_PASSWORD in .env" >&2; exit 1; }; exec psql -X -q -f /monitor-role.sql']
+
+  postgres-exporter:
+    image: quay.io/prometheuscommunity/postgres-exporter:v0.20.1
+    restart: unless-stopped
+    logging: *logging
+    network_mode: host
+    profiles: ["monitoring"]
+    depends_on:
+      monitor-role:
+        condition: service_completed_successfully
+    environment:
+      DATA_SOURCE_URI: 127.0.0.1:5432/ultimateteam?sslmode=disable
+      DATA_SOURCE_USER: aurora_monitor
+      DATA_SOURCE_PASS: ${MONITOR_DB_PASSWORD:-}
+    command: ["--web.listen-address=127.0.0.1:9187"]
+
+  # Dashboards and the Prometheus datasource are provisioned from monitoring/grafana; the admin password applies when
+  # the grafana-data volume is first created (change it later in Grafana or with grafana cli).
+  grafana:
+    image: grafana/grafana:13.2.3
+    restart: unless-stopped
+    logging: *logging
+    network_mode: host
+    profiles: ["monitoring"]
+    depends_on:
+      - prometheus
+    environment:
+      GF_SERVER_HTTP_ADDR: 127.0.0.1
+      GF_SERVER_HTTP_PORT: "3000"
+      GF_SECURITY_ADMIN_USER: admin
+      GF_SECURITY_ADMIN_PASSWORD: ${GRAFANA_ADMIN_PASSWORD:-}
+      GF_USERS_ALLOW_SIGN_UP: "false"
+      GF_AUTH_ANONYMOUS_ENABLED: "false"
+      GF_ANALYTICS_REPORTING_ENABLED: "false"
+      GF_ANALYTICS_CHECK_FOR_UPDATES: "false"
+      GF_ANALYTICS_CHECK_FOR_PLUGIN_UPDATES: "false"
+      GF_NEWS_NEWS_FEED_ENABLED: "false"
+      GF_PLUGINS_PREINSTALL_DISABLED: "true"
+    volumes:
+      - grafana-data:/var/lib/grafana
+      - ./monitoring/grafana/provisioning:/etc/grafana/provisioning:ro
+      - ./monitoring/grafana/dashboards:/etc/grafana/dashboards:ro
+
+volumes:
+  db-data:
+  certs:
+  state:
+  caddy-data:
+  caddy-config:
+  prometheus-data:
+  grafana-data:

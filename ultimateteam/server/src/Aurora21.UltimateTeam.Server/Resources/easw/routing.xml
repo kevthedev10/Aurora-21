@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<routing fileVersion="2" refresh="1800">
+  <files>
+    <file service="dimecfglocal" type="local" base="data/store/" defaultFile="dimecfg.xml" />
+    <file service="dimedesclocal" type="local" base="data/store/" defaultFile="dime_descriptions_%s.xml" modifier="locale" />
+    <file service="storecfglocal" type="local" base="data/store/" defaultFile="storecfg.xml" />
+  </files>
+</routing>

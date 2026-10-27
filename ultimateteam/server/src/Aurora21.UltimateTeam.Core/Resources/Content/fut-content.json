@@ -1,0 +1,18 @@
+{
+  "_comment": "Public FUT presentation assets served by the local FUT listener: the bundled copy wins, then the per-user cache, then EA's CDN (validated, then cached). Request paths are lower-cased; remotePath keeps the CDN's case.",
+
+  "cdnBase": "https://fifa21.content.easports.com/fifa/fltOnlineAssets/21D4F1AC-91A3-458D-A64E-895AA6D871D1/2021",
+  "maxAssetBytes": 2097152,
+  "playerHeadPath": "fut/playerheads/g4/single/p{resourceId}.dds",
+  "_itemBackgroundPathComment": "Card backgrounds FIFA downloads for rarities whose art the game does not carry (Sudamericana, Libertadores, Player Moments, Season Reward, Icon Swaps 4 were seen live): itemBGs/<the rarity's guid in futitemraritytunables.json>/cards_bg_<size s|c|e|j>_1_<rarity>_<n>.dds. Served like a player head: bundled copy, cache, then the CDN (a DDS no larger than maxAssetBytes); a miss is a 404 (Python server _cached_item_background).",
+  "itemBackgroundPath": "fut/items/images/backgrounds/itemBGs/{guid}/{file}",
+  "_downloadTimeoutComment": "How long one CDN download may take. A download that runs longer is abandoned and not cached; the next request tries again.",
+  "downloadTimeoutSeconds": 15,
+
+  "files": {
+    "/fut/items/images/backgrounds/itembgs/futitemraritytunables.json": { "remotePath": "/fut/items/images/backgrounds/itemBGs/futitemraritytunables.json", "contentType": "application/json; charset=utf-8" },
+    "/fut/packs/packopening/packopeningsetting.json": { "remotePath": "/fut/packs/packopening/packopeningsetting.json", "contentType": "application/json; charset=utf-8" },
+    "/fut/packs/packopening/packopeningconfig.json": { "remotePath": "/fut/packs/packopening/packopeningconfig.json", "contentType": "application/json; charset=utf-8" },
+    "/fut/playerheads/g4/fut2dheads.big": { "remotePath": "/fut/playerheads/g4/fut2dheads.big", "contentType": "application/octet-stream" }
+  }
+}

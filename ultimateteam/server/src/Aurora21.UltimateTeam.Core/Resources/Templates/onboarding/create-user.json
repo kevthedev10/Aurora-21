@@ -1,0 +1,7 @@
+{
+  "bonusPacks": false,
+  "login": "{{login}}",
+  "squad": "{{squad}}",
+  "starterPack": "{{starterPack}}",
+  "userData": { "onlineELORating": 0, "onlineRatedUser": false, "accountResetCount": 0 }
+}

@@ -1,0 +1,12 @@
+{
+  "packId": "{{packId}}",
+  "purchasedPackId": "{{packId}}",
+  "packType": "{{packType}}",
+  "itemList": "{{items}}",
+  "itemData": "{{items}}",
+  "items": "{{items}}",
+  "newcards": "{{count}}",
+  "numberItems": "{{count}}",
+  "duplicateItemIdList": [],
+  "credits": "{{credits}}"
+}

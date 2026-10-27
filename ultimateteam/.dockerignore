@@ -1,0 +1,20 @@
+# The image build context is ultimateteam/ (see deploy/Dockerfile). An allowlist: only what the server build needs, the
+# bundled game data, and the client pack's inputs go in; never certificates, generated modulus files, personal
+# settings, club data, logs, tooling or outputs.
+*
+!server/Directory.Build.props
+!server/.editorconfig
+!server/src/
+!server/database-setup/
+!runtime-source/ultimateteam21/
+!client-pack/
+!Aurora21-LocalAuthBridge.exe
+!Aurora21-MathBridge.exe
+# EA's own CA moduli, as the game ships them: the trust patch finds them in FIFA's memory to replace.
+!runtime-source/gos2015-original-modulus.bin
+!runtime-source/gs2019-original-modulus.bin
+server/**/bin/
+server/**/obj/
+runtime-source/ultimateteam21/**/*.log
+runtime-source/local-gos2015-modulus.bin
+runtime-source/local-gs2019-modulus.bin

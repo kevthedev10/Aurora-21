@@ -1,0 +1,287 @@
+{
+  "revision": "67b35957725fc961e4262afb8be08e9cd1df239e",
+  "files": [
+    {
+      "project": "FMT.FileTools",
+      "path": "AssetEntry/IModifiedAssetEntry.cs",
+      "sha256": "2fb6ba83106a67ae0fc49ecbffb82802928d9b8d988981e8f589e60a26a2922b",
+      "edits": [
+        {
+          "before": "public long OriginalSize {",
+          "after": "public new long OriginalSize {"
+        }
+      ]
+    },
+    {
+      "project": "FMT.FileTools",
+      "path": "NativeReader.cs",
+      "sha256": "6a6599767b6d563ea5451e7e6058726cbea8ec8110f5ec5c9286376da2e56284",
+      "edits": [
+        {
+          "before": "        public long Read7BitEncodedLong()\n        {\n            long num = 0L;\n            int num2 = 0;\n            int num3 = 0;\n            while (true)\n            {\n                num3 = ReadByte();\n                num |= (num3 & 0x7F) << num2;\n",
+          "after": "        public long Read7BitEncodedLong()\n        {\n            long num = 0L;\n            int num2 = 0;\n            int num3 = 0;\n            while (true)\n            {\n                num3 = ReadByte();\n                num |= (long)(num3 & 0x7F) << num2;\n"
+        }
+      ]
+    },
+    {
+      "project": "FrostySdk",
+      "path": "ModsAndProjects/Projects/FrostbiteProject.cs",
+      "sha256": "8a05829160642f83ec1a0f9004ab740b6b82eaf027bb2b530edf8c03df9514f9",
+      "edits": [
+        {
+          "before": "public string DisplayName",
+          "after": "public new string DisplayName"
+        },
+        {
+          "before": "public string Filename",
+          "after": "public new string Filename"
+        },
+        {
+          "before": "\n        public bool IsDirty\n        {",
+          "after": "\n        public new bool IsDirty\n        {"
+        },
+        {
+          "before": "public ModSettings ModSettings =>",
+          "after": "public new ModSettings ModSettings =>"
+        },
+        {
+          "before": "public AssetManager AssetManager {",
+          "after": "public new AssetManager AssetManager {"
+        }
+      ]
+    },
+    {
+      "project": "FrostySdk",
+      "path": "FrostySdk.IO/EbxWriter.cs",
+      "sha256": "2895d29b54f98c14d32ae403937355eb9c6d58ff34bf60ec9d9809e0fd763a37",
+      "edits": [
+        {
+          "before": "private List<string> strings =",
+          "after": "private new List<string> strings ="
+        },
+        {
+          "before": "private uint stringsLength;",
+          "after": "private new uint stringsLength;"
+        }
+      ]
+    },
+    {
+      "project": "FrostySdk",
+      "path": "FrostySdk.IO/CasReader.cs",
+      "sha256": "c3cdec305b5fa8e2fb09fbad50ecb750e0fceed5ea9ef4b4a3c99a97bf6b579c",
+      "edits": [
+        {
+          "before": "if (gCHandle3 != null)",
+          "after": "if (gCHandle3.IsAllocated)"
+        }
+      ]
+    },
+    {
+      "project": "FrostySdk",
+      "path": "FrostySdk/TypeLibrary.cs",
+      "sha256": "49ae15dfda61643c678048a8a7500a60f74631d33cbe3d9a7498acb5d26393d5",
+      "edits": [
+        {
+          "before": "ebx.RootInstanceGuid != null && !typeInfos.ContainsKey(ebx.RootInstanceGuid)",
+          "after": "!typeInfos.ContainsKey(ebx.RootInstanceGuid)"
+        },
+        {
+          "before": "catch (Exception e)\n            {\n                throw e;",
+          "after": "catch (Exception)\n            {\n                throw;"
+        }
+      ]
+    },
+    {
+      "project": "FrostySdk",
+      "path": "FrostySdk/Utils.cs",
+      "sha256": "f4d0f383da88023b65a8a5ba5486ee0d5bc16971d2b769a4adb5f694ffd2e4b0",
+      "edits": [
+        {
+          "before": "return (uint)((((int)num5 & -65536) + (int)(num5 << 16)) | ((ushort)num6 + (num6 >> 16)));",
+          "after": "return ((num5 & 0xffff0000u) + (num5 << 16)) | ((uint)(ushort)num6 + (num6 >> 16));"
+        }
+      ]
+    },
+    {
+      "project": "FrostySdk",
+      "path": "FrostySdk.IO/EbxSharedTypeDescriptors.cs",
+      "sha256": "7b5c1fdadcb175207f3628961849356af2e2e1bc970d8f74fbdebc5ec1cec2a7",
+      "edits": [
+        {
+          "before": "                    return null;\n                }\n            }\n\n            return null;",
+          "after": "                }\n            }\n\n            return null;"
+        }
+      ]
+    },
+    {
+      "project": "FrostySdk",
+      "path": "Frostbite/Entries/AssetEntry.cs",
+      "sha256": "6fb749617e79fcc4cd7d49d7ed1564b23406e1db5e904adeafadc4204e9039b7",
+      "edits": [
+        {
+          "before": "        [Obsolete]\n        public int SB_CAS_Offset_Position",
+          "after": "        // Supported legacy bundle position used by the FIFA 21 compiler.\n        public int SB_CAS_Offset_Position"
+        },
+        {
+          "before": "        [Obsolete]\n        public int SB_CAS_Size_Position",
+          "after": "        // Supported legacy bundle position used by the FIFA 21 compiler.\n        public int SB_CAS_Size_Position"
+        },
+        {
+          "before": "        [Obsolete]\n        public int SB_Sha1_Position",
+          "after": "        // Supported legacy bundle position used by the FIFA 21 compiler.\n        public int SB_Sha1_Position"
+        },
+        {
+          "before": "        [Obsolete]\n        public int SB_OriginalSize_Position",
+          "after": "        // Supported legacy bundle position used by the FIFA 21 compiler.\n        public int SB_OriginalSize_Position"
+        },
+        {
+          "before": "        private bool disposedValue;",
+          "after": ""
+        }
+      ]
+    },
+    {
+      "project": "FrostySdk",
+      "path": "ThirdParty/Compression/ZLib.cs",
+      "sha256": "456ed578013e4218e35a6d91067eb0ae2c2a6a3e1c44e0c609fe23bd9561212c",
+      "edits": [
+        {
+          "before": "        public struct ZStream\n        {",
+          "after": "        public struct ZStream\n        {\n            // Native zlib updates these fields through the marshalled pointer.\n            public ZStream() { }"
+        },
+        {
+          "before": "public uint total_in;",
+          "after": "public uint total_in = default;"
+        },
+        {
+          "before": "public uint total_out;",
+          "after": "public uint total_out = default;"
+        },
+        {
+          "before": "public IntPtr msg;",
+          "after": "public IntPtr msg = default;"
+        },
+        {
+          "before": "public IntPtr state;",
+          "after": "public IntPtr state = default;"
+        },
+        {
+          "before": "public IntPtr zalloc;",
+          "after": "public IntPtr zalloc = default;"
+        },
+        {
+          "before": "public IntPtr zfree;",
+          "after": "public IntPtr zfree = default;"
+        },
+        {
+          "before": "public IntPtr opaque;",
+          "after": "public IntPtr opaque = default;"
+        },
+        {
+          "before": "public int data_type;",
+          "after": "public int data_type = default;"
+        },
+        {
+          "before": "public uint adler;",
+          "after": "public uint adler = default;"
+        },
+        {
+          "before": "public uint reserved;",
+          "after": "public uint reserved = default;"
+        }
+      ]
+    },
+    {
+      "project": "FrostySdk",
+      "path": "FrostySdk.IO/2022/Readers/EbxReader22A.cs",
+      "sha256": "d003d4030240f6157b3c9c99e4cd9d19ff2d97dc814722c64f9f3e6ea56694ce",
+      "edits": [
+        {
+          "before": "internal byte[] boxedValueBuffer;",
+          "after": "internal byte[] boxedValueBuffer = null;"
+        }
+      ]
+    },
+    {
+      "project": "FrostySdk",
+      "path": "ModsAndProjects/FET/FIFAModWriter.cs",
+      "sha256": "915869fa8f4af7e9ca212ffd807c0b0a903a212df25baf8ba3c7e0be7b72ac63",
+      "edits": [
+        {
+          "before": "        private long positionOfPlaceholders;",
+          "after": "        private long positionOfPlaceholders = 0;"
+        }
+      ]
+    },
+    {
+      "project": "FrostySdk",
+      "path": "ModsAndProjects/Abstract/BaseModReader.cs",
+      "sha256": "de7e7c7b88235e5462167aea05997093746514f0ed562ddc942d6cff1c483873",
+      "edits": [
+        {
+          "before": "private bool isAppended;",
+          "after": "private bool isAppended = false;"
+        },
+        {
+          "before": "private string exportedLocation;",
+          "after": "private string exportedLocation = null;"
+        }
+      ]
+    },
+    {
+      "project": "FrostySdk",
+      "path": "Frostbite/IO/Input/AssetEntryImporter.cs",
+      "sha256": "80ce3dfc63626f3c4777d2a774352a1a9b9d7382ba00043f0f04c264e690a484",
+      "edits": [
+        {
+          "before": "        private string jsonFilter = \"JSON files (*.json)|*.json\";",
+          "after": ""
+        }
+      ]
+    },
+    {
+      "project": "FrostySdk",
+      "path": "Frostbite/FileManagers/ChunkFileManager2022.cs",
+      "sha256": "889fb38c35b36d2285b4df663ebd5b4aa08619ea58d8b0d19e3e3a1f7b29c98e",
+      "edits": [
+        {
+          "before": "        private bool disposedValue;",
+          "after": ""
+        }
+      ]
+    },
+    {
+      "project": "FrostySdk",
+      "path": "Frostbite/IO/Output/MeshSetToFbxExport.cs",
+      "sha256": "71ff0d3fd923101205164afcd5ee9c0b37485475fbc70116fb5c307165bb1794",
+      "edits": [
+        {
+          "before": "        private int lodIndex;",
+          "after": ""
+        }
+      ]
+    },
+    {
+      "project": "FrostySdk",
+      "path": "Frostbite/PluginInterfaces/CASBundle.cs",
+      "sha256": "b351e5dfb53ec6a6d812de66489e46c47d0d104972cb52bcf32cde862ab69065",
+      "edits": [
+        {
+          "before": "        private bool disposedValue;",
+          "after": ""
+        }
+      ]
+    },
+    {
+      "project": "FrostySdk",
+      "path": "FrostySdk.IO/BinarySbReaderV2.cs",
+      "sha256": "c6b6ac2d521b39a9ea4e55974ca667722d47ee89979fa3352c117afef14c11fe",
+      "edits": [
+        {
+          "before": "private bool containsUncompressedData;",
+          "after": "private bool containsUncompressedData = false;"
+        }
+      ]
+    }
+  ]
+}

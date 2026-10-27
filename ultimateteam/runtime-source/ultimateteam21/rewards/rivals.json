@@ -1,0 +1,306 @@
+{
+ "_readme": [
+  "Seed for the Division Rivals rewards (owner design 2026-10-03, todo.md section 2). The server keeps them in the rivals_reward_options,",
+  "rivals_promotion_rewards, rewards and reward_lines tables: a fresh database is filled from this file at start-up; an upgraded one converts the",
+  "divisions and promotion its rules held. From then on they change through the operator panel (Modes, Rivals) and content changesets, not this file.",
+  "divisions: for each division 1-10, its six ranks (Rank I first), each a list of 1-4 reward options the club chooses from (FIFA shows at most four);",
+  "with several options they are granted from rivals_option_a, _b and _c (third and later), a single one from rivals_fixed. promotion: the reward",
+  "for reaching each division the first time (rivals_promotion). A reward is coins, FUT Champions Points, XP (not paid by Rivals) and lines: a pack",
+  "with a count and its own untradeable choice, which is what the club receives, and optionally the grant source it is recorded under.",
+  "Values: the phase-1 table (pack-odds-2026-09 PLAN.md 5.1); each line's untradeable is what rules/tradeability.json paid before the tables."
+ ],
+ "divisions": {
+  "1": [
+   [
+    {"coins": 60000, "fcPoints": 1250, "xp": 0, "lines": []},
+    {"coins": 0, "fcPoints": 1250, "xp": 0, "lines": [{"packId": 405, "count": 1, "untradeable": false}, {"packId": 304, "count": 1, "untradeable": false}]},
+    {"coins": 0, "fcPoints": 1250, "xp": 0, "lines": [{"packId": 405, "count": 1, "untradeable": true, "source": "rivals_option_c"}, {"packId": 304, "count": 1, "untradeable": true, "source": "rivals_option_c"}, {"packId": 404, "count": 1, "untradeable": true, "source": "rivals_option_c"}, {"packId": 308, "count": 1, "untradeable": true, "source": "rivals_option_c"}]}
+   ],
+   [
+    {"coins": 42000, "fcPoints": 1000, "xp": 0, "lines": []},
+    {"coins": 0, "fcPoints": 1000, "xp": 0, "lines": [{"packId": 404, "count": 1, "untradeable": false}, {"packId": 402, "count": 1, "untradeable": false}]},
+    {"coins": 0, "fcPoints": 1000, "xp": 0, "lines": [{"packId": 404, "count": 1, "untradeable": true, "source": "rivals_option_c"}, {"packId": 402, "count": 2, "untradeable": true, "source": "rivals_option_c"}, {"packId": 304, "count": 1, "untradeable": true, "source": "rivals_option_c"}]}
+   ],
+   [
+    {"coins": 30000, "fcPoints": 750, "xp": 0, "lines": []},
+    {"coins": 0, "fcPoints": 750, "xp": 0, "lines": [{"packId": 404, "count": 1, "untradeable": false}, {"packId": 308, "count": 1, "untradeable": false}]},
+    {"coins": 0, "fcPoints": 750, "xp": 0, "lines": [{"packId": 404, "count": 1, "untradeable": true, "source": "rivals_option_c"}, {"packId": 308, "count": 1, "untradeable": true, "source": "rivals_option_c"}, {"packId": 319, "count": 2, "untradeable": true, "source": "rivals_option_c"}]}
+   ],
+   [
+    {"coins": 21000, "fcPoints": 500, "xp": 0, "lines": []},
+    {"coins": 0, "fcPoints": 500, "xp": 0, "lines": [{"packId": 403, "count": 1, "untradeable": false}, {"packId": 308, "count": 1, "untradeable": false}]},
+    {"coins": 0, "fcPoints": 500, "xp": 0, "lines": [{"packId": 403, "count": 1, "untradeable": true, "source": "rivals_option_c"}, {"packId": 308, "count": 1, "untradeable": true, "source": "rivals_option_c"}, {"packId": 319, "count": 1, "untradeable": true, "source": "rivals_option_c"}, {"packId": 305, "count": 1, "untradeable": true, "source": "rivals_option_c"}]}
+   ],
+   [
+    {"coins": 0, "fcPoints": 250, "xp": 0, "lines": [{"packId": 400, "count": 1, "untradeable": false}]}
+   ],
+   [
+    {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 308, "count": 1, "untradeable": false}]}
+   ]
+  ],
+  "2": [
+   [
+    {"coins": 50000, "fcPoints": 750, "xp": 0, "lines": []},
+    {"coins": 0, "fcPoints": 750, "xp": 0, "lines": [{"packId": 404, "count": 2, "untradeable": false}]},
+    {"coins": 0, "fcPoints": 750, "xp": 0, "lines": [{"packId": 404, "count": 3, "untradeable": true, "source": "rivals_option_c"}]}
+   ],
+   [
+    {"coins": 35000, "fcPoints": 500, "xp": 0, "lines": []},
+    {"coins": 0, "fcPoints": 500, "xp": 0, "lines": [{"packId": 402, "count": 1, "untradeable": false}, {"packId": 403, "count": 1, "untradeable": false}]},
+    {"coins": 0, "fcPoints": 500, "xp": 0, "lines": [{"packId": 402, "count": 1, "untradeable": true, "source": "rivals_option_c"}, {"packId": 403, "count": 2, "untradeable": true, "source": "rivals_option_c"}, {"packId": 304, "count": 1, "untradeable": true, "source": "rivals_option_c"}]}
+   ],
+   [
+    {"coins": 25000, "fcPoints": 250, "xp": 0, "lines": []},
+    {"coins": 0, "fcPoints": 250, "xp": 0, "lines": [{"packId": 402, "count": 1, "untradeable": false}, {"packId": 308, "count": 1, "untradeable": false}]},
+    {"coins": 0, "fcPoints": 250, "xp": 0, "lines": [{"packId": 402, "count": 1, "untradeable": true, "source": "rivals_option_c"}, {"packId": 308, "count": 1, "untradeable": true, "source": "rivals_option_c"}, {"packId": 319, "count": 1, "untradeable": true, "source": "rivals_option_c"}, {"packId": 543, "count": 1, "untradeable": true, "source": "rivals_option_c"}]}
+   ],
+   [
+    {"coins": 17500, "fcPoints": 125, "xp": 0, "lines": []},
+    {"coins": 0, "fcPoints": 125, "xp": 0, "lines": [{"packId": 403, "count": 1, "untradeable": false}, {"packId": 304, "count": 1, "untradeable": false}]},
+    {"coins": 0, "fcPoints": 125, "xp": 0, "lines": [{"packId": 403, "count": 1, "untradeable": true, "source": "rivals_option_c"}, {"packId": 304, "count": 1, "untradeable": true, "source": "rivals_option_c"}, {"packId": 308, "count": 1, "untradeable": true, "source": "rivals_option_c"}, {"packId": 305, "count": 1, "untradeable": true, "source": "rivals_option_c"}]}
+   ],
+   [
+    {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 319, "count": 1, "untradeable": false}]}
+   ],
+   [
+    {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 308, "count": 1, "untradeable": false}]}
+   ]
+  ],
+  "3": [
+   [
+    {"coins": 42000, "fcPoints": 375, "xp": 0, "lines": []},
+    {"coins": 0, "fcPoints": 375, "xp": 0, "lines": [{"packId": 404, "count": 1, "untradeable": false}, {"packId": 402, "count": 1, "untradeable": false}]},
+    {"coins": 0, "fcPoints": 375, "xp": 0, "lines": [{"packId": 404, "count": 1, "untradeable": true, "source": "rivals_option_c"}, {"packId": 402, "count": 2, "untradeable": true, "source": "rivals_option_c"}, {"packId": 304, "count": 1, "untradeable": true, "source": "rivals_option_c"}]}
+   ],
+   [
+    {"coins": 29500, "fcPoints": 250, "xp": 0, "lines": []},
+    {"coins": 0, "fcPoints": 250, "xp": 0, "lines": [{"packId": 404, "count": 1, "untradeable": false}, {"packId": 308, "count": 1, "untradeable": false}]},
+    {"coins": 0, "fcPoints": 250, "xp": 0, "lines": [{"packId": 404, "count": 1, "untradeable": true, "source": "rivals_option_c"}, {"packId": 308, "count": 1, "untradeable": true, "source": "rivals_option_c"}, {"packId": 319, "count": 2, "untradeable": true, "source": "rivals_option_c"}]}
+   ],
+   [
+    {"coins": 21000, "fcPoints": 125, "xp": 0, "lines": []},
+    {"coins": 0, "fcPoints": 125, "xp": 0, "lines": [{"packId": 403, "count": 1, "untradeable": false}, {"packId": 308, "count": 1, "untradeable": false}]},
+    {"coins": 0, "fcPoints": 125, "xp": 0, "lines": [{"packId": 403, "count": 1, "untradeable": true, "source": "rivals_option_c"}, {"packId": 308, "count": 1, "untradeable": true, "source": "rivals_option_c"}, {"packId": 319, "count": 1, "untradeable": true, "source": "rivals_option_c"}, {"packId": 305, "count": 1, "untradeable": true, "source": "rivals_option_c"}]}
+   ],
+   [
+    {"coins": 14500, "fcPoints": 75, "xp": 0, "lines": []},
+    {"coins": 0, "fcPoints": 75, "xp": 0, "lines": [{"packId": 400, "count": 1, "untradeable": false}, {"packId": 543, "count": 1, "untradeable": false}]},
+    {"coins": 0, "fcPoints": 75, "xp": 0, "lines": [{"packId": 400, "count": 1, "untradeable": true, "source": "rivals_option_c"}, {"packId": 543, "count": 1, "untradeable": true, "source": "rivals_option_c"}, {"packId": 308, "count": 1, "untradeable": true, "source": "rivals_option_c"}, {"packId": 304, "count": 1, "untradeable": true, "source": "rivals_option_c"}]}
+   ],
+   [
+    {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 319, "count": 1, "untradeable": false}]}
+   ],
+   [
+    {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 543, "count": 1, "untradeable": false}]}
+   ]
+  ],
+  "4": [
+   [
+    {"coins": 35000, "fcPoints": 240, "xp": 0, "lines": []},
+    {"coins": 0, "fcPoints": 240, "xp": 0, "lines": [{"packId": 402, "count": 1, "untradeable": false}, {"packId": 403, "count": 1, "untradeable": false}]},
+    {"coins": 0, "fcPoints": 240, "xp": 0, "lines": [{"packId": 402, "count": 1, "untradeable": true, "source": "rivals_option_c"}, {"packId": 403, "count": 2, "untradeable": true, "source": "rivals_option_c"}, {"packId": 304, "count": 1, "untradeable": true, "source": "rivals_option_c"}]}
+   ],
+   [
+    {"coins": 24500, "fcPoints": 160, "xp": 0, "lines": []},
+    {"coins": 0, "fcPoints": 160, "xp": 0, "lines": [{"packId": 402, "count": 1, "untradeable": false}, {"packId": 308, "count": 1, "untradeable": false}]},
+    {"coins": 0, "fcPoints": 160, "xp": 0, "lines": [{"packId": 402, "count": 1, "untradeable": true, "source": "rivals_option_c"}, {"packId": 308, "count": 1, "untradeable": true, "source": "rivals_option_c"}, {"packId": 319, "count": 1, "untradeable": true, "source": "rivals_option_c"}, {"packId": 543, "count": 1, "untradeable": true, "source": "rivals_option_c"}]}
+   ],
+   [
+    {"coins": 17500, "fcPoints": 80, "xp": 0, "lines": []},
+    {"coins": 0, "fcPoints": 80, "xp": 0, "lines": [{"packId": 403, "count": 1, "untradeable": false}, {"packId": 304, "count": 1, "untradeable": false}]},
+    {"coins": 0, "fcPoints": 80, "xp": 0, "lines": [{"packId": 403, "count": 1, "untradeable": true, "source": "rivals_option_c"}, {"packId": 304, "count": 1, "untradeable": true, "source": "rivals_option_c"}, {"packId": 308, "count": 1, "untradeable": true, "source": "rivals_option_c"}, {"packId": 305, "count": 1, "untradeable": true, "source": "rivals_option_c"}]}
+   ],
+   [
+    {"coins": 12500, "fcPoints": 40, "xp": 0, "lines": []},
+    {"coins": 0, "fcPoints": 40, "xp": 0, "lines": [{"packId": 319, "count": 1, "untradeable": false}, {"packId": 308, "count": 1, "untradeable": false}]},
+    {"coins": 0, "fcPoints": 40, "xp": 0, "lines": [{"packId": 319, "count": 1, "untradeable": true, "source": "rivals_option_c"}, {"packId": 308, "count": 1, "untradeable": true, "source": "rivals_option_c"}, {"packId": 305, "count": 2, "untradeable": true, "source": "rivals_option_c"}]}
+   ],
+   [
+    {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 308, "count": 1, "untradeable": false}]}
+   ],
+   [
+    {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 305, "count": 1, "untradeable": false}]}
+   ]
+  ],
+  "5": [
+   [
+    {"coins": 28000, "fcPoints": 195, "xp": 0, "lines": []},
+    {"coins": 0, "fcPoints": 195, "xp": 0, "lines": [{"packId": 404, "count": 1, "untradeable": false}, {"packId": 305, "count": 1, "untradeable": false}]},
+    {"coins": 0, "fcPoints": 195, "xp": 0, "lines": [{"packId": 404, "count": 1, "untradeable": true, "source": "rivals_option_c"}, {"packId": 305, "count": 2, "untradeable": true, "source": "rivals_option_c"}, {"packId": 400, "count": 1, "untradeable": true, "source": "rivals_option_c"}]}
+   ],
+   [
+    {"coins": 19500, "fcPoints": 130, "xp": 0, "lines": []},
+    {"coins": 0, "fcPoints": 130, "xp": 0, "lines": [{"packId": 402, "count": 1, "untradeable": false}]},
+    {"coins": 0, "fcPoints": 130, "xp": 0, "lines": [{"packId": 402, "count": 1, "untradeable": true, "source": "rivals_option_c"}, {"packId": 400, "count": 1, "untradeable": true, "source": "rivals_option_c"}]}
+   ],
+   [
+    {"coins": 14000, "fcPoints": 65, "xp": 0, "lines": []},
+    {"coins": 0, "fcPoints": 65, "xp": 0, "lines": [{"packId": 400, "count": 1, "untradeable": false}, {"packId": 543, "count": 1, "untradeable": false}]},
+    {"coins": 0, "fcPoints": 65, "xp": 0, "lines": [{"packId": 400, "count": 1, "untradeable": true, "source": "rivals_option_c"}, {"packId": 543, "count": 1, "untradeable": true, "source": "rivals_option_c"}, {"packId": 308, "count": 1, "untradeable": true, "source": "rivals_option_c"}, {"packId": 304, "count": 1, "untradeable": true, "source": "rivals_option_c"}]}
+   ],
+   [
+    {"coins": 10000, "fcPoints": 30, "xp": 0, "lines": []},
+    {"coins": 0, "fcPoints": 30, "xp": 0, "lines": [{"packId": 308, "count": 1, "untradeable": false}, {"packId": 543, "count": 1, "untradeable": false}]},
+    {"coins": 0, "fcPoints": 30, "xp": 0, "lines": [{"packId": 308, "count": 1, "untradeable": true, "source": "rivals_option_c"}, {"packId": 543, "count": 1, "untradeable": true, "source": "rivals_option_c"}, {"packId": 305, "count": 1, "untradeable": true, "source": "rivals_option_c"}, {"packId": 304, "count": 1, "untradeable": true, "source": "rivals_option_c"}]}
+   ],
+   [
+    {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 543, "count": 1, "untradeable": false}]}
+   ],
+   [
+    {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 305, "count": 1, "untradeable": false}]}
+   ]
+  ],
+  "6": [
+   [
+    {"coins": 22000, "fcPoints": 100, "xp": 0, "lines": []},
+    {"coins": 0, "fcPoints": 100, "xp": 0, "lines": [{"packId": 402, "count": 1, "untradeable": false}, {"packId": 305, "count": 1, "untradeable": false}]},
+    {"coins": 0, "fcPoints": 100, "xp": 0, "lines": [{"packId": 402, "count": 1, "untradeable": true, "source": "rivals_option_c"}, {"packId": 305, "count": 1, "untradeable": true, "source": "rivals_option_c"}, {"packId": 400, "count": 1, "untradeable": true, "source": "rivals_option_c"}, {"packId": 304, "count": 1, "untradeable": true, "source": "rivals_option_c"}]}
+   ],
+   [
+    {"coins": 15500, "fcPoints": 50, "xp": 0, "lines": []},
+    {"coins": 0, "fcPoints": 50, "xp": 0, "lines": [{"packId": 403, "count": 1, "untradeable": false}]},
+    {"coins": 0, "fcPoints": 50, "xp": 0, "lines": [{"packId": 403, "count": 1, "untradeable": true, "source": "rivals_option_c"}, {"packId": 543, "count": 1, "untradeable": true, "source": "rivals_option_c"}, {"packId": 305, "count": 1, "untradeable": true, "source": "rivals_option_c"}]}
+   ],
+   [
+    {"coins": 11000, "fcPoints": 25, "xp": 0, "lines": []},
+    {"coins": 0, "fcPoints": 25, "xp": 0, "lines": [{"packId": 308, "count": 2, "untradeable": false}]},
+    {"coins": 0, "fcPoints": 25, "xp": 0, "lines": [{"packId": 308, "count": 3, "untradeable": true, "source": "rivals_option_c"}]}
+   ],
+   [
+    {"coins": 7500, "fcPoints": 0, "xp": 0, "lines": []},
+    {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 319, "count": 1, "untradeable": false}]},
+    {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 319, "count": 1, "untradeable": true, "source": "rivals_option_c"}, {"packId": 304, "count": 2, "untradeable": true, "source": "rivals_option_c"}]}
+   ],
+   [
+    {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 305, "count": 1, "untradeable": false}]}
+   ],
+   [
+    {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 304, "count": 1, "untradeable": false}]}
+   ]
+  ],
+  "7": [
+   [
+    {"coins": 17000, "fcPoints": 80, "xp": 0, "lines": []},
+    {"coins": 0, "fcPoints": 80, "xp": 0, "lines": [{"packId": 400, "count": 1, "untradeable": false}, {"packId": 319, "count": 1, "untradeable": false}]},
+    {"coins": 0, "fcPoints": 80, "xp": 0, "lines": [{"packId": 400, "count": 1, "untradeable": true, "source": "rivals_option_c"}, {"packId": 319, "count": 1, "untradeable": true, "source": "rivals_option_c"}, {"packId": 308, "count": 1, "untradeable": true, "source": "rivals_option_c"}, {"packId": 305, "count": 1, "untradeable": true, "source": "rivals_option_c"}]}
+   ],
+   [
+    {"coins": 12000, "fcPoints": 40, "xp": 0, "lines": []},
+    {"coins": 0, "fcPoints": 40, "xp": 0, "lines": [{"packId": 319, "count": 1, "untradeable": false}, {"packId": 543, "count": 1, "untradeable": false}]},
+    {"coins": 0, "fcPoints": 40, "xp": 0, "lines": [{"packId": 319, "count": 1, "untradeable": true, "source": "rivals_option_c"}, {"packId": 543, "count": 1, "untradeable": true, "source": "rivals_option_c"}, {"packId": 305, "count": 2, "untradeable": true, "source": "rivals_option_c"}]}
+   ],
+   [
+    {"coins": 8500, "fcPoints": 20, "xp": 0, "lines": []},
+    {"coins": 0, "fcPoints": 20, "xp": 0, "lines": [{"packId": 308, "count": 1, "untradeable": false}, {"packId": 305, "count": 1, "untradeable": false}]},
+    {"coins": 0, "fcPoints": 20, "xp": 0, "lines": [{"packId": 308, "count": 1, "untradeable": true, "source": "rivals_option_c"}, {"packId": 305, "count": 1, "untradeable": true, "source": "rivals_option_c"}, {"packId": 543, "count": 1, "untradeable": true, "source": "rivals_option_c"}]}
+   ],
+   [
+    {"coins": 6000, "fcPoints": 0, "xp": 0, "lines": []},
+    {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 305, "count": 2, "untradeable": false}]},
+    {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 305, "count": 3, "untradeable": true, "source": "rivals_option_c"}]}
+   ],
+   [
+    {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 305, "count": 1, "untradeable": false}]}
+   ],
+   [
+    {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 304, "count": 1, "untradeable": false}]}
+   ]
+  ],
+  "8": [
+   [
+    {"coins": 13000, "fcPoints": 60, "xp": 0, "lines": []},
+    {"coins": 0, "fcPoints": 60, "xp": 0, "lines": [{"packId": 400, "count": 1, "untradeable": false}, {"packId": 305, "count": 1, "untradeable": false}]},
+    {"coins": 0, "fcPoints": 60, "xp": 0, "lines": [{"packId": 400, "count": 1, "untradeable": true, "source": "rivals_option_c"}, {"packId": 305, "count": 3, "untradeable": true, "source": "rivals_option_c"}]}
+   ],
+   [
+    {"coins": 9000, "fcPoints": 30, "xp": 0, "lines": []},
+    {"coins": 0, "fcPoints": 30, "xp": 0, "lines": [{"packId": 319, "count": 1, "untradeable": false}, {"packId": 304, "count": 1, "untradeable": false}]},
+    {"coins": 0, "fcPoints": 30, "xp": 0, "lines": [{"packId": 319, "count": 1, "untradeable": true, "source": "rivals_option_c"}, {"packId": 304, "count": 1, "untradeable": true, "source": "rivals_option_c"}, {"packId": 543, "count": 1, "untradeable": true, "source": "rivals_option_c"}]}
+   ],
+   [
+    {"coins": 6500, "fcPoints": 15, "xp": 0, "lines": []},
+    {"coins": 0, "fcPoints": 15, "xp": 0, "lines": [{"packId": 305, "count": 2, "untradeable": false}]},
+    {"coins": 0, "fcPoints": 15, "xp": 0, "lines": [{"packId": 305, "count": 3, "untradeable": true, "source": "rivals_option_c"}]}
+   ],
+   [
+    {"coins": 4500, "fcPoints": 0, "xp": 0, "lines": []},
+    {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 543, "count": 1, "untradeable": false}]},
+    {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 543, "count": 1, "untradeable": true, "source": "rivals_option_c"}, {"packId": 304, "count": 1, "untradeable": true, "source": "rivals_option_c"}]}
+   ],
+   [
+    {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 304, "count": 2, "untradeable": false}]}
+   ],
+   [
+    {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 304, "count": 1, "untradeable": false}]}
+   ]
+  ],
+  "9": [
+   [
+    {"coins": 10000, "fcPoints": 25, "xp": 0, "lines": []},
+    {"coins": 0, "fcPoints": 25, "xp": 0, "lines": [{"packId": 308, "count": 1, "untradeable": false}, {"packId": 543, "count": 1, "untradeable": false}]},
+    {"coins": 0, "fcPoints": 25, "xp": 0, "lines": [{"packId": 308, "count": 1, "untradeable": true, "source": "rivals_option_c"}, {"packId": 543, "count": 1, "untradeable": true, "source": "rivals_option_c"}, {"packId": 305, "count": 1, "untradeable": true, "source": "rivals_option_c"}, {"packId": 304, "count": 1, "untradeable": true, "source": "rivals_option_c"}]}
+   ],
+   [
+    {"coins": 7000, "fcPoints": 0, "xp": 0, "lines": []},
+    {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 319, "count": 1, "untradeable": false}]},
+    {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 319, "count": 1, "untradeable": true, "source": "rivals_option_c"}, {"packId": 304, "count": 2, "untradeable": true, "source": "rivals_option_c"}]}
+   ],
+   [
+    {"coins": 5000, "fcPoints": 0, "xp": 0, "lines": []},
+    {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 305, "count": 1, "untradeable": false}, {"packId": 304, "count": 1, "untradeable": false}]},
+    {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 305, "count": 2, "untradeable": true, "source": "rivals_option_c"}, {"packId": 304, "count": 1, "untradeable": true, "source": "rivals_option_c"}]}
+   ],
+   [
+    {"coins": 3500, "fcPoints": 0, "xp": 0, "lines": []},
+    {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 305, "count": 1, "untradeable": false}]},
+    {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 305, "count": 1, "untradeable": true, "source": "rivals_option_c"}, {"packId": 304, "count": 1, "untradeable": true, "source": "rivals_option_c"}]}
+   ],
+   [
+    {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 304, "count": 1, "untradeable": false}]}
+   ],
+   [
+    {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 304, "count": 1, "untradeable": false}]}
+   ]
+  ],
+  "10": [
+   [
+    {"coins": 8000, "fcPoints": 20, "xp": 0, "lines": []},
+    {"coins": 0, "fcPoints": 20, "xp": 0, "lines": [{"packId": 543, "count": 1, "untradeable": false}, {"packId": 305, "count": 1, "untradeable": false}]},
+    {"coins": 0, "fcPoints": 20, "xp": 0, "lines": [{"packId": 543, "count": 1, "untradeable": true, "source": "rivals_option_c"}, {"packId": 305, "count": 1, "untradeable": true, "source": "rivals_option_c"}, {"packId": 304, "count": 2, "untradeable": true, "source": "rivals_option_c"}]}
+   ],
+   [
+    {"coins": 5500, "fcPoints": 0, "xp": 0, "lines": []},
+    {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 308, "count": 1, "untradeable": false}]},
+    {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 308, "count": 1, "untradeable": true, "source": "rivals_option_c"}, {"packId": 305, "count": 1, "untradeable": true, "source": "rivals_option_c"}]}
+   ],
+   [
+    {"coins": 4000, "fcPoints": 0, "xp": 0, "lines": []},
+    {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 304, "count": 2, "untradeable": false}]},
+    {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 304, "count": 3, "untradeable": true, "source": "rivals_option_c"}]}
+   ],
+   [
+    {"coins": 3000, "fcPoints": 0, "xp": 0, "lines": []},
+    {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 305, "count": 1, "untradeable": false}]},
+    {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 305, "count": 1, "untradeable": true, "source": "rivals_option_c"}, {"packId": 304, "count": 1, "untradeable": true, "source": "rivals_option_c"}]}
+   ],
+   [
+    {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 304, "count": 1, "untradeable": false}]}
+   ],
+   [
+    {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 304, "count": 1, "untradeable": false}]}
+   ]
+  ]
+ },
+ "promotion": {
+  "1": {"coins": 30000, "fcPoints": 0, "xp": 0, "lines": [{"packId": 515, "count": 1, "untradeable": true, "source": "rivals_promotion"}]},
+  "2": {"coins": 20000, "fcPoints": 0, "xp": 0, "lines": [{"packId": 402, "count": 1, "untradeable": false, "source": "rivals_promotion"}]},
+  "3": {"coins": 15000, "fcPoints": 0, "xp": 0, "lines": [{"packId": 400, "count": 1, "untradeable": false, "source": "rivals_promotion"}]},
+  "4": {"coins": 12500, "fcPoints": 0, "xp": 0, "lines": [{"packId": 319, "count": 1, "untradeable": false, "source": "rivals_promotion"}]},
+  "5": {"coins": 10000, "fcPoints": 0, "xp": 0, "lines": [{"packId": 308, "count": 1, "untradeable": false, "source": "rivals_promotion"}]},
+  "6": {"coins": 7500, "fcPoints": 0, "xp": 0, "lines": [{"packId": 543, "count": 1, "untradeable": false, "source": "rivals_promotion"}]},
+  "7": {"coins": 5000, "fcPoints": 0, "xp": 0, "lines": [{"packId": 543, "count": 1, "untradeable": false, "source": "rivals_promotion"}]},
+  "8": {"coins": 4000, "fcPoints": 0, "xp": 0, "lines": [{"packId": 305, "count": 1, "untradeable": false, "source": "rivals_promotion"}]},
+  "9": {"coins": 3000, "fcPoints": 0, "xp": 0, "lines": [{"packId": 305, "count": 1, "untradeable": false, "source": "rivals_promotion"}]},
+  "10": {"coins": 2000, "fcPoints": 0, "xp": 0, "lines": [{"packId": 304, "count": 1, "untradeable": false, "source": "rivals_promotion"}]}
+ }
+}

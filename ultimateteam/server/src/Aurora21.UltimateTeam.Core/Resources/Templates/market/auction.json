@@ -1,0 +1,16 @@
+{
+  "tradeId": "{{tradeId}}",
+  "itemData": "{{itemData}}",
+  "tradeState": "{{tradeState}}",
+  "buyNowPrice": "{{buyNowPrice}}",
+  "currentBid": "{{currentBid}}",
+  "startingBid": "{{startingBid}}",
+  "offers": "{{offers}}",
+  "watched": "{{watched}}",
+  "bidState": "{{bidState}}",
+  "expires": "{{expires}}",
+  "sellerEstablished": "{{sellerEstablished}}",
+  "sellerId": "{{sellerId}}",
+  "sellerName": "{{sellerName}}",
+  "rating": "{{rating}}"
+}

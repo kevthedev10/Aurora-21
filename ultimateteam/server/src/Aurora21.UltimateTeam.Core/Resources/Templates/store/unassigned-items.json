@@ -1,0 +1,5 @@
+{
+  "numberItems": "{{numberItems}}",
+  "duplicateItemIdList": "{{duplicates}}",
+  "itemData": "{{items}}"
+}

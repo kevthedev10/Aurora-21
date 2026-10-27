@@ -1,0 +1,166 @@
+{
+  "formatVersion": 2,
+  "versionCode": "ultimateteam-relational-v1",
+  "postgresMajor": 18,
+  "namespace": "ultimateteam",
+  "generatedFrom": {
+    "executionInputManifest": "database-handoff/execution-input-manifest.json",
+    "packetFiles": 16,
+    "normalizedSeedFiles": 8,
+    "normalizedSeedManifest": "database-handoff/normalized-seed-manifest.json",
+    "implementationSpecification": "database-handoff/implementation-specification.json"
+  },
+  "files": [
+    {
+      "path": "schema/001-tables.sql",
+      "sha256": "6d6fee0ea84439f11c9e120d225a7e9ef775e686d7d529edf506976d8d027204",
+      "bytes": 24341
+    },
+    {
+      "path": "schema/002-relationships.sql",
+      "sha256": "c308f252291a46c842750b41cf4e9937dc601f2a3efc245c706fb2a5d11640c9",
+      "bytes": 34973
+    },
+    {
+      "path": "schema/003-invariants.sql",
+      "sha256": "ce5969a0ded285dc80ee3fb462eba3ca1c31eed856b401e68903f4bf20b19528",
+      "bytes": 77401
+    },
+    {
+      "path": "schema/004-indexes.sql",
+      "sha256": "ceee9729e9558a497f7ad7a15f618570f1b54ace02c2e41ea1750d0c81271721",
+      "bytes": 6299
+    },
+    {
+      "path": "seed/010-sources-and-families.sql",
+      "sha256": "c1f18ddec15552a5cbdb1511d76bdcd513ca79141520b96555baa89a65ff79d1",
+      "bytes": 2809
+    },
+    {
+      "path": "seed/011-reference-dimensions.sql",
+      "sha256": "a68d48540700fa1d67a6f86b427b183f1c050cdfa4d93f398b3abc73c2098014",
+      "bytes": 33360
+    },
+    {
+      "path": "seed/012-footballers-types-designs.sql",
+      "sha256": "b1df686c4dd772f7bf003427d403b1f4d48ffdfa0722968174f2b89cf8b8f4dd",
+      "bytes": 1091896
+    },
+    {
+      "path": "seed/013-player-definitions.sql",
+      "sha256": "9bbbeb0c8ed503c71d3b2813a1e5d1843e4320b92e394a4b71d00cdf12513cfc",
+      "bytes": 10160209
+    },
+    {
+      "path": "seed/014-manager-definitions.sql",
+      "sha256": "47a349c585a2e0615412a271d0ec783ec576de60443f9afab19378a572f6b751",
+      "bytes": 59900
+    },
+    {
+      "path": "seed/015-consumable-definitions.sql",
+      "sha256": "9de9b3a24e373f658764e4ed2c4635a7afa48a17146f2271cc824262b5c94b0b",
+      "bytes": 8249
+    },
+    {
+      "path": "seed/016-customisation-definitions.sql",
+      "sha256": "3c1baff42c211d050ed1f3c2d660aaef5e7a9f2ed58da7f176da799a48d56edc",
+      "bytes": 257281
+    },
+    {
+      "path": "seed/017-compatibility-and-aliases.sql",
+      "sha256": "236dd343ba2b170f4c7c7dbba91f844c8359a1c523734d3d1ecae0e602f4c043",
+      "bytes": 7080733
+    },
+    {
+      "path": "seed/018-sequence-state.sql",
+      "sha256": "1b9f9188701a7250079c25ae77e589677373fffb5739cb00abd11d4cc7cde4d9",
+      "bytes": 7259
+    }
+  ],
+  "counts": {
+    "tables": 66,
+    "bootstrapLedger": 1,
+    "foreignKeys": 106,
+    "uniqueConstraints": 43,
+    "uniqueConstraintsListed": 44,
+    "uniqueConstraintDuplicates": 1,
+    "checkConstraints": 18,
+    "indexes": 64,
+    "triggerFunctions": 82,
+    "triggers": 115,
+    "seedFiles": 8,
+    "seedRows": 89824
+  },
+  "executionOrder": [
+    "schema/001-tables.sql",
+    "schema/002-relationships.sql",
+    "schema/003-invariants.sql",
+    "schema/004-indexes.sql",
+    "seed/010-sources-and-families.sql",
+    "seed/011-reference-dimensions.sql",
+    "seed/012-footballers-types-designs.sql",
+    "seed/013-player-definitions.sql",
+    "seed/014-manager-definitions.sql",
+    "seed/015-consumable-definitions.sql",
+    "seed/016-customisation-definitions.sql",
+    "seed/017-compatibility-and-aliases.sql",
+    "seed/018-sequence-state.sql"
+  ],
+  "notes": [
+    "The listed unique constraint set contains one exact duplicate (squad_players squad_id, footballer_id); only the first listing is created.",
+    "All FKs are DEFERRABLE INITIALLY DEFERRED, so seed and test insertion order is unconstrained by FK cycles.",
+    "The ledger table is created but never written by these artifacts; the validator owns ledger writes.",
+    "item_definitions rows are split across seed files 013-016 by family; the four files together cover all 24247 definitions."
+  ],
+  "packageSha256": "8177c2a16772808915eefee68c7ab0789470dec2b9cc1674b0351fb68a041301",
+  "seedInputHashes": [
+    {
+      "path": "normalized-seeds/010-sources-and-families.json",
+      "sha256": "b05b01a267ca5e695f68b60126c80afb87b13e74221799b865b34956446fbe94"
+    },
+    {
+      "path": "normalized-seeds/011-reference-dimensions.json",
+      "sha256": "cc8b9cc7c3a3828a814abcf04e1e8507e38386d1a7bfb0ef774c175ed7d1697c"
+    },
+    {
+      "path": "normalized-seeds/012-footballers-types-designs.json",
+      "sha256": "993f209cabfe2e6ca33b2612d6348f4d9884b8beec1fbe457c05cee7f9d546b4"
+    },
+    {
+      "path": "normalized-seeds/013-player-definitions.json",
+      "sha256": "c4f700f6c92291a103f5bd5e79e5ff28944c89c8a7be8e0f512930be39c479ae"
+    },
+    {
+      "path": "normalized-seeds/014-manager-definitions.json",
+      "sha256": "248f5ae970765e6119dd06264156d1c4004b4c7ca2c068ef77968c2ec6807e04"
+    },
+    {
+      "path": "normalized-seeds/015-consumable-definitions.json",
+      "sha256": "1bfc01cc5795670a7d3bb1f1eba9911280ef48bb1f59268371e7501ca1abb4aa"
+    },
+    {
+      "path": "normalized-seeds/016-customisation-definitions.json",
+      "sha256": "6a361da9c43d0747031a14afde4a8eb728277ceb4a8d4a9325b2829bab731ddb"
+    },
+    {
+      "path": "normalized-seeds/017-compatibility-and-aliases.json",
+      "sha256": "7112a54e4d9cb7b4a7d77ed02800717cac3e93473c38d1daf779a87a8ccf0e45"
+    }
+  ],
+  "seedTableCounts": {
+    "catalog_sources": 6,
+    "item_families": 5,
+    "nations": 158,
+    "leagues": 45,
+    "teams": 683,
+    "footballers": 16057,
+    "card_types": 88,
+    "card_rarity_groups": 85,
+    "item_definitions": 24247,
+    "player_card_definitions": 22506,
+    "definition_extensions": 24203,
+    "manager_definitions": 311,
+    "consumable_definitions": 44,
+    "customisation_definitions": 1386
+  }
+}

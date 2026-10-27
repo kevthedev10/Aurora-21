@@ -1,0 +1,11 @@
+# Loads the checked-in dashboards (monitoring/grafana/dashboards) into an "Aurora 21" folder. Edits made in Grafana are
+# not saved back; export a changed dashboard's JSON into that folder and deploy it.
+apiVersion: 1
+providers:
+  - name: aurora21
+    folder: Aurora 21
+    type: file
+    disableDeletion: true
+    allowUiUpdates: false
+    options:
+      path: /etc/grafana/dashboards

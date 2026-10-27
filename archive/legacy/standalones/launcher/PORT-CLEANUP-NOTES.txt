@@ -1,0 +1,19 @@
+Aurora 21 (Alpha v1) - automatic port conflict cleanup
+
+When Play FIFA 21 is pressed and Launch-LocalFUT.ps1 begins, Aurora 21 (Alpha v1) now
+checks the local ports used by its FUT/Blaze relay, TLS redirector and LSX path.
+
+Checked local TCP ports:
+  44321, 8090, 10853, 17502, 8081, 42231, 42232, 42230, 3216
+Checked local UDP ports:
+  17502
+
+Behavior:
+- Existing services from THIS Aurora 21 (Alpha v1) runtime are left for the launch script's
+  normal reuse/restart logic.
+- EA App is preserved when it legitimately owns LSX TCP port 3216.
+- An unrelated non-system process holding a required port is force-closed.
+- Aurora 21 (Alpha v1) waits for that process to release the socket before continuing.
+- Protected Windows/system processes are never force-closed. If one owns a
+  required port, launch fails with detailed diagnostics instead.
+- Port preflight/cleanup events are surfaced in the Connection activity log.

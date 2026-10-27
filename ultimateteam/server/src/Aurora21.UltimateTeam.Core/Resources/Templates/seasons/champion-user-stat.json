@@ -1,0 +1,1 @@
+{ "championEventId": "{{eventId}}", "gamesPlayed": "{{played}}", "score": "{{wins}}", "rank": "{{rank}}", "tierLevel": "{{tierLevel}}", "winForm": "{{form}}" }

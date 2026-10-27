@@ -1,0 +1,13 @@
+{
+  "userInfo": "{{user}}",
+  "squad": "{{squad}}",
+  "loanPlayers": "{{loanPlayers}}",
+  "loanPlayerClientData": "{{loanClientData}}",
+  "onboardingClientData": "{{onboardingClientData}}",
+  "tutorialClientData": "{{tutorialClientData}}",
+  "userHubClientData": "{{userHubClientData}}",
+  "squadBuildingSetsClientData": "{{squadBuildingSetsClientData}}",
+  "worldEventClientData": "{{worldEventClientData}}",
+  "squadClientData": "{{squadClientData}}",
+  "credits": "{{credits}}"
+}

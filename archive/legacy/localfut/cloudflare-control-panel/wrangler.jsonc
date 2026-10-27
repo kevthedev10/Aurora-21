@@ -1,0 +1,22 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "project21-control-panel",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-09-01",
+  "observability": { "enabled": true },
+  "vars": {
+    "PUBLIC_BASE_URL": "https://project21-control-panel.nevercraft.workers.dev",
+    "ADMIN_DISCORD_IDS": "1248159698281304147,505839712938754088",
+    "LOCALFUT_SERVER_ADDRESS": "10.203.21.1",
+    "WIREGUARD_ENDPOINT": "15.235.81.121:51820",
+    "WIREGUARD_SERVER_PUBLIC_KEY": "XesTu9LqdaL7VVTvT9OJskPqItla7x0Z3A6aiXnxvg4="
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "project21-control",
+      "database_id": "607986af-a36e-4230-b738-8282f009b0fb",
+      "migrations_dir": "migrations"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "currencies": [
+    { "name": "coins", "funds": "{{credits}}", "finalFunds": "{{credits}}" },
+    { "name": "points", "funds": "{{points}}", "finalFunds": "{{points}}" }
+  ],
+  "unopenedPacks": { "preOrderPacks": "{{unopenedPacks}}", "recoveredPacks": 0 }
+}

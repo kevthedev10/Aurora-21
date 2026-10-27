@@ -1,0 +1,5 @@
+{
+  "user": [
+    { "persona": "{{persona}}", "personaId": "{{personaId}}", "public": true }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "levelId": "{{level}}",
+  "level": "{{level}}",
+  "xpThreshold": "{{xp}}",
+  "xp": "{{xp}}",
+  "state": "{{state}}",
+  "chosenOption": "{{chosenOption}}",
+  "rewardOptionList": "{{options}}"
+}

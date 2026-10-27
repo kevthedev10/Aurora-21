@@ -1,0 +1,96 @@
+/* Objectives: the catalogue by kind, Live objectives, the Season Pass levels and the reward editor. */
+.objective-section { margin: 0 0 var(--space-5); }
+.objective-section-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: var(--space-2) var(--space-3); margin: 0 0 var(--space-3);
+  padding-bottom: var(--space-2); border-bottom: 1px solid var(--line); font: 600 var(--text-lg)/1.2 var(--font-display); text-transform: uppercase; letter-spacing: .02em; }
+.objective-section-head small { font: 400 var(--text-xs)/1.4 var(--font); text-transform: none; letter-spacing: 0; }
+.objective-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 12px; margin: 0; padding: 0; list-style: none; }
+.objective-card { display: grid; gap: var(--space-3); padding: 14px; border: 1px solid var(--line); border-radius: 12px; background: var(--stand); }
+.objective-card-off { opacity: .65; }
+.objective-card-body { display: grid; gap: 4px; min-width: 0; }
+.objective-card-body strong { font-size: 15px; overflow-wrap: anywhere; }
+.objective-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 2px; }
+.objective-card-actions { display: flex; flex-wrap: wrap; gap: 8px; justify-content: flex-end; }
+.objective-live-row { grid-template-columns: 28px minmax(0, 1fr) auto auto auto; }
+.objective-live-order { color: var(--fog); font: 600 var(--text-md)/1 var(--font-display); text-align: center; }
+.objective-subhead { margin: var(--space-4) 0 var(--space-2); color: var(--fog); font: 600 var(--text-md)/1.2 var(--font-display); text-transform: uppercase; letter-spacing: .04em; }
+.objective-add { margin: var(--space-3) 0 var(--space-5); }
+.objective-conditions { display: grid; gap: var(--space-3); margin: var(--space-3) 0; }
+.objective-condition-group { display: grid; gap: var(--space-3); margin: 0; padding: var(--space-3) var(--space-4) var(--space-4); border: 1px solid var(--line); border-radius: var(--radius); background: var(--night); }
+.objective-condition-group legend { padding: 0 6px; color: var(--fog); font-weight: 600; }
+.objective-condition-modes { display: flex; flex-wrap: wrap; gap: var(--space-2) var(--space-4); }
+
+.objective-reward { display: grid; gap: var(--space-3); }
+.objective-reward-lines { display: grid; gap: var(--space-2); margin: 0; padding: 0; list-style: none; }
+.objective-reward-lines li { display: grid; grid-template-columns: minmax(180px, 2fr) minmax(80px, 1fr) minmax(130px, 1fr) auto; gap: var(--space-3); align-items: start;
+  padding: var(--space-3); border: 1px solid var(--line); border-radius: var(--radius); background: var(--night); }
+/* Level with the inputs: below the one-line label (text-xs at 1.4) and the Field's 6px gap. */
+.objective-reward-remove { margin-top: calc(var(--text-xs) * 1.4 + 6px); }
+.level-option { display: grid; gap: var(--space-3); margin: 0; padding: var(--space-3) var(--space-4) var(--space-4); border: 1px solid var(--line); border-radius: var(--radius); }
+.level-option legend { padding: 0 6px; font-weight: 600; }
+.field-problem { margin: 0; color: var(--red-card); font-size: var(--text-xs); }
+
+.season-levels { display: grid; gap: var(--space-2); margin: 0; padding: 0; list-style: none; }
+.season-level { display: grid; grid-template-columns: 44px minmax(0, 1fr) auto auto; align-items: center; gap: var(--space-3);
+  padding: var(--space-2) var(--space-3); border: 1px solid var(--line); border-radius: var(--radius); background: var(--night); }
+.season-level-closed { opacity: .6; }
+.season-level-number { display: grid; place-items: center; width: 36px; height: 36px; border-radius: 50%; background: var(--tier); font: 600 var(--text-md)/1 var(--font-display); }
+.season-level-body { display: grid; gap: 2px; min-width: 0; }
+.season-level-body strong { font-size: var(--text-sm); overflow-wrap: anywhere; }
+
+/* Seasons: the calendar strip, the season cards and the editor. */
+.season-timeline-empty { margin: 0 0 var(--space-4); padding: var(--space-3) var(--space-4); border: 1px dashed var(--line); border-radius: var(--radius); }
+.season-timeline { margin: 0 0 var(--space-4); padding: 26px 0 30px; overflow: hidden; }
+.season-timeline-track { position: relative; height: 40px; border-radius: var(--radius);
+  background: repeating-linear-gradient(135deg, var(--night) 0 8px, var(--stand) 8px 16px); border: 1px solid var(--line); }
+.season-timeline-month { position: absolute; top: -22px; transform: translateX(-50%); color: var(--dim); font-size: 12px; text-transform: uppercase; letter-spacing: .06em; }
+.season-timeline-month::after { content: ''; position: absolute; left: 50%; top: 18px; height: 44px; border-left: 1px dashed var(--line); }
+.season-timeline-bar { position: absolute; top: 4px; bottom: 4px; min-width: 6px; padding: 0 8px; overflow: hidden; border: 1px solid var(--pitch);
+  border-radius: var(--radius-sm); background: var(--pitch-bg); color: var(--chalk); font: 600 var(--text-sm)/30px var(--font-display);
+  text-align: left; text-transform: uppercase; letter-spacing: .03em; white-space: nowrap; text-overflow: ellipsis; cursor: pointer; }
+.season-timeline-bar span { overflow: hidden; text-overflow: ellipsis; }
+.season-timeline-bar:hover { background: rgb(59 170 110 / 0.26); }
+.season-timeline-bar-selected { border-color: var(--coin); box-shadow: 0 0 0 2px var(--coin-bg); }
+.season-timeline-bar-new { border-style: dashed; border-color: var(--staged); background: var(--staged-bg); }
+.season-timeline-now { position: absolute; top: -6px; bottom: -6px; border-left: 2px solid var(--coin); pointer-events: none; }
+.season-timeline-now span { position: absolute; top: calc(100% + 4px); left: -2px; color: var(--coin); font-size: 12px; font-weight: 600; white-space: nowrap; }
+.season-timeline-now-end span { left: auto; right: 0; }
+
+.season-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; margin: 0; padding: 0; list-style: none; }
+.season-card { display: grid; gap: 6px; width: 100%; height: 100%; padding: 14px; border: 1px solid var(--line); border-radius: 12px; background: var(--stand);
+  color: inherit; font: inherit; text-align: left; cursor: pointer; transition: border-color .15s, transform .15s; }
+.season-card:hover { border-color: var(--fog); }
+.season-card:focus-visible { outline: 2px solid var(--coin); outline-offset: 2px; }
+.season-card-selected { border-color: var(--coin); box-shadow: inset 0 0 0 1px var(--coin); }
+.season-card-live { background: linear-gradient(180deg, var(--pitch-bg), var(--stand) 60%); }
+.season-card-ended { opacity: .7; }
+.season-card-head { display: flex; align-items: flex-start; justify-content: space-between; gap: var(--space-2); }
+.season-card-head strong { font: 600 var(--text-lg)/1.15 var(--font-display); text-transform: uppercase; letter-spacing: .02em; overflow-wrap: anywhere; }
+.season-card-dates { font-size: var(--text-xs); color: var(--fog); }
+.season-card-when { font-weight: 600; font-size: var(--text-sm); }
+.season-card-live .season-card-when { color: var(--pitch); }
+.season-card-upcoming .season-card-when { color: var(--flare); }
+.season-card-meta { font-size: var(--text-xs); }
+.season-card-foot { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 6px; margin-top: 2px; font-size: var(--text-xs); }
+
+.season-editor-title { display: inline-flex; flex-wrap: wrap; align-items: center; gap: var(--space-2); }
+.season-form { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: var(--space-3); margin-bottom: var(--space-3); }
+.season-lengths { margin: calc(-1 * var(--space-1)) 0 var(--space-4); }
+.season-lengths [aria-pressed='true'] { border-color: var(--coin); color: var(--coin); }
+.season-stepper { display: grid; grid-template-columns: auto minmax(60px, 1fr) auto; gap: 6px; align-items: center; }
+.season-stepper input { text-align: center; }
+.season-milestones { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 var(--space-2); padding: 0; list-style: none; }
+.season-milestones li { display: grid; gap: 2px; padding: 8px 12px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--night); font-size: var(--text-xs); }
+.season-milestones strong { font: 600 var(--text-md)/1 var(--font-display); }
+.season-actionbar { position: sticky; bottom: 0; z-index: 2; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--space-3);
+  margin-top: var(--space-4); padding: var(--space-3) var(--space-4); border: 1px solid var(--line); border-radius: var(--radius);
+  background: var(--stand); box-shadow: 0 -8px 24px rgb(0 0 0 / 0.35); }
+
+@media (max-width: 640px) {
+  .season-actionbar { position: static; }
+  .objective-reward-lines li { grid-template-columns: minmax(0, 1fr); }
+  .objective-reward-remove { margin-top: 0; justify-self: start; }
+  .objective-live-row { grid-template-columns: 28px minmax(0, 1fr); }
+  .season-level { grid-template-columns: 44px minmax(0, 1fr); }
+}
+.objective-condition-check { display: flex; align-items: center; gap: 8px; }
+.objective-condition-check input { width: 18px; height: 18px; flex: none; }

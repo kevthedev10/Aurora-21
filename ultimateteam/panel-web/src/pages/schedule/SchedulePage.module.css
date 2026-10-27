@@ -1,0 +1,63 @@
+.workspace { display: grid; grid-template-columns: minmax(0, 1.8fr) minmax(260px, 1fr); gap: 20px; align-items: start; }
+.campaignSection { margin-bottom: var(--space-5); }
+.workspace > .panel { min-width: 0; }
+.workspace > .panel + .panel { margin-top: 0; }
+.calendar { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 4px; }
+.weekday { text-align: center; padding: 8px 0; color: var(--fog); font-size: 12px; }
+.day { min-height: 110px; display: flex; flex-direction: column; gap: 5px; align-items: stretch; padding: 8px; border: 1px solid var(--line); border-radius: 8px; background: var(--night); text-align: left; cursor: pointer; overflow: hidden; }
+.day strong { font-size: 14px; }
+.day span, .day small { font-size: 11px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: var(--coin); }
+.day [data-end] { color: var(--fog); }
+.day[data-selected] { border-color: var(--coin); background: var(--tier); }
+.day[data-today] strong { color: var(--coin); }
+.day[data-other-month] { opacity: .6; }
+.day:hover { background: var(--tier); }
+.actions { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+.agenda { display: grid; gap: 10px; }
+.entry { padding: 14px; background: var(--night); border: 1px solid var(--line); border-radius: 10px; }
+.entry h3 { margin: 8px 0; font-size: 18px; }
+.entry p, .entry small { color: var(--fog); font-size: 13px; }
+.entry[data-end] { border-style: dashed; }
+.campaigns { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 12px; }
+.campaigns > .entry { min-width: 0; }
+.campaignDrops { display: grid; gap: 12px; list-style: none; padding: 0; margin: 20px 0 0; }
+.campaignDrop { display: grid; gap: 8px; min-width: 0; padding-top: 12px; border-top: 1px solid var(--line); }
+.dropHeading { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; min-width: 0; }
+.dropHeading > button { max-width: 100%; white-space: normal; text-align: left; overflow-wrap: anywhere; }
+.dropDates { display: block; color: var(--fog); font-size: 12px; line-height: 1.5; overflow-wrap: anywhere; }
+.editorBody { display: grid; gap: 24px; min-width: 0; }
+.editorBody > p { margin: 0; }
+.editorBody > section + section { margin-top: 0; }
+.editorBody > section > p:last-child { margin: 20px 0 0; line-height: 1.6; }
+.editorBody .agenda { gap: 16px; }
+.editorBody .entry { display: grid; gap: 12px; min-width: 0; }
+.editorBody .entry > p { margin: 0; line-height: 1.5; overflow-wrap: anywhere; }
+.editorBody .entry > button { justify-self: start; }
+.editorBody .entry .actions { gap: 12px; align-items: flex-end; }
+.editorBody .entry .actions > :first-child { flex: 1 1 220px; min-width: 0; }
+.attach { display: grid; gap: 16px; min-width: 0; }
+.attach > p { margin: 0; line-height: 1.6; }
+.attach > button { justify-self: start; }
+.form { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+.form > * { min-width: 0; }
+.destination { padding: 12px 16px; margin-bottom: 16px; border: 1px solid var(--line); background: var(--stand); border-radius: 10px; display: flex; gap: 16px; align-items: center; flex-wrap: wrap; }
+.destination > div { flex: 1; min-width: 220px; }
+.preview { display: grid; grid-template-columns: 150px minmax(0, 1fr); gap: 12px; }
+.preview dd { margin: 0; overflow-wrap: anywhere; }
+@media (max-width: 1050px) { .workspace { grid-template-columns: 1fr; } }
+@media (max-width: 600px) { .form { grid-template-columns: 1fr; } .day { padding: 5px; min-height: 70px; } .day span { font-size: 9px; } .calendar { gap: 2px; } .preview { grid-template-columns: 1fr; } .campaigns { grid-template-columns: minmax(0, 1fr); } .editorBody { gap: 20px; } .editorBody .entry .actions > :first-child { flex-basis: 100%; } }
+
+.sectionTabs { display: flex; flex-wrap: wrap; gap: var(--space-2); margin-bottom: var(--space-5); }
+.rotations { scroll-margin-top: var(--space-5); }
+
+.agendaEntry { display: grid; gap: 12px; min-width: 0; }
+.agendaEntry > h3, .agendaEntry > p { margin: 0; }
+.agendaEntry > button, .agendaEntry > a { justify-self: start; margin-top: 4px; }
+
+.spinner { display: inline-block; width: 14px; height: 14px; flex: 0 0 14px; border: 2px solid currentColor; border-right-color: transparent; border-radius: 50%; animation: scheduleSpin .7s linear infinite; }
+@keyframes scheduleSpin { to { transform: rotate(360deg); } }
+@media (prefers-reduced-motion: reduce) { .spinner { animation: none; } }
+
+.campaignNavigation { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; max-width: 100%; }
+.campaignNavigation > div { flex: 1 1 180px; min-width: 160px; max-width: 360px; }
+.dropPagination { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin-top: 20px; }

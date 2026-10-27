@@ -1,0 +1,10 @@
+{
+  "_comment": "The portable PostgreSQL build 'postgres install' downloads: zonky.io embedded-postgres packages (minimal repackaged PostgreSQL builds) from Maven Central, pinned by version and SHA-256 per platform. {artifact} and {version} are filled into downloadUrl.",
+
+  "version": "18.6.0",
+  "downloadUrl": "https://repo1.maven.org/maven2/io/zonky/test/postgres/{artifact}/{version}/{artifact}-{version}.jar",
+  "builds": {
+    "win-x64": { "artifact": "embedded-postgres-binaries-windows-amd64", "sha256": "b7ef2d03588e0439f0d0a2250f43905f7464f1e96ace47703ceaf79094198150" },
+    "linux-x64": { "artifact": "embedded-postgres-binaries-linux-amd64", "sha256": "008ee189eaa7ca2b58bd01dd950291e638b998392cf982297acd4779ec898ac1" }
+  }
+}

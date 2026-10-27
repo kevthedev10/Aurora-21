@@ -1,0 +1,8 @@
+{
+  "tierLevel": "{{tierLevel}}",
+  "tierStart": "{{percentFrom}}",
+  "tierEnd": "{{percentTo}}",
+  "tierStartValue": "{{pointsFrom}}",
+  "tierEndValue": "{{pointsTo}}",
+  "categoryAwardsList": "{{categories}}"
+}

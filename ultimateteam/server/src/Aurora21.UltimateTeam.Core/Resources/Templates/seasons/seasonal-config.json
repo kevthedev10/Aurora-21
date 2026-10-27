@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "generatedAt": "{{current}}",
+  "serverTime": "{{current}}",
+  "currentTime": "{{current}}",
+  "divisionRivals": {
+    "enabled": true,
+    "active": true,
+    "seasonId": 0,
+    "startTime": "{{start}}",
+    "endTime": "{{end}}",
+    "weeklyResetTime": "{{end}}",
+    "maxWeeklyGames": "{{weeklyMatches}}",
+    "placementMatches": "{{placementMatches}}",
+    "schedule": "{{schedule}}"
+  },
+  "futChampions": {
+    "enabled": true,
+    "active": true,
+    "startTime": "{{start}}",
+    "endTime": "{{end}}",
+    "registrationCloseTime": "{{end}}",
+    "playoffMaxGames": "{{playoffMatches}}",
+    "finalsMaxGames": "{{finalsMatches}}",
+    "qualificationPointsRequired": "{{qualificationPoints}}",
+    "schedule": "{{schedule}}",
+    "playoffScheduleViewPeriodInMinutes": "{{scheduleViewMinutes}}",
+    "finalsScheduleViewPeriodInMinutes": "{{scheduleViewMinutes}}"
+  }
+}

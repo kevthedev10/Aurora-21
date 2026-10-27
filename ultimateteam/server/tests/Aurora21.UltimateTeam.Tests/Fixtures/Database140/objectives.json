@@ -1,0 +1,140 @@
+{
+  "_comment": "FUT Objectives (the FIFA 21 Seasonal Campaign, SCMP): a welcome objective group served already completed, grind objective groups tracked from match ends, SBC submissions and pack openings, dated one-off gifts, and a Season Progress level track. Phase 1 values: pack-odds-2026-09 PLAN.md 5.5 and 6.",
+
+  "campaign": {
+    "id": 1,
+    "name": "Aurora 21 Season",
+    "startedDaysAgo": 30,
+    "endsInDays": 365
+  },
+
+  "category": { "id": 1, "name": "Objectives" },
+
+  "_groupComment": "Group rows use FIFA 21's numeric group states and ObjectiveGroupType.SEASONAL (0 is INVALID). A group is COMPLETED only once every objective in it is redeemed.",
+  "groupType": 3,
+  "groupStates": { "inProgress": 1, "completed": 2, "rewarded": 4 },
+
+  "_welcomeGroupComment": "The group reward tile shows rewardPackCount x rewardPackId. Claiming it delivers those packs to My Packs (untradeable when rewardUntradeable) plus xpAward season XP. Phase 1 (owner D3): 3 x 513, the 82+ pick (1 of 4), untradeable. With stat and target the club earns it first (owner 2026-09-29: Kick Off needs one match): until then the group is a tracked objective and claiming pays nothing.",
+  "welcomeGroup": {
+    "id": 1,
+    "title": "Welcome Objectives",
+    "subTitle": "Get started in FUT",
+    "objective": { "id": 1, "name": "Kick Off", "description": "Play a match in FUT." },
+    "rewardPackId": 513,
+    "rewardPackCount": 3,
+    "rewardUntradeable": true,
+    "xpAward": 1500, "stat": "matches", "target": 1
+  },
+
+  "_xpComment": "Season Progress XP per event: every counted match, plus win on a win, each first SBC completion and each opened pack except an SBC reward pack. Matches ending with noProgressEndReasons count nothing.",
+  "xp": { "match": 300, "win": 500, "sbc": 400, "pack": 50 },
+  "noProgressEndReasons": ["QUIT", "NO_CONTEST"],
+
+  "_statLabelsComment": "Objective descriptions by tracked stat; {n} is the target with thousands separators.",
+  "statLabels": {
+    "matches": "Play {n} matches in FUT.",
+    "wins": "Win {n} matches in FUT.",
+    "goals": "Score {n} goals in FUT matches.",
+    "cleanSheets": "Keep {n} clean sheets.",
+    "draftWins": "Win {n} FUT Draft matches.",
+    "sbcs": "Complete {n} Squad Building Challenges.",
+    "packs": "Open {n} packs."
+  },
+
+  "_grindGroupsComment": "Each objective pays its award (coins, or a pack delivered to My Packs, untradeable when the award says so) and xp once its stat reaches target; the group award pays once every objective in it is claimed. Stats count from the club's creation. Pack ids are FIFA 21 reward packs: 402 Jumbo Rare Players, 403 Mega, 404 Rare Mega, 405 Ultimate, 542 TOTW Player (1 in-form), 543 Small Rare Gold Players, and 513-516 the 82+-88+ player picks. Group 8, New Club, is the permanent version of the week-one group, so a club gets the same start whenever it joins. SBC completion counts once per challenge per club ever (a repeatable set's repeats, such as the Upgrades, pay their rewards but count for neither sbcs nor Season XP), so an sbcs target above the visible challenge count can never be met. Groups 20-22 are retail's Stadium Development milestones: each objective opens My Stadium slots (unlockSlots, rules/club.json myStadiumSlots ids) and pays a pack of My Stadium items (vanity: count unowned items of those card subtypes); groups 20 and 21 move the club up a FUT Stadium tier (stadiumTier, venues.futStadiums 444 Challengers and 445 Champions). Group 20 follows retail (fifauteam.com milestones); groups 21 and 22 are reconstructed (no retail list survives) to open every remaining slot by 85 matches and 60 wins.",
+  "grindGroups": [
+    {
+      "id": 8, "title": "New Club", "subTitle": "Your first steps in Aurora 21", "award": { "pack": 515, "untradeable": true },
+      "objectives": [
+        { "id": 801, "name": "First Fixtures", "stat": "matches", "target": 3, "award": { "pack": 542, "untradeable": true }, "xp": 1500 },
+        { "id": 802, "name": "Winning Start", "stat": "wins", "target": 5, "award": { "pack": 514, "untradeable": true }, "xp": 2000 },
+        { "id": 803, "name": "Squad Builder Debut", "stat": "sbcs", "target": 3, "award": { "pack": 543 }, "xp": 1500 }
+      ]
+    },
+    {
+      "id": 2, "title": "Matchday Grind", "subTitle": "Get games under your belt", "award": { "pack": 403 },
+      "objectives": [
+        { "id": 201, "name": "Warm Up", "stat": "matches", "target": 5, "award": { "coins": 5000 }, "xp": 2000 },
+        { "id": 202, "name": "Regular Starter", "stat": "matches", "target": 25, "award": { "pack": 514, "untradeable": true }, "xp": 4000 },
+        { "id": 203, "name": "Iron Man", "stat": "matches", "target": 100, "award": { "pack": 404 }, "xp": 10000 },
+        { "id": 204, "name": "Winner", "stat": "wins", "target": 10, "award": { "coins": 15000 }, "xp": 4000 },
+        { "id": 205, "name": "Serial Winner", "stat": "wins", "target": 50, "award": { "pack": 404 }, "xp": 12000 }
+      ]
+    },
+    {
+      "id": 3, "title": "Goal Machine", "subTitle": "Put the ball in the net", "award": { "pack": 403 },
+      "objectives": [
+        { "id": 301, "name": "On The Scoresheet", "stat": "goals", "target": 25, "award": { "coins": 10000 }, "xp": 3000 },
+        { "id": 302, "name": "Hat-Trick Hero", "stat": "goals", "target": 100, "award": { "pack": 402 }, "xp": 6000 },
+        { "id": 303, "name": "Golden Boot", "stat": "goals", "target": 500, "award": { "pack": 405 }, "xp": 15000 },
+        { "id": 304, "name": "Brick Wall", "stat": "cleanSheets", "target": 10, "award": { "pack": 514, "untradeable": true }, "xp": 4000 },
+        { "id": 305, "name": "The Vault", "stat": "cleanSheets", "target": 50, "award": { "pack": 403 }, "xp": 12000 }
+      ]
+    },
+    {
+      "id": 4, "title": "Collector", "subTitle": "Build your collection through SBCs", "award": { "pack": 404 },
+      "objectives": [
+        { "id": 401, "name": "Starter Collection", "stat": "sbcs", "target": 10, "award": { "coins": 2500 }, "xp": 1500 },
+        { "id": 402, "name": "Growing Collection", "stat": "sbcs", "target": 25, "award": { "pack": 402 }, "xp": 4000 },
+        { "id": 403, "name": "Serious Collector", "stat": "sbcs", "target": 40, "award": { "pack": 404 }, "xp": 8000 },
+        { "id": 404, "name": "Collector", "stat": "sbcs", "target": 55, "award": { "pack": 405 }, "xp": 20000 }
+      ]
+    },
+    {
+      "id": 5, "title": "Squad Builder", "subTitle": "Hand in those squads", "award": { "pack": 403 },
+      "objectives": [
+        { "id": 501, "name": "Getting Started", "stat": "sbcs", "target": 5, "award": { "coins": 10000 }, "xp": 2500 },
+        { "id": 502, "name": "SBC Grinder", "stat": "sbcs", "target": 20, "award": { "pack": 514, "untradeable": true }, "xp": 6000 },
+        { "id": 503, "name": "Master Builder", "stat": "sbcs", "target": 50, "award": { "pack": 403 }, "xp": 12000 }
+      ]
+    },
+    {
+      "id": 6, "title": "Draft King", "subTitle": "Four wins and you are a legend", "award": { "pack": 403 },
+      "objectives": [
+        { "id": 601, "name": "Draft Debut", "stat": "draftWins", "target": 1, "award": { "coins": 5000 }, "xp": 2000 },
+        { "id": 602, "name": "Draft Regular", "stat": "draftWins", "target": 10, "award": { "pack": 404 }, "xp": 8000 },
+        { "id": 603, "name": "Draft King", "stat": "draftWins", "target": 40, "award": { "pack": 405 }, "xp": 15000 }
+      ]
+    },
+    {
+      "id": 7, "title": "Legend Status", "subTitle": "Only the truly dedicated", "award": { "coins": 50000 },
+      "objectives": [
+        { "id": 701, "name": "Centurion", "stat": "wins", "target": 250, "award": { "coins": 50000 }, "xp": 25000 },
+        { "id": 702, "name": "Thousand Goals", "stat": "goals", "target": 1000, "award": { "pack": 405 }, "xp": 25000 },
+        { "id": 703, "name": "Road Warrior", "stat": "matches", "target": 500, "award": { "pack": 404 }, "xp": 25000 },
+        { "id": 704, "name": "SBC Legend", "stat": "sbcs", "target": 100, "award": { "pack": 405 }, "xp": 25000 }
+      ]
+    },
+    {"id": 20, "title": "Stadium Development", "subTitle": "Grow your FUT Stadium", "award": {"stadiumTier": 444}, "objectives": [{"id": 2001, "name": "Club Anthem", "stat": "matches", "target": 1, "award": {"vanity": {"name": "Club Anthem Pack", "subtypes": [516], "count": 3, "assets": [1001, 1002, 1003]}, "unlockSlots": [39]}, "xp": 500}, {"id": 2002, "name": "Seat Colour", "stat": "matches", "target": 5, "award": {"vanity": {"name": "Stadium Seat Paint Pack", "subtypes": [510], "count": 3, "assets": [6863002, 6863004, 6863007]}, "unlockSlots": [24]}, "xp": 500}, {"id": 2003, "name": "Main Stand Lower TIFO", "stat": "matches", "target": 10, "award": {"vanity": {"name": "Tifos Pack", "subtypes": [500], "count": 3, "assets": [1041, 1075, 1109]}, "unlockSlots": [35]}, "xp": 500}, {"id": 2004, "name": "Club Nickname", "stat": "matches", "target": 20, "award": {"vanity": {"name": "Club Nickname Pack", "subtypes": [518], "count": 3, "assets": [1, 2, 3]}, "unlockSlots": [9]}, "xp": 500}, {"id": 2005, "name": "Goal Song", "stat": "matches", "target": 30, "award": {"vanity": {"name": "Goal SFX Pack", "subtypes": [517], "count": 3, "assets": [504, 505, 506]}, "unlockSlots": [38]}, "xp": 500}, {"id": 2006, "name": "Goal Pyrotechnics", "stat": "matches", "target": 40, "award": {"vanity": {"name": "Goal VFX Pack", "subtypes": [511, 512, 513, 514], "count": 3, "assets": [6865002, 6866003, 6867006]}, "unlockSlots": [25]}, "xp": 500}, {"id": 2007, "name": "Main Stand Right Trophy", "stat": "matches", "target": 50, "award": {"vanity": {"name": "Match Fundamentals Trophy", "subtypes": [508], "count": 1, "assets": [6869025]}, "unlockSlots": [27]}, "xp": 500}]},
+    {"id": 21, "title": "Stadium Development II", "subTitle": "Upgrade to the FUT Champions Stadium", "award": {"stadiumTier": 445}, "objectives": [{"id": 2101, "name": "Pitch Line Paint", "stat": "matches", "target": 55, "award": {"vanity": {"name": "Line Paint Pack", "subtypes": [506], "count": 3, "assets": [6861001, 6861002, 6861003]}, "unlockSlots": [22]}, "xp": 500}, {"id": 2102, "name": "Mow Pattern", "stat": "matches", "target": 60, "award": {"vanity": {"name": "Mow Pattern Pack", "subtypes": [505], "count": 3, "assets": [1, 2, 3]}, "unlockSlots": [10]}, "xp": 500}, {"id": 2103, "name": "Goal Net Paint", "stat": "matches", "target": 65, "award": {"vanity": {"name": "Goal Paint Pack", "subtypes": [507], "count": 3, "assets": [6864001, 6864003, 6864006]}, "unlockSlots": [37]}, "xp": 500}, {"id": 2104, "name": "North Stand TIFOs", "stat": "matches", "target": 70, "award": {"vanity": {"name": "Tifos Pack", "subtypes": [500], "count": 3, "assets": [1256, 1397, 1419]}, "unlockSlots": [19, 34]}, "xp": 500}, {"id": 2105, "name": "Main Stand Left Trophy", "stat": "matches", "target": 75, "award": {"vanity": {"name": "Match Fundamentals Premium Trophy", "subtypes": [508], "count": 1, "assets": [6869026]}, "unlockSlots": [28]}, "xp": 500}, {"id": 2106, "name": "Goal Pyrotechnics II", "stat": "matches", "target": 80, "award": {"vanity": {"name": "Goal VFX Pack", "subtypes": [511, 512, 513, 514], "count": 2, "assets": [6865007, 6868001]}, "unlockSlots": [11]}, "xp": 500}]},
+    {"id": 22, "title": "Stadium Development III", "subTitle": "Fill every corner of your stadium", "award": {"vanity": {"name": "Stadium Theme Pack", "subtypes": [504], "count": 3, "assets": [1, 9, 10]}, "unlockSlots": [32, 18]}, "objectives": [{"id": 2201, "name": "South Stand TIFOs", "stat": "matches", "target": 85, "award": {"vanity": {"name": "Tifos Pack", "subtypes": [500], "count": 3, "assets": [1625, 1668, 4231]}, "unlockSlots": [21, 36]}, "xp": 500}, {"id": 2202, "name": "South Stand Mini TIFO", "stat": "wins", "target": 20, "award": {"vanity": {"name": "Tifos Pack", "subtypes": [500], "count": 2, "assets": [5471, 5589]}, "unlockSlots": [20]}, "xp": 500}, {"id": 2203, "name": "Main Stand Background TIFO", "stat": "wins", "target": 30, "award": {"vanity": {"name": "Tifos Pack", "subtypes": [500], "count": 2, "assets": [7289, 7518]}, "unlockSlots": [33]}, "xp": 500}, {"id": 2204, "name": "Sideline Trophies", "stat": "wins", "target": 40, "award": {"vanity": {"name": "Squad Battles and Division Rivals Trophies", "subtypes": [508], "count": 2, "assets": [6869033, 6869043]}, "unlockSlots": [14, 42]}, "xp": 500}, {"id": 2205, "name": "More Sideline Trophies", "stat": "wins", "target": 50, "award": {"vanity": {"name": "Premium Squad Battles and Division Rivals Trophies", "subtypes": [508], "count": 2, "assets": [6869034, 6869044]}, "unlockSlots": [43, 15]}, "xp": 500}, {"id": 2206, "name": "Trophy Cabinet", "stat": "wins", "target": 60, "award": {"vanity": {"name": "FUT Champions Trophies", "subtypes": [508], "count": 2, "assets": [6869021, 6869022]}, "unlockSlots": [29, 30]}, "xp": 500}]}
+  ],
+
+  "_giftsComment": "One-off gifts: a group served while its window is open (with stat and target the club earns it first: phase 1's needs five matches, owner 2026-09-29; without them it is served already completed) (availableFrom / availableUntil, ISO 8601 with a UTC offset, both inclusive; null leaves that side open), claimable once per club inside the window and delivered to My Packs. A gift's id is claimed in the group scope, so it must not be a group id. Phase 1: one 542 (a TOTW in-form), untradeable, for any club that claims it before Sun 4 Oct 2026 23:59 UK time. Set availableFrom to make it land at a later date.",
+  "gifts": [
+    {
+      "id": 90, "title": "Thank You", "subTitle": "A gift for testing Aurora 21",
+      "objective": { "id": 9001, "name": "Thanks For Testing", "description": "A Team of the Week player for helping us test Aurora 21. Claim it before Sunday 23:59 UK time." },
+      "award": { "pack": 542, "untradeable": true },
+      "availableFrom": null,
+      "availableUntil": "2026-10-04T23:59:59+01:00",
+      "stat": "matches",
+      "target": 5
+    }
+  ],
+
+  "_seasonProgressComment": "Level n needs n * xpPerLevel XP. levelRewards lists one reward per level in order: coins, or a pack delivered to My Packs. Only levels 1 to rewardLevelCap are served and claimable (null serves every level). Phase 1 table (PLAN 5.5, the 30-level season): 10k coins at odd levels, packs at even levels. The test week caps rewards at L10. L30's extra 515 pick is not listed: a level pays one reward. The season reset is not built.",
+  "seasonProgress": {
+    "levelCount": 30,
+    "xpPerLevel": 2500,
+    "rewardLevelCap": 10,
+    "levelRewards": [
+      { "coins": 10000 }, { "pack": 304 }, { "coins": 10000 }, { "pack": 305 }, { "coins": 10000 },
+      { "pack": 308 }, { "coins": 10000 }, { "pack": 319 }, { "coins": 10000 }, { "pack": 404 },
+      { "coins": 10000 }, { "pack": 305 }, { "coins": 10000 }, { "pack": 308 }, { "coins": 10000 },
+      { "pack": 319 }, { "coins": 10000 }, { "pack": 400 }, { "coins": 10000 }, { "pack": 404 },
+      { "coins": 10000 }, { "pack": 308 }, { "coins": 10000 }, { "pack": 319 }, { "coins": 10000 },
+      { "pack": 400 }, { "coins": 10000 }, { "pack": 400 }, { "coins": 10000 }, { "pack": 405 }
+    ]
+  }
+}

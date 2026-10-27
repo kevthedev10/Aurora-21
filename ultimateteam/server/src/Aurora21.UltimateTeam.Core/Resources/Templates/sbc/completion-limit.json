@@ -1,0 +1,7 @@
+{
+  "dailyOnce": "1 completion per account per day.",
+  "daily": "Up to {limit} completions per account per day.",
+  "total": "Up to {limit} completions per account in total.",
+  "totalOnce": "1 completion per account in total.",
+  "unlimited": "Repeatable with no completion limit."
+}

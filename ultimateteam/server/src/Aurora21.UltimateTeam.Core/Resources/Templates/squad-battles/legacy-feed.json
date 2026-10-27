@@ -1,0 +1,11 @@
+{
+  "squads": "{{squads}}",
+  "opponents": "{{squads}}",
+  "squadBattles": "{{squads}}",
+  "opponentSquads": "{{squads}}",
+  "availableSquads": "{{squads}}",
+  "squadBattleSquads": "{{squads}}",
+  "items": "{{squads}}",
+  "refreshAvailable": true,
+  "matchesRemaining": "{{count}}"
+}

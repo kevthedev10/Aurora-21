@@ -1,0 +1,6 @@
+.group { display: grid; gap: 6px; align-content: start; }
+.groupHead { display: flex; justify-content: space-between; align-items: baseline; font: 600 var(--text-md)/1.2 var(--font-display); }
+.row { display: grid; grid-template-columns: minmax(0, 1fr) 2.4ch; align-items: center; gap: 4px 10px; font-size: var(--text-xs); color: var(--fog); }
+.value { font: 700 15px/1 var(--font-display); text-align: right; }
+.track { grid-column: 1 / -1; height: 4px; border-radius: 2px; background: var(--tier); overflow: hidden; }
+.fill { height: 100%; border-radius: 2px; }

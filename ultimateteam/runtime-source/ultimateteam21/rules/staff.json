@@ -1,0 +1,19 @@
+{
+ "_readme": [
+  "Who counts as staff, and the weekly competitions staff win no prizes in (pack-odds-2026-09 PLAN.md 5.2 and 7.2: staff are ineligible for",
+  "test-week prizes). Loaded at server start and validated strictly (an invalid file stops the server).",
+  "Staff are the verified Discord accounts the operator panel lets through maintenance (player_access.maintenance_bypass, migration 063) when",
+  "maintenanceBypassIsStaff is true, plus discordIds; a club is theirs when its persona is derived from one of those ids. Discord bypass roles",
+  "are asked of Discord at launch and not stored, so a staff member let in only by a role must be listed here or on the panel's bypass list.",
+  "prizesIneligibleIn: rivals, weekendLeague and/or squadBattles. A staff club is left out of such a competition when it settles, if the",
+  "competition ends at or before prizesIneligibleUntil (ISO 8601 UTC; null = always): it gets no prize, and its place, percentile and band",
+  "pass to the players below it. The live standings still show it. 2026-10-12T00:00:00Z covers the test week: Rivals week 2961, Weekend",
+  "League 2961 and the Squad Battles weeks ending 5 and 12 October.",
+  "Empty since 2026-09-29 (owner: staff count): staff win prizes like everyone else. List competitions here to exclude them again."
+ ],
+ "version": 1,
+ "maintenanceBypassIsStaff": true,
+ "discordIds": [],
+ "prizesIneligibleIn": [],
+ "prizesIneligibleUntil": "2026-10-12T00:00:00Z"
+}

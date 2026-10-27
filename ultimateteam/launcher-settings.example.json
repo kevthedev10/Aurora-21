@@ -1,0 +1,14 @@
+{
+  "sourcePath": "",
+  "gamePath": "",
+  "gameReadyDelaySeconds": 5,
+  "lsxMode": "auto",
+  "localSessionTest": false,
+  "tlsProbeMode": "off",
+  "blazeTlsProbe": false,
+  "trustAnchorsPath": "",
+  "advertiseHostname": false,
+  "launchViaEAApp": true,
+  "eaAppOfferId": "195853",
+  "eaAppLauncherPath": ""
+}

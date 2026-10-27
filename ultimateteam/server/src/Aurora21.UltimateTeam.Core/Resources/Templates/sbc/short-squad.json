@@ -1,0 +1,5 @@
+{
+  "id": "{{challengeId}}", "challengeId": "{{challengeId}}", "setId": "{{setId}}",
+  "success": false, "valid": false, "completed": false, "status": "INVALID",
+  "message": "{{message}}"
+}

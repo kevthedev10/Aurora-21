@@ -1,0 +1,107 @@
+{
+  "category": "consumables",
+  "stat": [
+    {
+      "type": "consumables",
+      "typeValue": "{{owned}}",
+      "contextId": 5,
+      "contextValue": 0
+    },
+    {
+      "type": "consumablesContract",
+      "typeValue": "{{contract}}",
+      "contextId": 5,
+      "contextValue": 0
+    },
+    {
+      "type": "consumablesContractPlayer",
+      "typeValue": "{{contractPlayer}}",
+      "contextId": 5,
+      "contextValue": 0
+    },
+    {
+      "type": "consumablesContractManager",
+      "typeValue": "{{contractManager}}",
+      "contextId": 5,
+      "contextValue": 0
+    },
+    {
+      "type": "consumablesFitness",
+      "typeValue": "{{fitness}}",
+      "contextId": 5,
+      "contextValue": 0
+    },
+    {
+      "type": "consumablesHealing",
+      "typeValue": "{{healing}}",
+      "contextId": 5,
+      "contextValue": 0
+    },
+    {
+      "type": "consumablesTraining",
+      "typeValue": "{{training}}",
+      "contextId": 5,
+      "contextValue": 0
+    },
+    {
+      "type": "consumablesTrainingPlayerPlayStyle",
+      "typeValue": "{{playerPlayStyle}}",
+      "contextId": 5,
+      "contextValue": 0
+    },
+    {
+      "type": "consumablesTrainingGkPlayStyle",
+      "typeValue": "{{gkPlayStyle}}",
+      "contextId": 5,
+      "contextValue": 0
+    },
+    {
+      "type": "consumablesPosition",
+      "typeValue": "{{position}}",
+      "contextId": 5,
+      "contextValue": 0
+    },
+    {
+      "type": "consumablesTrainingManagerLeagueModifier",
+      "typeValue": "{{managerLeague}}",
+      "contextId": 5,
+      "contextValue": 0
+    },
+    {
+      "type": "consumablesFormationManager",
+      "typeValue": "{{formationManager}}",
+      "contextId": 5,
+      "contextValue": 0
+    },
+    {
+      "type": "consumablesTrainingManager",
+      "typeValue": 0,
+      "contextId": 5,
+      "contextValue": 0
+    },
+    {
+      "type": "consumablesTrainingPlayer",
+      "typeValue": "{{trainingPlayer}}",
+      "contextId": 5,
+      "contextValue": 0
+    },
+    {
+      "type": "consumablesTrainingGk",
+      "typeValue": "{{trainingGk}}",
+      "contextId": 5,
+      "contextValue": 0
+    },
+    {
+      "type": "consumablesFitnessPlayer",
+      "typeValue": "{{fitnessPlayer}}",
+      "contextId": 5,
+      "contextValue": 0
+    },
+    {
+      "type": "consumablesFitnessTeam",
+      "typeValue": "{{fitnessTeam}}",
+      "contextId": 5,
+      "contextValue": 0
+    }
+  ]
+}

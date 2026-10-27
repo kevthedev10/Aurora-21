@@ -1,0 +1,20 @@
+{
+  "challengeId": "{{id}}",
+  "id": "{{id}}",
+  "setId": "{{setId}}",
+  "name": "{{name}}",
+  "description": "{{description}}",
+  "formation": "{{formation}}",
+  "priority": "{{priority}}",
+  "repeatable": false,
+  "status": "{{status}}",
+  "timesCompleted": "{{timesCompleted}}",
+  "type": "{{type}}",
+  "challengeImageId": 0,
+  "trophyId": "{{imageId}}",
+  "endTime": 0,
+  "startTime": 0,
+  "elgOperation": 0,
+  "elgReq": "{{requirements}}",
+  "awards": "{{awards}}"
+}

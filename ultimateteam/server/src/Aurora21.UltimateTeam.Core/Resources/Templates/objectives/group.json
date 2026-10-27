@@ -1,0 +1,22 @@
+{
+  "groupId": "{{id}}",
+  "id": "{{id}}",
+  "groupType": "{{groupType}}",
+  "groupState": "{{state}}",
+  "state": "{{state}}",
+  "priority": "{{priority}}",
+  "title": "{{title}}",
+  "subTitle": "{{subTitle}}",
+  "startTime": "{{start}}",
+  "endTime": "{{end}}",
+  "visibilityTime": 0,
+  "objectivesNumber": "{{objectiveCount}}",
+  "objectivesCount": "{{objectiveCount}}",
+  "objectivesCompleted": "{{completedCount}}",
+  "groupIdsToUnlock": [],
+  "subGroupType": 0,
+  "subGroupTypeAttribute": 0,
+  "awardsList": "{{awards}}",
+  "rewardOptionList": [],
+  "objectives": "{{objectives}}"
+}

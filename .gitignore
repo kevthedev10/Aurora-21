@@ -1,0 +1,127 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# Generated diagnostics and mutable club state (not the native game databases).
+*.log
+*.log.*
+*.jsonl
+*.pid
+*.sqlite3
+*.sqlite3-wal
+*.sqlite3-shm
+
+# Machine-specific preferences live in %LOCALAPPDATA%\Aurora21\UltimateTeam.
+# Keep old local copies out of commits; only *.example.json is shared.
+/ultimateteam/launcher-settings.json
+/ultimateteam/runtime-source/ultimateteam21/config.json
+
+# Local analysis state
+.analysis/
+.manus-runtime-notes.md
+work/
+outputs/
+captures/
+logs/
+local/
+node_modules/
+*.bndb
+*.dd64
+*.dmp
+*.trace
+
+# Never redistribute game or security material
+*.dll
+*.exe
+*.pdb
+*.sys
+*.key
+*.pem
+*.pfx
+*.cer
+*.crt
+*.der
+
+# Generated local trust anchors travel with their installation, not Git.
+/ultimateteam/runtime-source/local-gos2015-modulus.bin
+/ultimateteam/runtime-source/local-gs2019-modulus.bin
+
+# Ship only our three small helpers, alongside their C# source and build script.
+!/ultimateteam/Aurora21-UltimateTeam-Launcher.exe
+!/ultimateteam/Aurora21-LocalAuthBridge.exe
+!/ultimateteam/Aurora21-MathBridge.exe
+
+# The one Microsoft DLL the client pack ships: the pinned ucrtbase.dll (Windows SDK redist 10.0.26100.1742) that
+# Aurora21-MathBridge.exe loads into FIFA. Nothing else in ucrt/ is allowed.
+!/ultimateteam/client-pack/ucrt/ucrtbase.dll
+
+# Portable PostgreSQL for the club database, downloaded by the builder (checksum-pinned).
+/ultimateteam/postgres/
+
+# WPF launcher build output (UltimateTeamLauncher.csproj); the builder copies the published EXE up.
+/ultimateteam/bin/
+/ultimateteam/obj/
+/ultimateteam/standalone-launcher/obj/
+/ultimateteam/tests/*/obj/
+/archive/legacy/**/obj/
+
+# UltimateTeam runtime output (captured traffic, caches, logs, status/PID JSON) is
+# ignored unless explicitly retained below. The old diagnostic scripts are archived.
+ultimateteam/runtime/*
+
+# Keep reproducible miner scratch output local, except for the two complete
+# native player-table exports used to audit and rebuild the runtime catalog.
+!ultimateteam/runtime/mined/
+ultimateteam/runtime/mined/*
+!ultimateteam/runtime/mined/tables/
+ultimateteam/runtime/mined/tables/*
+!ultimateteam/runtime/mined/tables/cards_ng_db/
+!ultimateteam/runtime/mined/tables/fifa_ng_db/
+ultimateteam/runtime/mined/tables/cards_ng_db/*
+ultimateteam/runtime/mined/tables/fifa_ng_db/*
+!ultimateteam/runtime/mined/tables/cards_ng_db/players.json
+!ultimateteam/runtime/mined/tables/fifa_ng_db/players.json
+
+# Database dumps from the deploy stack (compose.local.yaml, or a VPS checkout).
+/ultimateteam/deploy/backups/
+# VPS panel restart requests, heartbeat and worker results.
+/ultimateteam/deploy/restart-requests/
+# Panel images copied beside the deploy stack (download-card-images.py output, third-party art; never committed).
+/ultimateteam/deploy/panel-assets/
+# Downloader retry reports stay local; the downloaded PNGs live in the checkout.
+/ultimateteam/panel-assets/**/missing.txt
+
+ultimateteam/hosts*.txt
+ultimateteam/*hosts*.ps1
+ultimateteam/*-done.txt
+ultimateteam/_evt_query.ps1
+
+# Local C# data-miner build output
+tools/fifa21-data-miner/bin/
+tools/fifa21-data-miner/obj/
+
+# Archived standalone launcher build and release output (local only)
+archive/cleanup-2026-09/standalones/launcher/Aurora21Updater/bin/
+archive/cleanup-2026-09/standalones/launcher/Aurora21Updater/obj/
+archive/cleanup-2026-09/standalones/launcher/public-release/
+archive/cleanup-2026-09/standalones/launcher/release/
+
+# Editors and operating systems
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Local leaderboard UI tool build output
+tools/fifa21-leaderboard-ui/bin/
+tools/fifa21-leaderboard-ui/obj/
+/ultimateteam/client-mod-tools/
+
+# Local FIFA 21 artwork extractor build output
+tools/fifa21-ui-art/bin/
+tools/fifa21-ui-art/obj/
+
+# Generated launcher developer handoff archive
+/Aurora21-launcher-mods-handoff-20261006.zip

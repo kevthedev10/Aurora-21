@@ -1,0 +1,98 @@
+# Deploys to the VPS when called by build-deploy.yml after the image for this commit is pushed.
+# This job refuses every event except a main push and deploys the image CI built
+# for this commit (sha-<7>). Every deploy takes a
+# predeploy dump first. Database migrations are not rolled back automatically.
+#
+# Configure a GitHub environment named "production" (Settings -> Environments) with the deployment branch rule
+# "Selected branches: main", optionally with required reviewers:
+#   secrets: VPS_SSH_KEY      private key of a deploy user on the VPS that is in the docker group
+#            VPS_KNOWN_HOSTS  the VPS host key line(s), from `ssh-keyscan -t ed25519 <host>` checked against the VPS
+#   vars:    VPS_HOST, VPS_USER, VPS_PORT (default 22), VPS_DEPLOY_DIR (default /opt/aurora21)
+# The deploy folder on the VPS must already hold the operator's .env and certificates (see ultimateteam/deploy/README.md).
+name: Deploy
+
+on:
+  workflow_call:
+
+permissions:
+  contents: read
+  packages: read
+
+jobs:
+  deploy:
+    if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
+    runs-on: ubuntu-24.04
+    environment: production
+    concurrency:
+      group: deploy-production
+      cancel-in-progress: false
+    timeout-minutes: 30
+    env:
+      VPS_HOST: ${{ vars.VPS_HOST }}
+      VPS_USER: ${{ vars.VPS_USER }}
+      VPS_PORT: ${{ vars.VPS_PORT || '22' }}
+      DEPLOY_DIR: ${{ vars.VPS_DEPLOY_DIR || '/opt/aurora21' }}
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Resolve and check the image
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          tag="sha-${GITHUB_SHA::7}"
+          [[ "$tag" =~ ^[A-Za-z0-9._-]{1,128}$ ]] || { echo "::error::invalid image tag"; exit 1; }
+          [[ "$VPS_HOST" =~ ^[A-Za-z0-9.:-]+$ && "$VPS_USER" =~ ^[a-z_][a-z0-9_-]*$ && "$VPS_PORT" =~ ^[0-9]+$ ]] \
+            || { echo "::error::set VPS_HOST, VPS_USER (and optionally VPS_PORT) in the production environment"; exit 1; }
+          [[ "$DEPLOY_DIR" =~ ^/[A-Za-z0-9._/-]+$ ]] || { echo "::error::VPS_DEPLOY_DIR must be an absolute path"; exit 1; }
+          image="ghcr.io/${GITHUB_REPOSITORY_OWNER,,}/aurora21-ultimateteam-server"
+          echo "$GH_TOKEN" | docker login ghcr.io -u "$GITHUB_ACTOR" --password-stdin
+          docker buildx imagetools inspect "$image:$tag" > /dev/null \
+            || { echo "::error::$image:$tag does not exist"; exit 1; }
+          docker logout ghcr.io
+          echo "IMAGE=$image" >> "$GITHUB_ENV"
+          echo "IMAGE_TAG=$tag" >> "$GITHUB_ENV"
+          echo "Deploying $image:$tag to $VPS_USER@$VPS_HOST:$DEPLOY_DIR" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Configure SSH
+        env:
+          SSH_KEY: ${{ secrets.VPS_SSH_KEY }}
+          KNOWN_HOSTS: ${{ secrets.VPS_KNOWN_HOSTS }}
+        run: |
+          [[ -n "$SSH_KEY" && -n "$KNOWN_HOSTS" ]] || { echo "::error::set VPS_SSH_KEY and VPS_KNOWN_HOSTS"; exit 1; }
+          install -m 700 -d ~/.ssh
+          printf '%s\n' "$SSH_KEY" > ~/.ssh/deploy_key && chmod 600 ~/.ssh/deploy_key
+          printf '%s\n' "$KNOWN_HOSTS" > ~/.ssh/known_hosts
+          cat > ~/.ssh/config <<EOF
+          Host vps
+            HostName $VPS_HOST
+            User $VPS_USER
+            Port $VPS_PORT
+            IdentityFile ~/.ssh/deploy_key
+            IdentitiesOnly yes
+            StrictHostKeyChecking yes
+            ServerAliveInterval 30
+          EOF
+
+      - name: Copy the deploy files
+        run: |
+          # shellcheck disable=SC2029 # expands here on purpose; DEPLOY_DIR was validated above (no quotes)
+          ssh vps "mkdir -p '$DEPLOY_DIR'"
+          cd ultimateteam/deploy
+          scp -q compose.yaml pg-backup.sh restart-worker.sh remote-deploy.sh Caddyfile .env.example "vps:$DEPLOY_DIR/"
+          # Prometheus and Grafana configuration (no secrets). Overwritten in place, because running containers bind-mount
+          # these paths; a dashboard deleted here must also be deleted on the VPS.
+          scp -q -r monitoring "vps:$DEPLOY_DIR/"
+
+      # The VPS pulls with this job's short-lived token and logs out afterwards; no registry credential stays there.
+      - name: Deploy
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # shellcheck disable=SC2029 # expands here on purpose; the image, tag and folder were validated above
+          echo "$GH_TOKEN" | ssh vps "docker login ghcr.io -u '$GITHUB_ACTOR' --password-stdin"
+          # shellcheck disable=SC2029
+          ssh vps "IMAGE='$IMAGE' IMAGE_TAG='$IMAGE_TAG' bash '$DEPLOY_DIR/remote-deploy.sh'"
+
+      - name: Log the VPS out of GHCR
+        if: ${{ always() }}
+        run: ssh vps "docker logout ghcr.io" || true

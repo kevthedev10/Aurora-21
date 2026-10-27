@@ -1,0 +1,9 @@
+.chips { display: inline-flex; flex-wrap: wrap; gap: 6px; }
+.chip {
+  display: inline-flex; align-items: center; gap: 6px; min-height: 30px; padding: 0 12px;
+  border: 1px solid var(--line); border-radius: 999px; background: transparent; color: var(--fog);
+  font: 500 var(--text-xs)/1 var(--font); cursor: pointer;
+}
+.chip:hover { color: var(--chalk); border-color: var(--fog); }
+.chip[aria-pressed='true'] { background: var(--chalk); border-color: var(--chalk); color: var(--night); }
+.count { font-family: var(--font-display); font-size: 15px; font-weight: 600; }

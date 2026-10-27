@@ -1,0 +1,30 @@
+{
+  "_comment": "Standard card and TOTW slots select saved promo buckets and then an eligible member. Gold Rare and TOTW buckets initially use rating ranges; other standard categories start with one uniform bucket each. Since pack odds v3 (migration 117) every pack and pick group carries its own complete odds table (category_chances); there are no fallback chances. iconChance and picks.informChance are only the starting values the panel fills into a new pack or pick. TOTW 1–3 rewards and Champions red picks use fixed named pools, while Draft and Match Packs use their own slot rules.",
+
+  "_redRewardComment": "The red FUT Champions copy of a fixed TOTW 1–3 reward card uses resource id = asset id + revision x 2^24. Try the copy made from that week's card first, then the player's all-time copy only when its rating matches.",
+  "redRewardRevisions": [22, 20],
+
+  "iconChance": 0.0005,
+
+  "_bandsComment": "goldRareBands records the original seven Gold Rare ranges and weights. Gold Rare and TOTW draws read the saved card groups.",
+  "goldRareBands": [
+    { "min": 75, "max": 79, "weight": 60.4 },
+    { "min": 80, "max": 81, "weight": 28 },
+    { "min": 82, "max": 83, "weight": 8.7 },
+    { "min": 84, "max": 85, "weight": 2.4 },
+    { "min": 86, "max": 87, "weight": 0.35 },
+    { "min": 88, "max": 89, "weight": 0.11 },
+    { "min": 90, "max": 99, "weight": 0.04 }
+  ],
+
+  "_picksComment": "Player picks use their own odds table and saved TOTW card groups; ordinary choices use saved Gold Rare groups filtered by minimum rating. Never offer two versions of one player.",
+  "picks": {
+    "informChance": 0.03
+  },
+
+  "_nonPlayerDropsComment": "Every item a pack hands out besides players is drawn one way: a pool first, by its poolWeights entry among the pools the slot allows that have a candidate (mixed pack consumable slots allow chemistry_style, position_modifier and manager_league; cosmetic slots kit, ball, badge and stadium; staff slots manager), then an item from the pool, a rare one at rareWeight of a common one's chance. Within one mixed pack a slot kind does not repeat a pool until every pool it allows has dropped (a chemistry style, a position modifier and a league card before a second style). Rarity only sets how often an item drops and how it looks: a pack's rare slots are its rare players. Basic and GK Basic never drop (a player without a style card plays as them). A pool weight of 0 stops that pool dropping.",
+  "nonPlayerDrops": {
+    "rareWeight": 0.5,
+    "poolWeights": { "chemistry_style": 1, "position_modifier": 1, "manager_league": 1, "kit": 1, "ball": 1, "badge": 1, "stadium": 1, "manager": 1 }
+  }
+}

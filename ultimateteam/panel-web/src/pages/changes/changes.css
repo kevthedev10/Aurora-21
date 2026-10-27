@@ -1,0 +1,39 @@
+.changes-page-header > div:first-child { max-width: none; flex: 1; }
+.changes-pending, .changes-history { display: grid; gap: 24px; min-width: 0; }
+.changes-pending > p, .changes-history > p, .changes-page .ready { margin: 0; }
+.changes-page section + section { margin-top: 0; }
+.changes-page .changeset-head { margin-bottom: 0; line-height: 1.7; }
+.changes-page .change-tools { display: grid; grid-template-columns: minmax(180px, 1fr) minmax(240px, 2fr) auto; align-items: end; gap: 20px; margin-bottom: 16px; }
+.changes-page .change-tools input, .changes-page .change-tools select { min-height: 42px; }
+.changes-page .changes-filters p { margin-bottom: 0; }
+.changes-publish-fields { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); align-items: start; gap: 24px; }
+.changes-publish-fields > :last-child { grid-column: 1/-1; }
+.changes-publish-action { min-width: 230px; min-height: 46px; overflow: hidden; }
+.changes-publish-state { display: inline-flex; align-items: center; justify-content: center; gap: 12px; }
+.changes-publish-symbol { display: inline-flex; align-items: center; justify-content: center; width: 24px; height: 24px; border-radius: 50%; background: rgb(255 255 255 / 12%); font-size: 18px; }
+.changes-publish-symbol > span { display: inline-block; }
+.changes-publish-action[data-state="ready"] { border-color: var(--pitch); }
+.changes-publish-action[data-state="error"] { border-color: var(--red-card); }
+.changes-page .change-list { gap: 16px; }
+.changes-page .change-list > li { padding: 20px; min-width: 0; }
+.changes-page .change-head { gap: 12px; margin-bottom: 16px; }
+.changes-page .change-head > b { flex: 1; min-width: 140px; line-height: 1.6; }
+.changes-page .change-head > button:first-of-type { margin-left: 0; }
+.changes-page .diff { gap: 0; }
+.changes-page .diff-row, .changes-page .diff-labels { display: grid; grid-template-columns: minmax(100px, 1fr) minmax(0, 2fr) 20px minmax(0, 2fr); gap: 16px; align-items: start; }
+.changes-page .diff-labels { padding: 0 0 10px; font-size: 11px; color: var(--dim); }
+.changes-page .diff-row { padding: 12px 0; border-top: 1px solid var(--line); font-size: 13px; line-height: 1.65; }
+.changes-page .diff-key { min-width: 0; overflow-wrap: anywhere; }
+.changes-page .diff-before, .changes-page .diff-after { margin: 0; font: inherit; white-space: pre-wrap; overflow-wrap: anywhere; word-break: normal; max-height: 240px; overflow: auto; text-decoration: none; }
+.changes-page .diff-after { color: var(--chalk); }
+.changes-page .change-removal pre, .changes-page .changes-recovery { white-space: pre-wrap; overflow-wrap: anywhere; max-height: 300px; overflow: auto; padding: 16px; background: var(--night); border: 1px solid var(--line); border-radius: 8px; }
+.changes-page .change-removal summary { cursor: pointer; color: var(--fog); font-size: 13px; }
+.changes-page .changes-conflicts .diff-row { grid-template-columns: minmax(120px, 1fr) minmax(0, 3fr); }
+.changes-page .changes-conflicts .diff-row > :last-child { white-space: pre-wrap; overflow-wrap: anywhere; max-height: 240px; overflow: auto; }
+@media(max-width:800px) {
+  .changes-page .change-tools, .changes-publish-fields { grid-template-columns: minmax(0, 1fr); }
+  .changes-page .diff-labels { display: none; }
+  .changes-page .diff-row { grid-template-columns: minmax(0, 1fr) 20px minmax(0, 1fr); gap: 10px; }
+  .changes-page .diff-key { grid-column: 1/-1; font-weight: 600; }
+  .changes-page .change-list > li { padding: 14px; }
+}

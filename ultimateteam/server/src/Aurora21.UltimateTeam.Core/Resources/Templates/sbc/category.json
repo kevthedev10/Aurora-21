@@ -1,0 +1,6 @@
+{
+  "categoryId": "{{id}}",
+  "priority": "{{id}}",
+  "name": "{{name}}",
+  "sets": "{{sets}}"
+}

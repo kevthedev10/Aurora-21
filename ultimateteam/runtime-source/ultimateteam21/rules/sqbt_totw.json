@@ -1,0 +1,5152 @@
+{
+ "version": 2,
+ "note": "FIFA 21 Team of the Week squads for Squad Battles. 'current' is the one TOTW that can be played; every week can be browsed in the in-game TOTW archive. Starters are EA's TOTW XI, checked against EA's TOTW graphics. Formation: EA picked every FIFA 21 TOTW to a 3-4-3 (31 weeks exactly 3 DEF / 4 MID / 3 ATT by EA's card positions; weeks 3, 7, 9 and 31 have one player across a line). Each starter's 'slot' is his best fit in that 3-4-3. Subs are in EA's order. resourceIds are this server's catalogue ids.",
+ "current": 35,
+ "weeks": [
+  {
+   "week": 1,
+   "released": "2020-09-30",
+   "formation": "f343",
+   "xiSource": "https://images.mein-mmo.de/medien/2020/09/fifa-21-totw-1.jpeg",
+   "starters": [
+    {
+     "resourceId": 50546871,
+     "name": "Benítez",
+     "rating": 84,
+     "position": "GK",
+     "slot": "GK"
+    },
+    {
+     "resourceId": 50561206,
+     "name": "Upamecano",
+     "rating": 82,
+     "position": "CB",
+     "slot": "CB"
+    },
+    {
+     "resourceId": 50503439,
+     "name": "José Fonte",
+     "rating": 82,
+     "position": "CB",
+     "slot": "RCB"
+    },
+    {
+     "resourceId": 50552218,
+     "name": "Bednarek",
+     "rating": 81,
+     "position": "CB",
+     "slot": "LCB"
+    },
+    {
+     "resourceId": 50331689,
+     "name": "Iniesta",
+     "rating": 84,
+     "position": "CM",
+     "slot": "LM"
+    },
+    {
+     "resourceId": 50543846,
+     "name": "Bruno Fernandes",
+     "rating": 88,
+     "position": "CAM",
+     "slot": "LCM"
+    },
+    {
+     "resourceId": 50474724,
+     "name": "Gómez",
+     "rating": 87,
+     "position": "CAM",
+     "slot": "RCM"
+    },
+    {
+     "resourceId": 50553640,
+     "name": "Lozano",
+     "rating": 83,
+     "position": "RM",
+     "slot": "RM"
+    },
+    {
+     "resourceId": 50540478,
+     "name": "Vardy",
+     "rating": 87,
+     "position": "ST",
+     "slot": "ST"
+    },
+    {
+     "resourceId": 67285444,
+     "name": "Suárez",
+     "rating": 88,
+     "position": "ST",
+     "slot": "RW"
+    },
+    {
+     "resourceId": 50531099,
+     "name": "Ben Yedder",
+     "rating": 86,
+     "position": "ST",
+     "slot": "LW"
+    }
+   ],
+   "subs": [
+    {
+     "resourceId": 16966269,
+     "name": "Caputo",
+     "rating": 82
+    },
+    {
+     "resourceId": 17001587,
+     "name": "Bowen",
+     "rating": 81
+    },
+    {
+     "resourceId": 17009360,
+     "name": "Uduokhai",
+     "rating": 81
+    },
+    {
+     "resourceId": 17030220,
+     "name": "Ansu Fati",
+     "rating": 81
+    },
+    {
+     "resourceId": 16939496,
+     "name": "Mierzejewski",
+     "rating": 81
+    },
+    {
+     "resourceId": 16982647,
+     "name": "Füllkrug",
+     "rating": 81
+    },
+    {
+     "resourceId": 17012640,
+     "name": "Samassékou",
+     "rating": 81
+    },
+    {
+     "resourceId": 17028508,
+     "name": "Kastenmeier",
+     "rating": 78
+    },
+    {
+     "resourceId": 16979892,
+     "name": "Taggart",
+     "rating": 78
+    },
+    {
+     "resourceId": 17006077,
+     "name": "Iljutcenko",
+     "rating": 78
+    },
+    {
+     "resourceId": 16932887,
+     "name": "Trałka",
+     "rating": 76
+    },
+    {
+     "resourceId": 16925581,
+     "name": "Cristea",
+     "rating": 75
+    }
+   ]
+  },
+  {
+   "week": 2,
+   "released": "2020-10-07",
+   "formation": "f343",
+   "xiSource": "https://www.thexboxhub.com/wp-content/uploads/2020/10/FIFA21TOTW.jpg",
+   "starters": [
+    {
+     "resourceId": 67300983,
+     "name": "Courtois",
+     "rating": 90,
+     "position": "GK",
+     "slot": "GK"
+    },
+    {
+     "resourceId": 67338848,
+     "name": "Chilwell",
+     "rating": 84,
+     "position": "LB",
+     "slot": "LCB"
+    },
+    {
+     "resourceId": 67319529,
+     "name": "Halstenberg",
+     "rating": 84,
+     "position": "CB",
+     "slot": "CB"
+    },
+    {
+     "resourceId": 67341520,
+     "name": "Hernández",
+     "rating": 83,
+     "position": "LB",
+     "slot": "RCB"
+    },
+    {
+     "resourceId": 50548036,
+     "name": "Saint-Maximin",
+     "rating": 83,
+     "position": "LM",
+     "slot": "LM"
+    },
+    {
+     "resourceId": 50538165,
+     "name": "Grealish",
+     "rating": 83,
+     "position": "LM",
+     "slot": "LCM"
+    },
+    {
+     "resourceId": 50562415,
+     "name": "Renato Sanches",
+     "rating": 82,
+     "position": "CM",
+     "slot": "RCM"
+    },
+    {
+     "resourceId": 50376834,
+     "name": "Joaquín",
+     "rating": 83,
+     "position": "RM",
+     "slot": "RM"
+    },
+    {
+     "resourceId": 84125165,
+     "name": "Haaland",
+     "rating": 86,
+     "position": "ST",
+     "slot": "ST"
+    },
+    {
+     "resourceId": 67297409,
+     "name": "Lewandowski",
+     "rating": 92,
+     "position": "ST",
+     "slot": "RW"
+    },
+    {
+     "resourceId": 50533774,
+     "name": "Kane",
+     "rating": 89,
+     "position": "ST",
+     "slot": "LW"
+    }
+   ],
+   "subs": [
+    {
+     "resourceId": 16975926,
+     "name": "Rodríguez",
+     "rating": 84
+    },
+    {
+     "resourceId": 16954849,
+     "name": "Ángel",
+     "rating": 82
+    },
+    {
+     "resourceId": 16998390,
+     "name": "Oršić",
+     "rating": 81
+    },
+    {
+     "resourceId": 16971549,
+     "name": "Gikiewicz",
+     "rating": 81
+    },
+    {
+     "resourceId": 17014351,
+     "name": "Davidson",
+     "rating": 81
+    },
+    {
+     "resourceId": 16998913,
+     "name": "Watkins",
+     "rating": 81
+    },
+    {
+     "resourceId": 16994412,
+     "name": "Palomino",
+     "rating": 81
+    },
+    {
+     "resourceId": 16983111,
+     "name": "Ring",
+     "rating": 80
+    },
+    {
+     "resourceId": 17016241,
+     "name": "Niane",
+     "rating": 78
+    },
+    {
+     "resourceId": 16997235,
+     "name": "Harness",
+     "rating": 75
+    },
+    {
+     "resourceId": 16966293,
+     "name": "Sararer",
+     "rating": 74
+    },
+    {
+     "resourceId": 17020379,
+     "name": "Grant",
+     "rating": 70
+    }
+   ]
+  },
+  {
+   "week": 3,
+   "released": "2020-10-14",
+   "formation": "f343",
+   "xiSource": "https://www.thexboxhub.com/wp-content/uploads/2020/10/fifa21totw3.jpg",
+   "starters": [
+    {
+     "resourceId": 16962338,
+     "name": "Gulácsi",
+     "rating": 86,
+     "position": "GK",
+     "slot": "GK"
+    },
+    {
+     "resourceId": 16979138,
+     "name": "Hinteregger",
+     "rating": 83,
+     "position": "CB",
+     "slot": "CB"
+    },
+    {
+     "resourceId": 16965593,
+     "name": "Walker",
+     "rating": 86,
+     "position": "CB",
+     "slot": "RCB"
+    },
+    {
+     "resourceId": 16933078,
+     "name": "Sergio Ramos",
+     "rating": 90,
+     "position": "CB",
+     "slot": "LCB"
+    },
+    {
+     "resourceId": 16997005,
+     "name": "Traoré",
+     "rating": 82,
+     "position": "RB",
+     "slot": "LM"
+    },
+    {
+     "resourceId": 33764421,
+     "name": "Partey",
+     "rating": 86,
+     "position": "CM",
+     "slot": "RCM"
+    },
+    {
+     "resourceId": 16967676,
+     "name": "Eriksen",
+     "rating": 86,
+     "position": "CAM",
+     "slot": "LCM"
+    },
+    {
+     "resourceId": 16999881,
+     "name": "Ødegaard",
+     "rating": 85,
+     "position": "RM",
+     "slot": "RM"
+    },
+    {
+     "resourceId": 17001064,
+     "name": "Milinković-Savić",
+     "rating": 86,
+     "position": "CF",
+     "slot": "LW"
+    },
+    {
+     "resourceId": 16979158,
+     "name": "Roberto Firmino",
+     "rating": 88,
+     "position": "ST",
+     "slot": "ST"
+    },
+    {
+     "resourceId": 16970381,
+     "name": "Corona",
+     "rating": 86,
+     "position": "RW",
+     "slot": "RW"
+    }
+   ],
+   "subs": [
+    {
+     "resourceId": 17018311,
+     "name": "Vlašić",
+     "rating": 83
+    },
+    {
+     "resourceId": 16955725,
+     "name": "Giroud",
+     "rating": 82
+    },
+    {
+     "resourceId": 16989283,
+     "name": "Vargas",
+     "rating": 82
+    },
+    {
+     "resourceId": 16980515,
+     "name": "Carrillo",
+     "rating": 82
+    },
+    {
+     "resourceId": 17014455,
+     "name": "Bardhi",
+     "rating": 82
+    },
+    {
+     "resourceId": 16961700,
+     "name": "Sigurðsson",
+     "rating": 82
+    },
+    {
+     "resourceId": 16985381,
+     "name": "Djimsiti",
+     "rating": 81
+    },
+    {
+     "resourceId": 16955138,
+     "name": "Grosicki",
+     "rating": 80
+    },
+    {
+     "resourceId": 16990836,
+     "name": "Mora",
+     "rating": 79
+    },
+    {
+     "resourceId": 16989104,
+     "name": "Willsch",
+     "rating": 75
+    },
+    {
+     "resourceId": 16989899,
+     "name": "Matt",
+     "rating": 69
+    },
+    {
+     "resourceId": 17028477,
+     "name": "Saunders",
+     "rating": 64
+    }
+   ]
+  },
+  {
+   "week": 4,
+   "released": "2020-10-21",
+   "formation": "f343",
+   "xiSource": "https://www.thexboxhub.com/wp-content/uploads/2020/10/fifa21totw4.jpg",
+   "starters": [
+    {
+     "resourceId": 67319121,
+     "name": "Ederson",
+     "rating": 89,
+     "position": "GK",
+     "slot": "GK"
+    },
+    {
+     "resourceId": 67328545,
+     "name": "Amavi",
+     "rating": 82,
+     "position": "LB",
+     "slot": "LCB"
+    },
+    {
+     "resourceId": 67302147,
+     "name": "Delaney",
+     "rating": 84,
+     "position": "CB",
+     "slot": "CB"
+    },
+    {
+     "resourceId": 117644063,
+     "name": "Florenzi",
+     "rating": 84,
+     "position": "RB",
+     "slot": "RCB"
+    },
+    {
+     "resourceId": 50556733,
+     "name": "Bamba",
+     "rating": 82,
+     "position": "LM",
+     "slot": "LM"
+    },
+    {
+     "resourceId": 50521161,
+     "name": "Parejo",
+     "rating": 86,
+     "position": "CM",
+     "slot": "RM"
+    },
+    {
+     "resourceId": 67298460,
+     "name": "Müller",
+     "rating": 87,
+     "position": "CAM",
+     "slot": "LCM"
+    },
+    {
+     "resourceId": 67353124,
+     "name": "Dani Olmo",
+     "rating": 82,
+     "position": "CAM",
+     "slot": "RCM"
+    },
+    {
+     "resourceId": 50534204,
+     "name": "Depay",
+     "rating": 86,
+     "position": "CF",
+     "slot": "RW"
+    },
+    {
+     "resourceId": 100875484,
+     "name": "Werner",
+     "rating": 86,
+     "position": "ST",
+     "slot": "ST"
+    },
+    {
+     "resourceId": 67340541,
+     "name": "Rashford",
+     "rating": 86,
+     "position": "ST",
+     "slot": "LW"
+    }
+   ],
+   "subs": [
+    {
+     "resourceId": 17007358,
+     "name": "Oyarzabal",
+     "rating": 86
+    },
+    {
+     "resourceId": 16818452,
+     "name": "Ibrahimović",
+     "rating": 85
+    },
+    {
+     "resourceId": 33748641,
+     "name": "El Arabi",
+     "rating": 82
+    },
+    {
+     "resourceId": 17009509,
+     "name": "Osimhen",
+     "rating": 82
+    },
+    {
+     "resourceId": 17011894,
+     "name": "Mæhle",
+     "rating": 81
+    },
+    {
+     "resourceId": 33799587,
+     "name": "Kudus",
+     "rating": 81
+    },
+    {
+     "resourceId": 17001219,
+     "name": "Sergio Herrera",
+     "rating": 81
+    },
+    {
+     "resourceId": 16976796,
+     "name": "Goldson",
+     "rating": 79
+    },
+    {
+     "resourceId": 16981709,
+     "name": "Holzhauser",
+     "rating": 78
+    },
+    {
+     "resourceId": 17006433,
+     "name": "Yeboah",
+     "rating": 76
+    },
+    {
+     "resourceId": 16956781,
+     "name": "Gavranović",
+     "rating": 76
+    },
+    {
+     "resourceId": 17016885,
+     "name": "Levi",
+     "rating": 76
+    }
+   ]
+  },
+  {
+   "week": 5,
+   "released": "2020-10-28",
+   "formation": "f343",
+   "xiSource": "https://www.thexboxhub.com/wp-content/uploads/2020/10/fifa21totw5.jpg",
+   "starters": [
+    {
+     "resourceId": 50531130,
+     "name": "Lopes",
+     "rating": 85,
+     "position": "GK",
+     "slot": "GK"
+    },
+    {
+     "resourceId": 67318753,
+     "name": "Guerreiro",
+     "rating": 86,
+     "position": "LB",
+     "slot": "LCB"
+    },
+    {
+     "resourceId": 67333964,
+     "name": "Gomez",
+     "rating": 85,
+     "position": "CB",
+     "slot": "CB"
+    },
+    {
+     "resourceId": 50543861,
+     "name": "Ricardo Esgaio",
+     "rating": 82,
+     "position": "RB",
+     "slot": "RCB"
+    },
+    {
+     "resourceId": 67307570,
+     "name": "Luis Alberto",
+     "rating": 86,
+     "position": "CM",
+     "slot": "RCM"
+    },
+    {
+     "resourceId": 67321486,
+     "name": "Kimmich",
+     "rating": 89,
+     "position": "CDM",
+     "slot": "LCM"
+    },
+    {
+     "resourceId": 50500190,
+     "name": "David Silva",
+     "rating": 87,
+     "position": "CM",
+     "slot": "RM"
+    },
+    {
+     "resourceId": 67347917,
+     "name": "Valverde",
+     "rating": 85,
+     "position": "CM",
+     "slot": "LM"
+    },
+    {
+     "resourceId": 50527507,
+     "name": "Ings",
+     "rating": 83,
+     "position": "ST",
+     "slot": "ST"
+    },
+    {
+     "resourceId": 50530365,
+     "name": "Zaha",
+     "rating": 85,
+     "position": "ST",
+     "slot": "RW"
+    },
+    {
+     "resourceId": 50540244,
+     "name": "Belotti",
+     "rating": 83,
+     "position": "ST",
+     "slot": "LW"
+    }
+   ],
+   "subs": [
+    {
+     "resourceId": 16965177,
+     "name": "Paulinho",
+     "rating": 85
+    },
+    {
+     "resourceId": 16976470,
+     "name": "João Pedro",
+     "rating": 82
+    },
+    {
+     "resourceId": 17017456,
+     "name": "Nsame",
+     "rating": 82
+    },
+    {
+     "resourceId": 16983727,
+     "name": "Arnold",
+     "rating": 82
+    },
+    {
+     "resourceId": 16977202,
+     "name": "Arbilla",
+     "rating": 81
+    },
+    {
+     "resourceId": 16992718,
+     "name": "Drągowski",
+     "rating": 81
+    },
+    {
+     "resourceId": 16930264,
+     "name": "Eikrem",
+     "rating": 81
+    },
+    {
+     "resourceId": 17023458,
+     "name": "Dia",
+     "rating": 79
+    },
+    {
+     "resourceId": 16983750,
+     "name": "Bamford",
+     "rating": 78
+    },
+    {
+     "resourceId": 17001283,
+     "name": "Tverskov",
+     "rating": 77
+    },
+    {
+     "resourceId": 17003711,
+     "name": "Sergio Santos",
+     "rating": 76
+    },
+    {
+     "resourceId": 17023944,
+     "name": "Traoré",
+     "rating": 76
+    }
+   ]
+  },
+  {
+   "week": 6,
+   "released": "2020-11-04",
+   "formation": "f343",
+   "xiSource": "https://www.thexboxhub.com/wp-content/uploads/2020/11/fifa21totw6.jpg",
+   "starters": [
+    {
+     "resourceId": 50522589,
+     "name": "Hrádecký",
+     "rating": 85,
+     "position": "GK",
+     "slot": "GK"
+    },
+    {
+     "resourceId": 84075961,
+     "name": "Smalling",
+     "rating": 82,
+     "position": "CB",
+     "slot": "CB"
+    },
+    {
+     "resourceId": 67287467,
+     "name": "Hummels",
+     "rating": 87,
+     "position": "CB",
+     "slot": "RCB"
+    },
+    {
+     "resourceId": 50564228,
+     "name": "Gabriel",
+     "rating": 82,
+     "position": "CB",
+     "slot": "LCB"
+    },
+    {
+     "resourceId": 50531963,
+     "name": "Cristian Tello",
+     "rating": 82,
+     "position": "LM",
+     "slot": "LM"
+    },
+    {
+     "resourceId": 50571891,
+     "name": "Matheus Cunha",
+     "rating": 82,
+     "position": "LM",
+     "slot": "LCM"
+    },
+    {
+     "resourceId": 67314977,
+     "name": "Gnabry",
+     "rating": 86,
+     "position": "LM",
+     "slot": "RM"
+    },
+    {
+     "resourceId": 50537217,
+     "name": "Ward-Prowse",
+     "rating": 82,
+     "position": "CM",
+     "slot": "RCM"
+    },
+    {
+     "resourceId": 117682956,
+     "name": "João Félix",
+     "rating": 84,
+     "position": "ST",
+     "slot": "ST"
+    },
+    {
+     "resourceId": 67274017,
+     "name": "Benzema",
+     "rating": 90,
+     "position": "CF",
+     "slot": "LW"
+    },
+    {
+     "resourceId": 100871966,
+     "name": "Ziyech",
+     "rating": 86,
+     "position": "RW",
+     "slot": "RW"
+    }
+   ],
+   "subs": [
+    {
+     "resourceId": 16987176,
+     "name": "Pacheco",
+     "rating": 84
+    },
+    {
+     "resourceId": 16977826,
+     "name": "Volland",
+     "rating": 84
+    },
+    {
+     "resourceId": 16974194,
+     "name": "Wilson",
+     "rating": 82
+    },
+    {
+     "resourceId": 16947949,
+     "name": "Gervinho",
+     "rating": 82
+    },
+    {
+     "resourceId": 17007236,
+     "name": "Lees-Melou",
+     "rating": 82
+    },
+    {
+     "resourceId": 17017918,
+     "name": "Yaremchuk",
+     "rating": 81
+    },
+    {
+     "resourceId": 33734221,
+     "name": "Da Silva",
+     "rating": 81
+    },
+    {
+     "resourceId": 16977662,
+     "name": "Camilo",
+     "rating": 79
+    },
+    {
+     "resourceId": 16976629,
+     "name": "Kempe",
+     "rating": 78
+    },
+    {
+     "resourceId": 16998336,
+     "name": "Vloet",
+     "rating": 75
+    },
+    {
+     "resourceId": 17014928,
+     "name": "Castellanos",
+     "rating": 75
+    },
+    {
+     "resourceId": 17024902,
+     "name": "Cho Gue Sung",
+     "rating": 66
+    }
+   ]
+  },
+  {
+   "week": 7,
+   "released": "2020-11-11",
+   "formation": "f343",
+   "xiSource": "https://www.thexboxhub.com/wp-content/uploads/2020/11/fifa21totw7.jpg",
+   "starters": [
+    {
+     "resourceId": 50524632,
+     "name": "Casteels",
+     "rating": 85,
+     "position": "GK",
+     "slot": "GK"
+    },
+    {
+     "resourceId": 67346542,
+     "name": "Konaté",
+     "rating": 82,
+     "position": "CB",
+     "slot": "CB"
+    },
+    {
+     "resourceId": 117604752,
+     "name": "Thiago Silva",
+     "rating": 86,
+     "position": "CB",
+     "slot": "LCB"
+    },
+    {
+     "resourceId": 67308428,
+     "name": "Sergi Roberto",
+     "rating": 85,
+     "position": "RB",
+     "slot": "LM"
+    },
+    {
+     "resourceId": 50527127,
+     "name": "Tavernier",
+     "rating": 81,
+     "position": "RB",
+     "slot": "RCB"
+    },
+    {
+     "resourceId": 50565801,
+     "name": "Carlos Soler",
+     "rating": 82,
+     "position": "CM",
+     "slot": "RCM"
+    },
+    {
+     "resourceId": 84098278,
+     "name": "Bruno Fernandes",
+     "rating": 89,
+     "position": "CAM",
+     "slot": "LCM"
+    },
+    {
+     "resourceId": 67330856,
+     "name": "Lozano",
+     "rating": 85,
+     "position": "RM",
+     "slot": "RM"
+    },
+    {
+     "resourceId": 84112241,
+     "name": "Marcos Llorente",
+     "rating": 84,
+     "position": "CF",
+     "slot": "LW"
+    },
+    {
+     "resourceId": 67266887,
+     "name": "Messi",
+     "rating": 94,
+     "position": "CF",
+     "slot": "RW"
+    },
+    {
+     "resourceId": 67330561,
+     "name": "Watkins",
+     "rating": 84,
+     "position": "ST",
+     "slot": "ST"
+    }
+   ],
+   "subs": [
+    {
+     "resourceId": 16942051,
+     "name": "Fabiański",
+     "rating": 84
+    },
+    {
+     "resourceId": 16960790,
+     "name": "Kruse",
+     "rating": 84
+    },
+    {
+     "resourceId": 16970099,
+     "name": "Mkhitaryan",
+     "rating": 83
+    },
+    {
+     "resourceId": 17000843,
+     "name": "Al Soma",
+     "rating": 81
+    },
+    {
+     "resourceId": 16962089,
+     "name": "Traoré",
+     "rating": 81
+    },
+    {
+     "resourceId": 16980578,
+     "name": "Elyounoussi",
+     "rating": 81
+    },
+    {
+     "resourceId": 16992569,
+     "name": "Alario",
+     "rating": 81
+    },
+    {
+     "resourceId": 33799982,
+     "name": "Gassama",
+     "rating": 76
+    },
+    {
+     "resourceId": 16976753,
+     "name": "Cuffaut",
+     "rating": 76
+    },
+    {
+     "resourceId": 17024013,
+     "name": "Nishizawa",
+     "rating": 75
+    },
+    {
+     "resourceId": 17031497,
+     "name": "Selmani",
+     "rating": 74
+    },
+    {
+     "resourceId": 17021017,
+     "name": "Dressel",
+     "rating": 73
+    }
+   ]
+  },
+  {
+   "week": 8,
+   "released": "2020-11-18",
+   "formation": "f343",
+   "xiSource": "https://www.thexboxhub.com/wp-content/uploads/2020/11/fifa21totw8.jpg",
+   "starters": [
+    {
+     "resourceId": 33732115,
+     "name": "Sommer",
+     "rating": 87,
+     "position": "GK",
+     "slot": "GK"
+    },
+    {
+     "resourceId": 16981830,
+     "name": "Mário Rui",
+     "rating": 82,
+     "position": "LB",
+     "slot": "LCB"
+    },
+    {
+     "resourceId": 16997398,
+     "name": "Denayer",
+     "rating": 82,
+     "position": "CB",
+     "slot": "CB"
+    },
+    {
+     "resourceId": 17010312,
+     "name": "Dumfries",
+     "rating": 82,
+     "position": "RB",
+     "slot": "RCB"
+    },
+    {
+     "resourceId": 50513520,
+     "name": "Vidal",
+     "rating": 85,
+     "position": "CM",
+     "slot": "RCM"
+    },
+    {
+     "resourceId": 33770346,
+     "name": "Kanté",
+     "rating": 89,
+     "position": "CDM",
+     "slot": "LCM"
+    },
+    {
+     "resourceId": 33764090,
+     "name": "Goretzka",
+     "rating": 86,
+     "position": "CM",
+     "slot": "LM"
+    },
+    {
+     "resourceId": 33789644,
+     "name": "Hakimi",
+     "rating": 85,
+     "position": "RM",
+     "slot": "RM"
+    },
+    {
+     "resourceId": 16975435,
+     "name": "Insigne",
+     "rating": 86,
+     "position": "LW",
+     "slot": "LW"
+    },
+    {
+     "resourceId": 33763154,
+     "name": "Mané",
+     "rating": 91,
+     "position": "LW",
+     "slot": "ST"
+    },
+    {
+     "resourceId": 33758917,
+     "name": "Mahrez",
+     "rating": 86,
+     "position": "RW",
+     "slot": "RW"
+    }
+   ],
+   "subs": [
+    {
+     "resourceId": 33758961,
+     "name": "Batshuayi",
+     "rating": 82
+    },
+    {
+     "resourceId": 16965297,
+     "name": "Alex Teixeira",
+     "rating": 82
+    },
+    {
+     "resourceId": 33798902,
+     "name": "Coufal",
+     "rating": 82
+    },
+    {
+     "resourceId": 16953787,
+     "name": "Ayew",
+     "rating": 81
+    },
+    {
+     "resourceId": 16968091,
+     "name": "Kucka",
+     "rating": 81
+    },
+    {
+     "resourceId": 33791204,
+     "name": "Szoboszlai",
+     "rating": 81
+    },
+    {
+     "resourceId": 16914722,
+     "name": "Pandev",
+     "rating": 79
+    },
+    {
+     "resourceId": 16917714,
+     "name": "Marshall",
+     "rating": 79
+    },
+    {
+     "resourceId": 17010077,
+     "name": "Mizunuma",
+     "rating": 77
+    },
+    {
+     "resourceId": 17009838,
+     "name": "Nagasawa",
+     "rating": 76
+    },
+    {
+     "resourceId": 16988014,
+     "name": "Kamara",
+     "rating": 75
+    },
+    {
+     "resourceId": 17013024,
+     "name": "Bedeau",
+     "rating": 68
+    }
+   ]
+  },
+  {
+   "week": 9,
+   "released": "2020-11-25",
+   "formation": "f343",
+   "xiSource": "https://www.thexboxhub.com/wp-content/uploads/2020/11/fifa21totw9.jpg",
+   "starters": [
+    {
+     "resourceId": 67276359,
+     "name": "Neuer",
+     "rating": 90,
+     "position": "GK",
+     "slot": "GK"
+    },
+    {
+     "resourceId": 50532106,
+     "name": "Digne",
+     "rating": 86,
+     "position": "LWB",
+     "slot": "LCB"
+    },
+    {
+     "resourceId": 67292998,
+     "name": "Fernando",
+     "rating": 85,
+     "position": "CDM",
+     "slot": "CB"
+    },
+    {
+     "resourceId": 50515503,
+     "name": "Ogbonna",
+     "rating": 81,
+     "position": "CB",
+     "slot": "RCB"
+    },
+    {
+     "resourceId": 67292764,
+     "name": "Perotti",
+     "rating": 82,
+     "position": "LM",
+     "slot": "LM"
+    },
+    {
+     "resourceId": 67317282,
+     "name": "Carrasco",
+     "rating": 84,
+     "position": "LM",
+     "slot": "LCM"
+    },
+    {
+     "resourceId": 50545296,
+     "name": "Højbjerg",
+     "rating": 83,
+     "position": "CDM",
+     "slot": "RCM"
+    },
+    {
+     "resourceId": 50542583,
+     "name": "Berardi",
+     "rating": 83,
+     "position": "RM",
+     "slot": "RM"
+    },
+    {
+     "resourceId": 134456813,
+     "name": "Haaland",
+     "rating": 87,
+     "position": "ST",
+     "slot": "ST"
+    },
+    {
+     "resourceId": 67129665,
+     "name": "Cristiano Ronaldo",
+     "rating": 93,
+     "position": "ST",
+     "slot": "RW"
+    },
+    {
+     "resourceId": 84078585,
+     "name": "Lukaku",
+     "rating": 86,
+     "position": "ST",
+     "slot": "LW"
+    }
+   ],
+   "subs": [
+    {
+     "resourceId": 16969779,
+     "name": "Leno",
+     "rating": 86
+    },
+    {
+     "resourceId": 16971199,
+     "name": "Delort",
+     "rating": 82
+    },
+    {
+     "resourceId": 16985440,
+     "name": "Mantalos",
+     "rating": 81
+    },
+    {
+     "resourceId": 16985837,
+     "name": "Óscar Plano",
+     "rating": 81
+    },
+    {
+     "resourceId": 17009103,
+     "name": "Yazıcı",
+     "rating": 81
+    },
+    {
+     "resourceId": 16957550,
+     "name": "Marcelo",
+     "rating": 81
+    },
+    {
+     "resourceId": 17013677,
+     "name": "Mateta",
+     "rating": 81
+    },
+    {
+     "resourceId": 16995093,
+     "name": "Bongonda",
+     "rating": 80
+    },
+    {
+     "resourceId": 16950002,
+     "name": "Mancosu",
+     "rating": 79
+    },
+    {
+     "resourceId": 16977679,
+     "name": "Melia",
+     "rating": 79
+    },
+    {
+     "resourceId": 17028647,
+     "name": "Malone",
+     "rating": 72
+    },
+    {
+     "resourceId": 17002086,
+     "name": "Johnson",
+     "rating": 69
+    }
+   ]
+  },
+  {
+   "week": 10,
+   "released": "2020-12-02",
+   "formation": "f343",
+   "xiSource": "https://www.thexboxhub.com/wp-content/uploads/2020/12/fifa21totw10.jpg",
+   "starters": [
+    {
+     "resourceId": 84096040,
+     "name": "Pacheco",
+     "rating": 86,
+     "position": "GK",
+     "slot": "GK"
+    },
+    {
+     "resourceId": 67313748,
+     "name": "Mendy",
+     "rating": 84,
+     "position": "LB",
+     "slot": "LCB"
+    },
+    {
+     "resourceId": 67319277,
+     "name": "Romagnoli",
+     "rating": 85,
+     "position": "CB",
+     "slot": "CB"
+    },
+    {
+     "resourceId": 50555245,
+     "name": "Aguilar",
+     "rating": 82,
+     "position": "RB",
+     "slot": "RCB"
+    },
+    {
+     "resourceId": 50556774,
+     "name": "Skhiri",
+     "rating": 81,
+     "position": "CM",
+     "slot": "RCM"
+    },
+    {
+     "resourceId": 50557919,
+     "name": "Fabián",
+     "rating": 84,
+     "position": "CM",
+     "slot": "LCM"
+    },
+    {
+     "resourceId": 67343807,
+     "name": "Neuhaus",
+     "rating": 82,
+     "position": "CM",
+     "slot": "LM"
+    },
+    {
+     "resourceId": 84119499,
+     "name": "Raphinha",
+     "rating": 84,
+     "position": "RM",
+     "slot": "RM"
+    },
+    {
+     "resourceId": 84080845,
+     "name": "Griezmann",
+     "rating": 88,
+     "position": "LW",
+     "slot": "LW"
+    },
+    {
+     "resourceId": 67340342,
+     "name": "Martínez",
+     "rating": 86,
+     "position": "ST",
+     "slot": "ST"
+    },
+    {
+     "resourceId": 67301493,
+     "name": "Iago Aspas",
+     "rating": 86,
+     "position": "ST",
+     "slot": "RW"
+    }
+   ],
+   "subs": [
+    {
+     "resourceId": 17000905,
+     "name": "Weghorst",
+     "rating": 84
+    },
+    {
+     "resourceId": 17001285,
+     "name": "Toko-Ekambi",
+     "rating": 82
+    },
+    {
+     "resourceId": 16935337,
+     "name": "Costil",
+     "rating": 82
+    },
+    {
+     "resourceId": 16975053,
+     "name": "Boyata",
+     "rating": 81
+    },
+    {
+     "resourceId": 16989832,
+     "name": "De Paul",
+     "rating": 81
+    },
+    {
+     "resourceId": 17018166,
+     "name": "Pedro Gonçalves",
+     "rating": 81
+    },
+    {
+     "resourceId": 50535131,
+     "name": "Klaassen",
+     "rating": 81
+    },
+    {
+     "resourceId": 16997347,
+     "name": "Diagne",
+     "rating": 80
+    },
+    {
+     "resourceId": 16979187,
+     "name": "Ienaga",
+     "rating": 79
+    },
+    {
+     "resourceId": 16992659,
+     "name": "Zinckernagel",
+     "rating": 79
+    },
+    {
+     "resourceId": 33756640,
+     "name": "Petratos",
+     "rating": 77
+    },
+    {
+     "resourceId": 16975161,
+     "name": "Bowman",
+     "rating": 73
+    }
+   ]
+  },
+  {
+   "week": 11,
+   "released": "2020-12-09",
+   "formation": "f343",
+   "xiSource": "https://www.thexboxhub.com/wp-content/uploads/2020/12/fifa21totw11.jpg",
+   "starters": [
+    {
+     "resourceId": 84085562,
+     "name": "Lopes",
+     "rating": 86,
+     "position": "GK",
+     "slot": "GK"
+    },
+    {
+     "resourceId": 50532963,
+     "name": "Pablo",
+     "rating": 82,
+     "position": "CB",
+     "slot": "CB"
+    },
+    {
+     "resourceId": 67295209,
+     "name": "Trippier",
+     "rating": 85,
+     "position": "RWB",
+     "slot": "RCB"
+    },
+    {
+     "resourceId": 84079162,
+     "name": "Cuadrado",
+     "rating": 84,
+     "position": "RB",
+     "slot": "LCB"
+    },
+    {
+     "resourceId": 67308968,
+     "name": "Son",
+     "rating": 88,
+     "position": "LM",
+     "slot": "LM"
+    },
+    {
+     "resourceId": 84109928,
+     "name": "Milinković-Savić",
+     "rating": 87,
+     "position": "CM",
+     "slot": "RCM"
+    },
+    {
+     "resourceId": 84081944,
+     "name": "Pogba",
+     "rating": 87,
+     "position": "CM",
+     "slot": "LCM"
+    },
+    {
+     "resourceId": 67319275,
+     "name": "Otávio",
+     "rating": 83,
+     "position": "RM",
+     "slot": "RM"
+    },
+    {
+     "resourceId": 50554761,
+     "name": "Piątek",
+     "rating": 82,
+     "position": "ST",
+     "slot": "ST"
+    },
+    {
+     "resourceId": 84084797,
+     "name": "Zaha",
+     "rating": 86,
+     "position": "ST",
+     "slot": "LW"
+    },
+    {
+     "resourceId": 84095411,
+     "name": "Salah",
+     "rating": 91,
+     "position": "RW",
+     "slot": "RW"
+    }
+   ],
+   "subs": [
+    {
+     "resourceId": 50525857,
+     "name": "El Arabi",
+     "rating": 84
+    },
+    {
+     "resourceId": 17021683,
+     "name": "Kolář",
+     "rating": 82
+    },
+    {
+     "resourceId": 16971445,
+     "name": "Hugo Mallo",
+     "rating": 82
+    },
+    {
+     "resourceId": 67310264,
+     "name": "Rafinha",
+     "rating": 82
+    },
+    {
+     "resourceId": 33762880,
+     "name": "Forsberg",
+     "rating": 82
+    },
+    {
+     "resourceId": 16966822,
+     "name": "Baumgartlinger",
+     "rating": 81
+    },
+    {
+     "resourceId": 16996949,
+     "name": "Ajorque",
+     "rating": 81
+    },
+    {
+     "resourceId": 16977428,
+     "name": "Esser",
+     "rating": 80
+    },
+    {
+     "resourceId": 17011684,
+     "name": "Reynoso",
+     "rating": 80
+    },
+    {
+     "resourceId": 16978361,
+     "name": "Le Bihan",
+     "rating": 78
+    },
+    {
+     "resourceId": 16953948,
+     "name": "Bjärsmyr",
+     "rating": 77
+    },
+    {
+     "resourceId": 17032977,
+     "name": "Puljić",
+     "rating": 75
+    }
+   ]
+  },
+  {
+   "week": 12,
+   "released": "2020-12-16",
+   "formation": "f343",
+   "xiSource": "https://www.thexboxhub.com/wp-content/uploads/2020/12/fifa21totw12.jpg",
+   "starters": [
+    {
+     "resourceId": 50495137,
+     "name": "Consigli",
+     "rating": 84,
+     "position": "GK",
+     "slot": "GK"
+    },
+    {
+     "resourceId": 84127566,
+     "name": "Koundé",
+     "rating": 82,
+     "position": "CB",
+     "slot": "CB"
+    },
+    {
+     "resourceId": 67316726,
+     "name": "Ginter",
+     "rating": 84,
+     "position": "CB",
+     "slot": "LCB"
+    },
+    {
+     "resourceId": 84081559,
+     "name": "Tavernier",
+     "rating": 84,
+     "position": "RB",
+     "slot": "RCB"
+    },
+    {
+     "resourceId": 100888381,
+     "name": "Bamba",
+     "rating": 84,
+     "position": "LM",
+     "slot": "LM"
+    },
+    {
+     "resourceId": 67291385,
+     "name": "Kroos",
+     "rating": 89,
+     "position": "CM",
+     "slot": "RCM"
+    },
+    {
+     "resourceId": 100907556,
+     "name": "Dani Olmo",
+     "rating": 84,
+     "position": "CAM",
+     "slot": "LCM"
+    },
+    {
+     "resourceId": 100885288,
+     "name": "Lozano",
+     "rating": 86,
+     "position": "RM",
+     "slot": "RM"
+    },
+    {
+     "resourceId": 84078963,
+     "name": "Mkhitaryan",
+     "rating": 85,
+     "position": "LF",
+     "slot": "LW"
+    },
+    {
+     "resourceId": 84094910,
+     "name": "Vardy",
+     "rating": 88,
+     "position": "ST",
+     "slot": "ST"
+    },
+    {
+     "resourceId": 67323925,
+     "name": "Benedetto",
+     "rating": 82,
+     "position": "ST",
+     "slot": "RW"
+    }
+   ],
+   "subs": [
+    {
+     "resourceId": 17011369,
+     "name": "Carlos Soler",
+     "rating": 84
+    },
+    {
+     "resourceId": 33809907,
+     "name": "Antony",
+     "rating": 82
+    },
+    {
+     "resourceId": 33757243,
+     "name": "Martínez",
+     "rating": 82
+    },
+    {
+     "resourceId": 16984815,
+     "name": "Keane",
+     "rating": 82
+    },
+    {
+     "resourceId": 33788359,
+     "name": "Lucas Paquetá",
+     "rating": 81
+    },
+    {
+     "resourceId": 16992486,
+     "name": "Zelarayán",
+     "rating": 81
+    },
+    {
+     "resourceId": 17028628,
+     "name": "Weissman",
+     "rating": 81
+    },
+    {
+     "resourceId": 16978091,
+     "name": "Gigliotti",
+     "rating": 79
+    },
+    {
+     "resourceId": 17023778,
+     "name": "Sorescu",
+     "rating": 78
+    },
+    {
+     "resourceId": 17001724,
+     "name": "Mancuso",
+     "rating": 78
+    },
+    {
+     "resourceId": 16977995,
+     "name": "Clarke-Harris",
+     "rating": 76
+    },
+    {
+     "resourceId": 16960928,
+     "name": "Mölders",
+     "rating": 75
+    }
+   ]
+  },
+  {
+   "week": 13,
+   "released": "2020-12-23",
+   "formation": "f343",
+   "xiSource": "https://www.thexboxhub.com/wp-content/uploads/2020/12/fifa21totw13.jpg",
+   "starters": [
+    {
+     "resourceId": 67271699,
+     "name": "Handanovič",
+     "rating": 89,
+     "position": "GK",
+     "slot": "GK"
+    },
+    {
+     "resourceId": 134450384,
+     "name": "Hernández",
+     "rating": 86,
+     "position": "LB",
+     "slot": "LCB"
+    },
+    {
+     "resourceId": 67334714,
+     "name": "Kimpembe",
+     "rating": 84,
+     "position": "CB",
+     "slot": "CB"
+    },
+    {
+     "resourceId": 50552171,
+     "name": "Mina",
+     "rating": 82,
+     "position": "CB",
+     "slot": "RCB"
+    },
+    {
+     "resourceId": 67346102,
+     "name": "McTominay",
+     "rating": 82,
+     "position": "CDM",
+     "slot": "RCM"
+    },
+    {
+     "resourceId": 67292575,
+     "name": "Henderson",
+     "rating": 87,
+     "position": "CDM",
+     "slot": "LCM"
+    },
+    {
+     "resourceId": 67295936,
+     "name": "Stindl",
+     "rating": 83,
+     "position": "CAM",
+     "slot": "LM"
+    },
+    {
+     "resourceId": 50539741,
+     "name": "Gerard Moreno",
+     "rating": 85,
+     "position": "RM",
+     "slot": "RM"
+    },
+    {
+     "resourceId": 134394308,
+     "name": "Suárez",
+     "rating": 89,
+     "position": "ST",
+     "slot": "ST"
+    },
+    {
+     "resourceId": 100851841,
+     "name": "Lewandowski",
+     "rating": 93,
+     "position": "ST",
+     "slot": "RW"
+    },
+    {
+     "resourceId": 100828449,
+     "name": "Benzema",
+     "rating": 91,
+     "position": "CF",
+     "slot": "LW"
+    }
+   ],
+   "subs": [
+    {
+     "resourceId": 33755079,
+     "name": "Iličić",
+     "rating": 86
+    },
+    {
+     "resourceId": 50532801,
+     "name": "Morata",
+     "rating": 86
+    },
+    {
+     "resourceId": 16976422,
+     "name": "Vida",
+     "rating": 82
+    },
+    {
+     "resourceId": 17017895,
+     "name": "Koopmeiners",
+     "rating": 82
+    },
+    {
+     "resourceId": 17006157,
+     "name": "André Silva",
+     "rating": 82
+    },
+    {
+     "resourceId": 16939436,
+     "name": "Bolat",
+     "rating": 81
+    },
+    {
+     "resourceId": 17002575,
+     "name": "Budescu",
+     "rating": 81
+    },
+    {
+     "resourceId": 17012245,
+     "name": "Chalov",
+     "rating": 80
+    },
+    {
+     "resourceId": 16975235,
+     "name": "Testroet",
+     "rating": 77
+    },
+    {
+     "resourceId": 16953109,
+     "name": "Flo",
+     "rating": 76
+    },
+    {
+     "resourceId": 17001230,
+     "name": "Szwoch",
+     "rating": 75
+    },
+    {
+     "resourceId": 16999384,
+     "name": "Salvesen",
+     "rating": 74
+    }
+   ]
+  },
+  {
+   "week": 14,
+   "released": "2020-12-30",
+   "formation": "f343",
+   "xiSource": "https://www.thexboxhub.com/wp-content/uploads/2020/12/fifa21totw14.jpg",
+   "starters": [
+    {
+     "resourceId": 50547346,
+     "name": "Maignan",
+     "rating": 84,
+     "position": "GK",
+     "slot": "GK"
+    },
+    {
+     "resourceId": 117660694,
+     "name": "Denayer",
+     "rating": 84,
+     "position": "CB",
+     "slot": "CB"
+    },
+    {
+     "resourceId": 67329304,
+     "name": "Lenglet",
+     "rating": 86,
+     "position": "CB",
+     "slot": "RCB"
+    },
+    {
+     "resourceId": 50547793,
+     "name": "Izzo",
+     "rating": 82,
+     "position": "CB",
+     "slot": "LCB"
+    },
+    {
+     "resourceId": 100871714,
+     "name": "Carrasco",
+     "rating": 86,
+     "position": "LM",
+     "slot": "LM"
+    },
+    {
+     "resourceId": 134449405,
+     "name": "Rashford",
+     "rating": 88,
+     "position": "LM",
+     "slot": "LCM"
+    },
+    {
+     "resourceId": 84086225,
+     "name": "Casemiro",
+     "rating": 90,
+     "position": "CDM",
+     "slot": "RCM"
+    },
+    {
+     "resourceId": 84096594,
+     "name": "João Cancelo",
+     "rating": 85,
+     "position": "RM",
+     "slot": "RM"
+    },
+    {
+     "resourceId": 117671990,
+     "name": "Martínez",
+     "rating": 87,
+     "position": "LF",
+     "slot": "LW"
+    },
+    {
+     "resourceId": 33778059,
+     "name": "Al Soma",
+     "rating": 84,
+     "position": "ST",
+     "slot": "ST"
+    },
+    {
+     "resourceId": 84085190,
+     "name": "Muriel",
+     "rating": 82,
+     "position": "ST",
+     "slot": "RW"
+    }
+   ],
+   "subs": [
+    {
+     "resourceId": 16985344,
+     "name": "Çalhanoğlu",
+     "rating": 82
+    },
+    {
+     "resourceId": 16988238,
+     "name": "Rubén García",
+     "rating": 82
+    },
+    {
+     "resourceId": 17001114,
+     "name": "Bernardoni",
+     "rating": 82
+    },
+    {
+     "resourceId": 16985511,
+     "name": "Saïss",
+     "rating": 82
+    },
+    {
+     "resourceId": 17011082,
+     "name": "Edouard",
+     "rating": 81
+    },
+    {
+     "resourceId": 16959711,
+     "name": "Cáceres",
+     "rating": 81
+    },
+    {
+     "resourceId": 17023885,
+     "name": "Saka",
+     "rating": 81
+    },
+    {
+     "resourceId": 16976602,
+     "name": "Linssen",
+     "rating": 80
+    },
+    {
+     "resourceId": 33759131,
+     "name": "Melgarejo",
+     "rating": 79
+    },
+    {
+     "resourceId": 17001229,
+     "name": "Sergi Canós",
+     "rating": 78
+    },
+    {
+     "resourceId": 17017713,
+     "name": "Wadji",
+     "rating": 73
+    },
+    {
+     "resourceId": 33805853,
+     "name": "Johnson",
+     "rating": 69
+    }
+   ]
+  },
+  {
+   "week": 15,
+   "released": "2021-01-06",
+   "formation": "f343",
+   "xiSource": "https://www.thexboxhub.com/wp-content/uploads/2021/01/fifa21totw15.jpg",
+   "starters": [
+    {
+     "resourceId": 84101582,
+     "name": "Drągowski",
+     "rating": 84,
+     "position": "GK",
+     "slot": "GK"
+    },
+    {
+     "resourceId": 50558139,
+     "name": "Tierney",
+     "rating": 82,
+     "position": "LB",
+     "slot": "LCB"
+    },
+    {
+     "resourceId": 50521330,
+     "name": "Mee",
+     "rating": 82,
+     "position": "CB",
+     "slot": "CB"
+    },
+    {
+     "resourceId": 100892533,
+     "name": "Akanji",
+     "rating": 82,
+     "position": "CB",
+     "slot": "RCB"
+    },
+    {
+     "resourceId": 50548123,
+     "name": "Morales",
+     "rating": 82,
+     "position": "LM",
+     "slot": "LM"
+    },
+    {
+     "resourceId": 50568440,
+     "name": "Souček",
+     "rating": 84,
+     "position": "CDM",
+     "slot": "RCM"
+    },
+    {
+     "resourceId": 117653134,
+     "name": "Kimmich",
+     "rating": 91,
+     "position": "CDM",
+     "slot": "LCM"
+    },
+    {
+     "resourceId": 50542054,
+     "name": "Zieliński",
+     "rating": 83,
+     "position": "CAM",
+     "slot": "RM"
+    },
+    {
+     "resourceId": 117633017,
+     "name": "Lukaku",
+     "rating": 87,
+     "position": "ST",
+     "slot": "ST"
+    },
+    {
+     "resourceId": 100684097,
+     "name": "Cristiano Ronaldo",
+     "rating": 94,
+     "position": "ST",
+     "slot": "RW"
+    },
+    {
+     "resourceId": 100855925,
+     "name": "Iago Aspas",
+     "rating": 87,
+     "position": "ST",
+     "slot": "LW"
+    }
+   ],
+   "subs": [
+    {
+     "resourceId": 33769765,
+     "name": "Zapata",
+     "rating": 85
+    },
+    {
+     "resourceId": 16976791,
+     "name": "Jordi Masip",
+     "rating": 84
+    },
+    {
+     "resourceId": 33763050,
+     "name": "Lucas Vázquez",
+     "rating": 83
+    },
+    {
+     "resourceId": 33752463,
+     "name": "Sérgio Oliveira",
+     "rating": 82
+    },
+    {
+     "resourceId": 33774224,
+     "name": "Santamaria",
+     "rating": 82
+    },
+    {
+     "resourceId": 16998417,
+     "name": "Leibold",
+     "rating": 81
+    },
+    {
+     "resourceId": 33760398,
+     "name": "Younes",
+     "rating": 81
+    },
+    {
+     "resourceId": 16975344,
+     "name": "Caio",
+     "rating": 79
+    },
+    {
+     "resourceId": 33770397,
+     "name": "Strandberg",
+     "rating": 78
+    },
+    {
+     "resourceId": 16979744,
+     "name": "Ruffels",
+     "rating": 76
+    },
+    {
+     "resourceId": 16967455,
+     "name": "Bowery",
+     "rating": 73
+    },
+    {
+     "resourceId": 17028491,
+     "name": "Joseph",
+     "rating": 64
+    }
+   ]
+  },
+  {
+   "week": 16,
+   "released": "2021-01-13",
+   "formation": "f343",
+   "xiSource": "https://www.thexboxhub.com/wp-content/uploads/2021/01/fifa21totw16.jpg",
+   "starters": [
+    {
+     "resourceId": 84079121,
+     "name": "Navas",
+     "rating": 89,
+     "position": "GK",
+     "slot": "GK"
+    },
+    {
+     "resourceId": 67320552,
+     "name": "Gayà",
+     "rating": 85,
+     "position": "LB",
+     "slot": "LCB"
+    },
+    {
+     "resourceId": 100865218,
+     "name": "Hinteregger",
+     "rating": 85,
+     "position": "CB",
+     "slot": "CB"
+    },
+    {
+     "resourceId": 67308168,
+     "name": "Danilo",
+     "rating": 82,
+     "position": "RB",
+     "slot": "RCB"
+    },
+    {
+     "resourceId": 50525386,
+     "name": "Belhanda",
+     "rating": 82,
+     "position": "CM",
+     "slot": "RCM"
+    },
+    {
+     "resourceId": 84075593,
+     "name": "Parejo",
+     "rating": 87,
+     "position": "CM",
+     "slot": "LM"
+    },
+    {
+     "resourceId": 84074430,
+     "name": "Reus",
+     "rating": 86,
+     "position": "CAM",
+     "slot": "LCM"
+    },
+    {
+     "resourceId": 168007372,
+     "name": "Hakimi",
+     "rating": 86,
+     "position": "RM",
+     "slot": "RM"
+    },
+    {
+     "resourceId": 117635277,
+     "name": "Griezmann",
+     "rating": 89,
+     "position": "LW",
+     "slot": "LW"
+    },
+    {
+     "resourceId": 100865852,
+     "name": "Depay",
+     "rating": 87,
+     "position": "CF",
+     "slot": "RW"
+    },
+    {
+     "resourceId": 100863906,
+     "name": "Volland",
+     "rating": 86,
+     "position": "ST",
+     "slot": "ST"
+    }
+   ],
+   "subs": [
+    {
+     "resourceId": 33758831,
+     "name": "Zahavi",
+     "rating": 84
+    },
+    {
+     "resourceId": 33789842,
+     "name": "En-Nesyri",
+     "rating": 82
+    },
+    {
+     "resourceId": 16961406,
+     "name": "Thomas",
+     "rating": 81
+    },
+    {
+     "resourceId": 17005629,
+     "name": "Audero",
+     "rating": 81
+    },
+    {
+     "resourceId": 17009313,
+     "name": "Harit",
+     "rating": 81
+    },
+    {
+     "resourceId": 33764756,
+     "name": "Hofmann",
+     "rating": 81
+    },
+    {
+     "resourceId": 33796220,
+     "name": "Taremi",
+     "rating": 81
+    },
+    {
+     "resourceId": 16989598,
+     "name": "Onuachu",
+     "rating": 79
+    },
+    {
+     "resourceId": 17001736,
+     "name": "Kent",
+     "rating": 79
+    },
+    {
+     "resourceId": 17003993,
+     "name": "Larin",
+     "rating": 79
+    },
+    {
+     "resourceId": 17020994,
+     "name": "Hiller",
+     "rating": 76
+    },
+    {
+     "resourceId": 17021412,
+     "name": "Thompson",
+     "rating": 71
+    }
+   ]
+  },
+  {
+   "week": 17,
+   "released": "2021-01-20",
+   "formation": "f343",
+   "xiSource": "https://www.thexboxhub.com/wp-content/uploads/2021/01/EsMZ7W9XMAE5ICx.jpg",
+   "starters": [
+    {
+     "resourceId": 50508420,
+     "name": "Oukidja",
+     "rating": 81,
+     "position": "GK",
+     "slot": "GK"
+    },
+    {
+     "resourceId": 50504856,
+     "name": "Criscito",
+     "rating": 82,
+     "position": "CB",
+     "slot": "CB"
+    },
+    {
+     "resourceId": 84069935,
+     "name": "Ogbonna",
+     "rating": 84,
+     "position": "CB",
+     "slot": "RCB"
+    },
+    {
+     "resourceId": 84089654,
+     "name": "Stones",
+     "rating": 83,
+     "position": "CB",
+     "slot": "LCB"
+    },
+    {
+     "resourceId": 117638731,
+     "name": "Insigne",
+     "rating": 87,
+     "position": "LM",
+     "slot": "LM"
+    },
+    {
+     "resourceId": 134413592,
+     "name": "Pogba",
+     "rating": 88,
+     "position": "CDM",
+     "slot": "RCM"
+    },
+    {
+     "resourceId": 100852892,
+     "name": "Müller",
+     "rating": 88,
+     "position": "CAM",
+     "slot": "LCM"
+    },
+    {
+     "resourceId": 84126759,
+     "name": "Koopmeiners",
+     "rating": 84,
+     "position": "CM",
+     "slot": "RM"
+    },
+    {
+     "resourceId": 67341296,
+     "name": "Jović",
+     "rating": 83,
+     "position": "ST",
+     "slot": "ST"
+    },
+    {
+     "resourceId": 100862747,
+     "name": "Ben Yedder",
+     "rating": 87,
+     "position": "ST",
+     "slot": "RW"
+    },
+    {
+     "resourceId": 84105813,
+     "name": "Ajorque",
+     "rating": 84,
+     "position": "ST",
+     "slot": "LW"
+    }
+   ],
+   "subs": [
+    {
+     "resourceId": 16993609,
+     "name": "Tielemans",
+     "rating": 84
+    },
+    {
+     "resourceId": 17012785,
+     "name": "Ndombele",
+     "rating": 83
+    },
+    {
+     "resourceId": 33778664,
+     "name": "Barella",
+     "rating": 83
+    },
+    {
+     "resourceId": 33785879,
+     "name": "Malen",
+     "rating": 82
+    },
+    {
+     "resourceId": 17003731,
+     "name": "Andrei Girotto",
+     "rating": 81
+    },
+    {
+     "resourceId": 17001467,
+     "name": "Zentner",
+     "rating": 81
+    },
+    {
+     "resourceId": 17012399,
+     "name": "Acevedo",
+     "rating": 79
+    },
+    {
+     "resourceId": 17000812,
+     "name": "Prevljak",
+     "rating": 78
+    },
+    {
+     "resourceId": 17003155,
+     "name": "George",
+     "rating": 76
+    },
+    {
+     "resourceId": 17017058,
+     "name": "Giakoumakis",
+     "rating": 75
+    },
+    {
+     "resourceId": 16981433,
+     "name": "Wyke",
+     "rating": 74
+    },
+    {
+     "resourceId": 17019037,
+     "name": "Bayo",
+     "rating": 73
+    }
+   ]
+  },
+  {
+   "week": 18,
+   "released": "2021-01-27",
+   "formation": "f343",
+   "xiSource": "https://www.thexboxhub.com/wp-content/uploads/2021/01/fifa21totw18.jpg",
+   "starters": [
+    {
+     "resourceId": 50535489,
+     "name": "Pope",
+     "rating": 84,
+     "position": "GK",
+     "slot": "GK"
+    },
+    {
+     "resourceId": 100884787,
+     "name": "Elvedi",
+     "rating": 84,
+     "position": "CB",
+     "slot": "CB"
+    },
+    {
+     "resourceId": 84066414,
+     "name": "Marcelo",
+     "rating": 84,
+     "position": "CB",
+     "slot": "RCB"
+    },
+    {
+     "resourceId": 67341352,
+     "name": "Romero",
+     "rating": 82,
+     "position": "CB",
+     "slot": "LCB"
+    },
+    {
+     "resourceId": 50540222,
+     "name": "Kostić",
+     "rating": 85,
+     "position": "LM",
+     "slot": "LM"
+    },
+    {
+     "resourceId": 67299735,
+     "name": "Neymar Jr",
+     "rating": 92,
+     "position": "LM",
+     "slot": "RM"
+    },
+    {
+     "resourceId": 67337566,
+     "name": "de Jong",
+     "rating": 86,
+     "position": "CM",
+     "slot": "RCM"
+    },
+    {
+     "resourceId": 100883993,
+     "name": "Maddison",
+     "rating": 86,
+     "position": "CM",
+     "slot": "LCM"
+    },
+    {
+     "resourceId": 50559899,
+     "name": "Pellegrini",
+     "rating": 82,
+     "position": "LF",
+     "slot": "LW"
+    },
+    {
+     "resourceId": 151160097,
+     "name": "Benzema",
+     "rating": 92,
+     "position": "CF",
+     "slot": "ST"
+    },
+    {
+     "resourceId": 84104747,
+     "name": "Bernardo Silva",
+     "rating": 88,
+     "position": "CF",
+     "slot": "RW"
+    }
+   ],
+   "subs": [
+    {
+     "resourceId": 16993570,
+     "name": "Kramarić",
+     "rating": 84
+    },
+    {
+     "resourceId": 16967502,
+     "name": "Canales",
+     "rating": 84
+    },
+    {
+     "resourceId": 17017970,
+     "name": "Atal",
+     "rating": 82
+    },
+    {
+     "resourceId": 16997718,
+     "name": "Zaccagni",
+     "rating": 81
+    },
+    {
+     "resourceId": 17017172,
+     "name": "Boadu",
+     "rating": 81
+    },
+    {
+     "resourceId": 16999673,
+     "name": "Mensah",
+     "rating": 81
+    },
+    {
+     "resourceId": 33789265,
+     "name": "Müller",
+     "rating": 81
+    },
+    {
+     "resourceId": 17018889,
+     "name": "Barišić",
+     "rating": 79
+    },
+    {
+     "resourceId": 16966933,
+     "name": "Ghoochannejhad",
+     "rating": 76
+    },
+    {
+     "resourceId": 16981906,
+     "name": "Hosiner",
+     "rating": 76
+    },
+    {
+     "resourceId": 17016264,
+     "name": "Akbunar",
+     "rating": 76
+    },
+    {
+     "resourceId": 17014596,
+     "name": "Keyta",
+     "rating": 75
+    }
+   ]
+  },
+  {
+   "week": 19,
+   "released": "2021-02-03",
+   "formation": "f343",
+   "xiSource": "https://www.thexboxhub.com/wp-content/uploads/2021/02/fifa21totw19.jpg",
+   "starters": [
+    {
+     "resourceId": 67318845,
+     "name": "Bounou",
+     "rating": 81,
+     "position": "GK",
+     "slot": "GK"
+    },
+    {
+     "resourceId": 67267490,
+     "name": "Debuchy",
+     "rating": 82,
+     "position": "RB",
+     "slot": "RCB"
+    },
+    {
+     "resourceId": 84025036,
+     "name": "Chiellini",
+     "rating": 88,
+     "position": "CB",
+     "slot": "CB"
+    },
+    {
+     "resourceId": 117651026,
+     "name": "João Cancelo",
+     "rating": 86,
+     "position": "RB",
+     "slot": "LCB"
+    },
+    {
+     "resourceId": 67299538,
+     "name": "André",
+     "rating": 83,
+     "position": "CDM",
+     "slot": "RCM"
+    },
+    {
+     "resourceId": 84122872,
+     "name": "Souček",
+     "rating": 86,
+     "position": "CDM",
+     "slot": "LCM"
+    },
+    {
+     "resourceId": 134441576,
+     "name": "Milinković-Savić",
+     "rating": 88,
+     "position": "CM",
+     "slot": "RM"
+    },
+    {
+     "resourceId": 100856579,
+     "name": "Delaney",
+     "rating": 86,
+     "position": "CDM",
+     "slot": "LM"
+    },
+    {
+     "resourceId": 151187827,
+     "name": "Mkhitaryan",
+     "rating": 86,
+     "position": "LF",
+     "slot": "LW"
+    },
+    {
+     "resourceId": 151226422,
+     "name": "Martínez",
+     "rating": 88,
+     "position": "ST",
+     "slot": "ST"
+    },
+    {
+     "resourceId": 117649843,
+     "name": "Salah",
+     "rating": 92,
+     "position": "RW",
+     "slot": "RW"
+    }
+   ],
+   "subs": [
+    {
+     "resourceId": 33751410,
+     "name": "Wilson",
+     "rating": 84
+    },
+    {
+     "resourceId": 33783373,
+     "name": "André Silva",
+     "rating": 84
+    },
+    {
+     "resourceId": 33760966,
+     "name": "Bamford",
+     "rating": 82
+    },
+    {
+     "resourceId": 33747493,
+     "name": "Pereyra",
+     "rating": 81
+    },
+    {
+     "resourceId": 50556073,
+     "name": "Wolf",
+     "rating": 81
+    },
+    {
+     "resourceId": 33794274,
+     "name": "Giakoumakis",
+     "rating": 81
+    },
+    {
+     "resourceId": 16977029,
+     "name": "Trauner",
+     "rating": 80
+    },
+    {
+     "resourceId": 17034752,
+     "name": "Kuchta",
+     "rating": 78
+    },
+    {
+     "resourceId": 16990583,
+     "name": "Abergel",
+     "rating": 78
+    },
+    {
+     "resourceId": 17008844,
+     "name": "Rafa Mir",
+     "rating": 78
+    },
+    {
+     "resourceId": 16989444,
+     "name": "Toney",
+     "rating": 77
+    },
+    {
+     "resourceId": 33791095,
+     "name": "Balcombe",
+     "rating": 70
+    }
+   ]
+  },
+  {
+   "week": 20,
+   "released": "2021-02-10",
+   "formation": "f343",
+   "xiSource": "https://www.thexboxhub.com/wp-content/uploads/2021/02/fifa21totw20.png",
+   "starters": [
+    {
+     "resourceId": 50514142,
+     "name": "Muslera",
+     "rating": 84,
+     "position": "GK",
+     "slot": "GK"
+    },
+    {
+     "resourceId": 100889146,
+     "name": "Kimpembe",
+     "rating": 86,
+     "position": "CB",
+     "slot": "CB"
+    },
+    {
+     "resourceId": 84087615,
+     "name": "Varane",
+     "rating": 87,
+     "position": "CB",
+     "slot": "RCB"
+    },
+    {
+     "resourceId": 50532953,
+     "name": "Gabriel Paulista",
+     "rating": 84,
+     "position": "CB",
+     "slot": "LCB"
+    },
+    {
+     "resourceId": 67328882,
+     "name": "Rebić",
+     "rating": 82,
+     "position": "LM",
+     "slot": "LM"
+    },
+    {
+     "resourceId": 84102555,
+     "name": "Morales",
+     "rating": 84,
+     "position": "LM",
+     "slot": "LCM"
+    },
+    {
+     "resourceId": 67329515,
+     "name": "Angeliño",
+     "rating": 83,
+     "position": "LM",
+     "slot": "RCM"
+    },
+    {
+     "resourceId": 67334527,
+     "name": "Golovin",
+     "rating": 82,
+     "position": "RM",
+     "slot": "RM"
+    },
+    {
+     "resourceId": 151225086,
+     "name": "Oyarzabal",
+     "rating": 87,
+     "position": "LW",
+     "slot": "LW"
+    },
+    {
+     "resourceId": 100865948,
+     "name": "Sterling",
+     "rating": 90,
+     "position": "LW",
+     "slot": "RW"
+    },
+    {
+     "resourceId": 151197500,
+     "name": "Depay",
+     "rating": 88,
+     "position": "CF",
+     "slot": "ST"
+    }
+   ],
+   "subs": [
+    {
+     "resourceId": 17019068,
+     "name": "Diaby",
+     "rating": 84
+    },
+    {
+     "resourceId": 33760420,
+     "name": "Shaw",
+     "rating": 84
+    },
+    {
+     "resourceId": 33794672,
+     "name": "Nsame",
+     "rating": 84
+    },
+    {
+     "resourceId": 16975225,
+     "name": "Perin",
+     "rating": 84
+    },
+    {
+     "resourceId": 17008193,
+     "name": "Almirón",
+     "rating": 82
+    },
+    {
+     "resourceId": 50539142,
+     "name": "Lingard",
+     "rating": 81
+    },
+    {
+     "resourceId": 16986735,
+     "name": "Laborde",
+     "rating": 81
+    },
+    {
+     "resourceId": 17017409,
+     "name": "Rexhbeçaj",
+     "rating": 78
+    },
+    {
+     "resourceId": 17004807,
+     "name": "Canelo",
+     "rating": 78
+    },
+    {
+     "resourceId": 16998646,
+     "name": "Đurđević",
+     "rating": 77
+    },
+    {
+     "resourceId": 17006552,
+     "name": "Grgić",
+     "rating": 76
+    },
+    {
+     "resourceId": 16997255,
+     "name": "Charles",
+     "rating": 73
+    }
+   ]
+  },
+  {
+   "week": 21,
+   "released": "2021-02-17",
+   "formation": "f343",
+   "xiSource": "https://www.thexboxhub.com/wp-content/uploads/2021/02/fifa21totw21.jpg",
+   "starters": [
+    {
+     "resourceId": 117643323,
+     "name": "Martínez",
+     "rating": 84,
+     "position": "GK",
+     "slot": "GK"
+    },
+    {
+     "resourceId": 50484908,
+     "name": "Hilton",
+     "rating": 81,
+     "position": "CB",
+     "slot": "CB"
+    },
+    {
+     "resourceId": 117644086,
+     "name": "Stones",
+     "rating": 85,
+     "position": "CB",
+     "slot": "RCB"
+    },
+    {
+     "resourceId": 50529303,
+     "name": "Coates",
+     "rating": 84,
+     "position": "CB",
+     "slot": "LCB"
+    },
+    {
+     "resourceId": 50533167,
+     "name": "Veretout",
+     "rating": 82,
+     "position": "CM",
+     "slot": "LM"
+    },
+    {
+     "resourceId": 67335654,
+     "name": "Ndidi",
+     "rating": 86,
+     "position": "CDM",
+     "slot": "LCM"
+    },
+    {
+     "resourceId": 50510210,
+     "name": "Banega",
+     "rating": 85,
+     "position": "CAM",
+     "slot": "RCM"
+    },
+    {
+     "resourceId": 134443889,
+     "name": "Marcos Llorente",
+     "rating": 86,
+     "position": "RM",
+     "slot": "RM"
+    },
+    {
+     "resourceId": 117639622,
+     "name": "Muriel",
+     "rating": 84,
+     "position": "ST",
+     "slot": "ST"
+    },
+    {
+     "resourceId": 151187449,
+     "name": "Lukaku",
+     "rating": 88,
+     "position": "ST",
+     "slot": "RW"
+    },
+    {
+     "resourceId": 100851863,
+     "name": "Aubameyang",
+     "rating": 88,
+     "position": "ST",
+     "slot": "LW"
+    }
+   ],
+   "subs": [
+    {
+     "resourceId": 33795134,
+     "name": "Yaremchuk",
+     "rating": 84
+    },
+    {
+     "resourceId": 33786843,
+     "name": "Nkunku",
+     "rating": 83
+    },
+    {
+     "resourceId": 16936361,
+     "name": "Gomis",
+     "rating": 83
+    },
+    {
+     "resourceId": 17002332,
+     "name": "Meret",
+     "rating": 82
+    },
+    {
+     "resourceId": 17012569,
+     "name": "Sarr",
+     "rating": 82
+    },
+    {
+     "resourceId": 17008318,
+     "name": "Blas",
+     "rating": 81
+    },
+    {
+     "resourceId": 17003075,
+     "name": "Niakhaté",
+     "rating": 81
+    },
+    {
+     "resourceId": 16986003,
+     "name": "Thomasson",
+     "rating": 81
+    },
+    {
+     "resourceId": 33758649,
+     "name": "Wyke",
+     "rating": 80
+    },
+    {
+     "resourceId": 16986255,
+     "name": "Moberg Karlsson",
+     "rating": 79
+    },
+    {
+     "resourceId": 16946681,
+     "name": "Derbyshire",
+     "rating": 75
+    },
+    {
+     "resourceId": 16998983,
+     "name": "Choi",
+     "rating": 74
+    }
+   ]
+  },
+  {
+   "week": 22,
+   "released": "2021-02-24",
+   "formation": "f343",
+   "xiSource": "https://www.thexboxhub.com/wp-content/uploads/2021/02/fifa21totw22.jpg",
+   "starters": [
+    {
+     "resourceId": 100826131,
+     "name": "Handanovič",
+     "rating": 90,
+     "position": "GK",
+     "slot": "GK"
+    },
+    {
+     "resourceId": 100895784,
+     "name": "Romero",
+     "rating": 84,
+     "position": "CB",
+     "slot": "CB"
+    },
+    {
+     "resourceId": 84093679,
+     "name": "Keane",
+     "rating": 84,
+     "position": "CB",
+     "slot": "LCB"
+    },
+    {
+     "resourceId": 100871914,
+     "name": "Lucas Vázquez",
+     "rating": 85,
+     "position": "RB",
+     "slot": "RCB"
+    },
+    {
+     "resourceId": 168003837,
+     "name": "Rashford",
+     "rating": 89,
+     "position": "LM",
+     "slot": "LM"
+    },
+    {
+     "resourceId": 117659179,
+     "name": "Bernardo Silva",
+     "rating": 89,
+     "position": "CM",
+     "slot": "RCM"
+    },
+    {
+     "resourceId": 117639218,
+     "name": "Luis Alberto",
+     "rating": 87,
+     "position": "CM",
+     "slot": "LCM"
+    },
+    {
+     "resourceId": 84098696,
+     "name": "De Paul",
+     "rating": 84,
+     "position": "CM",
+     "slot": "RM"
+    },
+    {
+     "resourceId": 84091773,
+     "name": "Haller",
+     "rating": 84,
+     "position": "ST",
+     "slot": "ST"
+    },
+    {
+     "resourceId": 167792961,
+     "name": "Cristiano Ronaldo",
+     "rating": 95,
+     "position": "ST",
+     "slot": "RW"
+    },
+    {
+     "resourceId": 67342595,
+     "name": "Isak",
+     "rating": 82,
+     "position": "ST",
+     "slot": "LW"
+    }
+   ],
+   "subs": [
+    {
+     "resourceId": 16955221,
+     "name": "Rui Patrício",
+     "rating": 86
+    },
+    {
+     "resourceId": 50537614,
+     "name": "Younes",
+     "rating": 84
+    },
+    {
+     "resourceId": 16987753,
+     "name": "Steffen",
+     "rating": 82
+    },
+    {
+     "resourceId": 33752560,
+     "name": "Caio",
+     "rating": 82
+    },
+    {
+     "resourceId": 16996361,
+     "name": "Maripán",
+     "rating": 81
+    },
+    {
+     "resourceId": 17002999,
+     "name": "Mavididi",
+     "rating": 81
+    },
+    {
+     "resourceId": 17020996,
+     "name": "Kangin Lee",
+     "rating": 80
+    },
+    {
+     "resourceId": 33757470,
+     "name": "Lucas Piazón",
+     "rating": 78
+    },
+    {
+     "resourceId": 33774490,
+     "name": "Phillips",
+     "rating": 78
+    },
+    {
+     "resourceId": 17014537,
+     "name": "Berisha",
+     "rating": 77
+    },
+    {
+     "resourceId": 17014154,
+     "name": "Wilks",
+     "rating": 76
+    },
+    {
+     "resourceId": 17023932,
+     "name": "Van den Bergh",
+     "rating": 76
+    }
+   ]
+  },
+  {
+   "week": 23,
+   "released": "2021-03-03",
+   "formation": "f343",
+   "xiSource": "https://www.thexboxhub.com/wp-content/uploads/2021/03/fifa-21-totw-23.png",
+   "starters": [
+    {
+     "resourceId": 84086469,
+     "name": "Oblak",
+     "rating": 92,
+     "position": "GK",
+     "slot": "GK"
+    },
+    {
+     "resourceId": 100903114,
+     "name": "Rúben Dias",
+     "rating": 84,
+     "position": "CB",
+     "slot": "CB"
+    },
+    {
+     "resourceId": 67291357,
+     "name": "Godín",
+     "rating": 86,
+     "position": "CB",
+     "slot": "RCB"
+    },
+    {
+     "resourceId": 67310241,
+     "name": "Murillo",
+     "rating": 81,
+     "position": "CB",
+     "slot": "LCB"
+    },
+    {
+     "resourceId": 84109777,
+     "name": "Gosens",
+     "rating": 84,
+     "position": "LM",
+     "slot": "LM"
+    },
+    {
+     "resourceId": 100891998,
+     "name": "de Jong",
+     "rating": 87,
+     "position": "CM",
+     "slot": "LCM"
+    },
+    {
+     "resourceId": 84112190,
+     "name": "Pépé",
+     "rating": 86,
+     "position": "RM",
+     "slot": "RM"
+    },
+    {
+     "resourceId": 100837027,
+     "name": "Bale",
+     "rating": 85,
+     "position": "RM",
+     "slot": "RCM"
+    },
+    {
+     "resourceId": 84126036,
+     "name": "Boadu",
+     "rating": 84,
+     "position": "ST",
+     "slot": "ST"
+    },
+    {
+     "resourceId": 151183489,
+     "name": "Lewandowski",
+     "rating": 94,
+     "position": "ST",
+     "slot": "RW"
+    },
+    {
+     "resourceId": 117660245,
+     "name": "Ajorque",
+     "rating": 86,
+     "position": "ST",
+     "slot": "LW"
+    }
+   ],
+   "subs": [
+    {
+     "resourceId": 33756403,
+     "name": "Ienaga",
+     "rating": 82
+    },
+    {
+     "resourceId": 16967124,
+     "name": "Skorupski",
+     "rating": 81
+    },
+    {
+     "resourceId": 17013693,
+     "name": "Claude-Maurice",
+     "rating": 81
+    },
+    {
+     "resourceId": 16941141,
+     "name": "Diamanti",
+     "rating": 81
+    },
+    {
+     "resourceId": 17009703,
+     "name": "Endo",
+     "rating": 81
+    },
+    {
+     "resourceId": 17007158,
+     "name": "Disasi",
+     "rating": 81
+    },
+    {
+     "resourceId": 16989423,
+     "name": "Stanciu",
+     "rating": 81
+    },
+    {
+     "resourceId": 16966973,
+     "name": "Prijović",
+     "rating": 79
+    },
+    {
+     "resourceId": 17000499,
+     "name": "Diedhiou",
+     "rating": 78
+    },
+    {
+     "resourceId": 16985847,
+     "name": "Starzyński",
+     "rating": 78
+    },
+    {
+     "resourceId": 17034774,
+     "name": "Rubén Díez",
+     "rating": 75
+    },
+    {
+     "resourceId": 17022710,
+     "name": "Al Meqran",
+     "rating": 64
+    }
+   ]
+  },
+  {
+   "week": 24,
+   "released": "2021-03-10",
+   "formation": "f343",
+   "xiSource": "https://www.thexboxhub.com/wp-content/uploads/2021/03/FIFA-21-TOTW-24.png",
+   "starters": [
+    {
+     "resourceId": 50495235,
+     "name": "Schmeichel",
+     "rating": 86,
+     "position": "GK",
+     "slot": "GK"
+    },
+    {
+     "resourceId": 100869284,
+     "name": "Shaw",
+     "rating": 86,
+     "position": "LB",
+     "slot": "LCB"
+    },
+    {
+     "resourceId": 84075412,
+     "name": "Jordi Alba",
+     "rating": 88,
+     "position": "LWB",
+     "slot": "CB"
+    },
+    {
+     "resourceId": 50535253,
+     "name": "Kadeřábek",
+     "rating": 83,
+     "position": "RWB",
+     "slot": "RCB"
+    },
+    {
+     "resourceId": 151193163,
+     "name": "Insigne",
+     "rating": 88,
+     "position": "LM",
+     "slot": "LM"
+    },
+    {
+     "resourceId": 134417873,
+     "name": "Casemiro",
+     "rating": 91,
+     "position": "CDM",
+     "slot": "RCM"
+    },
+    {
+     "resourceId": 134427386,
+     "name": "Goretzka",
+     "rating": 87,
+     "position": "CM",
+     "slot": "RM"
+    },
+    {
+     "resourceId": 67304229,
+     "name": "Kampl",
+     "rating": 84,
+     "position": "CDM",
+     "slot": "LCM"
+    },
+    {
+     "resourceId": 134418881,
+     "name": "Morata",
+     "rating": 87,
+     "position": "ST",
+     "slot": "ST"
+    },
+    {
+     "resourceId": 84088206,
+     "name": "Kane",
+     "rating": 90,
+     "position": "ST",
+     "slot": "LW"
+    },
+    {
+     "resourceId": 134422213,
+     "name": "Mahrez",
+     "rating": 87,
+     "position": "RW",
+     "slot": "RW"
+    }
+   ],
+   "subs": [
+    {
+     "resourceId": 50536047,
+     "name": "Zahavi",
+     "rating": 86
+    },
+    {
+     "resourceId": 33763872,
+     "name": "Romarinho",
+     "rating": 83
+    },
+    {
+     "resourceId": 33739373,
+     "name": "Sánchez",
+     "rating": 83
+    },
+    {
+     "resourceId": 16990547,
+     "name": "Tah",
+     "rating": 82
+    },
+    {
+     "resourceId": 33781654,
+     "name": "Guilbert",
+     "rating": 81
+    },
+    {
+     "resourceId": 17020846,
+     "name": "David",
+     "rating": 81
+    },
+    {
+     "resourceId": 16989648,
+     "name": "Jo Hyeon Woo",
+     "rating": 81
+    },
+    {
+     "resourceId": 16985268,
+     "name": "Yiadom",
+     "rating": 80
+    },
+    {
+     "resourceId": 16989448,
+     "name": "Maclaren",
+     "rating": 79
+    },
+    {
+     "resourceId": 17001605,
+     "name": "Larsson",
+     "rating": 78
+    },
+    {
+     "resourceId": 17028407,
+     "name": "Allevinah",
+     "rating": 76
+    },
+    {
+     "resourceId": 16997403,
+     "name": "Jay",
+     "rating": 68
+    }
+   ]
+  },
+  {
+   "week": 25,
+   "released": "2021-03-17",
+   "formation": "f343",
+   "xiSource": "https://www.thexboxhub.com/wp-content/uploads/2021/03/FIFA-21-TOTW-25.png",
+   "starters": [
+    {
+     "resourceId": 50555600,
+     "name": "David Soria",
+     "rating": 84,
+     "position": "GK",
+     "slot": "GK"
+    },
+    {
+     "resourceId": 100889787,
+     "name": "Tierney",
+     "rating": 84,
+     "position": "LB",
+     "slot": "LCB"
+    },
+    {
+     "resourceId": 67280655,
+     "name": "José Fonte",
+     "rating": 84,
+     "position": "CB",
+     "slot": "CB"
+    },
+    {
+     "resourceId": 100809832,
+     "name": "Jesús Navas",
+     "rating": 86,
+     "position": "RB",
+     "slot": "RCB"
+    },
+    {
+     "resourceId": 117681191,
+     "name": "Koopmeiners",
+     "rating": 86,
+     "position": "CM",
+     "slot": "RCM"
+    },
+    {
+     "resourceId": 100856281,
+     "name": "De Bruyne",
+     "rating": 93,
+     "position": "CM",
+     "slot": "LM"
+    },
+    {
+     "resourceId": 151184540,
+     "name": "Müller",
+     "rating": 89,
+     "position": "CAM",
+     "slot": "LCM"
+    },
+    {
+     "resourceId": 84102489,
+     "name": "Politano",
+     "rating": 84,
+     "position": "RM",
+     "slot": "RM"
+    },
+    {
+     "resourceId": 134442186,
+     "name": "Diogo Jota",
+     "rating": 85,
+     "position": "CF",
+     "slot": "RW"
+    },
+    {
+     "resourceId": 184780854,
+     "name": "Martínez",
+     "rating": 89,
+     "position": "ST",
+     "slot": "ST"
+    },
+    {
+     "resourceId": 84109769,
+     "name": "Weghorst",
+     "rating": 86,
+     "position": "ST",
+     "slot": "LW"
+    }
+   ],
+   "subs": [
+    {
+     "resourceId": 33713577,
+     "name": "Gomis",
+     "rating": 85
+    },
+    {
+     "resourceId": 33748765,
+     "name": "Gikiewicz",
+     "rating": 84
+    },
+    {
+     "resourceId": 33754245,
+     "name": "Trauner",
+     "rating": 83
+    },
+    {
+     "resourceId": 17023156,
+     "name": "Wamangituka",
+     "rating": 82
+    },
+    {
+     "resourceId": 33777705,
+     "name": "Pašalić",
+     "rating": 81
+    },
+    {
+     "resourceId": 16978289,
+     "name": "De Préville",
+     "rating": 81
+    },
+    {
+     "resourceId": 17002935,
+     "name": "Iheanacho",
+     "rating": 80
+    },
+    {
+     "resourceId": 16983320,
+     "name": "Dursun",
+     "rating": 79
+    },
+    {
+     "resourceId": 17010506,
+     "name": "Zhemaletdinov",
+     "rating": 79
+    },
+    {
+     "resourceId": 17023646,
+     "name": "Vlahović",
+     "rating": 78
+    },
+    {
+     "resourceId": 16991031,
+     "name": "Uhre",
+     "rating": 75
+    },
+    {
+     "resourceId": 17029771,
+     "name": "Sorinola",
+     "rating": 64
+    }
+   ]
+  },
+  {
+   "week": 26,
+   "released": "2021-03-24",
+   "formation": "f343",
+   "xiSource": "https://www.thexboxhub.com/wp-content/uploads/2021/03/FIFA-21-TOTW-26.png",
+   "starters": [
+    {
+     "resourceId": 117650493,
+     "name": "Bounou",
+     "rating": 84,
+     "position": "GK",
+     "slot": "GK"
+    },
+    {
+     "resourceId": 50541494,
+     "name": "Günter",
+     "rating": 82,
+     "position": "LB",
+     "slot": "LCB"
+    },
+    {
+     "resourceId": 100871161,
+     "name": "Marquinhos",
+     "rating": 86,
+     "position": "CB",
+     "slot": "CB"
+    },
+    {
+     "resourceId": 67347957,
+     "name": "Clauss",
+     "rating": 83,
+     "position": "RWB",
+     "slot": "RCB"
+    },
+    {
+     "resourceId": 100884497,
+     "name": "Leibold",
+     "rating": 84,
+     "position": "LM",
+     "slot": "LM"
+    },
+    {
+     "resourceId": 117646625,
+     "name": "Gnabry",
+     "rating": 87,
+     "position": "LM",
+     "slot": "RM"
+    },
+    {
+     "resourceId": 67325458,
+     "name": "Fekir",
+     "rating": 85,
+     "position": "CAM",
+     "slot": "RCM"
+    },
+    {
+     "resourceId": 100871424,
+     "name": "Çalhanoğlu",
+     "rating": 84,
+     "position": "CAM",
+     "slot": "LCM"
+    },
+    {
+     "resourceId": 151223885,
+     "name": "André Silva",
+     "rating": 86,
+     "position": "ST",
+     "slot": "ST"
+    },
+    {
+     "resourceId": 201491745,
+     "name": "Benzema",
+     "rating": 93,
+     "position": "ST",
+     "slot": "RW"
+    },
+    {
+     "resourceId": 84062023,
+     "name": "Mertens",
+     "rating": 86,
+     "position": "ST",
+     "slot": "LW"
+    }
+   ],
+   "subs": [
+    {
+     "resourceId": 50538182,
+     "name": "Bamford",
+     "rating": 84
+    },
+    {
+     "resourceId": 16984637,
+     "name": "Trossard",
+     "rating": 82
+    },
+    {
+     "resourceId": 33786401,
+     "name": "Malinovskyi",
+     "rating": 82
+    },
+    {
+     "resourceId": 33745210,
+     "name": "Zoet",
+     "rating": 81
+    },
+    {
+     "resourceId": 84137884,
+     "name": "Dest",
+     "rating": 81
+    },
+    {
+     "resourceId": 17020231,
+     "name": "Romo",
+     "rating": 81
+    },
+    {
+     "resourceId": 33791218,
+     "name": "Terrier",
+     "rating": 81
+    },
+    {
+     "resourceId": 17010354,
+     "name": "Kobayashi",
+     "rating": 79
+    },
+    {
+     "resourceId": 16992579,
+     "name": "Montipò",
+     "rating": 79
+    },
+    {
+     "resourceId": 17018853,
+     "name": "Tchouaméni",
+     "rating": 78
+    },
+    {
+     "resourceId": 16961506,
+     "name": "Pekhart",
+     "rating": 76
+    },
+    {
+     "resourceId": 17016940,
+     "name": "Puttkammer",
+     "rating": 75
+    }
+   ]
+  },
+  {
+   "week": 27,
+   "released": "2021-03-31",
+   "formation": "f343",
+   "xiSource": "https://www.thexboxhub.com/wp-content/uploads/2021/03/TOTW-27.png",
+   "starters": [
+    {
+     "resourceId": 16997623,
+     "name": "Dúbravka",
+     "rating": 85,
+     "position": "GK",
+     "slot": "GK"
+    },
+    {
+     "resourceId": 33786551,
+     "name": "Söyüncü",
+     "rating": 85,
+     "position": "CB",
+     "slot": "CB"
+    },
+    {
+     "resourceId": 33693388,
+     "name": "Chiellini",
+     "rating": 89,
+     "position": "CB",
+     "slot": "LCB"
+    },
+    {
+     "resourceId": 16970741,
+     "name": "Mário Fernandes",
+     "rating": 84,
+     "position": "RB",
+     "slot": "RCB"
+    },
+    {
+     "resourceId": 50576803,
+     "name": "Kudus",
+     "rating": 84,
+     "position": "CAM",
+     "slot": "RCM"
+    },
+    {
+     "resourceId": 33767054,
+     "name": "Kimmich",
+     "rating": 92,
+     "position": "CDM",
+     "slot": "LCM"
+    },
+    {
+     "resourceId": 17014008,
+     "name": "Souček",
+     "rating": 87,
+     "position": "CM",
+     "slot": "RM"
+    },
+    {
+     "resourceId": 33747780,
+     "name": "Shaqiri",
+     "rating": 84,
+     "position": "CAM",
+     "slot": "LM"
+    },
+    {
+     "resourceId": 33788828,
+     "name": "Davies",
+     "rating": 84,
+     "position": "LW",
+     "slot": "LW"
+    },
+    {
+     "resourceId": 16965783,
+     "name": "Aubameyang",
+     "rating": 89,
+     "position": "ST",
+     "slot": "ST"
+    },
+    {
+     "resourceId": 33785875,
+     "name": "Dembélé",
+     "rating": 85,
+     "position": "RW",
+     "slot": "RW"
+    }
+   ],
+   "subs": [
+    {
+     "resourceId": 16975069,
+     "name": "Aurier",
+     "rating": 83
+    },
+    {
+     "resourceId": 16901591,
+     "name": "Yılmaz",
+     "rating": 82
+    },
+    {
+     "resourceId": 16947300,
+     "name": "Hennessey",
+     "rating": 81
+    },
+    {
+     "resourceId": 16967578,
+     "name": "Pukki",
+     "rating": 81
+    },
+    {
+     "resourceId": 16959036,
+     "name": "Jovetić",
+     "rating": 81
+    },
+    {
+     "resourceId": 33755211,
+     "name": "Clarke-Harris",
+     "rating": 81
+    },
+    {
+     "resourceId": 16979864,
+     "name": "Sergi Darder",
+     "rating": 81
+    },
+    {
+     "resourceId": 17018724,
+     "name": "Damsgaard",
+     "rating": 79
+    },
+    {
+     "resourceId": 16978663,
+     "name": "Lletget",
+     "rating": 78
+    },
+    {
+     "resourceId": 17024145,
+     "name": "Gerson Rodrigues",
+     "rating": 76
+    },
+    {
+     "resourceId": 17017117,
+     "name": "Kalajdžić",
+     "rating": 76
+    },
+    {
+     "resourceId": 16967101,
+     "name": "Noone",
+     "rating": 76
+    }
+   ]
+  },
+  {
+   "week": 28,
+   "released": "2021-04-07",
+   "formation": "f343",
+   "xiSource": "https://www.thexboxhub.com/wp-content/uploads/2021/04/fifa-21-totw-28.jpg",
+   "starters": [
+    {
+     "resourceId": 50539752,
+     "name": "Matheus",
+     "rating": 82,
+     "position": "GK",
+     "slot": "GK"
+    },
+    {
+     "resourceId": 117664846,
+     "name": "Acuña",
+     "rating": 85,
+     "position": "LB",
+     "slot": "LCB"
+    },
+    {
+     "resourceId": 117645396,
+     "name": "Mendy",
+     "rating": 86,
+     "position": "LB",
+     "slot": "CB"
+    },
+    {
+     "resourceId": 67335715,
+     "name": "Pavard",
+     "rating": 84,
+     "position": "RB",
+     "slot": "RCB"
+    },
+    {
+     "resourceId": 84094654,
+     "name": "Kostić",
+     "rating": 86,
+     "position": "LM",
+     "slot": "LM"
+    },
+    {
+     "resourceId": 184747595,
+     "name": "Insigne",
+     "rating": 89,
+     "position": "LM",
+     "slot": "RM"
+    },
+    {
+     "resourceId": 117650011,
+     "name": "Fabinho",
+     "rating": 88,
+     "position": "CDM",
+     "slot": "RCM"
+    },
+    {
+     "resourceId": 117648006,
+     "name": "Lingard",
+     "rating": 84,
+     "position": "CAM",
+     "slot": "LCM"
+    },
+    {
+     "resourceId": 151194054,
+     "name": "Muriel",
+     "rating": 86,
+     "position": "ST",
+     "slot": "ST"
+    },
+    {
+     "resourceId": 151187573,
+     "name": "Iago Aspas",
+     "rating": 88,
+     "position": "ST",
+     "slot": "RW"
+    },
+    {
+     "resourceId": 100859155,
+     "name": "Ings",
+     "rating": 85,
+     "position": "ST",
+     "slot": "LW"
+    }
+   ],
+   "subs": [
+    {
+     "resourceId": 33782525,
+     "name": "Thuram",
+     "rating": 83
+    },
+    {
+     "resourceId": 17005903,
+     "name": "Dolberg",
+     "rating": 82
+    },
+    {
+     "resourceId": 16981431,
+     "name": "Reach",
+     "rating": 82
+    },
+    {
+     "resourceId": 17011828,
+     "name": "Ikoné",
+     "rating": 82
+    },
+    {
+     "resourceId": 33795634,
+     "name": "Daka",
+     "rating": 81
+    },
+    {
+     "resourceId": 16977375,
+     "name": "Ortega",
+     "rating": 81
+    },
+    {
+     "resourceId": 17005630,
+     "name": "Matheus Pereira",
+     "rating": 81
+    },
+    {
+     "resourceId": 16983685,
+     "name": "Fountas",
+     "rating": 79
+    },
+    {
+     "resourceId": 16935354,
+     "name": "Hunt",
+     "rating": 79
+    },
+    {
+     "resourceId": 17029280,
+     "name": "Krejčí",
+     "rating": 78
+    },
+    {
+     "resourceId": 17012595,
+     "name": "Ndoj",
+     "rating": 76
+    },
+    {
+     "resourceId": 17023110,
+     "name": "Rober",
+     "rating": 76
+    }
+   ]
+  },
+  {
+   "week": 29,
+   "released": "2021-04-14",
+   "formation": "f343",
+   "xiSource": "https://www.thexboxhub.com/wp-content/uploads/2021/04/fifa-21-totw-29.png",
+   "starters": [
+    {
+     "resourceId": 84101778,
+     "name": "Maignan",
+     "rating": 86,
+     "position": "GK",
+     "slot": "GK"
+    },
+    {
+     "resourceId": 67313502,
+     "name": "Orban",
+     "rating": 82,
+     "position": "CB",
+     "slot": "CB"
+    },
+    {
+     "resourceId": 84087385,
+     "name": "Gabriel Paulista",
+     "rating": 86,
+     "position": "CB",
+     "slot": "RCB"
+    },
+    {
+     "resourceId": 50529789,
+     "name": "Bartra",
+     "rating": 83,
+     "position": "CB",
+     "slot": "LCB"
+    },
+    {
+     "resourceId": 84089442,
+     "name": "Elyounoussi",
+     "rating": 84,
+     "position": "LM",
+     "slot": "LM"
+    },
+    {
+     "resourceId": 184745240,
+     "name": "Pogba",
+     "rating": 90,
+     "position": "LM",
+     "slot": "RM"
+    },
+    {
+     "resourceId": 100889567,
+     "name": "Fabián",
+     "rating": 86,
+     "position": "CDM",
+     "slot": "RCM"
+    },
+    {
+     "resourceId": 84064642,
+     "name": "Banega",
+     "rating": 86,
+     "position": "CDM",
+     "slot": "LCM"
+    },
+    {
+     "resourceId": 84113876,
+     "name": "Pulisic",
+     "rating": 84,
+     "position": "LF",
+     "slot": "LW"
+    },
+    {
+     "resourceId": 67302165,
+     "name": "Lacazette",
+     "rating": 85,
+     "position": "ST",
+     "slot": "ST"
+    },
+    {
+     "resourceId": 100879684,
+     "name": "Saint-Maximin",
+     "rating": 85,
+     "position": "CF",
+     "slot": "RW"
+    }
+   ],
+   "subs": [
+    {
+     "resourceId": 33761871,
+     "name": "Paredes",
+     "rating": 82
+    },
+    {
+     "resourceId": 33735146,
+     "name": "Guilherme",
+     "rating": 82
+    },
+    {
+     "resourceId": 16972061,
+     "name": "Khazri",
+     "rating": 81
+    },
+    {
+     "resourceId": 33778463,
+     "name": "Marušić",
+     "rating": 81
+    },
+    {
+     "resourceId": 17009946,
+     "name": "Kamada",
+     "rating": 81
+    },
+    {
+     "resourceId": 17003378,
+     "name": "Buendía",
+     "rating": 81
+    },
+    {
+     "resourceId": 16970624,
+     "name": "Seferović",
+     "rating": 81
+    },
+    {
+     "resourceId": 33766539,
+     "name": "Jahović",
+     "rating": 79
+    },
+    {
+     "resourceId": 33790259,
+     "name": "Gudiño",
+     "rating": 76
+    },
+    {
+     "resourceId": 16999502,
+     "name": "Lloris",
+     "rating": 76
+    },
+    {
+     "resourceId": 16964714,
+     "name": "Jantscher",
+     "rating": 76
+    },
+    {
+     "resourceId": 16981260,
+     "name": "Kobylański",
+     "rating": 76
+    }
+   ]
+  },
+  {
+   "week": 30,
+   "released": "2021-04-21",
+   "formation": "f343",
+   "xiSource": "https://www.thexboxhub.com/wp-content/uploads/2021/04/TOTW-30.png",
+   "starters": [
+    {
+     "resourceId": 100855415,
+     "name": "Courtois",
+     "rating": 91,
+     "position": "GK",
+     "slot": "GK"
+    },
+    {
+     "resourceId": 100873142,
+     "name": "Günter",
+     "rating": 84,
+     "position": "LWB",
+     "slot": "LCB"
+    },
+    {
+     "resourceId": 100871158,
+     "name": "Ginter",
+     "rating": 86,
+     "position": "CB",
+     "slot": "CB"
+    },
+    {
+     "resourceId": 50511293,
+     "name": "Kjær",
+     "rating": 83,
+     "position": "CB",
+     "slot": "RCB"
+    },
+    {
+     "resourceId": 84070564,
+     "name": "Sigurðsson",
+     "rating": 86,
+     "position": "LM",
+     "slot": "LM"
+    },
+    {
+     "resourceId": 100853756,
+     "name": "Eriksen",
+     "rating": 88,
+     "position": "CM",
+     "slot": "LCM"
+    },
+    {
+     "resourceId": 84097015,
+     "name": "Berardi",
+     "rating": 85,
+     "position": "RM",
+     "slot": "RM"
+    },
+    {
+     "resourceId": 117686659,
+     "name": "Greenwood",
+     "rating": 84,
+     "position": "RM",
+     "slot": "RCM"
+    },
+    {
+     "resourceId": 117680752,
+     "name": "Nsame",
+     "rating": 86,
+     "position": "ST",
+     "slot": "ST"
+    },
+    {
+     "resourceId": 100855683,
+     "name": "Immobile",
+     "rating": 89,
+     "position": "ST",
+     "slot": "LW"
+    },
+    {
+     "resourceId": 151195554,
+     "name": "Volland",
+     "rating": 87,
+     "position": "RF",
+     "slot": "RW"
+    }
+   ],
+   "subs": [
+    {
+     "resourceId": 50572350,
+     "name": "Yaremchuk",
+     "rating": 86
+    },
+    {
+     "resourceId": 50565575,
+     "name": "Lucas Paquetá",
+     "rating": 84
+    },
+    {
+     "resourceId": 33766664,
+     "name": "Maclaren",
+     "rating": 82
+    },
+    {
+     "resourceId": 16955440,
+     "name": "Hernández",
+     "rating": 82
+    },
+    {
+     "resourceId": 33778028,
+     "name": "Prevljak",
+     "rating": 82
+    },
+    {
+     "resourceId": 16970470,
+     "name": "Trimmel",
+     "rating": 81
+    },
+    {
+     "resourceId": 17000766,
+     "name": "Omlin",
+     "rating": 81
+    },
+    {
+     "resourceId": 50583069,
+     "name": "Johnson",
+     "rating": 77
+    },
+    {
+     "resourceId": 16988461,
+     "name": "Cebula",
+     "rating": 74
+    },
+    {
+     "resourceId": 16988419,
+     "name": "Long",
+     "rating": 74
+    },
+    {
+     "resourceId": 16986585,
+     "name": "Turgott",
+     "rating": 72
+    },
+    {
+     "resourceId": 17021775,
+     "name": "Carlos Mendes Gomes",
+     "rating": 69
+    }
+   ]
+  },
+  {
+   "week": 31,
+   "released": "2021-04-28",
+   "formation": "f343",
+   "xiSource": "https://www.thexboxhub.com/wp-content/uploads/2021/04/TOTW-31.png",
+   "starters": [
+    {
+     "resourceId": 84106487,
+     "name": "Dúbravka",
+     "rating": 86,
+     "position": "GK",
+     "slot": "GK"
+    },
+    {
+     "resourceId": 84077123,
+     "name": "Alex Sandro",
+     "rating": 86,
+     "position": "LB",
+     "slot": "LCB"
+    },
+    {
+     "resourceId": 134443578,
+     "name": "Kimpembe",
+     "rating": 87,
+     "position": "CB",
+     "slot": "CB"
+    },
+    {
+     "resourceId": 84111939,
+     "name": "Niakhaté",
+     "rating": 84,
+     "position": "CB",
+     "slot": "RCB"
+    },
+    {
+     "resourceId": 100899773,
+     "name": "Claude-Maurice",
+     "rating": 84,
+     "position": "CM",
+     "slot": "RCM"
+    },
+    {
+     "resourceId": 117653128,
+     "name": "De Paul",
+     "rating": 86,
+     "position": "CM",
+     "slot": "RM"
+    },
+    {
+     "resourceId": 117643995,
+     "name": "Klaassen",
+     "rating": 84,
+     "position": "CAM",
+     "slot": "LCM"
+    },
+    {
+     "resourceId": 100895265,
+     "name": "Malinovskyi",
+     "rating": 84,
+     "position": "RF",
+     "slot": "RW"
+    },
+    {
+     "resourceId": 67297016,
+     "name": "Oscar",
+     "rating": 85,
+     "position": "LF",
+     "slot": "LM"
+    },
+    {
+     "resourceId": 151189709,
+     "name": "Griezmann",
+     "rating": 90,
+     "position": "ST",
+     "slot": "ST"
+    },
+    {
+     "resourceId": 84010455,
+     "name": "Yılmaz",
+     "rating": 84,
+     "position": "ST",
+     "slot": "LW"
+    }
+   ],
+   "subs": [
+    {
+     "resourceId": 33731820,
+     "name": "Payet",
+     "rating": 84
+    },
+    {
+     "resourceId": 33798801,
+     "name": "Tsygankov",
+     "rating": 83
+    },
+    {
+     "resourceId": 16946804,
+     "name": "Evans",
+     "rating": 83
+    },
+    {
+     "resourceId": 16969339,
+     "name": "Wood",
+     "rating": 82
+    },
+    {
+     "resourceId": 33776789,
+     "name": "Embolo",
+     "rating": 82
+    },
+    {
+     "resourceId": 16985550,
+     "name": "Hector",
+     "rating": 81
+    },
+    {
+     "resourceId": 16951759,
+     "name": "Bravo",
+     "rating": 81
+    },
+    {
+     "resourceId": 17011721,
+     "name": "Evander",
+     "rating": 80
+    },
+    {
+     "resourceId": 17021838,
+     "name": "Puado",
+     "rating": 79
+    },
+    {
+     "resourceId": 16999057,
+     "name": "Armstrong",
+     "rating": 79
+    },
+    {
+     "resourceId": 50562612,
+     "name": "Santos",
+     "rating": 78
+    },
+    {
+     "resourceId": 33748554,
+     "name": "Grigg",
+     "rating": 75
+    }
+   ]
+  },
+  {
+   "week": 32,
+   "released": "2021-05-05",
+   "formation": "f343",
+   "xiSource": "https://www.thexboxhub.com/wp-content/uploads/2021/05/FIFA-TOTW-32.png",
+   "starters": [
+    {
+     "resourceId": 84049569,
+     "name": "Consigli",
+     "rating": 86,
+     "position": "GK",
+     "slot": "GK"
+    },
+    {
+     "resourceId": 50535773,
+     "name": "Bořil",
+     "rating": 82,
+     "position": "LB",
+     "slot": "LCB"
+    },
+    {
+     "resourceId": 67348994,
+     "name": "Éder Militão",
+     "rating": 83,
+     "position": "CB",
+     "slot": "CB"
+    },
+    {
+     "resourceId": 84083933,
+     "name": "Aurier",
+     "rating": 85,
+     "position": "RB",
+     "slot": "RCB"
+    },
+    {
+     "resourceId": 84103957,
+     "name": "Bongonda",
+     "rating": 83,
+     "position": "LM",
+     "slot": "LM"
+    },
+    {
+     "resourceId": 67306829,
+     "name": "Pizzi",
+     "rating": 86,
+     "position": "CM",
+     "slot": "RCM"
+    },
+    {
+     "resourceId": 134425856,
+     "name": "Çalhanoğlu",
+     "rating": 86,
+     "position": "CAM",
+     "slot": "LCM"
+    },
+    {
+     "resourceId": 84127541,
+     "name": "Ferrán Torres",
+     "rating": 84,
+     "position": "RM",
+     "slot": "RM"
+    },
+    {
+     "resourceId": 84112857,
+     "name": "Larin",
+     "rating": 82,
+     "position": "ST",
+     "slot": "ST"
+    },
+    {
+     "resourceId": 167960727,
+     "name": "Aubameyang",
+     "rating": 90,
+     "position": "ST",
+     "slot": "RW"
+    },
+    {
+     "resourceId": 117676302,
+     "name": "Havertz",
+     "rating": 86,
+     "position": "ST",
+     "slot": "LW"
+    }
+   ],
+   "subs": [
+    {
+     "resourceId": 50552358,
+     "name": "Wilson",
+     "rating": 81
+    },
+    {
+     "resourceId": 16966154,
+     "name": "Álvarez",
+     "rating": 81
+    },
+    {
+     "resourceId": 17001706,
+     "name": "Çelik",
+     "rating": 81
+    },
+    {
+     "resourceId": 16991423,
+     "name": "Pardo",
+     "rating": 81
+    },
+    {
+     "resourceId": 16930215,
+     "name": "Palacio",
+     "rating": 81
+    },
+    {
+     "resourceId": 16994036,
+     "name": "Simon",
+     "rating": 81
+    },
+    {
+     "resourceId": 16969894,
+     "name": "Kike García",
+     "rating": 81
+    },
+    {
+     "resourceId": 17021589,
+     "name": "Buyalskyi",
+     "rating": 80
+    },
+    {
+     "resourceId": 17014669,
+     "name": "Onaiwu",
+     "rating": 77
+    },
+    {
+     "resourceId": 17007839,
+     "name": "Bakış",
+     "rating": 76
+    },
+    {
+     "resourceId": 17000597,
+     "name": "Demetriou",
+     "rating": 73
+    },
+    {
+     "resourceId": 16981313,
+     "name": "Kiernan",
+     "rating": 69
+    }
+   ]
+  },
+  {
+   "week": 33,
+   "released": "2021-05-12",
+   "formation": "f343",
+   "xiSource": "https://www.thexboxhub.com/wp-content/uploads/2021/05/TOTW-33.png",
+   "starters": [
+    {
+     "resourceId": 67321695,
+     "name": "Alisson",
+     "rating": 91,
+     "position": "GK",
+     "slot": "GK"
+    },
+    {
+     "resourceId": 117687181,
+     "name": "Saka",
+     "rating": 84,
+     "position": "LB",
+     "slot": "LCB"
+    },
+    {
+     "resourceId": 100873185,
+     "name": "Guerreiro",
+     "rating": 87,
+     "position": "LB",
+     "slot": "RCB"
+    },
+    {
+     "resourceId": 100843085,
+     "name": "Da Silva",
+     "rating": 84,
+     "position": "CB",
+     "slot": "CB"
+    },
+    {
+     "resourceId": 151211419,
+     "name": "Morales",
+     "rating": 86,
+     "position": "LM",
+     "slot": "LM"
+    },
+    {
+     "resourceId": 84054731,
+     "name": "Rakitić",
+     "rating": 86,
+     "position": "CM",
+     "slot": "RM"
+    },
+    {
+     "resourceId": 100879650,
+     "name": "Kramarić",
+     "rating": 86,
+     "position": "CAM",
+     "slot": "LCM"
+    },
+    {
+     "resourceId": 84114331,
+     "name": "Pellegrini",
+     "rating": 84,
+     "position": "CAM",
+     "slot": "RCM"
+    },
+    {
+     "resourceId": 100895589,
+     "name": "Osimhen",
+     "rating": 84,
+     "position": "ST",
+     "slot": "ST"
+    },
+    {
+     "resourceId": 134414706,
+     "name": "Wilson",
+     "rating": 86,
+     "position": "ST",
+     "slot": "RW"
+    },
+    {
+     "resourceId": 100848237,
+     "name": "Sánchez",
+     "rating": 85,
+     "position": "ST",
+     "slot": "LW"
+    }
+   ],
+   "subs": [
+    {
+     "resourceId": 16945651,
+     "name": "Sirigu",
+     "rating": 86
+    },
+    {
+     "resourceId": 33763951,
+     "name": "Laborde",
+     "rating": 84
+    },
+    {
+     "resourceId": 17016423,
+     "name": "Gómez",
+     "rating": 83
+    },
+    {
+     "resourceId": 33802283,
+     "name": "Bruno Guimarães",
+     "rating": 82
+    },
+    {
+     "resourceId": 17003437,
+     "name": "Aritz Elustondo",
+     "rating": 81
+    },
+    {
+     "resourceId": 17013010,
+     "name": "Eze",
+     "rating": 81
+    },
+    {
+     "resourceId": 17011927,
+     "name": "Brekalo",
+     "rating": 81
+    },
+    {
+     "resourceId": 33710864,
+     "name": "Hoarau",
+     "rating": 80
+    },
+    {
+     "resourceId": 16960922,
+     "name": "Waghorn",
+     "rating": 78
+    },
+    {
+     "resourceId": 17006664,
+     "name": "Ayé",
+     "rating": 78
+    },
+    {
+     "resourceId": 17021009,
+     "name": "Allan Sousa",
+     "rating": 75
+    },
+    {
+     "resourceId": 17014654,
+     "name": "Erik Expósito",
+     "rating": 75
+    }
+   ]
+  },
+  {
+   "week": 34,
+   "released": "2021-05-19",
+   "formation": "f343",
+   "xiSource": "https://www.thexboxhub.com/wp-content/uploads/2021/05/TOTW-34.png",
+   "starters": [
+    {
+     "resourceId": 67110043,
+     "name": "Buffon",
+     "rating": 84,
+     "position": "GK",
+     "slot": "GK"
+    },
+    {
+     "resourceId": 67309588,
+     "name": "Nacho Fernández",
+     "rating": 83,
+     "position": "CB",
+     "slot": "CB"
+    },
+    {
+     "resourceId": 84083917,
+     "name": "Boyata",
+     "rating": 84,
+     "position": "CB",
+     "slot": "LCB"
+    },
+    {
+     "resourceId": 151226225,
+     "name": "Alexander-Arnold",
+     "rating": 89,
+     "position": "RB",
+     "slot": "RCB"
+    },
+    {
+     "resourceId": 84099728,
+     "name": "Højbjerg",
+     "rating": 85,
+     "position": "CDM",
+     "slot": "RCM"
+    },
+    {
+     "resourceId": 134451881,
+     "name": "Carlos Soler",
+     "rating": 86,
+     "position": "CM",
+     "slot": "LCM"
+    },
+    {
+     "resourceId": 117671955,
+     "name": "Dembélé",
+     "rating": 86,
+     "position": "RM",
+     "slot": "RM"
+    },
+    {
+     "resourceId": 67343777,
+     "name": "Fassnacht",
+     "rating": 84,
+     "position": "RM",
+     "slot": "LM"
+    },
+    {
+     "resourceId": 84091255,
+     "name": "Milik",
+     "rating": 84,
+     "position": "ST",
+     "slot": "ST"
+    },
+    {
+     "resourceId": 151214677,
+     "name": "Ajorque",
+     "rating": 87,
+     "position": "ST",
+     "slot": "RW"
+    },
+    {
+     "resourceId": 84053744,
+     "name": "Higuaín",
+     "rating": 85,
+     "position": "ST",
+     "slot": "LW"
+    }
+   ],
+   "subs": [
+    {
+     "resourceId": 16989312,
+     "name": "Grifo",
+     "rating": 82
+    },
+    {
+     "resourceId": 33766874,
+     "name": "José Sá",
+     "rating": 82
+    },
+    {
+     "resourceId": 33760536,
+     "name": "Dursun",
+     "rating": 82
+    },
+    {
+     "resourceId": 33763471,
+     "name": "Moberg Karlsson",
+     "rating": 82
+    },
+    {
+     "resourceId": 17013788,
+     "name": "Wijndal",
+     "rating": 81
+    },
+    {
+     "resourceId": 16984880,
+     "name": "Bacca",
+     "rating": 81
+    },
+    {
+     "resourceId": 33733997,
+     "name": "Gavranović",
+     "rating": 81
+    },
+    {
+     "resourceId": 84096452,
+     "name": "Ghezzal",
+     "rating": 79
+    },
+    {
+     "resourceId": 17006404,
+     "name": "Pavlidis",
+     "rating": 78
+    },
+    {
+     "resourceId": 16979092,
+     "name": "Omoijuanfo",
+     "rating": 78
+    },
+    {
+     "resourceId": 17010100,
+     "name": "Doi",
+     "rating": 78
+    },
+    {
+     "resourceId": 16990210,
+     "name": "Healey",
+     "rating": 74
+    }
+   ]
+  },
+  {
+   "week": 35,
+   "released": "2021-05-26",
+   "formation": "f343",
+   "xiSource": "https://www.thexboxhub.com/wp-content/uploads/2021/05/fifa-21-totw-35.png",
+   "starters": [
+    {
+     "resourceId": 50531635,
+     "name": "Cillessen",
+     "rating": 84,
+     "position": "GK",
+     "slot": "GK"
+    },
+    {
+     "resourceId": 50525117,
+     "name": "Víctor Ruiz",
+     "rating": 81,
+     "position": "CB",
+     "slot": "CB"
+    },
+    {
+     "resourceId": 84065725,
+     "name": "Kjær",
+     "rating": 85,
+     "position": "CB",
+     "slot": "RCB"
+    },
+    {
+     "resourceId": 84105225,
+     "name": "Maripán",
+     "rating": 84,
+     "position": "CB",
+     "slot": "LCB"
+    },
+    {
+     "resourceId": 151201057,
+     "name": "Gnabry",
+     "rating": 88,
+     "position": "LM",
+     "slot": "LM"
+    },
+    {
+     "resourceId": 84063083,
+     "name": "Modrić",
+     "rating": 88,
+     "position": "CM",
+     "slot": "RCM"
+    },
+    {
+     "resourceId": 117627584,
+     "name": "Stindl",
+     "rating": 85,
+     "position": "CAM",
+     "slot": "LCM"
+    },
+    {
+     "resourceId": 117666622,
+     "name": "Pépé",
+     "rating": 87,
+     "position": "RM",
+     "slot": "RM"
+    },
+    {
+     "resourceId": 167980882,
+     "name": "Mané",
+     "rating": 92,
+     "position": "LW",
+     "slot": "LW"
+    },
+    {
+     "resourceId": 218280388,
+     "name": "Suárez",
+     "rating": 90,
+     "position": "ST",
+     "slot": "ST"
+    },
+    {
+     "resourceId": 167973313,
+     "name": "Morata",
+     "rating": 88,
+     "position": "ST",
+     "slot": "RW"
+    }
+   ],
+   "subs": [
+    {
+     "resourceId": 33769702,
+     "name": "Zelarayán",
+     "rating": 84
+    },
+    {
+     "resourceId": 33798062,
+     "name": "David",
+     "rating": 84
+    },
+    {
+     "resourceId": 33754587,
+     "name": "Vanaken",
+     "rating": 82
+    },
+    {
+     "resourceId": 17003672,
+     "name": "Pablo Fornals",
+     "rating": 82
+    },
+    {
+     "resourceId": 17029068,
+     "name": "Adeyemi",
+     "rating": 81
+    },
+    {
+     "resourceId": 17019879,
+     "name": "Bornauw",
+     "rating": 81
+    },
+    {
+     "resourceId": 17014782,
+     "name": "Zachariassen",
+     "rating": 78
+    },
+    {
+     "resourceId": 33776473,
+     "name": "Boyé",
+     "rating": 77
+    },
+    {
+     "resourceId": 16989408,
+     "name": "Green",
+     "rating": 76
+    },
+    {
+     "resourceId": 17019941,
+     "name": "Thorstvedt",
+     "rating": 76
+    },
+    {
+     "resourceId": 17001257,
+     "name": "Schwäbe",
+     "rating": 76
+    },
+    {
+     "resourceId": 50559761,
+     "name": "Kelly",
+     "rating": 67
+    }
+   ]
+  }
+ ]
+}

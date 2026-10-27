@@ -1,0 +1,10 @@
+{
+  "rank": "{{rank}}",
+  "persona": "{{name}}",
+  "clubName": "{{name}}",
+  "badge": "{{badge}}",
+  "est": "{{est}}",
+  "sku": "{{sku}}",
+  "score": { "icon": "{{scoreIcon}}", "value": "{{score}}" },
+  "tiebreak": { "icon": "{{tiebreakIcon}}", "value": "{{wins}}" }
+}

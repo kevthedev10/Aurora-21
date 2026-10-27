@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "game": "FIFA21",
+  "requiresGameRestart": true,
+  "profile": {
+    "gameExecutableSha256": "44d0acc62a214c6f4dab2b8a4f4bdd068869c636f15cc262035b4edc862a1494",
+    "cardsLibrarySha256": "37133be975c0552c919e2901b7da203eb458792b5bf43764821ad687de548a49"
+  },
+  "languages": [
+    "ara_sa",
+    "chi_hk",
+    "chs_cn",
+    "cze_cz",
+    "dan_dk",
+    "dut_nl",
+    "eng_us",
+    "fre_fr",
+    "ger_de",
+    "ita_it",
+    "jpn_jp",
+    "kor_kr",
+    "nor_no",
+    "pol_pl",
+    "por_br",
+    "por_pt",
+    "rus_ru",
+    "spa_es",
+    "spa_mx",
+    "swe_se",
+    "tur_tr"
+  ],
+  "captions": [
+    {
+      "mode": "champions",
+      "stringId": "FUT_Champions_TopX_upper",
+      "sourceNumber": "200"
+    },
+    {
+      "mode": "squadBattles",
+      "stringId": "FUT_SQUADBATTLE_TOP100_TAB",
+      "sourceNumber": "200"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+.wrap { overflow-x: auto; }
+.table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+.fixed { table-layout: fixed; min-width: var(--table-min-width); }
+.fixed td { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.fixed td > div { overflow: hidden; text-overflow: ellipsis; }
+.table th {
+  padding: 8px 12px; text-align: left; white-space: nowrap;
+  color: var(--fog); font: 500 var(--text-xs)/1.2 var(--font); border-bottom: 1px solid var(--line);
+}
+.table td { padding: 9px 12px; border-bottom: 1px solid rgb(51 64 90 / 0.55); vertical-align: middle; }
+.table tbody tr:hover { background: rgb(38 47 64 / 0.6); }
+.clickable { cursor: pointer; }
+.table :is(th, td).end { text-align: right; }
+.table :is(th, td).center { text-align: center; }
+.sort { all: unset; cursor: pointer; display: inline-flex; gap: 4px; align-items: center; }
+.sort:hover { color: var(--chalk); }
+.sort:focus-visible { outline: 2px solid var(--coin); outline-offset: 2px; border-radius: 2px; }
+.arrow { color: var(--coin); font-size: 11px; width: 12px; flex: 0 0 12px; text-align: center; }
+.pager { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--space-3); padding-top: var(--space-3); color: var(--fog); font-size: var(--text-xs); }
+.pagerButtons { display: flex; gap: var(--space-2); }
+
+/* Phones: each row becomes a labelled block, no sideways scrolling. */
+@media (max-width: 640px) {
+  .fixed { min-width: 0; }
+  .fixed colgroup { display: none; }
+  .table thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+  .table, .table tbody, .table tr, .table td { display: block; }
+  .table tr { padding: 10px 0; border-bottom: 1px solid var(--line); }
+  .table td { display: grid; grid-template-columns: 38% minmax(0, 1fr); gap: 8px; padding: 3px 4px; border: 0; text-align: left; }
+  .table td:is(.center, .end) { text-align: left; }
+  .table td::before { content: attr(data-label); color: var(--fog); font-size: var(--text-xs); }
+  .table td[data-label=''] { grid-template-columns: minmax(0, 1fr); }
+  .table td[data-label='']::before { display: none; }
+}

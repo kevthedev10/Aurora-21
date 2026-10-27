@@ -1,0 +1,26 @@
+[Unit]
+Description=Project 21 authenticated multi-tenant game gateway
+After=network-online.target wg-quick@wg0.service
+Wants=network-online.target wg-quick@wg0.service
+
+[Service]
+Type=simple
+User=project21
+Group=project21
+WorkingDirectory=@ROOT@
+Environment=PYTHONUNBUFFERED=1
+Environment="LOCALFUT_RUNTIME_ROOT=@ROOT@/state/bootstrap"
+Environment="LOCALFUT21_USER_CONFIG_ROOT=@ROOT@/config/bootstrap"
+ExecStart="@ROOT@/.venv/bin/python" "@ROOT@/runtime-source/authenticated_gateway.py"
+Restart=on-failure
+RestartSec=3
+LimitNOFILE=65536
+TasksMax=8192
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=read-only
+ReadWritePaths="@ROOT@/state" "@ROOT@/config"
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,18 @@
+{
+ "_readme": [
+  "FUT Champions Weekend League reward settings (pack-odds-2026-09 PLAN.md 5.2). The reward ranks themselves are tables since migration 126,",
+  "edited in the operator panel (Modes, Champions); a fresh database is seeded from rewards/champions.json.",
+  "Loaded at server start and validated strictly (an invalid file stops the server). The win ranks must cover 0 to seasons.json weekendLeague.maxMatches.",
+  "Top bands depend on leaderboard position (ordered by wins, then Skill Rating) and, from Weekend League minWinsForTopFromEvent, need minWinsForTop wins",
+  "(owner, 2026-10-05: 6 from 2962, 9-12 Oct 2026; 2961 is not changed retroactively); a club in a Top place with fewer wins takes the rank its wins earn,",
+  "and its place shows no Top position.",
+  "The six Top bands' places follow seasons.json weekendLeague.topX (the Top players number) and never change with the number of players (owner, 2026-10-03: band sizing removed, migration 128).",
+  "Paid 17:00 UK time on the Monday the Weekend League ends (seasons.json rewardHourUk) to players with minMatchesToRank matches.",
+  "FUT Champions Points by finish are retail's; they are capped at fcPointsCap in total (retail: any points above 2,000 are lost)."
+ ],
+ "version": 2,
+ "minMatchesToRank": 5,
+ "minWinsForTop": 6,
+ "minWinsForTopFromEvent": 2962,
+ "fcPointsCap": 2000
+}

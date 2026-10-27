@@ -1,0 +1,15 @@
+.matchmaking-page { display: grid; gap: 24px; min-width: 0; }
+.matchmaking-page > header, .matchmaking-page > p { margin: 0; }
+.matchmaking-page > section, .matchmaking-page section + section { margin-top: 0; }
+.matchmaking-snapshot { display: flex; flex-wrap: wrap; align-items: center; gap: 16px; }
+.matchmaking-tools { display: grid; grid-template-columns: minmax(220px,2fr) minmax(180px,1fr) auto; gap: 20px; align-items: end; }
+.matchmaking-tools input, .matchmaking-tools select, .matchmaking-tools button { min-height: 42px; }
+.matchmaking-filters > p { margin-bottom: 0; }
+.matchmaking-queues { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 24px; align-items: start; }
+.matchmaking-page .matchmaking-queues > section { margin-top: 0; }
+.matchmaking-queues > section:last-child { grid-column: 1/-1; }
+.matchmaking-player a { overflow-wrap: anywhere; }
+.matchmaking-player small { display: block; margin-top: 6px; color: var(--red-card); font-size: 11px; }
+.matchmaking-page td { overflow-wrap: anywhere; }
+@media(max-width:1400px) { .matchmaking-queues { grid-template-columns: minmax(0,1fr); } }
+@media(max-width:700px) { .matchmaking-tools { grid-template-columns: minmax(0,1fr); } }

@@ -1,0 +1,10 @@
+{
+  "purchase": "{{packs}}",
+  "packList": "{{packs}}",
+  "unopenedPacks": "{{packs}}",
+  "recoveredPacks": "{{packs}}",
+  "purchasedPacks": "{{packs}}",
+  "count": "{{total}}",
+  "total": "{{total}}",
+  "timestamp": "{{timestamp}}"
+}

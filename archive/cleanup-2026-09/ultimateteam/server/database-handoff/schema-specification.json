@@ -1,0 +1,4882 @@
+{
+  "formatVersion": 1,
+  "status": "historical design context only; implementation-specification.json is the fixed fresh-artifact task authority",
+  "source": "../DATABASE-DESIGN.md section 13",
+  "databaseEngine": "PostgreSQL 18",
+  "identityPolicy": {
+    "independentEntities": "generated bigint single-column primary key",
+    "oneToOneExtensions": "reuse parent single-column primary key as PK/FK",
+    "foreignKeys": "one referenced column; additional cross-row invariants need database constraints/triggers",
+    "nativeIds": "separate fields; never substitute internal sequences into FIFA responses",
+    "exceptions": "retain existing import hash and migration ledger single-column bookkeeping keys"
+  },
+  "tables": [
+    {
+      "name": "catalog_sources",
+      "description": "provenance of a catalog revision.",
+      "implementationStatus": "baseline_proposed",
+      "primaryKey": "source_id",
+      "columns": [
+        {
+          "name": "source_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": true,
+          "annotation": "PK"
+        },
+        {
+          "name": "source_kind",
+          "type": "text",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": "native export / bundled / custom / legacy"
+        },
+        {
+          "name": "source_revision",
+          "type": "text",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "client_build",
+          "type": "text",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": "actual build/profile evidence"
+        },
+        {
+          "name": "game_year",
+          "type": "integer",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "content_sha256",
+          "type": "text",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "manifest_revision",
+          "type": "text",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "imported_at",
+          "type": "timestamptz",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "provenance",
+          "type": "json",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": "source report, not gameplay authority"
+        }
+      ],
+      "uniqueConstraints": [],
+      "notes": "",
+      "primaryKeyAllocation": "generated_internal_identity"
+    },
+    {
+      "name": "footballers",
+      "description": "one identity across card versions, with its FIFA ID on the row.",
+      "implementationStatus": "baseline_proposed",
+      "primaryKey": "footballer_id",
+      "columns": [
+        {
+          "name": "footballer_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": true,
+          "annotation": "PK"
+        },
+        {
+          "name": "native_footballer_id",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": "canonical asset/identity after verification"
+        },
+        {
+          "name": "first_name",
+          "type": "text",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "last_name",
+          "type": "text",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "common_name",
+          "type": "text",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "source_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": "FK catalog_sources",
+          "references": {
+            "table": "catalog_sources",
+            "column": "source_id"
+          }
+        },
+        {
+          "name": "identity_status",
+          "type": "text",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": "resolved / unresolved / sourced custom"
+        }
+      ],
+      "uniqueConstraints": [],
+      "notes": "Canonical native identity is unique among resolved rows for the supported FIFA 21\ndataset. Do not assign several footballer rows to one verified identity just to\npermit duplicate squad entries. Custom identity exceptions require explicit evidence.",
+      "primaryKeyAllocation": "generated_internal_identity"
+    },
+    {
+      "name": "nations",
+      "description": "country references.",
+      "implementationStatus": "baseline_proposed",
+      "primaryKey": "nation_id",
+      "columns": [
+        {
+          "name": "nation_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": true,
+          "annotation": "PK"
+        },
+        {
+          "name": "native_nation_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": "UQ",
+          "unique": true
+        },
+        {
+          "name": "name",
+          "type": "text",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "source_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": "FK catalog_sources",
+          "references": {
+            "table": "catalog_sources",
+            "column": "source_id"
+          }
+        }
+      ],
+      "uniqueConstraints": [],
+      "notes": "",
+      "primaryKeyAllocation": "generated_internal_identity"
+    },
+    {
+      "name": "leagues",
+      "description": "league references.",
+      "implementationStatus": "baseline_proposed",
+      "primaryKey": "league_id",
+      "columns": [
+        {
+          "name": "league_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": true,
+          "annotation": "PK"
+        },
+        {
+          "name": "native_league_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": "UQ",
+          "unique": true
+        },
+        {
+          "name": "name",
+          "type": "text",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "source_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": "FK catalog_sources",
+          "references": {
+            "table": "catalog_sources",
+            "column": "source_id"
+          }
+        }
+      ],
+      "uniqueConstraints": [],
+      "notes": "",
+      "primaryKeyAllocation": "generated_internal_identity"
+    },
+    {
+      "name": "teams",
+      "description": "team identities; each card keeps its own league association.",
+      "implementationStatus": "baseline_proposed",
+      "primaryKey": "team_id",
+      "columns": [
+        {
+          "name": "team_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": true,
+          "annotation": "PK"
+        },
+        {
+          "name": "native_team_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": "UQ",
+          "unique": true
+        },
+        {
+          "name": "name",
+          "type": "text",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "source_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": "FK catalog_sources",
+          "references": {
+            "table": "catalog_sources",
+            "column": "source_id"
+          }
+        }
+      ],
+      "uniqueConstraints": [],
+      "notes": "Unresolved legacy codes remain recorded in typed compatibility fields or retained\nimport metadata; do not invent reference rows or treat native zero as an internal FK.",
+      "primaryKeyAllocation": "generated_internal_identity"
+    },
+    {
+      "name": "item_families",
+      "description": "broad internal item categories.",
+      "implementationStatus": "baseline_proposed",
+      "primaryKey": "family_id",
+      "columns": [
+        {
+          "name": "family_id",
+          "type": "smallint",
+          "nullable": false,
+          "primaryKey": true,
+          "annotation": "PK"
+        },
+        {
+          "name": "code",
+          "type": "text",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": "UQ         player / manager / consumable / customization / player_pick",
+          "unique": true
+        },
+        {
+          "name": "name",
+          "type": "text",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        }
+      ],
+      "uniqueConstraints": [],
+      "notes": "",
+      "primaryKeyAllocation": "explicit_seeded_internal_family_codes"
+    },
+    {
+      "name": "item_definitions",
+      "description": "shared identity and canonical native fields for every product.",
+      "implementationStatus": "baseline_proposed",
+      "primaryKey": "definition_id",
+      "columns": [
+        {
+          "name": "definition_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": true,
+          "annotation": "PK"
+        },
+        {
+          "name": "family_id",
+          "type": "smallint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": "FK item_families",
+          "references": {
+            "table": "item_families",
+            "column": "family_id"
+          }
+        },
+        {
+          "name": "game_year",
+          "type": "integer",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "native_resource_id",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": "own product ID, not a token's preview ID"
+        },
+        {
+          "name": "native_asset_id",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "native_card_db_id",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "native_card_asset_id",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "native_item_type",
+          "type": "text",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "native_subtype",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": "product-specific subtype; type default if absent"
+        },
+        {
+          "name": "source_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": "FK catalog_sources",
+          "references": {
+            "table": "catalog_sources",
+            "column": "source_id"
+          }
+        },
+        {
+          "name": "catalog_order",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": "preserves deterministic candidate order"
+        },
+        {
+          "name": "revision",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "status",
+          "type": "text",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": "unresolved / draft / enabled / retired"
+        },
+        {
+          "name": "display_name",
+          "type": "text",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        }
+      ],
+      "uniqueConstraints": [
+        [
+          "game_year",
+          "family_id",
+          "native_resource_id"
+        ]
+      ],
+      "notes": "UQ `(game_year, family_id, native_resource_id)` for resolved canonical resources.\nNative asset IDs may repeat across card versions. Current baseline supports one compatible client profile.",
+      "primaryKeyAllocation": "generated_internal_identity"
+    },
+    {
+      "name": "card_types",
+      "description": "classification and canonical FIFA rarity/default mapping together.",
+      "implementationStatus": "baseline_proposed",
+      "primaryKey": "card_type_id",
+      "columns": [
+        {
+          "name": "card_type_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": true,
+          "annotation": "PK"
+        },
+        {
+          "name": "code",
+          "type": "text",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": "UQ",
+          "unique": true
+        },
+        {
+          "name": "name",
+          "type": "text",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "card_level",
+          "type": "text",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": "bronze / silver / gold or traced category"
+        },
+        {
+          "name": "native_rareflag",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": "existing FIFA rarity code"
+        },
+        {
+          "name": "native_default_subtype",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "is_special",
+          "type": "boolean",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "source_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": "FK catalog_sources",
+          "references": {
+            "table": "catalog_sources",
+            "column": "source_id"
+          }
+        },
+        {
+          "name": "mapping_status",
+          "type": "text",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": "verified / unconfirmed"
+        }
+      ],
+      "uniqueConstraints": [],
+      "notes": "`native_rareflag` is not globally unique: different card levels/types can share\nthe same wire rarity code. Product subtype overrides are explicit in definitions.\nDo not use type IDs as native rarity codes.",
+      "primaryKeyAllocation": "generated_internal_identity"
+    },
+    {
+      "name": "card_designs",
+      "description": "one reusable presentation design.",
+      "implementationStatus": "baseline_proposed",
+      "primaryKey": "design_id",
+      "columns": [
+        {
+          "name": "design_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": true,
+          "annotation": "PK"
+        },
+        {
+          "name": "code",
+          "type": "text",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": "UQ",
+          "unique": true
+        },
+        {
+          "name": "name",
+          "type": "text",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "revision",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "background_asset_path",
+          "type": "text",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "background_sha256",
+          "type": "text",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "foreground_asset_path",
+          "type": "text",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "foreground_sha256",
+          "type": "text",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "primary_text_colour",
+          "type": "text",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "secondary_text_colour",
+          "type": "text",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "render_metadata",
+          "type": "json",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": "unmodeled asset tunables, versioned"
+        },
+        {
+          "name": "source_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": "FK catalog_sources",
+          "references": {
+            "table": "catalog_sources",
+            "column": "source_id"
+          }
+        },
+        {
+          "name": "render_status",
+          "type": "text",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": "draft / verified"
+        }
+      ],
+      "uniqueConstraints": [],
+      "notes": "These presentation fields are proposals, not recovered FIFA tunable names.\nMap them to actual client assets/settings only with evidence; paths are portable.",
+      "primaryKeyAllocation": "generated_internal_identity"
+    },
+    {
+      "name": "card_type_designs",
+      "description": "real type-to-design associations and one default.",
+      "implementationStatus": "baseline_proposed",
+      "primaryKey": "id",
+      "columns": [
+        {
+          "name": "id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": true,
+          "annotation": "generated PK"
+        },
+        {
+          "name": "card_type_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": "FK card_types",
+          "references": {
+            "table": "card_types",
+            "column": "card_type_id"
+          }
+        },
+        {
+          "name": "design_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": "FK card_designs",
+          "references": {
+            "table": "card_designs",
+            "column": "design_id"
+          }
+        },
+        {
+          "name": "is_default",
+          "type": "boolean",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        }
+      ],
+      "uniqueConstraints": [
+        [
+          "card_type_id",
+          "design_id"
+        ]
+      ],
+      "notes": "UQ `(card_type_id, design_id)` enforces the original relationship/lookup rule.\n\nOne default per type. Keep this association only if several permitted designs\nare useful; a simple `card_types.default_design_id` FK can replace it if only one\ndesign per type is supported. It is unrelated to native-ID aliasing.",
+      "primaryKeyAllocation": "generated_internal_identity"
+    },
+    {
+      "name": "promos",
+      "description": "event/collection identity and availability.",
+      "implementationStatus": "baseline_proposed",
+      "primaryKey": "promo_id",
+      "columns": [
+        {
+          "name": "promo_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": true,
+          "annotation": "PK"
+        },
+        {
+          "name": "code",
+          "type": "text",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": "UQ",
+          "unique": true
+        },
+        {
+          "name": "name",
+          "type": "text",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "starts_at",
+          "type": "timestamptz",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "ends_at",
+          "type": "timestamptz",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "status",
+          "type": "text",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": "draft / enabled / retired"
+        }
+      ],
+      "uniqueConstraints": [],
+      "notes": "",
+      "primaryKeyAllocation": "generated_internal_identity"
+    },
+    {
+      "name": "promo_cards",
+      "description": "cards belonging to a promo.",
+      "implementationStatus": "baseline_proposed",
+      "primaryKey": "id",
+      "columns": [
+        {
+          "name": "id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": true,
+          "annotation": "generated PK"
+        },
+        {
+          "name": "promo_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": "FK promos",
+          "references": {
+            "table": "promos",
+            "column": "promo_id"
+          }
+        },
+        {
+          "name": "definition_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": "FK player_card_definitions",
+          "references": {
+            "table": "player_card_definitions",
+            "column": "definition_id"
+          }
+        },
+        {
+          "name": "design_override_id",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": "FK card_designs",
+          "references": {
+            "table": "card_designs",
+            "column": "design_id"
+          }
+        }
+      ],
+      "uniqueConstraints": [
+        [
+          "promo_id",
+          "definition_id"
+        ]
+      ],
+      "notes": "UQ `(promo_id, definition_id)` enforces the original relationship/lookup rule.\n\nPromo override is a publication input. Resolve it into the card definition's\neffective design explicitly; overlapping promos must not change rendering randomly.",
+      "primaryKeyAllocation": "generated_internal_identity"
+    },
+    {
+      "name": "card_rarity_groups",
+      "description": "type membership in existing rarity/SBC groups.",
+      "implementationStatus": "baseline_proposed",
+      "primaryKey": "id",
+      "columns": [
+        {
+          "name": "id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": true,
+          "annotation": "generated PK"
+        },
+        {
+          "name": "card_type_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": "FK card_types",
+          "references": {
+            "table": "card_types",
+            "column": "card_type_id"
+          }
+        },
+        {
+          "name": "native_group_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "source_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": "FK catalog_sources",
+          "references": {
+            "table": "catalog_sources",
+            "column": "source_id"
+          }
+        }
+      ],
+      "uniqueConstraints": [
+        [
+          "card_type_id",
+          "native_group_id"
+        ]
+      ],
+      "notes": "UQ `(card_type_id, native_group_id)` enforces the original relationship/lookup rule.",
+      "primaryKeyAllocation": "generated_internal_identity"
+    },
+    {
+      "name": "player_card_definitions",
+      "description": "one specific footballer card version and its base stats.",
+      "implementationStatus": "baseline_proposed",
+      "primaryKey": "definition_id",
+      "columns": [
+        {
+          "name": "definition_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": true,
+          "annotation": "PK/FK item_definitions",
+          "references": {
+            "table": "item_definitions",
+            "column": "definition_id"
+          }
+        },
+        {
+          "name": "footballer_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": "FK footballers",
+          "references": {
+            "table": "footballers",
+            "column": "footballer_id"
+          }
+        },
+        {
+          "name": "card_type_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": "FK card_types",
+          "references": {
+            "table": "card_types",
+            "column": "card_type_id"
+          }
+        },
+        {
+          "name": "design_override_id",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": "FK card_designs",
+          "references": {
+            "table": "card_designs",
+            "column": "design_id"
+          }
+        },
+        {
+          "name": "rating",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "position",
+          "type": "text",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "team_id",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": "FK teams",
+          "references": {
+            "table": "teams",
+            "column": "team_id"
+          }
+        },
+        {
+          "name": "league_id",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": "FK leagues",
+          "references": {
+            "table": "leagues",
+            "column": "league_id"
+          }
+        },
+        {
+          "name": "nation_id",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": "FK nations",
+          "references": {
+            "table": "nations",
+            "column": "nation_id"
+          }
+        },
+        {
+          "name": "native_team_id",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": "preserve unresolved original code; checked against FK when resolved"
+        },
+        {
+          "name": "native_league_id",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "native_nation_id",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "preferred_foot",
+          "type": "text",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "weak_foot",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "skill_moves",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "work_rate_attack",
+          "type": "text",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "work_rate_defense",
+          "type": "text",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "native_trait_1",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "native_trait_2",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "native_version",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "face_slot_0",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "face_slot_1",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "face_slot_2",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "face_slot_3",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "face_slot_4",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "face_slot_5",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "acceleration",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "sprint_speed",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "positioning",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "finishing",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "shot_power",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "long_shots",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "volleys",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "penalties",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "vision",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "crossing",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "free_kick_accuracy",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "short_passing",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "long_passing",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "curve",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "agility",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "balance",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "reactions",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "ball_control",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "dribbling",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "composure",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "interceptions",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "heading_accuracy",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "marking",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "standing_tackle",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "sliding_tackle",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "jumping",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "stamina",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "strength",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "aggression",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "gk_diving",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "gk_handling",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "gk_kicking",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "gk_reflexes",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "gk_speed",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "gk_positioning",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "attribute_provenance",
+          "type": "json",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": "supplied/missing/fallback source annotations"
+        }
+      ],
+      "uniqueConstraints": [],
+      "notes": "The single `definition_id` FK references the common definition; the deferred\nfamily-state check validates its classification. Attribute columns are\nnullable to preserve absent supplied data; render fallbacks stay explicit. The six\ntyped face-slot columns preserve the supplied native array order. Outfield display\nlabels such as pace/shooting are mapped through the current contract; goalkeeper\nlabels must be verified rather than relabeled as outfield values. These are six\ncolumns on the same definition row, not six attribute-row queries. `gk_speed` supplied\nmetadata and the native in-game slot order remain distinct as in current rules.",
+      "primaryKeyAllocation": "reuse_parent_id"
+    },
+    {
+      "name": "manager_definitions",
+      "description": "manager base values.",
+      "implementationStatus": "baseline_proposed",
+      "primaryKey": "definition_id",
+      "columns": [
+        {
+          "name": "definition_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": true,
+          "annotation": "PK/FK item_definitions",
+          "references": {
+            "table": "item_definitions",
+            "column": "definition_id"
+          }
+        },
+        {
+          "name": "first_name",
+          "type": "text",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "last_name",
+          "type": "text",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "common_name",
+          "type": "text",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "rating",
+          "type": "numeric",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": "preserves fractional imported base values"
+        },
+        {
+          "name": "native_rareflag",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "native_league_id",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "native_nation_id",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "native_team_id",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "league_id",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": "FK leagues",
+          "references": {
+            "table": "leagues",
+            "column": "league_id"
+          }
+        },
+        {
+          "name": "nation_id",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": "FK nations",
+          "references": {
+            "table": "nations",
+            "column": "nation_id"
+          }
+        },
+        {
+          "name": "team_id",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": "FK teams",
+          "references": {
+            "table": "teams",
+            "column": "team_id"
+          }
+        },
+        {
+          "name": "negotiation",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        }
+      ],
+      "uniqueConstraints": [],
+      "notes": "",
+      "primaryKeyAllocation": "reuse_parent_id"
+    },
+    {
+      "name": "consumable_definitions",
+      "description": "effect and application compatibility.",
+      "implementationStatus": "baseline_proposed",
+      "primaryKey": "definition_id",
+      "columns": [
+        {
+          "name": "definition_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": true,
+          "annotation": "PK/FK item_definitions",
+          "references": {
+            "table": "item_definitions",
+            "column": "definition_id"
+          }
+        },
+        {
+          "name": "consumable_kind",
+          "type": "text",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": "chemistry_style / position_modifier / verified extension"
+        },
+        {
+          "name": "rating",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "native_consumable_type",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "native_effect_id",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": "playStyle or traced consumable effect identity"
+        },
+        {
+          "name": "source_position",
+          "type": "text",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "target_position",
+          "type": "text",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "goalkeeper_only",
+          "type": "boolean",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        }
+      ],
+      "uniqueConstraints": [],
+      "notes": "",
+      "primaryKeyAllocation": "reuse_parent_id"
+    },
+    {
+      "name": "customisation_definitions",
+      "description": "kit/ball/badge/venue/vanity base values.",
+      "implementationStatus": "baseline_proposed",
+      "primaryKey": "definition_id",
+      "columns": [
+        {
+          "name": "definition_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": true,
+          "annotation": "PK/FK item_definitions",
+          "references": {
+            "table": "item_definitions",
+            "column": "definition_id"
+          }
+        },
+        {
+          "name": "customisation_kind",
+          "type": "text",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "name",
+          "type": "text",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "native_team_id",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "team_id",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": "FK teams",
+          "references": {
+            "table": "teams",
+            "column": "team_id"
+          }
+        },
+        {
+          "name": "native_kit_type",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "native_category",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "native_stadium_id",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "rating",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "native_rareflag",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        }
+      ],
+      "uniqueConstraints": [],
+      "notes": "Slot compatibility remains sourced from current rules; define additional typed\nfields only for traced vanity shapes. Retain their unknown fields as extensions.",
+      "primaryKeyAllocation": "reuse_parent_id"
+    },
+    {
+      "name": "definition_extensions",
+      "description": "optional preserved catalog fields.",
+      "implementationStatus": "conditional_on_field_inventory",
+      "primaryKey": "definition_id",
+      "columns": [
+        {
+          "name": "definition_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": true,
+          "annotation": "PK/FK item_definitions",
+          "references": {
+            "table": "item_definitions",
+            "column": "definition_id"
+          }
+        },
+        {
+          "name": "schema_revision",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "payload",
+          "type": "json",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "source_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": "FK catalog_sources",
+          "references": {
+            "table": "catalog_sources",
+            "column": "source_id"
+          }
+        }
+      ],
+      "uniqueConstraints": [],
+      "notes": "This optional table preserves unknown definition fields, not known base attributes.\nPlayer-pick token product identity uses common definitions and token instance state;\nno separate token-definition table is required until shared token fields justify one.",
+      "primaryKeyAllocation": "reuse_parent_id"
+    },
+    {
+      "name": "clubs",
+      "description": "existing account/ownership root, preserving supported fields.",
+      "implementationStatus": "baseline_proposed",
+      "primaryKey": "id",
+      "columns": [
+        {
+          "name": "id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": true,
+          "annotation": "PK"
+        },
+        {
+          "name": "persona_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": "UQ",
+          "unique": true
+        },
+        {
+          "name": "nucleus_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "display_name",
+          "type": "text",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "credits",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "fifa_points",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "next_item_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "sid",
+          "type": "text",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "token",
+          "type": "text",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": "existing runtime auth state, not a new credential collection"
+        },
+        {
+          "name": "established",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": "existing wire epoch value"
+        },
+        {
+          "name": "selected_stadium_id",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "last_purchase_transaction_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "daily_drop_day",
+          "type": "text",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "last_match_create_is_draft",
+          "type": "boolean",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "last_draft_slot",
+          "type": "smallint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "created_at",
+          "type": "timestamptz",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        }
+      ],
+      "uniqueConstraints": [],
+      "notes": "Remove live `stadium_slot_bindings` JSON only after binding migration acceptance.\nPreserve balance constraints and current allocation/identity behavior.",
+      "primaryKeyAllocation": "generated_internal_identity"
+    },
+    {
+      "name": "items",
+      "description": "the sole owner and common instance row.",
+      "implementationStatus": "baseline_proposed",
+      "primaryKey": "id",
+      "columns": [
+        {
+          "name": "id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": true,
+          "annotation": "generated PK"
+        },
+        {
+          "name": "club_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": "FK clubs",
+          "references": {
+            "table": "clubs",
+            "column": "id"
+          }
+        },
+        {
+          "name": "native_item_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": "existing club-local FIFA number"
+        },
+        {
+          "name": "definition_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": "FK item_definitions",
+          "references": {
+            "table": "item_definitions",
+            "column": "definition_id"
+          }
+        },
+        {
+          "name": "family_id",
+          "type": "smallint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": "FK item_families",
+          "references": {
+            "table": "item_families",
+            "column": "family_id"
+          }
+        },
+        {
+          "name": "timestamp",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": "existing wire/reveal epoch timestamp"
+        },
+        {
+          "name": "pile",
+          "type": "text",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "item_state",
+          "type": "text",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "untradeable",
+          "type": "boolean",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "owners",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "last_sale_price",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        }
+      ],
+      "uniqueConstraints": [
+        [
+          "club_id",
+          "native_item_id"
+        ]
+      ],
+      "notes": "UQ `(club_id, native_item_id)` preserves club-local native numbering. A deferred\nconstraint trigger validates `family_id` against the referenced definition family. Persist additional common fields only if inventory establishes\nthey are independently mutable rather than computed from rules or definitions.",
+      "primaryKeyAllocation": "generated_internal_identity"
+    },
+    {
+      "name": "player_items",
+      "description": "changing state of one owned player copy.",
+      "implementationStatus": "baseline_proposed",
+      "primaryKey": "item_id",
+      "columns": [
+        {
+          "name": "item_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": true,
+          "annotation": "PK/FK items.id",
+          "references": {
+            "table": "items",
+            "column": "id"
+          }
+        },
+        {
+          "name": "contracts",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "fitness",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "injury_type",
+          "type": "text",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "injury_games",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "suspension",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "loan_games",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "morale",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "training",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "position_override",
+          "type": "text",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "style_definition_id",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": "FK consumable_definitions",
+          "references": {
+            "table": "consumable_definitions",
+            "column": "definition_id"
+          }
+        },
+        {
+          "name": "native_play_style",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": "unresolved/default compatibility code, validated when resolved"
+        },
+        {
+          "name": "assists",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "lifetime_assists",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "loyalty_bonus",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "duplicate_acknowledged",
+          "type": "boolean",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": "persisted acknowledgment only; UI duplicate lookup remains derived"
+        }
+      ],
+      "uniqueConstraints": [],
+      "notes": "Owner, definition, family and footballer are derived through the parent item\nand player definition; family consistency is validated at commit.\n`contract`/`contracts` are rendered\naliases of one field after canonicalization. Style definition must be an applicable\nchemistry style; position override must follow application rules.",
+      "primaryKeyAllocation": "reuse_parent_id"
+    },
+    {
+      "name": "player_stat_values",
+      "description": "recorded indexed counters, separate from base attributes.",
+      "implementationStatus": "baseline_proposed",
+      "primaryKey": "id",
+      "columns": [
+        {
+          "name": "id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": true,
+          "annotation": "generated PK"
+        },
+        {
+          "name": "item_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": "FK player_items",
+          "references": {
+            "table": "player_items",
+            "column": "item_id"
+          }
+        },
+        {
+          "name": "scope",
+          "type": "text",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": "current / lifetime"
+        },
+        {
+          "name": "stat_index",
+          "type": "integer",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "value",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        }
+      ],
+      "uniqueConstraints": [
+        [
+          "item_id",
+          "scope",
+          "stat_index"
+        ]
+      ],
+      "notes": "UQ `(item_id, scope, stat_index)` enforces the original relationship/lookup rule.\n\nSingle-column player FK, supported index bounds and nonnegative conversion contract.\nDo not guess which slot means goals or games; retain the native index until proved.",
+      "primaryKeyAllocation": "generated_internal_identity"
+    },
+    {
+      "name": "player_attribute_overrides",
+      "description": "optional proved per-copy overrides.",
+      "implementationStatus": "conditional_on_field_inventory",
+      "primaryKey": "id",
+      "columns": [
+        {
+          "name": "id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": true,
+          "annotation": "generated PK"
+        },
+        {
+          "name": "item_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": "FK player_items",
+          "references": {
+            "table": "player_items",
+            "column": "item_id"
+          }
+        },
+        {
+          "name": "attribute_code",
+          "type": "text",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "value",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "source_id",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": "FK catalog_sources",
+          "references": {
+            "table": "catalog_sources",
+            "column": "source_id"
+          }
+        }
+      ],
+      "uniqueConstraints": [
+        [
+          "item_id",
+          "attribute_code"
+        ]
+      ],
+      "notes": "UQ `(item_id, attribute_code)` enforces the original relationship/lookup rule.\n\nCreate only for fields the inventory proves can differ on owned copies. Known\ncodes and the merge rule are constrained; permanent overrides are distinct from\ntemporary chemistry effects and ordinary definition values.",
+      "primaryKeyAllocation": "generated_internal_identity"
+    },
+    {
+      "name": "manager_items",
+      "description": "mutable manager state.",
+      "implementationStatus": "baseline_proposed",
+      "primaryKey": "item_id",
+      "columns": [
+        {
+          "name": "item_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": true,
+          "annotation": "PK/FK items.id",
+          "references": {
+            "table": "items",
+            "column": "id"
+          }
+        },
+        {
+          "name": "contracts",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "league_override_id",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": "FK leagues",
+          "references": {
+            "table": "leagues",
+            "column": "league_id"
+          }
+        },
+        {
+          "name": "native_league_override",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        }
+      ],
+      "uniqueConstraints": [],
+      "notes": "",
+      "primaryKeyAllocation": "reuse_parent_id"
+    },
+    {
+      "name": "consumable_items",
+      "description": "each owned stack.",
+      "implementationStatus": "baseline_proposed",
+      "primaryKey": "item_id",
+      "columns": [
+        {
+          "name": "item_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": true,
+          "annotation": "PK/FK items.id",
+          "references": {
+            "table": "items",
+            "column": "id"
+          }
+        },
+        {
+          "name": "quantity",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "untradeable_quantity",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        }
+      ],
+      "uniqueConstraints": [],
+      "notes": "Quantity is positive for a retained stack; consumption deletes the final empty\nstack. Preserve the existing checked subset relation for untradeable quantity.\n`amount` and `stackCount` are aliases, not separate quantities.",
+      "primaryKeyAllocation": "reuse_parent_id"
+    },
+    {
+      "name": "customisation_items",
+      "description": "owned customization family marker and proved overrides.",
+      "implementationStatus": "conditional_on_field_inventory",
+      "primaryKey": "item_id",
+      "columns": [
+        {
+          "name": "item_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": true,
+          "annotation": "PK/FK items.id",
+          "references": {
+            "table": "items",
+            "column": "id"
+          }
+        },
+        {
+          "name": "is_locked_override",
+          "type": "boolean",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        }
+      ],
+      "uniqueConstraints": [],
+      "notes": "Equipment placement is in bindings. The optional override only applies when an\ninstance has independent lock state; rule-locked slots do not become editable.",
+      "primaryKeyAllocation": "reuse_parent_id"
+    },
+    {
+      "name": "player_pick_items",
+      "description": "an owned token, replacing `player_pick_tokens` state.",
+      "implementationStatus": "baseline_proposed",
+      "primaryKey": "item_id",
+      "columns": [
+        {
+          "name": "item_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": true,
+          "annotation": "PK/FK items.id",
+          "references": {
+            "table": "items",
+            "column": "id"
+          }
+        },
+        {
+          "name": "preview_definition_id",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": "FK player_card_definitions",
+          "references": {
+            "table": "player_card_definitions",
+            "column": "definition_id"
+          }
+        },
+        {
+          "name": "min_rating",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "choice_count",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "source_pack_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "state",
+          "type": "text",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": "unrevealed / revealed / selected, per current lifecycle"
+        },
+        {
+          "name": "selected_choice_id",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": "FK player_pick_choices.id",
+          "references": {
+            "table": "player_pick_choices",
+            "column": "id"
+          }
+        }
+      ],
+      "uniqueConstraints": [],
+      "notes": "`selected_choice_id` references `player_pick_choices.id`; a deferred constraint\ntrigger verifies that choice belongs to this token. Delete/retain token state\naccording to verified selection lifecycle; never create a new choice on replay.",
+      "primaryKeyAllocation": "reuse_parent_id"
+    },
+    {
+      "name": "item_extensions",
+      "description": "explicit unknown/representation preservation.",
+      "implementationStatus": "baseline_proposed",
+      "primaryKey": "item_id",
+      "columns": [
+        {
+          "name": "item_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": true,
+          "annotation": "PK/FK items.id",
+          "references": {
+            "table": "items",
+            "column": "id"
+          }
+        },
+        {
+          "name": "schema_revision",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "payload",
+          "type": "json",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": "unknown fields only"
+        },
+        {
+          "name": "wire_representation",
+          "type": "json",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": "known alias/type/missing distinctions during compatibility transition"
+        },
+        {
+          "name": "source_id",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": "FK catalog_sources",
+          "references": {
+            "table": "catalog_sources",
+            "column": "source_id"
+          }
+        }
+      ],
+      "uniqueConstraints": [],
+      "notes": "",
+      "primaryKeyAllocation": "reuse_parent_id"
+    },
+    {
+      "name": "squads",
+      "description": "squad scalar state.",
+      "implementationStatus": "baseline_proposed",
+      "primaryKey": "id",
+      "columns": [
+        {
+          "name": "id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": true,
+          "annotation": "generated PK"
+        },
+        {
+          "name": "club_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": "FK clubs",
+          "references": {
+            "table": "clubs",
+            "column": "id"
+          }
+        },
+        {
+          "name": "native_squad_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": "existing club-local FIFA number"
+        },
+        {
+          "name": "name",
+          "type": "text",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "active",
+          "type": "boolean",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "formation",
+          "type": "text",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        }
+      ],
+      "uniqueConstraints": [
+        [
+          "club_id",
+          "native_squad_id"
+        ]
+      ],
+      "notes": "UQ `(club_id, native_squad_id)` enforces the original relationship/lookup rule.\n\nChemistry, star rating and similar values remain derived unless the inventory\nproves a stored authoritative scalar is required. Preserve at most one active squad.",
+      "primaryKeyAllocation": "generated_internal_identity"
+    },
+    {
+      "name": "squad_players",
+      "description": "ordered owned/concept player references.",
+      "implementationStatus": "baseline_proposed",
+      "primaryKey": "id",
+      "columns": [
+        {
+          "name": "id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": true,
+          "annotation": "generated PK"
+        },
+        {
+          "name": "squad_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": "FK squads",
+          "references": {
+            "table": "squads",
+            "column": "id"
+          }
+        },
+        {
+          "name": "slot_index",
+          "type": "integer",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "definition_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": "FK player_card_definitions",
+          "references": {
+            "table": "player_card_definitions",
+            "column": "definition_id"
+          }
+        },
+        {
+          "name": "footballer_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": "FK footballers",
+          "references": {
+            "table": "footballers",
+            "column": "footballer_id"
+          }
+        },
+        {
+          "name": "reference_kind",
+          "type": "text",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": "owned / concept"
+        },
+        {
+          "name": "item_id",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": "FK player_items within same club",
+          "references": {
+            "table": "player_items",
+            "column": "item_id"
+          }
+        },
+        {
+          "name": "concept_wire_id",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "kit_number",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        }
+      ],
+      "uniqueConstraints": [
+        [
+          "squad_id",
+          "slot_index"
+        ],
+        [
+          "squad_id",
+          "footballer_id"
+        ]
+      ],
+      "notes": "UQ `(squad_id, slot_index)` enforces the original relationship/lookup rule.\n\nOwned kind requires a matching owned item and definition; concept kind has no\nowned reference. UQ `(squad_id, footballer_id)` for eligible slots,\nvalidated through card identity and the deferred ownership/definition checks. Empty slots have no membership row and render\nas existing placeholders. Preserve malformed legacy slots in audit/extensions\nuntil disposition, not as guessed owned records.",
+      "primaryKeyAllocation": "generated_internal_identity"
+    },
+    {
+      "name": "squad_managers",
+      "description": "manager reference with explicit default/preview support.",
+      "implementationStatus": "baseline_proposed",
+      "primaryKey": "id",
+      "columns": [
+        {
+          "name": "id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": true,
+          "annotation": "generated PK"
+        },
+        {
+          "name": "squad_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": "FK squads",
+          "references": {
+            "table": "squads",
+            "column": "id"
+          }
+        },
+        {
+          "name": "reference_kind",
+          "type": "text",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": "owned / verified preview"
+        },
+        {
+          "name": "item_id",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": "FK manager_items within same club",
+          "references": {
+            "table": "manager_items",
+            "column": "item_id"
+          }
+        },
+        {
+          "name": "definition_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": "FK manager_definitions",
+          "references": {
+            "table": "manager_definitions",
+            "column": "definition_id"
+          }
+        }
+      ],
+      "uniqueConstraints": [
+        [
+          "squad_id"
+        ]
+      ],
+      "notes": "UQ `(squad_id)` enforces the original relationship/lookup rule.",
+      "primaryKeyAllocation": "generated_internal_identity"
+    },
+    {
+      "name": "squad_roles",
+      "description": "captain and set-piece assignments.",
+      "implementationStatus": "baseline_proposed",
+      "primaryKey": "id",
+      "columns": [
+        {
+          "name": "id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": true,
+          "annotation": "generated PK"
+        },
+        {
+          "name": "squad_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": "FK squads",
+          "references": {
+            "table": "squads",
+            "column": "id"
+          }
+        },
+        {
+          "name": "role_code",
+          "type": "text",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "ordinal",
+          "type": "integer",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "squad_player_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": "FK squad_players.id",
+          "references": {
+            "table": "squad_players",
+            "column": "id"
+          }
+        }
+      ],
+      "uniqueConstraints": [
+        [
+          "squad_id",
+          "role_code",
+          "ordinal"
+        ]
+      ],
+      "notes": "UQ `(squad_id, role_code, ordinal)` enforces the original relationship/lookup rule.\n\nOrdinal preserves multiple ordered assignments if the client supports them.\nThe referenced membership must belong to `squad_id`; render its slot index from\nthat membership. Deferred checks also cover membership/squad reassignment.",
+      "primaryKeyAllocation": "generated_internal_identity"
+    },
+    {
+      "name": "squad_tactics",
+      "description": "identity of a saved mentality.",
+      "implementationStatus": "baseline_proposed",
+      "primaryKey": "id",
+      "columns": [
+        {
+          "name": "id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": true,
+          "annotation": "generated PK"
+        },
+        {
+          "name": "squad_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": "FK squads",
+          "references": {
+            "table": "squads",
+            "column": "id"
+          }
+        },
+        {
+          "name": "mentality",
+          "type": "text",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        }
+      ],
+      "uniqueConstraints": [
+        [
+          "squad_id",
+          "mentality"
+        ]
+      ],
+      "notes": "UQ `(squad_id, mentality)` enforces the original relationship/lookup rule.\n\nExact native setting names/types are not yet established comprehensively. To\navoid inventing scalar columns, the baseline uses typed setting children below.\nFixed settings may become named columns after the inventory proves their schema.",
+      "primaryKeyAllocation": "generated_internal_identity"
+    },
+    {
+      "name": "squad_tactic_settings",
+      "description": "explicit typed scalar settings, provisional shape.",
+      "implementationStatus": "provisional",
+      "primaryKey": "id",
+      "columns": [
+        {
+          "name": "id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": true,
+          "annotation": "generated PK"
+        },
+        {
+          "name": "tactic_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": "FK squad_tactics.id",
+          "references": {
+            "table": "squad_tactics",
+            "column": "id"
+          }
+        },
+        {
+          "name": "setting_code",
+          "type": "text",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "integer_value",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "boolean_value",
+          "type": "boolean",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "text_value",
+          "type": "text",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        }
+      ],
+      "uniqueConstraints": [
+        [
+          "tactic_id",
+          "setting_code"
+        ]
+      ],
+      "notes": "UQ `(tactic_id, setting_code)` enforces the original relationship/lookup rule.\n\nExactly one typed value for a valid setting; an inventoried setting registry\nconstrains codes and types. This table is limited to tactics with unknown schema,\nnot a generic replacement for all typed gameplay fields.",
+      "primaryKeyAllocation": "generated_internal_identity"
+    },
+    {
+      "name": "squad_tactic_instructions",
+      "description": "optional ordered recurring instructions.",
+      "implementationStatus": "conditional_on_field_inventory",
+      "primaryKey": "id",
+      "columns": [
+        {
+          "name": "id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": true,
+          "annotation": "generated PK"
+        },
+        {
+          "name": "tactic_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": "FK squad_tactics.id",
+          "references": {
+            "table": "squad_tactics",
+            "column": "id"
+          }
+        },
+        {
+          "name": "instruction_code",
+          "type": "text",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "ordinal",
+          "type": "integer",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "squad_player_id",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": "FK squad_players.id",
+          "references": {
+            "table": "squad_players",
+            "column": "id"
+          }
+        },
+        {
+          "name": "integer_value",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "text_value",
+          "type": "text",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        }
+      ],
+      "uniqueConstraints": [
+        [
+          "tactic_id",
+          "instruction_code",
+          "ordinal"
+        ]
+      ],
+      "notes": "UQ `(tactic_id, instruction_code, ordinal)` enforces the original relationship/lookup rule.\n\nOnly activate this shape for actual traced instruction consumers; slot references\nmust belong to the same squad. Unknown structured fields remain marked extensions.",
+      "primaryKeyAllocation": "generated_internal_identity"
+    },
+    {
+      "name": "club_slot_bindings",
+      "description": "one item/default in each equipped stadium slot.",
+      "implementationStatus": "baseline_proposed",
+      "primaryKey": "id",
+      "columns": [
+        {
+          "name": "id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": true,
+          "annotation": "generated PK"
+        },
+        {
+          "name": "club_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": "FK clubs",
+          "references": {
+            "table": "clubs",
+            "column": "id"
+          }
+        },
+        {
+          "name": "slot_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "reference_kind",
+          "type": "text",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": "owned / verified virtual default"
+        },
+        {
+          "name": "item_id",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": "FK customisation_items within same club",
+          "references": {
+            "table": "customisation_items",
+            "column": "item_id"
+          }
+        },
+        {
+          "name": "definition_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": "FK customisation_definitions",
+          "references": {
+            "table": "customisation_definitions",
+            "column": "definition_id"
+          }
+        }
+      ],
+      "uniqueConstraints": [
+        [
+          "club_id",
+          "slot_id"
+        ]
+      ],
+      "notes": "UQ `(club_id, slot_id)` enforces the original relationship/lookup rule.\n\nValidate slot compatibility against sourced rules. Same-club item/definition\nagreement is mandatory. Virtual defaults do not invent owned inventory.",
+      "primaryKeyAllocation": "generated_internal_identity"
+    },
+    {
+      "name": "squad_extensions",
+      "description": "unresolved squad data and representation.",
+      "implementationStatus": "baseline_proposed",
+      "primaryKey": "squad_id",
+      "columns": [
+        {
+          "name": "squad_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": true,
+          "annotation": "PK/FK squads.id",
+          "references": {
+            "table": "squads",
+            "column": "id"
+          }
+        },
+        {
+          "name": "schema_revision",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "payload",
+          "type": "json",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "wire_representation",
+          "type": "json",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        }
+      ],
+      "uniqueConstraints": [],
+      "notes": "Other feature extension storage follows the same explicit owner/key/version\npattern and is added only for fields retained by the inventory.",
+      "primaryKeyAllocation": "reuse_parent_id"
+    },
+    {
+      "name": "market_listings",
+      "description": "existing market state plus resolved definition linkage.",
+      "implementationStatus": "baseline_proposed",
+      "primaryKey": "trade_id",
+      "columns": [
+        {
+          "name": "trade_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": true,
+          "annotation": "PK"
+        },
+        {
+          "name": "kind",
+          "type": "text",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": "existing player / AI listing kind"
+        },
+        {
+          "name": "seller_club_id",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": "FK clubs",
+          "references": {
+            "table": "clubs",
+            "column": "id"
+          }
+        },
+        {
+          "name": "seller_name",
+          "type": "text",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "seller_item_id",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": "historical seller-local ID, not unconditional inventory FK"
+        },
+        {
+          "name": "definition_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": "FK item_definitions",
+          "references": {
+            "table": "item_definitions",
+            "column": "definition_id"
+          }
+        },
+        {
+          "name": "resource_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": "existing native response identity, consistent with canonical definition or preserved alias"
+        },
+        {
+          "name": "rating",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "starting_bid",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "buy_now",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "current_bid",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "bidder_club_id",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": "FK clubs",
+          "references": {
+            "table": "clubs",
+            "column": "id"
+          }
+        },
+        {
+          "name": "offers",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "state",
+          "type": "text",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "created_at",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "end_time",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "sold_price",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "seller_cleared",
+          "type": "boolean",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "asset_id",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "nation_id",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": "existing native search projection, not an internal nation FK"
+        },
+        {
+          "name": "league_id",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": "existing native search projection"
+        },
+        {
+          "name": "team_id",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": "existing native search projection"
+        },
+        {
+          "name": "preferred_position",
+          "type": "text",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "rareflag",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "is_special",
+          "type": "boolean",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        }
+      ],
+      "uniqueConstraints": [],
+      "notes": "Keep existing native search projections named as they are during compatibility\ntransition, validating them against the immutable listing snapshot. They are\ndeliberate indexed projections, not independently writable item authorities.",
+      "primaryKeyAllocation": "generated_internal_identity"
+    },
+    {
+      "name": "market_item_snapshots",
+      "description": "immutable common listed-item state.",
+      "implementationStatus": "baseline_proposed",
+      "primaryKey": "trade_id",
+      "columns": [
+        {
+          "name": "trade_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": true,
+          "annotation": "PK/FK market_listings",
+          "references": {
+            "table": "market_listings",
+            "column": "trade_id"
+          }
+        },
+        {
+          "name": "definition_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": "FK item_definitions",
+          "references": {
+            "table": "item_definitions",
+            "column": "definition_id"
+          }
+        },
+        {
+          "name": "definition_revision",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "timestamp",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "item_state",
+          "type": "text",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "pile",
+          "type": "text",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "untradeable",
+          "type": "boolean",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "owners",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "last_sale_price",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "extension_payload",
+          "type": "json",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "wire_representation",
+          "type": "json",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        }
+      ],
+      "uniqueConstraints": [],
+      "notes": "",
+      "primaryKeyAllocation": "reuse_parent_id"
+    },
+    {
+      "name": "market_player_snapshots",
+      "description": "transferred player-state snapshot.",
+      "implementationStatus": "baseline_proposed",
+      "primaryKey": "trade_id",
+      "columns": [
+        {
+          "name": "trade_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": true,
+          "annotation": "PK/FK market_item_snapshots",
+          "references": {
+            "table": "market_item_snapshots",
+            "column": "trade_id"
+          }
+        },
+        {
+          "name": "contracts",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "fitness",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "injury_type",
+          "type": "text",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "injury_games",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "suspension",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "loan_games",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "morale",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "training",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "position_override",
+          "type": "text",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "style_definition_id",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": "FK consumable_definitions",
+          "references": {
+            "table": "consumable_definitions",
+            "column": "definition_id"
+          }
+        },
+        {
+          "name": "native_play_style",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "assists",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "lifetime_assists",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "loyalty_bonus",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        }
+      ],
+      "uniqueConstraints": [],
+      "notes": "",
+      "primaryKeyAllocation": "reuse_parent_id"
+    },
+    {
+      "name": "market_player_stat_values",
+      "description": "indexed counters copied with listed player state.",
+      "implementationStatus": "baseline_proposed",
+      "primaryKey": "id",
+      "columns": [
+        {
+          "name": "id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": true,
+          "annotation": "generated PK"
+        },
+        {
+          "name": "trade_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": "FK market_player_snapshots",
+          "references": {
+            "table": "market_player_snapshots",
+            "column": "trade_id"
+          }
+        },
+        {
+          "name": "scope",
+          "type": "text",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "stat_index",
+          "type": "integer",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "value",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        }
+      ],
+      "uniqueConstraints": [
+        [
+          "trade_id",
+          "scope",
+          "stat_index"
+        ]
+      ],
+      "notes": "UQ `(trade_id, scope, stat_index)` enforces the original relationship/lookup rule.",
+      "primaryKeyAllocation": "generated_internal_identity"
+    },
+    {
+      "name": "market_player_attribute_overrides",
+      "description": "optional typed instance overrides at listing.",
+      "implementationStatus": "conditional_on_field_inventory",
+      "primaryKey": "id",
+      "columns": [
+        {
+          "name": "id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": true,
+          "annotation": "generated PK"
+        },
+        {
+          "name": "trade_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": "FK market_player_snapshots",
+          "references": {
+            "table": "market_player_snapshots",
+            "column": "trade_id"
+          }
+        },
+        {
+          "name": "attribute_code",
+          "type": "text",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "value",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        }
+      ],
+      "uniqueConstraints": [
+        [
+          "trade_id",
+          "attribute_code"
+        ]
+      ],
+      "notes": "UQ `(trade_id, attribute_code)` enforces the original relationship/lookup rule.\n\nCurrent market sells player items. Additional family snapshot tables require an\nintentional supported-market expansion. Snapshot FKs must survive seller deletion;\nsnapshot schema must preserve every transfer-consumed field found in inventory.",
+      "primaryKeyAllocation": "generated_internal_identity"
+    },
+    {
+      "name": "market_watch",
+      "description": "existing watched trades.",
+      "implementationStatus": "baseline_proposed",
+      "primaryKey": "id",
+      "columns": [
+        {
+          "name": "id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": true,
+          "annotation": "generated PK"
+        },
+        {
+          "name": "club_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": "FK clubs",
+          "references": {
+            "table": "clubs",
+            "column": "id"
+          }
+        },
+        {
+          "name": "trade_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": "FK market_listings",
+          "references": {
+            "table": "market_listings",
+            "column": "trade_id"
+          }
+        },
+        {
+          "name": "watched_at",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": "existing insertion-order identity"
+        }
+      ],
+      "uniqueConstraints": [
+        [
+          "club_id",
+          "trade_id"
+        ]
+      ],
+      "notes": "UQ `(club_id, trade_id)` enforces the original relationship/lookup rule.",
+      "primaryKeyAllocation": "generated_internal_identity"
+    },
+    {
+      "name": "unopened_packs",
+      "description": "existing club-owned pack grants.",
+      "implementationStatus": "baseline_proposed",
+      "primaryKey": "id",
+      "columns": [
+        {
+          "name": "id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": true,
+          "annotation": "PK"
+        },
+        {
+          "name": "club_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": "FK clubs",
+          "references": {
+            "table": "clubs",
+            "column": "id"
+          }
+        },
+        {
+          "name": "pack_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": "references configured pack identity; policy remains in rules/settings"
+        },
+        {
+          "name": "source",
+          "type": "text",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "created",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        }
+      ],
+      "uniqueConstraints": [],
+      "notes": "",
+      "primaryKeyAllocation": "generated_internal_identity"
+    },
+    {
+      "name": "match_settlements",
+      "description": "existing atomic match claim and immutable retry response.",
+      "implementationStatus": "baseline_proposed",
+      "primaryKey": "id",
+      "columns": [
+        {
+          "name": "id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": true,
+          "annotation": "generated PK"
+        },
+        {
+          "name": "club_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": "FK clubs",
+          "references": {
+            "table": "clubs",
+            "column": "id"
+          }
+        },
+        {
+          "name": "match_key",
+          "type": "text",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "response",
+          "type": "json",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": "null claim until completion within the transaction"
+        },
+        {
+          "name": "settled_at",
+          "type": "timestamptz",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        }
+      ],
+      "uniqueConstraints": [
+        [
+          "club_id",
+          "match_key"
+        ]
+      ],
+      "notes": "UQ `(club_id, match_key)` enforces the original relationship/lookup rule.",
+      "primaryKeyAllocation": "generated_internal_identity"
+    },
+    {
+      "name": "player_pick_choices",
+      "description": "stable revealed choices for one token.",
+      "implementationStatus": "baseline_proposed",
+      "primaryKey": "id",
+      "columns": [
+        {
+          "name": "id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": true,
+          "annotation": "generated PK"
+        },
+        {
+          "name": "token_item_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": "FK player_pick_items",
+          "references": {
+            "table": "player_pick_items",
+            "column": "item_id"
+          }
+        },
+        {
+          "name": "ordinal",
+          "type": "integer",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "definition_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": "FK player_card_definitions",
+          "references": {
+            "table": "player_card_definitions",
+            "column": "definition_id"
+          }
+        },
+        {
+          "name": "reserved_wire_item_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "timestamp",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "is_duplicate",
+          "type": "boolean",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": "revealed snapshot flag, not inventory ownership"
+        }
+      ],
+      "uniqueConstraints": [
+        [
+          "token_item_id",
+          "ordinal"
+        ]
+      ],
+      "notes": "UQ `(token_item_id, ordinal)` enforces the original relationship/lookup rule.\n\nGlobal/local/native choice indexes are rendered from the validated ordered\nchoice contract; inventory any independent values before collapsing them.\nChoice state may have optional typed overrides using the same explicit mechanism\nas Draft below. Revealed choices are not rows in club-owned `items` until granted.",
+      "primaryKeyAllocation": "generated_internal_identity"
+    },
+    {
+      "name": "draft_runs",
+      "description": "one independent active run per club and Draft mode slot.",
+      "implementationStatus": "baseline_proposed",
+      "primaryKey": "id",
+      "columns": [
+        {
+          "name": "id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": true,
+          "annotation": "generated PK"
+        },
+        {
+          "name": "club_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": "FK clubs",
+          "references": {
+            "table": "clubs",
+            "column": "id"
+          }
+        },
+        {
+          "name": "slot",
+          "type": "smallint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "run_revision",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "mode",
+          "type": "text",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "state",
+          "type": "text",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "difficulty",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "seed",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "formation",
+          "type": "text",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "current_choice_kind",
+          "type": "text",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "current_position_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "choice_serial",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "next_wire_item_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "captain_position_id",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "wins",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "losses",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "drafts_completed",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "pending_coin_reward",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        }
+      ],
+      "uniqueConstraints": [
+        [
+          "club_id",
+          "slot"
+        ]
+      ],
+      "notes": "UQ `(club_id, slot)` enforces the original relationship/lookup rule.\n\n`id` identifies the stored run container; `(club_id, slot)` selects the current\nmode container. Children reference `run_id`, not club/slot pairs. `run_revision`\ntracks lifecycle resets and is not an invented native settlement key. Reset must\nreplace prior choices/picks atomically and reject stale revisions.",
+      "primaryKeyAllocation": "generated_internal_identity"
+    },
+    {
+      "name": "draft_picks",
+      "description": "selected virtual Draft players and manager.",
+      "implementationStatus": "baseline_proposed",
+      "primaryKey": "id",
+      "columns": [
+        {
+          "name": "id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": true,
+          "annotation": "generated PK"
+        },
+        {
+          "name": "run_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": "FK draft_runs.id",
+          "references": {
+            "table": "draft_runs",
+            "column": "id"
+          }
+        },
+        {
+          "name": "pick_kind",
+          "type": "text",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": "player / manager"
+        },
+        {
+          "name": "position_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "definition_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": "FK item_definitions",
+          "references": {
+            "table": "item_definitions",
+            "column": "definition_id"
+          }
+        },
+        {
+          "name": "footballer_id",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": "FK footballers      player-kind identity",
+          "references": {
+            "table": "footballers",
+            "column": "footballer_id"
+          }
+        },
+        {
+          "name": "wire_item_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "timestamp",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        }
+      ],
+      "uniqueConstraints": [
+        [
+          "run_id",
+          "pick_kind",
+          "position_id"
+        ]
+      ],
+      "notes": "UQ `(run_id, pick_kind, position_id)` enforces the original relationship/lookup rule.",
+      "primaryKeyAllocation": "generated_internal_identity"
+    },
+    {
+      "name": "draft_choices",
+      "description": "the currently offered ordered virtual items.",
+      "implementationStatus": "baseline_proposed",
+      "primaryKey": "id",
+      "columns": [
+        {
+          "name": "id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": true,
+          "annotation": "generated PK"
+        },
+        {
+          "name": "run_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": "FK draft_runs.id",
+          "references": {
+            "table": "draft_runs",
+            "column": "id"
+          }
+        },
+        {
+          "name": "ordinal",
+          "type": "integer",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "choice_kind",
+          "type": "text",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "position_id",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "definition_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": "FK item_definitions",
+          "references": {
+            "table": "item_definitions",
+            "column": "definition_id"
+          }
+        },
+        {
+          "name": "footballer_id",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": "FK footballers",
+          "references": {
+            "table": "footballers",
+            "column": "footballer_id"
+          }
+        },
+        {
+          "name": "wire_item_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "timestamp",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        }
+      ],
+      "uniqueConstraints": [
+        [
+          "run_id",
+          "ordinal"
+        ]
+      ],
+      "notes": "UQ `(run_id, ordinal)` enforces the original relationship/lookup rule.\n\nDraft item state differing from definition/defaults needs explicit typed fields\nor optional named override children before these tables can replace run JSON.\nPreserve current virtual contracts/style/position behavior; do not manufacture\nowned-item rows for Draft previews.",
+      "primaryKeyAllocation": "generated_internal_identity"
+    },
+    {
+      "name": "draft_formation_choices",
+      "description": "ordered offered formations.",
+      "implementationStatus": "baseline_proposed",
+      "primaryKey": "id",
+      "columns": [
+        {
+          "name": "id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": true,
+          "annotation": "generated PK"
+        },
+        {
+          "name": "run_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": "FK draft_runs.id",
+          "references": {
+            "table": "draft_runs",
+            "column": "id"
+          }
+        },
+        {
+          "name": "ordinal",
+          "type": "integer",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "formation",
+          "type": "text",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        }
+      ],
+      "uniqueConstraints": [
+        [
+          "run_id",
+          "ordinal"
+        ]
+      ],
+      "notes": "UQ `(run_id, ordinal)` enforces the original relationship/lookup rule.",
+      "primaryKeyAllocation": "generated_internal_identity"
+    },
+    {
+      "name": "draft_seen_footballers",
+      "description": "seen identity membership and order.",
+      "implementationStatus": "baseline_proposed",
+      "primaryKey": "id",
+      "columns": [
+        {
+          "name": "id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": true,
+          "annotation": "generated PK"
+        },
+        {
+          "name": "run_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": "FK draft_runs.id",
+          "references": {
+            "table": "draft_runs",
+            "column": "id"
+          }
+        },
+        {
+          "name": "footballer_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": "FK footballers",
+          "references": {
+            "table": "footballers",
+            "column": "footballer_id"
+          }
+        },
+        {
+          "name": "ordinal",
+          "type": "integer",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        }
+      ],
+      "uniqueConstraints": [
+        [
+          "run_id",
+          "footballer_id"
+        ]
+      ],
+      "notes": "UQ `(run_id, footballer_id)` enforces the original relationship/lookup rule.\n\nOnly replace `seenAssets` with this table once the mapping/duplicate/order rules\nare proved. Add an original-native-code compatibility field if the source contract\nrequires it; do not discard unresolvable values.",
+      "primaryKeyAllocation": "generated_internal_identity"
+    },
+    {
+      "name": "objectives",
+      "description": "retained scalar seasonal XP/reward state.",
+      "implementationStatus": "baseline_proposed",
+      "primaryKey": "club_id",
+      "columns": [
+        {
+          "name": "club_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": true,
+          "annotation": "PK/FK clubs",
+          "references": {
+            "table": "clubs",
+            "column": "id"
+          }
+        },
+        {
+          "name": "user_xp",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "reward_claimed",
+          "type": "boolean",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        }
+      ],
+      "uniqueConstraints": [],
+      "notes": "",
+      "primaryKeyAllocation": "reuse_parent_id"
+    },
+    {
+      "name": "objective_counters",
+      "description": "independently keyed known progress counters.",
+      "implementationStatus": "baseline_proposed",
+      "primaryKey": "id",
+      "columns": [
+        {
+          "name": "id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": true,
+          "annotation": "generated PK"
+        },
+        {
+          "name": "club_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": "FK clubs",
+          "references": {
+            "table": "clubs",
+            "column": "id"
+          }
+        },
+        {
+          "name": "stat_code",
+          "type": "text",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "value",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        }
+      ],
+      "uniqueConstraints": [
+        [
+          "club_id",
+          "stat_code"
+        ]
+      ],
+      "notes": "UQ `(club_id, stat_code)` enforces the original relationship/lookup rule.",
+      "primaryKeyAllocation": "generated_internal_identity"
+    },
+    {
+      "name": "objective_claims",
+      "description": "unique claimed level/objective/group entries.",
+      "implementationStatus": "baseline_proposed",
+      "primaryKey": "id",
+      "columns": [
+        {
+          "name": "id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": true,
+          "annotation": "generated PK"
+        },
+        {
+          "name": "club_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": "FK clubs",
+          "references": {
+            "table": "clubs",
+            "column": "id"
+          }
+        },
+        {
+          "name": "scope",
+          "type": "text",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": "level / objective / group"
+        },
+        {
+          "name": "claim_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "ordinal",
+          "type": "integer",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        }
+      ],
+      "uniqueConstraints": [
+        [
+          "club_id",
+          "scope",
+          "claim_id"
+        ]
+      ],
+      "notes": "UQ `(club_id, scope, claim_id)` enforces the original relationship/lookup rule.\n\nUniqueness is per scope/claim; preserve existing response order separately.\nFuture seasonal resets require an explicit evidenced season key, not a hidden\nchange to current claim/reward behavior.",
+      "primaryKeyAllocation": "generated_internal_identity"
+    },
+    {
+      "name": "rivals_progress",
+      "description": "currently read Rivals values.",
+      "implementationStatus": "baseline_proposed",
+      "primaryKey": "club_id",
+      "columns": [
+        {
+          "name": "club_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": true,
+          "annotation": "PK/FK clubs",
+          "references": {
+            "table": "clubs",
+            "column": "id"
+          }
+        },
+        {
+          "name": "season_id",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "division",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "skill_rating",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "weekly_games",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "weekly_wins",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "weekly_points",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "wins",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "draws",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "losses",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "title_wins",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "placement_matches_played",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        }
+      ],
+      "uniqueConstraints": [],
+      "notes": "",
+      "primaryKeyAllocation": "reuse_parent_id"
+    },
+    {
+      "name": "champions_progress",
+      "description": "currently read Champions values.",
+      "implementationStatus": "baseline_proposed",
+      "primaryKey": "club_id",
+      "columns": [
+        {
+          "name": "club_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": true,
+          "annotation": "PK/FK clubs",
+          "references": {
+            "table": "clubs",
+            "column": "id"
+          }
+        },
+        {
+          "name": "playoff_games",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "playoff_wins",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "finals_games",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "finals_wins",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": ""
+        }
+      ],
+      "uniqueConstraints": [],
+      "notes": "Nullable values preserve absent imports and existing renderer defaults. Other\ncompetition keys/fields require inventoried typed tables or explicit retained\nextensions; no new match-driven producer is introduced by this design.",
+      "primaryKeyAllocation": "reuse_parent_id"
+    },
+    {
+      "name": "onboarding",
+      "description": "retained loan/badge/completion scalars.",
+      "implementationStatus": "baseline_proposed",
+      "primaryKey": "club_id",
+      "columns": [
+        {
+          "name": "club_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": true,
+          "annotation": "PK/FK clubs",
+          "references": {
+            "table": "clubs",
+            "column": "id"
+          }
+        },
+        {
+          "name": "complete",
+          "type": "boolean",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "badge_choice",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "badge_item_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "loan_offer_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "loan_item_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "loan_resource_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        }
+      ],
+      "uniqueConstraints": [],
+      "notes": "These existing wire IDs can be zero or refer to historical/virtual state. Add\nresolved relationships only where lifecycle evidence supports a live FK.",
+      "primaryKeyAllocation": "reuse_parent_id"
+    },
+    {
+      "name": "onboarding_kit_choices",
+      "description": "selected kit definitions and equipped references.",
+      "implementationStatus": "baseline_proposed",
+      "primaryKey": "id",
+      "columns": [
+        {
+          "name": "id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": true,
+          "annotation": "generated PK"
+        },
+        {
+          "name": "club_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": "FK onboarding",
+          "references": {
+            "table": "onboarding",
+            "column": "club_id"
+          }
+        },
+        {
+          "name": "role",
+          "type": "text",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": "home / away"
+        },
+        {
+          "name": "ordinal",
+          "type": "integer",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "definition_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": "FK customisation_definitions",
+          "references": {
+            "table": "customisation_definitions",
+            "column": "definition_id"
+          }
+        },
+        {
+          "name": "item_id",
+          "type": "bigint",
+          "nullable": true,
+          "primaryKey": false,
+          "annotation": "FK customisation_items within same club",
+          "references": {
+            "table": "customisation_items",
+            "column": "item_id"
+          }
+        }
+      ],
+      "uniqueConstraints": [
+        [
+          "club_id",
+          "role"
+        ]
+      ],
+      "notes": "UQ `(club_id, role)` enforces the original relationship/lookup rule.",
+      "primaryKeyAllocation": "generated_internal_identity"
+    },
+    {
+      "name": "onboarding_stale_loans",
+      "description": "cleanup tracking, not active ownership.",
+      "implementationStatus": "baseline_proposed",
+      "primaryKey": "id",
+      "columns": [
+        {
+          "name": "id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": true,
+          "annotation": "generated PK"
+        },
+        {
+          "name": "club_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": "FK onboarding",
+          "references": {
+            "table": "onboarding",
+            "column": "club_id"
+          }
+        },
+        {
+          "name": "ordinal",
+          "type": "integer",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "wire_item_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        }
+      ],
+      "uniqueConstraints": [
+        [
+          "club_id",
+          "ordinal"
+        ]
+      ],
+      "notes": "UQ `(club_id, ordinal)` enforces the original relationship/lookup rule.\n\nPreserve original list order/duplicates until the cleanup contract proves they\ncan be canonicalized. Stale item IDs intentionally have no live inventory FK.",
+      "primaryKeyAllocation": "generated_internal_identity"
+    },
+    {
+      "name": "sbc_completed",
+      "description": "existing one-time completion claims.",
+      "implementationStatus": "baseline_proposed",
+      "primaryKey": "id",
+      "columns": [
+        {
+          "name": "id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": true,
+          "annotation": "generated PK"
+        },
+        {
+          "name": "club_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": "FK clubs",
+          "references": {
+            "table": "clubs",
+            "column": "id"
+          }
+        },
+        {
+          "name": "challenge_key",
+          "type": "text",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        }
+      ],
+      "uniqueConstraints": [
+        [
+          "club_id",
+          "challenge_key"
+        ]
+      ],
+      "notes": "UQ `(club_id, challenge_key)` enforces the original relationship/lookup rule.",
+      "primaryKeyAllocation": "generated_internal_identity"
+    },
+    {
+      "name": "sbc_squad_counts",
+      "description": "existing submitted-squad counts.",
+      "implementationStatus": "baseline_proposed",
+      "primaryKey": "id",
+      "columns": [
+        {
+          "name": "id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": true,
+          "annotation": "generated PK"
+        },
+        {
+          "name": "club_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": "FK clubs",
+          "references": {
+            "table": "clubs",
+            "column": "id"
+          }
+        },
+        {
+          "name": "challenge_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "placed",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        }
+      ],
+      "uniqueConstraints": [
+        [
+          "club_id",
+          "challenge_id"
+        ]
+      ],
+      "notes": "UQ `(club_id, challenge_id)` enforces the original relationship/lookup rule.",
+      "primaryKeyAllocation": "generated_internal_identity"
+    },
+    {
+      "name": "client_data",
+      "description": "existing bounded per-screen integer settings.",
+      "implementationStatus": "baseline_proposed",
+      "primaryKey": "id",
+      "columns": [
+        {
+          "name": "id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": true,
+          "annotation": "generated PK"
+        },
+        {
+          "name": "club_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": "FK clubs",
+          "references": {
+            "table": "clubs",
+            "column": "id"
+          }
+        },
+        {
+          "name": "kind",
+          "type": "text",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "entry_key",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "value",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        }
+      ],
+      "uniqueConstraints": [
+        [
+          "club_id",
+          "kind",
+          "entry_key"
+        ]
+      ],
+      "notes": "UQ `(club_id, kind, entry_key)` enforces the original relationship/lookup rule.",
+      "primaryKeyAllocation": "generated_internal_identity"
+    },
+    {
+      "name": "club_flags",
+      "description": "existing one-time grant/feature markers.",
+      "implementationStatus": "baseline_proposed",
+      "primaryKey": "id",
+      "columns": [
+        {
+          "name": "id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": true,
+          "annotation": "generated PK"
+        },
+        {
+          "name": "club_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": "FK clubs",
+          "references": {
+            "table": "clubs",
+            "column": "id"
+          }
+        },
+        {
+          "name": "flag",
+          "type": "text",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        }
+      ],
+      "uniqueConstraints": [
+        [
+          "club_id",
+          "flag"
+        ]
+      ],
+      "notes": "UQ `(club_id, flag)` enforces the original relationship/lookup rule.",
+      "primaryKeyAllocation": "generated_internal_identity"
+    },
+    {
+      "name": "club_imports",
+      "description": "existing immutable import provenance.",
+      "implementationStatus": "baseline_proposed",
+      "primaryKey": "source_sha256",
+      "columns": [
+        {
+          "name": "source_sha256",
+          "type": "text",
+          "nullable": false,
+          "primaryKey": true,
+          "annotation": "PK"
+        },
+        {
+          "name": "source_kind",
+          "type": "text",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "source_path",
+          "type": "text",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "persona_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "summary",
+          "type": "json",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "imported_at",
+          "type": "timestamptz",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        }
+      ],
+      "uniqueConstraints": [],
+      "notes": "Intentionally independent of club deletion, preserving the one-time import hash.",
+      "primaryKeyAllocation": "existing_bookkeeping_key"
+    },
+    {
+      "name": "legacy_kv",
+      "description": "existing unrecognized imported values.",
+      "implementationStatus": "baseline_proposed",
+      "primaryKey": "id",
+      "columns": [
+        {
+          "name": "id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": true,
+          "annotation": "generated PK"
+        },
+        {
+          "name": "club_id",
+          "type": "bigint",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": "FK clubs",
+          "references": {
+            "table": "clubs",
+            "column": "id"
+          }
+        },
+        {
+          "name": "key",
+          "type": "text",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        },
+        {
+          "name": "value",
+          "type": "text",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        }
+      ],
+      "uniqueConstraints": [
+        [
+          "club_id",
+          "key"
+        ]
+      ],
+      "notes": "UQ `(club_id, key)` enforces the original relationship/lookup rule.",
+      "primaryKeyAllocation": "generated_internal_identity"
+    },
+    {
+      "name": "schema_migrations",
+      "description": "existing applied schema-version ledger.",
+      "implementationStatus": "baseline_proposed",
+      "primaryKey": "version",
+      "columns": [
+        {
+          "name": "version",
+          "type": "integer",
+          "nullable": false,
+          "primaryKey": true,
+          "annotation": "PK"
+        },
+        {
+          "name": "applied_at",
+          "type": "timestamptz",
+          "nullable": false,
+          "primaryKey": false,
+          "annotation": ""
+        }
+      ],
+      "uniqueConstraints": [],
+      "notes": "Later migration checksums/restricted-role changes remain coordinated with Phase 7.",
+      "primaryKeyAllocation": "existing_bookkeeping_key"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "_comment": "Which grants hand out untradeable packs and items (owner decision D14: tradeability is a lever pulled in balancing, changed here without code). Every pack or item a reward grants names one grant source; true means untradeable. A pack granted untradeable opens untradeable items, a player picked from a 1-of-N pick is untradeable when the pick token is or when pick is true, and Swap Duplicate leaves each copy its own tradeability, as in FIFA 21 (swapping an untradeable duplicate in sends the tradeable club copy to Unassigned to sell). The first setting is PLAN 3.1: store packs, competition packs (Rivals options A and B, the Weekend League, Squad Battles, online Draft) and random reward packs (SBCs, objectives, Season, promotion) are tradeable; picks, guaranteed in-forms, pity, Rivals option C, single-player Draft and the Match Pack are untradeable. Quick sell pays at most rules/cards.json quickSell.rewardUntradeableCap for an untradeable item.",
+  "_sourcesComment": "store: packs bought in the store. sbc, objective (objectives and their groups, the Welcome and Week One groups), season (Season Progress levels), rivals_option_a/b/c (the reward option a Rivals Rank I-IV club claims, by position), rivals_fixed (the one reward of Ranks V and VI), rivals_promotion (the first time a division is reached), weekend_league, squad_battles, draft_online, draft_single, gift (a gift pack), match_pack (the special Match Pack; its items also quick-sell for nothing), match_completion (per-mode catalogue completion packs; tradeability is selected in seasons.matchCompletionRewards), pick (the player chosen from any 1-of-N pick), pity, guaranteed_inform, operator (packs and cards the panel grants).",
+  "sources": {
+    "store": false,
+    "sbc": false,
+    "objective": false,
+    "season": false,
+    "rivals_option_a": false,
+    "rivals_option_b": false,
+    "rivals_option_c": true,
+    "rivals_fixed": false,
+    "rivals_promotion": false,
+    "weekend_league": false,
+    "squad_battles": false,
+    "draft_online": false,
+    "draft_single": true,
+    "gift": true,
+    "match_pack": true,
+    "match_completion": true,
+    "pick": true,
+    "pity": true,
+    "guaranteed_inform": true,
+    "operator": false
+  },
+  "_packsComment": "Packs untradeable (true) or tradeable (false) whatever their source: every player pick (513-516) and red FUT Champions pick (550-553).",
+  "packs": {
+    "513": true,
+    "514": true,
+    "515": true,
+    "516": true,
+    "550": true,
+    "551": true,
+    "552": true,
+    "553": true
+  },
+  "_sourcePacksComment": "Per source, packs that differ from both: the guaranteed in-form (542 TOTW Player) is untradeable from objectives and Season Progress; from the Weekend League, Squad Battles and online Draft it stays tradeable.",
+  "sourcePacks": {
+    "objective": { "542": true },
+    "season": { "542": true }
+  }
+}

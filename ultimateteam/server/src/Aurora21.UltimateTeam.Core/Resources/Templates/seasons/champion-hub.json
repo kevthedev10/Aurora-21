@@ -1,0 +1,9 @@
+{
+  "activeChampionLeagues": "{{leagues}}",
+  "previousChampionEvents": "{{previous}}",
+  "unclaimedPrizesChampionEvents": "{{unclaimed}}",
+  "qualifiedChampionLeagueIds": "{{qualifiedIds}}",
+  "userStats": "{{userStats}}",
+  "userRegistration": { "competitionCountryCode": "{{country}}", "competitionRegion": "{{region}}" },
+  "minWinFormValue": "{{formMin}}"
+}

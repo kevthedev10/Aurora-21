@@ -1,0 +1,23 @@
+{
+  "campaignId": "{{id}}",
+  "id": "{{id}}",
+  "campaignName": "{{name}}",
+  "name": "{{name}}",
+  "title": "{{name}}",
+  "campaignScore": "{{userXp}}",
+  "userXp": "{{userXp}}",
+  "userXpList": [],
+  "startTime": "{{start}}",
+  "endTime": "{{end}}",
+  "rewardingTime": "{{end}}",
+  "progressType": 0,
+  "subType": 0,
+  "needsAutoClaim": false,
+  "needsWorldAutoclaim": false,
+  "needsGroupsRefresh": false,
+  "scmpCategoryProgressList": ["{{category}}"],
+  "categoriesList": ["{{category}}"],
+  "categories": ["{{category}}"],
+  "levelsList": "{{levels}}",
+  "levels": "{{levels}}"
+}

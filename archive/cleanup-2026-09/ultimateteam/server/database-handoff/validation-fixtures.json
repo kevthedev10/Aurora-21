@@ -1,0 +1,417 @@
+{
+  "formatVersion": 1,
+  "purpose": "Synthetic disposable-only validation fixtures; not catalog/startup/live-club seeds",
+  "symbols": {
+    "clubA": 900000001,
+    "clubB": 900000002,
+    "squadA": 900000101,
+    "squadB": 900000102,
+    "playerA1": 900001001,
+    "playerA2": 900001002,
+    "playerB": 900001003,
+    "playerAOther": 900001004,
+    "managerA": 900001005,
+    "consumableA": 900001006,
+    "kitA": 900001007,
+    "membershipA": 900002001,
+    "membershipB": 900002002,
+    "trade": 900003001,
+    "snapshotStat": 900004001,
+    "definitionA1": 351,
+    "definitionA2": 14850,
+    "definitionOther": 1,
+    "footballerA": 317,
+    "footballerOther": 1,
+    "kitDefinition": 22862,
+    "managerDefinition": 22507,
+    "styleDefinition": 22838,
+    "modifierDefinition": 22818
+  },
+  "tables": [
+    {
+      "name": "clubs",
+      "rows": [
+        {
+          "id": 900000001,
+          "persona_id": 990000001,
+          "nucleus_id": 990000001,
+          "display_name": null,
+          "credits": 100000,
+          "fifa_points": 0,
+          "next_item_id": 1000,
+          "sid": "synthetic-validation-only",
+          "token": "synthetic-validation-only",
+          "established": 1600000000,
+          "selected_stadium_id": null,
+          "last_purchase_transaction_id": 0,
+          "daily_drop_day": null,
+          "last_match_create_is_draft": false,
+          "last_draft_slot": 0,
+          "created_at": "2026-09-16T00:00:00Z"
+        },
+        {
+          "id": 900000002,
+          "persona_id": 990000002,
+          "nucleus_id": 990000002,
+          "display_name": null,
+          "credits": 100000,
+          "fifa_points": 0,
+          "next_item_id": 1000,
+          "sid": "synthetic-validation-only",
+          "token": "synthetic-validation-only",
+          "established": 1600000000,
+          "selected_stadium_id": null,
+          "last_purchase_transaction_id": 0,
+          "daily_drop_day": null,
+          "last_match_create_is_draft": false,
+          "last_draft_slot": 0,
+          "created_at": "2026-09-16T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "name": "items",
+      "rows": [
+        {
+          "id": 900001001,
+          "club_id": 900000001,
+          "native_item_id": 1,
+          "definition_id": 351,
+          "family_id": 1,
+          "timestamp": 1600000000,
+          "pile": "club",
+          "item_state": "free",
+          "untradeable": false,
+          "owners": 1,
+          "last_sale_price": 0
+        },
+        {
+          "id": 900001002,
+          "club_id": 900000001,
+          "native_item_id": 2,
+          "definition_id": 14850,
+          "family_id": 1,
+          "timestamp": 1600000000,
+          "pile": "club",
+          "item_state": "free",
+          "untradeable": false,
+          "owners": 1,
+          "last_sale_price": 0
+        },
+        {
+          "id": 900001003,
+          "club_id": 900000002,
+          "native_item_id": 1,
+          "definition_id": 1,
+          "family_id": 1,
+          "timestamp": 1600000000,
+          "pile": "club",
+          "item_state": "free",
+          "untradeable": false,
+          "owners": 1,
+          "last_sale_price": 0
+        },
+        {
+          "id": 900001004,
+          "club_id": 900000001,
+          "native_item_id": 3,
+          "definition_id": 1,
+          "family_id": 1,
+          "timestamp": 1600000000,
+          "pile": "club",
+          "item_state": "free",
+          "untradeable": false,
+          "owners": 1,
+          "last_sale_price": 0
+        },
+        {
+          "id": 900001005,
+          "club_id": 900000001,
+          "native_item_id": 4,
+          "definition_id": 22507,
+          "family_id": 2,
+          "timestamp": 1600000000,
+          "pile": "club",
+          "item_state": "free",
+          "untradeable": false,
+          "owners": 1,
+          "last_sale_price": 0
+        },
+        {
+          "id": 900001006,
+          "club_id": 900000001,
+          "native_item_id": 5,
+          "definition_id": 22838,
+          "family_id": 3,
+          "timestamp": 1600000000,
+          "pile": "club",
+          "item_state": "free",
+          "untradeable": false,
+          "owners": 1,
+          "last_sale_price": 0
+        },
+        {
+          "id": 900001007,
+          "club_id": 900000001,
+          "native_item_id": 6,
+          "definition_id": 22862,
+          "family_id": 4,
+          "timestamp": 1600000000,
+          "pile": "club",
+          "item_state": "free",
+          "untradeable": false,
+          "owners": 1,
+          "last_sale_price": 0
+        }
+      ]
+    },
+    {
+      "name": "player_items",
+      "rows": [
+        {
+          "item_id": 900001001,
+          "contracts": 7,
+          "fitness": 99,
+          "injury_type": null,
+          "injury_games": 0,
+          "suspension": 0,
+          "loan_games": 0,
+          "morale": 50,
+          "training": 0,
+          "position_override": null,
+          "style_definition_id": null,
+          "native_play_style": null,
+          "assists": 0,
+          "lifetime_assists": 0,
+          "loyalty_bonus": null,
+          "duplicate_acknowledged": false
+        },
+        {
+          "item_id": 900001002,
+          "contracts": 7,
+          "fitness": 99,
+          "injury_type": null,
+          "injury_games": 0,
+          "suspension": 0,
+          "loan_games": 0,
+          "morale": 50,
+          "training": 0,
+          "position_override": null,
+          "style_definition_id": null,
+          "native_play_style": null,
+          "assists": 0,
+          "lifetime_assists": 0,
+          "loyalty_bonus": null,
+          "duplicate_acknowledged": false
+        },
+        {
+          "item_id": 900001003,
+          "contracts": 7,
+          "fitness": 99,
+          "injury_type": null,
+          "injury_games": 0,
+          "suspension": 0,
+          "loan_games": 0,
+          "morale": 50,
+          "training": 0,
+          "position_override": null,
+          "style_definition_id": null,
+          "native_play_style": null,
+          "assists": 0,
+          "lifetime_assists": 0,
+          "loyalty_bonus": null,
+          "duplicate_acknowledged": false
+        },
+        {
+          "item_id": 900001004,
+          "contracts": 7,
+          "fitness": 99,
+          "injury_type": null,
+          "injury_games": 0,
+          "suspension": 0,
+          "loan_games": 0,
+          "morale": 50,
+          "training": 0,
+          "position_override": null,
+          "style_definition_id": null,
+          "native_play_style": null,
+          "assists": 0,
+          "lifetime_assists": 0,
+          "loyalty_bonus": null,
+          "duplicate_acknowledged": false
+        }
+      ]
+    },
+    {
+      "name": "manager_items",
+      "rows": [
+        {
+          "item_id": 900001005,
+          "contracts": 7,
+          "league_override_id": null,
+          "native_league_override": null
+        }
+      ]
+    },
+    {
+      "name": "consumable_items",
+      "rows": [
+        {
+          "item_id": 900001006,
+          "quantity": 5,
+          "untradeable_quantity": 3
+        }
+      ]
+    },
+    {
+      "name": "customisation_items",
+      "rows": [
+        {
+          "item_id": 900001007,
+          "is_locked_override": null
+        }
+      ]
+    },
+    {
+      "name": "squads",
+      "rows": [
+        {
+          "id": 900000101,
+          "club_id": 900000001,
+          "native_squad_id": 1,
+          "name": "Synthetic validation squad",
+          "active": false,
+          "formation": "f442"
+        },
+        {
+          "id": 900000102,
+          "club_id": 900000002,
+          "native_squad_id": 1,
+          "name": "Synthetic validation squad",
+          "active": false,
+          "formation": "f442"
+        }
+      ]
+    },
+    {
+      "name": "squad_players",
+      "rows": [
+        {
+          "id": 900002001,
+          "squad_id": 900000101,
+          "slot_index": 0,
+          "definition_id": 351,
+          "footballer_id": 317,
+          "reference_kind": "owned",
+          "item_id": 900001001,
+          "concept_wire_id": null,
+          "kit_number": null
+        },
+        {
+          "id": 900002002,
+          "squad_id": 900000102,
+          "slot_index": 0,
+          "definition_id": 1,
+          "footballer_id": 1,
+          "reference_kind": "owned",
+          "item_id": 900001003,
+          "concept_wire_id": null,
+          "kit_number": null
+        }
+      ]
+    },
+    {
+      "name": "market_listings",
+      "rows": [
+        {
+          "trade_id": 900003001,
+          "kind": "player",
+          "seller_club_id": 900000001,
+          "seller_name": "Synthetic seller",
+          "seller_item_id": 2,
+          "definition_id": 14850,
+          "resource_id": 16935239,
+          "rating": 93,
+          "starting_bid": 100,
+          "buy_now": 200,
+          "current_bid": 0,
+          "bidder_club_id": null,
+          "offers": 0,
+          "state": "active",
+          "created_at": 1600000000,
+          "end_time": 1600003600,
+          "sold_price": 0,
+          "seller_cleared": false,
+          "asset_id": 158023,
+          "nation_id": 52,
+          "league_id": 53,
+          "team_id": 241,
+          "preferred_position": "RW",
+          "rareflag": 48,
+          "is_special": true
+        }
+      ]
+    },
+    {
+      "name": "market_item_snapshots",
+      "rows": [
+        {
+          "trade_id": 900003001,
+          "definition_id": 14850,
+          "definition_revision": 1,
+          "timestamp": 1600000000,
+          "item_state": "free",
+          "pile": "club",
+          "untradeable": false,
+          "owners": 1,
+          "last_sale_price": 0,
+          "extension_payload": null,
+          "wire_representation": null
+        }
+      ]
+    },
+    {
+      "name": "market_player_snapshots",
+      "rows": [
+        {
+          "trade_id": 900003001,
+          "contracts": 7,
+          "fitness": 99,
+          "injury_type": null,
+          "injury_games": 0,
+          "suspension": 0,
+          "loan_games": 0,
+          "morale": 50,
+          "training": 0,
+          "position_override": null,
+          "style_definition_id": null,
+          "native_play_style": null,
+          "assists": 0,
+          "lifetime_assists": 0,
+          "loyalty_bonus": null
+        }
+      ]
+    },
+    {
+      "name": "market_player_stat_values",
+      "rows": [
+        {
+          "id": 900004001,
+          "trade_id": 900003001,
+          "scope": "current",
+          "stat_index": 0,
+          "value": 1
+        }
+      ]
+    }
+  ],
+  "instructions": "Insert all fixture tables in one transaction after bootstrap, allow default creation_transaction_id, then commit. Fixtures are used only by the validator and never emitted as startup INSERT seed files.",
+  "extraFootballer": {
+    "native_footballer_id": null,
+    "first_name": "Synthetic",
+    "last_name": "Validation",
+    "common_name": null,
+    "source_id": 1,
+    "identity_status": "unresolved"
+  }
+}

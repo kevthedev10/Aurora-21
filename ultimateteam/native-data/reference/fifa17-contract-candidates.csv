@@ -1,0 +1,13 @@
+resource_id,card_asset_id,card_subtype_id,rating,rareflag,bronze_contracts,silver_contracts,gold_contracts,target,source_game_year
+5001001,7,201,50,0,8,2,1,player,2017
+5001002,7,201,65,0,10,10,8,player,2017
+5001003,7,201,80,0,15,11,13,player,2017
+5001004,7,201,60,1,15,6,3,player,2017
+5001005,7,201,70,1,20,24,18,player,2017
+5001006,7,201,90,1,28,24,28,player,2017
+5001007,8,202,50,0,8,2,1,manager,2017
+5001008,8,202,65,0,8,10,8,manager,2017
+5001009,8,202,80,0,11,11,13,manager,2017
+5001010,8,202,60,1,15,6,3,manager,2017
+5001011,8,202,70,1,18,24,18,manager,2017
+5001012,8,202,90,1,24,24,28,manager,2017

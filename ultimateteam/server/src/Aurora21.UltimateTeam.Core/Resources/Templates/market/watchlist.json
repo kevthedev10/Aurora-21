@@ -1,0 +1,5 @@
+{
+  "auctionInfo": "{{auctionInfo}}", "credits": "{{credits}}", "total": "{{count}}", "count": "{{count}}",
+  "offset": "{{offset}}", "winning": "{{winning}}", "outbid": "{{outbid}}", "currencies": "{{currencies}}",
+  "duplicateItemIdList": "{{duplicates}}"
+}

@@ -1,0 +1,6 @@
+{
+  "optionId": "{{optionId}}",
+  "defaultOption": "{{defaultOption}}",
+  "hiddenReward": false,
+  "awards": "{{awards}}"
+}

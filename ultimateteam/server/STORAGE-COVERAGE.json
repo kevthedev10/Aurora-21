@@ -1,0 +1,860 @@
+{
+  "updated": "2026-10-08",
+  "scope": "Schema through migration 178, including campaign drops, custom seasons, daily SBC completion limits, the Squad Battles refresh timer, the special card price cap and the retail Eredivisie, EFL and MLS Squad Foundations conditions",
+  "tables": [
+    {
+      "table": "club_flags",
+      "area": "account",
+      "owner": "src/Aurora21.UltimateTeam.Core/Data/Repositories/RelationalClubRepository.cs",
+      "status": "implemented; lifecycle also uses ClubRepository.Lifecycle.cs",
+      "tests": "RelationalMaintenanceTests"
+    },
+    {
+      "table": "club_vanity_slots",
+      "area": "account",
+      "owner": "src/Aurora21.UltimateTeam.Core/Services/Club/VanityService.cs",
+      "status": "implemented (migrations 054, 121): the owned vanity item a club put in each retail My Stadium slot",
+      "tests": "MatchDayStadiumTests"
+    },
+    {
+      "table": "club_vanity_items",
+      "area": "account",
+      "owner": "src/Aurora21.UltimateTeam.Core/Services/Club/VanityService.cs",
+      "status": "implemented (migration 122): the My Stadium items a club owns beyond the starter items",
+      "tests": "MatchDayStadiumTests"
+    },
+    {
+      "table": "rivals_pending",
+      "area": "progression",
+      "owner": "src/Aurora21.UltimateTeam.Core/Services/Modes/RivalsService.cs",
+      "status": "implemented (migration 055): the Rivals opponent and its skill rating snapshotted at CreateMatch, settled at match end",
+      "tests": "RivalsSkillTests"
+    },
+    {
+      "table": "club_records",
+      "area": "account",
+      "owner": "src/Aurora21.UltimateTeam.Core/Data/Repositories/RivalsRepository.cs",
+      "status": "implemented (migration 055): the club header record, won, drawn and lost, of settled non-Draft matches",
+      "tests": "RivalsSkillTests"
+    },
+    {
+      "table": "rivals_week_settlements",
+      "area": "progression",
+      "owner": "src/Aurora21.UltimateTeam.Core/Services/Modes/RivalsService.cs",
+      "status": "implemented (migration 058): a closed Division Rivals week's thresholds per division, written once when it settles",
+      "tests": "RivalsSkillTests"
+    },
+    {
+      "table": "rivals_week_results",
+      "area": "progression",
+      "owner": "src/Aurora21.UltimateTeam.Core/Services/Modes/RivalsService.cs",
+      "status": "implemented (migration 058): each ranked club's weekly result and reward options fixed at settlement, claimed once",
+      "tests": "RivalsSkillTests"
+    },
+    {
+      "table": "weekend_league_records",
+      "area": "progression",
+      "owner": "src/Aurora21.UltimateTeam.Core/Services/Modes/WeekendLeagueService.cs",
+      "status": "implemented (migration 058): a club's matches, results and form in one Weekend League",
+      "tests": "WeekendLeagueTests"
+    },
+    {
+      "table": "weekend_league_entries",
+      "area": "progression",
+      "owner": "src/Aurora21.UltimateTeam.Core/Services/Modes/WeekendLeagueService.cs",
+      "status": "implemented (migration 058): Weekend League entries redeemed for FUT Champions Points",
+      "tests": "WeekendLeagueTests"
+    },
+    {
+      "table": "match_clock",
+      "area": "progression",
+      "owner": "src/Aurora21.UltimateTeam.Core/Data/Repositories/MatchRewardRepository.cs",
+      "status": "implemented (migration 070): when the current match was created and kicked off and its online opponent, for the reward gate's minimum length and pair caps",
+      "tests": "EligibilityTests"
+    },
+    {
+      "table": "match_rewards",
+      "area": "progression",
+      "owner": "src/Aurora21.UltimateTeam.Core/Data/Repositories/MatchRewardRepository.cs",
+      "status": "implemented (migration 070): every match the reward gate paid, flagged or granted a Match Pack for (pair caps, the rolling Match Pack cap and pity)",
+      "tests": "EligibilityTests, MatchPackTests"
+    },
+    {
+      "table": "champion_registrations",
+      "area": "progression",
+      "owner": "src/Aurora21.UltimateTeam.Core/Services/Modes/WeekendLeagueService.cs",
+      "status": "implemented (migration 058): the country and region a club registered for FUT Champions",
+      "tests": "WeekendLeagueTests"
+    },
+    {
+      "table": "champion_connection_claims",
+      "area": "progression",
+      "owner": "src/Aurora21.UltimateTeam.Core/Services/Modes/WeekendLeagueService.cs",
+      "status": "implemented (migration 061): a lost-connection Weekend League match held as a win once the opponent has had its time to report",
+      "tests": "WeekendLeagueTests"
+    },
+    {
+      "table": "champion_pending",
+      "area": "progression",
+      "owner": "src/Aurora21.UltimateTeam.Core/Services/Modes/WeekendLeagueService.cs",
+      "status": "implemented (migration 058): the Weekend League CreateMatch the next match end settles",
+      "tests": "WeekendLeagueTests"
+    },
+    {
+      "table": "champion_settlements",
+      "area": "progression",
+      "owner": "src/Aurora21.UltimateTeam.Core/Services/Modes/WeekendLeagueService.cs",
+      "status": "implemented (migration 058): a Weekend League settled once at its rewards time",
+      "tests": "WeekendLeagueTests"
+    },
+    {
+      "table": "champion_results",
+      "area": "progression",
+      "owner": "src/Aurora21.UltimateTeam.Core/Services/Modes/WeekendLeagueService.cs",
+      "status": "implemented (migration 058): each ranked club's final position, rank and reward, claimed once",
+      "tests": "WeekendLeagueTests"
+    },
+    {
+      "table": "clubs",
+      "area": "account",
+      "owner": "src/Aurora21.UltimateTeam.Core/Data/Repositories/RelationalClubRepository.cs",
+      "status": "implemented; lifecycle also uses ClubRepository.Lifecycle.cs",
+      "tests": "RelationalMaintenanceTests"
+    },
+    {
+      "table": "card_type_rarity_group_memberships",
+      "area": "catalog",
+      "owner": "src/Aurora21.UltimateTeam.Core/Data/Repositories/CatalogRepository.cs",
+      "status": "card type membership in SBC rarity groups; renamed by migration 13",
+      "tests": "RelationalCatalogAndAccountTests"
+    },
+    {
+      "table": "card_types",
+      "area": "catalog",
+      "owner": "src/Aurora21.UltimateTeam.Core/Data/Repositories/CatalogRepository.cs",
+      "status": "read-only catalog; seeded by installed package",
+      "tests": "RelationalCatalogAndAccountTests"
+    },
+    {
+      "table": "consumable_definitions",
+      "area": "catalog",
+      "owner": "src/Aurora21.UltimateTeam.Core/Data/Repositories/CatalogRepository.cs",
+      "status": "read-only catalog; seeded by installed package",
+      "tests": "RelationalCatalogAndAccountTests"
+    },
+    {
+      "table": "customisation_definitions",
+      "area": "catalog",
+      "owner": "src/Aurora21.UltimateTeam.Core/Data/Repositories/CatalogRepository.cs",
+      "status": "read-only catalog; seeded by installed package",
+      "tests": "RelationalCatalogAndAccountTests"
+    },
+    {
+      "table": "footballers",
+      "area": "catalog",
+      "owner": "src/Aurora21.UltimateTeam.Core/Data/Repositories/CatalogRepository.cs",
+      "status": "read-only catalog; seeded by installed package",
+      "tests": "RelationalCatalogAndAccountTests"
+    },
+    {
+      "table": "item_definitions",
+      "area": "catalog",
+      "owner": "src/Aurora21.UltimateTeam.Core/Data/Repositories/CatalogRepository.cs",
+      "status": "read-only catalog; seeded by installed package",
+      "tests": "RelationalCatalogAndAccountTests"
+    },
+    {
+      "table": "item_families",
+      "area": "catalog",
+      "owner": "src/Aurora21.UltimateTeam.Core/Data/Repositories/CatalogRepository.cs",
+      "status": "read-only catalog; seeded by installed package",
+      "tests": "RelationalCatalogAndAccountTests"
+    },
+    {
+      "table": "leagues",
+      "area": "catalog",
+      "owner": "src/Aurora21.UltimateTeam.Core/Data/Repositories/CatalogRepository.cs",
+      "status": "read-only catalog; seeded by installed package",
+      "tests": "RelationalCatalogAndAccountTests"
+    },
+    {
+      "table": "manager_definitions",
+      "area": "catalog",
+      "owner": "src/Aurora21.UltimateTeam.Core/Data/Repositories/CatalogRepository.cs",
+      "status": "read-only catalog; seeded by installed package",
+      "tests": "RelationalCatalogAndAccountTests"
+    },
+    {
+      "table": "nations",
+      "area": "catalog",
+      "owner": "src/Aurora21.UltimateTeam.Core/Data/Repositories/CatalogRepository.cs",
+      "status": "read-only catalog; seeded by installed package",
+      "tests": "RelationalCatalogAndAccountTests"
+    },
+    {
+      "table": "native_rarities",
+      "area": "catalog",
+      "owner": "src/Aurora21.UltimateTeam.Core/Data/Repositories/CatalogRepository.cs",
+      "status": "named native rarity categories; migration 13; joined through card_types",
+      "tests": "RelationalBootstrapTests; RelationalCatalogAndAccountTests"
+    },
+    {
+      "table": "player_card_definitions",
+      "area": "catalog",
+      "owner": "src/Aurora21.UltimateTeam.Core/Data/Repositories/CatalogRepository.cs",
+      "status": "read-only catalog; seeded by installed package",
+      "tests": "RelationalCatalogAndAccountTests"
+    },
+    {
+      "table": "promo_cards",
+      "area": "catalog",
+      "owner": "src/Aurora21.UltimateTeam.Core/Data/Repositories/CatalogRepository.cs",
+      "status": "read-only catalog; seeded by installed package; player_card_definition_id references player_card_definitions",
+      "tests": "RelationalCatalogAndAccountTests"
+    },
+    {
+      "table": "promos",
+      "area": "catalog",
+      "owner": "src/Aurora21.UltimateTeam.Core/Data/Repositories/CatalogRepository.cs",
+      "status": "read-only catalog; seeded by installed package",
+      "tests": "RelationalCatalogAndAccountTests"
+    },
+    {
+      "table": "teams",
+      "area": "catalog",
+      "owner": "src/Aurora21.UltimateTeam.Core/Data/Repositories/CatalogRepository.cs",
+      "status": "read-only catalog; seeded by installed package",
+      "tests": "RelationalCatalogAndAccountTests"
+    },
+    {
+      "table": "player_card_traits",
+      "area": "catalog traits",
+      "owner": "database-setup/migrations/005-player-card-traits.sql",
+      "status": "seeded by migrations 5–6; card-specific native import, current API projection unchanged",
+      "tests": "RelationalBootstrapTests.NativeCardTraitsHaveIndexedUniqueLinksAndRepeatStartupPreservesThem"
+    },
+    {
+      "table": "traits",
+      "area": "catalog traits",
+      "owner": "database-setup/migrations/005-player-card-traits.sql",
+      "status": "seeded by migrations 5–6; card-specific native import, current API projection unchanged",
+      "tests": "RelationalBootstrapTests.NativeCardTraitsHaveIndexedUniqueLinksAndRepeatStartupPreservesThem"
+    },
+    {
+      "table": "draft_choices",
+      "area": "draft",
+      "owner": "src/Aurora21.UltimateTeam.Core/Data/RelationalDraftStore.cs",
+      "status": "implemented; native rearrangement body remains uncaptured",
+      "tests": "RelationalDraftTests"
+    },
+    {
+      "table": "draft_tactics",
+      "area": "draft",
+      "owner": "src/Aurora21.UltimateTeam.Core/Data/RelationalDraftStore.cs",
+      "status": "implemented; custom tactics of the Draft squad, one row per setting or list entry",
+      "tests": "RelationalDraftTests"
+    },
+    {
+      "table": "draft_formation_choices",
+      "area": "draft",
+      "owner": "src/Aurora21.UltimateTeam.Core/Data/RelationalDraftStore.cs",
+      "status": "implemented; native rearrangement body remains uncaptured",
+      "tests": "RelationalDraftTests"
+    },
+    {
+      "table": "draft_picks",
+      "area": "draft",
+      "owner": "src/Aurora21.UltimateTeam.Core/Data/RelationalDraftStore.cs",
+      "status": "implemented; native rearrangement body remains uncaptured",
+      "tests": "RelationalDraftTests"
+    },
+    {
+      "table": "draft_runs",
+      "area": "draft",
+      "owner": "src/Aurora21.UltimateTeam.Core/Data/RelationalDraftStore.cs",
+      "status": "implemented; native rearrangement body remains uncaptured",
+      "tests": "RelationalDraftTests"
+    },
+    {
+      "table": "draft_seen_footballers",
+      "area": "draft",
+      "owner": "src/Aurora21.UltimateTeam.Core/Data/RelationalDraftStore.cs",
+      "status": "implemented; native rearrangement body remains uncaptured",
+      "tests": "RelationalDraftTests"
+    },
+    {
+      "table": "club_slot_bindings",
+      "area": "equipment",
+      "owner": "src/Aurora21.UltimateTeam.Core/Data/RelationalCustomisationStore.cs",
+      "status": "implemented; unsupported native templates remain explicit failures",
+      "tests": "RelationalCustomisationTests"
+    },
+    {
+      "table": "squad_tactic_instructions",
+      "area": "instructions",
+      "owner": "src/Aurora21.UltimateTeam.Core/Data/RelationalSquadCompatibilityStore.cs",
+      "status": "partial: captured ordered integer lists supported; player-linked/text mappings blocked; player reference removed in version 39; text_value retained",
+      "tests": "RelationalTacticsTests"
+    },
+    {
+      "table": "consumable_items",
+      "area": "inventory",
+      "owner": "src/Aurora21.UltimateTeam.Core/Data/Repositories/RelationalItemRepository.cs",
+      "status": "implemented",
+      "tests": "RelationalInventoryTests"
+    },
+    {
+      "table": "customisation_items",
+      "area": "inventory",
+      "owner": "src/Aurora21.UltimateTeam.Core/Data/Repositories/RelationalItemRepository.cs",
+      "status": "implemented",
+      "tests": "RelationalInventoryTests"
+    },
+    {
+      "table": "item_extensions",
+      "area": "inventory",
+      "owner": "src/Aurora21.UltimateTeam.Core/Data/Repositories/RelationalItemRepository.cs",
+      "status": "implemented",
+      "tests": "RelationalInventoryTests"
+    },
+    {
+      "table": "items",
+      "area": "inventory",
+      "owner": "src/Aurora21.UltimateTeam.Core/Data/Repositories/RelationalItemRepository.cs",
+      "status": "implemented",
+      "tests": "RelationalInventoryTests"
+    },
+    {
+      "table": "club_player_search",
+      "area": "inventory",
+      "owner": "src/Aurora21.UltimateTeam.Core/Services/Club/ClubSearchService.cs",
+      "status": "implemented read model; maintained by the items trigger from migration 043",
+      "tests": "RelationalClubPagingTests"
+    },
+    {
+      "table": "manager_items",
+      "area": "inventory",
+      "owner": "src/Aurora21.UltimateTeam.Core/Data/Repositories/RelationalItemRepository.cs",
+      "status": "implemented",
+      "tests": "RelationalInventoryTests"
+    },
+    {
+      "table": "player_items",
+      "area": "inventory",
+      "owner": "src/Aurora21.UltimateTeam.Core/Data/Repositories/RelationalItemRepository.cs",
+      "status": "implemented; match_stats stores current/lifetime five-value counter arrays",
+      "tests": "RelationalInventoryTests"
+    },
+    {
+      "table": "market_item_snapshots",
+      "area": "market",
+      "owner": "src/Aurora21.UltimateTeam.Core/Data/Repositories/RelationalMarketRepository.cs",
+      "status": "implemented",
+      "tests": "RelationalMarketTests"
+    },
+    {
+      "table": "market_listings",
+      "area": "market",
+      "owner": "src/Aurora21.UltimateTeam.Core/Data/Repositories/RelationalMarketRepository.cs",
+      "status": "implemented",
+      "tests": "RelationalMarketTests"
+    },
+    {
+      "table": "market_player_snapshots",
+      "area": "market",
+      "owner": "src/Aurora21.UltimateTeam.Core/Data/Repositories/RelationalMarketRepository.cs",
+      "status": "implemented; match_stats stores current/lifetime five-value counter arrays",
+      "tests": "RelationalMarketTests"
+    },
+    {
+      "table": "market_watch",
+      "area": "market",
+      "owner": "src/Aurora21.UltimateTeam.Core/Data/Repositories/RelationalMarketRepository.cs",
+      "status": "implemented",
+      "tests": "RelationalMarketTests"
+    },
+    {
+      "table": "objective_claims",
+      "area": "objectives",
+      "owner": "src/Aurora21.UltimateTeam.Core/Data/RelationalProgressCompatibility.cs",
+      "status": "implemented",
+      "tests": "RelationalProgressionTests"
+    },
+    {
+      "table": "objective_counters",
+      "area": "objectives",
+      "owner": "src/Aurora21.UltimateTeam.Core/Data/RelationalProgressCompatibility.cs",
+      "status": "implemented",
+      "tests": "RelationalProgressionTests"
+    },
+    {
+      "table": "objectives",
+      "area": "objectives",
+      "owner": "src/Aurora21.UltimateTeam.Core/Data/RelationalProgressCompatibility.cs",
+      "status": "implemented",
+      "tests": "RelationalProgressionTests"
+    },
+    {
+      "table": "client_data",
+      "area": "onboarding",
+      "owner": "src/Aurora21.UltimateTeam.Core/Data/Repositories/OnboardingRepository.cs",
+      "status": "implemented",
+      "tests": "RelationalOnboardingTests"
+    },
+    {
+      "table": "onboarding",
+      "area": "onboarding",
+      "owner": "src/Aurora21.UltimateTeam.Core/Data/Repositories/OnboardingRepository.cs",
+      "status": "implemented",
+      "tests": "RelationalOnboardingTests"
+    },
+    {
+      "table": "onboarding_kit_choices",
+      "area": "onboarding",
+      "owner": "src/Aurora21.UltimateTeam.Core/Data/Repositories/OnboardingRepository.cs",
+      "status": "implemented",
+      "tests": "RelationalOnboardingTests"
+    },
+    {
+      "table": "onboarding_stale_loans",
+      "area": "onboarding",
+      "owner": "src/Aurora21.UltimateTeam.Core/Data/Repositories/OnboardingRepository.cs",
+      "status": "implemented",
+      "tests": "RelationalOnboardingTests"
+    },
+    {
+      "table": "panel_action_receipts",
+      "area": "operations",
+      "owner": "database-setup/migrations/062-panel-action-receipts.sql",
+      "status": "retained, no longer written (migration 062): receipts of the token-based /api/v1/panel API, which the shared Aurora panel's /panel/api contract (OperatorPanel, panel_edits) replaced; kept because migrations are not reversed on existing databases",
+      "tests": "RelationalMaintenanceTests"
+    },
+    {
+      "table": "player_access",
+      "area": "operations",
+      "owner": "src/Aurora21.UltimateTeam.Server/Access/PlayerAccess.cs",
+      "status": "implemented (migration 063): one row per verified Discord id with approval, block and maintenance-bypass flags, its last launcher name and launch time, edited live from the operator panel",
+      "tests": "PlayerAccessTests, ClientApiEndpointTests"
+    },
+    {
+      "table": "server_access",
+      "area": "operations",
+      "owner": "src/Aurora21.UltimateTeam.Server/Access/PlayerAccess.cs",
+      "status": "implemented (migration 063): the one row of hosted launch switches (approval required, maintenance and its message, player limit) and, since migration 108, whether new matches may start, edited live from the operator panel",
+      "tests": "PlayerAccessTests"
+    },
+    {
+      "table": "player_sessions",
+      "area": "operations",
+      "owner": "src/Aurora21.UltimateTeam.Server/Access/PlayerSessionLog.cs",
+      "status": "implemented (migration 063): one row per verified Blaze session (Discord id, remote address shown to the operator only, open and close times) for the panel's logins and session lists",
+      "tests": "OperatorPanelTests"
+    },
+    {
+      "table": "panel_edits",
+      "area": "operations",
+      "owner": "src/Aurora21.UltimateTeam.Server/Panel/OperatorPanel.cs",
+      "status": "implemented (migration 063): every club change the operator panel made (patch, requester, result), listed on the panel's player page",
+      "tests": "OperatorPanelTests"
+    },
+    {
+      "table": "content_changesets",
+      "area": "operations",
+      "owner": "src/Aurora21.UltimateTeam.Core/Content/ContentChangesets.cs",
+      "status": "implemented (migration 072): reviewed content edits; at most one open changeset collects the operator panel's pending changes until it is published (applied, validated and swapped into the running server) or discarded; published ones are the history a revert starts from",
+      "tests": "ContentChangesetTests, OperatorPanelTests"
+    },
+    {
+      "table": "content_changes",
+      "area": "operations",
+      "owner": "src/Aurora21.UltimateTeam.Core/Content/ContentChangesets.cs",
+      "status": "implemented (migration 072): one pending or published content change per row of a changeset (area, key, operation, the row as first edited and its new value), used for review, conflict checks and revert",
+      "tests": "ContentChangesetTests, OperatorPanelTests"
+    },
+    {
+      "table": "content_rules",
+      "area": "operations",
+      "owner": "src/Aurora21.UltimateTeam.Core/Rules/RuleRows.cs",
+      "status": "implemented (migration 073): every game rule of the bundled rules/*.json files except packs.json, one row per value (file, JSON path of keys and list positions, value, order); the server reads its rules from these rows, fills them from the files when a file has none, adds new keys at start-up, and changes them through content changesets",
+      "tests": "RuleRowsTests, OperatorPanelTests"
+    },
+    {
+      "table": "custom_player_heads",
+      "area": "content",
+      "owner": "src/Aurora21.UltimateTeam.Core/Content/ContentChangesets.cs",
+      "status": "implemented (migration 074): editable custom player head resources",
+      "tests": "OperatorPanelTests"
+    },
+    {
+      "table": "unopened_packs",
+      "area": "packs",
+      "owner": "src/Aurora21.UltimateTeam.Core/Data/Repositories/PackRepository.cs",
+      "status": "implemented",
+      "tests": "RelationalServiceTests"
+    },
+    {
+      "table": "player_pick_choices",
+      "area": "picks",
+      "owner": "src/Aurora21.UltimateTeam.Core/Data/Repositories/PlayerPickRepository.cs",
+      "status": "implemented; real local token product identity remains an acceptance dependency",
+      "tests": "RelationalServiceTests"
+    },
+    {
+      "table": "player_pick_items",
+      "area": "picks",
+      "owner": "src/Aurora21.UltimateTeam.Core/Data/Repositories/PlayerPickRepository.cs",
+      "status": "implemented; real local token product identity remains an acceptance dependency",
+      "tests": "RelationalServiceTests"
+    },
+    {
+      "table": "champions_progress",
+      "area": "progression",
+      "owner": "src/Aurora21.UltimateTeam.Core/Data/Repositories/RelationalProgressionRepository.cs",
+      "status": "implemented; uncolumned season fields rejected",
+      "tests": "RelationalProgressionTests"
+    },
+    {
+      "table": "match_settlements",
+      "area": "progression",
+      "owner": "src/Aurora21.UltimateTeam.Core/Data/Repositories/RelationalProgressionRepository.cs",
+      "status": "implemented; uncolumned season fields rejected",
+      "tests": "RelationalProgressionTests"
+    },
+    {
+      "table": "rivals_progress",
+      "area": "progression",
+      "owner": "src/Aurora21.UltimateTeam.Core/Data/Repositories/RivalsRepository.cs",
+      "status": "implemented (migration 058): the retail Division Rivals record (RivalsRepository); the legacy season document (RelationalProgressionRepository) rejects uncolumned fields",
+      "tests": "RivalsSkillTests, RelationalProgressionTests"
+    },
+    {
+      "table": "sbc_completed",
+      "area": "progression",
+      "owner": "src/Aurora21.UltimateTeam.Core/Data/Repositories/RelationalProgressionRepository.cs",
+      "status": "implemented; uncolumned season fields rejected",
+      "tests": "RelationalProgressionTests"
+    },
+    {
+      "table": "sbc_sets",
+      "area": "operations",
+      "owner": "src/Aurora21.UltimateTeam.Core/Catalog/SbcSetRows.cs",
+      "status": "implemented (migration 136): stored challenge definitions override or add catalogue sets; ordinal keeps client IDs stable, while sbc_live controls visibility",
+      "tests": "OperatorPanelSbcTests, SbcPhaseOneTests, PotmOneImportTests"
+    },
+    {
+      "table": "sbc_squad_counts",
+      "area": "progression",
+      "owner": "src/Aurora21.UltimateTeam.Core/Data/Repositories/RelationalProgressionRepository.cs",
+      "status": "implemented; uncolumned season fields rejected",
+      "tests": "RelationalProgressionTests"
+    },
+    {
+      "table": "sbc_squad_items",
+      "area": "progression",
+      "owner": "src/Aurora21.UltimateTeam.Core/Data/Repositories/SbcSquadRepository.cs",
+      "status": "club-scoped saved SBC item selections",
+      "tests": "RelationalProgressionTests"
+    },
+    {
+      "table": "schema_migrations",
+      "area": "schema versions",
+      "owner": "src/Aurora21.UltimateTeam.Core/Data/RelationalCatalogMetadataMigration.cs",
+      "status": "implemented: transactional metadata upgrades versions 1–6; legacy club converter deferred",
+      "tests": "RelationalBootstrapTests"
+    },
+    {
+      "table": "squad_battles_pending",
+      "area": "modes",
+      "owner": "src/Aurora21.UltimateTeam.Core/Services/Modes/SquadBattlesService.Competition.cs",
+      "status": "implemented (migrations 052, 060): the Squad Battles slot or TOTW a club created a match against, settled at match end",
+      "tests": "SquadBattlesCompetitionTests"
+    },
+    {
+      "table": "squad_battles_sets",
+      "area": "modes",
+      "owner": "src/Aurora21.UltimateTeam.Core/Services/Modes/SquadBattlesService.Sets.cs",
+      "status": "implemented (migration 060): a club's four opponents, frozen from the server's real clubs when drawn, and the clubs faced",
+      "tests": "SquadBattlesCompetitionTests"
+    },
+    {
+      "table": "squad_battles_settlements",
+      "area": "modes",
+      "owner": "src/Aurora21.UltimateTeam.Core/Services/Modes/SquadBattlesService.Competition.cs",
+      "status": "implemented (migration 060): a closed Squad Battles week settled once for every club",
+      "tests": "SquadBattlesCompetitionTests"
+    },
+    {
+      "table": "squad_battles_results",
+      "area": "modes",
+      "owner": "src/Aurora21.UltimateTeam.Core/Services/Modes/SquadBattlesService.Competition.cs",
+      "status": "implemented (migration 060): each club's weekly rank, tier and prize fixed at settlement, claimed once",
+      "tests": "SquadBattlesCompetitionTests"
+    },
+    {
+      "table": "squad_battles_weeks",
+      "area": "modes",
+      "owner": "src/Aurora21.UltimateTeam.Core/Services/Modes/SquadBattlesService.Competition.cs",
+      "status": "implemented (migrations 052, 060): weekly Squad Battles points, matches played and skipped, TOTW result and replaced slots per club",
+      "tests": "SquadBattlesCompetitionTests"
+    },
+    {
+      "table": "squad_managers",
+      "area": "squad",
+      "owner": "src/Aurora21.UltimateTeam.Core/Data/RelationalSquadCompatibilityStore.cs",
+      "status": "implemented",
+      "tests": "RelationalSquadTests"
+    },
+    {
+      "table": "squad_players",
+      "area": "squad",
+      "owner": "src/Aurora21.UltimateTeam.Core/Data/RelationalSquadCompatibilityStore.cs",
+      "status": "implemented",
+      "tests": "RelationalSquadTests"
+    },
+    {
+      "table": "squad_roles",
+      "area": "squad",
+      "owner": "src/Aurora21.UltimateTeam.Core/Data/RelationalSquadCompatibilityStore.cs",
+      "status": "implemented",
+      "tests": "RelationalSquadTests"
+    },
+    {
+      "table": "squad_tactic_settings",
+      "area": "squad",
+      "owner": "src/Aurora21.UltimateTeam.Core/Data/RelationalSquadCompatibilityStore.cs",
+      "status": "implemented",
+      "tests": "RelationalSquadTests"
+    },
+    {
+      "table": "squad_tactics",
+      "area": "squad",
+      "owner": "src/Aurora21.UltimateTeam.Core/Data/RelationalSquadCompatibilityStore.cs",
+      "status": "implemented",
+      "tests": "RelationalSquadTests"
+    },
+    {
+      "table": "squads",
+      "area": "squad",
+      "owner": "src/Aurora21.UltimateTeam.Core/Data/RelationalSquadCompatibilityStore.cs",
+      "status": "implemented; inline extension_payload/wire_representation and preserved schema revision",
+      "tests": "RelationalSquadTests"
+    },
+    {
+      "table": "store_pack_art_bands",
+      "area": "store",
+      "owner": "src/Aurora21.UltimateTeam.Core/Data/Repositories/StorePackRepository.cs",
+      "status": "reward tile art chosen by pack id range",
+      "tests": "RelationalStorePackTests"
+    },
+    {
+      "table": "store_pack_details",
+      "area": "store",
+      "owner": "src/Aurora21.UltimateTeam.Core/Data/Repositories/StorePackRepository.cs",
+      "status": "single-row pack policy: sizes, coin conversion and the elite weight curve",
+      "tests": "RelationalStorePackTests"
+    },
+    {
+      "table": "store_pack_groups",
+      "area": "store",
+      "owner": "src/Aurora21.UltimateTeam.Core/Data/Repositories/StorePackRepository.cs",
+      "status": "store tabs and their category/art ids, including legacy aliases",
+      "tests": "RelationalStorePackTests"
+    },
+    {
+      "table": "store_pack_rarity_weights",
+      "area": "store",
+      "owner": "src/Aurora21.UltimateTeam.Core/Data/Repositories/StorePackRepository.cs",
+      "status": "default special-rarity draw weights, keyed by native rareflag",
+      "tests": "RelationalStorePackTests"
+    },
+    {
+      "table": "store_pack_tiers",
+      "area": "store",
+      "owner": "src/Aurora21.UltimateTeam.Core/Data/Repositories/StorePackRepository.cs",
+      "status": "card tier by rating and the rare fallback rating per tier",
+      "tests": "RelationalStorePackTests"
+    },
+    {
+      "table": "store_packs",
+      "area": "store",
+      "owner": "src/Aurora21.UltimateTeam.Core/Data/Repositories/StorePackRepository.cs",
+      "status": "store pack configuration seeded from migration 041; replaces the rules/store_packs/pack_settings JSON layers",
+      "tests": "RelationalStorePackTests"
+    },
+    {
+      "table": "promo_buckets",
+      "area": "content",
+      "owner": "src/Aurora21.UltimateTeam.Core/Data/Repositories/CatalogRepository.cs",
+      "status": "Weighted saved card lists within a promo",
+      "tests": "PromoManagementTests; OperatorPanelTests; PromoGroupsTests"
+    },
+    {
+      "table": "promo_events",
+      "area": "content",
+      "owner": "src/Aurora21.UltimateTeam.Core/Data/Repositories/CatalogRepository.cs",
+      "status": "UTC windows selecting ordinary special promos",
+      "tests": "PromoManagementTests; OperatorPanelTests; PromoGroupsTests"
+    },
+    {
+      "table": "promo_event_promos",
+      "area": "content",
+      "owner": "src/Aurora21.UltimateTeam.Core/Data/Repositories/CatalogRepository.cs",
+      "status": "Reversible promo membership in an event",
+      "tests": "PromoManagementTests; OperatorPanelTests; PromoGroupsTests"
+    },
+    {
+      "table": "icon_rotations",
+      "area": "content",
+      "owner": "src/Aurora21.UltimateTeam.Core/Data/Repositories/CatalogRepository.cs",
+      "status": "Independent replacement of the standard Icon tier",
+      "tests": "PromoManagementTests; OperatorPanelTests; PromoGroupsTests"
+    },
+    {
+      "table": "content_table_revisions",
+      "area": "content",
+      "owner": "src/Aurora21.UltimateTeam.Server/Panel/OperatorPanel.Content.cs",
+      "status": "Committed content revisions for explicit reload detection",
+      "tests": "PromoManagementTests; OperatorPanelTests; PromoGroupsTests"
+    },
+    {
+      "table": "club_pack_purchases",
+      "area": "store",
+      "owner": "src/Aurora21.UltimateTeam.Core/Services/Store/StoreService.cs",
+      "status": "implemented (migration 105): each club's lifetime store purchases per pack, counted for per-club purchase limits; reward, gift and owned pack openings never count",
+      "tests": "StorePurchaseLimitTests"
+    },
+    {
+      "table": "community_pack_purchases",
+      "area": "store",
+      "owner": "src/Aurora21.UltimateTeam.Core/Services/Store/StoreService.cs",
+      "status": "implemented (migration 107): store purchases per pack across every club, counted for community (lightning) limits; no club key, so deleting a club never replenishes stock",
+      "tests": "StorePurchaseLimitTests"
+    },
+    {
+      "table": "owned_legacy_pack_definitions",
+      "area": "store",
+      "owner": "src/Aurora21.UltimateTeam.Core/Data/Repositories/StorePackRepository.cs",
+      "status": "implemented (migration 097): definitions of retired testing packs a club still owned, so an owned unopened pack or pick still opens; never sold",
+      "tests": "MixedPackTests"
+    },
+    {
+      "table": "rewards",
+      "area": "progression",
+      "owner": "src/Aurora21.UltimateTeam.Core/Data/Repositories/ModeRewardRepository.cs",
+      "status": "implemented (migration 126): the shared mode reward (coins, FUT Champions Points, XP) that mode tier tables name",
+      "tests": "ModeRewardTests"
+    },
+    {
+      "table": "reward_lines",
+      "area": "progression",
+      "owner": "src/Aurora21.UltimateTeam.Core/Data/Repositories/ModeRewardRepository.cs",
+      "status": "implemented (migration 126): a reward's packs/picks or player cards with count, own untradeable choice and optional grant source; a line keeps its pack from being deleted",
+      "tests": "ModeRewardTests"
+    },
+    {
+      "table": "champions_reward_ranks",
+      "area": "progression",
+      "owner": "src/Aurora21.UltimateTeam.Core/Data/Repositories/ModeRewardRepository.cs",
+      "status": "implemented (migration 126): FUT Champions reward ranks by wins or Top 200 position band, each naming its reward; filled once at start-up from the stored rules or rewards/champions.json, edited through content changesets",
+      "tests": "ModeRewardTests, WeekendLeagueTests"
+    },
+    {
+      "table": "rivals_reward_options",
+      "area": "progression",
+      "owner": "src/Aurora21.UltimateTeam.Core/Data/Repositories/ModeRewardRepository.Rivals.cs",
+      "status": "implemented (migration 131): Division Rivals reward options by division, rank and option (1-4), each naming its reward; filled once at start-up from the stored rules or rewards/rivals.json, edited through content changesets",
+      "tests": "RivalsModeRewardTests, RivalsRewardTests"
+    },
+    {
+      "table": "rivals_promotion_rewards",
+      "area": "progression",
+      "owner": "src/Aurora21.UltimateTeam.Core/Data/Repositories/ModeRewardRepository.Rivals.cs",
+      "status": "implemented (migration 131): the reward for reaching each Division Rivals division the first time",
+      "tests": "RivalsModeRewardTests, RivalsSkillTests"
+    },
+    {
+      "table": "squad_battles_reward_tiers",
+      "area": "progression",
+      "owner": "src/Aurora21.UltimateTeam.Core/Data/Repositories/ModeRewardRepository.SquadBattles.cs",
+      "status": "implemented (migration 133): Squad Battles reward tiers, six Top slots placed by the Top players number and twelve points tiers, each naming its reward; filled once at start-up from the stored rules or rewards/squad_battles.json, edited through content changesets",
+      "tests": "SquadBattlesModeRewardTests, SquadBattlesCompetitionTests"
+    },
+    {
+      "table": "draft_reward_levels",
+      "area": "progression",
+      "owner": "src/Aurora21.UltimateTeam.Core/Data/Repositories/ModeRewardRepository.Draft.cs",
+      "status": "implemented (migration 135): FUT Draft reward levels, one per mode (online, single) and wins 0-4, each naming the reward every run ending there gets; filled once at start-up from rewards/draft.json, edited through content changesets",
+      "tests": "DraftModeRewardTests, DraftRewardTests, RelationalDraftTests"
+    },
+    {
+      "table": "draft_reward_choices",
+      "area": "progression",
+      "owner": "src/Aurora21.UltimateTeam.Core/Data/Repositories/ModeRewardRepository.Draft.cs",
+      "status": "implemented (migration 135): a Draft reward level's weighted choices, one drawn from the run's seed when the run ends; written with their level",
+      "tests": "DraftModeRewardTests, DraftRewardTests, RelationalDraftTests"
+    },
+    {
+      "table": "sbc_live",
+      "area": "operations",
+      "owner": "src/Aurora21.UltimateTeam.Core/Catalog/SbcSetRows.cs",
+      "status": "implemented (migration 142): ordered catalogue visibility is independent of set definitions; imported POTM_1 stays disabled",
+      "tests": "SbcPhaseOneTests, OperatorPanelSbcTests, PotmOneImportTests"
+    },
+    {
+      "table": "objective_group_starts",
+      "area": "objectives",
+      "owner": "src/Aurora21.UltimateTeam.Core/Data/Repositories/ObjectiveStartRepository.cs",
+      "status": "implemented (migration 143): records groups that have gone live, preserving historical progress",
+      "tests": "ObjectivesLiveTests, SquadFoundationsImportTests"
+    },
+    {
+      "table": "objective_baselines",
+      "area": "objectives",
+      "owner": "src/Aurora21.UltimateTeam.Core/Data/Repositories/ObjectiveStartRepository.cs",
+      "status": "implemented (migration 143): per-club counters when a group first goes live",
+      "tests": "ObjectivesLiveTests, SquadFoundationsImportTests"
+    },
+    {
+      "table": "token_store_listings",
+      "area": "store",
+      "owner": "src/Aurora21.UltimateTeam.Core/Data/Repositories/TokenStoreRepository.cs",
+      "status": "implemented (migration 148): token offers, prices, visibility and tradeability are separate from coin listings",
+      "tests": "RelationalStorePackTests, SupportedDatabaseUpgradeTests"
+    },
+    {
+      "table": "content_campaigns",
+      "area": "operations",
+      "owner": "src/Aurora21.UltimateTeam.Core/Content/ContentSchedule.cs",
+      "status": "implemented (migrations 167, 168): campaign start/end windows and campaign/drop lifecycle",
+      "tests": "ContentScheduleTests"
+    },
+    {
+      "table": "content_drops",
+      "area": "operations",
+      "owner": "src/Aurora21.UltimateTeam.Core/Content/ContentSchedule.cs",
+      "status": "implemented (migration 167): independent scheduled changesets, publication, expiry and cancellation",
+      "tests": "ContentScheduleTests"
+    },
+    {
+      "table": "content_drop_item_ends",
+      "area": "operations",
+      "owner": "src/Aurora21.UltimateTeam.Core/Content/ContentSchedule.cs",
+      "status": "implemented (migration 167): per-content end-date overrides attached to scheduled changes",
+      "tests": "ContentScheduleTests"
+    },
+    {
+      "table": "objective_season_history",
+      "area": "progression",
+      "owner": "src/Aurora21.UltimateTeam.Core/Data/RelationalProgressCompatibility.cs",
+      "status": "implemented (migration 166): retained XP and claim history when switching custom objective seasons",
+      "tests": "CustomSeasonTests"
+    },
+    {
+      "table": "sbc_daily_completed",
+      "area": "progression",
+      "owner": "src/Aurora21.UltimateTeam.Core/Services/Modes/SbcService.Daily.cs",
+      "status": "implemented (migrations 170, 172): per-club SBC completion counts for each daily reset window",
+      "tests": "SbcDailyAndRequirementsTests"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "_comment": "First-run onboarding: FIFA 21's own first-run flow (country, club creation, loan, kits, badge), see ultimateteam/onboarding.md. The screens, request shapes and the nine countries are the game's; every pool, count and rating below is local policy, not recovered EA data.",
+
+  "_countryNationsComment": "The nine countries the country screen offers, in its order (CardsDLL 0x2A54BB): England, Brazil, France, Argentina, Germany, Italy, Spain, Portugal, Holland. Its ONBOARDING_COUNTRY_<n>_SELECTED action names the 1-based position, not the nation id.",
+  "countryNations": [14, 54, 18, 52, 21, 27, 45, 38, 34],
+
+  "_starterComment": "The starter squad CreateUser grants (owner-approved retail-like policy, 2026-09-28; the Python server's onboarding.py; gold commons and rares since the owner's phase-1 call, 2026-09-29): one untradeable base card (rareflag at most maxRareflag, not special) per listed position, rated minRating to maxRating. Each slot draws at random, seeded by the club, from the `candidates` eligible cards rated closest to targetRating; every other slot (the first, third, ...) draws from the chosen country's players when it has any. The positions are the formation's 11 starters in its slot order, then the 7 substitutes and 5 reserves. A manager of the chosen country (any, when it has none) rated at most managerMaxRating completes the club.",
+  "starter": {
+    "formation": "f442",
+    "positions": ["GK", "RB", "CB", "CB", "LB", "RM", "CM", "CM", "LM", "ST", "ST",
+                  "GK", "CB", "RB", "LB", "CM", "RM", "ST", "LM", "CB", "CM", "ST", "GK"],
+    "minRating": 75,
+    "maxRating": 80,
+    "targetRating": 77,
+    "candidates": 20,
+    "maxRareflag": 1,
+    "managerMaxRating": 79
+  },
+
+  "_loansComment": "The loan screen (retail-like, owner 2026-09-28): for each position, the playersPerPosition highest-rated base cards (rareflag at most maxRareflag, not special, not grant-only; ties by lowest id) of footballers the club does not own yet, ranked 1..playersPerPosition, loaned for `games` matches. A club FIFA created owns only its starters, so it is offered each position's best; a seeded club, which already owns the best base cards, is offered the next best (up to offerIdsPerPosition deep). FIFA's picker shows five: offers for the position being improved first, then the other positions' number ones. Offer ids are local: firstOfferId + position index × offerIdsPerPosition + the card's place in its position's list, so an offer keeps its id whatever the club owns.",
+  "loans": {
+    "games": 7,
+    "firstOfferId": 10001,
+    "playersPerPosition": 5,
+    "maxRareflag": 1,
+    "offerIdsPerPosition": 300,
+    "positions": ["ST", "LM", "CM", "RM", "LB", "CB", "RB", "GK"]
+  },
+
+  "_cosmeticsComment": "The kit and badge screens offer a random choice per club, as retail did (seeded by the club, so every visit shows the same choices): homeChoices home kits and awayChoices away kits from the catalogue's pack kits, and `choices` club badges. The chosen ones are granted untradeable and equipped. The kit screen is a 3x3 grid that shows one list at a time (home, then away) and draws an empty white shirt in every slot left over, so each list fills all nine (owner's screenshot, 2026-09-29: five kits and four blank shirts). The badge screen is assumed to use the same grid.",
+  "kits": { "homeChoices": 9, "awayChoices": 9 },
+  "badges": { "choices": 9 }
+}

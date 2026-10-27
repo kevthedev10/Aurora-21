@@ -1,0 +1,30 @@
+{
+  "packId": "{{packId}}",
+  "firstPartyStoreId": 0,
+  "purchasePackType": "CARDPACK",
+  "state": "PURCHASECOMPLETE",
+  "transactionId": "{{transactionId}}",
+  "useAuth": 0,
+  "useCount": 1,
+  "useTime": 0,
+  "purchasedPackId": "{{packId}}",
+  "numberItems": "{{numberItems}}",
+  "duplicateItemIdList": "{{duplicates}}",
+  "itemList": "{{items}}",
+  "itemData": "{{items}}",
+  "items": "{{items}}",
+  "createPackResponse": {
+    "duplicateItemIdList": "{{duplicates}}",
+    "itemList": "{{items}}",
+    "numberItems": "{{numberItems}}",
+    "purchasedPackId": "{{packId}}",
+    "itemData": "{{items}}",
+    "items": "{{items}}",
+    "packId": "{{packId}}"
+  },
+  "currencies": [
+    { "name": "coins", "funds": "{{credits}}", "finalFunds": "{{credits}}" },
+    { "name": "points", "funds": "{{points}}", "finalFunds": "{{points}}" }
+  ],
+  "unopenedPacks": { "preOrderPacks": "{{unopenedPacks}}", "recoveredPacks": 0 }
+}

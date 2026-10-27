@@ -1,0 +1,1 @@
+{ "sku": "{{sku}}", "persona": "{{name}}", "rank": "{{rank}}", "tierLevel": "{{tierLevel}}", "score": "{{wins}}", "gamesPlayed": "{{played}}", "remainingMatches": "{{remaining}}" }

@@ -1,0 +1,6 @@
+Aurora 21 client pack - Third-Party Notices
+
+Microsoft Universal C Runtime (ucrt\ucrtbase.dll), version 10.0.26100.1742
+Copyright (c) Microsoft Corporation. All rights reserved.
+
+This file is the unmodified x64 ucrtbase.dll redistributable from the Microsoft Windows Software Development Kit (Redist\ucrt\DLLs\x64), distributed as Distributable Code under the Microsoft Windows SDK license terms. It is used only by Aurora21-MathBridge.exe so that FIFA 21 performs identical floating-point maths on every player's PC; it is not a replacement for the copy of this library that ships with Windows. Your use of it is subject to the Microsoft Windows SDK license terms; Microsoft provides it "as is" and gives no express warranties, guarantees or conditions. Aurora 21 is not affiliated with, sponsored by or endorsed by Microsoft.

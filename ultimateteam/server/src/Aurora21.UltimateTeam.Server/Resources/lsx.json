@@ -1,0 +1,94 @@
+{
+  "_comment": "Local Origin LSX (EA App SDK socket) answers. In attribute values {name} is replaced by a setting or game info id (e.g. {LANGUAGE}, {UPTODATE}) or by a session value: {nucleusId}, {personaId}, {persona}, {underAge}, {accessToken}, {authCode}, {utcTime}, {systemTime}.",
+
+  "challenge": { "version": "3", "build": "10.6.1.8" },
+
+  "_loginEventComment": "Sent right after the handshake: FIFA 21 checks the signed-in state before it attempts Blaze authentication.",
+  "loginEvent": { "element": "Login", "attributes": { "IsLoggedIn": "true", "UserIndex": "0", "LoginReasonCode": "ALREADY_ONLINE" } },
+
+  "_servicesComment": "GetConfig: [service, facility] in the order the SDK lists them.",
+  "services": [
+    ["EbisuSDK", "SDK"], ["EbisuSDK", "PROFILE"], ["XMPP", "PRESENCE"], ["XMPP", "FRIENDS"],
+    ["Commerce", "COMMERCE"], ["EbisuSDK", "RECENTPLAYER"], ["EbisuSDK", "IGO"], ["EbisuSDK", "MISC"],
+    ["EALS", "LOGIN"], ["EbisuSDK", "UTILITY"], ["XMPP", "XMPP"], ["XMPP", "CHAT"],
+    ["EbisuSDK", "IGO_EVENT"], ["EALS", "EALS_EVENTS"], ["EbisuSDK", "LOGIN_EVENT"], ["XMPP", "INVITE_EVENT"],
+    ["EbisuSDK", "PROFILE_EVENT"], ["XMPP", "PRESENCE_EVENT"], ["XMPP", "FRIENDS_EVENT"], ["Commerce", "COMMERCE_EVENT"],
+    ["XMPP", "CHAT_EVENT"], ["EbisuSDK", "DOWNLOAD_EVENT"], ["EbisuSDK", "PERMISSION"], ["EbisuSDK", "RESOURCES"],
+    ["EbisuSDK", "BLOCKED_USERS"], ["EbisuSDK", "BLOCKED_USER_EVENT"], ["EbisuSDK", "GET_USERID"], ["EbisuSDK", "ONLINE_STATUS_EVENT"],
+    ["EbisuSDK", "ACHIEVEMENT"], ["EbisuSDK", "ACHIEVEMENT_EVENT"], ["EbisuSDK", "BROADCAST_EVENT"],
+    ["PI", "PROGRESSIVE_INSTALLATION"], ["PI", "PROGRESSIVE_INSTALLATION_EVENT"], ["EbisuSDK", "CONTENT"]
+  ],
+
+  "_settingsComment": "GetSetting values by SettingId; an unknown id answers an empty value.",
+  "settings": {
+    "LANGUAGE": "en_US",
+    "ENVIRONMENT": "production",
+    "IS_IGO_AVAILABLE": "false",
+    "IS_IGO_ENABLED": "false",
+    "IS_TELEMETRY_ENABLED": "false",
+    "IS_MANUAL_OFFLINE": "false"
+  },
+
+  "_gameInfoComment": "GetGameInfo values by GameInfoId. An empty value makes UPTODATE read as false and shows the mandatory-update dialog.",
+  "gameInfo": {
+    "UPTODATE": "true",
+    "LANGUAGES": "en_US,pt_PT,fr_FR,de_DE,es_ES,it_IT",
+    "FREETRIAL": "false",
+    "EXPIRATION": "0000-00-00T00:00:00",
+    "EXPIRATION_DURATION": "0",
+    "INSTALLED_VERSION": "1.0.0.0",
+    "INSTALLED_LANGUAGE": "en_US",
+    "AVAILABLE_VERSION": "1.0.0.0",
+    "DISPLAY_NAME": "EA SPORTS FIFA 21",
+    "FULLGAME_PURCHASED": "true",
+    "FULLGAME_IS_RELEASED": "true",
+    "FULLGAME_RELEASE_DATE": "2014-09-25T00:00:00",
+    "MAX_GROUP_SIZE": "22",
+    "ENTITLEMENT_SOURCE": "LOCAL"
+  },
+
+  "_responsesComment": "Requests answered with one element. RequestLicense needs its License attribute, or the SDK treats the license as invalid.",
+  "responses": {
+    "GetSettings": {
+      "element": "GetSettingsResponse",
+      "attributes": {
+        "Language": "{LANGUAGE}", "Environment": "{ENVIRONMENT}", "IsIGOAvailable": "{IS_IGO_AVAILABLE}",
+        "IsIGOEnabled": "{IS_IGO_ENABLED}", "IsTelemetryEnabled": "{IS_TELEMETRY_ENABLED}", "IsManualOffline": "{IS_MANUAL_OFFLINE}"
+      }
+    },
+    "GetInternetConnectedState": { "element": "InternetConnectedState", "attributes": { "connected": "1" } },
+    "GetUtcTime": { "element": "GetUtcTimeResponse", "attributes": { "Time": "{utcTime}" } },
+    "GetAuthToken": { "element": "AuthToken", "attributes": { "value": "{accessToken}" } },
+    "GetAuthCode": { "element": "AuthCode", "attributes": { "value": "{authCode}" } },
+    "GetProfile": {
+      "element": "GetProfileResponse",
+      "attributes": {
+        "UserIndex": "0", "UserId": "{nucleusId}", "PersonaId": "{personaId}", "Persona": "{persona}", "AvatarId": "",
+        "Country": "PT", "IsUnderAge": "{underAge}", "IsSubscriber": "false", "IsTrialSubscriber": "false", "SubscriberLevel": "0",
+        "GeoCountry": "PT", "CommerceCountry": "PT", "CommerceCurrency": "EUR", "IsSteamSubscriber": "false"
+      }
+    },
+    "GetBlockList": { "element": "GetBlockListResponse" },
+    "QueryFriends": { "element": "QueryFriendsResponse" },
+    "QueryAreFriends": { "element": "QueryAreFriendsResponse" },
+    "QueryContent": { "element": "QueryContentResponse" },
+    "QueryEntitlements": { "element": "QueryEntitlementsResponse" },
+    "GetPresence": { "element": "GetPresenceResponse" },
+    "QueryPresence": { "element": "QueryPresenceResponse" },
+    "GetWalletBalance": { "element": "GetWalletBalanceResponse", "attributes": { "Balance": "0", "Currency": "EUR" } },
+    "GetAllGameInfo": {
+      "element": "GetAllGameInfoResponse",
+      "attributes": {
+        "UpToDate": "{UPTODATE}", "Languages": "{LANGUAGES}", "FreeTrial": "{FREETRIAL}",
+        "FullGamePurchased": "{FULLGAME_PURCHASED}", "FullGameReleased": "{FULLGAME_IS_RELEASED}",
+        "FullGameReleaseDate": "{FULLGAME_RELEASE_DATE}", "Expiration": "",
+        "SystemTime": "{systemTime}", "HasExpiration": "false", "InstalledVersion": "{INSTALLED_VERSION}",
+        "InstalledLanguage": "{INSTALLED_LANGUAGE}", "AvailableVersion": "{AVAILABLE_VERSION}",
+        "DisplayName": "{DISPLAY_NAME}", "MaxGroupSize": "{MAX_GROUP_SIZE}", "EntitlementSource": "{ENTITLEMENT_SOURCE}"
+      }
+    },
+    "RequestLicense": { "element": "RequestLicenseResponse", "attributes": { "License": "" } }
+  },
+
+  "unmodelledResponse": { "element": "ErrorSuccess", "attributes": { "Code": "0", "Description": "Ultimate Team success" } }
+}

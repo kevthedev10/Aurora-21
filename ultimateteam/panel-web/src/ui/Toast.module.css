@@ -1,0 +1,10 @@
+.region { position: fixed; right: var(--space-4); bottom: var(--space-4); z-index: 60; display: grid; gap: var(--space-2); width: min(380px, calc(100vw - 32px)); }
+.toast {
+  display: flex; align-items: flex-start; gap: var(--space-3); padding: var(--space-3) var(--space-4);
+  background: var(--tier); border: 1px solid var(--line); border-left: 3px solid var(--pitch); border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-pop);
+}
+.staged { border-left-color: var(--staged); }
+.error { border-left-color: var(--red-card); }
+.message { flex: 1; min-width: 0; overflow-wrap: anywhere; }
+.dismiss { background: none; border: 0; color: var(--fog); cursor: pointer; padding: 0 2px; font-size: 16px; line-height: 1; }

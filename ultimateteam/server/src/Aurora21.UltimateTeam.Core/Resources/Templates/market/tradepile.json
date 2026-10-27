@@ -1,0 +1,5 @@
+{
+  "auctionInfo": "{{auctionInfo}}", "credits": "{{credits}}", "total": "{{count}}", "count": "{{count}}",
+  "maxAuctionsAllowed": "{{maxAuctionsAllowed}}", "offered": 0, "selling": "{{selling}}", "sold": "{{sold}}",
+  "itemData": [], "currencies": "{{currencies}}", "duplicateItemIdList": "{{duplicates}}"
+}

@@ -1,0 +1,369 @@
+{
+  "_comment": "Custom tactics saves sent by the maintainer's FIFA 21 client (build not recorded in the log) to POST /ut/game/fifa21/tactics?squadId=1, captured by opt-in TACTICS-SCOUT logging on 2026-09-17 15:21:37 and 15:22:11 local time. Bodies are verbatim; index/value meanings are not decoded.",
+  "saves": [
+    {
+      "path": "/ut/game/fifa21/tactics?squadId=1",
+      "body": {
+        "tactics": [
+          {
+            "squadId": 1,
+            "tactic": "BALANCED",
+            "formation": "f442",
+            "positions": [
+              {
+                "index": 0,
+                "value": 0
+              },
+              {
+                "index": 1,
+                "value": 1
+              },
+              {
+                "index": 2,
+                "value": 2
+              },
+              {
+                "index": 3,
+                "value": 3
+              },
+              {
+                "index": 4,
+                "value": 4
+              },
+              {
+                "index": 5,
+                "value": 5
+              },
+              {
+                "index": 6,
+                "value": 6
+              },
+              {
+                "index": 7,
+                "value": 7
+              },
+              {
+                "index": 8,
+                "value": 8
+              },
+              {
+                "index": 9,
+                "value": 9
+              },
+              {
+                "index": 10,
+                "value": 10
+              }
+            ],
+            "instructions": [
+              {
+                "index": 0,
+                "value": 0
+              },
+              {
+                "index": 1,
+                "value": 264
+              },
+              {
+                "index": 2,
+                "value": 0
+              },
+              {
+                "index": 3,
+                "value": 16
+              },
+              {
+                "index": 4,
+                "value": 264
+              },
+              {
+                "index": 5,
+                "value": 2263040
+              },
+              {
+                "index": 6,
+                "value": 0
+              },
+              {
+                "index": 7,
+                "value": 134219008
+              },
+              {
+                "index": 8,
+                "value": 0
+              },
+              {
+                "index": 9,
+                "value": 100696064
+              },
+              {
+                "index": 10,
+                "value": 16809992
+              },
+              {
+                "index": 11,
+                "value": 0
+              },
+              {
+                "index": 12,
+                "value": 16
+              },
+              {
+                "index": 13,
+                "value": 0
+              },
+              {
+                "index": 14,
+                "value": 4
+              },
+              {
+                "index": 15,
+                "value": 16
+              },
+              {
+                "index": 16,
+                "value": 8
+              },
+              {
+                "index": 17,
+                "value": 0
+              },
+              {
+                "index": 18,
+                "value": 72
+              },
+              {
+                "index": 19,
+                "value": 0
+              },
+              {
+                "index": 20,
+                "value": 8
+              },
+              {
+                "index": 21,
+                "value": 8
+              }
+            ],
+            "styles": [
+              {
+                "index": 0,
+                "value": 0
+              },
+              {
+                "index": 1,
+                "value": 2
+              },
+              {
+                "index": 2,
+                "value": 7
+              },
+              {
+                "index": 3,
+                "value": 3
+              },
+              {
+                "index": 4,
+                "value": 8
+              },
+              {
+                "index": 5,
+                "value": 8
+              },
+              {
+                "index": 6,
+                "value": 5
+              },
+              {
+                "index": 7,
+                "value": 5
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "/ut/game/fifa21/tactics?squadId=1",
+      "body": {
+        "tactics": [
+          {
+            "squadId": 1,
+            "tactic": "ATTACKING",
+            "formation": "f442",
+            "positions": [
+              {
+                "index": 0,
+                "value": 0
+              },
+              {
+                "index": 1,
+                "value": 1
+              },
+              {
+                "index": 2,
+                "value": 2
+              },
+              {
+                "index": 3,
+                "value": 3
+              },
+              {
+                "index": 4,
+                "value": 4
+              },
+              {
+                "index": 5,
+                "value": 5
+              },
+              {
+                "index": 6,
+                "value": 6
+              },
+              {
+                "index": 7,
+                "value": 7
+              },
+              {
+                "index": 8,
+                "value": 8
+              },
+              {
+                "index": 9,
+                "value": 9
+              },
+              {
+                "index": 10,
+                "value": 10
+              }
+            ],
+            "instructions": [
+              {
+                "index": 0,
+                "value": 0
+              },
+              {
+                "index": 1,
+                "value": 264
+              },
+              {
+                "index": 2,
+                "value": 16
+              },
+              {
+                "index": 3,
+                "value": 16
+              },
+              {
+                "index": 4,
+                "value": 264
+              },
+              {
+                "index": 5,
+                "value": 64
+              },
+              {
+                "index": 6,
+                "value": 134219008
+              },
+              {
+                "index": 7,
+                "value": 134219008
+              },
+              {
+                "index": 8,
+                "value": 2263040
+              },
+              {
+                "index": 9,
+                "value": 64
+              },
+              {
+                "index": 10,
+                "value": 16809992
+              },
+              {
+                "index": 11,
+                "value": 0
+              },
+              {
+                "index": 12,
+                "value": 16
+              },
+              {
+                "index": 13,
+                "value": 0
+              },
+              {
+                "index": 14,
+                "value": 16
+              },
+              {
+                "index": 15,
+                "value": 16
+              },
+              {
+                "index": 16,
+                "value": 0
+              },
+              {
+                "index": 17,
+                "value": 72
+              },
+              {
+                "index": 18,
+                "value": 72
+              },
+              {
+                "index": 19,
+                "value": 8
+              },
+              {
+                "index": 20,
+                "value": 0
+              },
+              {
+                "index": 21,
+                "value": 8
+              }
+            ],
+            "styles": [
+              {
+                "index": 0,
+                "value": 2
+              },
+              {
+                "index": 1,
+                "value": 9
+              },
+              {
+                "index": 2,
+                "value": 7
+              },
+              {
+                "index": 3,
+                "value": 4
+              },
+              {
+                "index": 4,
+                "value": 9
+              },
+              {
+                "index": 5,
+                "value": 8
+              },
+              {
+                "index": 6,
+                "value": 4
+              },
+              {
+                "index": 7,
+                "value": 4
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

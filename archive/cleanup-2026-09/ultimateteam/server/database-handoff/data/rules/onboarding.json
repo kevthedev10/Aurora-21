@@ -1,0 +1,10 @@
+{
+  "_comment": "First-run onboarding. The starter loan screen offers the top-rated native players (ties by lowest id) for each position, playersPerPosition at a time; offer ids are local ids starting at firstOfferId.",
+
+  "loans": {
+    "games": 7,
+    "firstOfferId": 10001,
+    "playersPerPosition": 5,
+    "positions": ["ST", "LM", "CM", "RM", "LB", "CB", "RB", "GK"]
+  }
+}

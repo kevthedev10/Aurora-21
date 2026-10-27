@@ -1,0 +1,7 @@
+{
+  "awards": "{{awards}}",
+  "awardsList": "{{awards}}",
+  "grantedItems": "{{items}}",
+  "itemList": "{{items}}",
+  "alreadyClaimed": "{{alreadyClaimed}}"
+}

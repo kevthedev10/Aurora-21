@@ -1,0 +1,10 @@
+.list { display: flex; gap: 2px; overflow-x: auto; border-bottom: 1px solid var(--line); margin-bottom: var(--space-4); scrollbar-width: thin; }
+.tab {
+  position: relative; padding: 10px 14px; border: 0; background: none; color: var(--fog);
+  font: 500 var(--text-sm)/1 var(--font); white-space: nowrap; cursor: pointer;
+}
+.tab:hover { color: var(--chalk); }
+.tab[data-state='active'] { color: var(--chalk); }
+.indicator { position: absolute; left: 10px; right: 10px; bottom: 0; height: 2px; background: var(--coin); pointer-events: none; }
+.count { margin-left: 6px; color: var(--dim); font: 600 14px/1 var(--font-display); }
+.panel:focus-visible { outline: none; }

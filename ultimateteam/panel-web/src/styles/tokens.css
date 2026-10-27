@@ -1,0 +1,48 @@
+/* Design tokens (ultimateteam/panel-redesign-plan.md, "Tokens"), reviewed on the kit page (#/_kit). */
+:root {
+  color-scheme: dark;
+
+  /* Colour: a floodlit stadium at night; coin gold acts; violet only ever means "staged, not yet published". */
+  --night: #141a24;
+  --stand: #1c2330;
+  --tier: #262f40;
+  --tier-2: #2e3a4f;
+  --line: #33405a;
+  --chalk: #eef1f6;
+  --fog: #9aa6b8;
+  --dim: #6f7c90;
+  --coin: #e9b949;
+  --coin-hover: #f3c95e;
+  --on-coin: #241a02;
+  --pitch: #3baa6e;
+  --staged: #9a8cf2;
+  --flare: #f08a3c;
+  --red-card: #e5534b;
+  --pitch-bg: rgb(59 170 110 / 0.14);
+  --staged-bg: rgb(154 140 242 / 0.14);
+  --flare-bg: rgb(240 138 60 / 0.14);
+  --red-card-bg: rgb(229 83 75 / 0.14);
+  --coin-bg: rgb(233 185 73 / 0.14);
+
+  /* Type: Barlow Condensed for titles and figures, IBM Plex Sans for text, Plex Mono for ids and logs. */
+  --font: 'IBM Plex Sans', system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-display: 'Barlow Condensed', 'Arial Narrow', system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, Consolas, 'Cascadia Mono', Menlo, monospace;
+  --text-xs: 13px;
+  --text-sm: 14px;
+  --text-md: 16px;
+  --text-lg: 20px;
+  --text-xl: 26px;
+  --text-2xl: 34px;
+
+  /* Shape and space. Surfaces are square-ish; only chips and badges are round. */
+  --radius: 8px;
+  --radius-sm: 5px;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --shadow-pop: 0 18px 48px rgb(0 0 0 / 0.45);
+}

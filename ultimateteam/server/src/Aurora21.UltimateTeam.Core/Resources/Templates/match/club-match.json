@@ -1,0 +1,13 @@
+{
+  "squad": "{{squad}}",
+  "homeSquad": "{{squad}}",
+  "isHomeTeam": true,
+  "startDateTime": "{{now}}",
+  "stadiumAssetId": "{{stadiumId}}",
+  "stadiumId": "{{stadiumId}}",
+  "matchmakingElo": 1000,
+  "mismatches": [],
+  "championsWeekendLeagueStadiumId": 0,
+  "championsWeekendLeagueTimeOfDay": 0,
+  "matchId": "{{matchId}}"
+}

@@ -1,0 +1,4 @@
+{
+  "resourceId": "{{resourceId}}", "defId": "{{resourceId}}", "minPrice": "{{minimum}}", "maxPrice": "{{maximum}}",
+  "marketDataMinPrice": "{{minimum}}", "marketDataMaxPrice": "{{maximum}}"
+}

@@ -1,0 +1,20 @@
+{
+  "id": "{{squadId}}",
+  "personaId": "{{personaId}}",
+  "squadName": "{{squadName}}",
+  "formation": "{{formation}}",
+  "captain": "{{captain}}",
+  "chemistry": "{{chemistry}}",
+  "changed": 0,
+  "starRating": 5,
+  "custom": "{{custom}}",
+  "players": "{{players}}",
+  "actives": "{{actives}}",
+  "myStadiumInfo": "{{myStadiumInfo}}",
+  "stadiumAssetId": "{{stadiumId}}",
+  "stadiumId": "{{stadiumId}}",
+  "isHomeTeam": false,
+  "manager": ["{{manager}}"],
+  "club": "{{actives}}",
+  "kicktakers": "{{kickTakers}}"
+}

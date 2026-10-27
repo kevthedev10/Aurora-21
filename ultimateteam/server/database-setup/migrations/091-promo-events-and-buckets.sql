@@ -1,0 +1,34 @@
+-- Rename the timing and weighted-card structures without replacing their rows.
+-- An event contains promos; each promo contains buckets; each membership names one bucket.
+ALTER TABLE ultimateteam.promo_schedules RENAME TO promo_events;
+ALTER TABLE ultimateteam.promo_events RENAME COLUMN schedule_id TO event_id;
+ALTER TABLE ultimateteam.promo_events RENAME CONSTRAINT promo_schedules_pkey TO promo_events_pkey;
+ALTER TABLE ultimateteam.promo_events RENAME CONSTRAINT promo_schedules_code_key TO promo_events_code_key;
+ALTER TABLE ultimateteam.promo_events RENAME CONSTRAINT promo_schedules_code_check TO promo_events_code_check;
+ALTER TABLE ultimateteam.promo_events RENAME CONSTRAINT promo_schedules_name_check TO promo_events_name_check;
+ALTER TABLE ultimateteam.promo_events RENAME CONSTRAINT promo_schedules_window TO promo_events_window;
+ALTER SEQUENCE ultimateteam.promo_schedules_schedule_id_seq RENAME TO promo_events_event_id_seq;
+ALTER TRIGGER promo_schedules_publish_guard ON ultimateteam.promo_events RENAME TO promo_events_publish_guard;
+
+ALTER TABLE ultimateteam.promo_schedule_groups RENAME TO promo_event_promos;
+ALTER TABLE ultimateteam.promo_event_promos RENAME COLUMN schedule_id TO event_id;
+ALTER TABLE ultimateteam.promo_event_promos RENAME CONSTRAINT promo_schedule_groups_primary TO promo_event_promos_primary;
+ALTER TABLE ultimateteam.promo_event_promos RENAME CONSTRAINT promo_schedule_groups_schedule_id_fkey TO promo_event_promos_event_id_fkey;
+ALTER TABLE ultimateteam.promo_event_promos RENAME CONSTRAINT promo_schedule_groups_promo_id_fkey TO promo_event_promos_promo_id_fkey;
+ALTER TRIGGER promo_schedule_groups_publish_guard ON ultimateteam.promo_event_promos RENAME TO promo_event_promos_publish_guard;
+
+ALTER TABLE ultimateteam.promo_card_weight_groups RENAME TO promo_buckets;
+ALTER TABLE ultimateteam.promo_buckets RENAME CONSTRAINT promo_card_weight_groups_pkey TO promo_buckets_pkey;
+ALTER TABLE ultimateteam.promo_buckets RENAME CONSTRAINT promo_card_weight_groups_promo_id_fkey TO promo_buckets_promo_id_fkey;
+ALTER TABLE ultimateteam.promo_buckets RENAME CONSTRAINT promo_card_weight_groups_code_check TO promo_buckets_code_check;
+ALTER TABLE ultimateteam.promo_buckets RENAME CONSTRAINT promo_card_weight_groups_name_check TO promo_buckets_name_check;
+ALTER TABLE ultimateteam.promo_buckets RENAME CONSTRAINT promo_card_weight_groups_draw_weight_check TO promo_buckets_draw_weight_check;
+ALTER TABLE ultimateteam.promo_buckets RENAME CONSTRAINT promo_card_weight_groups_code TO promo_buckets_code;
+ALTER TABLE ultimateteam.promo_buckets RENAME CONSTRAINT promo_card_weight_groups_promo_id_id TO promo_buckets_promo_id_id;
+ALTER SEQUENCE ultimateteam.promo_card_weight_groups_id_seq RENAME TO promo_buckets_id_seq;
+ALTER TRIGGER promo_card_weight_groups_publish_guard ON ultimateteam.promo_buckets RENAME TO promo_buckets_publish_guard;
+
+ALTER TABLE ultimateteam.promo_cards RENAME COLUMN weight_group_id TO bucket_id;
+ALTER TABLE ultimateteam.promo_cards RENAME CONSTRAINT promo_cards_weight_group_same_promo TO promo_cards_bucket_same_promo;
+
+INSERT INTO ultimateteam.schema_migrations(version) VALUES(91);

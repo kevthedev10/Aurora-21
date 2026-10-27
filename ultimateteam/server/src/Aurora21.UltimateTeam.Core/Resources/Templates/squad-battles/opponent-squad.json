@@ -1,0 +1,22 @@
+{
+  "id": "{{slot}}",
+  "personaId": "{{personaId}}",
+  "squadName": "{{clubName}}",
+  "formation": "{{formation}}",
+  "captain": "{{captain}}",
+  "chemistry": "{{chemistry}}",
+  "changed": 0,
+  "starRating": "{{starRating}}",
+  "custom": "{{custom}}",
+  "players": "{{players}}",
+  "actives": "{{actives}}",
+  "stadiumAssetId": "{{stadiumId}}",
+  "stadiumId": "{{stadiumId}}",
+  "myStadiumInfo": "{{myStadiumInfo}}",
+  "isHomeTeam": true,
+  "estDate": "{{estDate}}",
+  "sqbt2data": { "stadiumAssetId": "{{stadiumId}}", "stadiumId": "{{stadiumId}}" },
+  "manager": ["{{manager}}"],
+  "club": "{{actives}}",
+  "kicktakers": "{{kickTakers}}"
+}

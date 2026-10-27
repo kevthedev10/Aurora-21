@@ -1,0 +1,119 @@
+{
+  "_comment": "Card values and native card data. Position modifiers must be real fcc_trainingcards definitions: synthetic ids render as broken cards.",
+
+  "_quickSellComment": "baseCompetitionRareflags are the ordinary cards of a competition (UCL base 47/48, CONMEBOL Sudamericana 52 and Libertadores 53): they carry their own shells but are not promos, so they sell like rares.",
+
+  "quickSell": {
+    "common": 360,
+    "rare": 700,
+    "specialDefault": 12000,
+    "specialByRareflag": {
+      "3": 10000, "4": 11500, "5": 17000, "6": 13500, "7": 11000, "8": 12500,
+      "9": 12000, "10": 12000, "11": 16000, "12": 15000, "13": 13500, "14": 13500
+    },
+    "managerCommon": 150,
+    "managerRare": 300,
+    "baseCompetitionRareflags": [47, 48, 52, 53]
+  },
+
+  "_rarityGroupComment": "SBC 'Min. X Rare' rules are PLAYER_RARITY_GROUP checks (item.groups includes the id), so every card with rareflag >= 1 carries this group.",
+  "rareRarityGroup": 4,
+
+  "_statSlotsComment": "Players carry this many {index, value} statsList/lifetimeStats rows; Player Stats > Top Players indexes them directly.",
+  "playerStatSlots": 5,
+
+  "_conceptComment": "Concept players are never owned. Their item ids are conceptItemIdBase + resource id, below conceptItemIdBase + conceptItemIdSpan.",
+  "conceptItemIdBase": 800000000000,
+  "conceptItemIdSpan": 100000000000,
+
+  "_managersComment": "Manager definitions without their own values: default rating, and the rating from which one is rare.",
+  "managerDefaultRating": 75,
+  "managerRareFromRating": 80,
+
+  "_playerPickComment": "The 1-of-N player pick token. {choices} and {rating} are replaced by the token's choice count and minimum rating.",
+  "playerPickToken": {
+    "minChoices": 2,
+    "maxChoices": 5,
+    "name": "1 of {choices} {rating}+ Player Pick",
+    "description": "Choose one of {choices} players rated {rating} or higher."
+  },
+
+  "_consumablesComment": "Native development (position change) and training (chemistry style) consumable stacks. starterStack is how many of each definition a club is given once.",
+  "positionModifierCard": { "cardAssetId": 34, "consumableType": 3, "discardValue": 80, "starterStack": 5 },
+  "_legacyModifiersComment": "Early local builds created synthetic position cards in this resource id range; they are replaced by native definitions.",
+  "legacyPositionModifierIds": { "first": 300001, "last": 300999 },
+
+  "_chemistryStylesComment": "A chemistry style card's cardsubtypeid is the playStyle it gives a player. Resource ids follow the fcc_trainingcards position-change rows: firstResourceId + (playStyle - 250). Goalkeeper styles apply only to goalkeepers; cards never given a style play as the default.",
+  "chemistryStyles": {
+    "firstResourceId": 5003095,
+    "cardAssetId": 34,
+    "consumableType": 4,
+    "rating": 90,
+    "discardValue": 100,
+    "starterStack": 3,
+    "outfieldDefault": 250,
+    "goalkeeperDefault": 273,
+    "goalkeeperStyles": [269, 270, 271, 272, 273],
+    "names": {
+      "250": "Basic", "251": "Sniper", "252": "Finisher", "253": "Deadeye", "254": "Marksman",
+      "255": "Hawk", "256": "Artist", "257": "Architect", "258": "Powerhouse", "259": "Maestro",
+      "260": "Engine", "261": "Sentinel", "262": "Guardian", "263": "Gladiator", "264": "Backbone",
+      "265": "Anchor", "266": "Hunter", "267": "Catalyst", "268": "Shadow",
+      "269": "Wall", "270": "Shield", "271": "Cat", "272": "Glove", "273": "GK Basic"
+    }
+  },
+
+  "_consumableCountersComment": "Club > Consumables counters: the counter each native card asset id adds to, and for records without one, the counter of their consumableType. teamFitnessSubType splits team from player fitness.",
+  "consumableCounters": {
+    "byCardAssetId": {
+      "7": "contractPlayer", "8": "contractManager", "10": "fitnessPlayer", "9": "healing",
+      "1": "trainingPlayer", "3": "trainingGk", "34": "position", "50": "playstylePlayer",
+      "51": "playstyleGk", "32": "managerLeagueModifier"
+    },
+    "byConsumableType": { "1": "contractPlayer", "2": "healing", "3": "position", "4": "playstylePlayer", "5": "managerLeagueModifier" },
+    "teamFitnessSubType": 220
+  },
+
+  "positionModifiers": [
+    { "resourceId": 5003059, "subType": 91, "source": "LWB", "target": "LB", "rating": 95, "weightRare": 10 },
+    { "resourceId": 5003060, "subType": 92, "source": "LB", "target": "LWB", "rating": 90, "weightRare": 20 },
+    { "resourceId": 5003061, "subType": 93, "source": "RWB", "target": "RB", "rating": 95, "weightRare": 10 },
+    { "resourceId": 5003062, "subType": 94, "source": "RB", "target": "RWB", "rating": 90, "weightRare": 20 },
+    { "resourceId": 5003063, "subType": 95, "source": "LM", "target": "LW", "rating": 95, "weightRare": 20 },
+    { "resourceId": 5003064, "subType": 96, "source": "RM", "target": "RW", "rating": 95, "weightRare": 20 },
+    { "resourceId": 5003065, "subType": 97, "source": "LW", "target": "LM", "rating": 95, "weightRare": 20 },
+    { "resourceId": 5003066, "subType": 98, "source": "RW", "target": "RM", "rating": 95, "weightRare": 20 },
+    { "resourceId": 5003067, "subType": 99, "source": "LW", "target": "LF", "rating": 90, "weightRare": 10 },
+    { "resourceId": 5003068, "subType": 100, "source": "RW", "target": "RF", "rating": 95, "weightRare": 10 },
+    { "resourceId": 5003069, "subType": 101, "source": "LF", "target": "LW", "rating": 90, "weightRare": 10 },
+    { "resourceId": 5003070, "subType": 102, "source": "RF", "target": "RW", "rating": 95, "weightRare": 10 },
+    { "resourceId": 5003071, "subType": 103, "source": "CM", "target": "CAM", "rating": 90, "weightRare": 20 },
+    { "resourceId": 5003072, "subType": 104, "source": "CAM", "target": "CM", "rating": 95, "weightRare": 20 },
+    { "resourceId": 5003073, "subType": 105, "source": "CDM", "target": "CM", "rating": 95, "weightRare": 20 },
+    { "resourceId": 5003074, "subType": 106, "source": "CM", "target": "CDM", "rating": 90, "weightRare": 20 },
+    { "resourceId": 5003075, "subType": 107, "source": "CAM", "target": "CF", "rating": 95, "weightRare": 10 },
+    { "resourceId": 5003076, "subType": 108, "source": "CF", "target": "CAM", "rating": 95, "weightRare": 10 },
+    { "resourceId": 5003077, "subType": 109, "source": "CF", "target": "ST", "rating": 95, "weightRare": 20 },
+    { "resourceId": 5003078, "subType": 110, "source": "ST", "target": "CF", "rating": 95, "weightRare": 20 }
+  ],
+
+  "_aquaProComment": "Custom pro-player shells use their own definition ids, but some screens still consult the base gold card; both receive the same maxed attributes. They are never offered as player-pick choices.",
+  "aquaProCards": [
+    { "customId": 167963031, "baseId": 190871, "name": "Neymar Jr" },
+    { "customId": 167996618, "baseId": 224458, "name": "Diogo Jota" },
+    { "customId": 167988548, "baseId": 216388, "name": "Allan Saint-Maximin" }
+  ],
+  "aquaProAttributeValue": 99,
+
+  "_attributesComment": "The six face stats and the attributes each one summarises. CardsDLL reserves 34 in-game slots: the 29 outfield attributes in group order, then five goalkeeper values (GK speed is derived by the game).",
+  "outfieldAttributeGroups": [
+    ["acceleration", "sprintspeed"],
+    ["positioning", "finishing", "shotpower", "longshots", "volleys", "penalties"],
+    ["vision", "crossing", "freekickaccuracy", "shortpassing", "longpassing", "curve"],
+    ["agility", "balance", "reactions", "ballcontrol", "dribbling", "composure"],
+    ["interceptions", "headingaccuracy", "marking", "standingtackle", "slidingtackle"],
+    ["jumping", "stamina", "strength", "aggression"]
+  ],
+  "goalkeeperAttributes": ["gkdiving", "gkhandling", "gkkicking", "gkreflexes", "gkspeed", "gkpositioning"],
+  "inGameGoalkeeperSlots": ["gkdiving", "gkhandling", "gkkicking", "gkreflexes", "gkpositioning"]
+}

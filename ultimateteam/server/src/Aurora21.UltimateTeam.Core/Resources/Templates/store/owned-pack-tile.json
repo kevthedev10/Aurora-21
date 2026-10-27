@@ -1,0 +1,31 @@
+{
+  "id": "{{packId}}", "packId": "{{packId}}", "assetId": "{{artId}}",
+  "quantity": "{{quantity}}", "count": "{{quantity}}",
+  "name": "{{name}}", "packName": "{{name}}", "displayName": "{{name}}", "title": "{{name}}",
+  "description": "{{name}}", "packDescription": "{{name}}", "longDescription": "{{name}}",
+  "shortDescription": "{{name}}", "bio": "{{name}}", "label": "{{name}}",
+  "displayLabel": "{{name}}", "storePackName": "{{name}}",
+  "packType": "CARDPACK", "packTypeId": "{{packId}}",
+  "packTier": 3, "tier": 3, "categoryId": 5,
+  "numberItems": "{{size}}", "numItems": "{{size}}", "rare": "{{rare}}",
+  "displayGroup": { "value": "mypacks", "priority": 5 },
+  "displayGroupId": 5, "state": "active", "sortPriority": 0,
+  "isReward": true, "isPurchased": true, "isOwned": true, "owned": true,
+  "unopened": true, "isUnopened": true, "isPreOrder": true,
+  "preOrder": true, "usePreOrder": true, "preOrderQuantity": "{{quantity}}",
+  "purchaseType": "PREORDER", "action": "OPEN", "isOpenable": true,
+  "isFree": true, "isAvailableInStore": true,
+  "isavailableinstore": true, "isPurchaseable": true, "visible": true,
+  "finalPrice": 0, "originalPrice": 0, "price": 0, "coins": 0,
+  "coinPrice": 0, "points": 0, "pointsPrice": 0, "cost": 0,
+  "currencies": [
+    { "name": "preorder", "funds": "{{quantity}}", "finalFunds": "{{quantity}}" },
+    { "name": "coins", "funds": 0, "finalFunds": 0 },
+    { "name": "points", "funds": 0, "finalFunds": 0 }
+  ],
+  "packContentInfo": {
+    "itemQuantity": "{{size}}", "goldQuantity": "{{gold}}",
+    "silverQuantity": "{{silver}}", "bronzeQuantity": "{{bronze}}",
+    "rareQuantity": "{{rare}}"
+  }
+}

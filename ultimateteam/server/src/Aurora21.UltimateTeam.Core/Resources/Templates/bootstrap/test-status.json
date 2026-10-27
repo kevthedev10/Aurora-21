@@ -1,0 +1,7 @@
+{
+  "version": 1,
+  "testMode": true,
+  "runtimeRoot": "{{runtimeRoot}}",
+  "database": "{{database}}",
+  "clubId": "{{clubId}}"
+}

@@ -1,0 +1,17 @@
+{
+  "itemIds": ["{{tokenId}}"],
+  "playerPicks": "{{choices}}",
+  "playerPickData": [
+    {
+      "itemId": "{{tokenId}}",
+      "playerPickItemId": "{{tokenId}}",
+      "itemData": "{{choices}}",
+      "choices": "{{choices}}"
+    }
+  ],
+  "items": "{{choices}}",
+  "itemData": "{{choices}}",
+  "duplicateItemIdList": "{{duplicates}}",
+  "choiceData": "{{choices}}",
+  "availablePicks": 1
+}

@@ -1,0 +1,6 @@
+{
+  "defId": "{{offerId}}",
+  "ranking": "{{ranking}}",
+  "loans": "{{games}}",
+  "itemData": "{{item}}"
+}

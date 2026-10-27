@@ -1,0 +1,9 @@
+{
+  "database": {
+    "cluster_max_connections": 260,
+    "cluster_shared_buffers_mb": 8192,
+    "cluster_work_mem_mb": 16,
+    "cluster_effective_cache_size_mb": 20480,
+    "cluster_max_wal_size_mb": 4096
+  }
+}

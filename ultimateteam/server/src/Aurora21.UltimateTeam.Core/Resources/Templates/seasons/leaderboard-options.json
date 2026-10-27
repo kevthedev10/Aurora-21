@@ -1,0 +1,6 @@
+{
+  "selection": "{{selection}}",
+  "scrollDelay": 0,
+  "options": "{{options}}",
+  "permutations": "{{permutations}}"
+}

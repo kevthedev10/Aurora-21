@@ -1,0 +1,17 @@
+AURORA 21 (ALPHA V1) - MUSIC + HOVER POLISH UPDATE
+
+Changes in this build:
+- Added a skip/next-track button to the compact music controls.
+- MP3s remain shuffled once at startup and loop in that same shuffled order.
+- Music now starts silently and fades smoothly to the selected volume during the Welcome sequence.
+- Added restrained vector particle shimmer when entering a button with the mouse.
+- Added subtle hover glow to window, navigation, primary, secondary, and settings button surfaces.
+- Removed the purple P21 tile from the top-left title bar while keeping the Aurora 21 (Alpha v1) text branding.
+- Preserved the existing video hero, randomized playlist, Welcome screen, launch detection, and Game launched / fade-close sequence.
+
+Particle effect notes:
+- Particles are WPF vector ellipses generated at runtime, not bitmap sprites.
+- The effect is a short one-shot edge shimmer (6 tiny particles) per hover entry to avoid a cheap continuous particle spray.
+
+Build:
+Run BUILD-GLASS-LAUNCHER.cmd on Windows with the .NET 8 SDK installed.

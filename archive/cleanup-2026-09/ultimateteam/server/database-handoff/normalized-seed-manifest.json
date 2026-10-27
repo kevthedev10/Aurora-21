@@ -1,0 +1,248 @@
+{
+  "formatVersion": 1,
+  "inputs": [
+    {
+      "path": "data/catalogs/players.json",
+      "sha256": "351a4f9d6a0019ed7a59c5d6cf5ccfb1db8cecb70d6750042fc2d6e88c5c10b8"
+    },
+    {
+      "path": "data/catalogs/custom-players.json",
+      "sha256": "926bffc1b99046551735a5d5f2c03d265aa15b8728d117c198c3e964c9863630"
+    },
+    {
+      "path": "data/catalogs/managers.json",
+      "sha256": "0fbe9bb3c0f39de1f81c9d695ca2c8cc22d6c855d498929cb718fa7d87e25483"
+    },
+    {
+      "path": "data/catalogs/kits.json",
+      "sha256": "a6401a707b5cda727006f43bb43212b1e4f14cc92909d0014bc88f24f90d4e84"
+    },
+    {
+      "path": "data/catalogs/stadiums.json",
+      "sha256": "cdcd9c6b8f4d917be8d9095abb2e42accc84b28ff85eca29cfceaa7cec8d0f46"
+    },
+    {
+      "path": "data/rules/cards.json",
+      "sha256": "fe30de79f84ef62fcb38ddec6d2e3a0ec1dde5faa035bb222f3a05d950b876f0"
+    },
+    {
+      "path": "data/rules/club.json",
+      "sha256": "c699511771fd7ab4985670ae53e6fc8a14c8b0c4a4ef6d5f7eb671a4e1070360"
+    },
+    {
+      "path": "data/rules/draft.json",
+      "sha256": "990f7c6b3dddbc7374ae74b4aa87fa7fcd62c88aaf7a656c08881f12746391b4"
+    },
+    {
+      "path": "data/rules/market.json",
+      "sha256": "342af37508a3d9425e89b8cfdd1ddd32bf400dac5313ac1ad8a1fb7507f70dfd"
+    },
+    {
+      "path": "data/rules/objectives.json",
+      "sha256": "639ac79e6d1d48de73dec0f39095c6ec811a9ece0b404583deb6d94fff90a7e6"
+    },
+    {
+      "path": "data/rules/onboarding.json",
+      "sha256": "e31445efb13f5479c0e7bdbde30ae30ee0453d5a720e26f565ccd7b91439e505"
+    },
+    {
+      "path": "data/rules/packs.json",
+      "sha256": "9d536d895078ed1d80ff98f18b221e2377d203582970bf3406c012927e2df356"
+    },
+    {
+      "path": "data/rules/sbc.json",
+      "sha256": "f341104d2f729d87fb03677637c2cfdf1cddba6077789e1af7d62b4d1fa8499e"
+    },
+    {
+      "path": "data/rules/seasons.json",
+      "sha256": "79fc5f23fe82e0e5f7c3c7dff6d3b5c2e1be76e387e5e55590ee24bd586f3814"
+    },
+    {
+      "path": "data/rules/squad_battles.json",
+      "sha256": "7d533d02eab9b1ae6364d4a37a611fa8630cb8912c43422a34b10a86a49db69a"
+    },
+    {
+      "path": "data/provenance/player-catalog-manifest.json",
+      "sha256": "613e063f0512a88cdccef10fa5d15cf29900991b0590e4f573b6e0e68c25ca89"
+    },
+    {
+      "path": "data/provenance/player-catalog-quarantine.json",
+      "sha256": "2bbf71fa30bbf026bf667bdfc91ee4474b534696b01fb869003052988468f606"
+    },
+    {
+      "path": "data/provenance/wefut-fifa21-rarities.json",
+      "sha256": "5e1b0c06e08661e0a5c2802759897040551cf3fdfc36481bd7a3928353ba845a"
+    },
+    {
+      "path": "data/provenance/wefut-player-catalog-manifest.json",
+      "sha256": "6c732af731af318fa7a05004d32133f7a810890e450dd49edc74c82fb0ee74dd"
+    },
+    {
+      "path": "data/catalogs/card-render-tunables.json",
+      "sha256": "2391c58bd5ad0f1ac6edb7e75513baf5b69d282c2eb5c462f3bd5190499285a0"
+    }
+  ],
+  "files": [
+    {
+      "path": "normalized-seeds/010-sources-and-families.json",
+      "sha256": "b05b01a267ca5e695f68b60126c80afb87b13e74221799b865b34956446fbe94",
+      "bytes": 3337,
+      "tables": [
+        {
+          "name": "catalog_sources",
+          "rows": 6
+        },
+        {
+          "name": "item_families",
+          "rows": 5
+        }
+      ]
+    },
+    {
+      "path": "normalized-seeds/011-reference-dimensions.json",
+      "sha256": "cc8b9cc7c3a3828a814abcf04e1e8507e38386d1a7bfb0ef774c175ed7d1697c",
+      "bytes": 67424,
+      "tables": [
+        {
+          "name": "nations",
+          "rows": 158
+        },
+        {
+          "name": "leagues",
+          "rows": 45
+        },
+        {
+          "name": "teams",
+          "rows": 683
+        }
+      ]
+    },
+    {
+      "path": "normalized-seeds/012-footballers-types-designs.json",
+      "sha256": "993f209cabfe2e6ca33b2612d6348f4d9884b8beec1fbe457c05cee7f9d546b4",
+      "bytes": 2651841,
+      "tables": [
+        {
+          "name": "footballers",
+          "rows": 16057
+        },
+        {
+          "name": "card_types",
+          "rows": 88
+        },
+        {
+          "name": "card_rarity_groups",
+          "rows": 85
+        },
+        {
+          "name": "card_designs",
+          "rows": 0
+        },
+        {
+          "name": "card_type_designs",
+          "rows": 0
+        },
+        {
+          "name": "promos",
+          "rows": 0
+        },
+        {
+          "name": "promo_cards",
+          "rows": 0
+        }
+      ]
+    },
+    {
+      "path": "normalized-seeds/013-player-definitions.json",
+      "sha256": "c4f700f6c92291a103f5bd5e79e5ff28944c89c8a7be8e0f512930be39c479ae",
+      "bytes": 32671419,
+      "tables": [
+        {
+          "name": "item_definitions",
+          "rows": 22506
+        },
+        {
+          "name": "player_card_definitions",
+          "rows": 22506
+        }
+      ]
+    },
+    {
+      "path": "normalized-seeds/014-manager-definitions.json",
+      "sha256": "248f5ae970765e6119dd06264156d1c4004b4c7ca2c068ef77968c2ec6807e04",
+      "bytes": 174424,
+      "tables": [
+        {
+          "name": "item_definitions",
+          "rows": 311
+        },
+        {
+          "name": "manager_definitions",
+          "rows": 311
+        }
+      ]
+    },
+    {
+      "path": "normalized-seeds/015-consumable-definitions.json",
+      "sha256": "1bfc01cc5795670a7d3bb1f1eba9911280ef48bb1f59268371e7501ca1abb4aa",
+      "bytes": 22612,
+      "tables": [
+        {
+          "name": "item_definitions",
+          "rows": 44
+        },
+        {
+          "name": "consumable_definitions",
+          "rows": 44
+        }
+      ]
+    },
+    {
+      "path": "normalized-seeds/016-customisation-definitions.json",
+      "sha256": "6a361da9c43d0747031a14afde4a8eb728277ceb4a8d4a9325b2829bab731ddb",
+      "bytes": 729607,
+      "tables": [
+        {
+          "name": "item_definitions",
+          "rows": 1386
+        },
+        {
+          "name": "customisation_definitions",
+          "rows": 1386
+        }
+      ]
+    },
+    {
+      "path": "normalized-seeds/017-compatibility-and-aliases.json",
+      "sha256": "7112a54e4d9cb7b4a7d77ed02800717cac3e93473c38d1daf779a87a8ccf0e45",
+      "bytes": 8036595,
+      "tables": [
+        {
+          "name": "definition_extensions",
+          "rows": 24203
+        }
+      ]
+    }
+  ],
+  "rows": {
+    "catalog_sources": 6,
+    "item_families": 5,
+    "nations": 158,
+    "leagues": 45,
+    "teams": 683,
+    "footballers": 16057,
+    "card_types": 88,
+    "card_rarity_groups": 85,
+    "item_definitions": 24247,
+    "player_card_definitions": 22506,
+    "definition_extensions": 24203,
+    "manager_definitions": 311,
+    "consumable_definitions": 44,
+    "customisation_definitions": 1386
+  },
+  "provisionalIdentityStatus": "All footballers unresolved; no universal native-identity claim",
+  "definitionStatus": "draft",
+  "seededDesigns": 0,
+  "seededPromos": 0,
+  "seededClubs": 0
+}

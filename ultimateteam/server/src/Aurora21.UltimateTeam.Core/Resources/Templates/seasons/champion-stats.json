@@ -1,0 +1,9 @@
+{
+  "championEventId": "{{eventId}}",
+  "gamesPlayed": "{{played}}",
+  "score": "{{wins}}",
+  "gamesRemaining": "{{remaining}}",
+  "rank": "{{rank}}",
+  "tierLevel": "{{tierLevel}}",
+  "expectedTierLevel": "{{tierLevel}}"
+}

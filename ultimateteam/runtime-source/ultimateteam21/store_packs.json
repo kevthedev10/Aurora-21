@@ -1,0 +1,55 @@
+{
+  "packs": {
+    "8": {
+      "enabled": true,
+      "name": "All Consumables Pack",
+      "bio": "Contains one of every native FIFA 21 position modifier.",
+      "price": 1,
+      "size": 20,
+      "all_consumables": true,
+      "store_group": "special"
+    },
+    "9": {
+      "enabled": true,
+      "name": "All Kits Pack",
+      "bio": "Contains 30 unique FIFA 21 kits. Reopen it to collect the complete 1,382-kit catalog.",
+      "price": 1,
+      "size": 30,
+      "all_kits": true,
+      "store_group": "special"
+    },
+    "10": {
+      "enabled": true,
+      "name": "Full Icon XI Pack",
+      "bio": "Build a whole starting XI of legends. Contains 11 unique Icon and Icon Moments players rated 87 or higher — every slot a walkout.",
+      "price": 125000,
+      "size": 11,
+      "gold_weight": 100,
+      "silver_weight": 0,
+      "bronze_weight": 0,
+      "rare_slots": 11,
+      "min_rating": 87,
+      "guaranteed_specials": 11,
+      "special_chance": 0.0,
+      "manager_chance": 0.0,
+      "allow_unweighted_specials": true,
+      "allowed_rareflags": [12, 84],
+      "store_group": "special",
+      "special_weights": {}
+    },
+    "11": {"enabled": true, "name": "Stadium: Sanderson Park (reset)", "bio": "Sets your home venue to the default Sanderson Park.", "price": 1, "size": 1, "set_stadium_id": 261, "store_group": "special"},
+    "12": {"enabled": true, "name": "Stadium: Santiago Bernabeu", "bio": "Sets your home venue to Santiago Bernabeu.", "price": 1, "size": 1, "set_stadium_id": 2, "store_group": "special"},
+    "13": {"enabled": true, "name": "Stadium: Old Trafford", "bio": "Sets your home venue to Old Trafford.", "price": 1, "size": 1, "set_stadium_id": 5, "store_group": "special"},
+    "14": {"enabled": true, "name": "Stadium: Anfield", "bio": "Sets your home venue to Anfield.", "price": 1, "size": 1, "set_stadium_id": 12, "store_group": "special"},
+    "15": {"enabled": true, "name": "Stadium: Emirates Stadium", "bio": "Sets your home venue to the Emirates Stadium.", "price": 1, "size": 1, "set_stadium_id": 14, "store_group": "special"},
+    "16": {"enabled": true, "name": "Stadium: Etihad Stadium", "bio": "Sets your home venue to the Etihad Stadium.", "price": 1, "size": 1, "set_stadium_id": 15, "store_group": "special"},
+    "17": {"enabled": true, "name": "Stadium: Signal Iduna Park", "bio": "Sets your home venue to Signal Iduna Park.", "price": 1, "size": 1, "set_stadium_id": 9, "store_group": "special"},
+    "18": {"enabled": true, "name": "Stadium: San Siro", "bio": "Sets your home venue to San Siro.", "price": 1, "size": 1, "set_stadium_id": 100, "store_group": "special"},
+    "19": {"enabled": true, "name": "Stadium: Parc des Princes", "bio": "Sets your home venue to Parc des Princes.", "price": 1, "size": 1, "set_stadium_id": 104, "store_group": "special"},
+    "20": {"enabled": true, "name": "Stadium: Camp Nou", "bio": "Sets your home venue to Camp Nou.", "price": 1, "size": 1, "set_stadium_id": 112, "store_group": "special"},
+    "21": {"enabled": true, "name": "82+ Player Pick", "bio": "Guaranteed 82-rated or better player, straight to your club.", "price": 15000, "size": 1, "min_rating": 82, "player_pick_count": 4, "store_group": "special"},
+    "22": {"enabled": true, "name": "84+ Player Pick", "bio": "Guaranteed 84-rated or better player, straight to your club.", "price": 30000, "size": 1, "min_rating": 84, "player_pick_count": 4, "store_group": "special"},
+    "23": {"enabled": true, "name": "86+ Player Pick", "bio": "Guaranteed 86-rated or better player, straight to your club.", "price": 60000, "size": 1, "min_rating": 86, "player_pick_count": 4, "store_group": "special"},
+    "24": {"enabled": true, "name": "88+ Player Pick", "bio": "Guaranteed 88-rated or better player, straight to your club.", "price": 120000, "size": 1, "min_rating": 88, "player_pick_count": 4, "store_group": "special"}
+  }
+}

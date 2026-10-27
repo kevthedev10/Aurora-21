@@ -1,0 +1,16 @@
+.field { display: grid; gap: 6px; min-width: 0; align-content: start; }
+.label { color: var(--fog); font-size: var(--text-xs); font-weight: 500; }
+.hint { color: var(--dim); font-size: var(--text-xs); }
+.error { color: var(--red-card); font-size: var(--text-xs); }
+.field :is(input, select, textarea), .control {
+  width: 100%; min-height: 36px; padding: 7px 10px;
+  border: 1px solid var(--line); border-radius: var(--radius-sm);
+  background: var(--night); color: var(--chalk); font: var(--text-sm)/1.4 var(--font);
+}
+.field textarea { min-height: 96px; resize: vertical; }
+/* JSON and other code (rule values). */
+.field textarea.code { font-family: var(--font-mono); font-size: 13px; }
+.field :is(input, select, textarea):hover { border-color: var(--fog); }
+.field :is(input, select, textarea):focus-visible { outline: 2px solid var(--coin); outline-offset: 0; border-color: var(--coin); }
+.invalid :is(input, select, textarea) { border-color: var(--red-card); }
+.inline { grid-template-columns: auto minmax(0, 1fr); align-items: center; gap: var(--space-2); }

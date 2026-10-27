@@ -1,0 +1,2063 @@
+{
+  "formatVersion": 1,
+  "generator": "tools/wire-writers/generate.mjs",
+  "sourceDirectory": "src/Aurora21.UltimateTeam.Core/Resources/Templates",
+  "output": {
+    "path": "src/Aurora21.UltimateTeam.Core/Helpers/Json/WireWriters.g.cs",
+    "sha256": "7fc375a1d2dff14dcf06224c42df675b3eea2940d274d5cd799ab3a7a9143524",
+    "bytes": 301645
+  },
+  "templates": [
+    {
+      "template": "awards/coins",
+      "sha256": "5c4e4bcdd31e9eb8ae4a706d6f5f6ca24c831c455cdc9bbbeef3252e4335c4fe",
+      "placeholders": [
+        "coins"
+      ]
+    },
+    {
+      "template": "awards/competition-coins",
+      "sha256": "f6383b5437d69add913ed824dc69150a5a2ab565739e42c21c45bbd3e04683e2",
+      "placeholders": [
+        "coins"
+      ]
+    },
+    {
+      "template": "awards/fc-points",
+      "sha256": "8f9d67676f7ab2fb112f86624673595f2766c961465115edcb56c76cbbc2d7d1",
+      "placeholders": [
+        "points"
+      ]
+    },
+    {
+      "template": "awards/objective-coins",
+      "sha256": "8aa1834afa9bf0cc2128a0420bc41297ab3340129dc19a241c5527e51353de91",
+      "placeholders": [
+        "coins"
+      ]
+    },
+    {
+      "template": "awards/pack",
+      "sha256": "30b1d24c9dbf70bff4d2b228c90812c79bdc5debe8eeb8aa3768e1d176aaef1a",
+      "placeholders": [
+        "artId",
+        "artIdText",
+        "count",
+        "name",
+        "packId"
+      ]
+    },
+    {
+      "template": "awards/sbc-currency",
+      "sha256": "86f0df476a4fd95fe12dbfa86cc8dbf8d975143519e2c084f88b6d232fe74497",
+      "placeholders": [
+        "type",
+        "value"
+      ]
+    },
+    {
+      "template": "awards/sbc-item",
+      "sha256": "977937d352cda8daa47b567fb69b7dd52f4931bddaf79e5a19182038fb52bc86",
+      "placeholders": [
+        "halId",
+        "item",
+        "name",
+        "rating",
+        "resourceId",
+        "untradeable"
+      ]
+    },
+    {
+      "template": "awards/sbc-pack-name",
+      "sha256": "dae009af04d190cff3dee5551437900905496ddb25ae085cd36b162b41e2bc46",
+      "placeholders": [
+        "name"
+      ]
+    },
+    {
+      "template": "awards/sbc-player-pick",
+      "sha256": "4d67f23f1bea988c0045fb525e3ee26ce4369c22cab1571e7951bf944784d892",
+      "placeholders": [
+        "choiceCount",
+        "minRating",
+        "name"
+      ]
+    },
+    {
+      "template": "awards/sbc-player",
+      "sha256": "6a3069224a426b30b13b2fb7e893b220766fe6a4ee1cb5a7209deef9d13ecda3",
+      "placeholders": [
+        "item",
+        "name",
+        "position",
+        "rating",
+        "resourceId"
+      ]
+    },
+    {
+      "template": "bootstrap/account-info-no-club",
+      "sha256": "ee5b80f925a6108c2f4698b96e940dbbec4fb20bafecc812a48b386bab209027",
+      "placeholders": [
+        "age",
+        "dateOfBirth",
+        "isUnderAge",
+        "personaId",
+        "personaName"
+      ]
+    },
+    {
+      "template": "bootstrap/account-info",
+      "sha256": "8c3600ad56bb210d70b09f953b9da455d22aabfc75c0af6a5a892eaf65d1482f",
+      "placeholders": [
+        "age",
+        "clubAbbr",
+        "clubId",
+        "clubName",
+        "dateOfBirth",
+        "isUnderAge",
+        "now",
+        "personaId",
+        "personaName"
+      ]
+    },
+    {
+      "template": "bootstrap/club-account-info-no-club",
+      "sha256": "452342bf1f2851619a4575298f0aa050127880a0f3fa7a24f1c537a6ff209167",
+      "placeholders": [
+        "personaId",
+        "personaName"
+      ]
+    },
+    {
+      "template": "bootstrap/club-account-info",
+      "sha256": "da6f7c53083937b324d02f25f884e526033f904bca69d11e03a620053de05413",
+      "placeholders": [
+        "badge",
+        "clubName",
+        "established",
+        "personaId",
+        "personaName"
+      ]
+    },
+    {
+      "template": "bootstrap/pow-auth",
+      "sha256": "811308797707d2d3548444853a68eceb43ea18adfab08231456e44ad6ab93123",
+      "placeholders": [
+        "now",
+        "sid"
+      ]
+    },
+    {
+      "template": "bootstrap/pow-bank-account",
+      "sha256": "e2f44cc2cbecdeff69633205d3cbda97c2cffa8170e0a6a33e62459cfbf61417",
+      "placeholders": []
+    },
+    {
+      "template": "bootstrap/pow-catalog-items",
+      "sha256": "2736516cd16e407c5a72a14d53c5cc0eed1ce8d74c46907407da9cff8c221fe2",
+      "placeholders": []
+    },
+    {
+      "template": "bootstrap/pow-catalogs",
+      "sha256": "2cec91bb0aeff6eeb6c97192c650c3a8da3c2cc38a0b97fe12b933e97b724988",
+      "placeholders": []
+    },
+    {
+      "template": "bootstrap/session-refused",
+      "sha256": "e80ac80eab513b865d9194e6140eff74cc17e3ac66eed2f80eea7e6421322a6c",
+      "placeholders": [
+        "reason"
+      ]
+    },
+    {
+      "template": "bootstrap/settings",
+      "sha256": "c316d7185ac4c027e4350cbd7951dd923ed7e3ed8f6b38a14aaf832fd56b0b98",
+      "placeholders": [
+        "skillCap",
+        "softCapWarning",
+        "transferListSize",
+        "weeklyMatches"
+      ]
+    },
+    {
+      "template": "bootstrap/shards",
+      "sha256": "6fd96f0c2e35129ee4afd10259bbfcc08ce79d8706e43d553ead56f6dd350343",
+      "placeholders": [
+        "address",
+        "port"
+      ]
+    },
+    {
+      "template": "bootstrap/store-transaction",
+      "sha256": "ed6f6dcbd3385e59f2b0c878c8d768b9d6b67901a52ca015a6ceff7e033bf63e",
+      "placeholders": []
+    },
+    {
+      "template": "bootstrap/test-status",
+      "sha256": "0fb2b0d694b637015e06c43f6ab01cdff3917e22ff2cc5fa9e97f52e100964d0",
+      "placeholders": [
+        "clubId",
+        "database",
+        "runtimeRoot"
+      ]
+    },
+    {
+      "template": "bootstrap/trusted-device",
+      "sha256": "0e9994376f98e20f62081c7abb892a5638cf857ffea428a435280fb4016bf994",
+      "placeholders": []
+    },
+    {
+      "template": "bootstrap/userdata",
+      "sha256": "9d6ffb918c7f3124d8625cf63b168137f8105a5259b38e65253cb21118d9ef05",
+      "placeholders": []
+    },
+    {
+      "template": "bootstrap/ut-auth",
+      "sha256": "c79e909ff004cbc40235c7de6bf6deef743ca2b467554fcd08d5a9c9b522606b",
+      "placeholders": [
+        "sid"
+      ]
+    },
+    {
+      "template": "client-data/manager-quest",
+      "sha256": "00fe09c4d26ecf82568a424937dbcb099116341d7cf1d379d3894107a0263ff3",
+      "placeholders": []
+    },
+    {
+      "template": "client-data/pile-size",
+      "sha256": "2547ce4decba2d4bfc3a6509ad8eb2d91f521a804d37133d984f14f80dc07fb2",
+      "placeholders": []
+    },
+    {
+      "template": "client-data/tutorial-popups",
+      "sha256": "89769b5e04418d23b1121fcc319fec5e8320b46de0d2886aa721f0a0af1894cf",
+      "placeholders": []
+    },
+    {
+      "template": "client-data/user-hub-data",
+      "sha256": "479ee972087161c2be1c5c4a4a2117c81d39be312476cc4c1f2bca42aec81f36",
+      "placeholders": []
+    },
+    {
+      "template": "club/club-user",
+      "sha256": "92864667b2b2c96253df1db9ffcbdb91d46e4a9ddd0ddf92d7a7969b2ff4f18f",
+      "placeholders": [
+        "persona",
+        "personaId"
+      ]
+    },
+    {
+      "template": "club/consumable-stack",
+      "sha256": "73daf0d75563a6f41b84f14528021b813251b03ad18d20a59286f7cd184b55ea",
+      "placeholders": [
+        "amount",
+        "bronze",
+        "cardAssetId",
+        "count",
+        "discardValue",
+        "gold",
+        "rareflag",
+        "rating",
+        "resourceId",
+        "silver",
+        "subType",
+        "untradeableCount",
+        "weightRare"
+      ]
+    },
+    {
+      "template": "club/consumable-stats",
+      "sha256": "42c1b58a89e4395253c5a52fbfb755ce899f4023923bded022f91785d6a81b53",
+      "placeholders": [
+        "contract",
+        "contractManager",
+        "contractPlayer",
+        "fitness",
+        "fitnessPlayer",
+        "fitnessTeam",
+        "formationManager",
+        "gkPlayStyle",
+        "healing",
+        "managerLeague",
+        "owned",
+        "playerPlayStyle",
+        "position",
+        "training",
+        "trainingGk",
+        "trainingPlayer"
+      ]
+    },
+    {
+      "template": "club/consumables",
+      "sha256": "0f3e36205429effdfc5d3b18a242f6cd84f2cd45e5bd986d549076c3756453e4",
+      "placeholders": [
+        "count",
+        "items",
+        "total"
+      ]
+    },
+    {
+      "template": "club/credits",
+      "sha256": "9a7e750b00df34c12275b9e1515c6c5fc1c9016d954eb4720dd334b68a726208",
+      "placeholders": [
+        "credits",
+        "points",
+        "unopenedPacks"
+      ]
+    },
+    {
+      "template": "club/customisation-granted",
+      "sha256": "cee9daddea64f14d582523c26017520583708f0d8f685e7e728695a32ffd50c8",
+      "placeholders": [
+        "availableBadges",
+        "availableBalls",
+        "availableKits",
+        "availableStadiums",
+        "badges",
+        "balls",
+        "grantedCount",
+        "kits",
+        "unsupportedVanityCategories"
+      ]
+    },
+    {
+      "template": "club/event-feed",
+      "sha256": "e4893f627999bf7a104422f634ab61185b62a5b10c484a9ca9308cda60db5445",
+      "placeholders": [
+        "now"
+      ]
+    },
+    {
+      "template": "club/hub",
+      "sha256": "90ccc454b688eae097214d1f8ea8abdf222deb30aed3da558c3b584328414261",
+      "placeholders": [
+        "auctionCount",
+        "championEvent",
+        "clubPlayers",
+        "liveMessages",
+        "rivals",
+        "sqbtEvent",
+        "squad",
+        "tradePile",
+        "watchlist"
+      ]
+    },
+    {
+      "template": "club/live-message-template",
+      "sha256": "0006bf11b21585d7dfbc58b6925b9f31149698d8eb7cbff47dbc44037390f225",
+      "placeholders": []
+    },
+    {
+      "template": "club/live-messages",
+      "sha256": "09e7ba17cee26aab82bd691acaa3c9508ed2d56d17e1d3394a6c17c1ac6d0ecc",
+      "placeholders": [
+        "message",
+        "messageId",
+        "title"
+      ]
+    },
+    {
+      "template": "club/mass-info",
+      "sha256": "b133897780d4baacc4eec728837fc411c09d0e30c794c769a490544361bd8d4e",
+      "placeholders": [
+        "credits",
+        "loanClientData",
+        "loanPlayers",
+        "onboardingClientData",
+        "squad",
+        "squadBuildingSetsClientData",
+        "squadClientData",
+        "tutorialClientData",
+        "user",
+        "userHubClientData",
+        "worldEventClientData"
+      ]
+    },
+    {
+      "template": "club/search-page",
+      "sha256": "e7b95c9716159e9e49c4a738375fa732a7ef3cdbe2c32b0fce9781ff71f9f36e",
+      "placeholders": [
+        "badges",
+        "balls",
+        "clubPlayers",
+        "consumables",
+        "items",
+        "kits",
+        "managers",
+        "matching",
+        "squadPlayers",
+        "stadiums",
+        "total",
+        "unassigned"
+      ]
+    },
+    {
+      "template": "club/squad-list",
+      "sha256": "7e309f9d5259ecd63b6182540f62ad87bb6197a2df51f814ff3f4ca79eff4900",
+      "placeholders": [
+        "squads"
+      ]
+    },
+    {
+      "template": "club/squad-summary",
+      "sha256": "8a0d31148c851c62ebc6c6e21841b36dd27419dc906c2308dd75cd48d258e236",
+      "placeholders": [
+        "chemistry",
+        "formation",
+        "id",
+        "name",
+        "rating"
+      ]
+    },
+    {
+      "template": "club/squad-tactics",
+      "sha256": "dbf0dce6184f3967ebd9c2b4b779f50c6022fdca0d172e8f484344a4f6242d57",
+      "placeholders": [
+        "actives",
+        "captain",
+        "chemistry",
+        "custom",
+        "formation",
+        "id",
+        "kickTakers",
+        "managers",
+        "name",
+        "personaId",
+        "players",
+        "rating",
+        "squadType",
+        "starRating",
+        "tactics"
+      ]
+    },
+    {
+      "template": "club/squad",
+      "sha256": "0299926a97b6bf7c5849096d666b43ae0824fbda3e4c789a90c724cf651853c0",
+      "placeholders": [
+        "actives",
+        "captain",
+        "chemistry",
+        "custom",
+        "formation",
+        "id",
+        "kickTakers",
+        "managers",
+        "name",
+        "personaId",
+        "players",
+        "rating",
+        "squadType",
+        "starRating"
+      ]
+    },
+    {
+      "template": "club/stadium-slot",
+      "sha256": "b21b72d67234f7070a8256d5c60c009fba3c3fdcb860c6f318249e4762262e94",
+      "placeholders": [
+        "emptiable",
+        "itemData",
+        "locked",
+        "slotId",
+        "slotName",
+        "sortOrder",
+        "stadiumArea",
+        "vanityTypes"
+      ]
+    },
+    {
+      "template": "club/stadium",
+      "sha256": "ff88f9c8e52019f2b0427e06d27b6cd585290d789b3e825648a7ba665fa9506f",
+      "placeholders": [
+        "clubName",
+        "slots",
+        "stadiumId"
+      ]
+    },
+    {
+      "template": "club/staff-stats",
+      "sha256": "05a2b4dc6f5e8281a28a465c35744b7740356a333141a49c8fe4b1587fa92e4c",
+      "placeholders": []
+    },
+    {
+      "template": "club/stats",
+      "sha256": "961450262ad7db7e0ad6a4c56584ec5fd4f35c4c7473d6ec4cf762493e2734bf",
+      "placeholders": [
+        "contract",
+        "contractManager",
+        "contractPlayer",
+        "fitness",
+        "fitnessPlayer",
+        "fitnessTeam",
+        "formationManager",
+        "gkPlayStyle",
+        "healing",
+        "managerLeague",
+        "managers",
+        "owned",
+        "playerPlayStyle",
+        "players",
+        "playstyle",
+        "position",
+        "training",
+        "trainingGk",
+        "trainingPlayer"
+      ]
+    },
+    {
+      "template": "club/user",
+      "sha256": "c1fe2630360d003e911c571b48670c6a0501dbdd13073446cb717b495e512251",
+      "placeholders": [
+        "activeItems",
+        "actives",
+        "badges",
+        "balls",
+        "clubAbbr",
+        "clubName",
+        "clubNameChangeAllowed",
+        "clubPlayers",
+        "clubTotal",
+        "currencies",
+        "draw",
+        "established",
+        "kits",
+        "loosePlayers",
+        "loss",
+        "managers",
+        "myStadium",
+        "myStadiumSlots",
+        "myStadiumTier",
+        "personaId",
+        "playerPicksPending",
+        "squadPlayers",
+        "squadSummaries",
+        "stadiums",
+        "unassigned",
+        "unopenedPacks",
+        "won"
+      ]
+    },
+    {
+      "template": "draft/match-ended",
+      "sha256": "ef4305b1095ff828969437dab6f4d329f4f7d736070b1878c2acf3e186fd461e",
+      "placeholders": [
+        "award",
+        "balance",
+        "earned",
+        "eliminated",
+        "items",
+        "lost",
+        "matchData",
+        "matchDifficulty",
+        "partials",
+        "reason",
+        "secondsPlayed",
+        "unopenedPacks",
+        "wins",
+        "won"
+      ]
+    },
+    {
+      "template": "draft/match-squad",
+      "sha256": "3a505a570dc2359feb0f242798430651dede616f75b1947d74cee8bcea9f4180",
+      "placeholders": [
+        "actives",
+        "captain",
+        "custom",
+        "formation",
+        "kickTakers",
+        "managers",
+        "players",
+        "rating",
+        "squadId",
+        "squadName",
+        "stadiumId"
+      ]
+    },
+    {
+      "template": "draft/match",
+      "sha256": "992a0c1c78ceadff977f282826979ff83c02f50eba0457e6d176a3ae70d3fb13",
+      "placeholders": [
+        "now",
+        "opponent",
+        "squad",
+        "stadiumId"
+      ]
+    },
+    {
+      "template": "draft/new-run",
+      "sha256": "4fb6e358a292129e9f734ee555ae6681155777a53403b4f45a6b329545f48ba6",
+      "placeholders": [
+        "difficulty",
+        "firstItemId",
+        "mode",
+        "seed",
+        "state"
+      ]
+    },
+    {
+      "template": "draft/purchased",
+      "sha256": "dc502826d724dfd678add7a72c997d17926fd8ad3d7ba06e61382dbaa2d96fcd",
+      "placeholders": [
+        "credits"
+      ]
+    },
+    {
+      "template": "draft/squad",
+      "sha256": "26ae60704d01f384b17fc9ad756dd49320940c234801dbbff5bd9d35dd5e8dd4",
+      "placeholders": [
+        "actives",
+        "captain",
+        "formation",
+        "managers",
+        "personaId",
+        "players",
+        "squadId",
+        "squadName",
+        "stadiumId"
+      ]
+    },
+    {
+      "template": "draft/state-no-run",
+      "sha256": "bc0b4802dcbbd7c07c6fa4ec21c3b41a724f69759bb8c643fe0697c0db09f4a1",
+      "placeholders": [
+        "coins",
+        "draftTokens",
+        "points"
+      ]
+    },
+    {
+      "template": "draft/state",
+      "sha256": "411a654ee75a36882921192ddfe2b9fb743bd9672b3d6773d31e75ecce56a44c",
+      "placeholders": [
+        "coins",
+        "draftTokens",
+        "points",
+        "roundsInfo",
+        "squad",
+        "state",
+        "stateParam1",
+        "stateParam2",
+        "wins"
+      ]
+    },
+    {
+      "template": "draft/stats",
+      "sha256": "fcd61547d6eb255b21611b255725b93b392a1190011f4eb2fce5e5feef604da8",
+      "placeholders": [
+        "champion",
+        "completed",
+        "lost",
+        "wins"
+      ]
+    },
+    {
+      "template": "friendlies/house-rules-basic",
+      "sha256": "a90050251976fbd5375e0dfc750b573ec81e550fe267022e38ff42b81d9fd971",
+      "placeholders": []
+    },
+    {
+      "template": "friendlies/house-rules-empty",
+      "sha256": "5bbe1ba9e6cb8a9bc426b15a6caa3085d0fffbd6588255076ccce0c210e539e8",
+      "placeholders": []
+    },
+    {
+      "template": "friendlies/house-rules-live",
+      "sha256": "de087859275616c6479228787e3437e66b09e48e3bd90c9a87ed6f0e8bed3df8",
+      "placeholders": [
+        "endTime",
+        "startTime"
+      ]
+    },
+    {
+      "template": "items/chemistry-style",
+      "sha256": "75d014f11c09b861096cd8ccf2e90d06f73f48f72df456df406b02b544baf09c",
+      "placeholders": [
+        "cardAssetId",
+        "consumableType",
+        "discardValue",
+        "id",
+        "pile",
+        "playStyle",
+        "rating",
+        "resourceId",
+        "stackCount",
+        "timestamp"
+      ]
+    },
+    {
+      "template": "items/club-badge",
+      "sha256": "b957d5799f09ecf9ef642067bec0ce4e644b340813e6492b51cf61fd0ae6247f",
+      "placeholders": [
+        "asset",
+        "id",
+        "name",
+        "pile",
+        "rareflag",
+        "rating",
+        "resourceId",
+        "state",
+        "timestamp"
+      ]
+    },
+    {
+      "template": "items/club-ball",
+      "sha256": "3c3866f7415938b36f997a33bfe0d9c27188f49e197067d9fc6da199e7811696",
+      "placeholders": [
+        "asset",
+        "id",
+        "name",
+        "pile",
+        "rareflag",
+        "rating",
+        "resourceId",
+        "state",
+        "timestamp"
+      ]
+    },
+    {
+      "template": "items/club-stadium",
+      "sha256": "526d9cd057f523469e2749ee3e55a915accb1e6ee0acf29ef532cdd13588b3cd",
+      "placeholders": [
+        "asset",
+        "capacity",
+        "id",
+        "name",
+        "pile",
+        "rareflag",
+        "rating",
+        "resourceId",
+        "state",
+        "timestamp"
+      ]
+    },
+    {
+      "template": "items/discarded",
+      "sha256": "be7dba8f3d3abe71b980873a6c7cbaaaa4fee039c8d211b1327a9854a0d051af",
+      "placeholders": [
+        "credits",
+        "items"
+      ]
+    },
+    {
+      "template": "items/kit",
+      "sha256": "168674a7bf9639f168f207f37c5ef30e4da382db4264a80ebddc843760344909",
+      "placeholders": [
+        "category",
+        "id",
+        "itemState",
+        "kitType",
+        "name",
+        "pile",
+        "resourceId",
+        "teamId",
+        "timestamp"
+      ]
+    },
+    {
+      "template": "items/manager-league-card",
+      "sha256": "5eda5584bb13315fb1c7f055faca8664d2c0e4caa1bd8ec96abfc9c503eb24bd",
+      "placeholders": [
+        "cardAssetId",
+        "consumableType",
+        "discardValue",
+        "id",
+        "itemState",
+        "lastSalePrice",
+        "league",
+        "owners",
+        "pile",
+        "rating",
+        "resourceId",
+        "stackCount",
+        "subtype",
+        "timestamp",
+        "untradeable",
+        "untradeableCount"
+      ]
+    },
+    {
+      "template": "items/manager",
+      "sha256": "8c043260eea1ac609aab81abb859df766036d56429100fed83a6f5491e58d09c",
+      "placeholders": [
+        "cardDbId",
+        "commonName",
+        "discardValue",
+        "firstName",
+        "id",
+        "lastName",
+        "leagueId",
+        "nation",
+        "negotiation",
+        "pile",
+        "rareflag",
+        "rating",
+        "resourceId",
+        "teamId",
+        "timestamp"
+      ]
+    },
+    {
+      "template": "items/native-chemistry-style",
+      "sha256": "95a6a20eecb35cf2c9c1938e63b599af529d41719c49229c90f7734f5001cbed",
+      "placeholders": [
+        "cardAssetId",
+        "discardValue",
+        "id",
+        "itemState",
+        "lastSalePrice",
+        "owners",
+        "pile",
+        "positionGroup",
+        "rareFlag",
+        "rareflag",
+        "rating",
+        "resourceId",
+        "stackCount",
+        "subType",
+        "timestamp",
+        "untradeable",
+        "untradeableCount",
+        "weightrare"
+      ]
+    },
+    {
+      "template": "items/native-position-modifier",
+      "sha256": "5cd7001438b72279ad0e4cf38ec5b128d4c66b383ac985d43b2d8fc02fe7c1dd",
+      "placeholders": [
+        "cardAssetId",
+        "discardValue",
+        "id",
+        "itemState",
+        "lastSalePrice",
+        "owners",
+        "pile",
+        "rareFlag",
+        "rareflag",
+        "rating",
+        "resourceId",
+        "stackCount",
+        "subType",
+        "timestamp",
+        "untradeable",
+        "untradeableCount",
+        "weightrare"
+      ]
+    },
+    {
+      "template": "items/player-pick-token",
+      "sha256": "eddb7ad82579f4dd7c79aeb3fec74d8ff1877cd3ca7d9d93a0e7d74fa6f36b82",
+      "placeholders": [
+        "choiceCount",
+        "description",
+        "id",
+        "minRating",
+        "name",
+        "pile",
+        "previewResourceId",
+        "sourcePackId",
+        "subType",
+        "timestamp"
+      ]
+    },
+    {
+      "template": "items/player",
+      "sha256": "3d5dda49ae01d963cf1b8e3f02e03bcc00e91b86cc572e766422309cfe3a066b",
+      "placeholders": [
+        "assetId",
+        "attributeList",
+        "cardSubType",
+        "commonName",
+        "contract",
+        "discardValue",
+        "firstName",
+        "id",
+        "lastName",
+        "leagueId",
+        "lifetimeStats",
+        "loans",
+        "marketMaxPrice",
+        "marketMinPrice",
+        "nation",
+        "pile",
+        "preferredFoot",
+        "preferredPosition",
+        "rareflag",
+        "rating",
+        "resourceId",
+        "skillMoves",
+        "statsList",
+        "teamId",
+        "timestamp",
+        "untradeable",
+        "weakFoot",
+        "workRateAttack",
+        "workRateDefense"
+      ]
+    },
+    {
+      "template": "items/position-modifier",
+      "sha256": "53dfb6833a50d5c28256f585f02e942d1ee37339730746882741ae0a373193b8",
+      "placeholders": [
+        "cardAssetId",
+        "consumableType",
+        "discardValue",
+        "id",
+        "pile",
+        "rating",
+        "resourceId",
+        "source",
+        "stackCount",
+        "subType",
+        "target",
+        "timestamp"
+      ]
+    },
+    {
+      "template": "items/vanity",
+      "sha256": "1d22b708bd8e4dfb290b07048e023e1e2cc3d3fcc5c5a826237c7e1f25d17377",
+      "placeholders": [
+        "asset",
+        "id",
+        "rareflag",
+        "rating",
+        "resourceId",
+        "state",
+        "subtype",
+        "timestamp"
+      ]
+    },
+    {
+      "template": "market/auction",
+      "sha256": "6f4bc7f701836a13711cf7a20ce066dc52b51d417dd0572103a08a889f6f710e",
+      "placeholders": [
+        "bidState",
+        "buyNowPrice",
+        "currentBid",
+        "expires",
+        "itemData",
+        "offers",
+        "rating",
+        "sellerEstablished",
+        "sellerId",
+        "sellerName",
+        "startingBid",
+        "tradeId",
+        "tradeState",
+        "watched"
+      ]
+    },
+    {
+      "template": "market/currencies",
+      "sha256": "8e2cfb87afd5a34c6a5b20b12dc3892cbdd9972e9e299d72c09ef4b6cd2bd696",
+      "placeholders": [
+        "credits"
+      ]
+    },
+    {
+      "template": "market/listed",
+      "sha256": "fb6059d1537be6cc738564fd2ef250e74fd1e336b1652facbd5fcf3b28ba1678",
+      "placeholders": [
+        "auctionInfo",
+        "credits",
+        "currencies",
+        "tradeId"
+      ]
+    },
+    {
+      "template": "market/price-limit",
+      "sha256": "4c27da721603468d4e8e23a1f2b1963ec05c19e87c39cfd4a76986d70eceba24",
+      "placeholders": [
+        "maximum",
+        "minimum",
+        "resourceId"
+      ]
+    },
+    {
+      "template": "market/rejected",
+      "sha256": "30fdf8c47b9851485f1df2e74e0ef929581280c31b933c9e5698257717854003",
+      "placeholders": [
+        "credits",
+        "currencies",
+        "reason"
+      ]
+    },
+    {
+      "template": "market/search",
+      "sha256": "9c3e4808822b7e4e919d35c8029f22da6c5c1e275c0a4d97e535379426513c93",
+      "placeholders": [
+        "auctionInfo",
+        "credits",
+        "currencies",
+        "total"
+      ]
+    },
+    {
+      "template": "market/status",
+      "sha256": "f004835ac10814f0e89b7138e6b3ef3977d1982b50ad1168a65a69619e4970c1",
+      "placeholders": [
+        "auctionInfo",
+        "credits",
+        "currencies",
+        "duplicates"
+      ]
+    },
+    {
+      "template": "market/tradepile",
+      "sha256": "5f012210e82d6584d512f0a096d525d0e1bf22bb1de3ff7ef803e087dca565c1",
+      "placeholders": [
+        "auctionInfo",
+        "count",
+        "credits",
+        "currencies",
+        "duplicates",
+        "maxAuctionsAllowed",
+        "selling",
+        "sold"
+      ]
+    },
+    {
+      "template": "market/watchlist",
+      "sha256": "615900061511e718c51bb36bc2efc3381312dc5bbedf7cb34cc3a54962837870",
+      "placeholders": [
+        "auctionInfo",
+        "count",
+        "credits",
+        "currencies",
+        "duplicates",
+        "offset",
+        "outbid",
+        "winning"
+      ]
+    },
+    {
+      "template": "match/club-match",
+      "sha256": "f6c59dd0476719a5e475a43b8a18a98c958a705216d52bc36258fc0bd7a7f481",
+      "placeholders": [
+        "matchId",
+        "now",
+        "squad",
+        "stadiumId"
+      ]
+    },
+    {
+      "template": "match/concept-refused",
+      "sha256": "5c6492f3c9029d8e257a52d48b9326fdd6b27cffad134523c81c100c00acf2d8",
+      "placeholders": [
+        "code"
+      ]
+    },
+    {
+      "template": "match/ended",
+      "sha256": "163cad6d7b4e20c3c720ce0d95c9e4bcd73d6cc6c431a8a0740374aaed173dc3",
+      "placeholders": [
+        "award",
+        "balance",
+        "draw",
+        "earned",
+        "endReason",
+        "items",
+        "loss",
+        "matchData",
+        "partials",
+        "played",
+        "unopenedPacks",
+        "won"
+      ]
+    },
+    {
+      "template": "match/reset",
+      "sha256": "e7a2b103e8a31eb1959707fde9a9448dbb4ade3af9f4e42db11e6d1d404187d9",
+      "placeholders": []
+    },
+    {
+      "template": "objectives/campaign",
+      "sha256": "a96badc5db264211353db57b3ebbdac5eb513201be1d5c7221e0460a17de2a59",
+      "placeholders": [
+        "category",
+        "end",
+        "id",
+        "levels",
+        "name",
+        "start",
+        "userXp"
+      ]
+    },
+    {
+      "template": "objectives/category-details",
+      "sha256": "2a1391716f2ead20cb84876dfc558a2283f79fd6ceff12f8e1dd76b7781fe411",
+      "placeholders": [
+        "categoryId",
+        "groups"
+      ]
+    },
+    {
+      "template": "objectives/category",
+      "sha256": "091d212aae0375e06722cfc59e4f30a86c6a2b1741cbc9da0fb1240efc743a73",
+      "placeholders": [
+        "groups",
+        "id",
+        "name"
+      ]
+    },
+    {
+      "template": "objectives/claim-refused",
+      "sha256": "b4e40982e0bfcad06b770c94c900e4bdc7c2e3d70a67b92bd9d3d7d7aef48fd6",
+      "placeholders": [
+        "alreadyClaimed"
+      ]
+    },
+    {
+      "template": "objectives/grind-objective",
+      "sha256": "44d4cc9bc60f8ee36e92382436bc1440faf8a406150f10400729455b6109659f",
+      "placeholders": [
+        "awards",
+        "description",
+        "id",
+        "name",
+        "progress",
+        "state",
+        "target"
+      ]
+    },
+    {
+      "template": "objectives/group-claimed",
+      "sha256": "d407b03fea1aca7af7cd316a046003dcdaf5284617652b5ffd5083b4533146a7",
+      "placeholders": [
+        "alreadyClaimed",
+        "awards",
+        "items"
+      ]
+    },
+    {
+      "template": "objectives/group",
+      "sha256": "bb4f4f113b2cbd3cc5cc4e42636de54b8ae7b4f2e6655de3712e80cc870c0864",
+      "placeholders": [
+        "awards",
+        "completedCount",
+        "end",
+        "groupType",
+        "id",
+        "objectiveCount",
+        "objectives",
+        "priority",
+        "start",
+        "state",
+        "subTitle",
+        "title"
+      ]
+    },
+    {
+      "template": "objectives/level-claimed",
+      "sha256": "c315f1b03e3acdc89d4f06f484e7cb55b719dff54df04e089aa55be59599af74",
+      "placeholders": [
+        "awards",
+        "items"
+      ]
+    },
+    {
+      "template": "objectives/level-option",
+      "sha256": "dc49070c512cc204b4e535a279df25becbdd7eb008b37edbd94cfaedaa41e7dc",
+      "placeholders": [
+        "awards",
+        "defaultOption",
+        "optionId"
+      ]
+    },
+    {
+      "template": "objectives/level",
+      "sha256": "131c40bdaa5c4ce3de5a3f8ddd0a3042137e32e385aa319596caac9cf3f615c2",
+      "placeholders": [
+        "chosenOption",
+        "level",
+        "options",
+        "state",
+        "xp"
+      ]
+    },
+    {
+      "template": "objectives/objective",
+      "sha256": "868291dcad448627e810a45f438aa3228c0d38bbeac498fd1f78ec2d4a4bc8d4",
+      "placeholders": [
+        "awards",
+        "description",
+        "id",
+        "name",
+        "state"
+      ]
+    },
+    {
+      "template": "objectives/rewards-all",
+      "sha256": "4cb5f5759925bdc0ccc588ccbc94b0c0f5250f013e153f8c6d10e13bbe3d6cda",
+      "placeholders": []
+    },
+    {
+      "template": "objectives/world-autoclaim",
+      "sha256": "16133e230c8f416ed48f4c87d4c2f3fe6b1f765258b75093e0de8e94d8ffe521",
+      "placeholders": []
+    },
+    {
+      "template": "onboarding/create-user",
+      "sha256": "f71c565181f17c5ed9cc0d3e0cbe720ca9fe926a60ebb715d8c062cdce85c9f5",
+      "placeholders": [
+        "login",
+        "squad",
+        "starterPack"
+      ]
+    },
+    {
+      "template": "onboarding/historical",
+      "sha256": "9ba3bbdab6784142eff438f4a6009b7867ff44170726386fb2ad573764aa16c2",
+      "placeholders": [
+        "clubAbbr",
+        "clubName"
+      ]
+    },
+    {
+      "template": "onboarding/loan-offer",
+      "sha256": "2ddfb38a89c90c00b4dac14d5e9429102362087b042affa5ccd11eb8f4755391",
+      "placeholders": [
+        "games",
+        "item",
+        "offerId",
+        "ranking"
+      ]
+    },
+    {
+      "template": "onboarding/no-club",
+      "sha256": "f987849bc145baba2303d044f2199f709aa3f525f72c368b81fb7a3cb7ac6161",
+      "placeholders": []
+    },
+    {
+      "template": "onboarding/no-loans",
+      "sha256": "9ba9ff7dc96a06d575fa8e9fd99e3698472fe81b9a3c1a4d54103a13f97a265a",
+      "placeholders": []
+    },
+    {
+      "template": "packs/generated",
+      "sha256": "e6d4799dea07bb0d9c879a2e51e0369b8eb417a7edc2bb789c736a7384f14f4b",
+      "placeholders": [
+        "items",
+        "numberItems"
+      ]
+    },
+    {
+      "template": "packs/items-opened",
+      "sha256": "0e208d5311b30311363d9a0e10078b2c410623c5615efd9d75a3c907734eb927",
+      "placeholders": [
+        "count",
+        "credits",
+        "items",
+        "packId",
+        "packType"
+      ]
+    },
+    {
+      "template": "packs/opened",
+      "sha256": "4c718a20bd503f706b8159d1d203484988bcbd5fab24c80a28a6b5bc16660f0e",
+      "placeholders": [
+        "credits",
+        "duplicates",
+        "items",
+        "newCards",
+        "numberItems",
+        "packId"
+      ]
+    },
+    {
+      "template": "packs/player-pick-opened",
+      "sha256": "ecebbe4dddb18a4858c8938c1c16f648bfe42325dd5483e0a511461c92eb29e1",
+      "placeholders": [
+        "credits",
+        "packId",
+        "token"
+      ]
+    },
+    {
+      "template": "player-picks/choice-fields",
+      "sha256": "607917239346748bfc80d70e6ffcded2c5e9d50d5930514481628ce07ea5a106",
+      "placeholders": [
+        "duplicate",
+        "index",
+        "tokenId"
+      ]
+    },
+    {
+      "template": "player-picks/none-pending",
+      "sha256": "0ce913ce2230084b92508658cc45f29e638846bf0c0d43d177b234028fa8a178",
+      "placeholders": []
+    },
+    {
+      "template": "player-picks/redeemed",
+      "sha256": "c64cb0858ca2ffdc3678757e38cfa1ea0df1ada47edaf91829a11ff1e1a1a29e",
+      "placeholders": [
+        "choices",
+        "duplicates",
+        "tokenId"
+      ]
+    },
+    {
+      "template": "sbc/category",
+      "sha256": "765be7693b117266b481cd7c72732b940e0fc26c1db7c44e5307fbe0d1f23382",
+      "placeholders": [
+        "id",
+        "name",
+        "sets"
+      ]
+    },
+    {
+      "template": "sbc/challenge",
+      "sha256": "1b03df01bb8f0a9f02abccbae36a27350091686d866bc2a8a2598bd5977d6b30",
+      "placeholders": [
+        "awards",
+        "description",
+        "formation",
+        "id",
+        "imageId",
+        "name",
+        "priority",
+        "requirements",
+        "setId",
+        "status",
+        "timesCompleted",
+        "type"
+      ]
+    },
+    {
+      "template": "sbc/completion-limit",
+      "sha256": "c4010e70b1e86b03ded57f856c2add0fe01ca7cfbbfcdc17a258ff03006fc683",
+      "placeholders": []
+    },
+    {
+      "template": "sbc/eligibility",
+      "sha256": "2b63c0defb5e2b7a1d3d5525658096e525d92075aea5a49a1ce54206391079fc",
+      "placeholders": [
+        "key",
+        "slot",
+        "value"
+      ]
+    },
+    {
+      "template": "sbc/empty-squad",
+      "sha256": "b92b4415c5fde84b3427e9b3d48e88bc0ec49803504ef0bd41617503c265d2f1",
+      "placeholders": [
+        "challengeId",
+        "formation",
+        "playerRequirements",
+        "players"
+      ]
+    },
+    {
+      "template": "sbc/player-requirement",
+      "sha256": "eb8c9b67c3a14cfe5b36b82259b7ec293e664f847dccce393f085dbd1ad92197",
+      "placeholders": [
+        "elgReq",
+        "index",
+        "playerType"
+      ]
+    },
+    {
+      "template": "sbc/reward-tiles",
+      "sha256": "9bcb2bf68851bf5766e163d2f4df9a21ae012b4f097ae6ec51d52fae1107ec70",
+      "placeholders": [
+        "coins",
+        "completed",
+        "itemData",
+        "items",
+        "itemsAmount",
+        "packAssetId",
+        "packAssetIds",
+        "packs",
+        "packsAmount"
+      ]
+    },
+    {
+      "template": "sbc/set",
+      "sha256": "2067dff4f2bf77f38b62637c1082e03f807aec4a9a63dcfcc1e7696bf83b29c6",
+      "placeholders": [
+        "awards",
+        "challengesCount",
+        "completedCount",
+        "description",
+        "hidden",
+        "id",
+        "imageId",
+        "name",
+        "priority",
+        "repeatable",
+        "tagged",
+        "timesCompleted"
+      ]
+    },
+    {
+      "template": "sbc/short-squad",
+      "sha256": "386b531dcddfd6727149ea845aa1ae36ef3d3b1f4a46d4f590af76c0fafab474",
+      "placeholders": [
+        "challengeId",
+        "message",
+        "setId"
+      ]
+    },
+    {
+      "template": "sbc/submitted",
+      "sha256": "e72f61f28e503398be722fa42bbb676359971af1ad4e39ab0bcf9b053fac1f27",
+      "placeholders": [
+        "awards",
+        "challengeId",
+        "credits",
+        "grantedCount",
+        "setAwards",
+        "setId",
+        "unopenedPacks"
+      ]
+    },
+    {
+      "template": "sbc/tagged-sets",
+      "sha256": "db19879e91ac09bfd16765020a9f272da01fa59624f9ce40118003399a884620",
+      "placeholders": [
+        "sets"
+      ]
+    },
+    {
+      "template": "sbc/unknown-challenge",
+      "sha256": "d7003c1f3943d31c6ba3f4287995a3aafacdebf09f6183dda6867573cc55889d",
+      "placeholders": [
+        "message"
+      ]
+    },
+    {
+      "template": "seasons/champion-calendar-entry",
+      "sha256": "6961d016289db91b1787b3e1d07beb7b7c878c719b2d1edba6e295477df535a2",
+      "placeholders": [
+        "active",
+        "end",
+        "eventId",
+        "qualified",
+        "start"
+      ]
+    },
+    {
+      "template": "seasons/champion-friend-stat",
+      "sha256": "0ac3ba38874e1932ecf332fd3fe853ac8ff58920f29c2c800e3eded5aa1a2cf6",
+      "placeholders": [
+        "name",
+        "played",
+        "rank",
+        "remaining",
+        "sku",
+        "tierLevel",
+        "wins"
+      ]
+    },
+    {
+      "template": "seasons/champion-friends",
+      "sha256": "3869af84d09303f835c018e0fecfbd4a43bb2af3bc649ccb61eb9d8f03ef5b57",
+      "placeholders": [
+        "stats"
+      ]
+    },
+    {
+      "template": "seasons/champion-home-event",
+      "sha256": "fb22325d0245872a8123bed2fc29d19be9a77bfc61ab2cdffbfc280c775791ed",
+      "placeholders": [
+        "calendar",
+        "current",
+        "eventId",
+        "graceHours",
+        "minMatchesToRank",
+        "played",
+        "prizeTiers",
+        "rank",
+        "remaining",
+        "tierLevel",
+        "unclaimed",
+        "wins"
+      ]
+    },
+    {
+      "template": "seasons/champion-hub",
+      "sha256": "6971368fe76735084bad6c35a48339a64fc14ddced95cc90deee94dc38faa2e3",
+      "placeholders": [
+        "country",
+        "formMin",
+        "leagues",
+        "previous",
+        "qualifiedIds",
+        "region",
+        "unclaimed",
+        "userStats"
+      ]
+    },
+    {
+      "template": "seasons/champion-leaderboard-row",
+      "sha256": "ea8f35c175de34340394c296e2284f14841dad04483b5c353d3a194614057dbc",
+      "placeholders": [
+        "badge",
+        "est",
+        "name",
+        "nucleusId",
+        "personaId",
+        "rank",
+        "remaining",
+        "sku",
+        "tiebreak",
+        "wins"
+      ]
+    },
+    {
+      "template": "seasons/champion-league",
+      "sha256": "c1fe87349382ee42b2fe07861cede1dc73075833e0607d3cba629a4b2cfc76bb",
+      "placeholders": [
+        "current",
+        "end",
+        "eventId",
+        "localizedName",
+        "maxMatches",
+        "minMatchesToRank",
+        "prizeTiers",
+        "start"
+      ]
+    },
+    {
+      "template": "seasons/champion-prize",
+      "sha256": "e39639a77b4812c8775003ba08bd410f3b586242b716a4f169193c7aa6b9b8f7",
+      "placeholders": [
+        "awards",
+        "eventId",
+        "position",
+        "tierLevel"
+      ]
+    },
+    {
+      "template": "seasons/champion-registered",
+      "sha256": "ffce8e72ceb232c712427eaf28b758999003a5e83f1051fbabb2f672c25461c3",
+      "placeholders": [
+        "region"
+      ]
+    },
+    {
+      "template": "seasons/champion-stats",
+      "sha256": "9a3a141ea97ee8990e051b4416fe81bca9c81616efb71326b0a8d375dffe1477",
+      "placeholders": [
+        "eventId",
+        "played",
+        "rank",
+        "remaining",
+        "tierLevel",
+        "wins"
+      ]
+    },
+    {
+      "template": "seasons/champion-unclaimed",
+      "sha256": "c8c6b18bbaaeb656719c63309e2f317a81a254511755cad564ca419adad1274a",
+      "placeholders": [
+        "eventId"
+      ]
+    },
+    {
+      "template": "seasons/champion-user-stat",
+      "sha256": "522e3d378cd41e74f46cfb958a8dd837fb33028b067b62f526a36754f6fa3f17",
+      "placeholders": [
+        "eventId",
+        "form",
+        "played",
+        "rank",
+        "tierLevel",
+        "wins"
+      ]
+    },
+    {
+      "template": "seasons/leaderboard-options",
+      "sha256": "1566c630ceffa3e9e74031069f22fbe3c738e837a89a0621541e1ea9e61cd20a",
+      "placeholders": [
+        "options",
+        "permutations",
+        "selection"
+      ]
+    },
+    {
+      "template": "seasons/leaderboard-row",
+      "sha256": "9988ea4a0e0af814c90f0f6aefbac4bee8743be837cf3a534657b1242e7af321",
+      "placeholders": [
+        "badge",
+        "est",
+        "name",
+        "rank",
+        "score",
+        "scoreIcon",
+        "sku",
+        "tiebreakIcon",
+        "wins"
+      ]
+    },
+    {
+      "template": "seasons/pidinfo",
+      "sha256": "f1d706eab983f9e7b7b17ecb3229b40f65dafee0bbfe7fe8a2d9f8355dd5750c",
+      "placeholders": [
+        "country"
+      ]
+    },
+    {
+      "template": "seasons/prize-claimed",
+      "sha256": "b4181f72fd134f378c61baede8b5ecc000a6d7e7e2189d94cac0e769013e4c13",
+      "placeholders": [
+        "awarded"
+      ]
+    },
+    {
+      "template": "seasons/prize-tier",
+      "sha256": "a48fc4df36ad55f1b8ed0d0e2a77fe0392a20be2feee13425b1cb29e15b1862a",
+      "placeholders": [
+        "awards",
+        "high",
+        "low",
+        "tierLevel",
+        "tierType"
+      ]
+    },
+    {
+      "template": "seasons/rivals-claim",
+      "sha256": "cca7d82c25acca3a60fbf8a0e0a48a20b6e26e4f31c79eefb903df4f2475a248",
+      "placeholders": [
+        "awards"
+      ]
+    },
+    {
+      "template": "seasons/rivals-division",
+      "sha256": "26f14e588d2ac2a629aadfc87a330e9d75a79cc2cdb98d4f1c18517423077961",
+      "placeholders": [
+        "ceiling",
+        "divisionId",
+        "floor",
+        "localizedName",
+        "pointsForWin",
+        "relegationBuffer"
+      ]
+    },
+    {
+      "template": "seasons/rivals-hub",
+      "sha256": "19014a5c34f628fc138a663b4ac980d02503271e1457815f20ce4b8a2ba59ab4",
+      "placeholders": [
+        "current",
+        "division",
+        "divisions",
+        "draws",
+        "end",
+        "fcPoints",
+        "gamesLeft",
+        "gamesPlayed",
+        "inPlacement",
+        "isPrizeAvailable",
+        "losses",
+        "maxNumberOfMatches",
+        "placed",
+        "placementMatches",
+        "placementPlayed",
+        "pointsForWin",
+        "previousAvailable",
+        "prizeAwardTime",
+        "prizes",
+        "prizesDivision",
+        "prizesRivalPoints",
+        "qualificationPoints",
+        "qualified",
+        "seasonId",
+        "skillRating",
+        "start",
+        "tierLevel",
+        "titleWins",
+        "untilEnd",
+        "weekDivision",
+        "weekIndex",
+        "weeklyDraws",
+        "weeklyGames",
+        "weeklyLosses",
+        "weeklyMatches",
+        "weeklyScore",
+        "weeklyWins",
+        "winForm",
+        "wins"
+      ]
+    },
+    {
+      "template": "seasons/rivals-previous",
+      "sha256": "eec04372ad8d19818065d08b3f8d38c5c5bb5c6400a712529abfedb6cffd0171",
+      "placeholders": [
+        "prizes",
+        "rivalPoints",
+        "tierLevel"
+      ]
+    },
+    {
+      "template": "seasons/rivals-prize-tier",
+      "sha256": "b5c34f222809cee3bf90625ef6d006149af7f2257f5a3a115ceb4c07453423dc",
+      "placeholders": [
+        "categories",
+        "percentFrom",
+        "percentTo",
+        "pointsFrom",
+        "pointsTo",
+        "tierLevel"
+      ]
+    },
+    {
+      "template": "seasons/rivals-score",
+      "sha256": "4577cb6ce12cdcb4b851b9c4ed1a0bf6ef8192b4e3e7d40bd74a41f34888b597",
+      "placeholders": [
+        "rivalPoints",
+        "skillPoints",
+        "weekendLeaguePoints"
+      ]
+    },
+    {
+      "template": "seasons/rivals-tile",
+      "sha256": "d179d785730774b7eaaec314b5adff9f4e215f41aa7f1e7f6a77265e8b3b0ce6",
+      "placeholders": [
+        "current",
+        "division",
+        "end",
+        "fcPoints",
+        "gamesPlayed",
+        "inPlacement",
+        "isPrizeAvailable",
+        "maxNumberOfMatches",
+        "nextTierLevel",
+        "prizeAwardTime",
+        "qualificationPoints",
+        "skillRating",
+        "start",
+        "tierEndValue",
+        "tierLevel",
+        "tierStartValue",
+        "weeklyScore",
+        "winForm"
+      ]
+    },
+    {
+      "template": "seasons/seasonal-config",
+      "sha256": "8a5cbd4d1b97dd3123d28bab28840bc61a9045a1a7dbfdc052e2b327fbb6a9c8",
+      "placeholders": [
+        "current",
+        "end",
+        "finalsMatches",
+        "placementMatches",
+        "playoffMatches",
+        "qualificationPoints",
+        "schedule",
+        "scheduleViewMinutes",
+        "start",
+        "weeklyMatches"
+      ]
+    },
+    {
+      "template": "seasons/upcoming-events",
+      "sha256": "b3e548e77f8fe7a5464bdaa72fbca1bdb551d0d4b1e7640493aa3f4c1f21d0fe",
+      "placeholders": []
+    },
+    {
+      "template": "seasons/week-schedule",
+      "sha256": "b0798dfc553bc2244f2539134741b2b36e7495a7eb3dadabb1b1b27ccb916d1c",
+      "placeholders": [
+        "end",
+        "rewardsTime",
+        "start",
+        "weekIndex"
+      ]
+    },
+    {
+      "template": "squad-battles/awarded-prize",
+      "sha256": "d5be448d28ffb646e6db839b3bd0afcbc9b1337e1f9967db6754e34a3cee115d",
+      "placeholders": [
+        "awards",
+        "level",
+        "rank",
+        "week"
+      ]
+    },
+    {
+      "template": "squad-battles/featured-off",
+      "sha256": "66fb7e240b010268b72ebe754b352970d7b6e5bbb0f038a521e5ac6273c26291",
+      "placeholders": []
+    },
+    {
+      "template": "squad-battles/home-event",
+      "sha256": "18cda1f8a58f5340c925cd8a00112d3662d31a3695d37b2d1a5d49b3f62529de",
+      "placeholders": [
+        "current",
+        "end",
+        "points",
+        "prizeAvailable",
+        "rank",
+        "refreshAt",
+        "remaining",
+        "start",
+        "tierLevel",
+        "week"
+      ]
+    },
+    {
+      "template": "squad-battles/hub",
+      "sha256": "ea702d1fbacd8322828dde7a4ba2a92bfa7038aa2485c1fb478ecffc14f07764",
+      "placeholders": [
+        "counted",
+        "current",
+        "end",
+        "games",
+        "leaderboardRefresh",
+        "lossModifiers",
+        "maxGames",
+        "opponents",
+        "points",
+        "prizeAvailable",
+        "prizeTiers",
+        "rank",
+        "refreshAt",
+        "resultLoss",
+        "resultWin",
+        "start",
+        "tierLevel",
+        "week",
+        "winModifiers"
+      ]
+    },
+    {
+      "template": "squad-battles/legacy-feed",
+      "sha256": "d54906976243a0bc32018c27c467ec1785f9ec94f3d4c05ab84be51092d6cabf",
+      "placeholders": [
+        "count",
+        "squads"
+      ]
+    },
+    {
+      "template": "squad-battles/opponent-squad",
+      "sha256": "4f35619ff1fe0ec43740dee021fcdbb7108bfd91567020c67f71d620f6688f06",
+      "placeholders": [
+        "actives",
+        "captain",
+        "chemistry",
+        "clubName",
+        "custom",
+        "estDate",
+        "formation",
+        "kickTakers",
+        "manager",
+        "myStadiumInfo",
+        "personaId",
+        "players",
+        "slot",
+        "stadiumId",
+        "starRating"
+      ]
+    },
+    {
+      "template": "squad-battles/opponent-summary",
+      "sha256": "4e8f7e2beea12f88c9b7a87a919b3f2d9c01175b5b01ef98f208d7d4502e3c35",
+      "placeholders": [
+        "badge",
+        "basePointsLoss",
+        "basePointsWin",
+        "chemistry",
+        "clubAbbr",
+        "clubName",
+        "custom",
+        "difficulty",
+        "estDate",
+        "formation",
+        "nation",
+        "rating",
+        "slot",
+        "stadiumId",
+        "topPlayers"
+      ]
+    },
+    {
+      "template": "squad-battles/prize-tier",
+      "sha256": "ee96c0761540b3d589edd969ad2b4bc688c98a3b6a86839269a76b4e0fb95cb4",
+      "placeholders": [
+        "awards",
+        "endValue",
+        "startValue",
+        "tierEnd",
+        "tierLevel",
+        "tierStart",
+        "tierType"
+      ]
+    },
+    {
+      "template": "squad-battles/prize",
+      "sha256": "b4181f72fd134f378c61baede8b5ecc000a6d7e7e2189d94cac0e769013e4c13",
+      "placeholders": [
+        "awarded"
+      ]
+    },
+    {
+      "template": "squad-battles/refresh",
+      "sha256": "833e14fb1fdc9401c1eeccd37646b0b11d2a7179760d428d1e9fbfd5bbaa612f",
+      "placeholders": [
+        "counted",
+        "opponents",
+        "refreshAt"
+      ]
+    },
+    {
+      "template": "squad-battles/score",
+      "sha256": "675edecb59059deda496b11ad64c0577a2ed901c6c8e2726bfc7dbc63331ca4d",
+      "placeholders": [
+        "final",
+        "goals",
+        "modifier",
+        "result",
+        "skillRating",
+        "teamRating"
+      ]
+    },
+    {
+      "template": "squad-battles/totw-squad",
+      "sha256": "47612e4aa7c7c4ad95f0c157fa1e101c3b8b15e4898796a0b3ed2bcd58608f34",
+      "placeholders": [
+        "actives",
+        "captain",
+        "chemistry",
+        "custom",
+        "formation",
+        "kickTakers",
+        "manager",
+        "myStadiumInfo",
+        "personaId",
+        "players",
+        "squadId",
+        "squadName",
+        "stadiumId"
+      ]
+    },
+    {
+      "template": "squad-battles/totw-tile",
+      "sha256": "49684296ad8a57c782beaa15196b811f7d06c4229047d9117c2b8484da7bc296",
+      "placeholders": [
+        "banner",
+        "basePointsLoss",
+        "basePointsWin",
+        "chemistry",
+        "clubName",
+        "crest",
+        "difficulty",
+        "end",
+        "estDate",
+        "formation",
+        "lossPoints",
+        "rating",
+        "squadId",
+        "squadName",
+        "stadiumId",
+        "topPlayers",
+        "winPoints"
+      ]
+    },
+    {
+      "template": "store/draft-entry-tile",
+      "sha256": "08520641aa8557cca63dcd0226c0f933960ae532d0105c3ec4a93ea52dee22e2",
+      "placeholders": [
+        "coins",
+        "description",
+        "entryId",
+        "name",
+        "points",
+        "purchasable"
+      ]
+    },
+    {
+      "template": "store/insufficient-funds",
+      "sha256": "ae2831b0b39839b12a163fd48ce7dc269a60dcbad490da30313658a30a3e43d5",
+      "placeholders": [
+        "packId"
+      ]
+    },
+    {
+      "template": "store/my-packs",
+      "sha256": "4c6c9f92efbfb5b1c58248a451e1ebca26d7cc59ff8e910fa5b04d8283f43ade",
+      "placeholders": [
+        "packs",
+        "timestamp",
+        "total"
+      ]
+    },
+    {
+      "template": "store/owned-pack-tile",
+      "sha256": "7721eab8302cb5a28a48d28a15646dfdf53b9ea9b1eea017e23f6610c41f17f8",
+      "placeholders": [
+        "artId",
+        "bronze",
+        "gold",
+        "name",
+        "packId",
+        "quantity",
+        "rare",
+        "silver",
+        "size"
+      ]
+    },
+    {
+      "template": "store/pack-currency",
+      "sha256": "6f46dc1d092e2c33de55ab02e108608fde7dfd58fdbe12247a2c3abd91ef87c6",
+      "placeholders": [
+        "funds",
+        "name"
+      ]
+    },
+    {
+      "template": "store/pack-tile",
+      "sha256": "2eeafe8849dc5b04636e289ef61b0346f58ec78fedabe5700d811137cd7fd252",
+      "placeholders": [
+        "artId",
+        "availableQuantity",
+        "bio",
+        "bronze",
+        "categoryId",
+        "currencies",
+        "dealType",
+        "gold",
+        "group",
+        "name",
+        "packId",
+        "packType",
+        "pointsPrice",
+        "price",
+        "purchasable",
+        "purchaseCount",
+        "purchaseLimit",
+        "quantity",
+        "rare",
+        "remaining",
+        "saleType",
+        "silver"
+      ]
+    },
+    {
+      "template": "store/purchase-complete",
+      "sha256": "6b40296e1238558425138bc055b40d342b3f16a5e045c14786fffd44ed6f5c32",
+      "placeholders": [
+        "credits",
+        "duplicates",
+        "items",
+        "numberItems",
+        "packId",
+        "points",
+        "transactionId",
+        "unopenedPacks"
+      ]
+    },
+    {
+      "template": "store/tokens-section",
+      "sha256": "a0b72673f29bd991f2d2ca66b7143fdb300ad57c5f378098ff233b681edfeca4",
+      "placeholders": []
+    },
+    {
+      "template": "store/unassigned-items",
+      "sha256": "68b172df64d7c8de084908f344721f74e3b527c58eb5e85c6bf6c9eb763c8116",
+      "placeholders": [
+        "duplicates",
+        "items",
+        "numberItems"
+      ]
+    }
+  ]
+}

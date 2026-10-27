@@ -1,0 +1,160 @@
+# One-PC rehearsal of the VPS setup with Docker Desktop (Windows). From ultimateteam/deploy/:
+#   docker compose -f compose.local.yaml build && docker compose -f compose.local.yaml up -d
+# Everything is published on 127.0.0.1 only, where the hosts entry points spring18.gosredirector.ea.com. Do not run the
+# normal local UltimateTeam server at the same time (it uses 42230 and the same TLS ports).
+# Limitation: Docker Desktop translates the game's UDP addresses, so the gameplay relay cannot be rehearsed here; a paired
+# match is only tested on the VPS.
+name: aurora21-local
+
+services:
+  db:
+    image: postgres:18
+    # The VPS's lock-table size (compose.yaml); memory settings stay at the defaults for a desktop.
+    command: ["postgres", "-c", "max_locks_per_transaction=256"]
+    environment:
+      POSTGRES_DB: ultimateteam
+      POSTGRES_USER: ultimateteam
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-local-rehearsal-only}
+    volumes:
+      - db-data:/var/lib/postgresql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ultimateteam -d ultimateteam"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+  server:
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile
+    image: aurora21/ultimateteam-server:local
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      ULTIMATETEAM_POSTGRES_CONNECTION: "Host=db;Port=5432;Database=ultimateteam;Username=ultimateteam;Password=${POSTGRES_PASSWORD:-local-rehearsal-only}"
+      # Received only with --profile monitoring; otherwise the export fails quietly.
+      OTEL_EXPORTER_OTLP_METRICS_ENDPOINT: http://prometheus:9090/api/v1/otlp/v1/metrics
+      OTEL_METRIC_EXPORT_INTERVAL: "15000"
+      OTEL_SERVICE_NAME: aurora21-server
+      ULTIMATETEAM_TCP_KEEPALIVE_IDLE_SECONDS: ${TCP_KEEPALIVE_IDLE_SECONDS:-30}
+      OTEL_RESOURCE_ATTRIBUTES: service.version=local
+    volumes:
+      - certs:/data/certs
+      - state:/data/state
+    ports:
+      - "127.0.0.1:18443-18446:18443-18446/tcp"
+      - "127.0.0.1:17502:17502/tcp"
+      - "127.0.0.1:17502:17502/udp"
+    command: ["serve", "--hosted", "--host", "0.0.0.0"]
+
+  redirector:
+    image: aurora21/ultimateteam-server:local
+    depends_on:
+      - server
+    volumes:
+      - certs:/data/certs:ro
+      - state:/data/state
+    ports:
+      - "127.0.0.1:42230:42230/tcp"
+    command: ["redirector", "--blaze-tls-port", "18444"]
+
+  # The same daily backup as the VPS stack, into deploy/backups/ (git-ignored).
+  backup:
+    image: postgres:18
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      PGHOST: db
+      PGUSER: ultimateteam
+      PGDATABASE: ultimateteam
+      PGPASSWORD: ${POSTGRES_PASSWORD:-local-rehearsal-only}
+    volumes:
+      - ./backups:/backups
+      - ./pg-backup.sh:/usr/local/bin/pg-backup.sh:ro
+    entrypoint: ["bash", "/usr/local/bin/pg-backup.sh"]
+    command: ["loop"]
+
+  # Monitoring (add --profile monitoring). The exporters and Grafana share Prometheus's network namespace, so the
+  # VPS's loopback addresses in monitoring/ work unchanged; Grafana is published on 127.0.0.1:3000 (admin /
+  # local-rehearsal-only) and Prometheus on 127.0.0.1:9090. node-exporter sees Docker Desktop's VM, not Windows.
+  prometheus:
+    image: prom/prometheus:v3.15.0
+    profiles: ["monitoring"]
+    command:
+      - --config.file=/etc/prometheus/prometheus.yml
+      - --storage.tsdb.path=/prometheus
+      - --web.listen-address=0.0.0.0:9090
+      - --web.enable-otlp-receiver
+    ports:
+      - "127.0.0.1:9090:9090"
+      - "127.0.0.1:3000:3000"
+    volumes:
+      - ./monitoring/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+      - prometheus-data:/prometheus
+
+  node-exporter:
+    image: prom/node-exporter:v1.12.1
+    profiles: ["monitoring"]
+    network_mode: service:prometheus
+    pid: host
+    command: ["--path.rootfs=/host", "--web.listen-address=127.0.0.1:9100"]
+    volumes:
+      - /:/host:ro
+
+  monitor-role:
+    image: postgres:18
+    profiles: ["monitoring"]
+    restart: "no"
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      PGHOST: db
+      PGUSER: ultimateteam
+      PGDATABASE: ultimateteam
+      PGPASSWORD: ${POSTGRES_PASSWORD:-local-rehearsal-only}
+      MONITOR_DB_PASSWORD: ${MONITOR_DB_PASSWORD:-local-rehearsal-only}
+    volumes:
+      - ./monitoring/monitor-role.sql:/monitor-role.sql:ro
+    entrypoint: ["sh", "-c"]
+    command: ['exec psql -X -q -f /monitor-role.sql']
+
+  postgres-exporter:
+    image: quay.io/prometheuscommunity/postgres-exporter:v0.20.1
+    profiles: ["monitoring"]
+    network_mode: service:prometheus
+    depends_on:
+      monitor-role:
+        condition: service_completed_successfully
+    environment:
+      DATA_SOURCE_URI: db:5432/ultimateteam?sslmode=disable
+      DATA_SOURCE_USER: aurora_monitor
+      DATA_SOURCE_PASS: ${MONITOR_DB_PASSWORD:-local-rehearsal-only}
+    command: ["--web.listen-address=127.0.0.1:9187"]
+
+  grafana:
+    image: grafana/grafana:13.2.3
+    profiles: ["monitoring"]
+    network_mode: service:prometheus
+    environment:
+      GF_SERVER_HTTP_ADDR: 0.0.0.0
+      GF_SECURITY_ADMIN_PASSWORD: ${GRAFANA_ADMIN_PASSWORD:-local-rehearsal-only}
+      GF_USERS_ALLOW_SIGN_UP: "false"
+      GF_ANALYTICS_REPORTING_ENABLED: "false"
+      GF_ANALYTICS_CHECK_FOR_UPDATES: "false"
+      GF_ANALYTICS_CHECK_FOR_PLUGIN_UPDATES: "false"
+      GF_NEWS_NEWS_FEED_ENABLED: "false"
+      GF_PLUGINS_PREINSTALL_DISABLED: "true"
+    volumes:
+      - grafana-data:/var/lib/grafana
+      - ./monitoring/grafana/provisioning:/etc/grafana/provisioning:ro
+      - ./monitoring/grafana/dashboards:/etc/grafana/dashboards:ro
+
+volumes:
+  db-data:
+  certs:
+  state:
+  prometheus-data:
+  grafana-data:

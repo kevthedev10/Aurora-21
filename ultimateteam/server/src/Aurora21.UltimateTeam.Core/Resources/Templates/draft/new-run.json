@@ -1,0 +1,21 @@
+{
+  "mode": "{{mode}}",
+  "state": "{{state}}",
+  "difficulty": "{{difficulty}}",
+  "formation": "",
+  "formationChoices": [],
+  "picked": {},
+  "manager": null,
+  "currentChoices": [],
+  "currentChoiceKind": "",
+  "currentPositionId": 0,
+  "seenAssets": [],
+  "choiceSerial": 0,
+  "seed": "{{seed}}",
+  "nextItemId": "{{firstItemId}}",
+  "captain": 0,
+  "wins": 0,
+  "losses": 0,
+  "draftsCompleted": 0,
+  "pendingCoinReward": 0
+}

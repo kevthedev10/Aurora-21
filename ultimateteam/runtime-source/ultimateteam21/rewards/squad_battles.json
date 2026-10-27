@@ -1,0 +1,33 @@
+{
+ "_readme": [
+  "Seed for the Squad Battles weekly reward tiers (owner design 2026-10-03, todo.md section 2). The server keeps them in the squad_battles_reward_tiers,",
+  "rewards and reward_lines tables: a fresh database is filled from this file at start-up; an upgraded one converts the tiers its rules held. From",
+  "then on they change through the operator panel (Modes, Squad Battles) and content changesets, not this file.",
+  "ranked: six Top slots (stable ids; settled results name them). Their places follow squad_battles.json competition.boardSize (the Top players",
+  "number): Rank 1, then the other places split over five slots (25: 1, 2-5, 6-10, 11-15, 16-20, 21-25). They pay once rankedTiers.minParticipants",
+  "clubs have points. points: the twelve tiers FIFA names Elite 1-3, Gold 1-3, Silver 1-3, Bronze 1-3 (tierLevel 1-12), by percentile band",
+  "(percentStart-percentEnd, with the retail minimum minPoints) or, in points mode, by minPoints alone.",
+  "reward: coins, FUT Champions Points and XP (Squad Battles pays coins only) and lines: a pack with a count and its own untradeable choice.",
+  "Values: the phase-1 table (pack-odds-2026-09 PLAN.md 5.3); slot ranked5 copies top100's prize; untradeable is what rules/tradeability.json paid."
+ ],
+ "tiers": [
+  {"id": "rank1", "kind": "ranked", "rankStart": 1, "rankEnd": 1, "reward": {"coins": 60000, "fcPoints": 0, "xp": 0, "lines": [{"packId": 405, "count": 1, "untradeable": false}, {"packId": 402, "count": 1, "untradeable": false}, {"packId": 540, "count": 1, "untradeable": false}]}},
+  {"id": "top20", "kind": "ranked", "rankStart": 2, "rankEnd": 5, "reward": {"coins": 50000, "fcPoints": 0, "xp": 0, "lines": [{"packId": 405, "count": 1, "untradeable": false}, {"packId": 402, "count": 1, "untradeable": false}, {"packId": 542, "count": 1, "untradeable": false}]}},
+  {"id": "top40", "kind": "ranked", "rankStart": 6, "rankEnd": 10, "reward": {"coins": 45000, "fcPoints": 0, "xp": 0, "lines": [{"packId": 405, "count": 1, "untradeable": false}, {"packId": 542, "count": 1, "untradeable": false}, {"packId": 543, "count": 1, "untradeable": false}]}},
+  {"id": "top100", "kind": "ranked", "rankStart": 11, "rankEnd": 15, "reward": {"coins": 40000, "fcPoints": 0, "xp": 0, "lines": [{"packId": 404, "count": 1, "untradeable": false}, {"packId": 542, "count": 1, "untradeable": false}, {"packId": 543, "count": 1, "untradeable": false}]}},
+  {"id": "ranked5", "kind": "ranked", "rankStart": 16, "rankEnd": 20, "reward": {"coins": 40000, "fcPoints": 0, "xp": 0, "lines": [{"packId": 404, "count": 1, "untradeable": false}, {"packId": 542, "count": 1, "untradeable": false}, {"packId": 543, "count": 1, "untradeable": false}]}},
+  {"id": "top200", "kind": "ranked", "rankStart": 21, "rankEnd": 25, "reward": {"coins": 35000, "fcPoints": 0, "xp": 0, "lines": [{"packId": 404, "count": 1, "untradeable": false}, {"packId": 542, "count": 1, "untradeable": false}]}},
+  {"id": "elite1", "kind": "points", "tierLevel": 1, "percentStart": 1, "percentEnd": 3, "minPoints": 15000, "reward": {"coins": 30000, "fcPoints": 0, "xp": 0, "lines": [{"packId": 402, "count": 1, "untradeable": false}, {"packId": 542, "count": 1, "untradeable": false}]}},
+  {"id": "elite2", "kind": "points", "tierLevel": 2, "percentStart": 4, "percentEnd": 6, "minPoints": 12000, "reward": {"coins": 22000, "fcPoints": 0, "xp": 0, "lines": [{"packId": 402, "count": 1, "untradeable": false}]}},
+  {"id": "elite3", "kind": "points", "tierLevel": 3, "percentStart": 7, "percentEnd": 10, "minPoints": 9800, "reward": {"coins": 16000, "fcPoints": 0, "xp": 0, "lines": [{"packId": 403, "count": 1, "untradeable": false}]}},
+  {"id": "gold1", "kind": "points", "tierLevel": 4, "percentStart": 11, "percentEnd": 20, "minPoints": 7800, "reward": {"coins": 12000, "fcPoints": 0, "xp": 0, "lines": [{"packId": 400, "count": 1, "untradeable": false}, {"packId": 305, "count": 1, "untradeable": false}]}},
+  {"id": "gold2", "kind": "points", "tierLevel": 5, "percentStart": 21, "percentEnd": 30, "minPoints": 6200, "reward": {"coins": 10000, "fcPoints": 0, "xp": 0, "lines": [{"packId": 400, "count": 1, "untradeable": false}]}},
+  {"id": "gold3", "kind": "points", "tierLevel": 6, "percentStart": 31, "percentEnd": 40, "minPoints": 4800, "reward": {"coins": 8000, "fcPoints": 0, "xp": 0, "lines": [{"packId": 319, "count": 1, "untradeable": false}]}},
+  {"id": "silver1", "kind": "points", "tierLevel": 7, "percentStart": 41, "percentEnd": 50, "minPoints": 3600, "reward": {"coins": 6000, "fcPoints": 0, "xp": 0, "lines": [{"packId": 308, "count": 1, "untradeable": false}]}},
+  {"id": "silver2", "kind": "points", "tierLevel": 8, "percentStart": 51, "percentEnd": 60, "minPoints": 2700, "reward": {"coins": 4000, "fcPoints": 0, "xp": 0, "lines": [{"packId": 543, "count": 1, "untradeable": false}]}},
+  {"id": "silver3", "kind": "points", "tierLevel": 9, "percentStart": 61, "percentEnd": 70, "minPoints": 1900, "reward": {"coins": 3000, "fcPoints": 0, "xp": 0, "lines": [{"packId": 305, "count": 1, "untradeable": false}]}},
+  {"id": "bronze1", "kind": "points", "tierLevel": 10, "percentStart": 71, "percentEnd": 80, "minPoints": 1200, "reward": {"coins": 2000, "fcPoints": 0, "xp": 0, "lines": [{"packId": 304, "count": 1, "untradeable": false}]}},
+  {"id": "bronze2", "kind": "points", "tierLevel": 11, "percentStart": 81, "percentEnd": 90, "minPoints": 700, "reward": {"coins": 1000, "fcPoints": 0, "xp": 0, "lines": [{"packId": 304, "count": 1, "untradeable": false}]}},
+  {"id": "bronze3", "kind": "points", "tierLevel": 12, "percentStart": 91, "percentEnd": 100, "minPoints": 250, "reward": {"coins": 0, "fcPoints": 0, "xp": 0, "lines": [{"packId": 304, "count": 1, "untradeable": false}]}}
+ ]
+}

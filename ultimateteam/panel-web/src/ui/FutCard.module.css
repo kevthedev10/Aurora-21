@@ -1,0 +1,50 @@
+/* Positions are fractions of FIFA 21's 644 x 900 frame, so one card scales to any width (container query units). */
+.card {
+  position: relative; display: block; width: 100%; aspect-ratio: 644 / 900; container-type: inline-size;
+  padding: 0; border: 0; background: none; color: var(--fc-ink); text-shadow: var(--fc-glow, none); font: inherit; text-align: left;
+}
+button.card { cursor: pointer; border-radius: 6px; }
+button.card:hover .frame { filter: brightness(1.08); }
+button.card:focus-visible { outline: 2px solid var(--coin); outline-offset: 3px; }
+.card > * { position: absolute; }
+.xs { width: 40px; flex: none; }
+.thumbnail { width: 56px; margin-inline: auto; flex: none; }
+.thumbnail .face { left: 24%; bottom: 48.3%; width: 52%; }
+.sm { max-width: 170px; }
+.lg { width: 240px; flex: none; }
+.catalogue { width: 100%; max-width: 240px; }
+.frame { inset: 0; width: 100%; height: 100%; }
+.shade::before {
+  content: ''; position: absolute; inset: 6% 11.5% 7% 11.6%;
+  background: linear-gradient(170deg, var(--fc-top), var(--fc-bottom));
+  clip-path: polygon(0 7%, 11% 0, 89% 0, 100% 7%, 100% 86%, 50% 100%, 0 86%);
+}
+.face { left: 35%; bottom: 48.3%; width: 52%; aspect-ratio: 1; object-fit: contain; object-position: bottom; }
+.rating { left: 17%; top: 12.5%; width: 20%; text-align: center; font: 700 15cqw/1 var(--font-display); letter-spacing: -0.02em; font-variant-numeric: tabular-nums; }
+.pos { left: 17%; top: 24%; width: 20%; text-align: center; font: 600 6.6cqw/1 var(--font-display); letter-spacing: 0.04em; }
+.nation { left: 21%; top: 30.5%; width: 12cqw; aspect-ratio: 4 / 3; object-fit: contain; }
+.club { left: 21.5%; top: 37.5%; width: 11cqw; aspect-ratio: 1; object-fit: contain; }
+.name {
+  left: 14%; right: 14%; top: 53%; text-align: center; font: 700 8cqw/1.2 var(--font-display);
+  text-transform: uppercase; letter-spacing: 0.02em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.stats {
+  left: 18%; right: 18%; top: 63%; display: grid; grid-template-columns: 1fr 1fr; grid-auto-flow: column;
+  grid-template-rows: repeat(3, auto); gap: 1.2cqw 4cqw; font: 600 7cqw/1.15 var(--font-display);
+}
+.stats span { display: flex; gap: 1.8cqw; align-items: baseline; justify-content: center; }
+.stats b { font-weight: 700; min-width: 2.2ch; text-align: right; }
+.stats small { font-size: 6cqw; font-weight: 600; opacity: 0.85; }
+.details { left: 18%; right: 18%; top: 83%; display: flex; align-items: center; justify-content: center; gap: 4cqw; font: 600 4.4cqw/1.2 var(--font-display); white-space: nowrap; }
+.details span { display: inline-flex; gap: 1cqw; }
+/* The thumbnail keeps frame, face and rating only. */
+.xs .rating { top: 11%; left: 12%; width: 30%; font-size: 24cqw; }
+.xs .face { left: 30%; width: 60%; }
+
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(118px, 1fr)); gap: 14px 10px; justify-items: center; }
+@media (max-width: 480px) { .grid { grid-template-columns: repeat(auto-fill, minmax(96px, 1fr)); gap: 10px 8px; } }
+.row { display: flex; flex-wrap: wrap; gap: 10px; }
+.catalogueGrid { grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 18px 12px; }
+@media (max-width: 580px) { .catalogueGrid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px 4px; } }
+.row .sm { width: 112px; }
+.league { width: 20px; height: 20px; object-fit: contain; vertical-align: middle; }

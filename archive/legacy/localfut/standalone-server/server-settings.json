@@ -1,0 +1,10 @@
+{
+  "bindAddress": "10.203.21.1",
+  "lsxMode": "off",
+  "gameplayRelayEnabled": true,
+  "gameplayRelayBindAddress": "auto",
+  "gameplayRelayAdvertisedAddress": "auto",
+  "gameplayRelayPortStart": 31000,
+  "gameplayRelayPortEnd": 31199,
+  "playerIdentityMode": "peer-ip"
+}

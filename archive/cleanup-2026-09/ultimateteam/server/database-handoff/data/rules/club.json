@@ -1,0 +1,135 @@
+{
+  "_comment": "Default club content and squad settings.",
+
+  "squad": {
+    "defaultName": "Local XI",
+    "defaultFormation": "f442",
+    "slots": 23,
+    "starters": 11,
+    "kickTakers": 5,
+    "customTactics": "[0,0,0,0,0,0,0,0,0,0,0]",
+    "defaultChemistry": 100,
+    "defaultStarRating": 5,
+    "tacticMentalities": ["ULTRA_DEFENSIVE", "DEFENSIVE", "BALANCED", "ATTACKING", "ULTRA_ATTACKING"]
+  },
+
+  "_initialKitsComment": "Owned kit instances every club starts with; they fill the Match Day home/away slots.",
+  "initialKits": [
+    { "resourceId": 6300074, "itemState": "activeHomeKit", "teamId": 1, "kitType": 0, "name": "Arsenal Home Kit" },
+    { "resourceId": 6301345, "itemState": "activeAwayKit", "teamId": 1, "kitType": 1, "name": "Arsenal Away Kit" }
+  ],
+
+  "_activeItemsComment": "Virtual active club items shown until the club owns its own. My Stadium keeps the native Sanderson Park card identity (resource 6200058, asset 261) separate from the selected venue: the match-only Bernabeu object crashes the Match Day view. The away kit reuses the playable Arsenal definition; 6400057 resolves to a locked catalogue shirt.",
+  "defaultActiveItems": [
+    {
+      "family": "stadiums", "table": "fcc_stadium",
+      "resourceId": 6200058, "carddbid": 6200058,
+      "assetId": 261, "cardassetid": 36,
+      "itemType": "stadium", "cardsubtypeid": 10, "itemState": "activeStadium",
+      "owners": 1, "untradeable": true, "discardValue": 10, "lastSalePrice": 0,
+      "stackCount": 1, "untradeableCount": 1, "pile": "club",
+      "timestamp": "{{timestamp}}", "rating": 64, "rareflag": 0, "value": 64,
+      "weightrare": 0, "category": 4,
+      "stadiumid": "{{stadiumId}}", "capacity": "{{capacity}}",
+      "StadiumId": "{{stadiumId}}", "boost": 0, "id": 910000000003
+    },
+    {
+      "family": "kits", "table": "fcc_kitcards", "resourceId": 6300074,
+      "carddbid": 6300074, "assetId": 6300074, "cardassetid": 35,
+      "itemType": "kit", "cardsubtypeid": 9, "itemState": "activeHomeKit",
+      "owners": 1, "untradeable": true, "discardValue": 10, "lastSalePrice": 0,
+      "stackCount": 1, "untradeableCount": 1, "pile": "club", "islocked": 0,
+      "timestamp": "{{timestamp}}", "rating": 83, "rareflag": 1, "value": 83,
+      "weightrare": 10, "category": 2, "teamid": 1,
+      "kitType": 0, "teamkittypetechid": 0, "year": 0,
+      "resourceGameYear": 2021,
+      "id": 910000000001
+    },
+    {
+      "family": "kits", "table": "fcc_kitcards", "resourceId": 6301345,
+      "carddbid": 6301345, "assetId": 6301345, "cardassetid": 35,
+      "itemType": "kit", "cardsubtypeid": 9, "itemState": "activeAwayKit",
+      "owners": 1, "untradeable": true, "discardValue": 10, "lastSalePrice": 0,
+      "stackCount": 1, "untradeableCount": 1, "pile": "club", "islocked": 0,
+      "timestamp": "{{timestamp}}", "rating": 83, "rareflag": 1, "value": 83,
+      "weightrare": 10, "category": 3, "teamid": 1,
+      "kitType": 1, "teamkittypetechid": 1, "year": 0,
+      "resourceGameYear": 2021,
+      "id": 910000000002
+    },
+    {
+      "family": "badges", "table": "fcc_badgecards", "resourceId": 6000057,
+      "carddbid": 6000057, "assetId": 1, "cardassetid": 39,
+      "itemType": "custom", "cardsubtypeid": 11, "itemState": "activeBadge",
+      "owners": 1, "untradeable": true, "discardValue": 10, "lastSalePrice": 0,
+      "stackCount": 1, "untradeableCount": 1, "pile": "club",
+      "timestamp": "{{timestamp}}", "rating": 83, "rareflag": 1, "value": 83,
+      "weightrare": 10, "category": 1, "teamid": 1, "id": 5004
+    },
+    {
+      "family": "balls", "table": "fcc_balls", "resourceId": 8120212,
+      "carddbid": 8120212, "assetId": 191, "cardassetid": 37,
+      "itemType": "ball", "cardsubtypeid": 30, "itemState": "activeBall",
+      "owners": 1, "untradeable": true, "discardValue": 10, "lastSalePrice": 0,
+      "stackCount": 1, "untradeableCount": 1, "pile": "club",
+      "timestamp": "{{timestamp}}", "rating": 74, "rareflag": 0, "value": 74,
+      "weightrare": 0, "category": 1, "ballid": 191, "id": 5411
+    }
+  ],
+  "defaultStadiumCapacity": 45000,
+
+  "_myStadiumComment": "The FIFA 21 My Stadium slots whose item shape, search bucket and persistence path are verified, in list order, with CardsDLL's native localization ids. stadiumArea is MyStadiumSlotCategory: 0 Match Day, 1 Atmosphere (Crowds), 2 Structure (Sidelines), 3 Props. FIFA identifies the four Match Day slots by fixed slotIds (ball 1, badge 2, home kit 3, away kit 4); other slots take their list position. A slot's vanityTypes default to its item type. Equipped items must match itemType and cardSubType. The stadium slot stays locked: its RS4 editor needs unavailable metadata, so venues change through selector packs or PUT /stadium.",
+  "myStadiumSlots": [
+    { "itemState": "activeHomeKit", "itemType": "kit", "cardSubType": 9, "slotName": "Home_Kit", "stadiumArea": 0, "slotId": 3, "locked": false, "emptiable": false, "vanityTypes": ["kit"] },
+    { "itemState": "activeAwayKit", "itemType": "kit", "cardSubType": 9, "slotName": "Away_Kit", "stadiumArea": 0, "slotId": 4, "locked": false, "emptiable": false, "vanityTypes": ["kit"] },
+    { "itemState": "activeBadge", "itemType": "custom", "cardSubType": 11, "slotName": "Badge", "stadiumArea": 0, "slotId": 2, "locked": false, "emptiable": false, "vanityTypes": ["custom", "badge"] },
+    { "itemState": "activeBall", "itemType": "ball", "cardSubType": 30, "slotName": "FUT_STADIUM_BALL", "stadiumArea": 0, "slotId": 1, "locked": false, "emptiable": false, "vanityTypes": ["ball"] },
+    { "itemState": "activeStadium", "itemType": "stadium", "cardSubType": 10, "slotName": "Stadium", "stadiumArea": 0, "locked": true, "emptiable": false, "vanityTypes": ["stadium"] },
+    { "itemState": "activeTifoBasic", "itemType": "tifo_basic", "cardSubType": 10, "slotName": "TIFO_BASIC", "stadiumArea": 1, "locked": false, "emptiable": true, "vanityTypes": ["tifo_basic"] },
+    { "itemState": "activeTifoAnimated", "itemType": "tifo_animated", "cardSubType": 10, "slotName": "TIFO_ANIMATED", "stadiumArea": 1, "locked": false, "emptiable": true, "vanityTypes": ["tifo_animated"] },
+    { "itemState": "activeTifoStandard", "itemType": "tifo_standard", "cardSubType": 10, "slotName": "TIFO_STANDARD", "stadiumArea": 1, "locked": false, "emptiable": true, "vanityTypes": ["tifo_standard"] },
+    { "itemState": "activeStadiumTheme", "itemType": "stadium_theme", "cardSubType": 10, "slotName": "STADIUM_THEME", "stadiumArea": 1, "locked": false, "emptiable": true, "vanityTypes": ["stadium_theme"] },
+    { "itemState": "activeTifoBackground", "itemType": "tifo_background", "cardSubType": 10, "slotName": "TIFO_BACKGROUND", "stadiumArea": 1, "locked": false, "emptiable": true, "vanityTypes": ["tifo_background"] },
+    { "itemState": "activePitchLineColour", "itemType": "pitch_line_colour", "cardSubType": 10, "slotName": "PITCH_LINE_COLOUR", "stadiumArea": 2, "locked": false, "emptiable": true, "vanityTypes": ["pitch_line_colour"] },
+    { "itemState": "activePitchMowPattern", "itemType": "pitch_mow_pattern", "cardSubType": 10, "slotName": "PITCH_MOW_PATTERN", "stadiumArea": 2, "locked": false, "emptiable": true, "vanityTypes": ["pitch_mow_pattern"] },
+    { "itemState": "activePitchChairColour", "itemType": "pitch_chair_colour", "cardSubType": 10, "slotName": "PITCH_CHAIR_COLOUR", "stadiumArea": 2, "locked": false, "emptiable": true, "vanityTypes": ["pitch_chair_colour"] },
+    { "itemState": "activePitchGoalColour", "itemType": "pitch_goal_colour", "cardSubType": 10, "slotName": "PITCH_GOAL_COLOUR", "stadiumArea": 2, "locked": false, "emptiable": true, "vanityTypes": ["pitch_goal_colour"] },
+    { "itemState": "activeGoalCannonFlame", "itemType": "goalceleb_cannon_flame", "cardSubType": 10, "slotName": "GOALCELEB_CANNON_FLAME", "stadiumArea": 3, "locked": false, "emptiable": true, "vanityTypes": ["goalceleb_cannon_flame"] }
+  ],
+
+  "_equippablesComment": "Item types the My Stadium pickers never offer (the shared equippables bucket), and the Match Day families an empty slot never offers.",
+  "nonEquippableItemTypes": ["", "player", "manager", "consumable", "training", "development"],
+  "matchDayItemTypes": ["kit", "custom", "badge", "ball", "stadium"],
+
+  "_dailyDropComment": "The daily FIFA Points drop: one claim per UTC day, the reward drawn by weight.",
+  "dailyDrop": {
+    "rewards": [
+      { "points": 100, "weight": 520 },
+      { "points": 250, "weight": 280 },
+      { "points": 500, "weight": 130 },
+      { "points": 1000, "weight": 50 },
+      { "points": 2500, "weight": 18 },
+      { "points": 10000, "weight": 2 }
+    ]
+  },
+
+  "_positionZonesComment": "FIFA 21's position zones (UTItemEntity.prefers*Position), used by position-group searches. Aliases are the names requests may use for a zone.",
+  "positionZones": {
+    "defense": ["SW", "RWB", "RB", "RCB", "CB", "LCB", "LB", "LWB"],
+    "midfield": ["RDM", "CDM", "LDM", "RM", "RCM", "CM", "LCM", "LM", "RAM", "CAM", "LAM"],
+    "attacker": ["RF", "CF", "LF", "RW", "RS", "ST", "LS", "LW"]
+  },
+  "positionZoneAliases": {
+    "defense": "defense", "defence": "defense", "defenders": "defense", "defender": "defense",
+    "midfield": "midfield", "midfielders": "midfield", "midfielder": "midfield",
+    "attacker": "attacker", "attackers": "attacker", "attack": "attacker",
+    "forward": "attacker", "forwards": "attacker"
+  },
+  "_positionGroupTypesComment": "My Club and concept searches send Defenders / Midfielders / Forwards as their own item type.",
+  "positionGroupTypes": { "playerdefender": "defense", "playermidfielder": "midfield", "playerforward": "attacker" },
+
+  "unsupportedVanityCategories": [
+    "vanity_audio", "vanity_tifo", "vanity_pyrotechnics",
+    "vanity_paint", "vanity_celebration", "vanity_pitch", "vanity_theme"
+  ]
+}

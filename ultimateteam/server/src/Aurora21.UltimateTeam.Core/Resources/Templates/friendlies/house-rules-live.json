@@ -1,0 +1,38 @@
+[
+  {
+    "name": "SWAPS",
+    "state": "ENABLED",
+    "houseRuleId": 100,
+    "subType": "DYNAMIC",
+    "startTime": "{{startTime}}",
+    "endTime": "{{endTime}}",
+    "priority": 1,
+    "title": "SWAPS",
+    "description": "Swap your best players with your opponent's after every goal.",
+    "imageId": "background_100"
+  },
+  {
+    "name": "MAX_CHEM",
+    "state": "ENABLED",
+    "houseRuleId": 101,
+    "subType": "DYNAMIC",
+    "startTime": "{{startTime}}",
+    "endTime": "{{endTime}}",
+    "priority": 3,
+    "title": "MAX CHEMISTRY",
+    "description": "Every player on the pitch plays with full chemistry.",
+    "imageId": "background_101"
+  },
+  {
+    "name": "MONEY_BALL",
+    "state": "ENABLED",
+    "houseRuleId": 102,
+    "subType": "DYNAMIC",
+    "startTime": "{{startTime}}",
+    "endTime": "{{endTime}}",
+    "priority": 2,
+    "title": "MYSTERY BALL",
+    "description": "Every ball brings a random boost for the team that collects it.",
+    "imageId": "background_102"
+  }
+]

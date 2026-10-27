@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>Aurora21-Updater</AssemblyName>
+    <RootNamespace>Aurora21Updater</RootNamespace>
+    <ApplicationIcon>..\Aurora21.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Resource Include="..\assets\Aurora21-logo.png" Link="assets\Aurora21-logo.png" />
+  </ItemGroup>
+</Project>

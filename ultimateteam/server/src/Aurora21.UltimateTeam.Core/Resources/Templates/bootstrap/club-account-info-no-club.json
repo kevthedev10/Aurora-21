@@ -1,0 +1,12 @@
+{
+  "userAccountInfo": {
+    "personas": [
+      {
+        "personaId": "{{personaId}}",
+        "personaName": "{{personaName}}",
+        "returningUser": 0,
+        "userClubList": []
+      }
+    ]
+  }
+}

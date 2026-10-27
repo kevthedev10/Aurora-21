@@ -1,0 +1,12 @@
+{
+  "sqbtEventId": "{{week}}",
+  "userScore": "{{points}}",
+  "userRank": "{{rank}}",
+  "userTierLevel": "{{tierLevel}}",
+  "squadsRemaining": "{{remaining}}",
+  "currentTime": "{{current}}",
+  "nextSquadRefreshTimeStamp": "{{refreshAt}}",
+  "eventStartTime": "{{start}}",
+  "eventEndTime": "{{end}}",
+  "unclaimedPrizeWaiting": "{{prizeAvailable}}"
+}

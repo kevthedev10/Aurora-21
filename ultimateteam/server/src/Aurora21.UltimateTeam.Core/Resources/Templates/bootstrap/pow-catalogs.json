@@ -1,0 +1,6 @@
+{
+  "catalogs": [
+    { "catalogId": 0, "name": "FUT Store" },
+    { "catalogId": 1, "name": "FIFAPoints" }
+  ]
+}

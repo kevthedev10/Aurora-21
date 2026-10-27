@@ -1,0 +1,22 @@
+[Unit]
+Description=Project 21 self-hosted control plane
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=project21
+Group=project21
+WorkingDirectory=/opt/project21/control-plane
+EnvironmentFile=/etc/project21-control-plane.env
+ExecStart=/usr/bin/node /opt/project21/control-plane/dist-selfhost/server.mjs
+Restart=on-failure
+RestartSec=5
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/lib/project21-control-plane
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,74 @@
+# Verified Futbin FIFA 21 HD card-frame URLs, one per line.
+# Gold rare
+https://cdn.futbin.com/content/fifa21/img/cards/hd/1_gold.png?v=138
+# Summer Stars
+https://cdn.futbin.com/content/fifa21/img/cards/hd/61_summer_stars.png?v=138
+# Icon Moments
+https://cdn.futbin.com/content/fifa21/img/cards/hd/icon_moment.png?v=138
+# FUTTIES
+https://cdn.futbin.com/content/fifa21/img/cards/hd/16_futties.png?v=138
+# Bronze common
+https://www.futbin.com/content/fifa21/img/cards/hd/0_bronze.png?v=139
+# Earlier verified example
+https://cdn.futbin.com/content/fifa21/img/cards/hd/6_rb.png?v=138
+# From the maintainer's browser network list (2026-09-29); each answered 200 on cdn.futbin.com.
+# Hero
+https://cdn.futbin.com/content/fifa21/img/cards/hd/4_purple.png
+# Rulebreakers
+https://cdn.futbin.com/content/fifa21/img/cards/hd/22_halloween.png
+# Premium SBC reward
+https://cdn.futbin.com/content/fifa21/img/cards/hd/24_sbc.png
+# Premier League, Bundesliga, Ligue 1 and LaLiga POTM
+https://cdn.futbin.com/content/fifa21/img/cards/hd/43_potm_epl.png
+https://cdn.futbin.com/content/fifa21/img/cards/hd/42_potm_bundesliga.png
+https://cdn.futbin.com/content/fifa21/img/cards/hd/79_potm_ligue1.png
+https://cdn.futbin.com/content/fifa21/img/cards/hd/86_potm_laliga.png
+# UEL Road to the Knockouts
+https://cdn.futbin.com/content/fifa21/img/cards/hd/46_europa_live.png
+# Flashback
+https://cdn.futbin.com/content/fifa21/img/cards/hd/51_sbc_flashback.png
+# TOTS Moments
+https://cdn.futbin.com/content/fifa21/img/cards/hd/65_totssfn.png
+# What If Upgraded and What If
+https://cdn.futbin.com/content/fifa21/img/cards/hd/81_whatif.png
+https://cdn.futbin.com/content/fifa21/img/cards/hd/82_whatif.png
+# Headliners (the second flag)
+https://cdn.futbin.com/content/fifa21/img/cards/hd/96_headliners.png
+# Without a type number; saved under FRAME_ALIASES in download-card-images.py
+https://cdn.futbin.com/content/fifa21/img/cards/hd/totsg.png
+https://cdn.futbin.com/content/fifa21/img/cards/hd/totyn.png
+https://cdn.futbin.com/content/fifa21/img/cards/hd/futmas.png
+# From the maintainer (2026-09-29).
+# Champions League (non-rare)
+https://cdn.futbin.com/content/fifa21/img/cards/hd/47_ucl_non_rare.png?v=138
+# UCL Road to the Knockouts
+https://cdn.futbin.com/content/fifa21/img/cards/hd/50_ucl_live.png?v=138
+# Next-Gen
+https://cdn.futbin.com/content/fifa21/img/cards/hd/75_de.png?v=138
+# Objectives (also Objective Players and the Icon Swaps rewards, see FRAME_ALIASES)
+https://cdn.futbin.com/content/fifa21/img/cards/hd/91_os.png?v=138
+# Squad Foundations (from the maintainer, 2026-10-04)
+https://cdn.futbin.com/content/fifa21/img/cards/hd/87_or.png?v=138
+# Without a type number; saved under FRAME_ALIASES: TOTGS, TOTGS Europa League, Champions League MOTM
+https://cdn.futbin.com/content/fifa21/img/cards/hd/ucl_tott.png?v=138
+https://cdn.futbin.com/content/fifa21/img/cards/hd/europa_tott.png?v=138
+https://cdn.futbin.com/content/fifa21/img/cards/hd/ucl_motm.png?v=138
+# From the maintainer (2026-09-29), second list.
+# Player Moments
+https://cdn.futbin.com/content/fifa21/img/cards/hd/90_fm.png?v=138
+# Showdown Upgrade
+https://cdn.futbin.com/content/fifa21/img/cards/hd/57_showdown.png?v=138
+# UEL Man of the Match (saved as 45_europa_motm.png)
+https://cdn.futbin.com/content/fifa21/img/cards/hd/europa_motm.png?v=138
+# Libertadores TOTGS
+https://cdn.futbin.com/content/fifa21/img/cards/hd/33_libertadores.png?v=138
+# FGS Swaps 1 and 2 (the same art; also saved as 77_fgs.png)
+https://cdn.futbin.com/content/fifa21/img/cards/hd/76_fgs.png?v=138
+# Sudamericana MOTM
+https://cdn.futbin.com/content/fifa21/img/cards/hd/59_sudamericana.png?v=138
+# Libertadores MOTM
+https://www.futbin.com/content/fifa21/img/cards/hd/54_conmebol_motm.png?v=139
+# Libertadores Flashback
+https://cdn.futbin.com/content/fifa21/img/cards/hd/37_libertadores_flashback.png?v=138
+# Sudamericana TOTGS
+https://cdn.futbin.com/content/fifa21/img/cards/hd/34_sudamericana.png?v=138

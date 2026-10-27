@@ -1,0 +1,15 @@
+Aurora 21 (Alpha v1) - Game Installation visual parity pass
+
+Changes:
+- Restyled the Settings / Game Installation tab to match the softer Home UI.
+- Added a full-width soft glass settings surface with subtle ambient gradients.
+- Reworked the FIFA21.exe path selector into a dedicated glass module.
+- Reworked save/status area into a cleaner footer panel.
+- Softened the settings text box border and focus treatment.
+- Refined the FIFA artwork card with gentler overlay, lighting, and typography.
+- Browse and Save Changes continue to use the existing global button hover glow and vector particle shimmer.
+- Existing Browse and Save functionality is unchanged.
+- Existing music/video/launch behavior is unchanged.
+- Default music volume remains 12%.
+
+Build using BUILD-GLASS-LAUNCHER.cmd on Windows.

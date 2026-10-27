@@ -1,0 +1,13 @@
+{
+  "type": "pack", "awardType": "pack",
+  "id": "{{packId}}", "packId": "{{packId}}",
+  "value": "{{packId}}", "awardValue": "{{packId}}",
+  "assetId": "{{artId}}", "halId": "{{artId}}", "packAssetId": "{{artId}}", "packAssetID": "{{artIdText}}",
+  "isPack": true, "isItem": false,
+  "isUntradeable": true, "untradeable": true,
+  "count": "{{count}}", "awardCount": "{{count}}",
+  "coins": 0, "packs": "{{name}}", "packsAmount": "{{count}}",
+  "AWD_PACKS_STRING": "{{name}}", "AWD_PACKS_AMOUNT": "{{count}}",
+  "AWD_PACKS_ASSET_IDS": "{{artIdText}}",
+  "name": "{{name}}", "packName": "{{name}}"
+}

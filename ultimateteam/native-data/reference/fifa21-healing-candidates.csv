@@ -1,0 +1,3 @@
+resource_id,tier,rareflag,target,healing_games,source_status
+5002029,gold,0,all_injuries,2,maintainer_supplied_pending_native_test
+5002030,gold,1,all_injuries,5,maintainer_supplied_pending_native_test

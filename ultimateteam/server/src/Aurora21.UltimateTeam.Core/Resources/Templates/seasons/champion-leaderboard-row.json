@@ -1,0 +1,13 @@
+{
+  "persona": "{{name}}",
+  "rank": "{{rank}}",
+  "score": { "icon": "wins", "value": "{{wins}}" },
+  "tiebreak": { "icon": "skill", "value": "{{tiebreak}}" },
+  "remainingMatches": "{{remaining}}",
+  "sku": "{{sku}}",
+  "badge": "{{badge}}",
+  "clubName": "{{name}}",
+  "est": "{{est}}",
+  "insetUrl": "",
+  "encryptedData": { "encryptedNucleusId": "{{nucleusId}}", "encryptedPersonaId": "{{personaId}}" }
+}

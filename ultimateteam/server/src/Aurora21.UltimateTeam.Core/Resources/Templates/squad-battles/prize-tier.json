@@ -1,0 +1,9 @@
+{
+  "tierType": "{{tierType}}",
+  "tierLevel": "{{tierLevel}}",
+  "tierStart": "{{tierStart}}",
+  "tierEnd": "{{tierEnd}}",
+  "tierStartValue": "{{startValue}}",
+  "tierEndValue": "{{endValue}}",
+  "awards": "{{awards}}"
+}

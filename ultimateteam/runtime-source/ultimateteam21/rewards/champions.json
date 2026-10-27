@@ -1,0 +1,203 @@
+{
+ "_readme": [
+  "Seed for the FUT Champions Weekend League reward ranks (owner design 2026-10-03, todo.md section 2). The server keeps these ranks in the",
+  "champions_reward_ranks, rewards and reward_lines tables: a fresh database is filled from this file at start-up; an upgraded one converts the",
+  "ranks its rules held. From then on they change through the operator panel (Modes, Champions) and content changesets, not this file.",
+  "tierLevel: the rank's stable id. wins: a rank by wins out of seasons.json weekendLeague.maxMatches, [low, high]; together they cover 0 to",
+  "maxMatches exactly once, at most 12 (FIFA's Elite 1 to Bronze 3). positions: a Top 25 band by leaderboard position, [low, high], running on",
+  "Six leaderboard bands at most (FIFA numbers them 1-6, per the client service; not yet checked in game). Owner, 2026-10-03: fixed Top 25 bands at 1, 2-5, 6-10, 11-15, 16-20 and 21-25; each keeps the corresponding old band reward.",
+  "from position 1; every ranked player in these positions with the wins rules/champions_rewards.json minWinsForTop sets (from minWinsForTopFromEvent) receives the band reward.",
+  "reward: coins, FUT Champions Points (capped at fcPointsCap in total), XP (not paid by Champions) and lines. A line is a pack (packId) with a",
+  "count and its own untradeable choice, which is what the club receives. 550/552/553 are untradeable red FUT Champions picks and 551 Silver",
+  "2/3's 1 of 2, max 84; 540, 541 and the picks draw from fixed TOTW 1-3 reward pools."
+ ],
+ "ranks": [
+  {
+   "tierLevel": 1, "name": "Rank 1", "positions": [1, 1],
+   "reward": {
+    "coins": 150000, "fcPoints": 2000, "xp": 0,
+    "lines": [
+     {"packId": 541, "count": 1, "untradeable": false},
+     {"packId": 405, "count": 1, "untradeable": false},
+     {"packId": 402, "count": 1, "untradeable": false},
+     {"packId": 550, "count": 5, "untradeable": true}
+    ]
+   }
+  },
+  {
+   "tierLevel": 2, "name": "Rank 2-5", "positions": [2, 5],
+   "reward": {
+    "coins": 125000, "fcPoints": 2000, "xp": 0,
+    "lines": [
+     {"packId": 541, "count": 1, "untradeable": false},
+     {"packId": 402, "count": 1, "untradeable": false},
+     {"packId": 550, "count": 5, "untradeable": true}
+    ]
+   }
+  },
+  {
+   "tierLevel": 3, "name": "Rank 6-10", "positions": [6, 10],
+   "reward": {
+    "coins": 100000, "fcPoints": 2000, "xp": 0,
+    "lines": [
+     {"packId": 541, "count": 1, "untradeable": false},
+     {"packId": 550, "count": 4, "untradeable": true}
+    ]
+   }
+  },
+  {
+   "tierLevel": 17, "name": "Rank 11-15", "positions": [11, 15],
+   "reward": {
+    "coins": 100000, "fcPoints": 2000, "xp": 0,
+    "lines": [
+     {"packId": 541, "count": 1, "untradeable": false},
+     {"packId": 550, "count": 4, "untradeable": true}
+    ]
+   }
+  },
+  {
+   "tierLevel": 4, "name": "Rank 16-20", "positions": [16, 20],
+   "reward": {
+    "coins": 90000, "fcPoints": 2000, "xp": 0,
+    "lines": [
+     {"packId": 540, "count": 2, "untradeable": false},
+     {"packId": 402, "count": 1, "untradeable": false},
+     {"packId": 550, "count": 3, "untradeable": true}
+    ]
+   }
+  },
+  {
+   "tierLevel": 18, "name": "Rank 21-25", "positions": [21, 25],
+   "reward": {
+    "coins": 90000, "fcPoints": 2000, "xp": 0,
+    "lines": [
+     {"packId": 540, "count": 2, "untradeable": false},
+     {"packId": 402, "count": 1, "untradeable": false},
+     {"packId": 550, "count": 3, "untradeable": true}
+    ]
+   }
+  },
+  {
+   "tierLevel": 5, "name": "Elite 1", "wins": [19, 20],
+   "reward": {
+    "coins": 75000, "fcPoints": 2000, "xp": 0,
+    "lines": [
+     {"packId": 540, "count": 2, "untradeable": false},
+     {"packId": 402, "count": 1, "untradeable": false},
+     {"packId": 550, "count": 2, "untradeable": true}
+    ]
+   }
+  },
+  {
+   "tierLevel": 6, "name": "Elite 2", "wins": [18, 18],
+   "reward": {
+    "coins": 60000, "fcPoints": 2000, "xp": 0,
+    "lines": [
+     {"packId": 540, "count": 1, "untradeable": false},
+     {"packId": 402, "count": 1, "untradeable": false},
+     {"packId": 550, "count": 1, "untradeable": true}
+    ]
+   }
+  },
+  {
+   "tierLevel": 7, "name": "Elite 3", "wins": [16, 17],
+   "reward": {
+    "coins": 50000, "fcPoints": 2000, "xp": 0,
+    "lines": [
+     {"packId": 540, "count": 1, "untradeable": false},
+     {"packId": 400, "count": 1, "untradeable": false},
+     {"packId": 552, "count": 1, "untradeable": true}
+    ]
+   }
+  },
+  {
+   "tierLevel": 8, "name": "Gold 1", "wins": [14, 15],
+   "reward": {
+    "coins": 40000, "fcPoints": 2000, "xp": 0,
+    "lines": [
+     {"packId": 542, "count": 1, "untradeable": false},
+     {"packId": 400, "count": 1, "untradeable": false},
+     {"packId": 552, "count": 1, "untradeable": true}
+    ]
+   }
+  },
+  {
+   "tierLevel": 9, "name": "Gold 2", "wins": [12, 13],
+   "reward": {
+    "coins": 32000, "fcPoints": 2000, "xp": 0,
+    "lines": [
+     {"packId": 542, "count": 1, "untradeable": false},
+     {"packId": 403, "count": 1, "untradeable": false},
+     {"packId": 553, "count": 1, "untradeable": true}
+    ]
+   }
+  },
+  {
+   "tierLevel": 10, "name": "Gold 3", "wins": [10, 11],
+   "reward": {
+    "coins": 25000, "fcPoints": 2000, "xp": 0,
+    "lines": [
+     {"packId": 402, "count": 1, "untradeable": false},
+     {"packId": 553, "count": 1, "untradeable": true}
+    ]
+   }
+  },
+  {
+   "tierLevel": 11, "name": "Silver 1", "wins": [8, 9],
+   "reward": {
+    "coins": 18000, "fcPoints": 2000, "xp": 0,
+    "lines": [
+     {"packId": 403, "count": 1, "untradeable": false},
+     {"packId": 553, "count": 1, "untradeable": true}
+    ]
+   }
+  },
+  {
+   "tierLevel": 12, "name": "Silver 2", "wins": [6, 7],
+   "reward": {
+    "coins": 12000, "fcPoints": 1000, "xp": 0,
+    "lines": [
+     {"packId": 400, "count": 1, "untradeable": false},
+     {"packId": 551, "count": 1, "untradeable": true}
+    ]
+   }
+  },
+  {
+   "tierLevel": 13, "name": "Silver 3", "wins": [5, 5],
+   "reward": {
+    "coins": 8000, "fcPoints": 1000, "xp": 0,
+    "lines": [
+     {"packId": 319, "count": 1, "untradeable": false},
+     {"packId": 551, "count": 1, "untradeable": true}
+    ]
+   }
+  },
+  {
+   "tierLevel": 14, "name": "Bronze 1", "wins": [4, 4],
+   "reward": {
+    "coins": 5000, "fcPoints": 500, "xp": 0,
+    "lines": [
+     {"packId": 308, "count": 1, "untradeable": false}
+    ]
+   }
+  },
+  {
+   "tierLevel": 15, "name": "Bronze 2", "wins": [2, 3],
+   "reward": {
+    "coins": 3000, "fcPoints": 500, "xp": 0,
+    "lines": [
+     {"packId": 305, "count": 1, "untradeable": false}
+    ]
+   }
+  },
+  {
+   "tierLevel": 16, "name": "Bronze 3", "wins": [0, 1],
+   "reward": {
+    "coins": 1500, "fcPoints": 250, "xp": 0,
+    "lines": [
+     {"packId": 304, "count": 1, "untradeable": false}
+    ]
+   }
+  }
+ ]
+}

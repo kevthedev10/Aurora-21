@@ -1,0 +1,7 @@
+{
+  "family": "badges", "table": "fcc_badgecards", "resourceId": "{{resourceId}}", "carddbid": "{{resourceId}}",
+  "assetId": "{{asset}}", "teamid": "{{asset}}", "cardassetid": 39, "itemType": "custom", "cardsubtypeid": 11, "itemState": "{{state}}",
+  "owners": 1, "untradeable": true, "discardValue": 10, "lastSalePrice": 0, "stackCount": 1, "untradeableCount": 1,
+  "pile": "{{pile}}", "timestamp": "{{timestamp}}",
+  "rating": "{{rating}}", "rareflag": "{{rareflag}}", "value": "{{rating}}", "weightrare": 10, "category": 1, "name": "{{name}}", "id": "{{id}}"
+}

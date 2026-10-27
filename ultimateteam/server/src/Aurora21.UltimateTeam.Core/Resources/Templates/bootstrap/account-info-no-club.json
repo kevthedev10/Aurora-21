@@ -1,0 +1,15 @@
+{
+  "userAccountInfo": {
+    "dateOfBirth": "{{dateOfBirth}}",
+    "age": "{{age}}",
+    "isUnderAge": "{{isUnderAge}}",
+    "personas": [
+      {
+        "personaId": "{{personaId}}",
+        "personaName": "{{personaName}}",
+        "userClubList": [],
+        "returningUser": 0
+      }
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "id": "{{challengeId}}", "challengeId": "{{challengeId}}", "setId": "{{setId}}",
+  "success": true, "valid": true, "completed": true, "status": "COMPLETED",
+  "timesCompleted": 1,
+  "grantedChallengeAwards": "{{awards}}",
+  "grantedSetAwards": "{{setAwards}}",
+  "awards": "{{awards}}",
+  "rewards": "{{awards}}",
+  "credits": "{{credits}}",
+  "grantedItemsCount": "{{grantedCount}}",
+  "preOrderPacks": "{{unopenedPacks}}",
+  "recoveredPacks": 0,
+  "unopenedPacks": "{{unopenedPacks}}"
+}

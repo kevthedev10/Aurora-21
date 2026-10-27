@@ -1,0 +1,9 @@
+[
+  {
+    "weekId": "{{weekIndex}}",
+    "startTime": "{{start}}",
+    "endTime": "{{end}}",
+    "rewardsTime": "{{rewardsTime}}",
+    "active": true
+  }
+]

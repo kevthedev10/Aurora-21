@@ -1,0 +1,11 @@
+{
+  "coins": "{{coins}}",
+  "packs": "{{packs}}",
+  "packsAmount": "{{packsAmount}}",
+  "packAssetID": "{{packAssetIds}}",
+  "packAssetId": "{{packAssetId}}",
+  "items": "{{items}}",
+  "itemsAmount": "{{itemsAmount}}",
+  "itemData": "{{itemData}}",
+  "isCompleted": "{{completed}}"
+}

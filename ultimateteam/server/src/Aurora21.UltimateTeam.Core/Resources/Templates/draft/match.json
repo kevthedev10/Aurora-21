@@ -1,0 +1,12 @@
+{
+  "squad": "{{squad}}",
+  "opponentTeamId": 1,
+  "opponentSquad": "{{opponent}}",
+  "awaySquad": "{{opponent}}",
+  "opponent": "{{opponent}}",
+  "startDateTime": "{{now}}",
+  "stadiumAssetId": "{{stadiumId}}",
+  "stadiumId": "{{stadiumId}}",
+  "home": false,
+  "isHomeTeam": false
+}

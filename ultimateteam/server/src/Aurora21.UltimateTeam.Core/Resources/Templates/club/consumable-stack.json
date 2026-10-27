@@ -1,0 +1,21 @@
+{
+  "item": {
+    "amount": "{{amount}}",
+    "cardassetid": "{{cardAssetId}}",
+    "cardsubtypeid": "{{subType}}",
+    "pile": 7,
+    "rareflag": "{{rareflag}}",
+    "rating": "{{rating}}",
+    "resourceGameYear": 2021,
+    "resourceId": "{{resourceId}}",
+    "weightrare": "{{weightRare}}",
+    "bronze": "{{bronze}}",
+    "silver": "{{silver}}",
+    "gold": "{{gold}}"
+  },
+  "resourceGameYear": 2021,
+  "resourceId": "{{resourceId}}",
+  "discardValue": "{{discardValue}}",
+  "count": "{{count}}",
+  "untradeableCount": "{{untradeableCount}}"
+}

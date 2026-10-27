@@ -1,0 +1,17 @@
+{
+  "success": true,
+  "grantedCount": "{{grantedCount}}",
+  "grantedByType": {
+    "kits": "{{kits}}",
+    "badges": "{{badges}}",
+    "balls": "{{balls}}"
+  },
+  "available": {
+    "kits": "{{availableKits}}",
+    "stadiums": "{{availableStadiums}}",
+    "badges": "{{availableBadges}}",
+    "balls": "{{availableBalls}}"
+  },
+  "stadiumEndpoint": "/ut/game/fifa21/stadium",
+  "unsupportedVanityCategories": "{{unsupportedVanityCategories}}"
+}

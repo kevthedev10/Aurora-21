@@ -1,0 +1,80 @@
+{
+  "_comment": "Single-player FUT Draft rules. Changing formations, pick weights or counts changes which choices a saved run's seed produces.",
+
+  "entry": {
+    "coins": 15000,
+    "points": 300,
+    "draftTokens": 1,
+    "storeEntryIds": [20024, 20026, 20027],
+    "storeName": "FUT Draft Entry",
+    "storeDescription": "Entry to a FUT Draft."
+  },
+
+  "squadId": 900001,
+  "squadName": "Draft Squad",
+  "firstItemId": 910000000000,
+  "winsToComplete": 4,
+  "noWinConsolationCoins": 15000,
+
+  "difficulties": ["BEGINNER", "AMATEUR", "SEMIPRO", "PRO", "WORLDCLASS", "LEGENDARY", "ULTIMATE"],
+  "difficultyAliases": { "PROFESSIONAL": "PRO", "WORLD_CLASS": "WORLDCLASS" },
+
+  "_formationsComment": "Pitch positions 0-10 of each formation, in order. Five formations are offered per run.",
+  "formationChoiceCount": 5,
+  "formations": [
+    { "name": "f3412", "positions": ["GK", "CB", "CB", "CB", "RM", "CM", "CM", "LM", "CAM", "ST", "ST"] },
+    { "name": "f3421", "positions": ["GK", "CB", "CB", "CB", "RM", "CM", "CM", "LM", "RF", "ST", "LF"] },
+    { "name": "f343", "positions": ["GK", "CB", "CB", "CB", "RM", "CM", "CM", "LM", "RW", "ST", "LW"] },
+    { "name": "f352", "positions": ["GK", "CB", "CB", "CB", "RM", "CDM", "CDM", "LM", "CAM", "ST", "ST"] },
+    { "name": "f41212", "positions": ["GK", "RB", "CB", "CB", "LB", "CDM", "CM", "CM", "CAM", "ST", "ST"] },
+    { "name": "f4141", "positions": ["GK", "RB", "CB", "CB", "LB", "CDM", "RM", "CM", "CM", "LM", "ST"] },
+    { "name": "f4222", "positions": ["GK", "RB", "CB", "CB", "LB", "CDM", "CDM", "CAM", "CAM", "ST", "ST"] },
+    { "name": "f4231", "positions": ["GK", "RB", "CB", "CB", "LB", "CDM", "CDM", "CAM", "CAM", "CAM", "ST"] },
+    { "name": "f4312", "positions": ["GK", "RB", "CB", "CB", "LB", "CM", "CM", "CM", "CAM", "ST", "ST"] },
+    { "name": "f4321", "positions": ["GK", "RB", "CB", "CB", "LB", "CM", "CM", "CM", "RF", "LF", "ST"] },
+    { "name": "f433", "positions": ["GK", "RB", "CB", "CB", "LB", "CM", "CM", "CM", "RW", "ST", "LW"] },
+    { "name": "f4411", "positions": ["GK", "RB", "CB", "CB", "LB", "RM", "CM", "CM", "LM", "CF", "ST"] },
+    { "name": "f442", "positions": ["GK", "RB", "CB", "CB", "LB", "RM", "CM", "CM", "LM", "ST", "ST"] },
+    { "name": "f451", "positions": ["GK", "RB", "CB", "CB", "LB", "RM", "CM", "LM", "CM", "CAM", "ST"] },
+    { "name": "f5212", "positions": ["GK", "RWB", "CB", "CB", "CB", "LWB", "CM", "CM", "CAM", "ST", "ST"] },
+    { "name": "f5221", "positions": ["GK", "RWB", "CB", "CB", "CB", "LWB", "CM", "CM", "RW", "ST", "LW"] },
+    { "name": "f532", "positions": ["GK", "RWB", "CB", "CB", "CB", "LWB", "CM", "CM", "CM", "ST", "ST"] },
+    { "name": "f541", "positions": ["GK", "RWB", "CB", "CB", "CB", "LWB", "RM", "CM", "CM", "LM", "ST"] }
+  ],
+  "defaultFormation": "f442",
+
+  "_positionsComment": "A formation position also accepts these card positions. Bench slots 11-17 accept the listed positions; slots 18-22 accept any player.",
+  "positionAliases": {
+    "RF": ["RF", "RW"],
+    "LF": ["LF", "LW"],
+    "RWB": ["RWB", "RB"],
+    "LWB": ["LWB", "LB"]
+  },
+  "benchSlots": {
+    "11": ["GK"],
+    "12": ["RWB", "RB", "CB", "LB", "LWB"],
+    "13": ["RWB", "RB", "CB", "LB", "LWB"],
+    "14": ["CDM", "RM", "CM", "LM", "CAM"],
+    "15": ["CDM", "RM", "CM", "LM", "CAM"],
+    "16": ["CDM", "RM", "CM", "LM", "CAM", "RF", "CF", "LF", "RW", "ST", "LW"],
+    "17": ["RF", "CF", "LF", "RW", "ST", "LW"]
+  },
+
+  "_picksComment": "Player choice screens. Weight = max(1, (rating - ratingBiasBase) ^ exponent), times specialBias for special cards.",
+  "picks": {
+    "choicesPerScreen": 5,
+    "minRating": 75,
+    "strongFloor": 87,
+    "captainStrongFloor": 90,
+    "ratingBiasBase": 69,
+    "exponent": 3.25,
+    "captainExponent": 4.0,
+    "specialBias": 4.5,
+    "weakRoundExponent": 1.35,
+    "weakRoundSpecialBias": 1.35,
+    "elite99Chance": 0.45,
+    "elite99RoundCounts": [4, 5],
+    "weakRoundCounts": [2, 3],
+    "managerPoolSize": 100
+  }
+}

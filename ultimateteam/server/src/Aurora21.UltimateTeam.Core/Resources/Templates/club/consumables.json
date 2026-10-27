@@ -1,0 +1,5 @@
+{
+  "itemData": "{{items}}",
+  "count": "{{count}}",
+  "total": "{{total}}"
+}

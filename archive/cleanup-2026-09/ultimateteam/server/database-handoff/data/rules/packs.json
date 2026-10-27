@@ -1,0 +1,203 @@
+{
+  "_comment": "Pack rules. Store pack configs use the same snake_case keys as store_packs.json and the personal pack_settings.json, which override these defaults.",
+
+  "specialRarityWeights": {
+    "3": 55, "4": 4, "5": 2, "6": 3, "8": 12, "9": 5, "10": 1, "11": 8,
+    "12": 1, "16": 1, "21": 1, "22": 1, "25": 1, "30": 1, "32": 1,
+    "33": 1, "34": 1, "37": 1, "42": 1, "43": 1, "45": 1, "46": 1,
+    "47": 1, "48": 1, "49": 1, "50": 1, "51": 1, "52": 1, "53": 1,
+    "54": 1, "55": 1, "57": 1, "58": 1, "59": 1, "60": 1, "61": 1,
+    "62": 1, "64": 1, "65": 1, "68": 1, "70": 1, "71": 1, "75": 1,
+    "76": 1, "77": 1, "79": 1, "81": 1, "82": 1, "84": 1, "86": 1,
+    "87": 1, "89": 1, "90": 1, "91": 1, "92": 1, "93": 1, "94": 1,
+    "95": 1, "96": 1, "98": 1
+  },
+
+  "_storePacksComment": "Built-in store packs. A pack without special_weights gets specialRarityWeights. Packs listed in alwaysPresentPackIds are restored when a saved configuration lacks them. Pack keys: min_rating/max_rating, allowed_rareflags, allowed_team_ids and allowed_nations limit the players; chem_style_chance puts a chemistry style in the lowest common slot; points_price overrides the FIFA Points price.",
+  "nextPackId": 48,
+  "storePacks": {
+    "1": {
+      "enabled": true, "name": "Bronze Pack",
+      "bio": "A bronze pack containing 12 items with 1 guaranteed rare and a chance of a Manager or Chemistry Style.",
+      "price": 2000, "size": 12, "gold_weight": 0, "silver_weight": 0, "bronze_weight": 100, "rare_slots": 1,
+      "special_chance": 0.10, "manager_chance": 0.20, "chem_style_chance": 0.25
+    },
+    "2": {
+      "enabled": true, "name": "Silver Pack",
+      "bio": "A silver pack containing 12 items with 1 guaranteed rare and a chance of a Manager or Chemistry Style.",
+      "price": 2500, "size": 12, "gold_weight": 0, "silver_weight": 100, "bronze_weight": 0, "rare_slots": 1,
+      "special_chance": 0.10, "manager_chance": 0.20, "chem_style_chance": 0.25
+    },
+    "3": {
+      "enabled": true, "name": "Gold Pack",
+      "bio": "A gold pack containing 12 items with 3 guaranteed rares and a chance of a Manager or Chemistry Style.",
+      "price": 7500, "size": 12, "gold_weight": 100, "silver_weight": 0, "bronze_weight": 0, "rare_slots": 3,
+      "special_chance": 0.10, "manager_chance": 0.20, "chem_style_chance": 0.35
+    },
+    "4": {
+      "enabled": true, "name": "Elite Ten 82+ Pack",
+      "bio": "Contains 10 Gold players rated 82 or higher, including at least 1 Special player.",
+      "price": 50000, "size": 10, "gold_weight": 100, "silver_weight": 0, "bronze_weight": 0, "rare_slots": 10,
+      "min_rating": 82, "guaranteed_specials": 1,
+      "special_chance": 0.15, "manager_chance": 0.0,
+      "store_group": "special"
+    },
+    "5": {
+      "enabled": true, "name": "Guaranteed 99 pack",
+      "bio": "Ouuuu shiiii, fym ouuuu shi?",
+      "price": 1000, "size": 1, "gold_weight": 100, "silver_weight": 0, "bronze_weight": 0, "rare_slots": 1,
+      "min_rating": 99, "guaranteed_specials": 1,
+      "special_chance": 0.0, "manager_chance": 0.0,
+      "allow_unweighted_specials": true, "store_group": "special",
+      "special_weights": {}
+    },
+    "6": {
+      "enabled": true, "name": "Guaranteed 92+ x10 Player Pack",
+      "bio": "Contains 10 unique players rated 92 or higher.",
+      "price": 25000, "size": 10, "gold_weight": 100, "silver_weight": 0, "bronze_weight": 0, "rare_slots": 10,
+      "min_rating": 92, "guaranteed_specials": 10,
+      "special_chance": 0.0, "manager_chance": 0.0,
+      "allow_unweighted_specials": true, "store_group": "special",
+      "special_weights": {}
+    },
+    "7": {
+      "enabled": true, "name": "Guaranteed Prime Moments Icon Pack",
+      "bio": "Contains one high-rated Icon player.",
+      "price": 50000, "size": 1, "gold_weight": 100, "silver_weight": 0, "bronze_weight": 0, "rare_slots": 1,
+      "min_rating": 90, "guaranteed_specials": 1,
+      "special_chance": 0.0, "manager_chance": 0.0,
+      "allow_unweighted_specials": true, "allowed_rareflags": [12], "store_group": "special",
+      "special_weights": {}
+    },
+    "42": {
+      "enabled": true, "name": "JayFreezy Pack",
+      "bio": "Ice cold. A full starting XI of the best in the game: 11 unique players, every one rated 98 or higher.",
+      "price": 3000000, "size": 11, "gold_weight": 100, "silver_weight": 0, "bronze_weight": 0, "rare_slots": 11,
+      "min_rating": 98, "guaranteed_specials": 11,
+      "special_chance": 0.0, "manager_chance": 0.0,
+      "allow_unweighted_specials": true, "store_group": "special",
+      "special_weights": {}
+    },
+    "43": {
+      "enabled": true, "name": "Ballon d'Or Pack",
+      "bio": "Only the untouchables. Contains 5 unique players rated 99.",
+      "price": 2500000, "size": 5, "gold_weight": 100, "silver_weight": 0, "bronze_weight": 0, "rare_slots": 5,
+      "min_rating": 99, "guaranteed_specials": 5,
+      "special_chance": 0.0, "manager_chance": 0.0,
+      "allow_unweighted_specials": true, "store_group": "special",
+      "special_weights": {}
+    },
+    "44": {
+      "enabled": true, "name": "Galácticos Pack",
+      "bio": "Build a superteam in one go. A full 23-man squad of unique players rated 95 or higher.",
+      "price": 2000000, "size": 23, "gold_weight": 100, "silver_weight": 0, "bronze_weight": 0, "rare_slots": 23,
+      "min_rating": 95, "guaranteed_specials": 23,
+      "special_chance": 0.0, "manager_chance": 0.0,
+      "allow_unweighted_specials": true, "store_group": "special",
+      "special_weights": {}
+    },
+    "45": {
+      "enabled": true, "name": "Icon Vault",
+      "bio": "The legends room is open. Contains 11 unique Icons rated 93 or higher.",
+      "price": 1500000, "size": 11, "gold_weight": 100, "silver_weight": 0, "bronze_weight": 0, "rare_slots": 11,
+      "min_rating": 93, "guaranteed_specials": 11,
+      "special_chance": 0.0, "manager_chance": 0.0,
+      "allow_unweighted_specials": true, "allowed_rareflags": [12, 84], "store_group": "special",
+      "special_weights": {}
+    },
+    "46": {
+      "enabled": true, "name": "Deep Freeze Mega Pack",
+      "bio": "The biggest pack in the store. 30 unique players, every one rated 93 or higher.",
+      "price": 1750000, "size": 30, "gold_weight": 100, "silver_weight": 0, "bronze_weight": 0, "rare_slots": 30,
+      "min_rating": 93, "guaranteed_specials": 30,
+      "special_chance": 0.0, "manager_chance": 0.0,
+      "allow_unweighted_specials": true, "store_group": "special",
+      "special_weights": {}
+    },
+    "47": {
+      "enabled": true, "name": "84+ x50 Pack",
+      "bio": "Fifty walkouts in one pack. Contains 50 unique players, every one rated 84 or higher.",
+      "price": 1250000, "size": 50, "gold_weight": 100, "silver_weight": 0, "bronze_weight": 0, "rare_slots": 50,
+      "min_rating": 84, "guaranteed_specials": 0,
+      "special_chance": 0.25, "manager_chance": 0.0,
+      "allow_unweighted_specials": true, "store_group": "special",
+      "special_weights": {}
+    }
+  },
+  "alwaysPresentPackIds": ["4", "5", "6", "7", "42", "43", "44", "45", "46", "47"],
+
+  "_packSizeComment": "The largest player pack the server builds (retail tops out at 30 items); the all-kits pack keeps its own limit.",
+  "maxPackSize": 50,
+  "maxKitPackSize": 30,
+
+  "_fifaPointsComment": "A store pack without its own points_price costs its coin price divided by coinsPerPoint, rounded up.",
+  "coinsPerPoint": 50,
+
+  "_customPackComment": "Starting values for a pack defined only partially in store_packs.json or pack_settings.json. {id} is replaced by the pack id.",
+  "customPack": {
+    "enabled": true, "name": "Custom Pack {id}", "bio": "A custom FIFA 21 Ultimate Team pack.",
+    "price": 7500, "size": 12, "gold_weight": 100, "silver_weight": 0, "bronze_weight": 0, "rare_slots": 3,
+    "special_chance": 0.10, "manager_chance": 0.0
+  },
+  "customPackManagerChance": { "1": 0.20, "2": 0.20, "3": 0.20 },
+
+  "_packFiveComment": "Pack 5 names from older builds that are replaced by the current built-in pack 5.",
+  "obsoletePackFiveNames": ["Aqua Pro Neymar Pack", "99 Neymar Jr Pack"],
+
+  "_rewardPacksComment": "Reward-only packs granted by SBCs, Objectives and FUT Champions; owned copies open for free.",
+  "rewardPackSpecialChance": 0.10,
+  "rewardPacks": {
+    "100": { "name": "Bronze Pack", "size": 12, "bronze_weight": 100, "rare_slots": 1 },
+    "200": { "name": "Silver Pack", "size": 12, "silver_weight": 100, "rare_slots": 1 },
+    "201": { "name": "Premium Silver Players Pack", "size": 12, "silver_weight": 100, "rare_slots": 3 },
+    "300": { "name": "Gold Pack", "size": 12, "gold_weight": 100, "rare_slots": 1 },
+    "301": { "name": "Premium Gold Pack", "size": 12, "gold_weight": 100, "rare_slots": 3 },
+    "304": { "name": "Gold Players Pack", "size": 12, "gold_weight": 100, "rare_slots": 1 },
+    "305": { "name": "Premium Gold Players Pack", "size": 12, "gold_weight": 100, "rare_slots": 3 },
+    "306": { "name": "Electrum Players Pack", "size": 12, "gold_weight": 50, "silver_weight": 50, "rare_slots": 1 },
+    "307": { "name": "Prime Electrum Players Pack", "size": 12, "gold_weight": 50, "silver_weight": 50, "rare_slots": 6 },
+    "308": { "name": "Prime Gold Players Pack", "size": 12, "gold_weight": 100, "rare_slots": 6 },
+    "309": { "name": "Prime Mixed Players Pack", "size": 12, "gold_weight": 34, "silver_weight": 33, "bronze_weight": 33, "rare_slots": 6 },
+    "400": { "name": "Rare Gold Pack", "size": 12, "gold_weight": 100, "rare_slots": 12 },
+    "401": { "name": "Rare Players Pack", "size": 12, "gold_weight": 100, "rare_slots": 12 },
+    "402": { "name": "Jumbo Rare Players Pack", "size": 24, "gold_weight": 100, "rare_slots": 24 },
+    "403": { "name": "Mega Pack", "size": 30, "gold_weight": 100, "rare_slots": 18 },
+    "404": { "name": "Rare Mega Pack", "size": 30, "gold_weight": 100, "rare_slots": 30 },
+    "405": { "name": "Ultimate Pack", "size": 30, "gold_weight": 100, "rare_slots": 30 },
+    "406": { "name": "Rare Mixed Players Pack", "size": 12, "gold_weight": 34, "silver_weight": 33, "bronze_weight": 33, "rare_slots": 12 },
+    "513": { "name": "82+ Player Pick", "size": 1, "gold_weight": 100, "rare_slots": 1, "min_rating": 82, "player_pick_count": 4 },
+    "514": { "name": "84+ Player Pick", "size": 1, "gold_weight": 100, "rare_slots": 1, "min_rating": 84, "player_pick_count": 4 },
+    "515": { "name": "86+ Player Pick", "size": 1, "gold_weight": 100, "rare_slots": 1, "min_rating": 86, "player_pick_count": 4 },
+    "516": { "name": "88+ Player Pick", "size": 1, "gold_weight": 100, "rare_slots": 1, "min_rating": 88, "player_pick_count": 4 }
+  },
+  "_displayOnlyComment": "Reward names shown by the client that are not openable packs.",
+  "displayOnlyPackNames": { "500": "Draft Token Pack" },
+
+  "_playerPickComment": "The reward pack delivering an N+ player pick, by minimum rating. The lowest rating is the default.",
+  "playerPickPacks": { "82": 513, "84": 514, "86": 515, "88": 516 },
+
+  "_storeGroupsComment": "Store tabs a pack can be listed under (store_group), with their category id. Aliases map legacy Pack Studio names; any other value falls back to the pack's dominant tier.",
+  "storeGroups": { "bronze": 1, "silver": 2, "gold": 3, "special": 4 },
+  "storeGroupAliases": { "promo": "special" },
+
+  "_artComment": "Reward tiles draw pack art by band (1 bronze, 2 silver, 3 gold, 4 special) chosen by pack id range.",
+  "packArt": [
+    { "belowPackId": 200, "artId": 1 },
+    { "belowPackId": 300, "artId": 2 },
+    { "belowPackId": 400, "artId": 3 }
+  ],
+  "specialPackArtId": 4,
+  "_storeArtComment": "Packs defined in the store settings (ids below 100) draw the art of their store tab, or of their dominant tier when the tab is not one of these.",
+  "storeGroupArtIds": { "bronze": 1, "silver": 2, "gold": 3, "special": 4 },
+  "storeArtMaxPackId": 99,
+
+  "_tiersComment": "Card tier when the catalog does not name one, and the rating from which a base card counts as rare in its tier.",
+  "tiers": {
+    "goldMinRating": 75,
+    "silverMinRating": 65,
+    "rareFallbackMinRating": { "gold": 82, "silver": 72, "bronze": 64 }
+  },
+
+  "_eliteComment": "Pack selection weight boost for high ratings: 1 below fromRating, then +perRating per point, capped.",
+  "eliteWeight": { "fromRating": 90, "perRating": 0.35, "maximum": 3.5, "minimum": 0.0001 }
+}

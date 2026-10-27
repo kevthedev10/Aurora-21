@@ -1,0 +1,159 @@
+{
+  "_comment": "Division Rivals and FUT Champions (FIFA 21's Seasonal framework). Both menus open only while a start/end/current window is present; the local window is the current epoch week.",
+
+  "_onlineMatchComment": "The online pre-match squad fetches (production Python server RIVALS_OPPONENT_HANDOFF, from 10fff54). FIFA's Rivals pre-match loads its opponent's squad with GET squad/active/user/<opponent persona>; while it knows no opponent persona it builds the zero-persona form, an exact GET squad/active (CardsDLL 0x1802e1640, /active?active=true). Only a GET squad/active whose X-PERFORMANCE-GROUP contains one of prematchPerformanceGroups (CardsDLL's screen enum: 0x180472950 FUT_ONLINE_COOPPREMATCH, 0x180472838 FUT_ONLINE_PREMATCH) is answered with the live opponent's squad; the hub's own fetch carries FFA21PCC_FUT_MODEENTRY and every other caller keeps its own squad. That fetch can overtake the pairing by about two seconds (20:30 run, 09-18), so a caller whose search is queued and not paired yet waits up to opponentWaitSeconds (at most 9, under FIFA's roughly ten-second FUT budget), looking every opponentWaitPollMilliseconds; it is answered the moment the pairing appears, and with its own squad when none comes.",
+  "onlineMatch": {
+    "prematchPerformanceGroups": ["FUT_ONLINE_COOPPREMATCH", "FUT_ONLINE_PREMATCH"],
+    "opponentWaitSeconds": 6.0,
+    "opponentWaitPollMilliseconds": 50
+  },
+
+  "_rivalsComment": "Division Rivals as in FIFA 21 retail (Python server 56145ed, rivals_skill.py). Sources: EA help 'FIFA 21 - FUT Division Rivals' (4 Nov 2020) and its Skill Rating calculator: Elo, new rating = ROUND(own + K x (result - expectancy)) with K from the player's own division (30, 50, 60 x6, 50, 30); five placement matches set the starting division and earn no Weekly Score; promotion and relegation apply at the next weekly competition. fifauteam's FIFA 21 Rivals page (Nov 2020 - Aug 2021): the division floors, relegation lines and FUT Champions Points per match (win, draw, loss). EA never published how placement becomes a rating: placement starts at placementStart (Division 7's floor) with K placementK, so five wins against equal opposition reach 1,000 (Division 5). The weekly competition turns over Thursday 07:00 UTC (weekOffsetSeconds after the epoch Thursday). From topSkillThreshold Skill Rating matchmaking treats everyone alike (EA); the soft cap warns from softCapWarning matches left. A record from before ratingVersion is cleared on first read (everyone places again; the club record stays). A pairing older than pairingTtlSeconds is not rated. Weekly rewards are settled from firstRewardWeek (the week of 2026-09-24; earlier weeks had none), and a reward stays claimable for prizeWeeksBack weeks. The live division tables other clubs' scores come from are reused for standingsCacheSeconds (a club's own score is always current). Weekly rewards and promotion coins: rules/rivals_rewards.json.",
+  "rivals": {
+    "weeklyMatches": 30,
+    "placementMatches": 5,
+    "placementStart": 500,
+    "placementK": 200,
+    "ratingVersion": 2,
+    "weekOffsetSeconds": 25200,
+    "topSkillThreshold": 2200,
+    "softCapWarning": 5,
+    "pairingTtlSeconds": 10800,
+    "firstRewardWeek": 2960,
+    "prizeWeeksBack": 4,
+    "standingsCacheSeconds": 60,
+    "divisions": [
+      { "division": 1, "floor": 1900, "relegationLine": 1800, "kFactor": 30, "fcPoints": [500, 200, 100] },
+      { "division": 2, "floor": 1700, "relegationLine": 1600, "kFactor": 50, "fcPoints": [250, 100, 50] },
+      { "division": 3, "floor": 1500, "relegationLine": 1400, "kFactor": 60, "fcPoints": [125, 50, 24] },
+      { "division": 4, "floor": 1250, "relegationLine": 1150, "kFactor": 60, "fcPoints": [80, 32, 16] },
+      { "division": 5, "floor": 1000, "relegationLine": 900, "kFactor": 60, "fcPoints": [65, 26, 14] },
+      { "division": 6, "floor": 750, "relegationLine": 650, "kFactor": 60, "fcPoints": [50, 20, 9] },
+      { "division": 7, "floor": 500, "relegationLine": 400, "kFactor": 60, "fcPoints": [40, 16, 8] },
+      { "division": 8, "floor": 350, "relegationLine": 150, "kFactor": 60, "fcPoints": [30, 12, 6] },
+      { "division": 9, "floor": 115, "relegationLine": 0, "kFactor": 50, "fcPoints": [25, 10, 6] },
+      { "division": 10, "floor": 0, "relegationLine": null, "kFactor": 30, "fcPoints": [20, 8, 4] }
+    ]
+  },
+
+  "_mathGroupsComment": "Online pairing by Windows maths group (Python server 43d3bac, c3992c5; on by default, as there). FIFA takes its maths from the OS ucrtbase.dll, and Windows 11 24H2 (build newBuild, 26100) changed it in the last bit: a 24H2 PC and an older one simulate a match differently and desync (every live desync was one of each). The launcher's health check (GET /ultimateteam/auth/bootstrap) carries WindowsPowerShell/5.1.<build>.<revision> in its User-Agent; each player's build is kept in state/windows-builds.json, and searchers pair only within one group (24h2 or pre24h2; an unknown build pairs with anyone). A launcher maths bridge that points FIFA at one pinned ucrtbase reports it in an X-Aurora21-Math header (v=1; ucrt=<version>; sha256=<16 hex>; fma3=<0|1>); a bridged player's group is that library's: bridgeGroups maps ucrtbase builds measured bit-identical to a Windows group, any other build is its own group, and a CPU without FMA3 is its own group too (suffix -nofma3). The health check starts a new launch and clears the last bridge report. A hosted server never sees that health check: there the Aurora launcher sends X-Aurora21-Windows (<build>.<revision>) with its POST /client/launch, which records the Windows group and clears the last bridge report; the client pack's maths bridge (Aurora21-MathBridge.exe, run by Start-Aurora21.ps1 on every launch: it loads the pinned ucrtbase 10.0.26100.1742 into FIFA and repoints FIFA's maths imports, since a ucrtbase.dll next to FIFA21.exe is never loaded) then sends its X-Aurora21-Math report to POST /client/launch/math with that launch's code, so a bridged player joins the 24h2 group (aurora15-launcher-handoff.md). Without a report, the Windows build decides. enabled false pairs everyone as before.",
+  "mathGroups": { "enabled": true, "newBuild": 26100, "bridgeGroups": { "19041": "pre24h2", "22000": "pre24h2", "22621": "pre24h2", "26100": "24h2" } },
+
+  "_leaderboardsComment": "The Leaderboards screen. Option ids must be ones CardsDLL's built-in table knows; each item's image is an icon file from that table (FIFA inserts INV before the extension for the highlighted icon). Every combination of options is a board whose entries are fetched from /leaderboards/period/{period}/category/{category}/view/{view}. Rows rank the server's clubs by Rivals skill rating, then wins, matches and name; players without a Rivals match show 0.",
+  "leaderboards": {
+    "groups": [
+      {
+        "id": "category", "default": "TOP",
+        "options": [
+          { "id": "TOP", "display": "LOC_LB_CAT_WW", "description": "LOC_LB_DESC_WW", "image": "worldwideIcon.swf" },
+          { "id": "AMS", "display": "LOC_LB_CAT_AMERICAS", "description": "LOC_LB_DESC_AMERICAS", "image": "americasIcon.swf" },
+          { "id": "EUR", "display": "LOC_LB_CAT_EURAFRICA", "description": "LOC_LB_DESC_EURAFRICA", "image": "europeIcon.swf" },
+          { "id": "ROW", "display": "LOC_LB_CAT_MEPAC", "description": "LOC_LB_DESC_MEPAC", "image": "mepacIcon.swf" }
+        ]
+      },
+      {
+        "id": "period", "default": "Weekly",
+        "options": [
+          { "id": "Weekly", "display": "LOC_LB_PER_WEEKLY", "description": "LOC_LB_PER_WEEKLY_DESC", "image": "weeklyIcon.swf" },
+          { "id": "Monthly", "display": "LOC_LB_PER_MONTHLY", "description": "LOC_LB_PER_MONTHLY_DESC", "image": "monthlyIcon.swf" }
+        ]
+      },
+      {
+        "id": "view", "default": "Current",
+        "options": [
+          { "id": "Current", "display": "LOC_LB_CURRENT", "description": "LOC_LB_CURRENT_DESC", "image": "currentIcon.swf" },
+          { "id": "Previous", "display": "LOC_LB_PREVIOUS", "description": "LOC_LB_PREVIOUS_DESC", "image": "previousIcon.swf" }
+        ]
+      }
+    ],
+    "urlTemplate": "/period/{period}/category/{category}/view/{view}",
+    "maxRows": 100,
+    "cacheSeconds": 60,
+    "maxNameLength": 32,
+    "defaultName": "Player",
+    "row": { "badge": 1, "est": 2020, "sku": "FUT21PCC", "scoreIcon": "skill", "tiebreakIcon": "wins" }
+  },
+
+  "_matchRewardsComment": "Coins paid by result when an eligible match ends (rewardEligibility: Rivals, Weekend League, Squad Battles and Draft; owner, Economy v2 2026-09-28), plus the coin rows. The quitter's loss pays nothing.",
+  "matchRewards": { "win": 2450, "draw": 2150, "loss": 1950 },
+
+  "_rewardEligibilityComment": "The one gate for match coins, Season XP, objective stats and the Match Pack (PLAN 4.3). Only payingModes pay: rivals (a pending Rivals pairing), weekendLeague (a championId CreateMatch), squadBattles (a sqbtEventId CreateMatch), draftOnline and draftSinglePlayer; any other match (friendlies) pays nothing and counts no progress. A paid result needs minGameSeconds of game time (/match/end secondsPlayed is the in-game clock: a full 90 reports 5,461-5,621, 09-24 captures) or minRealSeconds of real time since kickoff (the first PUT /match after the CreateMatch POST, else the POST; offline modes send no PUT). matchStatusFlags: opponentLeft are the bits of the end of a player whose opponent quit (2) or dropped (4), desync the desync bit. Who gets what: the quitter (QUIT, or DNF from a game) takes a loss and nothing else; the leaver (Alt+F4, crash or dropped connection, when its own client never reports) also takes that loss, settled in its club at once from the match end of the player who stayed; the player whose opponent left (DNF_WIN, or an opponentLeft bit) has no result if it was losing, and otherwise a win (paid even before the minimum) from opponentLeft.winFromMinute and no result (nothing for either side, not rated) before it; that minute is the game clock capped by the real time since kickoff at opponentLeft.realSecondsPerMinute (owner, 2026-10-03); a desync is void (no result, no Weekend League game) and pays desyncCoins past the minimum, with no Match Pack, XP or objective stats. difficulty: Squad Battles and single-player Draft coins x coinMultipliers by difficulty (Beginner to Ultimate, owner D13), and XP, objective stats and the Match Pack only from difficulty progressFrom (3: Professional). pairCaps: rewarded games (coins paid) against one opponent persona per rolling windowSeconds, or per Weekend League; the next is flagged and logged and counts nothing (no coins, XP, pack, rating or Weekend League game). Empty: no cap (owner, 2026-09-29), e.g. {modes: [rivals], games: 3, windowSeconds: 86400} or {modes: [weekendLeague], games: 2, perWeekendLeague: true} turns one on. restrictGrantOnlyCards: when true, Rivals, the Weekend League and Squad Battles refuse a squad holding a Pro, custom or grant-only card, such a match pays nothing and such a club is never a Squad Battles opponent; false (owner: developers play their Pro cards everywhere).",
+  "rewardEligibility": {
+    "payingModes": ["rivals", "weekendLeague", "squadBattles", "draftOnline", "draftSinglePlayer"],
+    "minRealSeconds": 480,
+    "minGameSeconds": 3600,
+    "matchStatusFlags": { "opponentLeft": 6, "desync": 16 },
+    "desyncCoins": 1000,
+    "difficulty": { "modes": ["squadBattles", "draftSinglePlayer"], "coinMultipliers": [0.3, 0.5, 0.7, 1.0, 1.0, 1.0, 1.0], "progressFrom": 3 },
+    "pairCaps": [],
+    "restrictGrantOnlyCards": false,
+    "opponentLeft": { "winFromMinute": 35, "realSecondsPerMinute": 7 }
+  },
+
+  "_matchPackComment": "The untradeable post-match Match Pack (PLAN 3.7), reward pack packId: one per match the gate pays in modes (Squad Battles and single-player Draft only from the difficulty's progressFrom; never a desync or a quit), at most cap in any rolling capWindowSeconds per club. Its contents are rolled when it is granted (the roller, its tiers and its pity: rules/pack_odds.json matchPack; the pity counts granted packs since the last highlight) and stored with the unopened pack, so a retune never changes an earned pack. Its items open untradeable, with source as their reward source (quick sell 0).",
+  "matchPack": { "packId": 544, "modes": ["rivals", "weekendLeague", "draftOnline", "squadBattles", "draftSinglePlayer"], "cap": 20, "capWindowSeconds": 86400, "source": "match_pack" },
+
+  "_matchCoinBonusesComment": "End-of-match coin rows (matchCoinPartials, read by FutDestroyMatchServerResponse). Every row is always sent, in this order, which is the client's fixed slot order: a sparse list crashed the coin screen on the Python server (crash dump 2026-09-24). A row counts myMatchStats[stat], or opponentMatchStats[stat] when side is opponent, capped at cap, times coins. Only a finished match (endReasons) earns rows; the credited coins are the result award plus the rows, never below zero.",
+  "matchCoinBonuses": {
+    "endReasons": ["WIN", "DRAW", "LOSS", "DNF_WIN", "DNF_DRAW", "DNF_LOSS"],
+    "rows": [
+      { "type": "GOALS", "stat": "goals", "coins": 20, "cap": 10 },
+      { "type": "SHOTS_ON_TARGET", "stat": "shotsOnTarget", "coins": 5, "cap": 20 },
+      { "type": "SUCCESSFUL_TACKLES", "stat": "successfulTackles", "coins": 3, "cap": 30 },
+      { "type": "CORNERS", "stat": "corners", "coins": 5, "cap": 10 },
+      { "type": "CLEANSHEETS", "stat": "cleansheets", "coins": 50, "cap": 1 },
+      { "type": "PASSING_PERCENTAGE", "stat": "passingPercentage", "coins": 1, "cap": 100 },
+      { "type": "POSSESSION_PERCENTAGE", "stat": "possessionPercentage", "coins": 1, "cap": 100 },
+      { "type": "MAN_OF_THE_MATCH", "stat": "manOfTheMatch", "coins": 50, "cap": 1 },
+      { "type": "GOALS_AGAINST", "side": "opponent", "stat": "goals", "coins": -5, "cap": 10 },
+      { "type": "FOULS", "stat": "fouls", "coins": -2, "cap": 20 },
+      { "type": "YELLOW_CARDS", "stat": "yellowCards", "coins": -10, "cap": 5 },
+      { "type": "RED_CARDS", "stat": "redCards", "coins": -25, "cap": 3 },
+      { "type": "OFFSIDES", "stat": "offsides", "coins": -2, "cap": 10 }
+    ]
+  },
+
+  "_weekendLeagueComment": "The FUT Champions Weekend League as in FIFA 21 retail (Python server 56145ed, champions_wl.py). EA help 'FIFA 21 - FUT Champions' (Nov 2020 - Aug 2021): Friday 07:00 to Monday 07:00 UTC, 30 matches (phase 1: maxMatches 20, pack-odds-2026-09 PLAN.md 5.2); FUT Champions Points earned in Division Rivals are redeemed before it starts or within graceHours after (later redemptions enter the next one, and are final); rewards to clubs with minMatchesToRank matches at rewardHourUk UK time (GMT or BST) on the Monday it ends (owner, 29 Sep 2026; retail paid Thursday 08:00 UTC); form +1 a win, -1 a loss, formMin to formMax. Fan sources (fifauteam, FIFPlay, Millenium) put retail's entry at 2,000; qualificationPoints is 1,300 from week two (owner decision D11, 29 Sep 2026). openEvents are Weekend Leagues every club enters without points (2961, 2-5 Oct 2026, the week-one test; an event id is floor((unix - startOffsetSeconds) / 604800)). Rewards are settled from firstRewardEvent and stay claimable for prizeEventsBack Weekend Leagues. A Weekend League CreateMatch (it names championId) is settled by a match end within pendingMatchSeconds. A Weekend League match is won or lost (Python server 24d7015, c3992c5): /match/end matchStatusFlags say why it ended (about 400 live bodies): a desync voids it for both players (no match, record, coins, club record or Weekly Score); a level score goes to penalties; a level end the opponent quit on is a win; a level end after a lost connection is held as a claim and becomes a win once connectionWinAfterSeconds pass with no result from the opponent that does not concede (the claim settles on the next hub, CreateMatch or match end, while the same Weekend League is live); any other undecided level end is void. The players' results for a game are remembered reportMemorySeconds. A search ended with no game after a Weekend League CreateMatch is not a match. Leaderboards (Python server 764ef6e): FIFA reads four events by position (weekly previous and current, monthly previous and current; a month is every Weekend League that starts in the calendar month, id monthIdBase + yyyymm); clubs with a match rank by wins, then Skill Rating; rank is the leaderboard position inside the topX, 0 outside (a weekend leaderboard place needs the wins its reward needs); rows carry leaderboardSku (FIFA shows the platform icon as yours only for it), remainingMatches for the live weekend and finishedRemainingMatches otherwise; a region query EUR or AMS keeps its regions, ROW the others. The live standings are reused for standingsCacheSeconds; settlement reads fresh. regions group the registered country for the leaderboards (FIFA stores the region only). FIFA asks GET user/pidinfo for the passport country before a club registers; this server has no account country, so a club that never registered counts as registered in defaultCountry and its region (Python server c756982). Rewards: rules/champions_rewards.json.",
+  "weekendLeague": {
+    "qualificationPoints": 1300,
+    "startOffsetSeconds": 111600,
+    "lengthSeconds": 259200,
+    "graceHours": 24,
+    "maxMatches": 20,
+    "minMatchesToRank": 5,
+    "formMin": -10,
+    "formMax": 15,
+    "rewardHourUk": 17,
+    "pendingMatchSeconds": 14400,
+    "matchStatusFlags": { "opponentQuit": 2, "connectionLost": 8, "desync": 16 },
+    "connectionWinAfterSeconds": 120,
+    "reportMemorySeconds": 21600,
+    "topX": 25,
+    "monthIdBase": 100000,
+    "standingsCacheSeconds": 60,
+    "leaderboardSku": "FFA21PCC",
+    "finishedRemainingMatches": 255,
+    "regionQueries": { "EUR": ["EU"], "AMS": ["NA", "SA"] },
+    "openEvents": [2961],
+    "firstRewardEvent": 2960,
+    "prizeEventsBack": 4,
+    "defaultCountry": "GB",
+    "defaultRegion": "EU",
+    "regions": {
+      "NA": ["US", "CA", "MX"],
+      "SA": ["AR", "BO", "BR", "CL", "CO", "EC", "GY", "PY", "PE", "SR", "UY", "VE"],
+      "OC": ["AU", "NZ", "FJ", "PG"],
+      "ME": ["AE", "BH", "IQ", "IL", "JO", "KW", "LB", "OM", "QA", "SA", "SY", "YE", "IR", "EG", "TR"],
+      "AS": ["CN", "HK", "IN", "ID", "JP", "KR", "MY", "PH", "SG", "TH", "TW", "VN", "PK", "BD", "KZ"],
+      "AF": ["DZ", "AO", "CM", "CI", "GH", "KE", "MA", "NG", "SN", "ZA", "TN", "ET", "TZ", "UG"]
+    }
+  },
+
+  "_championsComment": "The seasonal CDN document's FUT Champions schedule fields; its finalsMaxGames is weekendLeague.maxMatches.",
+  "champions": {
+    "localizedName": "FUT_CHAMPIONS_WKND_LG",
+    "playoffMatches": 10,
+    "scheduleViewPeriodMinutes": 10080,
+    "rewardsDelaySeconds": 3600
+  }
+}

@@ -1,0 +1,18 @@
+.button {
+  display: inline-flex; align-items: center; justify-content: center; gap: var(--space-2);
+  min-height: 34px; padding: 0 var(--space-4);
+  border: 1px solid var(--line); border-radius: var(--radius-sm);
+  background: var(--tier); color: var(--chalk);
+  font: 500 var(--text-sm)/1 var(--font); text-decoration: none; white-space: nowrap; cursor: pointer;
+}
+.button:hover:not(:disabled) { background: var(--tier-2); border-color: var(--fog); }
+.button:disabled { opacity: 0.5; cursor: default; }
+.primary { background: var(--coin); border-color: var(--coin); color: var(--on-coin); font-weight: 600; }
+.primary:hover:not(:disabled) { background: var(--coin-hover); border-color: var(--coin-hover); }
+.staged { background: var(--staged-bg); border-color: var(--staged); color: var(--staged); font-weight: 600; }
+.staged:hover:not(:disabled) { background: rgb(154 140 242 / 0.24); border-color: var(--staged); }
+.danger { background: transparent; border-color: var(--red-card); color: var(--red-card); }
+.danger:hover:not(:disabled) { background: var(--red-card-bg); border-color: var(--red-card); }
+.ghost { background: transparent; border-color: transparent; color: var(--fog); }
+.ghost:hover:not(:disabled) { background: var(--tier); border-color: transparent; color: var(--chalk); }
+.sm { min-height: 28px; padding: 0 var(--space-3); font-size: var(--text-xs); }
