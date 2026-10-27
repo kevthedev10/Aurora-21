@@ -1,3 +1,3 @@
-Aurora 21 from start of October.
+All files have been checked by Mohamed Kamel, a verified full stack developer. Thanks!
 
-Missing about 400000 things, enjoy !!!!!!! - miz
+Enjoy Aurora21
